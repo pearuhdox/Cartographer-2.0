@@ -1,0 +1,62 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:alternatives",
+                    "children": [
+                        {
+                            "type": "minecraft:dynamic",
+                            "name": "minecraft:contents",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:match_tool",
+                                    "predicate": {
+                                        "predicates": {
+                                            "minecraft:custom_data": "{drop_contents:1b}"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:item",
+                            "name": "minecraft:magenta_shulker_box",
+                            "functions": [
+                                {
+                                    "function": "minecraft:copy_components",
+                                    "source": "block_entity",
+                                    "include": [
+                                        "minecraft:custom_name",
+                                        "minecraft:lock",
+                                        "minecraft:container",
+                                        "minecraft:container_loot"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "rolls": 1.0
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "ltos:data",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{block:'magenta_shulker_box'}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "random_sequence": "minecraft:blocks/magenta_shulker_box"
+}

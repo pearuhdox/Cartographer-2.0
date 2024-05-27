@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "draw_bow": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "item": {
+          "components": {
+            "minecraft:food": {
+              "nutrition": 0,
+              "saturation": 0,
+              "can_always_eat": true,
+              "eat_seconds": 1000000
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "cartographer_core:handlers/using/using_other"
+  }
+}

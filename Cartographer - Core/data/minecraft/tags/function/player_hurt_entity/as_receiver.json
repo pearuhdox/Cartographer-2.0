@@ -1,0 +1,7 @@
+{
+	"values": [
+		{"id": "cartographer_custom_enchantments:enchant_calls/when_attacking_mob_post","required": false},
+		{"id": "cartographer_mob_abilities:effect_calls/when_attacking_entity_post","required": false},
+		{"id": "cartographer_core:handlers/ehid/player_hurt_entity/as_receiver/run","required": true}
+	]
+}

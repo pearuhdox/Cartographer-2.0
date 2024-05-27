@@ -1,0 +1,52 @@
+{
+	"type":"minecraft:entity",
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:debug_stick",
+					"functions":[
+						{"function": "minecraft:set_custom_data","tag": "{always_hurts_ender_dragons:'true'}","conditions": [{"condition": "minecraft:damage_source_properties","predicate": {"tags": [{"id": "minecraft:always_hurts_ender_dragons","expected": true}]}}]},
+						{"function": "minecraft:set_custom_data","tag": "{always_kills_armor_stands:'true'}","conditions": [{"condition": "minecraft:damage_source_properties","predicate": {"tags": [{"id": "minecraft:always_kills_armor_stands","expected": true}]}}]},
+						{"function": "minecraft:set_custom_data","tag": "{always_most_significant_fall:'true'}","conditions": [{"condition": "minecraft:damage_source_properties","predicate": {"tags": [{"id": "minecraft:always_most_significant_fall","expected": true}]}}]},
+						{"function": "minecraft:set_custom_data","tag": "{always_triggers_silverfish:'true'}","conditions": [{"condition": "minecraft:damage_source_properties","predicate": {"tags": [{"id": "minecraft:always_triggers_silverfish","expected": true}]}}]},
+						{"function": "minecraft:set_custom_data","tag": "{avoids_guardian_thorns:'true'}","conditions": [{"condition": "minecraft:damage_source_properties","predicate": {"tags": [{"id": "minecraft:avoids_guardian_thorns","expected": true}]}}]},
+						{"function": "minecraft:set_custom_data","tag": "{burns_armor_stands:'true'}","conditions": [{"condition": "minecraft:damage_source_properties","predicate": {"tags": [{"id": "minecraft:burns_armor_stands","expected": true}]}}]},
+						{"function": "minecraft:set_custom_data","tag": "{bypasses_armor:'true'}","conditions": [{"condition": "minecraft:damage_source_properties","predicate": {"tags": [{"id": "minecraft:bypasses_armor","expected": true}]}}]},
+						{"function": "minecraft:set_custom_data","tag": "{bypasses_effects:'true'}","conditions": [{"condition": "minecraft:damage_source_properties","predicate": {"tags": [{"id": "minecraft:bypasses_effects","expected": true}]}}]},
+						{"function": "minecraft:set_custom_data","tag": "{bypasses_enchantments:'true'}","conditions": [{"condition": "minecraft:damage_source_properties","predicate": {"tags": [{"id": "minecraft:bypasses_enchantments","expected": true}]}}]},
+						{"function": "minecraft:set_custom_data","tag": "{bypasses_invulnerability:'true'}","conditions": [{"condition": "minecraft:damage_source_properties","predicate": {"tags": [{"id": "minecraft:bypasses_invulnerability","expected": true}]}}]},
+						{"function": "minecraft:set_custom_data","tag": "{bypasses_resistance:'true'}","conditions": [{"condition": "minecraft:damage_source_properties","predicate": {"tags": [{"id": "minecraft:bypasses_resistance","expected": true}]}}]},
+						{"function": "minecraft:set_custom_data","tag": "{bypasses_shield:'true'}","conditions": [{"condition": "minecraft:damage_source_properties","predicate": {"tags": [{"id": "minecraft:bypasses_shield","expected": true}]}}]},
+						{"function": "minecraft:set_custom_data","tag": "{bypasses_wolf_armor:'true'}","conditions": [{"condition": "minecraft:damage_source_properties","predicate": {"tags": [{"id": "minecraft:bypasses_wolf_armor","expected": true}]}}]},
+						{"function": "minecraft:set_custom_data","tag": "{damages_helmet:'true'}","conditions": [{"condition": "minecraft:damage_source_properties","predicate": {"tags": [{"id": "minecraft:damages_helmet","expected": true}]}}]},
+						{"function": "minecraft:set_custom_data","tag": "{ignites_armor_stands:'true'}","conditions": [{"condition": "minecraft:damage_source_properties","predicate": {"tags": [{"id": "minecraft:ignites_armor_stands","expected": true}]}}]},
+						{"function": "minecraft:set_custom_data","tag": "{is_drowning:'true'}","conditions": [{"condition": "minecraft:damage_source_properties","predicate": {"tags": [{"id": "minecraft:is_drowning","expected": true}]}}]},
+						{"function": "minecraft:set_custom_data","tag": "{is_explosion:'true'}","conditions": [{"condition": "minecraft:damage_source_properties","predicate": {"tags": [{"id": "minecraft:is_explosion","expected": true}]}}]},
+						{"function": "minecraft:set_custom_data","tag": "{is_fall:'true'}","conditions": [{"condition": "minecraft:damage_source_properties","predicate": {"tags": [{"id": "minecraft:is_fall","expected": true}]}}]},
+						{"function": "minecraft:set_custom_data","tag": "{is_fire:'true'}","conditions": [{"condition": "minecraft:damage_source_properties","predicate": {"tags": [{"id": "minecraft:is_fire","expected": true}]}}]},
+						{"function": "minecraft:set_custom_data","tag": "{is_freezing:'true'}","conditions": [{"condition": "minecraft:damage_source_properties","predicate": {"tags": [{"id": "minecraft:is_freezing","expected": true}]}}]},
+						{"function": "minecraft:set_custom_data","tag": "{is_lightning:'true'}","conditions": [{"condition": "minecraft:damage_source_properties","predicate": {"tags": [{"id": "minecraft:is_lightning","expected": true}]}}]},
+						{"function": "minecraft:set_custom_data","tag": "{is_player_attack:'true'}","conditions": [{"condition": "minecraft:damage_source_properties","predicate": {"tags": [{"id": "minecraft:is_player_attack","expected": true}]}}]},
+						{"function": "minecraft:set_custom_data","tag": "{is_projectile:'true'}","conditions": [{"condition": "minecraft:damage_source_properties","predicate": {"tags": [{"id": "minecraft:is_projectile","expected": true}]}}]},
+						{"function": "minecraft:set_custom_data","tag": "{no_anger:'true'}","conditions": [{"condition": "minecraft:damage_source_properties","predicate": {"tags": [{"id": "minecraft:no_anger","expected": true}]}}]},
+						{"function": "minecraft:set_custom_data","tag": "{no_impact:'true'}","conditions": [{"condition": "minecraft:damage_source_properties","predicate": {"tags": [{"id": "minecraft:no_impact","expected": true}]}}]},
+						{"function": "minecraft:set_custom_data","tag": "{no_knockback:'true'}","conditions": [{"condition": "minecraft:damage_source_properties","predicate": {"tags": [{"id": "minecraft:no_knockback","expected": true}]}}]},
+						{"function": "minecraft:set_custom_data","tag": "{witch_resistant_to:'true'}","conditions": [{"condition": "minecraft:damage_source_properties","predicate": {"tags": [{"id": "minecraft:witch_resistant_to","expected": true}]}}]},
+						{"function": "minecraft:set_custom_data","tag": "{wither_immune_to:'true'}","conditions": [{"condition": "minecraft:damage_source_properties","predicate": {"tags": [{"id": "minecraft:wither_immune_to","expected": true}]}}]},
+						{"function":"minecraft:copy_custom_data","source":"this","ops":[{"source":"Tags","target":"entity_tags","op":"replace"}]},
+						{"function":"minecraft:copy_custom_data","source":"this","ops":[{"source":"UUID","target":"entity_uuid","op":"replace"}]},
+						{"function":"minecraft:copy_custom_data","source":"attacker","ops":[{"source":"UUID","target":"killer_uuid","op":"replace"}]},
+						{"function":"minecraft:copy_custom_data","source":"attacker","ops":[{"source":"Owner","target":"killer_owner_uuid","op":"replace"}]},
+						{"function":"minecraft:copy_custom_data","source":"attacker","ops":[{"source":"SelectedItem","target":"killer_weapon","op":"replace"}],"conditions":[{"condition":"minecraft:entity_properties","entity":"attacker","predicate":{"type":"minecraft:player"}}]},
+						{"function":"minecraft:copy_custom_data","source":"attacker","ops":[{"source":"Trident","target":"killer_weapon","op":"replace"}],"conditions":[{"condition":"minecraft:entity_properties","entity":"attacker","predicate":{"type":"minecraft:trident"}}]},
+						{"function":"minecraft:copy_custom_data","source":"attacker","ops":[{"source":"HandItems[0]","target":"killer_weapon","op":"replace"}],"conditions":[{"condition":"minecraft:inverted","term":{"condition":"minecraft:entity_properties","entity":"attacker","predicate":{"type":"minecraft:player"}}}]},
+						{"function":"minecraft:copy_custom_data","source":"attacker","ops":[{"source":"Item","target":"killer_weapon","op":"replace"}],"conditions":[{"condition":"minecraft:inverted","term":{"condition":"minecraft:entity_properties","entity":"attacker","predicate":{"type":"minecraft:player"}}}]}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,3 @@
+setblock ~0.5 ~0.5 ~0.5 spawner{SpawnCount:100,SpawnRange:1,Delay:40,MinSpawnDelay:500,MaxSpawnDelay:700,MaxNearbyEntities:1,RequiredPlayerRange:12,SpawnData:{entity:{id:"minecraft:zombie"},custom_spawn_rules:{sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:11}}}} replace
+
+summon armor_stand ~0.5 ~-1.15 ~0.5 {Pose:{Head:[0f,0f,0f]},NoGravity:1b,Glowing:1b,Small:0b,Silent:1b,Marker:1b,Invisible:1b,Tags:["ca.item_cage"],ArmorItems:[{},{},{},{id:"minecraft:ender_chest",count:1}]}

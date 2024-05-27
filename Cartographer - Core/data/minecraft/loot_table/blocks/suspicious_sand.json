@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:block",
+    "random_sequence": "minecraft:blocks/suspicious_sand",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "ltos:data",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{block:'suspicious_sand'}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

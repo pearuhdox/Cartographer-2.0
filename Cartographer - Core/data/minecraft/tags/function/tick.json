@@ -1,0 +1,7 @@
+{
+  "values":[
+	"cartographer_core:loop/tick",
+  "ltos:loop",
+  "carto_event:tick"
+  ]
+}

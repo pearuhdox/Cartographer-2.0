@@ -1,0 +1,9 @@
+{
+	"values": [
+		"#bb:hostile",
+		"#bb:projectile",
+        "minecraft:item",
+        "minecraft:tnt",
+        "minecraft:marker"
+	]
+}

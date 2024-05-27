@@ -1,0 +1,1 @@
+execute if entity @a[gamemode=!spectator,distance=..6.5] run function cartographer_charon:respawnable/raycast_wrapper

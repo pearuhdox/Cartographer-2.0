@@ -1,0 +1,1 @@
+execute store success score $#lib_dies ca.installed run loot spawn 4206900 0 4206900 loot dies:default_item

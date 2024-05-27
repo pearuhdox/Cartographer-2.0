@@ -1,0 +1,10 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:consume_item"
+      }
+    },
+    "rewards": {
+      "function": "cartographer_core:handlers/using/ate_food"
+    }
+  }

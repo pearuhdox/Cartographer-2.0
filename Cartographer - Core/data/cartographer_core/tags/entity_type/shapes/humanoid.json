@@ -1,0 +1,14 @@
+{
+    "values":[
+      "#minecraft:zombies",
+      "#minecraft:skeletons",
+      "#minecraft:illager",
+      "minecraft:witch",
+      "minecraft:creeper",
+      "minecraft:blaze",
+      "minecraft:breeze",
+      "minecraft:piglin",
+      "minecraft:piglin_brute",
+      "minecraft:zombified_piglin"
+    ]
+  }

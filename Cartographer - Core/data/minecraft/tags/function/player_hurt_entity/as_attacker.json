@@ -1,0 +1,7 @@
+{
+	"values": [
+		{"id": "cartographer_core:handlers/in_combat/attacks","required": true},
+		{"id": "cartographer_core:handlers/attack_speed/attacks","required": true},
+		{"id": "cartographer_core:handlers/ehid/player_hurt_entity/as_attacker/run","required": true}
+	]
+}

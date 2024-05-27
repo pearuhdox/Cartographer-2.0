@@ -1,0 +1,12 @@
+{
+    "values":[
+      "minecraft:spider",
+      "minecraft:cave_spider",
+      "minecraft:guardian",
+      "minecraft:phantom",
+      "minecraft:shulker",
+      "minecraft:magma_cube",
+      "minecraft:slime",
+      "minecraft:wolf"
+    ]
+  }

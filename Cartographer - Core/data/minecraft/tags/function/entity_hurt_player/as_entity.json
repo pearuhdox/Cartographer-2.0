@@ -1,0 +1,5 @@
+{
+	"values": [
+		{"id": "cartographer_core:handlers/ehid/entity_hurt_player/as_entity/run","required": true}
+	]
+}

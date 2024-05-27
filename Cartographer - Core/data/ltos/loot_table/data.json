@@ -1,0 +1,23 @@
+{
+	"type":"minecraft:block",
+	"pools":[
+		{
+			"rolls":1,
+			"entries":[
+				{
+					"type":"minecraft:item",
+					"name":"minecraft:debug_stick",
+					"functions":[
+						{"function":"minecraft:copy_custom_data","source":"this","ops":[{"source":"UUID","target":"destroyer_uuid","op":"replace"}]},
+						{"function":"minecraft:copy_custom_data","source":"this","ops":[{"source":"Owner","target":"destroyer_owner_uuid","op":"replace"}]},
+						{"function":"minecraft:copy_custom_data","source":"this","ops":[{"source":"SelectedItem","target":"destroyer_tool","op":"replace"}],"conditions":[{"condition":"minecraft:entity_properties","entity":"this","predicate":{"type":"minecraft:player"}}]},
+						{"function":"minecraft:copy_custom_data","source":"this","ops":[{"source":"Trident","target":"destroyer_tool","op":"replace"}],"conditions":[{"condition":"minecraft:entity_properties","entity":"this","predicate":{"type":"minecraft:trident"}}]},
+						{"function":"minecraft:copy_custom_data","source":"this","ops":[{"source":"HandItems[0]","target":"destroyer_tool","op":"replace"}],"conditions":[{"condition":"minecraft:inverted","term":{"condition":"minecraft:entity_properties","entity":"this","predicate":{"type":"minecraft:player"}}}]},
+						{"function":"minecraft:copy_custom_data","source":"this","ops":[{"source":"Item","target":"destroyer_tool","op":"replace"}],"conditions":[{"condition":"minecraft:inverted","term":{"condition":"minecraft:entity_properties","entity":"this","predicate":{"type":"minecraft:player"}}}]},
+						{"function":"minecraft:set_custom_data","tag":"{destroyed_by:'command'}","conditions":[{"condition":"minecraft:inverted","term":{"condition":"minecraft:entity_properties","entity":"this","predicate":{}}}]}
+					]
+				}
+			]
+		}
+	]
+}

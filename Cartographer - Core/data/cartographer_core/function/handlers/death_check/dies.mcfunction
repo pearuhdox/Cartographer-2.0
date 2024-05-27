@@ -1,0 +1,1 @@
+function #minecraft:cartographer/api/handlers/death_check/dies

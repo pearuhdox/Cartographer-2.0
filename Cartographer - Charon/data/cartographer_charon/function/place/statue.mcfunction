@@ -1,0 +1,7 @@
+summon armor_stand ~ ~ ~ {Small:0b,Marker:1b,Invisible:0b,NoBasePlate:0b,Health:20f,Motion:[0.0,-0.0784000015258789,0.0],Tags:["ca.charon_respawnable","entityid.registered","ca.registered"],Pose:{Body:[0f,6f,0f],LeftArm:[263f,318f,169f],RightArm:[261f,34f,173f],LeftLeg:[0f,0f,352f],RightLeg:[350f,0f,0f],Head:[8f,0f,352f]},DisabledSlots:4144959,Passengers:[{id:"minecraft:interaction",width:1.01f,height:2.01f,Tags:["ca.charon_respawnable_interaction"]}],HandItems:[{count:1,id:"minecraft:diamond_hoe"},{id:"minecraft:diamond_sword",count:1}],ArmorItems:[{components:{"minecraft:dyed_color":{rgb:3101254}},count:1,id:"minecraft:leather_boots"},{components:{"minecraft:dyed_color":{rgb:3959130}},count:1,id:"minecraft:leather_leggings"},{components:{"minecraft:dyed_color":{rgb:4882542}},count:1,id:"minecraft:leather_chestplate"},{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{id:[I; -1375173499,2139178847,-1219475297,-727234107],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWM0ZDIxOTk2ZjcwYjU0NWZiYTdkZjM2YTkyNzg5MWNiZDJmNTcwYmM3Y2IzY2E5ZGU1MTcxOGE4NGMwYTU2ZSJ9fX0="}]}}}]}
+
+setblock ~ ~ ~ light[level=12] replace
+
+execute as @e[type=armor_stand,limit=1,sort=nearest,tag=ca.charon_respawnable,tag=!ca.rotated] at @s run function cartographer_charon:respawnable/rotate
+
+kill @s

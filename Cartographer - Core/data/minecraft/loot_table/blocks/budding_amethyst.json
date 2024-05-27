@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:block",
+    "random_sequence": "minecraft:blocks/budding_amethyst",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "ltos:data",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{block:'budding_amethyst'}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

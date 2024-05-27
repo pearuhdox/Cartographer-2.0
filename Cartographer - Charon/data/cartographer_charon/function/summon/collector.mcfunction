@@ -1,0 +1,4 @@
+#TODO - Redesign this enemy with new mob abilities
+summon vex ~ ~ ~ {Glowing:1b,Health:20f,Tags:["ca.collector"],CustomName:'{"bold":true,"color":"dark_aqua","italic":false,"text":"Reaper"}',HandItems:[{id:"minecraft:diamond_hoe",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:vanishing_curse":1}}}},{id:"minecraft:bundle",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:vanishing_curse":1}},"minecraft:bundle_contents":[{id:"minecraft:barrier",count:1}]}}],Attributes:[{Name:generic.attack_damage,Base:5},{Name:generic.max_health,Base:20},{Name:generic.scale,Base:2}]}
+
+scoreboard players add $collector_count dt.var 1

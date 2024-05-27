@@ -1,0 +1,1 @@
+execute store success score $#lib_bbl ca.installed run loot spawn 4206900 0 4206900 loot bb:player_head

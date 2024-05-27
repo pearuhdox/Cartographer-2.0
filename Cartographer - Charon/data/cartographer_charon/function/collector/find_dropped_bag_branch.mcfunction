@@ -1,0 +1,1 @@
+execute as @e[type=item,distance=..10,limit=1,sort=nearest,tag=!ca.collector_bag_dropped,nbt={Item:{id:"minecraft:bundle",components:{"minecraft:custom_data":{CartoCollectorDropped:1b}}}}] at @s run function cartographer_charon:collector/bag_effects

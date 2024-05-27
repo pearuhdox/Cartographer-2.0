@@ -1,0 +1,6 @@
+{
+	"values": [
+		{"id": "cartographer_core:handlers/in_combat/attacked","required": true},
+		{"id": "cartographer_core:handlers/ehid/entity_hurt_player/as_receiver/run","required": true}
+	]
+}

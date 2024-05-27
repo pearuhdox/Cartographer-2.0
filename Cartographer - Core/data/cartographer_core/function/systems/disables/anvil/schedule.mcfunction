@@ -1,0 +1,1 @@
+execute as @e[type=item_frame,tag=disabled_anvil_place] at @s run function cartographer_core:systems/disables/anvil/replace

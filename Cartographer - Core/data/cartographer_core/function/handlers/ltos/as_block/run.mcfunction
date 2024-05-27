@@ -1,0 +1,2 @@
+#Debug Message
+tellraw @a[scores={ca.debug_lvl=3..}] [{"text":"[Debug] ","color":"red"},{"text":"[LTOS Handler] ","color":"yellow"},{"text":"❱ ","color":"#FFE0A3"},{"selector":"@s","color":"aqua"},{"text":" Block Destroyed (As Block).","color":"#FFE0A3"}]

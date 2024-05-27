@@ -1,0 +1,2 @@
+execute if data entity @s Item.components.minecraft:custom_data.block run function ltos:specify_output/block
+execute if data entity @s Item.components.minecraft:custom_data.entity run function ltos:specify_output/entity

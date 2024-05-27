@@ -1,0 +1,1 @@
+$function carto_event:api/create_single_entity_event {event:"custom_statuses/shocked/proc",duration:1,delay:003,parameters:{origin:"$(origin)",range:$(range),damage:$(damage),targets:$(targets),owner:"$(owner)",chain:$(chain)},merge_behavior:"none"}

@@ -1,0 +1,39 @@
+Triggers
+	easy detect
+		on use
+		on spawn
+	
+	library
+		on hit
+		on mine
+		on kill/death
+	
+	event handler
+		ticking/effects
+	
+	sadness
+		on explode
+	
+event types
+	orphan
+	single
+	targeted
+
+on creation
+	none
+	merge
+	custom - gives you data
+	
+things to check
+	if effects
+	if owned attack
+	if targeted attack
+	
+things to clear
+	remove all events
+	remove all current effects
+	remove all current owned attacks
+	remove all current targeting attacks
+	remove specific current effect
+	remove specific current owned attack
+	remove specific current targeting attack
