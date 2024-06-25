@@ -1,0 +1,1 @@
+execute if entity @s[tag=ca.has_custom_status_stealth_player] run tag @s add ca.remove_stealth_player

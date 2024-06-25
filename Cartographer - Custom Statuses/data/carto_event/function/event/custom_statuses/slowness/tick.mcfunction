@@ -11,3 +11,4 @@ $execute as $(target) at @s if data storage carto_event current[-1].parameters.t
 $execute as $(target) at @s if entity @s[tag=ca.cleansed] run tag @s remove ca.has_custom_status_slowness
 $execute as $(target) at @s if entity @s[tag=ca.cleansed] run return 0
 return 1
+

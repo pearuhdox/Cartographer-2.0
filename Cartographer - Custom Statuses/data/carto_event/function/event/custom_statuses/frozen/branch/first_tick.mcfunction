@@ -17,3 +17,6 @@ execute if score @s ca.frozen_fuse matches 1.. run data modify entity @s Fuse se
 summon block_display ~ ~ ~ {Tags:["ca.registered","ca.status_frozen_display","ca.new"],block_state:{Name:"minecraft:ice"}}
 ride @e[tag=ca.status_frozen_display,tag=ca.new,limit=1,sort=nearest] mount @s
 function carto_event:event/custom_statuses/frozen/display
+
+scoreboard players reset @s ca.frozen_hp_past
+scoreboard players reset @s ca.frozen_hp

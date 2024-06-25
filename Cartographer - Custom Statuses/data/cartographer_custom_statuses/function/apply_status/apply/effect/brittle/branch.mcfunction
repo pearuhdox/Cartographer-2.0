@@ -1,0 +1,1 @@
+$function carto_event:api/create_single_entity_event {event:"custom_statuses/brittle",duration:$(duration),delay:000,parameters:{damage:$(damage),threshold:$(threshold),range:3,fail_percent:0,owner:"@p",tick_command:"",proc_command:""},merge_behavior:"custom"}

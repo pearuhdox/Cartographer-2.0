@@ -1,0 +1,6 @@
+{
+    "values":[
+      "cartographer_custom_statuses:systems/player_hurt_entity/player",
+      "cartographer_custom_statuses:apply_status/attack/attacker"
+    ]
+  }

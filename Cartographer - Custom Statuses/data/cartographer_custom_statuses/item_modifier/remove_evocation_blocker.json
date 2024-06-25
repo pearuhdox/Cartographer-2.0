@@ -1,0 +1,9 @@
+[
+    {
+      "function": "minecraft:set_enchantments",
+      "enchantments": {
+        "cartographer_custom_statuses:evocation_blocker": 0
+      },
+      "add": false
+    }
+  ]

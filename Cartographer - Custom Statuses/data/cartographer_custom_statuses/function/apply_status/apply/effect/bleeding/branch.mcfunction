@@ -1,0 +1,1 @@
+$function carto_event:api/create_single_entity_event {event:"custom_statuses/bleeding",duration:40,delay:000,parameters:{tick_rate:38,amount:$(amount),cap:20,owner:"$(owner)",tick_command:"",proc_command:""},merge_behavior:"custom"}

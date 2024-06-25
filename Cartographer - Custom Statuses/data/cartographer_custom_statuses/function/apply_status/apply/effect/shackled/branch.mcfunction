@@ -1,0 +1,1 @@
+$function carto_event:api/create_single_entity_event {event:"custom_statuses/shackled",duration:$(duration),delay:000,parameters:{percentage:$(percentage),range:12,targets:4,spread:0,spread_duration:0,owner:"$(owner)",tick_command:"",proc_command:""},merge_behavior:"custom"}

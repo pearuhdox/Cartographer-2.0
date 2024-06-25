@@ -7,6 +7,8 @@ $scoreboard players set @s co_y $(vertical_knockback)
 $scoreboard players set @s co_send -$(knockback)
 function motion:motion/push
 
+tag @s remove co_rotation_lock
+
 particle minecraft:gust ~ ~0.3 ~ 0 0 0 0 1 force
 
 scoreboard players set @s ca.windblast_cdl 3

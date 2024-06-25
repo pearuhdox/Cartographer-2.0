@@ -1,0 +1,1 @@
+$function carto_event:api/create_single_entity_event {event:"custom_statuses/absorption",duration:$(duration),delay:000,parameters:{tick_count:0,seconds:$(seconds),tick_rate:$(tick_rate),amount:1,cap:$(cap),tick_command:"",run_command:""},merge_behavior:"custom"}

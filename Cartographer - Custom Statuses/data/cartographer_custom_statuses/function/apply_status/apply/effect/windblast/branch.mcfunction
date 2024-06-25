@@ -1,0 +1,1 @@
+$function carto_event:api/create_single_entity_event {event:"custom_statuses/windblast",duration:$(duration),delay:000,parameters:{damage:$(damage),targets:3,range:4,knockback:7,vertical_knockback:5,owner:"$(owner)"},merge_behavior:"custom"}

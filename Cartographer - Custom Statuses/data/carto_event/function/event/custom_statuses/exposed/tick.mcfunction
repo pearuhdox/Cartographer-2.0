@@ -1,5 +1,7 @@
 $execute as $(target) at @s positioned ~ ~1 ~ if predicate cartographer_core:periodic_tick/4 run particle entity_effect{color:[0.043,0.380,0.220,1.00]} ~ ~ ~ 0.2 0.2 0.2 1 1 normal
 
+$execute as $(target) at @s unless entity @s[tag=ca.has_custom_status_brittle] run function carto_event:event/custom_statuses/exposed/first_tick
+
 $execute as $(target) at @s run scoreboard players operation @s ca.exposed_hp_past = @s ca.exposed_hp
 $execute as $(target) at @s store result score @s ca.exposed_hp run data get entity @s Health 10
 

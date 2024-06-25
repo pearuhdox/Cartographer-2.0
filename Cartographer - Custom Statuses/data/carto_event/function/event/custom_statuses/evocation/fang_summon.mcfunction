@@ -1,0 +1,3 @@
+function carto_event:api/create_single_entity_event {event:"custom_statuses/vanilla_attribute",duration:7,delay:000,parameters:{type:"minecraft:generic.movement_speed",tag:"ca.evocation_move_penalty",id:"ca.evocation_move_penalty",value:-100,operation:"add_value",tick_command:""},merge_behavior:"none"} 
+function carto_event:api/create_single_entity_event {event:"custom_statuses/vanilla_attribute",duration:7,delay:000,parameters:{type:"minecraft:generic.knockback_resistance",tag:"ca.evocation_kbr_penalty",id:"ca.evocation_kbr_penalty",value:100,operation:"add_value",tick_command:""},merge_behavior:"none"} 
+summon evoker_fangs ~ ~ ~ 

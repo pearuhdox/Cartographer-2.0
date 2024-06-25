@@ -1,0 +1,1 @@
+$function carto_event:api/create_single_entity_event {event:"custom_statuses/evocation",duration:$(duration),delay:000,parameters:{damage:$(damage),damage_range:1,grasp_range:1,grasp_vertical:0,grasp_horizontal:0,owner:"$(owner)",tick_command:"",proc_command:""},merge_behavior:"custom"}

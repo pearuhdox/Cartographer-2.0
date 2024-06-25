@@ -1,0 +1,1 @@
+$function carto_event:api/create_single_entity_event {event:"custom_statuses/wither",duration:$(duration),delay:005,parameters:{tick_rate:$(tick_rate),damage:1,owner:"$(owner)",tick_command:"",proc_command:""},merge_behavior:"custom"}

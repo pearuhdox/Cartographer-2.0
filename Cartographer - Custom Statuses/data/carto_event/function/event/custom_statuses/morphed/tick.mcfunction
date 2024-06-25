@@ -23,7 +23,7 @@ $data modify storage cartographer_custom_statuses:morphed data.tick_command set 
 
 $execute as $(target) at @s run function carto_event:event/custom_statuses/morphed/sheep_summon
 
-$execute as $(target) at @s run tp @s 4206910 256 4206910
+$execute as $(target) at @s run tp @s ~ 2048 ~
 
 $execute as $(target) at @s if data storage carto_event current[-1].parameters.proc_command run function carto_event:command_api/proc_command with storage carto_event current[-1].parameters
 

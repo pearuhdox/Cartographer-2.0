@@ -1,0 +1,1 @@
+$function carto_event:api/create_single_entity_event {event:"custom_statuses/vanilla_attribute",duration:$(duration),delay:001,parameters:{type:"$(attribute)",tag:"ca.apply_status_effect",id:"apply_status_effect",value:$(value),operation:"$(operation)",tick_command:""},merge_behavior:"none"}

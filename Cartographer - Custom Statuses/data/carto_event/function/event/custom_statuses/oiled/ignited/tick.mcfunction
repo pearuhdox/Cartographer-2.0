@@ -25,6 +25,7 @@ scoreboard players operation $cauterize_check ca.oiled_cauterize *= $cauterize_a
 scoreboard players set $do_cauterize ca.oiled_cauterize 0
 $execute if score $cauterize_check ca.oiled_cauterize matches $(cauterize_threshold).. run scoreboard players set $do_cauterize ca.oiled_cauterize 1
 $execute as $(target) at @s if predicate cartographer_core:world/in_water run scoreboard players set $do_cauterize ca.oiled_cauterize 1
+$execute as $(target) at @s if entity @s[tag=ca.has_custom_status_frozen] run scoreboard players set $do_cauterize ca.oiled_cauterize 1
 
 execute if score $do_cauterize ca.oiled_cauterize matches 1.. run data modify storage cartographer_custom_statuses:oiled data set value {}
 execute if score $do_cauterize ca.oiled_cauterize matches 1.. run data modify storage cartographer_custom_statuses:oiled data.owner set from storage carto_event current[-1].parameters.owner

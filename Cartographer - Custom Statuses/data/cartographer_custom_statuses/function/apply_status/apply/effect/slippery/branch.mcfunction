@@ -1,0 +1,1 @@
+$function carto_event:api/create_single_entity_event {event:"custom_statuses/slippery",duration:$(duration),delay:000,parameters:{cooldown:5,scale:$(scale),crash_range:0,crash_damage:2.0,crash_vertical_kb:0,crash_horizontal_kb:0,owner:"$(owner)",tick_command:"",proc_command:""},merge_behavior:"custom"}

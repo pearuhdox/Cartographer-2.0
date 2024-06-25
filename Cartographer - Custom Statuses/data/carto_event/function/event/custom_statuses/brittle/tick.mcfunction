@@ -1,5 +1,7 @@
 $execute as $(target) at @s positioned ~ ~1 ~ if predicate cartographer_core:periodic_tick/4 run particle entity_effect{color:[0.671,0.494,0.227,1.00]} ~ ~ ~ 0.2 0.2 0.2 1 1 normal
 
+$execute as $(target) at @s unless entity @s[tag=ca.has_custom_status_brittle] run function carto_event:event/custom_statuses/brittle/first_tick
+
 scoreboard players set $detonate_brittle ca.status_var 0
 
 $execute as $(target) at @s run scoreboard players operation @s ca.brittle_hp_past = @s ca.brittle_hp
@@ -32,6 +34,10 @@ $execute as $(target) at @s run tag @s remove ca.has_custom_status_brittle
 $execute as $(target) at @s if score duration= carto_event matches 2.. run tag @s add ca.has_custom_status_brittle
 
 $execute as $(target) at @s if data storage carto_event current[-1].parameters.tick_command run function carto_event:command_api/tick_command with storage carto_event current[-1].parameters
+
+
+$execute as $(target) at @s if entity @s[tag=ca.cleansed] run tag @s remove ca.has_custom_status_brittle
+$execute as $(target) at @s if entity @s[tag=ca.cleansed] run return 0
 
 execute if score $detonate_brittle ca.status_var matches 1.. run return 0
 return 1

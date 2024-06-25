@@ -1,5 +1,7 @@
 $execute as $(target) at @s positioned ~ ~1 ~ if predicate cartographer_core:periodic_tick/4 run particle entity_effect{color:[0.141,0.620,0.494,1.00]} ~ ~ ~ 0.2 0.2 0.2 1 1 normal
 
+$execute as $(target) at @s unless entity @s[tag=ca.has_custom_status_brittle] run function carto_event:event/custom_statuses/shackled/first_tick
+
 $execute as $(target) at @s unless entity @s[tag=ca.has_custom_status_shackled] run scoreboard players set @s ca.shackled_spread $(spread)
 
 $execute as $(target) at @s if score @s ca.shackled_spread matches 1.. run data modify storage cartographer_custom_statuses:shackled data.owner set from storage carto_event current[-1].parameters.owner

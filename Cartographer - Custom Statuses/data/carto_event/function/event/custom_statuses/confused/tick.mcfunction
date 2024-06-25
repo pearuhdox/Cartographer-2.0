@@ -8,7 +8,7 @@ $execute as $(target) at @s if score duration= carto_event matches 15.. run tag 
 scoreboard players set $confused_target_player ca.status_var 0
 $execute if score duration= carto_event matches 15.. as $(target) at @s on target if entity @s[type=player] run scoreboard players set $confused_target_player ca.status_var 1
 
-$execute if score duration= carto_event matches 15.. as $(target) at @s on target if entity @s[type=player] unless entity @e[type=#bb:hostile,distance=0.25..$(range)] run scoreboard players set $confused_target_player ca.status_var 2
+$execute if score duration= carto_event matches 15.. as $(target) at @s on target if entity @s[type=player] unless entity @e[type=#bb:hostile,distance=0.25..$(range),tag=!ca.has_custom_status_confused] run scoreboard players set $confused_target_player ca.status_var 2
 
 
 $execute if score duration= carto_event matches 15.. if score $confused_target_player ca.status_var matches 1 as $(target) at @s run scoreboard players set @s ca.confused_reassign 5
@@ -18,7 +18,7 @@ $execute if score duration= carto_event matches 15.. as $(target) at @s if score
 
 $execute if score duration= carto_event matches 15.. as $(target) at @s if score @s ca.confused_reassign matches 3 if data storage carto_event current[-1].parameters.proc_command run function carto_event:command_api/proc_command with storage carto_event current[-1].parameters
 
-$execute if score duration= carto_event matches 15.. as $(target) at @s if score @s ca.confused_reassign matches 2 run damage @s $(damage) cartographer_custom_statuses:status_damage by @e[type=#bb:hostile,sort=nearest,limit=1,distance=0.25..$(range)]
+$execute if score duration= carto_event matches 15.. as $(target) at @s if score @s ca.confused_reassign matches 2 run damage @s $(damage) cartographer_custom_statuses:status_damage by @e[type=#bb:hostile,sort=nearest,limit=1,distance=0.25..$(range),tag=!ca.has_custom_status_confused]
 $execute if score duration= carto_event matches 15.. as $(target) at @s if score @s ca.confused_reassign matches 1.. run scoreboard players remove @s ca.confused_reassign 1
 
 $execute if score duration= carto_event matches 15.. as $(target) at @s run attribute @s minecraft:generic.movement_speed modifier remove ca.confused_speed
