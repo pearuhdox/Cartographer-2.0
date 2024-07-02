@@ -72,6 +72,7 @@ scoreboard players remove @s[scores={ca.swim=1..}] ca.swim 1
 scoreboard players set @s[scores={ca.water_walk=201..}] ca.water_walk 200
 scoreboard players remove @s[scores={ca.water_walk=5..}] ca.water_walk 5
 scoreboard players set @s ca.sneak 0
+scoreboard players set @s ca.jump 0
 
 #Reduce Delta Cooldown Time
 execute if score @s ca.delta.cooldown matches 1.. run scoreboard players remove @s ca.delta.cooldown 1

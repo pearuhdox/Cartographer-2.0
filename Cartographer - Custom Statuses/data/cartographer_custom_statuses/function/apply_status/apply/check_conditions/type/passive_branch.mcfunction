@@ -1,0 +1,1 @@
+$execute as @e[type=#bb:hostile,distance=$(range),limit=$(limit),sort=nearest] at @s run function cartographer_custom_statuses:apply_status/apply/check_conditions/type/passive_branch_2

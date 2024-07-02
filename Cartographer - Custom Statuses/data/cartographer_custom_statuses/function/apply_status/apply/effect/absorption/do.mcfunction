@@ -4,11 +4,7 @@ $scoreboard players set $cap ca.apply_status_data $(cap)
 execute store result score $max_health ca.apply_status_data run attribute @s minecraft:generic.max_health get
 scoreboard players operation $cap ca.apply_status_data < $max_health ca.apply_status_data
 
-$scoreboard players set $seconds ca.apply_status_data $(duration)
-scoreboard players operation $seconds ca.apply_status_data /= $20 ca.CONSTANT
-scoreboard players operation $seconds ca.apply_status_data /= $3 ca.CONSTANT
-execute if score $seconds ca.apply_status_data matches ..7 run scoreboard players set $seconds ca.apply_status_data 8
-
+$scoreboard players set $seconds ca.apply_status_data $(seconds)
 
 scoreboard players set $tick_rate ca.apply_status_data 100
 

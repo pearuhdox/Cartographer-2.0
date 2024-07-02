@@ -1,4 +1,8 @@
 execute unless score $condition_failed ca.apply_status_conditions matches 1.. if data storage cartographer:custom_statuses apply[0].conditions.chance run function cartographer_custom_statuses:apply_status/apply/conditions/chance with storage cartographer:custom_statuses apply[0].conditions
 
+execute unless score $condition_failed ca.apply_status_conditions matches 1.. if data storage cartographer:custom_statuses apply[0].conditions.type run function cartographer_custom_statuses:apply_status/apply/conditions/type with storage cartographer:custom_statuses apply[0].type
+
+execute unless score $condition_failed ca.apply_status_conditions matches 1.. if data storage cartographer:custom_statuses apply[0].conditions.tag_target run function cartographer_custom_statuses:apply_status/apply/conditions/tag_target with storage cartographer:custom_statuses apply[0].tag_target
+
 execute unless score $condition_failed ca.apply_status_conditions matches 1.. if data storage cartographer:custom_statuses apply[0].conditions.predicate_target run function cartographer_custom_statuses:apply_status/apply/conditions/predicate_target with storage cartographer:custom_statuses apply[0].conditions
 execute unless score $condition_failed ca.apply_status_conditions matches 1.. if data storage cartographer:custom_statuses apply[0].conditions.affected_times run function cartographer_custom_statuses:apply_status/apply/conditions/affected_times with storage cartographer:custom_statuses apply[0].conditions

@@ -1,5 +1,6 @@
 {
     "values":[
-      "carto_event:event/custom_statuses/silenced/delete_projectile"
+      "carto_event:event/custom_statuses/silenced/delete_projectile",
+      "cartographer_custom_statuses:apply_status/apply/fire_projectile"
     ]
   }

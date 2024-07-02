@@ -1,4 +1,3 @@
-
 #Remove working data
 data remove storage bbl:pldata sudo_root.working_data
 #Store id in storage

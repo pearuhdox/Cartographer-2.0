@@ -1,8 +1,15 @@
+scoreboard players set $type_is_self ca.apply_status_conditions 0
+scoreboard players set $type_is_target ca.apply_status_conditions 0
+
 data modify storage cartographer:custom_statuses apply[0].owner set from storage bbl:pldata sudo_root.working_data.bbl.name
 $data modify storage cartographer:custom_statuses apply[0].action set value "$(action)"
 $data modify storage cartographer:custom_statuses apply[0].type set value "$(type)"
+data modify storage cartographer:custom_statuses apply[0].range set from storage cartographer:custom_statuses apply[0].conditions.range
+data modify storage cartographer:custom_statuses apply[0].limit set from storage cartographer:custom_statuses apply[0].conditions.limit
 
-function cartographer_custom_statuses:apply_status/apply/check_conditions with storage cartographer:custom_statuses apply[0]
+$scoreboard players set $type_is_$(type) ca.apply_status_conditions 1
+
+$function cartographer_custom_statuses:apply_status/apply/check_conditions/type/$(action) with storage cartographer:custom_statuses apply[0]
 
 #FUNCTION TAG HERE
 

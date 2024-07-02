@@ -155,6 +155,7 @@ scoreboard objectives add ca.sneak minecraft.custom:minecraft.sneak_time
 scoreboard objectives add ca.swim minecraft.custom:minecraft.swim_one_cm
 scoreboard objectives add ca.water_walk minecraft.custom:minecraft.walk_under_water_one_cm
 
+scoreboard objectives add ca.jump minecraft.custom:minecraft.jump
 
 # Marker for reading tags in LTOS on entities [I;304092441,0,0,1]
 # 12201519-0000-0000-0000-000000000001

@@ -1,2 +1,4 @@
+execute unless score $condition_failed ca.apply_status_conditions matches 1.. if data storage cartographer:custom_statuses apply[0].conditions.tag_user run function cartographer_custom_statuses:apply_status/apply/conditions/tag_user with storage cartographer:custom_statuses apply[0].tag_user
+
 execute unless score $condition_failed ca.apply_status_conditions matches 1.. if data storage cartographer:custom_statuses apply[0].conditions.predicate_user run function cartographer_custom_statuses:apply_status/apply/conditions/predicate_user with storage cartographer:custom_statuses apply[0].conditions
 execute unless score $condition_failed ca.apply_status_conditions matches 1.. if data storage cartographer:custom_statuses apply[0].conditions.use_times run function cartographer_custom_statuses:apply_status/apply/conditions/use_times with storage cartographer:custom_statuses apply[0].conditions

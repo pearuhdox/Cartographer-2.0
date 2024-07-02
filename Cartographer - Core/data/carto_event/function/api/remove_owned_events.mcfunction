@@ -2,7 +2,6 @@
 ## macro arguments
 ##	- event:	the id of the event
 ##	- type:		the type of event, "orphan", "single_entity", or "targeted"
-$say $(event) | $(type)
 
 $data modify storage carto_event event_clear_macro set value {event:"$(event)",type:"$(type)"}
 execute store result storage carto_event event_clear_macro.current_tick int 1 store result score next_tick= carto_event run scoreboard players get current_tick= carto_event

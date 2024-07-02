@@ -2,6 +2,8 @@ $execute as $(target) at @s positioned ~ ~1 ~ if predicate cartographer_core:per
 $execute as $(target) at @s positioned ~ ~1 ~ if predicate cartographer_core:periodic_tick/8 run particle small_gust ~ ~ ~ 0.2 0.4 0.2 1 1 normal
 $execute as $(target) at @s positioned ~ ~1 ~ if predicate cartographer_core:periodic_tick/8 run playsound minecraft:entity.breeze.idle_air hostile @a[distance=..12] ~ ~ ~ 0.5 0.75
 
+$execute as $(target) at @s unless entity @s[tag=ca.has_custom_status_windblast] run function carto_event:event/custom_statuses/windblast/first_tick
+
 $execute as $(target) at @s run scoreboard players operation @s ca.windblast_hp_past = @s ca.windblast_hp
 $execute as $(target) at @s store result score @s ca.windblast_hp run data get entity @s Health 10
 
