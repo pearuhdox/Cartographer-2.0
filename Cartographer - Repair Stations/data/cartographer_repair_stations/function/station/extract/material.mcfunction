@@ -21,12 +21,14 @@ execute unless score $wooden ca.repair_station_state matches 1.. if score $coppe
 execute unless score $wooden ca.repair_station_state matches 1.. if score $emerald ca.repair_station_state matches 1.. run data modify storage bbl:vanilla_clear sudo_root.item_id set value "minecraft:emerald"
 execute unless score $wooden ca.repair_station_state matches 1.. if score $carrot ca.repair_station_state matches 1.. run data modify storage bbl:vanilla_clear sudo_root.item_id set value "minecraft:carrot"
 execute unless score $wooden ca.repair_station_state matches 1.. if score $warped ca.repair_station_state matches 1.. run data modify storage bbl:vanilla_clear sudo_root.item_id set value "minecraft:warped_fungus"
+execute unless score $wooden ca.repair_station_state matches 1.. if score $breeze_rod ca.repair_station_state matches 1.. run data modify storage bbl:vanilla_clear sudo_root.item_id set value "minecraft:breeze_rod"
 
 execute unless score $wooden ca.repair_station_state matches 1.. if score $ink ca.repair_station_state matches 1.. run data modify storage bbl:vanilla_clear sudo_root.item_id set value "minecraft:ink_sac"
 execute unless score $wooden ca.repair_station_state matches 1.. if score $ender ca.repair_station_state matches 1.. run data modify storage bbl:vanilla_clear sudo_root.item_id set value "minecraft:ender_pearl"
 execute unless score $wooden ca.repair_station_state matches 1.. if score $gunpowder ca.repair_station_state matches 1.. run data modify storage bbl:vanilla_clear sudo_root.item_id set value "minecraft:gunpowder"
 execute unless score $wooden ca.repair_station_state matches 1.. if score $glowstone ca.repair_station_state matches 1.. run data modify storage bbl:vanilla_clear sudo_root.item_id set value "minecraft:glowstone"
 execute unless score $wooden ca.repair_station_state matches 1.. if score $blaze_powder ca.repair_station_state matches 1.. run data modify storage bbl:vanilla_clear sudo_root.item_id set value "minecraft:blaze_powder"
+execute unless score $wooden ca.repair_station_state matches 1.. if score $blaze_rod ca.repair_station_state matches 1.. run data modify storage bbl:vanilla_clear sudo_root.item_id set value "minecraft:blaze_rod"
 
 execute unless score $wooden ca.repair_station_state matches 1.. if score $slime ca.repair_station_state matches 1.. run data modify storage bbl:vanilla_clear sudo_root.item_id set value "minecraft:slime_ball"
 execute unless score $wooden ca.repair_station_state matches 1.. if score $magma ca.repair_station_state matches 1.. run data modify storage bbl:vanilla_clear sudo_root.item_id set value "minecraft:magma_cream"

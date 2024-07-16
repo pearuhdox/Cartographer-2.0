@@ -8,8 +8,8 @@ data merge entity 31182015-1851-6191-8192-000000000007 {Glowing:1b,glow_color_ov
 
 data modify entity 31182015-1851-6191-8192-000000000008 text set value '[{"text":"[","color":"white","italic":false},{"keybind":"key.attack","color":"aqua","italic":false},{"text":"] to repair the item.\\n","color":"white","italic":false},{"text":"[","color":"white","italic":false},{"keybind":"key.use","color":"aqua","italic":false},{"text":"] to return the item.","color":"white","italic":false}]'
 
-execute as 31182015-1851-6191-8192-000000000007 at @s if data storage cartographer_repair_stations:item_input data.components.minecraft:custom_data.CustomRepair.material run function cartographer_repair_stations:station/identify_custom_material
-execute as 31182015-1851-6191-8192-000000000007 at @s unless data storage cartographer_repair_stations:item_input data.components.minecraft:custom_data.CustomRepair.material run function cartographer_repair_stations:station/identify_material
+execute as 31182015-1851-6191-8192-000000000007 at @s if data storage cartographer_repair_stations:item_input data.components.minecraft:custom_data.custom_repair.material run function cartographer_repair_stations:station/identify_custom_material
+execute as 31182015-1851-6191-8192-000000000007 at @s unless data storage cartographer_repair_stations:item_input data.components.minecraft:custom_data.custom_repair.material run function cartographer_repair_stations:station/identify_material
 
 function cartographer_repair_stations:station/create_cost_text
 

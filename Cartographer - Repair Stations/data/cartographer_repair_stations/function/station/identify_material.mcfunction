@@ -18,12 +18,14 @@ scoreboard players set $emerald ca.repair_station_state 0
 scoreboard players set $carrot ca.repair_station_state 0
 scoreboard players set $warped ca.repair_station_state 0
 scoreboard players set $prismarine ca.repair_station_state 0
+scoreboard players set $breeze_rods ca.repair_station_state 0
 
 scoreboard players set $ink ca.repair_station_state 0
 scoreboard players set $ender ca.repair_station_state 0
 scoreboard players set $gunpowder ca.repair_station_state 0
 scoreboard players set $glowstone ca.repair_station_state 0
 scoreboard players set $blaze_powder ca.repair_station_state 0
+scoreboard players set $blaze_rod ca.repair_station_state 0
 
 scoreboard players set $slime ca.repair_station_state 0
 scoreboard players set $magma ca.repair_station_state 0
@@ -117,3 +119,6 @@ execute if entity @s[nbt={item:{id:"minecraft:shield"}}] run scoreboard players 
 
 execute if entity @s[nbt={item:{id:"minecraft:carrot_on_a_stick"}}] run scoreboard players set $carrot ca.repair_station_state 4
 execute if entity @s[nbt={item:{id:"minecraft:warped_fungus_on_a_stick"}}] run scoreboard players set $warped ca.repair_station_state 4
+
+execute if score $maces_use_breeze_rods ca.repair_station_state matches 1.. if entity @s[nbt={item:{id:"minecraft:mace"}}] run scoreboard players set $breeze_rod ca.repair_station_state 4
+execute unless score $maces_use_breeze_rods ca.repair_station_state matches 1.. if entity @s[nbt={item:{id:"minecraft:mace"}}] run scoreboard players set $quartz ca.repair_station_state 4

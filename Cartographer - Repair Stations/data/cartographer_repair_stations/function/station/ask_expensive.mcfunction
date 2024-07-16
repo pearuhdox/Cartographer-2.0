@@ -34,12 +34,14 @@ execute if score $emerald ca.repair_station_state matches 1.. run data modify st
 execute if score $carrot ca.repair_station_state matches 1.. run data modify storage bbl:vanilla_clear sudo_root.item_id set value "minecraft:carrot"
 execute if score $warped ca.repair_station_state matches 1.. run data modify storage bbl:vanilla_clear sudo_root.item_id set value "minecraft:warped_fungus"
 execute if score $prismarine ca.repair_station_state matches 1.. run data modify storage bbl:vanilla_clear sudo_root.item_id set value "minecraft:prismarine_shard"
+execute if score $breeze_rod ca.repair_station_state matches 1.. run data modify storage bbl:vanilla_clear sudo_root.item_id set value "minecraft:breeze_rod"
 
 execute if score $ink ca.repair_station_state matches 1.. run data modify storage bbl:vanilla_clear sudo_root.item_id set value "minecraft:ink_sac"
 execute if score $ender ca.repair_station_state matches 1.. run data modify storage bbl:vanilla_clear sudo_root.item_id set value "minecraft:ender_pearl"
 execute if score $gunpowder ca.repair_station_state matches 1.. run data modify storage bbl:vanilla_clear sudo_root.item_id set value "minecraft:gunpowder"
 execute if score $glowstone ca.repair_station_state matches 1.. run data modify storage bbl:vanilla_clear sudo_root.item_id set value "minecraft:glowstone"
 execute if score $blaze_powder ca.repair_station_state matches 1.. run data modify storage bbl:vanilla_clear sudo_root.item_id set value "minecraft:blaze_powder"
+execute if score $blaze_rod ca.repair_station_state matches 1.. run data modify storage bbl:vanilla_clear sudo_root.item_id set value "minecraft:blaze_rod"
 
 execute if score $slime ca.repair_station_state matches 1.. run data modify storage bbl:vanilla_clear sudo_root.item_id set value "minecraft:slime_ball"
 execute if score $magma ca.repair_station_state matches 1.. run data modify storage bbl:vanilla_clear sudo_root.item_id set value "minecraft:magma_cream"
@@ -73,12 +75,14 @@ execute if score $emerald ca.repair_station_state matches 1.. run scoreboard pla
 execute if score $carrot ca.repair_station_state matches 1.. run scoreboard players operation $mat_cost ca.repair_station_state = $carrot ca.repair_station_state 
 execute if score $warped ca.repair_station_state matches 1.. run scoreboard players operation $mat_cost ca.repair_station_state = $warped ca.repair_station_state 
 execute if score $prismarine ca.repair_station_state matches 1.. run scoreboard players operation $mat_cost ca.repair_station_state = $prismarine ca.repair_station_state 
+execute if score $breeze_rod ca.repair_station_state matches 1.. run scoreboard players operation $mat_cost ca.repair_station_state = $breeze_rod ca.repair_station_state 
 
 execute if score $ink ca.repair_station_state matches 1.. run scoreboard players operation $mat_cost ca.repair_station_state = $ink ca.repair_station_state 
 execute if score $ender ca.repair_station_state matches 1.. run scoreboard players operation $mat_cost ca.repair_station_state = $ender ca.repair_station_state 
 execute if score $gunpowder ca.repair_station_state matches 1.. run scoreboard players operation $mat_cost ca.repair_station_state = $gunpowder ca.repair_station_state 
 execute if score $glowstone ca.repair_station_state matches 1.. run scoreboard players operation $mat_cost ca.repair_station_state = $glowstone ca.repair_station_state 
 execute if score $blaze_powder ca.repair_station_state matches 1.. run scoreboard players operation $mat_cost ca.repair_station_state = $blaze_powder ca.repair_station_state 
+execute if score $blaze_rod ca.repair_station_state matches 1.. run scoreboard players operation $mat_cost ca.repair_station_state = $blaze_rod ca.repair_station_state 
 
 execute if score $slime ca.repair_station_state matches 1.. run scoreboard players operation $mat_cost ca.repair_station_state = $slime ca.repair_station_state 
 execute if score $magma ca.repair_station_state matches 1.. run scoreboard players operation $mat_cost ca.repair_station_state = $magma ca.repair_station_state 
