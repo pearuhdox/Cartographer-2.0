@@ -58,11 +58,11 @@ execute if score $ca_timer_mod ca.timer matches 0 run scoreboard players set $60
 #Run all Cartographer Effects from Core Timers.
 #function cartographer_charon:loop/tick/base
 function cartographer_charon:tick
-function cartographer_custom_enchantments:loop/tick
-function cartographer_custom_statuses:loop/tick
-function cartographer_loot_additions:loop/tick
-function cartographer_mimics:loop/tick
-function cartographer_mob_abilities:loop/tick
+#function cartographer_custom_enchantments:loop/tick
+#function cartographer_custom_statuses:loop/tick
+#function cartographer_loot_additions:loop/tick
+#function cartographer_mimics:loop/tick
+#function cartographer_mob_abilities:loop/tick
 function cartographer_repair_stations:loop/tick
 
 execute unless score $value ca.player_id matches 0.. run scoreboard players set $value ca.player_id 0
@@ -80,11 +80,6 @@ execute if score $creeper_check ca.systems matches 1.. as @e[type=marker,tag=ca.
 
 execute if score $projectile_check ca.systems matches 1.. run scoreboard players remove $projectile_check ca.systems 1
 execute if score $creeper_check ca.systems matches 1.. run scoreboard players remove $creeper_check ca.systems 1
-
-# Cartographer Event Handler !
-execute store result storage cartographer_core:carto_event macro.current_tick int 1 store result score next_tick= ca.carto_event run scoreboard players add current_tick= ca.carto_event 1
-execute store result storage cartographer_core:carto_event macro.next_tick int 1 run scoreboard players add next_tick= ca.carto_event 1
-function cartographer_core:carto_event/tick/event_check with storage cartographer_core:carto_event macro
 
 #Specifically reset logout score here as the last possible thing to ever be run
 scoreboard players set @a ca.logout 0

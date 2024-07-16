@@ -1,0 +1,1 @@
+$function carto_event:api/create_single_entity_event {event:"custom_statuses/asleep",duration:$(duration),delay:000,parameters:{drowsy_time:40,damage_multiplier:$(damage_multiplier),block_duration:400},merge_behavior:"custom"}

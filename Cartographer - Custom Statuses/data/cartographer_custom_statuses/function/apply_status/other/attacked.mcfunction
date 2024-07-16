@@ -1,0 +1,3 @@
+execute if entity @s[tag=ca.apply_status_attacked_self] run function cartographer_custom_statuses:apply_status/apply/start_loop {location:"bbl:pldata",path:"sudo_root.working_data.cartographer.apply_status_data.actions",action:"attacked",type:"self"}
+
+execute if entity @s[tag=ca.apply_status_attacked_target] run function cartographer_custom_statuses:apply_status/apply/start_loop {location:"bbl:pldata",path:"sudo_root.working_data.cartographer.apply_status_data.actions",action:"attacked",type:"target"}

@@ -30,3 +30,14 @@ attribute @s minecraft:generic.follow_range modifier remove ca.blindness
 attribute @s minecraft:generic.step_height modifier remove ca.grounded
 attribute @s minecraft:generic.gravity modifier remove ca.grounded
 attribute @s minecraft:generic.jump_strength modifier remove ca.grounded
+
+attribute @s minecraft:generic.follow_range modifier remove ca.asleep_follow_range
+attribute @s minecraft:generic.movement_speed modifier remove ca.asleep_speed
+attribute @s minecraft:generic.attack_damage modifier remove ca.asleep_damage
+
+attribute @s minecraft:generic.follow_range modifier remove ca.stunned_follow_range
+attribute @s minecraft:generic.movement_speed modifier remove ca.stunned_speed
+attribute @s minecraft:generic.attack_damage modifier remove ca.stunned_damage
+
+attribute @s minecraft:generic.movement_speed modifier remove ca.dazed_speed
+attribute @s minecraft:generic.attack_damage modifier remove ca.dazed_damage

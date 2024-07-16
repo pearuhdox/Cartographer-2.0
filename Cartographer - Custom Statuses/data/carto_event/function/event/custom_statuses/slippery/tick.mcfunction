@@ -28,6 +28,9 @@ $execute as $(target) at @s unless score @s ca.slippery_cooldown matches 1.. if 
 
 $execute as $(target) at @s if data storage carto_event current[-1].parameters.tick_command run function carto_event:command_api/tick_command with storage carto_event current[-1].parameters
 
+$execute as $(target) at @s if entity @s[tag=ca.unstoppable] run tag @s remove ca.has_custom_status_slippery
+$execute as $(target) at @s if entity @s[tag=ca.unstoppable] run return 0
+
 $execute as $(target) at @s if entity @s[tag=ca.cleansed] run tag @s remove ca.has_custom_status_slippery
 $execute as $(target) at @s if entity @s[tag=ca.cleansed] run return 0
 return 1

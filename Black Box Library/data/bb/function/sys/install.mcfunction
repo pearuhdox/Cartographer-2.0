@@ -79,7 +79,7 @@ scoreboard objectives add bbl.hpm_queue dummy
 scoreboard objectives add bbl.p_health health
 
 scoreboard objectives add bbl.hth.post_hp dummy
-scoreboard objectives add bbl.hth.pre_hp dummy 
+scoreboard objectives add bbl.hth.pre_hp dummy
 scoreboard objectives add bbl.hth.amount dummy
 
 #Actions

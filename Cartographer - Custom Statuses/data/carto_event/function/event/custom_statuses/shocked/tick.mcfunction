@@ -7,10 +7,11 @@ $execute as $(target) at @s unless score @s ca.shock_tick matches 0.. run scoreb
 $execute as $(target) at @s run scoreboard players add @s ca.shock_tick 1
 
 $execute as $(target) at @s if score @s ca.shock_tick matches $(tick_rate).. run data modify storage cartographer_custom_statuses:shocked data set value {}
-$execute as $(target) at @s if score @s ca.shock_tick matches $(tick_rate).. run data modify storage cartographer_custom_statuses:shocked data.targets set from storage carto_event current[-1].parameters.targets
+$execute as $(target) at @s if score @s ca.shock_tick matches $(tick_rate).. run data modify storage cartographer_custom_statuses:shocked data.targets set value 1
 $execute as $(target) at @s if score @s ca.shock_tick matches $(tick_rate).. run data modify storage cartographer_custom_statuses:shocked data.damage set from storage carto_event current[-1].parameters.damage
 $execute as $(target) at @s if score @s ca.shock_tick matches $(tick_rate).. run data modify storage cartographer_custom_statuses:shocked data.range set from storage carto_event current[-1].parameters.range
 $execute as $(target) at @s if score @s ca.shock_tick matches $(tick_rate).. run data modify storage cartographer_custom_statuses:shocked data.chain set from storage carto_event current[-1].parameters.chain
+$execute as $(target) at @s if score @s ca.shock_tick matches $(tick_rate).. run data modify storage cartographer_custom_statuses:shocked data.bounce_time set from storage carto_event current[-1].parameters.bounce_time
 $execute as $(target) at @s if score @s ca.shock_tick matches $(tick_rate).. run data modify storage cartographer_custom_statuses:shocked data.origin set from storage carto_event current[-1].parameters.target
 $execute as $(target) at @s if score @s ca.shock_tick matches $(tick_rate).. run data modify storage cartographer_custom_statuses:shocked data.owner set from storage carto_event current[-1].parameters.owner
 $execute as $(target) at @s if score @s ca.shock_tick matches $(tick_rate).. run data modify storage cartographer_custom_statuses:shocked data.proc_command set from storage carto_event current[-1].parameters.proc_command

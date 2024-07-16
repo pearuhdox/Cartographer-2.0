@@ -1,1 +1,1 @@
-$function carto_event:api/create_single_entity_event {event:"custom_statuses/frozen",duration:$(duration),delay:000,parameters:{shatter_damage:$(shatter_damage),block_duration:600},merge_behavior:"custom"}
+$function carto_event:api/create_single_entity_event {event:"custom_statuses/frozen",duration:$(duration),delay:000,parameters:{shatter_damage:$(shatter_damage),block_duration:400},merge_behavior:"custom"}

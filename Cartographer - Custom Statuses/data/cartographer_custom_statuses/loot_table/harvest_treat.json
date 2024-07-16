@@ -1,0 +1,22 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:polished_blackstone_button",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_data": "{new_harvest_treat:1b}"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

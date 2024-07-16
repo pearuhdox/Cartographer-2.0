@@ -1,1 +1,1 @@
-$function carto_event:api/create_single_entity_event {event:"custom_statuses/confused",duration:$(duration),delay:000,parameters:{damage:4,range:12,speed_bonus:0.2,kb_bonus:0.0,kbr_bonus:0,attack_bonus:0,block_duration:600,tick_command:"",proc_command:""},merge_behavior:"custom"}
+$function carto_event:api/create_single_entity_event {event:"custom_statuses/confused",duration:$(duration),delay:000,parameters:{damage:4,range:12,speed_bonus:0.2,kb_bonus:0.0,kbr_bonus:0,attack_bonus:0,block_duration:400,tick_command:"",proc_command:""},merge_behavior:"custom"}

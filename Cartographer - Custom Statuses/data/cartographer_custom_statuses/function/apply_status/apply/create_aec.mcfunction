@@ -1,0 +1,2 @@
+summon area_effect_cloud ~ ~-0.2 ~ {Particle:{type:"entity_effect"},potion_contents:{potion:"minecraft:awkward",custom_color:16777215,custom_effects:[{id:"minecraft:nausea",amplifier:0,duration:2,show_particles:0b,show_icon:0b,ambient:1b}]},ReapplicationDelay:20,Radius:3f,RadiusPerTick:-0.005f,RadiusOnUse:-0.4f,Duration:600,WaitTime:10,Tags:["ca.apply_status_custom_aec","ca.new"]}
+execute as @e[type=area_effect_cloud,tag=ca.new,tag=ca.apply_status_custom_aec,sort=nearest,limit=1] at @s run function cartographer_custom_statuses:apply_status/apply/create_aec_branch

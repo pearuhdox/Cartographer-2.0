@@ -1,0 +1,1 @@
+$function carto_event:api/create_single_entity_event {event:"custom_statuses/stunned",duration:$(duration),delay:000,parameters:{dazed_time:$(dazed_time),block_duration:400},merge_behavior:"custom"}

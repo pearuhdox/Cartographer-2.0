@@ -1,0 +1,1 @@
+$execute anchored eyes positioned ^ ^0.3 ^ rotated $(rotation) 0 positioned ^ ^ ^0.55 run particle dust{color:[0.910,0.886,0.745],scale:1.2} ~ ~ ~ 0 0 0 1 0 force

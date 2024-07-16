@@ -1,3 +1,5 @@
+execute if data storage carto_event current[-1].parameters.proc_command run function carto_event:command_api/proc_command with storage carto_event current[-1].parameters
+
 scoreboard players remove @s ca.barricade_shields 1
 
 execute if entity @s[type=!player] run playsound minecraft:item.shield.block hostile @a[distance=..16] ~ ~ ~ 0.8 0.75

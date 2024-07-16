@@ -1,1 +1,1 @@
-$function carto_event:api/create_single_entity_event {event:"custom_statuses/shocked",duration:$(duration),delay:000,parameters:{tick_rate:20,damage:$(amount),targets:2,range:4,chain:0,owner:"$(owner)",tick_command:"",proc_command:""},merge_behavior:"custom"}
+$function carto_event:api/create_single_entity_event {event:"custom_statuses/shocked",duration:$(duration),delay:000,parameters:{tick_rate:20,damage:$(amount),targets:2,range:4,chain:0,bounce_time:4,owner:"$(owner)",tick_command:"",proc_command:""},merge_behavior:"custom"}

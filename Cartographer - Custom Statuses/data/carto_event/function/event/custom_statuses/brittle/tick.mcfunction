@@ -13,7 +13,8 @@ $execute as $(target) at @s if score @s ca.brittle_hp_past > @s ca.brittle_hp ru
 
 #$execute as $(target) at @s run scoreboard players remove @s ca.brittle_cdl 1
 
-execute if score duration= carto_event matches 1 run scoreboard players set $detonate_brittle ca.status_var 2
+$execute if score duration= carto_event matches 1 run scoreboard players set $fail_percent ca.status_var $(fail_percent)
+execute if score duration= carto_event matches 1 if score $fail_percent ca.status_var matches 1.. run scoreboard players set $detonate_brittle ca.status_var 2
 
 $execute if score $detonate_brittle ca.status_var matches 1.. run scoreboard players set $brittle_dmg ca.status_var $(damage)
 execute if score $detonate_brittle ca.status_var matches 1.. run scoreboard players operation $brittle_dmg ca.status_var *= $10 ca.CONSTANT
@@ -26,8 +27,10 @@ execute if score $detonate_brittle ca.status_var matches 1.. run scoreboard play
 execute if score $detonate_brittle ca.status_var matches 1.. run data modify storage cartographer_custom_statuses:brittle data set value {}
 execute if score $detonate_brittle ca.status_var matches 1.. run data modify storage cartographer_custom_statuses:brittle data.owner set from storage carto_event current[-1].parameters.owner
 execute if score $detonate_brittle ca.status_var matches 1.. run data modify storage cartographer_custom_statuses:brittle data.range set from storage carto_event current[-1].parameters.range
+execute if score $detonate_brittle ca.status_var matches 1.. run data modify storage cartographer_custom_statuses:brittle data.targets set from storage carto_event current[-1].parameters.targets
+execute if score $detonate_brittle ca.status_var matches 1.. run data modify storage cartographer_custom_statuses:brittle data.windup_time set from storage carto_event current[-1].parameters.windup_time
 execute if score $detonate_brittle ca.status_var matches 1.. store result storage cartographer_custom_statuses:brittle data.damage double 0.1 run scoreboard players get $brittle_dmg ca.status_var
-$execute if score $detonate_brittle ca.status_var matches 1.. as $(target) at @s positioned ~ ~1 ~ run function carto_event:event/custom_statuses/brittle/damage with storage cartographer_custom_statuses:brittle data
+$execute if score $detonate_brittle ca.status_var matches 1.. as $(target) at @s positioned ~ ~1 ~ run function carto_event:event/custom_statuses/brittle/create_detonate with storage cartographer_custom_statuses:brittle data
 $execute if score $detonate_brittle ca.status_var matches 1.. as $(target) at @s run function carto_event:command_api/proc_command with storage carto_event current[-1].parameters
 
 $execute as $(target) at @s run tag @s remove ca.has_custom_status_brittle

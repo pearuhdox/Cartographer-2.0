@@ -65,6 +65,8 @@ scoreboard objectives add ca.oiled_cauterize dummy
 scoreboard objectives add ca.slippery_val dummy
 scoreboard objectives add ca.slippery_cooldown dummy
 
+scoreboard objectives add ca.harvest_var dummy
+
 scoreboard objectives add ca.stealth_silent dummy
 scoreboard objectives add ca.stealth_powered dummy
 scoreboard objectives add ca.stealth_keep_armor dummy
@@ -74,11 +76,27 @@ scoreboard objectives add ca.stealth_value dummy
 
 scoreboard objectives add ca.barricade_shields dummy
 
+scoreboard objectives add ca.evasion_amount dummy
+scoreboard objectives add ca.evasion_chance dummy
+scoreboard objectives add ca.evasion_entropy dummy
+
+scoreboard objectives add ca.nullify_cooldown dummy
+
 scoreboard objectives add ca.absorption_tick dummy
 
 scoreboard objectives add ca.regeneration_tick dummy
 
+scoreboard objectives add ca.asleep_time dummy
+scoreboard objectives add ca.asleep_var dummy
+scoreboard objectives add ca.asleep_hp dummy
+scoreboard objectives add ca.asleep_hp_past dummy
 
+scoreboard objectives add ca.stunned_var dummy
+scoreboard objectives add ca.stunned_time dummy
+scoreboard objectives add ca.stunned_direction dummy
+scoreboard objectives add ca.dazed_time dummy
+scoreboard objectives add ca.dazed_value dummy
+scoreboard objectives add ca.dazed_max dummy
 
 scoreboard objectives add ca.status_var dummy
 scoreboard objectives add ca.stat_calc_var dummy
@@ -101,6 +119,7 @@ scoreboard objectives add ca.apply_status_check dummy
 scoreboard objectives add ca.apply_status_data dummy
 scoreboard objectives add ca.apply_status_conditions dummy
 
+scoreboard objectives add ca.lc_var dummy
 
 #Setup Description Space
 function cartographer_custom_statuses:inspector/storage_setup
