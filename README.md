@@ -1,40 +1,42 @@
-# Cartographer
-Cartographer is a collection of datapacks for Minecraft 1.19.1 that add custom enchantments, mob attacks, and more, for use in CTM maps.
+# Cartographer v2
+Cartographer (version 2.0) is a collection of datapacks for Minecraft 1.21 and onward that add custom enchantments, statuses, mob attacks, and more. These mechanics are primarily designed around CTM (Complete the Monument) maps, but can be used for a variety of projects.
 
 Each folder above is a separate datapack which can be dropped into a Minecraft world's "datapack" folder. Once placed inside the datapack folder, and the world has been reloaded, they will add new features to the game.
 
 ## Libraries
 
-Cartographer uses a couple different libraries produced by myself and other talented individuals. For your convenience, the Cartographer download includes slightly modified versions of each that allow the pack's reload message to display that they are installed. You are free to use the versions of these libraries provided as is from the other creators directly. Cartographer makes no functional changes to any of these packs.
+Cartographer uses a couple different libraries produced by myself and other talented individuals. For your convenience, the Cartographer download includes these libraries for you, with permission from creators and links to their original project pages (when they exist). You are free to use the versions of these libraries provided as is from the other creators directly. Cartographer makes no functional changes to any of these packs.
 
-**Player Data Storage** by Suso (https://github.com/5uso/Player-Data-Storage) - Stores custom nbt data for players.
+**Black Box Library** by RockNRed and PearUhDox (https://github.com/RockNRui/Black-Box-Library) - A variety of useful datapack utilities.
 
 **Entity ID and Hit Detection System (aka ehid)** by gibbsly (https://github.com/gibbsly/ehid) - Detects when entities and players hit each other.
 
-**Custom Damage Library (aka CDL)** by RockNRed, PearUhDox, and gibbsly (https://github.com/RockNRui/Common-Damage-Library) - Deals custom damage and healing of varying types via function calls (to players and mobs)
+**Loot Table Output Specificity (aka ltos)** by gibbsly (https://github.com/gibbsly/ltos) - Detects when blocks are broken and entities are killed, and where.
 
-Cartographer also features a library called "Core" which schedules and runs all other Datapacks in the collection. Core is the only library which cannot be found outside of Cartographer.
+**Display Item Entity System** by RockNRed, PearUhDox, and gibbsly (https://github.com/RockNRui/Display-Item-Entity-System) - A datapack that allows for placing items in world and giving them interaction hitboxes to be picked up with.
+
+**Player Motion** by Mulv (and the Minecraft Commands Discord) originally by BigPapi - (https://github.com/MulverineX/player_motion) A library datapack that allows for giving a player specified precise motion.
+
+**Mob Motion** by Suso, CooleyBrekka, and PearUhDox - A library datapack that allows for giving entities specified precise motion.
+
+Cartographer also features a datapack called "Core" which schedules and runs all other Datapacks in the collection. Core is the only library which cannot be found outside of Cartographer.
 
 ## Modules
 
-**Custom Enchantments** - An addition of over 50 new Enchantments that can be added to weapons, tools, and armor.
+These are the currently available Cartographer modules for 1.21.
 
-**Custom Statuses** - Additional status effects which can be applied to mobs (not players), both beneficial and negative.
+**Charon** - Adds various alternatives to the standard death system in Minecraft.
 
-**Mimics** - Adds a new mob to the game: The Mimic. Mimics disguise themselves as chests and attack unsuspecting victims when opened.
-
-**Mob Abilities** - An addition of over 30 new custom ability attacks which can be given to all hostile mobs. Includes active telegraphed attacks with fancy particles, passive traits that can be applied to mobs, and traits that trigger when a mob dies.
+**Custom Statuses** - Additional status effects which can be applied to mobs and players, both beneficial and negative. Also adds an item api for applying those effects to mobs from items.
 
 **Repair Stations** - Adds a structure which can be spawned in world which serves as an alternative to anvils. It can repair gear with increasing and controllable costs, and protects gear lost from durability destroying it.
-
-**Loot Additions** - Adds a variety of ways to place custom loot into the world more immersively. From custom player head drops, to special item frames and armor stands, and more!
 
 ## Documentation and Contact
 
 To get started, you can refer to the documentation wiki for Cartographer, which can be found here.
-https://github.com/pearuhdox/Cartographer/wiki/Home
+https://github.com/pearuhdox/Cartographer-2.0/wiki
 
 The credits and license information for the pack can be found in game with the pack installed, as well as here.
-https://github.com/pearuhdox/Cartographer/wiki/Acknowledgements:-Licensing-and-Credits
+https://github.com/pearuhdox/Cartographer-2.0/wiki/Acknowledgements-and-Licensing
 
-If you would like to report a bug, or suggest a feature, please use the Issue tracker on Github to do so. Please check to see if a report has already been made before you make one. You can also contact me on discord (PearUhDox#0002) or via business email (pearuhdox@gmail.com) for any detailed questions (though I may not get back to you as quickly via those.) Please do not report bugs or suggest features in my socials.
+If you would like to report a bug, or suggest a feature, please use the Issue tracker on Github to do so. Please check to see if a report has already been made before you make one. You can also contact me on discord (pearuhdox) for any detailed questions. Please do not report bugs or suggest features in my socials.
