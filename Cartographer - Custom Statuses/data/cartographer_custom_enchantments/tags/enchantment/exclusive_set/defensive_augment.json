@@ -1,0 +1,8 @@
+{
+    "values": [
+      "cartographer_custom_statuses:evasion",
+      "cartographer_custom_statuses:nullifying",
+      "cartographer_custom_statuses:regeneration",
+      "cartographer_custom_statuses:shielding"
+    ]
+  }

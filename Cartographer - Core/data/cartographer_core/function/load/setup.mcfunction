@@ -8,6 +8,11 @@
 
 function cartographer_core:helper/heal_player/load
 
+#Enchantment Calculator Scores
+scoreboard objectives add ca.ench_var dummy
+scoreboard objectives add ca.calc_type dummy
+scoreboard objectives add ca.popup_var dummy
+
 scoreboard objectives add ca.carto_event dummy
 
 scoreboard objectives add ca.player_id dummy
@@ -244,6 +249,7 @@ scoreboard objectives add ca.equip_netherite_helmet minecraft.used:minecraft.net
 scoreboard objectives add ca.equip_turtle_helmet minecraft.used:minecraft.turtle_helmet
 
 scoreboard objectives add ca.core_delay_check dummy
+scoreboard objectives add ca.attribute_cleanse_delay dummy
 
 scoreboard objectives add ca.damage_queue dummy
 
@@ -287,6 +293,7 @@ scoreboard players set $75 ca.CONSTANT 75
 scoreboard players set $77 ca.CONSTANT 77
 scoreboard players set $80 ca.CONSTANT 80
 scoreboard players set $81 ca.CONSTANT 81
+scoreboard players set $85 ca.CONSTANT 85
 scoreboard players set $90 ca.CONSTANT 90
 scoreboard players set $120 ca.CONSTANT 120
 scoreboard players set $125 ca.CONSTANT 125

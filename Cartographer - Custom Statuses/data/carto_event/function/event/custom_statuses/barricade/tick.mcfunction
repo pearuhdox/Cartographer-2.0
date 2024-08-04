@@ -13,8 +13,9 @@ $execute as $(target) at @s if score @s ca.barricade_shields matches $(cap).. ru
 scoreboard players set $remove_barricade ca.status_var 0
 
 $execute as $(target) at @s if score duration= carto_event matches 2.. run tag @s add ca.has_custom_status_barricade
-$execute as $(target) at @s if score duration= carto_event matches 2.. run effect give @s resistance 1 9 true
- 
+$execute as $(target) at @s if entity @s[type=player] if score duration= carto_event matches 2.. run effect give @s resistance 1 9 true
+$execute as $(target) at @s unless entity @s[type=player] if score duration= carto_event matches 2.. run effect give @s resistance 1 2 true
+
 $execute as $(target) at @s if score duration= carto_event matches 2.. unless entity @s[tag=ca.has_custom_status_nullify] unless entity @s[tag=ca.has_custom_status_nullify_ench] if entity @s[nbt={HurtTime:9s}] run function carto_event:event/custom_statuses/barricade/remove_shield
 $execute as $(target) at @s if score duration= carto_event matches 2.. if entity @s[tag=ca.has_custom_status_nullify] if score @s ca.nullify_cooldown matches 1.. if entity @s[nbt={HurtTime:9s}] run function carto_event:event/custom_statuses/barricade/remove_shield
 $execute as $(target) at @s if score duration= carto_event matches 2.. if entity @s[tag=ca.has_custom_status_nullify_ench] if score @s ca.nullify_cooldown matches 1.. if entity @s[nbt={HurtTime:9s}] run function carto_event:event/custom_statuses/barricade/remove_shield

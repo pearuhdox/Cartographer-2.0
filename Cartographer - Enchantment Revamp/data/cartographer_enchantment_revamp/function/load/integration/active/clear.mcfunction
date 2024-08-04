@@ -1,0 +1,2 @@
+data remove storage loe:datapacks active_datapacks
+schedule function cartographer_custom_attributes:load/integration/active/set 1t

@@ -19,6 +19,14 @@ $execute if score duration= carto_event matches 15.. as $(target) at @s if score
 $execute if score duration= carto_event matches 15.. as $(target) at @s if score @s ca.confused_reassign matches 3 if data storage carto_event current[-1].parameters.proc_command run function carto_event:command_api/proc_command with storage carto_event current[-1].parameters
 
 $execute if score duration= carto_event matches 15.. as $(target) at @s if score @s ca.confused_reassign matches 2 run damage @s $(damage) cartographer_custom_statuses:status_damage by @e[type=#bb:hostile,sort=nearest,limit=1,distance=0.25..$(range),tag=!ca.has_custom_status_confused]
+
+$execute if score duration= carto_event matches 15.. as $(target) at @s if score @s ca.confused_reassign matches 2 run scoreboard players add @s ca.confused_buffer $(damage)
+$execute if score duration= carto_event matches 15.. as $(target) at @s if score @s ca.confused_reassign matches 2 if score @s ca.confused_buffer matches 2.. anchored eyes positioned ^ ^-0.75 ^ run function cartographer_core:handlers/text_popup/indicator/create {scale:0.7,text:"-❤",color:"#ad40ec",buffer_name:"confused"}
+
+$execute if score duration= carto_event matches 15.. as $(target) at @s if score @s ca.confused_reassign matches 2 anchored eyes positioned ^ ^0.2 ^ run function carto_event:event/custom_statuses/confused/vfx
+$execute if score duration= carto_event matches 15.. as $(target) at @s if score @s ca.confused_reassign matches 2 anchored eyes positioned ^ ^0.2 ^ run function carto_event:event/custom_statuses/confused/vfx
+$execute if score duration= carto_event matches 15.. as $(target) at @s if score @s ca.confused_reassign matches 2 anchored eyes positioned ^ ^0.2 ^ run function carto_event:event/custom_statuses/confused/vfx
+
 $execute if score duration= carto_event matches 15.. as $(target) at @s if score @s ca.confused_reassign matches 1.. run scoreboard players remove @s ca.confused_reassign 1
 
 $execute if score duration= carto_event matches 15.. as $(target) at @s run attribute @s minecraft:generic.movement_speed modifier remove ca.confused_speed

@@ -1,0 +1,15 @@
+{
+  "values": [
+    "cartographer_custom_statuses:evasion",
+    "cartographer_custom_statuses:nullifying",
+    "cartographer_custom_statuses:regeneration",
+    "cartographer_custom_statuses:shielding",
+    "cartographer_custom_statuses:mightiness",
+    "cartographer_custom_statuses:swiftness",
+    "cartographer_custom_statuses:hastiness",
+    "cartographer_custom_statuses:stealthiness",
+    "cartographer_custom_statuses:sapper",
+    "cartographer_custom_statuses:lifeblood",
+    "cartographer_custom_statuses:bracing"
+  ]
+}

@@ -1,0 +1,1 @@
+scoreboard players set $custom_attributes ca.installed 1

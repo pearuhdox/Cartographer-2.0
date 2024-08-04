@@ -19,3 +19,6 @@ execute if score $effect_new_cap ca.merge_var < $effect_old_cap ca.merge_var run
 
 
 execute if score $effect_new_duration ca.merge_var < $effect_old_duration ca.merge_var run data modify storage carto_event new.duration set from storage carto_event old.duration
+
+#Copy over old tick count every time
+data modify storage carto_event new.parameters.tick_count set from storage carto_event old.parameters.tick_count

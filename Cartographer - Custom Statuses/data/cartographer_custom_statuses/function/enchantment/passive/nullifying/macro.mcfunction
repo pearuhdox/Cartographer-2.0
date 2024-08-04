@@ -1,0 +1,1 @@
+$function carto_event:api/create_single_entity_event {event:"custom_statuses/nullify/enchantment",duration:25,delay:000,parameters:{tick_count:$(time),cooldown:$(time),tick_command:"",proc_command:""},merge_behavior:"custom"}

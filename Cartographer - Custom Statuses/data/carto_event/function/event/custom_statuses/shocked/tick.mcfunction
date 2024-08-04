@@ -17,6 +17,10 @@ $execute as $(target) at @s if score @s ca.shock_tick matches $(tick_rate).. run
 $execute as $(target) at @s if score @s ca.shock_tick matches $(tick_rate).. run data modify storage cartographer_custom_statuses:shocked data.proc_command set from storage carto_event current[-1].parameters.proc_command
 
 $execute as $(target) at @s if score @s ca.shock_tick matches $(tick_rate).. run damage @s $(damage) cartographer_custom_statuses:status_damage by $(owner)
+
+$execute as $(target) at @s if score @s ca.shock_tick matches $(tick_rate).. run scoreboard players add @s ca.shock_buffer $(damage)
+$execute as $(target) at @s if score @s ca.shock_tick matches $(tick_rate).. if score @s ca.shock_buffer matches 2.. anchored eyes positioned ^ ^-0.75 ^ run function cartographer_core:handlers/text_popup/indicator/create {scale:0.7,text:"-❤",color:"#9e41df",buffer_name:"shock"}
+
 $execute as $(target) at @s if score @s ca.shock_tick matches $(tick_rate).. run playsound minecraft:entity.firework_rocket.twinkle_far hostile @a[distance=..12] ~ ~ ~ 0.75 1.5
 $execute as $(target) at @s if score @s ca.shock_tick matches $(tick_rate).. if data storage carto_event current[-1].parameters.proc_command run function carto_event:command_api/proc_command with storage carto_event current[-1].parameters
 

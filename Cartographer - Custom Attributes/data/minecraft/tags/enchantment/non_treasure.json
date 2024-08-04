@@ -1,0 +1,19 @@
+{
+    "values": [
+      "cartographer_custom_attributes:celerity",
+      "cartographer_custom_attributes:dexterity",
+      "cartographer_custom_attributes:finesse",
+      "cartographer_custom_attributes:immovable",
+      "cartographer_custom_attributes:precision",
+      "cartographer_custom_attributes:vitality",
+      "cartographer_custom_attributes:agility",
+      "cartographer_custom_attributes:extended",
+      "cartographer_custom_attributes:handling",
+      "cartographer_custom_attributes:traveling",
+      "cartographer_custom_attributes:amplitude",
+      "cartographer_custom_attributes:lucky",
+      "cartographer_custom_attributes:perfection",
+      "cartographer_custom_attributes:resonance",
+      "cartographer_custom_attributes:superiority"
+    ]
+  }

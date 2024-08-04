@@ -1,5 +1,8 @@
 $damage @s $(damage) cartographer_custom_statuses:status_damage by $(owner)
 
+$scoreboard players add @s ca.windblast_buffer $(damage)
+execute if score @s ca.windblast_buffer matches 2.. anchored eyes positioned ^ ^-0.75 ^ run function cartographer_core:handlers/text_popup/indicator/create {scale:0.7,text:"-❤",color:"#bbecec",buffer_name:"windblast"}
+
 tag @s add co_rotation_lock
 $execute facing entity $(owner) feet run tp @s ~ ~ ~ ~ 0
 

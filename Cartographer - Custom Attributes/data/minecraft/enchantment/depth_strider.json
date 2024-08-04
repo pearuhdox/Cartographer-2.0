@@ -1,0 +1,32 @@
+{
+    "anvil_cost": 4,
+    "description": {
+      "translate": "enchantment.minecraft.depth_strider"
+    },
+    "effects": {
+      "minecraft:tick": [
+          {
+            "effect": {
+            "type": "minecraft:run_function",
+            "function": "cartographer_custom_attributes:enchantment/vanilla/depth_strider/schedule"
+            }
+          }
+        ]
+    },
+    "max_level": 3,
+    "max_cost": {
+      "base": 25,
+      "per_level_above_first": 10
+    },
+    "min_cost": {
+      "base": 10,
+      "per_level_above_first": 10
+    },
+    "slots": [
+      "armor",
+      "offhand"
+    ],
+    "supported_items": "#cartographer_core:enchant_support/passive_armor",
+    "primary_items": "#minecraft:enchantable/foot_armor",
+    "weight": 5
+  }

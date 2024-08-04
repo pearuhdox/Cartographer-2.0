@@ -1,0 +1,1 @@
+$function carto_event:api/create_single_entity_event {event:"custom_statuses/barricade",duration:300,delay:000,parameters:{shields:1,cap:$(value),tick_command:"",run_command:""},merge_behavior:"custom"}

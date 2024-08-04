@@ -1,0 +1,8 @@
+{
+    "values": [
+      "cartographer_custom_statuses:mightiness",
+      "cartographer_custom_statuses:swiftness",
+      "cartographer_custom_statuses:hastiness",
+      "cartographer_custom_statuses:stealthiness"
+    ]
+  }

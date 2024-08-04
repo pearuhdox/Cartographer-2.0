@@ -1,0 +1,156 @@
+{
+  "description": {
+    "text": "Hazard Protection"
+  },
+  "exclusive_set": "#cartographer_enchantment_revamp:exclusive_set/protection_type",
+  "supported_items": "#cartographer_core:enchant_support/passive_armor",
+  "primary_items": "#cartographer_core:enchant_support/passive_armor",
+  "weight": 10,
+  "max_level": 10,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 8
+  },
+  "max_cost": {
+    "base": 13,
+    "per_level_above_first": 8
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "armor",
+    "offhand",
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:damage_protection": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 2.0,
+            "per_level_above_first": 2.0
+          }
+        },
+        "requirements": {
+          "condition": "minecraft:any_of",
+          "terms": [
+            {
+              "condition": "minecraft:damage_source_properties",
+              "predicate": {
+                "tags": [
+                  {
+                    "id": "minecraft:bypasses_invulnerability",
+                    "expected": false
+                  },
+                  {
+                    "id": "minecraft:bypasses_armor",
+                    "expected": true
+                  }
+                ]
+              }
+            },
+            {
+              "condition": "minecraft:damage_source_properties",
+              "predicate": {
+                "tags": [
+                  {
+                    "id": "minecraft:is_fire",
+                    "expected": true
+                  },
+                  {
+                    "id": "minecraft:bypasses_invulnerability",
+                    "expected": false
+                  }
+                ]
+              }
+            },
+            {
+              "condition": "minecraft:damage_source_properties",
+              "predicate": {
+                "tags": [
+                  {
+                    "id": "minecraft:bypasses_invulnerability",
+                    "expected": false
+                  },
+                  {
+                    "id": "minecraft:is_explosion",
+                    "expected": true
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "minecraft:post_attack": [
+      {
+        "enchanted": "victim",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "cartographer_enchantment_revamp:enchantment/protection/hazard_protection/schedule_hit"
+        },
+        "requirements": {
+          "condition": "minecraft:any_of",
+          "terms": [
+            {
+              "condition": "minecraft:damage_source_properties",
+              "predicate": {
+                "tags": [
+                  {
+                    "id": "minecraft:bypasses_invulnerability",
+                    "expected": false
+                  },
+                  {
+                    "id": "minecraft:bypasses_armor",
+                    "expected": true
+                  }
+                ]
+              }
+            },
+            {
+              "condition": "minecraft:damage_source_properties",
+              "predicate": {
+                "tags": [
+                  {
+                    "id": "minecraft:is_fire",
+                    "expected": true
+                  },
+                  {
+                    "id": "minecraft:bypasses_invulnerability",
+                    "expected": false
+                  }
+                ]
+              }
+            },
+            {
+              "condition": "minecraft:damage_source_properties",
+              "predicate": {
+                "tags": [
+                  {
+                    "id": "minecraft:bypasses_invulnerability",
+                    "expected": false
+                  },
+                  {
+                    "id": "minecraft:is_explosion",
+                    "expected": true
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "cartographer_enchantment_revamp:enchantment/protection/hazard_protection/schedule"
+        }
+      }
+    ]
+  }
+}

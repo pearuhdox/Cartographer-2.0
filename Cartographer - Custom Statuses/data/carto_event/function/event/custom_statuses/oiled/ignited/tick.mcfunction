@@ -55,6 +55,10 @@ $execute if score duration= carto_event matches 1 run scoreboard players set $wi
 $execute if score duration= carto_event matches 1 as $(target) at @s run damage @s $(damage) cartographer_custom_statuses:status_damage by $(owner)
 $execute if score duration= carto_event matches 1 as $(target) at @s run damage @s 0.0001 cartographer_custom_statuses:status_damage by $(owner)
 
+$execute if score duration= carto_event matches 1 as $(target) at @s run scoreboard players add @s ca.oiled_buffer $(damage)
+$execute if score duration= carto_event matches 1 as $(target) at @s if score @s ca.oiled_buffer matches 2.. anchored eyes positioned ^ ^-0.75 ^ run function cartographer_core:handlers/text_popup/indicator/create {scale:0.85,text:"-❤",color:"#ec8c2c",buffer_name:"oiled"}
+
+
 $execute if score duration= carto_event matches 1 as $(target) at @s if data storage carto_event current[-1].parameters.proc_command run function carto_event:command_api/proc_command with storage carto_event current[-1].parameters
 
 $execute if score duration= carto_event matches 1 as $(target) at @s if score $wildfire_targets ca.oiled_cauterize matches 1.. run function carto_event:event/custom_statuses/oiled/ignited/wildfire with storage cartographer_custom_statuses:oiled data

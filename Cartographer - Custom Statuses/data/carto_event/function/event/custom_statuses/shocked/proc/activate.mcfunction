@@ -17,6 +17,10 @@ $execute as $(target) at @s anchored eyes positioned ^ ^ ^0.25 run function cart
 
 $execute as $(target) at @s run damage @s $(damage) cartographer_custom_statuses:status_damage by $(owner)
 
+$execute as $(target) at @s if score @s ca.shock_tick matches $(tick_rate).. run scoreboard players add @s ca.shock_buffer $(damage)
+$execute as $(target) at @s if score @s ca.shock_tick matches $(tick_rate).. if score @s ca.shock_buffer matches 2.. anchored eyes positioned ^ ^-0.75 ^ run function cartographer_core:handlers/text_popup/indicator/create {scale:0.7,text:"-❤",color:"#9e41df",buffer_name:"shock"}
+
+
 $execute as $(target) at @s run playsound minecraft:entity.firework_rocket.twinkle_far hostile @a[distance=..12] ~ ~ ~ 0.5 2
 
 $execute if score $chain_ct ca.status_var matches 1.. run data modify storage cartographer_custom_statuses:shocked_proc data.origin set value "$(target)"

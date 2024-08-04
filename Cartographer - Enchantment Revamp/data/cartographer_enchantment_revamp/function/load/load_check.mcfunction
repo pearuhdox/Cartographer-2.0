@@ -1,0 +1,1 @@
+scoreboard players set $enchantment_revamp ca.installed 1

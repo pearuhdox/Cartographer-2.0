@@ -11,23 +11,15 @@ scoreboard players enable @a ca.options_trig
 execute unless score $gl_reload_msg ca.gamerule matches 100 as @a at @s run playsound minecraft:item.book.page_turn master @s ~ ~ ~ 1 0.75
 
 function cartographer_charon:load/load_check
-function cartographer_custom_durability:load/load_check
+function cartographer_custom_attributes:load/load_check
 function cartographer_custom_enchantments:load/load_check
 function cartographer_custom_statuses:load/load_check
-function cartographer_loot_additions:load/load_check
-function cartographer_loot_table_tweaks:load/load_check
-function cartographer_mimics:load/load_check
-function cartographer_mob_abilities:load/load_check
+#function cartographer_loot_additions:load/load_check
+#function cartographer_loot_table_tweaks:load/load_check
+#function cartographer_mimics:load/load_check
+#function cartographer_mob_abilities:load/load_check
+function cartographer_enchantment_revamp:load/load_check
 function cartographer_repair_stations:load/load_check
-
-function bb:load_check
-function cd:load_check
-function delta:load_check
-function entityid:load_check
-function suso.player_data:load_check
-function inv:load_check
-function motion:load_check
-function dies:load_check
 
 scoreboard players set $z_detect_packs ca.installed 0
 

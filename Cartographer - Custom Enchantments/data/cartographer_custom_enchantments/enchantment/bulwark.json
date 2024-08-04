@@ -1,0 +1,55 @@
+{
+  "description": {
+    "text": "Bulwark"
+  },
+  "supported_items": "#cartographer_core:enchant_support/passive",
+  "exclusive_set": "#cartographer_custom_enchantments:exclusive_set/secondary_defense",
+  "weight": 5,
+  "max_level": 7,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 15
+  },
+  "max_cost": {
+    "base": 25,
+    "per_level_above_first": 15
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "armor",
+    "offhand"
+  ],
+  "effects": {
+    "minecraft:damage_protection": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 3,
+            "per_level_above_first": 3
+          }
+        },
+        "requirements": {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.bulwark_time": {
+              "min": 1
+            }
+          }
+        }
+      }
+    ],
+    "minecraft:post_attack": [
+      {
+        "enchanted": "victim",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "cartographer_custom_enchantments:enchantment/passive/bulwark/schedule"
+        }
+      }
+    ]
+  }
+}

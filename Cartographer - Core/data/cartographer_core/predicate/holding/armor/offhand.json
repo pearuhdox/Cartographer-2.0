@@ -1,0 +1,12 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "slots": {
+        "weapon.offhand": {
+          "items": "#cartographer_core:wearables"
+        }
+      }
+    }
+  }
+  

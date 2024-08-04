@@ -1,1 +1,0 @@
-execute as @s[type=#cartographer_custom_statuses:has_effects,tag=!ca.proj_custom_check] at @s run function cartographer_custom_statuses:inflict/start

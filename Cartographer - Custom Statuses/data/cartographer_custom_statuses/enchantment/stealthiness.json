@@ -1,0 +1,38 @@
+{
+  "description": {
+    "text": "Stealthiness"
+  },
+  "supported_items": "#cartographer_core:enchant_support/passive",
+  "exclusive_set": "#cartographer_custom_enchantments:exclusive_set/kill_buff",
+  "weight": 4,
+  "max_level": 5,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 9
+  },
+  "max_cost": {
+    "base": 20,
+    "per_level_above_first": 9
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "armor",
+    "offhand",
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "cartographer_custom_statuses:enchantment/passive/stealthiness/schedule"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {}
+        }
+      }
+    ]
+  }
+}

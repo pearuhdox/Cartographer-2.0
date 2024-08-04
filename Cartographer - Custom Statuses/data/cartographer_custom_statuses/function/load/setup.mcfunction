@@ -1,11 +1,33 @@
+#Enchantment Scoreboards
+
+#Enchantment Scoreboard Levels
+scoreboard objectives add ca.ench_evasion_lvl dummy
+scoreboard objectives add ca.ench_nullifying_lvl dummy
+scoreboard objectives add ca.ench_regeneration_lvl dummy
+scoreboard objectives add ca.ench_shielding_lvl dummy
+
+scoreboard objectives add ca.ench_mightiness_lvl dummy
+scoreboard objectives add ca.ench_swiftness_lvl dummy
+scoreboard objectives add ca.ench_hastiness_lvl dummy
+scoreboard objectives add ca.ench_stealthiness_lvl dummy
+
+scoreboard objectives add ca.ench_sapper_lvl dummy
+scoreboard objectives add ca.ench_lifeblood_lvl dummy
+scoreboard objectives add ca.ench_bracing_lvl dummy
+
+#Enchantment scoreboards functionality
+scoreboard objectives add ca.shielding_time dummy
 
 #Setup all necessary scoreboard commands.
 scoreboard objectives add ca.wither_tick dummy
+scoreboard objectives add ca.wither_buffer dummy
 
 scoreboard objectives add ca.bleed_amt dummy
+scoreboard objectives add ca.bleed_buffer dummy
 
 scoreboard objectives add ca.shock_tick dummy
 scoreboard objectives add ca.shock_raycast dummy
+scoreboard objectives add ca.shock_buffer dummy
 
 scoreboard objectives add ca.infect_tick dummy
 scoreboard objectives add ca.infect_raycast dummy
@@ -15,8 +37,10 @@ scoreboard objectives add ca.infect_damage dummy
 scoreboard objectives add ca.infect_range dummy
 scoreboard objectives add ca.infect_death_dmg dummy
 scoreboard objectives add ca.infect_duration dummy
+scoreboard objectives add ca.infect_buffer dummy
 
 scoreboard objectives add ca.confused_reassign dummy
+scoreboard objectives add ca.confused_buffer dummy
 
 scoreboard objectives add ca.morphed_persistance dummy
 scoreboard objectives add ca.morphed_ai dummy
@@ -27,17 +51,24 @@ scoreboard objectives add ca.siphon_strength_player dummy
 scoreboard objectives add ca.siphon_timer dummy
 scoreboard objectives add ca.siphon_player_test dummy
 scoreboard objectives add ca.siphon_heal dummy
+scoreboard objectives add ca.siphon_heal_buffer dummy
+
+scoreboard objectives add ca.evocation_buffer dummy
 
 scoreboard objectives add ca.exposed_hp dummy
 scoreboard objectives add ca.exposed_hp_past dummy
+scoreboard objectives add ca.exposed_buffer dummy
 
 scoreboard objectives add ca.brittle_hp dummy
 scoreboard objectives add ca.brittle_hp_past dummy
 scoreboard objectives add ca.brittle_buildup dummy
+scoreboard objectives add ca.brittle_buffer dummy
 
 scoreboard objectives add ca.shackled_cdl dummy
 scoreboard objectives add ca.shackled_hp dummy
 scoreboard objectives add ca.shackled_hp_past dummy
+scoreboard objectives add ca.shackled_buffer dummy
+scoreboard objectives add ca.shackled_buffer_tenths dummy
 
 scoreboard objectives add ca.shackled_spread dummy
 scoreboard objectives add ca.shackled_targets dummy
@@ -51,6 +82,7 @@ scoreboard objectives add ca.windblast_hp dummy
 scoreboard objectives add ca.windblast_hp_past dummy
 scoreboard objectives add ca.windblast_cdl dummy
 scoreboard objectives add ca.windblast_raycast dummy
+scoreboard objectives add ca.windblast_buffer dummy
 
 scoreboard objectives add ca.frozen_ai dummy
 scoreboard objectives add ca.frozen_fuse dummy
@@ -62,8 +94,12 @@ scoreboard objectives add ca.oiled_warmup dummy
 scoreboard objectives add ca.oiled_duration dummy
 scoreboard objectives add ca.oiled_cauterize dummy
 
+scoreboard objectives add ca.oiled_buffer dummy
+
 scoreboard objectives add ca.slippery_val dummy
 scoreboard objectives add ca.slippery_cooldown dummy
+
+scoreboard objectives add ca.slippery_crash_buffer dummy
 
 scoreboard objectives add ca.harvest_var dummy
 
@@ -83,13 +119,17 @@ scoreboard objectives add ca.evasion_entropy dummy
 scoreboard objectives add ca.nullify_cooldown dummy
 
 scoreboard objectives add ca.absorption_tick dummy
+scoreboard objectives add ca.absorption_buffer dummy
 
 scoreboard objectives add ca.regeneration_tick dummy
+scoreboard objectives add ca.regeneration_buffer dummy
 
 scoreboard objectives add ca.asleep_time dummy
 scoreboard objectives add ca.asleep_var dummy
 scoreboard objectives add ca.asleep_hp dummy
 scoreboard objectives add ca.asleep_hp_past dummy
+
+scoreboard objectives add ca.asleep_buffer dummy
 
 scoreboard objectives add ca.stunned_var dummy
 scoreboard objectives add ca.stunned_time dummy

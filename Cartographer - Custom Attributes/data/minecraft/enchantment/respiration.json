@@ -1,0 +1,32 @@
+{
+    "anvil_cost": 4,
+    "description": {
+      "translate": "enchantment.minecraft.respiration"
+    },
+    "effects": {
+      "minecraft:tick": [
+          {
+            "effect": {
+            "type": "minecraft:run_function",
+            "function": "cartographer_custom_attributes:enchantment/vanilla/respiration/schedule"
+            }
+          }
+        ]
+    },
+    "max_cost": {
+      "base": 40,
+      "per_level_above_first": 10
+    },
+    "max_level": 3,
+    "min_cost": {
+      "base": 10,
+      "per_level_above_first": 10
+    },
+    "slots": [
+      "armor",
+      "offhand"
+    ],
+    "supported_items": "#cartographer_core:enchant_support/passive_armor",
+    "primary_items": "#minecraft:enchantable/head_armor",
+    "weight": 5
+  }

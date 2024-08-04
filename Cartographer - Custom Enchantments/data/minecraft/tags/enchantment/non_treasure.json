@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "cartographer_custom_enchantments:ethereal",
+    "cartographer_custom_enchantments:hardened",
+    "cartographer_custom_enchantments:poise",
+    "cartographer_custom_enchantments:steadfast",
+    "cartographer_custom_enchantments:bulwark",
+    "cartographer_custom_enchantments:sidestep",
+    "cartographer_custom_enchantments:courageous",
+    "cartographer_custom_enchantments:unseen",
+    "cartographer_custom_enchantments:tenacity",
+    "cartographer_custom_enchantments:inertia"
+  ]
+}

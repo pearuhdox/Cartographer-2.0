@@ -1,5 +1,7 @@
-$execute as $(target) at @s positioned ~ ~1 ~ if predicate cartographer_core:periodic_tick/4 run particle entity_effect{color:[1.000,0.388,0.839,1.00]} ~ ~ ~ 0.25 0.25 0.25 1 1 normal
+$execute as $(target) at @s positioned ~ ~1 ~ unless entity @s[type=player] if predicate cartographer_core:periodic_tick/4 run particle entity_effect{color:[1.000,0.388,0.839,1.00]} ~ ~ ~ 0.25 0.25 0.25 1 1 normal
 $execute as $(target) at @s positioned ~ ~1 ~ unless entity @s[type=player] unless score @s ca.nullify_cooldown matches 1.. if predicate cartographer_core:periodic_tick/4 run particle minecraft:dust{color:[1.000,0.388,0.839],scale:2.5} ~ ~ ~ 0.35 0.35 0.35 0 1 normal
+
+$execute as $(target) at @s run scoreboard players set @s ca.nullify_cooldown $(tick_count)
 
 $execute as $(target) at @s if score duration= carto_event matches 1 run scoreboard players set @s ca.nullify_cooldown 0
 $execute as $(target) at @s run tag @s remove ca.has_custom_status_nullify_ench
@@ -19,6 +21,9 @@ $execute as $(target) at @s if score duration= carto_event matches 25.. if entit
 
 $execute as $(target) at @s if score duration= carto_event matches 2.. unless score @s ca.nullify_cooldown matches 1.. if entity @s[nbt={HurtTime:8s}] run function carto_event:event/custom_statuses/nullify/use with storage carto_event current[-1].parameters
 $execute as $(target) at @s if score duration= carto_event matches 2.. if score @s ca.nullify_cooldown matches 1.. run scoreboard players remove @s ca.nullify_cooldown 1
+
+$execute as $(target) at @s store result storage carto_event current[-1].parameters.tick_count int 1 run scoreboard players get @s ca.nullify_cooldown
+
 
 $execute as $(target) at @s if data storage carto_event current[-1].parameters.tick_command run function carto_event:command_api/tick_command with storage carto_event current[-1].parameters
 

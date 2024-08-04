@@ -1,0 +1,33 @@
+{
+  "description": {
+    "text": "Vitality"
+  },
+  "exclusive_set": "#cartographer_custom_attributes:exclusive_set/stat_armor",
+  "supported_items": "#cartographer_core:enchant_support/passive",
+  "primary_items": "#cartographer_core:enchant_support/passive_armor",
+  "weight": 3,
+  "max_level": 10,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 11
+  },
+  "max_cost": {
+    "base": 12,
+    "per_level_above_first": 11
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "armor",
+    "offhand"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "cartographer_custom_attributes:enchantment/stat/vitality/schedule"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+    "anvil_cost": 4,
+    "description": {
+      "translate": "enchantment.minecraft.swift_sneak"
+    },
+    "effects": {
+      "minecraft:tick": [
+          {
+            "effect": {
+            "type": "minecraft:run_function",
+            "function": "cartographer_custom_attributes:enchantment/vanilla/swift_sneak/schedule"
+            }
+          }
+        ]
+    },
+    "max_cost": {
+      "base": 75,
+      "per_level_above_first": 25
+    },
+    "max_level": 10,
+    "min_cost": {
+      "base": 25,
+      "per_level_above_first": 25
+    },
+    "slots": [
+      "armor",
+      "offhand"
+    ],
+    "supported_items": "#cartographer_core:enchant_support/passive_armor",
+    "primary_items": "#minecraft:enchantable/foot_armor",
+    "weight": 1
+  }

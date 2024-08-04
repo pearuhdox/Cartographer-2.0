@@ -2,17 +2,22 @@
 function cartographer_core:systems/quick_drop/shulker/tick
 #End of Quick Drop Shulker Box System
 
+attribute @s player.entity_interaction_range modifier add ca.carto_hitbox_fix 0.5 add_value
+
 execute if score @s ca.glass_cdl matches 1.. run scoreboard players remove @s ca.glass_cdl 1
 
 execute if entity @s[tag=!ca.init] run function cartographer_core:load/init_player
 
 execute unless score @s ca.player_id matches 1.. run function cartographer_core:helper/player_id/assign
 
+execute if entity @s[tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. if score $check ca.core_delay_check matches 1.. run function cartographer_core:helper/inventory/do_inventory_check
 execute if score @s ca.core_delay_check matches 1.. run scoreboard players remove @s ca.core_delay_check 1
-execute if entity @s[tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. run function cartographer_core:helper/inventory/do_inventory_check
+
+execute if score @s ca.attribute_cleanse_delay matches 3.. run function cartographer_core:remove_attributes
+execute if score @s ca.attribute_cleanse_delay matches 1.. run scoreboard players add @s ca.attribute_cleanse_delay 1
 
 #Check Inspector When Inventory Updates
-execute if entity @s[tag=ca.core_check_inv] run function cartographer_core:systems/inspector/find_slot
+execute if entity @s[tag=ca.core_check_inv_inspector] run function cartographer_core:systems/inspector/find_slot
 
 #Reduce Combat Score and Attack Speed Handler Calcs - Do these before running player effects
 execute if score @s ca.combat_score matches 1.. run scoreboard players remove @s ca.combat_score 1
@@ -25,12 +30,13 @@ execute if score @s ca.death_check matches 1.. run scoreboard players set @s ca.
 
 function cartographer_custom_enchantments:loop/tick/player
 function cartographer_custom_statuses:loop/tick/player
-function cartographer_mob_abilities:loop/tick/player
-function cartographer_mimics:loop/tick/player
+#function cartographer_mob_abilities:loop/tick/player
+#function cartographer_mimics:loop/tick/player
 function cartographer_repair_stations:loop/tick/player
 
 #Remove the inventory check from core here so it can be used in other functionality
-execute unless score @s ca.core_delay_check matches 1.. run tag @s remove ca.core_check_inv
+#execute unless score @s ca.core_delay_check matches 1.. run tag @s remove ca.core_check_inv
+tag @s remove ca.core_check_inv_inspector
 
 #Enable triggers
 scoreboard players enable @s menu
