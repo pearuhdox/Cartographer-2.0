@@ -1,6 +1,13 @@
 
 #Setup all necessary scoreboard commands.
 scoreboard objectives add ca.stat_var dummy
+scoreboard objectives add ca.attr_var dummy
+
+scoreboard objectives add ca.attr_apply_var dummy
+
+scoreboard objectives add ca.uuid_check dummy
+
+scoreboard objectives add ca.custom_trident dummy
 
 #Setup scoreboards for level tracking
 scoreboard objectives add ca.ench_celerity_lvl dummy
@@ -32,6 +39,131 @@ scoreboard objectives add ca.ench_soul_speed_lvl dummy
 
 #Values for enchantments working
 
+#Values for attributes
+scoreboard objectives add ca.attr_ranged_damage_value dummy
+scoreboard objectives add ca.attr_ranged_damage_percent dummy
+scoreboard objectives add ca.attr_ranged_damage_total dummy
+
+scoreboard objectives add ca.attr_ranged_velocity_value dummy
+scoreboard objectives add ca.attr_ranged_velocity_percent dummy
+scoreboard objectives add ca.attr_ranged_velocity_total dummy
+
+
+scoreboard objectives add ca.attr_combat_luck_value dummy
+scoreboard objectives add ca.attr_combat_luck_percent dummy
+scoreboard objectives add ca.attr_combat_luck_total dummy
+
+
+scoreboard objectives add ca.attr_potion_size_value dummy
+scoreboard objectives add ca.attr_potion_size_percent dummy
+scoreboard objectives add ca.attr_potion_size_total dummy
+
+
+scoreboard objectives add ca.attr_aoe_size_value dummy
+scoreboard objectives add ca.attr_aoe_size_percent dummy
+scoreboard objectives add ca.attr_aoe_size_total dummy
+
+scoreboard objectives add ca.attr_aoe_damage_value dummy
+scoreboard objectives add ca.attr_aoe_damage_percent dummy
+scoreboard objectives add ca.attr_aoe_damage_total dummy
+
+
+scoreboard objectives add ca.attr_status_inflict_damage_value dummy
+scoreboard objectives add ca.attr_status_inflict_damage_percent dummy
+scoreboard objectives add ca.attr_status_inflict_damage_total dummy
+
+scoreboard objectives add ca.attr_status_inflict_duration_value dummy
+scoreboard objectives add ca.attr_status_inflict_duration_percent dummy
+scoreboard objectives add ca.attr_status_inflict_duration_total dummy
+
+scoreboard objectives add ca.attr_status_inflict_potency_value dummy
+scoreboard objectives add ca.attr_status_inflict_potency_percent dummy
+scoreboard objectives add ca.attr_status_inflict_potency_total dummy
+
+
+scoreboard objectives add ca.attr_status_apply_duration_value dummy
+scoreboard objectives add ca.attr_status_apply_duration_percent dummy
+scoreboard objectives add ca.attr_status_apply_duration_total dummy
+
+scoreboard objectives add ca.attr_status_apply_potency_value dummy
+scoreboard objectives add ca.attr_status_apply_potency_percent dummy
+scoreboard objectives add ca.attr_status_apply_potency_total dummy
+
+
+scoreboard objectives add ca.attr_healing_power_value dummy
+scoreboard objectives add ca.attr_healing_power_percent dummy
+scoreboard objectives add ca.attr_healing_power_total dummy
+
+
+scoreboard objectives add ca.attr_precise_hit_chance_value dummy
+scoreboard objectives add ca.attr_precise_hit_chance_percent dummy
+scoreboard objectives add ca.attr_precise_hit_chance_total dummy
+
+scoreboard objectives add ca.attr_precise_hit_damage_value dummy
+scoreboard objectives add ca.attr_precise_hit_damage_percent dummy
+scoreboard objectives add ca.attr_precise_hit_damage_total dummy
+
+
+scoreboard objectives add ca.attr_chaining_damage_value dummy
+scoreboard objectives add ca.attr_chaining_damage_percent dummy
+scoreboard objectives add ca.attr_chaining_damage_total dummy
+
+scoreboard objectives add ca.attr_chaining_chance_value dummy
+scoreboard objectives add ca.attr_chaining_chance_percent dummy
+scoreboard objectives add ca.attr_chaining_chance_total dummy
+
+scoreboard objectives add ca.attr_chaining_amount_value dummy
+scoreboard objectives add ca.attr_chaining_amount_percent dummy
+scoreboard objectives add ca.attr_chaining_amount_total dummy
+
+scoreboard objectives add ca.attr_restrike_damage_value dummy
+scoreboard objectives add ca.attr_restrike_damage_percent dummy
+scoreboard objectives add ca.attr_restrike_damage_total dummy
+
+scoreboard objectives add ca.attr_restrike_chance_value dummy
+scoreboard objectives add ca.attr_restrike_chance_percent dummy
+scoreboard objectives add ca.attr_restrike_chance_total dummy
+
+scoreboard objectives add ca.attr_restrike_amount_value dummy
+scoreboard objectives add ca.attr_restrike_amount_percent dummy
+scoreboard objectives add ca.attr_restrike_amount_total dummy
+
+scoreboard objectives add ca.attr_restrike_rate_value dummy
+scoreboard objectives add ca.attr_restrike_rate_percent dummy
+scoreboard objectives add ca.attr_restrike_rate_total dummy
+
+
+scoreboard objectives add ca.attr_life_drain_chance_value dummy
+scoreboard objectives add ca.attr_life_drain_chance_percent dummy
+scoreboard objectives add ca.attr_life_drain_chance_total dummy
+
+scoreboard objectives add ca.attr_life_drain_amount_value dummy
+scoreboard objectives add ca.attr_life_drain_amount_percent dummy
+scoreboard objectives add ca.attr_life_drain_amount_total dummy
+
+
+#Values for running attributes
+scoreboard objectives add ca.healing_power_cooldown dummy
+scoreboard objectives add ca.healing_power_hp dummy
+scoreboard objectives add ca.healing_power_hp_past dummy
+scoreboard objectives add ca.healing_power_bank dummy
+scoreboard objectives add ca.healing_power_bank_subtract dummy
+
+scoreboard objectives add ca.precise_hit_var dummy
+scoreboard objectives add ca.chaining_hit_var dummy
+scoreboard objectives add ca.restrike_hit_var dummy
+scoreboard objectives add ca.restrike_time dummy
+
+scoreboard objectives add ca.precise_hit_entropy dummy
+scoreboard objectives add ca.restrike_entropy dummy
+scoreboard objectives add ca.chaining_hit_entropy dummy
+scoreboard objectives add ca.life_drain_entropy dummy
+
+scoreboard objectives add ca.life_drain_buffer dummy
+
+#scoreboard objectives add ca.attr_status_duration_value dummy
+#scoreboard objectives add ca.attr_status_duration_percent dummy
+#scoreboard objectives add ca.attr_status_duration_total dummy
 
 #Place extra shulker boxes for Custom Enchantments
 #Auto Charge

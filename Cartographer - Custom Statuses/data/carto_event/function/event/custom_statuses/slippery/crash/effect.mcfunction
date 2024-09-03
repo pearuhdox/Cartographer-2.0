@@ -9,6 +9,7 @@ $execute facing entity $(target) feet run tp @s ~ ~ ~ ~ 0
 
 $scoreboard players set @s co_y $(crash_vertical_kb)
 $scoreboard players set @s co_send -$(crash_horizontal_kb)
-function motion:motion/push
+execute as @s at @s run function motion:motion/push
+
 
 tag @s remove co_rotation_lock

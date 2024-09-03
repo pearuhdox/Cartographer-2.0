@@ -2,6 +2,9 @@
 function cartographer_core:systems/quick_drop/shulker/tick
 #End of Quick Drop Shulker Box System
 
+#execute unless predicate cartographer_core:player/sprinting unless predicate cartographer_core:player/sneaking unless predicate cartographer_core:player/swimming if score @s ca.sprint_active matches 1.. run function cartographer_core:handlers/sprint_bug_check/start
+#execute if predicate cartographer_core:player/sprinting run scoreboard players set @s ca.sprint_active 61
+
 attribute @s player.entity_interaction_range modifier add ca.carto_hitbox_fix 0.5 add_value
 
 execute if score @s ca.glass_cdl matches 1.. run scoreboard players remove @s ca.glass_cdl 1

@@ -1,0 +1,1 @@
+$damage @s $(damage) minecraft:trident by $(owner)

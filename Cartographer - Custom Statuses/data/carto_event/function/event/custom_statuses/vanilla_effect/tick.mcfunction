@@ -1,4 +1,9 @@
-$execute as $(target) at @s if score duration= carto_event matches 1.. run effect give @s $(effect) 1 $(amplifier)
+$execute as $(target) at @s if score duration= carto_event matches 1.. run scoreboard players operation $vanilla_duration ca.status_var = duration= carto_event
+$execute as $(target) at @s if score duration= carto_event matches 1.. run scoreboard players add $vanilla_duration ca.status_var 20
+$execute as $(target) at @s if score duration= carto_event matches 1.. store result storage cartographer:custom_statuses vanilla_duration int 0.05 run scoreboard players get $vanilla_duration ca.status_var
+$execute as $(target) at @s if score duration= carto_event matches 1.. run data modify storage cartographer:custom_statuses vanilla_amplifier set value $(amplifier)
+$execute as $(target) at @s if score duration= carto_event matches 1.. run data modify storage cartographer:custom_statuses vanilla_effect set value "$(effect)"
+$execute as $(target) at @s if score duration= carto_event matches 1.. run function carto_event:event/custom_statuses/vanilla_effect/display with storage cartographer:custom_statuses
 
 scoreboard players set $ve_override ca.status_var 0
 

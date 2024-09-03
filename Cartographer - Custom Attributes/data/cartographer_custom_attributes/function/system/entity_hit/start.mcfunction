@@ -1,0 +1,1 @@
+execute if score @s ca.attr_life_drain_chance_total matches -1999999.. run function cartographer_custom_attributes:custom_attributes/effects/life_drain/start {proc_coeff:"100"}

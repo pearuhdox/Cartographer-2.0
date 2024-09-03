@@ -1,0 +1,2 @@
+$execute as @a[distance=..$(radius)] at @s if score $potion_throw_self ca.apply_status_check matches 1.. run function cartographer_custom_statuses:apply_status/apply/start_loop {location:"cartographer:custom_statuses",path:"active_projectile",action:"potion_land",type:"self"}
+$execute as @e[type=#bb:hostile,distance=..$(radius)] at @s if score $potion_throw_target ca.apply_status_check matches 1.. run function cartographer_custom_statuses:apply_status/apply/start_loop {location:"cartographer:custom_statuses",path:"active_projectile",action:"potion_land",type:"target"}

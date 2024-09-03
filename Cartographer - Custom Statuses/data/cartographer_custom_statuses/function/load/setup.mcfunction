@@ -28,6 +28,7 @@ scoreboard objectives add ca.bleed_buffer dummy
 scoreboard objectives add ca.shock_tick dummy
 scoreboard objectives add ca.shock_raycast dummy
 scoreboard objectives add ca.shock_buffer dummy
+scoreboard objectives add ca.shock_var dummy
 
 scoreboard objectives add ca.infect_tick dummy
 scoreboard objectives add ca.infect_raycast dummy
@@ -38,6 +39,7 @@ scoreboard objectives add ca.infect_range dummy
 scoreboard objectives add ca.infect_death_dmg dummy
 scoreboard objectives add ca.infect_duration dummy
 scoreboard objectives add ca.infect_buffer dummy
+scoreboard objectives add ca.infect_var dummy
 
 scoreboard objectives add ca.confused_reassign dummy
 scoreboard objectives add ca.confused_buffer dummy
@@ -54,6 +56,7 @@ scoreboard objectives add ca.siphon_heal dummy
 scoreboard objectives add ca.siphon_heal_buffer dummy
 
 scoreboard objectives add ca.evocation_buffer dummy
+scoreboard objectives add ca.evocation_var dummy
 
 scoreboard objectives add ca.exposed_hp dummy
 scoreboard objectives add ca.exposed_hp_past dummy
@@ -63,12 +66,14 @@ scoreboard objectives add ca.brittle_hp dummy
 scoreboard objectives add ca.brittle_hp_past dummy
 scoreboard objectives add ca.brittle_buildup dummy
 scoreboard objectives add ca.brittle_buffer dummy
+scoreboard objectives add ca.brittle_var dummy
 
 scoreboard objectives add ca.shackled_cdl dummy
 scoreboard objectives add ca.shackled_hp dummy
 scoreboard objectives add ca.shackled_hp_past dummy
 scoreboard objectives add ca.shackled_buffer dummy
 scoreboard objectives add ca.shackled_buffer_tenths dummy
+scoreboard objectives add ca.shackled_var dummy
 
 scoreboard objectives add ca.shackled_spread dummy
 scoreboard objectives add ca.shackled_targets dummy
@@ -83,6 +88,7 @@ scoreboard objectives add ca.windblast_hp_past dummy
 scoreboard objectives add ca.windblast_cdl dummy
 scoreboard objectives add ca.windblast_raycast dummy
 scoreboard objectives add ca.windblast_buffer dummy
+scoreboard objectives add ca.windblast_var dummy
 
 scoreboard objectives add ca.frozen_ai dummy
 scoreboard objectives add ca.frozen_fuse dummy
@@ -93,6 +99,7 @@ scoreboard objectives add ca.frozen_buildup dummy
 scoreboard objectives add ca.oiled_warmup dummy
 scoreboard objectives add ca.oiled_duration dummy
 scoreboard objectives add ca.oiled_cauterize dummy
+scoreboard objectives add ca.oiled_var dummy
 
 scoreboard objectives add ca.oiled_buffer dummy
 

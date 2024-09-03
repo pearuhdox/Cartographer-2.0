@@ -1,0 +1,5 @@
+execute if score $type_is_target ca.apply_status_conditions matches 1.. if score @s ca.attr_status_inflict_duration_total matches -1999999.. run function cartographer_custom_statuses:apply_status/apply/modify_event/duration with storage cartographer:custom_statuses apply[0]
+execute if score $type_is_target ca.apply_status_conditions matches 1.. if score @s ca.attr_status_inflict_potency_total matches -1999999.. run function cartographer_custom_statuses:apply_status/apply/modify_event/potency with storage cartographer:custom_statuses apply[0]
+
+execute if score $type_is_self ca.apply_status_conditions matches 1.. if score @s ca.attr_status_apply_duration_total matches -1999999.. run function cartographer_custom_statuses:apply_status/apply/modify_event/self_duration with storage cartographer:custom_statuses apply[0]
+execute if score $type_is_self ca.apply_status_conditions matches 1.. if score @s ca.attr_status_apply_potency_total matches -1999999.. run function cartographer_custom_statuses:apply_status/apply/modify_event/self_potency with storage cartographer:custom_statuses apply[0]

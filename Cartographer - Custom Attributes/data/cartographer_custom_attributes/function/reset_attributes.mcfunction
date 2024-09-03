@@ -13,6 +13,7 @@ execute unless score @s ca.ench_soul_speed_lvl matches 1.. run attribute @s mine
 
 
 execute unless score @s ca.ench_agility_lvl matches 1.. run attribute @s minecraft:generic.jump_strength modifier remove ca.agility_stat
+execute unless score @s ca.ench_agility_lvl matches 1.. run attribute @s minecraft:generic.safe_fall_distance modifier remove ca.agility_stat
 execute unless score @s ca.ench_extended_lvl matches 1.. run attribute @s minecraft:player.entity_interaction_range modifier remove ca.extended_stat
 execute unless score @s ca.ench_extended_lvl matches 1.. run attribute @s minecraft:player.block_interaction_range modifier remove ca.extended_stat
 execute unless score @s ca.ench_handling_lvl matches 1.. run attribute @s minecraft:player.mining_efficiency modifier remove ca.handling_stat

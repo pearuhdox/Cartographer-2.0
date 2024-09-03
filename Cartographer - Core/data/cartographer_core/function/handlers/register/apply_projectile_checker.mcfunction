@@ -5,6 +5,8 @@ ride @e[type=marker,tag=ca.new,tag=ca.projectile_checker,limit=1,sort=nearest] m
 execute if score $custom_statuses ca.installed matches 1.. if entity @s[type=!potion,tag=ca.has_status_data] on passengers if entity @s[type=marker,tag=ca.new,tag=ca.projectile_checker] run data modify entity @s data.status_data.projectile_hit set from storage cartographer:custom_statuses projectile
 execute if score $custom_statuses ca.installed matches 1.. if entity @s[type=potion,tag=ca.has_status_data] on passengers if entity @s[type=marker,tag=ca.new,tag=ca.projectile_checker] run data modify entity @s data.status_data.potion_land set from storage cartographer:custom_statuses projectile
 
+execute if score $custom_attributes ca.installed matches 1.. if entity @s[type=potion,tag=ca.has_attribute_data] on passengers if entity @s[type=marker,tag=ca.new,tag=ca.projectile_checker] run data modify entity @s data.attr_data.potion_attr set from storage cartographer:custom_attributes projectile
+
 execute if entity @s[type=#bb:arrow] on passengers if entity @s[type=marker,tag=ca.new,tag=ca.projectile_checker] run tag @s add ca.is_arrow_tracker
 execute if entity @s[type=potion] on passengers if entity @s[type=marker,tag=ca.new,tag=ca.projectile_checker] run tag @s add ca.is_potion_tracker
 execute if entity @s[type=potion,nbt={Item:{id:"minecraft:lingering_potion"}}] on passengers if entity @s[type=marker,tag=ca.new,tag=ca.projectile_checker] run tag @s add ca.is_lingering

@@ -35,7 +35,7 @@
             "entity": "this",
             "scores": {
               "ca.inertia_stack": {
-                "min": 200
+                "min": 2000
               }
             }
           }

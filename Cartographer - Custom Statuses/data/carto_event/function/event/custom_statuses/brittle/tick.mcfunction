@@ -30,6 +30,11 @@ execute if score $detonate_brittle ca.status_var matches 1.. run data modify sto
 execute if score $detonate_brittle ca.status_var matches 1.. run data modify storage cartographer_custom_statuses:brittle data.targets set from storage carto_event current[-1].parameters.targets
 execute if score $detonate_brittle ca.status_var matches 1.. run data modify storage cartographer_custom_statuses:brittle data.windup_time set from storage carto_event current[-1].parameters.windup_time
 execute if score $detonate_brittle ca.status_var matches 1.. store result storage cartographer_custom_statuses:brittle data.damage double 0.1 run scoreboard players get $brittle_dmg ca.status_var
+
+#Modify Damage and Size of AoE based off owner attributes
+$execute if score $detonate_brittle ca.status_var matches 1.. as $(owner) at @s unless score @s ca.attr_aoe_size_total matches -2000000 run function carto_event:event/custom_statuses/brittle/modify_aoe/size
+$execute if score $detonate_brittle ca.status_var matches 1.. as $(owner) at @s unless score @s ca.attr_aoe_damage_total matches -2000000 run function carto_event:event/custom_statuses/brittle/modify_aoe/damage
+
 $execute if score $detonate_brittle ca.status_var matches 1.. as $(target) at @s positioned ~ ~1 ~ run function carto_event:event/custom_statuses/brittle/create_detonate with storage cartographer_custom_statuses:brittle data
 $execute if score $detonate_brittle ca.status_var matches 1.. as $(target) at @s run function carto_event:command_api/proc_command with storage carto_event current[-1].parameters
 

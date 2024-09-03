@@ -27,3 +27,6 @@ execute store result storage carto_event new.parameters.tick_rate int 1 run scor
 execute store result storage carto_event new.parameters.cap int 1 run scoreboard players get $effect_new_amt_3 ca.merge_var
 
 data modify storage carto_event new.duration set from storage carto_event old.duration
+
+tag @s remove ca.bleed_continue
+tag @s remove ca.has_custom_status_bleeding

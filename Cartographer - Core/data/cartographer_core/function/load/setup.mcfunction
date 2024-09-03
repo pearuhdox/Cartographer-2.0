@@ -24,7 +24,18 @@ scoreboard objectives add ca.registry dummy
 scoreboard objectives add ca.notice_time dummy
 
 
-scoreboard objectives add ca.rand_var dummy
+scoreboard objectives add ca.sprint_bug_x dummy
+scoreboard objectives add ca.sprint_bug_y dummy
+scoreboard objectives add ca.sprint_bug_z dummy
+scoreboard objectives add ca.sprint_bug_time dummy
+scoreboard objectives add ca.sprint_active dummy
+
+scoreboard objectives add ca.rand dummy
+
+scoreboard objectives add ca.x dummy
+scoreboard objectives add ca.y dummy
+scoreboard objectives add ca.z dummy
+
 
 scoreboard players set $charon ca.installed 0
 scoreboard players set $custom_durability ca.installed 0
@@ -201,10 +212,10 @@ scoreboard objectives add ca.epf dummy
 
 scoreboard objectives add ca.delta.cooldown dummy
 
-#Create Delta Carto Marker
+# Block Name Obtainer Armor Stand
 # 31182015-4512-2011-3118-115180000000
 # [I;823664661,1158815761,823660881,-2147483648]
-summon marker 4206900 128 4206900 {UUID:[I;823664661,1158815761,823660881,-2147483648]}
+summon armor_stand 4206900 128 4206900 {UUID:[I;823664661,1158815761,823660881,-2147483648],NoGravity:1b,Marker:1b}
 
 
 #Add the phe_listen and ehp_listen scores

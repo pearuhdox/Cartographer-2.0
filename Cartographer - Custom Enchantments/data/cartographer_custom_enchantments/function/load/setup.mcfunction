@@ -19,6 +19,13 @@ scoreboard objectives add ca.ench_frenzy_lvl dummy
 scoreboard objectives add ca.ench_adrenaline_lvl dummy
 scoreboard objectives add ca.ench_vengeance_lvl dummy
 
+scoreboard objectives add ca.ench_gravity_lvl dummy
+scoreboard objectives add ca.ench_momentum_lvl dummy
+
+scoreboard objectives add ca.ench_surge_lvl dummy
+scoreboard objectives add ca.ench_deadeye_lvl dummy
+scoreboard objectives add ca.ench_rush_lvl dummy
+
 #Values for enchantments working
 scoreboard objectives add ca.ethereal_time dummy
 scoreboard objectives add ca.bulwark_time dummy
@@ -34,14 +41,14 @@ scoreboard objectives add ca.tenacity_hp dummy
 scoreboard objectives add ca.tenacity_hp_past dummy
 
 scoreboard objectives add ca.inertia_stack dummy
+scoreboard objectives add ca.inertia_x dummy
+scoreboard objectives add ca.inertia_y dummy
+scoreboard objectives add ca.inertia_z dummy
 
-scoreboard objectives add ca.inertia_movement minecraft.custom:minecraft.walk_one_cm
-scoreboard objectives add ca.inertia_sprinting minecraft.custom:minecraft.sprint_one_cm
-scoreboard objectives add ca.inertia_attacks minecraft.custom:minecraft.damage_dealt
-scoreboard objectives add ca.inertia_swim minecraft.custom:minecraft.swim_one_cm
-scoreboard objectives add ca.inertia_on_water_walk minecraft.custom:minecraft.walk_on_water_one_cm
-scoreboard objectives add ca.inertia_under_water_walk minecraft.custom:minecraft.walk_under_water_one_cm
-scoreboard objectives add ca.inertia_jump minecraft.custom:minecraft.jump
+scoreboard objectives add ca.momentum_stack dummy
+scoreboard objectives add ca.momentum_x dummy
+scoreboard objectives add ca.momentum_y dummy
+scoreboard objectives add ca.momentum_z dummy
 
 scoreboard objectives add ca.frenzy_stack dummy
 scoreboard objectives add ca.frenzy_duration dummy
@@ -50,6 +57,14 @@ scoreboard objectives add ca.adrenaline_duration dummy
 
 scoreboard objectives add ca.vengeance_stack dummy
 scoreboard objectives add ca.vengeance_duration dummy
+
+scoreboard objectives add ca.gravity_var dummy
+scoreboard objectives add ca.gravity_time dummy
+
+scoreboard objectives add ca.sprint_time_surge dummy
+scoreboard objectives add ca.sprint_time_deadeye dummy
+scoreboard objectives add ca.sprint_time_rush dummy
+
 
 
 scoreboard objectives add ca.ench_aggro_count dummy

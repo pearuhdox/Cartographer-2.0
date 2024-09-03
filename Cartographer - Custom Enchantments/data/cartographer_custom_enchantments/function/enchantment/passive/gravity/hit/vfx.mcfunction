@@ -1,0 +1,12 @@
+$execute rotated ~ ~ positioned ^ ^ ^3 run particle minecraft:dust_pillar{block_state:"$(block)"} ~ ~ ~ 0.35 0.2 0.35 0 15 normal
+$execute rotated ~30 ~ positioned ^ ^ ^3 run particle minecraft:dust_pillar{block_state:"$(block)"} ~ ~ ~ 0.35 0.2 0.35 0 15 normal
+$execute rotated ~60 ~ positioned ^ ^ ^3 run particle minecraft:dust_pillar{block_state:"$(block)"} ~ ~ ~ 0.35 0.2 0.35 0 15 normal
+$execute rotated ~90 ~ positioned ^ ^ ^3 run particle minecraft:dust_pillar{block_state:"$(block)"} ~ ~ ~ 0.35 0.2 0.35 0 15 normal
+$execute rotated ~120 ~ positioned ^ ^ ^3 run particle minecraft:dust_pillar{block_state:"$(block)"} ~ ~ ~ 0.35 0.2 0.35 0 15 normal
+$execute rotated ~150 ~ positioned ^ ^ ^3 run particle minecraft:dust_pillar{block_state:"$(block)"} ~ ~ ~ 0.35 0.2 0.35 0 15 normal
+$execute rotated ~180 ~ positioned ^ ^ ^3 run particle minecraft:dust_pillar{block_state:"$(block)"} ~ ~ ~ 0.35 0.2 0.35 0 15 normal
+$execute rotated ~210 ~ positioned ^ ^ ^3 run particle minecraft:dust_pillar{block_state:"$(block)"} ~ ~ ~ 0.35 0.2 0.35 0 15 normal
+$execute rotated ~240 ~ positioned ^ ^ ^3 run particle minecraft:dust_pillar{block_state:"$(block)"} ~ ~ ~ 0.35 0.2 0.35 0 15 normal
+$execute rotated ~270 ~ positioned ^ ^ ^3 run particle minecraft:dust_pillar{block_state:"$(block)"} ~ ~ ~ 0.35 0.2 0.35 0 15 normal
+$execute rotated ~300 ~ positioned ^ ^ ^3 run particle minecraft:dust_pillar{block_state:"$(block)"} ~ ~ ~ 0.35 0.2 0.35 0 15 normal
+$execute rotated ~330 ~ positioned ^ ^ ^3 run particle minecraft:dust_pillar{block_state:"$(block)"} ~ ~ ~ 0.35 0.2 0.35 0 15 normal

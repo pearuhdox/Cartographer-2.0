@@ -1,5 +1,7 @@
 $execute as $(target) at @s positioned ~ ~1 ~ if predicate cartographer_core:periodic_tick/4 run particle entity_effect{color:[0.588,0.125,0.125,1.00]} ~ ~ ~ 0.25 0.25 0.25 1 1 normal
 
+$execute if score $custom_attributes ca.installed matches 1.. as $(target) at @s if score duration= carto_event matches 2.. unless entity @s[tag=ca.has_custom_status_bleeding] unless entity @s[tag=ca.bleed_continue] as $(owner) at @s run function carto_event:event/custom_statuses/bleeding/modify_damage
+
 $execute as $(target) at @s if score duration= carto_event matches 2.. run tag @s add ca.has_custom_status_bleeding
 $execute as $(target) at @s if score duration= carto_event matches 2.. run scoreboard players set @s ca.bleed_amt $(amount)
 
