@@ -1,9 +1,17 @@
-execute on origin run scoreboard players operation $arrow_val ca.attr_ranged_damage_value = @s ca.attr_ranged_damage_value
+scoreboard players set $arrow_val ca.attr_ranged_damage_value 0
 
-#execute on origin if entity @s[type=#minecraft:skeletons] run scoreboard players add $arrow_val ca.attr_ranged_damage_value 400
+#execute if score @s ca.attr_ranged_damage_value matches -1999999.. run scoreboard players operation $arrow_val ca.attr_ranged_damage_value += @s ca.attr_ranged_damage_value
+execute on origin if score @s ca.attr_ranged_damage_value matches -1999999.. run scoreboard players operation $arrow_val ca.attr_ranged_damage_value += @s ca.attr_ranged_damage_value
 
-execute on origin if score @s ca.attr_ranged_damage_percent matches 1.. run scoreboard players operation $arrow_val ca.attr_ranged_damage_value *= @s ca.attr_ranged_damage_percent
-execute on origin if score @s ca.attr_ranged_damage_percent matches 1.. run scoreboard players operation $arrow_val ca.attr_ranged_damage_value /= $100 ca.CONSTANT
+execute on origin if score @s ca.attr_ranged_damage_percent matches -1999999.. unless score @s ca.attr_ranged_damage_value matches -1999999.. if entity @s[type=#minecraft:skeletons] run scoreboard players add $arrow_val ca.attr_ranged_damage_value 400
+
+scoreboard players set $arrow_val_perc ca.attr_ranged_damage_value 0
+execute on origin if score @s ca.attr_ranged_damage_percent matches -1999999.. run scoreboard players operation $arrow_val_perc ca.attr_ranged_damage_value += @s ca.attr_ranged_damage_percent
+execute if score @s ca.attr_ranged_damage_percent matches -1999999.. run scoreboard players operation $arrow_val_perc ca.attr_ranged_damage_value += @s ca.attr_ranged_damage_percent
+
+scoreboard players operation $arrow_val ca.attr_ranged_damage_value *= $arrow_val_perc ca.attr_ranged_damage_value
+scoreboard players operation $arrow_val ca.attr_ranged_damage_value /= $100 ca.CONSTANT
+
 
 execute store result score $dmg_data_mult ca.attr_ranged_damage_value run data get entity @s damage 100
 scoreboard players operation $dmg_data_mult ca.attr_ranged_damage_value /= $2 ca.CONSTANT

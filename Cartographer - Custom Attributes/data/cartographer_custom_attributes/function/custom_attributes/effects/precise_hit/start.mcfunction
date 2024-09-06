@@ -1,6 +1,6 @@
 $scoreboard players set $proc_coeff ca.precise_hit_var $(proc_coeff)
 
-execute on attacker run scoreboard players operation $target ca.rand = @s ca.attr_precise_hit_chance_total
+execute on attacker run scoreboard players operation $target ca.rand = $precise_hit_chance ca.attr_apply_var
 scoreboard players remove $target ca.rand 100
 
 scoreboard players operation $target ca.rand *= $proc_coeff ca.precise_hit_var

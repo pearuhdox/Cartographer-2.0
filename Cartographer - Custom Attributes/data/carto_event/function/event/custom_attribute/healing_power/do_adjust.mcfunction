@@ -36,8 +36,9 @@ execute if score $heal ca.healing_power_hp matches ..-10 run scoreboard players 
 
 execute if score $heal ca.healing_power_hp matches ..-10 run function carto_event:event/custom_attribute/healing_power/subtract
 
-execute if score $heal ca.healing_power_hp matches 10.. run function cartographer_core:helper/heal_player/apply_heal
-execute if score $heal ca.healing_power_hp matches ..-10 run function bb:call/hpm/player/damage/true
+execute if entity @s[type=player] if score $heal ca.healing_power_hp matches 10.. run function cartographer_core:helper/heal_player/apply_heal
+execute if entity @s[type=player] if score $heal ca.healing_power_hp matches ..-10 run function bb:call/hpm/player/damage/true
+execute unless entity @s[type=player] if score $heal ca.healing_power_hp matches ..-10 run function bb:call/hpm/mob/damage/true
 execute if score $heal ca.healing_power_hp matches ..-10 run scoreboard players set @s bbl.damage_queue 0
 
 scoreboard players set @s ca.healing_power_cooldown 2

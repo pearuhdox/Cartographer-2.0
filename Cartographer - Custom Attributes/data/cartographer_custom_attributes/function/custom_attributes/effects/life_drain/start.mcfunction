@@ -1,6 +1,6 @@
 $scoreboard players set $proc_coeff ca.life_drain_buffer $(proc_coeff)
 
-scoreboard players operation $target ca.rand = @s ca.attr_life_drain_chance_total
+scoreboard players operation $target ca.rand = $life_drain_chance ca.attr_apply_var
 scoreboard players remove $target ca.rand 100
 
 scoreboard players operation $target ca.rand *= $proc_coeff ca.life_drain_buffer

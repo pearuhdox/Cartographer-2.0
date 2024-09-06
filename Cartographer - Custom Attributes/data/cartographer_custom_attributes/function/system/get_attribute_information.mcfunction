@@ -21,8 +21,6 @@ scoreboard players set $aoe_size_percent ca.attr_apply_var -2000000
 scoreboard players set $aoe_damage_flat ca.attr_apply_var -2000000
 scoreboard players set $aoe_damage_percent ca.attr_apply_var -2000000
 
-execute if score @s ca.attr_ranged_damage_total matches -1999999.. run scoreboard players operation $ranged_damage ca.attr_apply_var = @s ca.attr_ranged_damage_total
-
 
 execute if score @s ca.attr_life_drain_chance_total matches -1999999.. run scoreboard players operation $life_drain_chance ca.attr_apply_var = @s ca.attr_life_drain_chance_total
 
@@ -64,6 +62,4 @@ execute if score @s ca.attr_aoe_size_percent matches -1999999.. run scoreboard p
 execute if score @s ca.attr_aoe_damage_value matches -1999999.. run scoreboard players operation $aoe_damage_flat ca.attr_apply_var = @s ca.attr_aoe_damage_value
 execute if score @s ca.attr_aoe_damage_percent matches -1999999.. run scoreboard players operation $aoe_damage_percent ca.attr_apply_var = @s ca.attr_aoe_damage_percent
 
-#say data from arrow
-
-execute if entity @s[type=#bb:arrow] run function cartographer_custom_attributes:system/projectile_find/add_arrow_attributes
+#say data from player

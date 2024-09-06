@@ -4,7 +4,6 @@ scoreboard players set $ranged ca.calc_type 0
 
 $scoreboard players set $(type) ca.calc_type 1
 
-
 data modify storage cartographer:enchantment_data equipped set value {}
 
 execute if entity @s[type=player] run function cartographer_core:enchant_calculator/player_calc

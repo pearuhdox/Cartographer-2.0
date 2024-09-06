@@ -1,0 +1,2 @@
+$function cartographer_custom_attributes:custom_attributes/modifier/apply {attribute:"ranged_damage",value:0,percent:$(percent),id:"precision_ranged_damage"}
+function cartographer_custom_attributes:custom_attributes/system/read_to_score/start {attribute:"ranged_damage",base_value:0}

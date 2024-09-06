@@ -1,19 +1,19 @@
 scoreboard players operation $damage ca.chaining_hit_var *= $50 ca.CONSTANT
 scoreboard players operation $damage ca.chaining_hit_var /= $100 ca.CONSTANT
 
-execute on attacker if score @s ca.attr_chaining_damage_value matches -1999999.. run scoreboard players operation $damage ca.chaining_hit_var += @s ca.attr_chaining_damage_value
+execute on attacker if score $chaining_damage_flat ca.attr_apply_var matches -1999999.. run scoreboard players operation $damage ca.chaining_hit_var += $chaining_damage_flat ca.attr_apply_var
 
-execute on attacker if score @s ca.attr_chaining_damage_percent matches -1999999.. run scoreboard players operation $damage ca.chaining_hit_var *= @s ca.attr_chaining_damage_percent
-execute on attacker if score @s ca.attr_chaining_damage_percent matches -1999999.. run scoreboard players operation $damage ca.chaining_hit_var /= $100 ca.CONSTANT
+execute on attacker if score $chaining_damage_percent ca.attr_apply_var matches -1999999.. run scoreboard players operation $damage ca.chaining_hit_var *= $chaining_damage_percent ca.attr_apply_var
+execute on attacker if score $chaining_damage_percent ca.attr_apply_var matches -1999999.. run scoreboard players operation $damage ca.chaining_hit_var /= $100 ca.CONSTANT
 
 scoreboard players set $count ca.chaining_hit_var 1
-execute on attacker run scoreboard players operation $count_attr ca.chaining_hit_var = @s ca.attr_chaining_amount_value
+execute on attacker run scoreboard players operation $count_attr ca.chaining_hit_var = $chaining_amount_flat ca.attr_apply_var
 scoreboard players operation $count_attr ca.chaining_hit_var /= $100 ca.CONSTANT
 
-execute on attacker if score @s ca.attr_chaining_amount_value matches -1999999.. run scoreboard players operation $count ca.chaining_hit_var += $count_attr ca.chaining_hit_var
+execute on attacker if score $chaining_amount_flat ca.attr_apply_var matches -1999999.. run scoreboard players operation $count ca.chaining_hit_var += $count_attr ca.chaining_hit_var
 
-execute on attacker if score @s ca.attr_chaining_amount_percent matches -1999999.. run scoreboard players operation $count ca.chaining_hit_var *= @s ca.attr_chaining_amount_percent
-execute on attacker if score @s ca.attr_chaining_amount_percent matches -1999999.. run scoreboard players operation $count ca.chaining_hit_var /= $100 ca.CONSTANT
+execute on attacker if score $chaining_amount_percent ca.attr_apply_var matches -1999999.. run scoreboard players operation $count ca.chaining_hit_var *= $chaining_amount_percent ca.attr_apply_var
+execute on attacker if score $chaining_amount_percent ca.attr_apply_var matches -1999999.. run scoreboard players operation $count ca.chaining_hit_var /= $100 ca.CONSTANT
 
 
 execute store result storage cartographer:custom_attributes chaining_damage double 0.01 run scoreboard players get $damage ca.chaining_hit_var
@@ -28,10 +28,10 @@ data modify storage cartographer:custom_attributes chaining_previous set from st
 
 scoreboard players set $range ca.chaining_hit_var 800
 
-execute on attacker if score @s ca.attr_aoe_size_value matches -1999999.. run scoreboard players operation $range ca.chaining_hit_var += @s ca.attr_aoe_size_value
+execute on attacker if score $aoe_size_flat ca.attr_apply_var matches -1999999.. run scoreboard players operation $range ca.chaining_hit_var += $aoe_size_flat ca.attr_apply_var
 
-execute on attacker if score @s ca.attr_aoe_size_percent matches -1999999.. run scoreboard players operation $range ca.chaining_hit_var *= @s ca.attr_aoe_size_percent
-execute on attacker if score @s ca.attr_aoe_size_percent matches -1999999.. run scoreboard players operation $range ca.chaining_hit_var /= $100 ca.CONSTANT
+execute on attacker if score $aoe_size_percent ca.attr_apply_var matches -1999999.. run scoreboard players operation $range ca.chaining_hit_var *= $aoe_size_percent ca.attr_apply_var
+execute on attacker if score $aoe_size_percent ca.attr_apply_var matches -1999999.. run scoreboard players operation $range ca.chaining_hit_var /= $100 ca.CONSTANT
 
 execute store result storage cartographer:custom_attributes chaining_range double 0.01 run scoreboard players get $range ca.chaining_hit_var
 

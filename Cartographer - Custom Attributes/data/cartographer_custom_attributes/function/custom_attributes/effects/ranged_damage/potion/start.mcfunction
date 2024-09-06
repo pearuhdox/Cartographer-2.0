@@ -1,6 +1,5 @@
 execute on origin run scoreboard players operation $throwable_val ca.attr_ranged_damage_value = @s ca.attr_ranged_damage_value
 
-
 execute on origin if score @s ca.attr_ranged_damage_percent matches 1.. run scoreboard players operation $throwable_val ca.attr_ranged_damage_value *= @s ca.attr_ranged_damage_percent
 execute on origin if score @s ca.attr_ranged_damage_percent matches 1.. run scoreboard players operation $throwable_val ca.attr_ranged_damage_value /= $100 ca.CONSTANT
 

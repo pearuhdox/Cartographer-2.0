@@ -1,4 +1,6 @@
 #Do a player damage check
+scoreboard players operation $ranged_damage ca.attr_apply_var = @s ca.attr_ranged_damage_total
+
 scoreboard players set @s ca.raycast 60
 execute positioned ^ ^-0.75 ^ run function carto_event:event/custom_attribute/trident/landed/raycast
 
