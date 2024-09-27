@@ -1,0 +1,2 @@
+
+$function carto_event:api/create_single_entity_event {event:"custom_ench/trailblazer/node",duration:100,delay:001,parameters:{x:"$(x)",y:"$(y)",z:"$(z)",size:"$(size)",quarter_size:"$(quarter_size)",half_size:"$(half_size)",size_neg_1:"$(size_neg_1)",damage:"$(damage)"},merge_behavior:"none"}

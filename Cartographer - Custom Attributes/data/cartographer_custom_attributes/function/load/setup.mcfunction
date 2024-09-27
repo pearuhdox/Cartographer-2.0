@@ -1,4 +1,3 @@
-
 #Setup all necessary scoreboard commands.
 scoreboard objectives add ca.stat_var dummy
 scoreboard objectives add ca.attr_var dummy
@@ -24,9 +23,13 @@ scoreboard objectives add ca.ench_handling_lvl dummy
 scoreboard objectives add ca.ench_precision_lvl dummy
 scoreboard objectives add ca.ench_amplitude_lvl dummy
 scoreboard objectives add ca.ench_lucky_lvl dummy
-scoreboard objectives add ca.ench_superiority_lvl dummy
-scoreboard objectives add ca.ench_perfection_lvl dummy
+scoreboard objectives add ca.ench_technique_lvl dummy
 scoreboard objectives add ca.ench_resonance_lvl dummy
+scoreboard objectives add ca.ench_invigorated_lvl dummy
+
+scoreboard objectives add ca.ench_echo_lvl dummy
+scoreboard objectives add ca.ench_reverb_lvl dummy
+scoreboard objectives add ca.ench_lifesteal_lvl dummy
 
 scoreboard objectives add ca.ench_blast_protection_lvl dummy
 scoreboard objectives add ca.ench_fire_protection_lvl dummy
@@ -140,6 +143,15 @@ scoreboard objectives add ca.attr_life_drain_chance_total dummy
 scoreboard objectives add ca.attr_life_drain_amount_value dummy
 scoreboard objectives add ca.attr_life_drain_amount_percent dummy
 scoreboard objectives add ca.attr_life_drain_amount_total dummy
+
+
+scoreboard objectives add ca.attr_adaptive_damage_value dummy
+scoreboard objectives add ca.attr_adaptive_damage_percent dummy
+scoreboard objectives add ca.attr_adaptive_damage_total dummy
+
+scoreboard objectives add ca.attr_total_damage_value dummy
+scoreboard objectives add ca.attr_total_damage_percent dummy
+scoreboard objectives add ca.attr_total_damage_total dummy
 
 
 #Values for running attributes

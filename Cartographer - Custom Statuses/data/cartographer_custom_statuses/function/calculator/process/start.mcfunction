@@ -12,7 +12,10 @@ function cartographer_custom_statuses:calculator/process/create_action {action:"
 function cartographer_custom_statuses:calculator/process/create_action {action:"consume"}
 function cartographer_custom_statuses:calculator/process/create_action {action:"attacked"}
 
-#function cartographer_custom_statuses:calculator/process/create_action {action:"enchantment"}
+function cartographer_custom_statuses:calculator/process/create_action {action:"surge"}
+function cartographer_custom_statuses:calculator/process/create_action {action:"deadeye"}
+function cartographer_custom_statuses:calculator/process/create_action {action:"induction"}
+function cartographer_custom_statuses:calculator/process/create_action {action:"orbit"}
 
 #FUNCTION TAG HERE
 

@@ -1,0 +1,5 @@
+execute if score @s ca.aberration_splits matches 0 run data merge entity @s {interpolation_duration:3,start_interpolation:0,transformation:{scale:[0.9f,1.7f,0.9f],translation:[0.0,0.0,0.0]}}
+execute if score @s ca.aberration_splits matches 1 run data merge entity @s {interpolation_duration:3,start_interpolation:0,transformation:{scale:[1.4f,2.3f,1.4f],translation:[0.0,0.0,0.0]}}
+execute if score @s ca.aberration_splits matches 2 run data merge entity @s {interpolation_duration:3,start_interpolation:0,transformation:{scale:[1.7f,2.9f,1.7f],translation:[0.0,0.0,0.0]}}
+execute if score @s ca.aberration_splits matches 3 run data merge entity @s {interpolation_duration:3,start_interpolation:0,transformation:{scale:[2.0f,3.2f,2.0f],translation:[0.0,0.0,0.0]}}
+execute if score @s ca.aberration_splits matches 4.. run data merge entity @s {interpolation_duration:3,start_interpolation:0,transformation:{scale:[2.6f,3.8f,2.6f],translation:[0.0,0.0,0.0]}}

@@ -1,18 +1,9 @@
-execute if entity @s[type=player] run tag @s add ca.update_precision
-
-#execute if entity @s[type=player,tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. run scoreboard players set @s ca.ench_precision_lvl 0
-#execute if entity @s[type=player,tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. run function cartographer_core:enchant_calculator/full_calculation {namespace:"cartographer_custom_attributes",enchantment:"precision",type:"passive"}
-#execute if entity @s[type=player,tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. run scoreboard players set $check ca.core_delay_check 1
-
+execute if entity @s[type=player,tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. run scoreboard players set @s ca.ench_precision_lvl 0
+execute if entity @s[type=player,tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. run function cartographer_core:enchant_calculator/full_calculation {namespace:"cartographer_custom_attributes",enchantment:"precision",type:"passive"}
+execute if entity @s[type=player,tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. run scoreboard players set $check ca.core_delay_check 1
 
 execute unless entity @s[type=player] if predicate cartographer_core:periodic_tick/20 run scoreboard players set @s ca.ench_precision_lvl 0
 execute unless entity @s[type=player] if predicate cartographer_core:periodic_tick/20 run function cartographer_core:enchant_calculator/full_calculation {namespace:"cartographer_custom_attributes",enchantment:"precision",type:"passive"}
 execute unless entity @s[type=player] if predicate cartographer_core:periodic_tick/20 run scoreboard players set $check ca.core_delay_check 1
 
-execute unless entity @s[type=player] if score @s[tag=!ca.has_precision_ench] ca.ench_precision_lvl matches 1.. run function cartographer_custom_attributes:enchantment/stat/precision/do_enchant
-execute if entity @s[type=player,tag=ca.do_precision_event] run function cartographer_custom_attributes:enchantment/stat/precision/do_enchant
-
-execute if entity @s[type=player] run tag @s add ca.has_precision_ench
-execute unless entity @s[type=player] if predicate cartographer_core:periodic_tick/20 run tag @s add ca.has_precision_ench
-
-tag @s remove ca.do_precision_event
+execute if score @s ca.ench_precision_lvl matches 1.. run function cartographer_custom_attributes:enchantment/stat/precision/do_enchant

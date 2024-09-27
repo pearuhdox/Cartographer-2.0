@@ -1,7 +1,7 @@
 execute if entity @s[advancements={entityid:entity_hurt_player={is_projectile=true}}] on attacker run function cartographer_custom_attributes:system/projectile_find/owner_uuid
 execute if entity @s[advancements={entityid:entity_hurt_player={is_projectile=true}}] run function cartographer_custom_attributes:system/projectile_find/scan
 
-execute if entity @s[advancements={entityid:entity_hurt_player={is_projectile=false}}] run function cartographer_custom_attributes:system/get_attribute_information
+execute if entity @s[advancements={entityid:entity_hurt_player={is_projectile=false}}] on attacker run function cartographer_custom_attributes:system/get_attribute_information
 
 execute if entity @s[advancements={entityid:entity_hurt_player={is_projectile=true}}] on attacker if score @s ca.attr_ranged_damage_total matches -2000000 run scoreboard players set $ranged_damage ca.attr_apply_var 0
 execute if entity @s[advancements={entityid:entity_hurt_player={is_projectile=false}}] run scoreboard players set $ranged_damage ca.attr_apply_var 0

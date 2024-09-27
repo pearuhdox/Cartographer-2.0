@@ -1,6 +1,6 @@
 scoreboard players set $arrow_val ca.attr_ranged_damage_value 0
 
-#execute if score @s ca.attr_ranged_damage_value matches -1999999.. run scoreboard players operation $arrow_val ca.attr_ranged_damage_value += @s ca.attr_ranged_damage_value
+execute if score @s ca.attr_ranged_damage_value matches -1999999.. run scoreboard players operation $arrow_val ca.attr_ranged_damage_value += @s ca.attr_ranged_damage_value
 execute on origin if score @s ca.attr_ranged_damage_value matches -1999999.. run scoreboard players operation $arrow_val ca.attr_ranged_damage_value += @s ca.attr_ranged_damage_value
 
 execute on origin if score @s ca.attr_ranged_damage_percent matches -1999999.. unless score @s ca.attr_ranged_damage_value matches -1999999.. if entity @s[type=#minecraft:skeletons] run scoreboard players add $arrow_val ca.attr_ranged_damage_value 400

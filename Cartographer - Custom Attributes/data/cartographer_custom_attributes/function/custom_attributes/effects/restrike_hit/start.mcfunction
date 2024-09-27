@@ -1,3 +1,5 @@
+execute if score @s ca.restrike_entropy matches ..-1 run scoreboard players set @s ca.restrike_entropy 0
+
 $scoreboard players set $proc_coeff ca.restrike_hit_var $(proc_coeff)
 
 execute on attacker run scoreboard players operation $target ca.rand = $restrike_chance ca.attr_apply_var

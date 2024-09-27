@@ -14,6 +14,10 @@
       "cartographer_custom_attributes:lucky",
       "cartographer_custom_attributes:perfection",
       "cartographer_custom_attributes:resonance",
-      "cartographer_custom_attributes:superiority"
+      "cartographer_custom_attributes:technique",
+      "cartographer_custom_attributes:invigorated",
+      "cartographer_custom_attributes:echo",
+      "cartographer_custom_attributes:reverb",
+      "cartographer_custom_attributes:lifesteal"
     ]
   }

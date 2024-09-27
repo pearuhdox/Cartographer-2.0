@@ -1,5 +1,6 @@
 {
     "values":[
-      "cartographer_custom_statuses:apply_status/attack/receiver"
+      "cartographer_custom_statuses:apply_status/attack/receiver",
+      "cartographer_custom_statuses:apply_status/other/mob_attacked"
     ]
   }

@@ -90,6 +90,7 @@
     "minecraft:sculk_vein",
     "#minecraft:candles",
     "minecraft:sea_pickle",
-    "minecraft:fire"
+    "minecraft:fire",
+    "minecraft:light"
   ]
 }

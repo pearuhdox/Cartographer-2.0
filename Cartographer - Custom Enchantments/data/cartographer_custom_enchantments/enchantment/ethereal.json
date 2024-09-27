@@ -16,7 +16,9 @@
   },
   "anvil_cost": 1,
   "slots": [
-    "armor"
+    "armor",
+    "offhand",
+    "mainhand"
   ],
   "effects": {
     "minecraft:damage_immunity": [

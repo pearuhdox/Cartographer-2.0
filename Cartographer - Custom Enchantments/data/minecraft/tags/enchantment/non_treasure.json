@@ -10,6 +10,9 @@
     "cartographer_custom_enchantments:courageous",
     "cartographer_custom_enchantments:unseen",
     "cartographer_custom_enchantments:tenacity",
-    "cartographer_custom_enchantments:inertia"
+    "cartographer_custom_enchantments:inertia",
+    "cartographer_custom_enchantments:surge",
+    "cartographer_custom_enchantments:deadeye",
+    "cartographer_custom_enchantments:trailblazer"
   ]
 }

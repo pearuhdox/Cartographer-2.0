@@ -1,0 +1,1 @@
+$attribute @s minecraft:generic.oxygen_bonus modifier add ca.attr_$(attr)_$(slot)_$(type) $(amount) add_value

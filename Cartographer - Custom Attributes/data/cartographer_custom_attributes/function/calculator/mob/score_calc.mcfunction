@@ -1,37 +1,68 @@
-scoreboard players set $percent ca.attr_var 0
-scoreboard players set $value ca.attr_var 0
-scoreboard players set $total ca.attr_var 0
+execute if items entity @s weapon.mainhand #cartographer_core:arrow if items entity @s weapon.offhand #cartographer_core:shoots_arrow run scoreboard players set $disable_mainhand ca.attr_var 1
+execute if items entity @s weapon.offhand #cartographer_core:arrow if items entity @s weapon.mainhand #cartographer_core:shoots_arrow run scoreboard players set $disable_offhand ca.attr_var 1
 
-data modify storage cartographer:custom_attributes attribute_parse set value []
+execute if items entity @s weapon.mainhand #cartographer_core:wearables run scoreboard players set $disable_mainhand ca.attr_var 1
+execute if items entity @s weapon.offhand #cartographer_core:wearables run scoreboard players set $disable_offhand ca.attr_var 1
 
-#Add this to the mob data space so it can be used for enchant calculations
-$data modify storage cartographer_custom_attributes:mob_calculator mob_data.$(attribute) append from storage cartographer_custom_attributes:mob_calculator item_data.$(attribute)
-$data modify storage cartographer_custom_attributes:mob_calculator mob_data.$(attribute)[-1].id set value "item_applied"
+execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/ranged_damage
+execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/ranged_velocity
+execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/combat_luck
+execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/potion_size
+execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/aoe_size
+execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/aoe_damage
+execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/status_inflict_damage
+execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/status_inflict_duration
+execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/status_inflict_potency
+execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/status_apply_duration
+execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/status_apply_potency
+execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/healing_power
+execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/precise_hit_chance
+execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/precise_hit_damage
+execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/restrike_chance
+execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/restrike_damage
+execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/restrike_amount
+execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/restrike_rate
+execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/chaining_chance
+execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/chaining_damage
+execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/chaining_amount
+execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/life_drain_chance
+execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/life_drain_amount
+execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/adaptive_damage
+execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/total_damage
 
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/ranged_damage
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/ranged_velocity
 
-$execute store result score $value ca.attr_var run data get storage cartographer_custom_attributes:mob_calculator item_data.$(attribute).value 100
-$execute store result score $percent ca.attr_var run data get storage cartographer_custom_attributes:mob_calculator item_data.$(attribute).percent 100
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/combat_luck
 
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/potion_size
 
-scoreboard players set $attr_used ca.attr_var 0
-execute unless score $percent ca.attr_var matches 0 run scoreboard players set $attr_used ca.attr_var 1
-execute unless score $value ca.attr_var matches 0 run scoreboard players set $attr_used ca.attr_var 1
-$execute if score $attr_used ca.attr_var matches 1.. run scoreboard players add $value ca.attr_var $(base_value)
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/aoe_size
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/aoe_damage
 
-# CHANGED DESIGN - NO LONGER DO THIS - Add 100 to percentage, floor at 0% if value is too low
-#execute if score $percent ca.attr_var matches ..-1 run scoreboard players set $percent ca.attr_var 0
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/status_inflict_damage
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/status_inflict_duration
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/status_inflict_potency
 
-scoreboard players add $percent ca.attr_var 100
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/status_apply_duration
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/status_apply_potency
 
-scoreboard players operation $total ca.attr_var = $value ca.attr_var
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/healing_power
 
-scoreboard players operation $total ca.attr_var *= $percent ca.attr_var
-scoreboard players operation $total ca.attr_var /= $100 ca.CONSTANT
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/precise_hit_chance
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/precise_hit_damage
 
-$scoreboard players operation @s ca.attr_$(attribute)_value = $value ca.attr_var
-$scoreboard players operation @s ca.attr_$(attribute)_percent = $percent ca.attr_var
-$scoreboard players operation @s ca.attr_$(attribute)_total = $total ca.attr_var
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/restrike_chance
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/restrike_damage
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/restrike_amount
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/restrike_rate
 
-$execute if score $attr_used ca.attr_var matches 0 run scoreboard players set @s ca.attr_$(attribute)_value -2000000
-$execute if score $attr_used ca.attr_var matches 0 run scoreboard players set @s ca.attr_$(attribute)_percent -2000000
-$execute if score $attr_used ca.attr_var matches 0 run scoreboard players set @s ca.attr_$(attribute)_total -2000000
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/chaining_chance
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/chaining_damage
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/chaining_amount
+
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/life_drain_chance
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/life_drain_amount
+
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/adaptive_damage
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/total_damage

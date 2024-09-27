@@ -1,5 +1,7 @@
-scoreboard players operation $value ca.stat_var = @s ca.ench_lucky_lvl
-scoreboard players operation $value ca.stat_var *= $5 ca.CONSTANT
+attribute @s minecraft:generic.oxygen_bonus modifier remove ca.attr_combat_luck_ench_value
 
-#execute store result storage cartographer_custom_attributes:macro value double 0.1 run scoreboard players get $value ca.stat_var
-#function cartographer_custom_attributes:enchantment/stat/lucky/macro with storage cartographer_custom_attributes:macro
+scoreboard players operation $value ca.stat_var = @s ca.ench_lucky_lvl
+scoreboard players operation $value ca.stat_var *= $2 ca.CONSTANT
+
+execute store result storage cartographer_custom_attributes:macro value double 0.00000000001 run scoreboard players get $value ca.stat_var
+function cartographer_custom_attributes:enchantment/stat/lucky/macro with storage cartographer_custom_attributes:macro

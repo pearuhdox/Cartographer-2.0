@@ -23,12 +23,18 @@ scoreboard objectives add ca.installed dummy
 scoreboard objectives add ca.registry dummy
 scoreboard objectives add ca.notice_time dummy
 
+scoreboard objectives add ca.first_blood_timer dummy
 
 scoreboard objectives add ca.sprint_bug_x dummy
 scoreboard objectives add ca.sprint_bug_y dummy
 scoreboard objectives add ca.sprint_bug_z dummy
 scoreboard objectives add ca.sprint_bug_time dummy
 scoreboard objectives add ca.sprint_active dummy
+
+scoreboard objectives add ca.energized_stack dummy
+scoreboard objectives add ca.energized_x dummy
+scoreboard objectives add ca.energized_y dummy
+scoreboard objectives add ca.energized_z dummy
 
 scoreboard objectives add ca.rand dummy
 

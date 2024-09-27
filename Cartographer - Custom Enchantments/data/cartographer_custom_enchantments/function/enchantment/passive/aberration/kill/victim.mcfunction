@@ -1,0 +1,1 @@
+function cartographer_custom_enchantments:enchantment/passive/aberration/create_slime

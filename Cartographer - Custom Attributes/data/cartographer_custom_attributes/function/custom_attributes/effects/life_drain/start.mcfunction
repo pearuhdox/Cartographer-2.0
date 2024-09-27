@@ -1,3 +1,5 @@
+execute if score @s ca.life_drain_entropy matches ..-1 run scoreboard players set @s ca.life_drain_entropy 0
+
 $scoreboard players set $proc_coeff ca.life_drain_buffer $(proc_coeff)
 
 scoreboard players operation $target ca.rand = $life_drain_chance ca.attr_apply_var

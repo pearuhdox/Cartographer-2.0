@@ -15,6 +15,7 @@ execute if entity @s[type=#bb:projectile] on origin run function cartographer_cu
 
 execute if entity @s[type=#bb:arrow] run function cartographer_custom_attributes:register/get_arrow_item_data_pre
 
+
 execute if score $custom_ranged_damage ca.attr_var matches 1.. run function cartographer_custom_attributes:custom_attributes/effects/ranged_damage/start
 execute if score $custom_ranged_velocity ca.attr_var matches 1.. run function cartographer_custom_attributes:custom_attributes/effects/ranged_velocity/start
 
@@ -31,7 +32,7 @@ scoreboard players set $throwable_val ca.attr_aoe_size_value 400
 execute if score $custom_aoe_size ca.attr_var matches 1.. if entity @s[type=potion] run function cartographer_custom_attributes:custom_attributes/effects/aoe_size/potion/start
 execute if score $custom_potion_size ca.attr_var matches 1.. if entity @s[type=potion] run function cartographer_custom_attributes:custom_attributes/effects/potion_size/potion/start
 
-execute if entity @s[type=#bb:arrow] run function cartographer_custom_attributes:register/get_arrow_item_data
+#execute if entity @s[type=#bb:arrow] run function cartographer_custom_attributes:register/get_arrow_item_data
 
 execute if entity @s[tag=ca.potion_owner_req] on origin run function gu:generate
 data modify storage cartographer:custom_attributes projectile.owner set from storage gu:main out

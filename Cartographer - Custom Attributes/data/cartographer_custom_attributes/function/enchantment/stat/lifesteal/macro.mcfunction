@@ -1,0 +1,5 @@
+$attribute @s minecraft:generic.oxygen_bonus modifier add ca.attr_life_drain_chance_ench_percent $(value) add_value
+attribute @s minecraft:generic.oxygen_bonus modifier add ca.attr_life_drain_amount_ench_value 0.0000000001 add_value
+
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/life_drain_chance
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/life_drain_amount

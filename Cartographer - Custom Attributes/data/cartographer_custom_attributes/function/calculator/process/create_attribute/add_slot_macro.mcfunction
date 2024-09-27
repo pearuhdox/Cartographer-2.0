@@ -1,1 +1,0 @@
-$function cartographer_custom_attributes:calculator/process/create_attribute/modifier/apply {id:"$(id)",attribute:"$(attribute)",value:$(value),percent:$(percent)}

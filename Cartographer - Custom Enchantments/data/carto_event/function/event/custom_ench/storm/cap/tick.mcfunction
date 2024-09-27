@@ -1,0 +1,4 @@
+$execute as $(target) at @s run scoreboard players set @s ca.storm_tick_cap 0
+$execute as $(target) at @s run scoreboard players set @s ca.storm_delay 0
+
+return 0

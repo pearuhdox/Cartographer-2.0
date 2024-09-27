@@ -1,3 +1,3 @@
 function bb:lib/pldata/read
-data modify storage bbl:pldata sudo_root.working_data.cartographer.custom_attribute_equips.main set from entity @s SelectedItem.components.minecraft:custom_data.custom_attributes
-function bb:lib/pldata/write
+data modify storage cartographer_custom_attributes:calculator equips_custom.main set from entity @s SelectedItem.components.minecraft:custom_data.custom_attributes
+data modify storage cartographer_custom_attributes:calculator equips_attr.main set from entity @s SelectedItem.components.minecraft:attribute_modifiers.modifiers

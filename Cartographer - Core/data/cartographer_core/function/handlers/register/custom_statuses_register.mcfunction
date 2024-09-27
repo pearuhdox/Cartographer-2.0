@@ -1,0 +1,1 @@
+execute if entity @s[tag=ca.has_custom_status] run function cartographer_custom_statuses:calculator/mob/start

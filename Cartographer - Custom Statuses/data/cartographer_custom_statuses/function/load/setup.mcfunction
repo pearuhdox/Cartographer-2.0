@@ -15,6 +15,15 @@ scoreboard objectives add ca.ench_sapper_lvl dummy
 scoreboard objectives add ca.ench_lifeblood_lvl dummy
 scoreboard objectives add ca.ench_bracing_lvl dummy
 
+scoreboard objectives add ca.ench_mightiness_hand_lvl dummy
+scoreboard objectives add ca.ench_swiftness_hand_lvl dummy
+scoreboard objectives add ca.ench_hastiness_hand_lvl dummy
+scoreboard objectives add ca.ench_stealthiness_hand_lvl dummy
+
+scoreboard objectives add ca.ench_sapper_hand_lvl dummy
+scoreboard objectives add ca.ench_lifeblood_hand_lvl dummy
+scoreboard objectives add ca.ench_bracing_hand_lvl dummy
+
 #Enchantment scoreboards functionality
 scoreboard objectives add ca.shielding_time dummy
 

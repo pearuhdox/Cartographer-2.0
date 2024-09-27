@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#cartographer_core:enchant_support/melee_weapon",
+    "#cartographer_core:enchant_support/ranged_weapon"
+  ]
+}  

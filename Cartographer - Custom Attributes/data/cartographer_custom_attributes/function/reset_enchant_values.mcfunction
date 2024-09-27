@@ -20,11 +20,13 @@ scoreboard players set @s ca.ench_swift_sneak_lvl 0
 scoreboard players set @s ca.ench_soul_speed_lvl 0
 
 
-# NEED TO FIND BETTER METHOD
+scoreboard players set @s ca.ench_precision_lvl 0
+scoreboard players set @s ca.ench_lucky_lvl 0
+scoreboard players set @s ca.ench_amplitude_lvl 0
+scoreboard players set @s ca.ench_technique_lvl 0
+scoreboard players set @s ca.ench_resonance_lvl 0
+scoreboard players set @s ca.ench_invigorated_lvl 0
 
-scoreboard players operation $previous ca.stat_var = @s ca.ench_precision_lvl
-tag @s remove ca.has_precision_ench
-function cartographer_core:enchant_calculator/full_calculation {namespace:"cartographer_custom_attributes",enchantment:"precision",type:"passive"}
-execute unless score @s ca.ench_precision_lvl matches 0 unless score $previous ca.stat_var = @s ca.ench_precision_lvl run tag @s add ca.do_precision_event
-execute if score @s ca.ench_precision_lvl matches 0 run function cartographer_custom_attributes:custom_attributes/modifier/remove {attribute:"ranged_damage",id:"precision_ranged_damage"}
-tag @s remove ca.update_precision
+scoreboard players set @s ca.ench_echo_lvl 0
+scoreboard players set @s ca.ench_reverb_lvl 0
+scoreboard players set @s ca.ench_lifesteal_lvl 0

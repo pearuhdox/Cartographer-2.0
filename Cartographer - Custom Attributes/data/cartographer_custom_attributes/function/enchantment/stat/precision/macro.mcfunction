@@ -1,1 +1,3 @@
-#$attribute @s minecraft:generic.movement_speed modifier add ca.celerity_stat $(value) add_multiplied_total
+$attribute @s minecraft:generic.oxygen_bonus modifier add ca.attr_ranged_damage_ench_percent $(value) add_value
+
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/ranged_damage

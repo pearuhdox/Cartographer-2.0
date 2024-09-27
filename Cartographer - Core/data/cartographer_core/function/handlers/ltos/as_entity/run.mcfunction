@@ -1,7 +1,6 @@
 #Debug Message
 $execute as $(killed) at @s if entity @s[type=creeper,tag=ca.needs_checker] on passengers if entity @s[type=marker,tag=ca.creeper_checker] run kill @s
 
-
 $execute if score $custom_statuses ca.installed matches 1.. as $(killed) at @s if entity @s[tag=ca.has_custom_status_infected] run function carto_event:event/custom_statuses/infected/death
 $execute if score $custom_statuses ca.installed matches 1.. as $(killed) at @s on passengers if entity @s[type=block_display,tag=ca.status_frozen_display] run function carto_event:event/custom_statuses/frozen/release
 
@@ -20,9 +19,39 @@ $execute if score $custom_statuses ca.installed matches 1.. as $(killer) at @s r
 #Custom Enchantment Pack Kill Effects
 $execute if score $custom_enchantments ca.installed matches 1.. as $(killer) at @s if score @s ca.ench_inertia_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/inertia/attack
 
+$execute if score $custom_enchantments ca.installed matches 1.. as $(killer) if score @s ca.ench_starfall_lvl matches 1.. as $(killed) at @s run function cartographer_custom_enchantments:enchantment/passive/starfall/damage_event {proc_coeff:"100"}
+$execute if score $custom_enchantments ca.installed matches 1.. as $(killer) if score @s ca.ench_orbit_lvl matches 1.. as $(killed) at @s run function cartographer_custom_enchantments:enchantment/passive/orbit/damage_event {proc_coeff:"100"}
+
+
+$execute if score $custom_enchantments ca.installed matches 1.. as $(killer) at @s if score @s ca.ench_aberration_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/aberration/kill/user
+$execute if score $custom_enchantments ca.installed matches 1.. as $(killer) at @s if score @s ca.ench_quake_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/quake/kill/user
+
+$execute if score $custom_enchantments ca.installed matches 1.. as $(killer) at $(killed) if score @s ca.ench_aberration_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/aberration/kill/victim
+$execute if score $custom_enchantments ca.installed matches 1.. as $(killer) at $(killed) if score @s ca.ench_quake_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/quake/kill/victim
+
+
+$execute if score $custom_enchantments ca.installed matches 1.. as $(killed) at @s if score @s ca.ench_aberration_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/aberration/kill/user
+$execute if score $custom_enchantments ca.installed matches 1.. as $(killed) at @s if score @s ca.ench_quake_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/quake/kill/user
+
+$execute if score $custom_enchantments ca.installed matches 1.. as $(killed) at $(killed) if score @s ca.ench_aberration_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/aberration/kill/victim
+$execute if score $custom_enchantments ca.installed matches 1.. as $(killed) at $(killed) if score @s ca.ench_quake_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/quake/kill/victim
+
+
+$execute if score $custom_enchantments ca.installed matches 1.. as $(killer) if score @s ca.ench_eruption_lvl matches 1.. as $(killed) at @s unless entity @s[tag=ca.enchant_first_blood] run function cartographer_custom_enchantments:enchantment/passive/eruption/damage_event
+$execute if score $custom_enchantments ca.installed matches 1.. as $(killer) if score @s ca.ench_soulfire_lvl matches 1.. as $(killed) at @s unless entity @s[tag=ca.enchant_first_blood] run function cartographer_custom_enchantments:enchantment/passive/soulfire/damage_event
+
+
 scoreboard players set $used_momentum ca.momentum_stack 0
 $execute as $(killer) at @s if score @s ca.ench_momentum_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/momentum/hit/user
 $execute if score $used_momentum ca.momentum_stack matches 1.. as $(killed) at @s run function cartographer_custom_enchantments:enchantment/passive/momentum/hit/victim
+
+scoreboard players set $used_storm ca.storm_stack 0
+$execute as $(killer) at @s if score @s ca.ench_storm_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/storm/hit/user
+$execute if score $used_storm ca.storm_stack matches 1.. as $(killed) at @s run function cartographer_custom_enchantments:enchantment/passive/storm/hit/victim
+
+scoreboard players set $used_induction ca.induction_stack 0
+$execute as $(killer) at @s if score @s ca.ench_induction_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/induction/hit/user
+$execute if score $used_induction ca.induction_stack matches 1.. as $(killed) at @s run function cartographer_custom_enchantments:enchantment/passive/induction/hit/victim
 
 scoreboard players set $check ca.gravity_var 0
 $execute if score $custom_enchantments ca.installed matches 1.. as $(killer) at @s if score @s ca.ench_gravity_lvl matches 1.. unless score @s ca.gravity_time matches 10.. run function cartographer_custom_enchantments:enchantment/passive/gravity/kill

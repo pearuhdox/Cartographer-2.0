@@ -1,0 +1,3 @@
+execute on attacker run function cartographer_custom_enchantments:enchantment/passive/induction/create_bolt_attacker
+
+function cartographer_custom_enchantments:enchantment/passive/induction/create_bolt
