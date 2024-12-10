@@ -5,4 +5,4 @@ scoreboard players operation $aoe_size ca.evocation_var += @s ca.attr_aoe_size_v
 scoreboard players operation $aoe_size ca.evocation_var *= @s ca.attr_aoe_size_percent
 scoreboard players operation $aoe_size ca.evocation_var /= $100 ca.CONSTANT
 
-execute store result storage carto_event current[-1].parameters.range double 0.01 run scoreboard players get $aoe_size ca.evocation_var
+execute store result storage carto_event current[-1].parameters.range int 0.01 run scoreboard players get $aoe_size ca.evocation_var
