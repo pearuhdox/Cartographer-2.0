@@ -1,1 +1,0 @@
-tellraw @a [{"text":"❱ ","color":"#FFE0A3"},{"text":"Enchantment Revamp","color":"#db7ecc","hoverEvent":{"action":"show_text","contents":[{"text":"Adds over 50 new custom enchantments for weapons, tools, armor, and more!","color":"#FFE0A3","italic":true}]}},{"text":" installed!","color":"#FFE0A3"}]

@@ -71,7 +71,7 @@ scoreboard players set @s ca.attribute_cleanse_delay 1
 execute unless entity @s[tag=ca.suppress_inv_update] if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:reset_enchant_values
 execute unless entity @s[tag=ca.suppress_inv_update] if score $custom_enchantments ca.installed matches 1.. run function cartographer_custom_enchantments:reset_enchant_values
 execute unless entity @s[tag=ca.suppress_inv_update] if score $custom_statuses ca.installed matches 1.. run function cartographer_custom_statuses:reset_enchant_values
-execute unless entity @s[tag=ca.suppress_inv_update] if score $enchantment_revamp ca.installed matches 1.. run function cartographer_enchantment_revamp:reset_enchant_values
+execute unless entity @s[tag=ca.suppress_inv_update] if score $enchantment_rework ca.installed matches 1.. run function cartographer_enchantment_rework:reset_enchant_values
 
 
 #execute if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:calculator/process/start

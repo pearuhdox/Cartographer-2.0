@@ -1,0 +1,1 @@
+scoreboard players set $enchantment_rework ca.installed 1

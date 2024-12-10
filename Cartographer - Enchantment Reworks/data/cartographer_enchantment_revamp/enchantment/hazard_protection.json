@@ -2,7 +2,7 @@
   "description": {
     "text": "Hazard Protection"
   },
-  "exclusive_set": "#cartographer_enchantment_revamp:exclusive_set/protection_type",
+  "exclusive_set": "#cartographer_enchantment_rework:exclusive_set/protection_type",
   "supported_items": "#cartographer_core:enchant_support/passive_armor",
   "primary_items": "#cartographer_core:enchant_support/passive_armor",
   "weight": 10,
@@ -103,7 +103,7 @@
         "affected": "victim",
         "effect": {
           "type": "minecraft:run_function",
-          "function": "cartographer_enchantment_revamp:enchantment/protection/hazard_protection/schedule_hit"
+          "function": "cartographer_enchantment_rework:enchantment/protection/hazard_protection/schedule_hit"
         },
         "requirements": {
           "condition": "minecraft:any_of",
@@ -161,7 +161,7 @@
       {
         "effect": {
           "type": "minecraft:run_function",
-          "function": "cartographer_enchantment_revamp:enchantment/protection/hazard_protection/schedule"
+          "function": "cartographer_enchantment_rework:enchantment/protection/hazard_protection/schedule"
         }
       }
     ]

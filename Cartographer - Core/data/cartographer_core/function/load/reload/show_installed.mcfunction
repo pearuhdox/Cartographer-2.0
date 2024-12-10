@@ -20,7 +20,7 @@ execute if score $custom_statuses ca.installed matches 1 run function cartograph
 #execute if score $loot_additions ca.installed matches 1 run function cartographer_loot_additions:load/load_message
 #execute if score $mimics ca.installed matches 1 run function cartographer_mimics:load/load_message
 #execute if score $mob_abilities ca.installed matches 1 run function cartographer_mob_abilities:load/load_message
-execute if score $enchantment_revamp ca.installed matches 1 run function cartographer_enchantment_revamp:load/load_message
+execute if score $enchantment_rework ca.installed matches 1 run function cartographer_enchantment_rework:load/load_message
 execute if score $repair_stations ca.installed matches 1 run function cartographer_repair_stations:load/load_message
 
 tellraw @s {"text":"------------------------------------------","color":"#FFE0A3","bold":true}

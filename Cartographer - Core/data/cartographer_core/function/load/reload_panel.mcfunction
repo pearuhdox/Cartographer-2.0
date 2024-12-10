@@ -18,7 +18,7 @@ function cartographer_custom_statuses:load/load_check
 #function cartographer_loot_table_tweaks:load/load_check
 #function cartographer_mimics:load/load_check
 #function cartographer_mob_abilities:load/load_check
-function cartographer_enchantment_revamp:load/load_check
+function cartographer_enchantment_rework:load/load_check
 function cartographer_repair_stations:load/load_check
 
 scoreboard players set $z_detect_packs ca.installed 0
