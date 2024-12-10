@@ -1,0 +1,36 @@
+{
+    "anvil_cost": 1,
+    "description": {
+      "translate": "enchantment.minecraft.piercing"
+    },
+    "effects": {
+      "minecraft:projectile_piercing": [
+        {
+          "effect": {
+            "type": "minecraft:add",
+            "value": {
+              "type": "minecraft:linear",
+              "base": 1.0,
+              "per_level_above_first": 1.0
+            }
+          }
+        }
+      ]
+    },
+    "exclusive_set": "#cartographer_custom_enchantments:exclusive_set/projectile_behavior",
+    "primary_items": "#cartographer_custom_enchantments:ranged_weapon_no_fishing",
+    "supported_items": "#cartographer_custom_enchantments:weapons_no_fishing",
+    "max_cost": {
+      "base": 50,
+      "per_level_above_first": 0
+    },
+    "max_level": 10,
+    "min_cost": {
+      "base": 1,
+      "per_level_above_first": 10
+    },
+    "slots": [
+      "mainhand"
+    ],
+    "weight": 1
+  }

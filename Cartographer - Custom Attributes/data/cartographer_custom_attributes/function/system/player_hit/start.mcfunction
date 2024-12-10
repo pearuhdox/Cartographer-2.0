@@ -1,7 +1,7 @@
 scoreboard players set $ranged_damage ca.attr_apply_var 0
 
-execute if entity @s[advancements={entityid:player_hurt_entity={is_projectile=true}}] run function cartographer_custom_attributes:system/projectile_find/owner_uuid
-execute if entity @s[advancements={entityid:player_hurt_entity={is_projectile=true}}] run function cartographer_custom_attributes:system/projectile_find/scan
+execute if entity @s[advancements={entityid:player_hurt_entity={is_projectile=true,panic_causes=true}}] run function cartographer_custom_attributes:system/projectile_find/owner_uuid
+execute if entity @s[advancements={entityid:player_hurt_entity={is_projectile=true,panic_causes=true}}] at @n[tag=ca.projectile_find_loc] run function cartographer_custom_attributes:system/projectile_find/scan
 
 execute if entity @s[advancements={entityid:player_hurt_entity={is_projectile=false}}] run function cartographer_custom_attributes:system/get_attribute_information
 
@@ -13,12 +13,15 @@ execute unless entity @s[advancements={entityid:player_hurt_entity={is_player_at
 
 scoreboard players set $do_precise_hit ca.precise_hit_var 0
 execute if entity @s[advancements={entityid:player_hurt_entity={is_player_attack=true,is_projectile=false}}] if score $precise_hit_chance ca.attr_apply_var matches -1999999.. run scoreboard players set $do_precise_hit ca.precise_hit_var 1
-execute if entity @s[advancements={entityid:player_hurt_entity={is_projectile=true}}] if score $precise_hit_chance ca.attr_apply_var matches -1999999.. run scoreboard players set $do_precise_hit ca.precise_hit_var 2
+execute if entity @s[advancements={entityid:player_hurt_entity={is_projectile=true,panic_causes=true}}] if score $precise_hit_chance ca.attr_apply_var matches -1999999.. run scoreboard players set $do_precise_hit ca.precise_hit_var 2
+execute if entity @s[advancements={entityid:player_hurt_entity={is_projectile=true,panic_causes=false}}] if score $precise_hit_chance ca.attr_apply_var matches -1999999.. run scoreboard players set $do_precise_hit ca.precise_hit_var 3
 
 scoreboard players set $do_chaining ca.chaining_hit_var 0
 execute if entity @s[advancements={entityid:player_hurt_entity={is_player_attack=true,is_projectile=false}}] if score $chaining_chance ca.attr_apply_var matches -1999999.. run scoreboard players set $do_chaining ca.chaining_hit_var 1
-execute if entity @s[advancements={entityid:player_hurt_entity={is_projectile=true}}] if score $chaining_chance ca.attr_apply_var matches -1999999.. run scoreboard players set $do_chaining ca.chaining_hit_var 2
+execute if entity @s[advancements={entityid:player_hurt_entity={is_projectile=true,panic_causes=true}}] if score $chaining_chance ca.attr_apply_var matches -1999999.. run scoreboard players set $do_chaining ca.chaining_hit_var 2
+execute if entity @s[advancements={entityid:player_hurt_entity={is_projectile=true,panic_causes=false}}] if score $chaining_chance ca.attr_apply_var matches -1999999.. run scoreboard players set $do_chaining ca.chaining_hit_var 3
 
 scoreboard players set $do_restrike ca.restrike_hit_var 0
 execute if entity @s[advancements={entityid:player_hurt_entity={is_player_attack=true,is_projectile=false}}] if score $restrike_chance ca.attr_apply_var matches -1999999.. run scoreboard players set $do_restrike ca.restrike_hit_var 1
-execute if entity @s[advancements={entityid:player_hurt_entity={is_projectile=true}}] if score $restrike_chance ca.attr_apply_var matches -1999999.. run scoreboard players set $do_restrike ca.restrike_hit_var 2
+execute if entity @s[advancements={entityid:player_hurt_entity={is_projectile=true,panic_causes=true}}] if score $restrike_chance ca.attr_apply_var matches -1999999.. run scoreboard players set $do_restrike ca.restrike_hit_var 2
+execute if entity @s[advancements={entityid:player_hurt_entity={is_projectile=true,panic_causes=false}}] if score $restrike_chance ca.attr_apply_var matches -1999999.. run scoreboard players set $do_restrike ca.restrike_hit_var 3

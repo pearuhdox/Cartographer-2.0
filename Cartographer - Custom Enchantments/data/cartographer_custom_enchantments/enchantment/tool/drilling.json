@@ -1,0 +1,69 @@
+{
+    "description": {
+      "text": "Drilling"
+    },
+    "exclusive_set": "#minecraft:exclusive_set/mining",
+    "supported_items": "#cartographer_core:enchant_support/tools",
+    "weight": 1,
+    "max_level": 10,
+    "max_cost": {
+      "base": 60,
+      "per_level_above_first": 20
+    },
+    "min_cost": {
+      "base": 10,
+      "per_level_above_first": 20
+    },
+    "anvil_cost": 1,
+    "slots": [
+      "mainhand"
+    ],
+    "effects": {
+      "minecraft:tick": [
+        {
+          "effect": {
+            "type": "minecraft:run_function",
+            "function": "cartographer_custom_enchantments:enchantment/tool/drilling/schedule"
+          },
+          "requirements": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        }
+      ],
+      "minecraft:hit_block": [
+        {
+          "effect": {
+            "type": "minecraft:run_function",
+            "function": "cartographer_custom_enchantments:enchantment/tool/drilling/hit_block"
+          },
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:inverted",
+                "term": {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "nbt": "{Tags:['ca.drilling_used']}"
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "ca.ench_drilling_lvl": {
+                    "min": 1
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+  

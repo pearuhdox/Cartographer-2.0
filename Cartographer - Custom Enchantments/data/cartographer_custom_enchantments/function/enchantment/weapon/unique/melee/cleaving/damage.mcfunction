@@ -1,0 +1,1 @@
+$damage @s $(damage) minecraft:player_attack by @p[tag=ca.cleaving_owner]

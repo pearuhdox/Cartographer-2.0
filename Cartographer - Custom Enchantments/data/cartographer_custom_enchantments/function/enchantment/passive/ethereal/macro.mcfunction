@@ -1,1 +1,3 @@
-$function carto_event:api/create_single_entity_event {event:"custom_ench/ethereal",duration:$(time),delay:000,parameters:{},merge_behavior:"none"}
+$execute if entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"custom_ench/ethereal",duration:$(time),delay:000,parameters:{},merge_behavior:"none"}
+
+$execute unless entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"custom_ench/ethereal/entity",duration:$(time),delay:000,parameters:{pos_x:$(pos_x),pos_z:$(pos_z),neg_x:$(neg_x),neg_z:$(neg_z)},merge_behavior:"none"}

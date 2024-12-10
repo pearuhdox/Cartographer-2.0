@@ -1,0 +1,1 @@
+playsound minecraft:entity.arrow.hit_player player @s ~ ~ ~ 0.35 1

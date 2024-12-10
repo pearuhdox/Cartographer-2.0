@@ -1,4 +1,4 @@
-attribute @s minecraft:player.sneaking_speed modifier remove ca.swift_sneak_stat
+attribute @s minecraft:sneaking_speed modifier remove ca.swift_sneak_stat
 scoreboard players operation $value ca.stat_var = @s ca.ench_swift_sneak_lvl
 scoreboard players operation $value ca.stat_var *= $15 ca.CONSTANT
 

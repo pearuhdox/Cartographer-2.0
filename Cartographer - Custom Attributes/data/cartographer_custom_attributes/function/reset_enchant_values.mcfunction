@@ -27,6 +27,10 @@ scoreboard players set @s ca.ench_technique_lvl 0
 scoreboard players set @s ca.ench_resonance_lvl 0
 scoreboard players set @s ca.ench_invigorated_lvl 0
 
+scoreboard players set @s ca.ench_cloudstep_lvl 0
+scoreboard players set @s ca.ench_windborn_lvl 0
+
+
 scoreboard players set @s ca.ench_echo_lvl 0
 scoreboard players set @s ca.ench_reverb_lvl 0
 scoreboard players set @s ca.ench_lifesteal_lvl 0

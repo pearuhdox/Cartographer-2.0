@@ -27,6 +27,9 @@ scoreboard objectives add ca.ench_technique_lvl dummy
 scoreboard objectives add ca.ench_resonance_lvl dummy
 scoreboard objectives add ca.ench_invigorated_lvl dummy
 
+scoreboard objectives add ca.ench_cloudstep_lvl dummy
+scoreboard objectives add ca.ench_windborn_lvl dummy
+
 scoreboard objectives add ca.ench_echo_lvl dummy
 scoreboard objectives add ca.ench_reverb_lvl dummy
 scoreboard objectives add ca.ench_lifesteal_lvl dummy
@@ -145,6 +148,15 @@ scoreboard objectives add ca.attr_life_drain_amount_percent dummy
 scoreboard objectives add ca.attr_life_drain_amount_total dummy
 
 
+scoreboard objectives add ca.attr_extra_jump_count_value dummy
+scoreboard objectives add ca.attr_extra_jump_count_percent dummy
+scoreboard objectives add ca.attr_extra_jump_count_total dummy
+
+scoreboard objectives add ca.attr_airdash_count_value dummy
+scoreboard objectives add ca.attr_airdash_count_percent dummy
+scoreboard objectives add ca.attr_airdash_count_total dummy
+
+
 scoreboard objectives add ca.attr_adaptive_damage_value dummy
 scoreboard objectives add ca.attr_adaptive_damage_percent dummy
 scoreboard objectives add ca.attr_adaptive_damage_total dummy
@@ -172,6 +184,14 @@ scoreboard objectives add ca.chaining_hit_entropy dummy
 scoreboard objectives add ca.life_drain_entropy dummy
 
 scoreboard objectives add ca.life_drain_buffer dummy
+
+scoreboard objectives add ca.movement_tech_cdl dummy
+scoreboard objectives add ca.extra_jump_count dummy
+scoreboard objectives add ca.airdash_count dummy
+
+scoreboard objectives add ca.move_x dummy
+scoreboard objectives add ca.move_z dummy
+
 
 #scoreboard objectives add ca.attr_status_duration_value dummy
 #scoreboard objectives add ca.attr_status_duration_percent dummy

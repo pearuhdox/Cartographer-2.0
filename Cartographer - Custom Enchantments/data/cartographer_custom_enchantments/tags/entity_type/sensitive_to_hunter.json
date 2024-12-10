@@ -1,0 +1,30 @@
+{
+	"values": [
+		"minecraft:phantom",
+		"minecraft:wither",
+		"minecraft:spider",
+		"minecraft:cave_spider",
+		"minecraft:silverfish",
+		"minecraft:endermite",
+		"minecraft:creeper",
+        "minecraft:enderman",
+		"minecraft:blaze",
+		"minecraft:slime",
+		"minecraft:magma_cube",
+		"minecraft:ghast",
+		"minecraft:ravager",
+		"minecraft:guardian",
+		"minecraft:elder_guardian",
+		"minecraft:shulker",
+		"minecraft:bee",
+		"minecraft:hoglin",
+		"minecraft:zoglin",
+		"minecraft:wolf",
+		"minecraft:ender_dragon",
+		"minecraft:rabbit",
+        "minecraft:pufferfish",
+        "minecraft:warden",
+		"minecraft:dolphin",
+		"minecraft:polar_bear"
+	]
+}

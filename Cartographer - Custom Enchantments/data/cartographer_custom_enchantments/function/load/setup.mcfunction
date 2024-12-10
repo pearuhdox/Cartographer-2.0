@@ -2,6 +2,8 @@
 #Setup all necessary scoreboard commands.
 
 #Setup scoreboards for level tracking
+scoreboard objectives add ca.ench_spurs_lvl dummy
+
 scoreboard objectives add ca.ench_ethereal_lvl dummy
 
 scoreboard objectives add ca.ench_hardened_lvl dummy
@@ -28,6 +30,7 @@ scoreboard objectives add ca.ench_surge_lvl dummy
 scoreboard objectives add ca.ench_deadeye_lvl dummy
 scoreboard objectives add ca.ench_trailblazer_lvl dummy
 
+
 scoreboard objectives add ca.ench_starfall_lvl dummy
 scoreboard objectives add ca.ench_orbit_lvl dummy
 scoreboard objectives add ca.ench_storm_lvl dummy
@@ -36,6 +39,8 @@ scoreboard objectives add ca.ench_eruption_lvl dummy
 scoreboard objectives add ca.ench_soulfire_lvl dummy
 scoreboard objectives add ca.ench_quake_lvl dummy
 scoreboard objectives add ca.ench_aberration_lvl dummy
+
+scoreboard objectives add ca.ench_thorns_lvl dummy
 
 scoreboard objectives add ca.ench_starfall_hand_lvl dummy
 scoreboard objectives add ca.ench_orbit_hand_lvl dummy
@@ -46,7 +51,104 @@ scoreboard objectives add ca.ench_soulfire_hand_lvl dummy
 scoreboard objectives add ca.ench_quake_hand_lvl dummy
 scoreboard objectives add ca.ench_aberration_hand_lvl dummy
 
+
+scoreboard objectives add ca.ench_chaotic_lvl dummy
+scoreboard objectives add ca.ench_hex_eater_lvl dummy
+scoreboard objectives add ca.ench_duelist_lvl dummy
+scoreboard objectives add ca.ench_hunter_lvl dummy
+
+scoreboard objectives add ca.ench_first_strike_lvl dummy
+scoreboard objectives add ca.ench_follow_up_lvl dummy
+scoreboard objectives add ca.ench_focus_lvl dummy
+scoreboard objectives add ca.ench_concentration_lvl dummy
+
+scoreboard objectives add ca.ench_rushdown_lvl dummy
+scoreboard objectives add ca.ench_leverage_lvl dummy
+
+scoreboard objectives add ca.ench_overcharge_lvl dummy
+scoreboard objectives add ca.ench_point_blank_lvl dummy
+scoreboard objectives add ca.ench_sharpshot_lvl dummy
+
+scoreboard objectives add ca.ench_drilling_lvl dummy
+scoreboard objectives add ca.ench_excavator_lvl dummy
+scoreboard objectives add ca.ench_multitool_lvl dummy
+scoreboard objectives add ca.ench_lightborn_lvl dummy
+
+scoreboard objectives add ca.ench_explosive_lvl dummy
+scoreboard objectives add ca.ench_pulling_lvl dummy
+scoreboard objectives add ca.ench_recoil_lvl dummy
+scoreboard objectives add ca.ench_repulsion_lvl dummy
+
+scoreboard objectives add ca.ench_cleaving_lvl dummy
+scoreboard objectives add ca.ench_thrusting_lvl dummy
+scoreboard objectives add ca.ench_slamming_lvl dummy
+scoreboard objectives add ca.ench_quick_strike_lvl dummy
+scoreboard objectives add ca.ench_throwable_lvl dummy
+scoreboard objectives add ca.ench_riposte_lvl dummy
+scoreboard objectives add ca.ench_lunging_lvl dummy
+
+scoreboard objectives add ca.ench_fleetfoot_lvl dummy
+scoreboard objectives add ca.ench_grappling_lvl dummy
+scoreboard objectives add ca.ench_barbed_lvl dummy
+scoreboard objectives add ca.ench_ripper_lvl dummy
+scoreboard objectives add ca.ench_shrapnel_lvl dummy
+scoreboard objectives add ca.ench_ricochet_lvl dummy
+scoreboard objectives add ca.ench_correction_lvl dummy
+scoreboard objectives add ca.ench_barrage_lvl dummy
+
+scoreboard objectives add ca.ench_multishot_lvl dummy
+scoreboard objectives add ca.ench_quick_charge_lvl dummy
+scoreboard objectives add ca.ench_piercing_lvl dummy
+scoreboard objectives add ca.ench_loyalty_lvl dummy
+
+scoreboard objectives add ca.ench_collapse_lvl dummy
+
+scoreboard objectives add ca.ench_repeating_lvl dummy
+
+scoreboard objectives add ca.ench_auto_charge_slot dummy
+scoreboard objectives add ca.ench_scavenger_slot dummy
+
+scoreboard objectives add ca.ench_throwable_slot dummy
+
+scoreboard objectives add ca.ench_haunting_lvl dummy
+
+scoreboard objectives add ca.ench_corruption_lvl dummy
+scoreboard objectives add ca.ench_crippling_lvl dummy
+scoreboard objectives add ca.ench_pride_lvl dummy
+scoreboard objectives add ca.ench_two_handed_lvl dummy
+
+scoreboard objectives add ca.ench_instability_lvl dummy
+
+scoreboard objectives add ca.ench_melee_fragility_lvl dummy
+scoreboard objectives add ca.ench_projectile_fragility_lvl dummy
+scoreboard objectives add ca.ench_clumsiness_lvl dummy
+
+scoreboard objectives add ca.ench_encumbering_lvl dummy
+
+
+scoreboard objectives add ca.ench_regret_lvl dummy
+scoreboard objectives add ca.ench_gluttony_lvl dummy
+
+
+scoreboard objectives add ca.ench_main_regret_lvl dummy
+scoreboard objectives add ca.ench_offh_regret_lvl dummy
+scoreboard objectives add ca.ench_head_regret_lvl dummy
+scoreboard objectives add ca.ench_body_regret_lvl dummy
+scoreboard objectives add ca.ench_legs_regret_lvl dummy
+scoreboard objectives add ca.ench_feet_regret_lvl dummy
+
+scoreboard objectives add ca.ench_main_gluttony_lvl dummy
+scoreboard objectives add ca.ench_offh_gluttony_lvl dummy
+scoreboard objectives add ca.ench_head_gluttony_lvl dummy
+scoreboard objectives add ca.ench_body_gluttony_lvl dummy
+scoreboard objectives add ca.ench_legs_gluttony_lvl dummy
+scoreboard objectives add ca.ench_feet_gluttony_lvl dummy
+
+
+scoreboard objectives add ca.animations_var dummy
+
 #Values for enchantments working
+scoreboard objectives add ca.fragility_time dummy
 scoreboard objectives add ca.ethereal_time dummy
 scoreboard objectives add ca.bulwark_time dummy
 scoreboard objectives add ca.sidestep_time dummy
@@ -74,6 +176,8 @@ scoreboard objectives add ca.induction_stack dummy
 scoreboard objectives add ca.inertia_stack dummy
 scoreboard objectives add ca.momentum_stack dummy
 
+scoreboard objectives add ca.storm_time dummy
+
 scoreboard objectives add ca.frenzy_stack dummy
 scoreboard objectives add ca.frenzy_duration dummy
 scoreboard objectives add ca.adrenaline_stack dummy
@@ -88,6 +192,9 @@ scoreboard objectives add ca.gravity_time dummy
 scoreboard objectives add ca.sprint_time_surge dummy
 scoreboard objectives add ca.sprint_time_deadeye dummy
 scoreboard objectives add ca.sprint_time_trailblazer dummy
+
+scoreboard objectives add ca.sprint_ench_cdl dummy
+
 
 scoreboard objectives add ca.sprint_dist_trailblazer minecraft.custom:minecraft.sprint_one_cm
 
@@ -120,8 +227,87 @@ scoreboard objectives add ca.ench_aggro_count dummy
 
 scoreboard objectives add ca.diversion_entropy dummy
 
-scoreboard objectives add ca.health_tag dummy
-scoreboard objectives add ca.health_tag_max dummy
+scoreboard objectives add ca.chaotic_entropy dummy
+scoreboard objectives add ca.focus_stacks dummy
+scoreboard objectives add ca.concentration_time dummy
+scoreboard objectives add ca.overcharge_time dummy
+
+scoreboard objectives add ca.drilling_entropy dummy
+scoreboard objectives add ca.drilling_cooldown dummy
+scoreboard objectives add ca.excavator_cooldown dummy
+scoreboard objectives add ca.lightborn_cooldown dummy
+
+scoreboard objectives add ca.recoil_cooldown dummy
+scoreboard objectives add ca.repulsion_cooldown dummy
+
+scoreboard objectives add ca.lightborn_redstone_torch dummy
+scoreboard objectives add ca.lightborn_soul_torch dummy
+scoreboard objectives add ca.lightborn_torch dummy
+scoreboard objectives add ca.lightborn_cooldown dummy
+
+scoreboard objectives add ca.quick_strike_stacks dummy
+scoreboard objectives add ca.quick_strike_cooldown dummy
+scoreboard objectives add ca.quick_strike_active dummy
+
+scoreboard objectives add ca.special_attack_cooldown dummy
+scoreboard objectives add ca.special_attack_animation dummy
+scoreboard objectives add ca.special_attack_delay dummy
+
+scoreboard objectives add ca.riposte_time dummy
+scoreboard objectives add ca.lunging_time dummy
+scoreboard objectives add ca.throwable_time dummy
+scoreboard objectives add ca.throwable_cooldown dummy
+scoreboard objectives add ca.throwable_loyalty dummy
+
+scoreboard objectives add ca.fleetfoot_cooldown dummy
+scoreboard objectives add ca.grappling_cooldown dummy
+
+scoreboard objectives add ca.ricochet_cooldown dummy
+
+scoreboard objectives add ca.barbed_stack dummy
+scoreboard objectives add ca.barbed_lvl dummy
+scoreboard objectives add ca.barbed_x dummy
+scoreboard objectives add ca.barbed_y dummy
+scoreboard objectives add ca.barbed_z dummy
+
+scoreboard objectives add ca.ripper_lvl dummy
+
+scoreboard objectives add ca.stuck_count dummy
+scoreboard objectives add ca.fishing_stuck dummy
+
+scoreboard objectives add ca.collapse_x dummy
+scoreboard objectives add ca.collapse_y dummy
+scoreboard objectives add ca.collapse_z dummy
+scoreboard objectives add ca.collapse_time dummy
+scoreboard objectives add ca.collapse_mod dummy
+scoreboard objectives add ca.collapse_break_speed dummy
+
+
+scoreboard objectives add ca.repeating_reload_time dummy
+scoreboard objectives add ca.repeating_ammo dummy
+scoreboard objectives add ca.repeating_avail_ammo dummy
+scoreboard objectives add ca.repeating_reload_cdl dummy
+scoreboard objectives add ca.repeating_load_time dummy
+
+scoreboard objectives add ca.auto_charge_time dummy
+scoreboard objectives add ca.auto_charge_time_max dummy
+
+
+scoreboard objectives add ca.reconstruction_entropy dummy
+
+scoreboard objectives add ca.crippling_time dummy
+
+scoreboard objectives add ca.instability_type dummy
+
+scoreboard objectives add ca.clumsiness_falling minecraft.custom:minecraft.fall_one_cm
+
+
+#Infinity Edge Cases
+scoreboard objectives add ca.use_firework_rocket minecraft.used:minecraft.firework_rocket
+scoreboard objectives add ca.use_water_bucket minecraft.used:minecraft.water_bucket
+scoreboard objectives add ca.use_lava_bucket minecraft.used:minecraft.lava_bucket
+scoreboard objectives add ca.use_powder_snow_bucket minecraft.used:minecraft.powder_snow_bucket
+
 
 #Place extra shulker boxes for Custom Enchantments
 #Auto Charge
@@ -131,7 +317,7 @@ scoreboard objectives add ca.health_tag_max dummy
 #setblock 4206900 0 4206901 purple_shulker_box replace
 
 #Infinity
-#setblock 4206899 0 4206900 purple_shulker_box replace
+setblock 4206899 0 4206900 purple_shulker_box replace
 
 #Two Handed
 #setblock 4206900 1 4206900 purple_shulker_box replace

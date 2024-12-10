@@ -1,0 +1,18 @@
+{
+    "values": [
+      "cartographer_custom_enchantments:weapon/damage/general/hex_eater",
+      "cartographer_custom_enchantments:weapon/damage/general/duelist",
+      "cartographer_custom_enchantments:weapon/damage/general/hunter",
+      "cartographer_custom_enchantments:weapon/damage/general/focus",
+      "cartographer_custom_enchantments:weapon/damage/general/first_strike",
+      "cartographer_custom_enchantments:weapon/damage/general/follow_up",
+      "cartographer_custom_enchantments:weapon/damage/general/concentration",
+      "cartographer_custom_enchantments:weapon/damage/general/chaotic",
+      "cartographer_custom_enchantments:weapon/damage/melee/rushdown",
+      "cartographer_custom_enchantments:weapon/damage/melee/leverage",
+      "cartographer_custom_enchantments:weapon/damage/ranged/overcharge",
+      "cartographer_custom_enchantments:weapon/damage/ranged/point_blank",
+      "cartographer_custom_enchantments:weapon/damage/ranged/sharpshot",
+      "#minecraft:exclusive_set/damage"
+    ]
+  }

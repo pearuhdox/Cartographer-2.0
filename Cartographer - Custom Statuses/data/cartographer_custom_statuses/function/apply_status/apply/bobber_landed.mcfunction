@@ -1,0 +1,1 @@
+execute unless entity @s[type=marker,tag=ca.is_potion_tracker] run function cartographer_custom_statuses:apply_status/apply/bobber_landed_branch with storage cartographer_core:fishing_bobber_data data

@@ -1,7 +1,7 @@
 playsound minecraft:entity.blaze.hurt player @a[distance=..16] ~ ~ ~ 1 2
 particle minecraft:large_smoke ~ ~0.3 ~ 0 0 0 0.05 10 normal
 
-$execute if entity @s[tag=ca.player_spawned] as @e[type=#bb:hostile,tag=!ca.soulfire_cdl,limit=1,sort=nearest,distance=..$(length)] at @s run function carto_event:event/custom_ench/soulfire/flames/damage with storage carto_event current[-1].parameters
+$execute if entity @s[tag=ca.player_spawned] as @e[type=#cartographer_core:affected_by_carto,tag=!ca.soulfire_cdl,limit=1,sort=nearest,distance=..$(length)] at @s run function carto_event:event/custom_ench/soulfire/flames/damage with storage carto_event current[-1].parameters
 $execute unless entity @s[tag=ca.player_spawned] as @a[limit=1,sort=nearest,tag=!ca.soulfire_cdl,distance=..$(length)] run function carto_event:event/custom_ench/soulfire/flames/damage_player
 
 scoreboard players remove @s ca.soulfire_time 1

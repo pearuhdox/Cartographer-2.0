@@ -1,5 +1,8 @@
-scoreboard players operation $lvl ca.ench_quake_lvl = @s ca.ench_quake_lvl
-execute if score $spawner_cause ca.ench_var matches 1.. run scoreboard players operation $lvl ca.ench_quake_lvl = @s ca.ench_quake_hand_lvl
+execute if entity @s[type=player] run scoreboard players operation $lvl ca.ench_quake_lvl = $quake ca.ench_value
+execute unless entity @s[type=player] run scoreboard players operation $lvl ca.ench_quake_lvl = @s ca.ench_quake_lvl
+
+execute if score $spawner_cause ca.ench_var matches 1.. run scoreboard players operation $lvl ca.ench_quake_lvl = $quake_hand ca.ench_value
+execute if score $summon_cause ca.ench_var matches 1.. run scoreboard players operation $lvl ca.ench_quake_lvl = $kinship_lvl ca.ench_var
 
 scoreboard players operation $mult ca.ench_var = $lvl ca.ench_quake_lvl
 scoreboard players operation $min_result_damage ca.ench_var = $lvl ca.ench_quake_lvl

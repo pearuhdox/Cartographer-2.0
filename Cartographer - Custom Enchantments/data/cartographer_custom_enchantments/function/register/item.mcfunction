@@ -1,0 +1,1 @@
+execute if entity @s[type=item,tag=ca.check_death_effects] run function cartographer_custom_enchantments:register/item_branch

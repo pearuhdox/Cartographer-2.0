@@ -29,7 +29,7 @@ $execute if score $chain_ct ca.status_var matches 1.. run data modify storage ca
 $tag $(target) add ca.no_shock_chain
 $tag $(origin) add ca.no_shock_chain
 
-$execute if score $chain_ct ca.status_var matches 1.. as $(target) at @s if score $chain_ct ca.status_var matches 1.. as @e[type=#bb:hostile,tag=!ca.no_shock_chain,tag=!ca.has_custom_status_shocked,tag=!ca.has_custom_status_shocked_proc,distance=0.25..$(range),sort=nearest,limit=$(targets)] run function carto_event:event/custom_statuses/shocked/proc_start with storage cartographer_custom_statuses:shocked_proc data
+$execute if score $chain_ct ca.status_var matches 1.. as $(target) at @s if score $chain_ct ca.status_var matches 1.. as @e[type=#cartographer_core:affected_by_carto,tag=!ca.no_shock_chain,tag=!ca.has_custom_status_shocked,tag=!ca.has_custom_status_shocked_proc,distance=0.25..$(range),sort=nearest,limit=$(targets)] run function carto_event:event/custom_statuses/shocked/proc_start with storage cartographer_custom_statuses:shocked_proc data
 
 $tag $(origin) remove ca.no_shock_chain
 $tag $(target) remove ca.no_shock_chain

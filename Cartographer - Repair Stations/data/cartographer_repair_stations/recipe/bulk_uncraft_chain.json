@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "XXX",
+      "XXX",
+      "XXX"
+    ],
+    "key": {
+      "X": "minecraft:chain"
+    },
+    "result": {
+      "id": "minecraft:iron_ingot",
+      "count": 3
+    }
+  }
+  

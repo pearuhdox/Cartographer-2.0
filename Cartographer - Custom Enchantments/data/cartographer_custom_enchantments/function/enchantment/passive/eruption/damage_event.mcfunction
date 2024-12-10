@@ -1,5 +1,9 @@
 execute on attacker run function cartographer_custom_enchantments:enchantment/passive/eruption/get_data
 
+execute on attacker run function cartographer_custom_enchantments:enchantment/passive/eruption/custom_statuses/check_allow_status
+execute if score $allow_statuses ca.ench_eruption_lvl matches 1.. on attacker if entity @s[type=player] run function cartographer_custom_enchantments:enchantment/passive/eruption/custom_statuses/status_player
+execute if score $allow_statuses ca.ench_eruption_lvl matches 1.. on attacker unless entity @s[type=player] run function cartographer_custom_enchantments:enchantment/passive/eruption/custom_statuses/status_mob
+
 execute on attacker run function cartographer_custom_enchantments:enchantment/passive/eruption/create_explosion
 
 execute on attacker run scoreboard players add @s ca.eruption_delay 5

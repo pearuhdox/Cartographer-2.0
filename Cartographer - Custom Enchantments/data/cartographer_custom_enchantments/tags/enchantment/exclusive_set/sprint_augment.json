@@ -1,7 +1,7 @@
 {
     "values": [
-      "cartographer_custom_enchantments:surge",
-      "cartographer_custom_enchantments:deadeye",
-      "cartographer_custom_enchantments:trailblazer"
+      "cartographer_custom_enchantments:passive/surge",
+      "cartographer_custom_enchantments:passive/deadeye",
+      "cartographer_custom_enchantments:passive/trailblazer"
     ]
   }

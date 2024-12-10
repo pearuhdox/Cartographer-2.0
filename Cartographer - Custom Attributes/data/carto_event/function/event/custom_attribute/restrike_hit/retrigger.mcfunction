@@ -4,4 +4,4 @@ execute store result storage carto_event current[-1].parameters.restrike_count i
 
 execute if score $remaining ca.restrike_hit_var matches 1.. run function carto_event:event/custom_attribute/restrike_hit/macro with storage carto_event current[-1].parameters
 
-execute unless score $remaining ca.restrike_hit_var matches 1.. unless entity @s[type=player] run attribute @s minecraft:generic.gravity modifier remove ca.restrike_gravity
+execute unless score $remaining ca.restrike_hit_var matches 1.. unless entity @s[type=player] run attribute @s minecraft:gravity modifier remove ca.restrike_gravity

@@ -1,4 +1,4 @@
-attribute @s minecraft:generic.oxygen_bonus modifier remove ca.attr_combat_luck_ench_value
+attribute @s minecraft:oxygen_bonus modifier remove ca.attr_combat_luck_ench_value
 
 scoreboard players operation $value ca.stat_var = @s ca.ench_lucky_lvl
 scoreboard players operation $value ca.stat_var *= $2 ca.CONSTANT

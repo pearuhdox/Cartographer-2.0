@@ -1,4 +1,4 @@
-attribute @s minecraft:generic.movement_speed modifier remove ca.hazard_protection_stat
+attribute @s minecraft:movement_speed modifier remove ca.hazard_protection_stat
 scoreboard players operation $value ca.stat_var = @s ca.ench_hazard_protection_lvl
 scoreboard players operation $value ca.stat_var *= $15 ca.CONSTANT
 

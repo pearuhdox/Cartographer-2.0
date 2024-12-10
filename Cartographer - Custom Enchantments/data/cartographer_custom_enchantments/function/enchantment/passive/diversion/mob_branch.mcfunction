@@ -8,4 +8,4 @@ execute if score $targeting ca.ench_var matches 1.. unless score $silent ca.ench
 execute if score $targeting ca.ench_var matches 1.. unless score $silent ca.ench_var matches 1.. run tag @s add ca.diversion_silent
 
 execute if score $targeting ca.ench_var matches 1.. run tag @s add ca.diversion_distract
-execute if score $targeting ca.ench_var matches 1.. run attribute @s generic.follow_range modifier add ca.diversion_distract -256 add_value
+execute if score $targeting ca.ench_var matches 1.. run attribute @s follow_range modifier add ca.diversion_distract -256 add_value

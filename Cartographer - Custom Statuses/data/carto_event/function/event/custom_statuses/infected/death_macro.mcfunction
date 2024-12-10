@@ -15,4 +15,4 @@ data modify storage cartographer_custom_statuses:infected_proc data.tick_rate se
 data modify storage cartographer_custom_statuses:infected_proc data.duration set from storage cartographer_custom_statuses:infected data.duration
 data modify storage cartographer_custom_statuses:infected_proc data.owner set from storage cartographer_custom_statuses:infected data.owner
 
-$execute as @e[type=#bb:hostile,tag=!ca.has_custom_status_infected,distance=..$(range),sort=nearest,limit=$(targets)] at @s run function carto_event:event/custom_statuses/infected/death_branch with storage cartographer_custom_statuses:infected_proc data
+$execute as @e[type=#cartographer_core:affected_by_carto,tag=!ca.has_custom_status_infected,distance=..$(range),sort=nearest,limit=$(targets)] at @s run function carto_event:event/custom_statuses/infected/death_branch with storage cartographer_custom_statuses:infected_proc data

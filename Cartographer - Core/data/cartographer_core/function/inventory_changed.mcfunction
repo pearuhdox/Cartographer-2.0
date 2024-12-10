@@ -1,6 +1,7 @@
 tag @s add ca.core_check_inv
 tag @s add ca.core_check_inv_inspector
 
+
 execute if score @s ca.equip_leather_boots matches 1.. run scoreboard players set @s ca.core_delay_check 2
 execute if score @s ca.equip_leather_leggings matches 1.. run scoreboard players set @s ca.core_delay_check 2
 execute if score @s ca.equip_leather_chestplate matches 1.. run scoreboard players set @s ca.core_delay_check 2
@@ -67,9 +68,10 @@ scoreboard players set @s ca.equip_turtle_helmet 0
 
 scoreboard players set @s ca.attribute_cleanse_delay 1
 
-execute if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:reset_enchant_values
-execute if score $custom_enchantments ca.installed matches 1.. run function cartographer_custom_enchantments:reset_enchant_values
-execute if score $custom_statuses ca.installed matches 1.. run function cartographer_custom_statuses:reset_enchant_values
-execute if score $enchantment_revamp ca.installed matches 1.. run function cartographer_enchantment_revamp:reset_enchant_values
+execute unless entity @s[tag=ca.suppress_inv_update] if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:reset_enchant_values
+execute unless entity @s[tag=ca.suppress_inv_update] if score $custom_enchantments ca.installed matches 1.. run function cartographer_custom_enchantments:reset_enchant_values
+execute unless entity @s[tag=ca.suppress_inv_update] if score $custom_statuses ca.installed matches 1.. run function cartographer_custom_statuses:reset_enchant_values
+execute unless entity @s[tag=ca.suppress_inv_update] if score $enchantment_revamp ca.installed matches 1.. run function cartographer_enchantment_revamp:reset_enchant_values
 
-execute if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:calculator/process/start
+
+#execute if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:calculator/process/start

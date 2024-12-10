@@ -17,10 +17,10 @@ execute if items entity @s weapon.offhand #cartographer_core:arrow if items enti
 execute if items entity @s weapon.mainhand #cartographer_core:wearables run scoreboard players set $disable_mainhand ca.attr_var 1
 execute if items entity @s weapon.offhand #cartographer_core:wearables run scoreboard players set $disable_offhand ca.attr_var 1
 
-attribute @s generic.attack_damage modifier remove ca.adaptive_damage_value
-attribute @s generic.attack_damage modifier remove ca.adaptive_damage_percent
-attribute @s generic.attack_damage modifier remove ca.total_damage_value
-attribute @s generic.attack_damage modifier remove ca.total_damage_percent
+attribute @s attack_damage modifier remove ca.adaptive_damage_value
+attribute @s attack_damage modifier remove ca.adaptive_damage_percent
+attribute @s attack_damage modifier remove ca.total_damage_value
+attribute @s attack_damage modifier remove ca.total_damage_percent
 
 execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/ranged_damage
 execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/ranged_velocity
@@ -45,6 +45,8 @@ execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run funct
 execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/chaining_amount
 execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/life_drain_chance
 execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/life_drain_amount
+execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/extra_jump_count
+execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/airdash_count
 
 execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/adaptive_damage
 execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/total_damage
@@ -82,6 +84,9 @@ function cartographer_custom_attributes:calculator/process/create_attribute/read
 
 function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/life_drain_chance
 function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/life_drain_amount
+
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/extra_jump_count
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/airdash_count
 
 function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/adaptive_damage
 function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/total_damage

@@ -18,4 +18,7 @@ execute if score $x_check ca.custom_trident matches 0 run data modify storage ca
 execute if score $y_check ca.custom_trident matches 0 run data modify storage cartographer_custom_attributes:trident motion_y set value 0.00001d
 execute if score $z_check ca.custom_trident matches 0 run data modify storage cartographer_custom_attributes:trident motion_z set value 0.00001d
 
-function cartographer_custom_attributes:custom_attributes/effects/ranged_damage/trident/convert with storage cartographer_custom_attributes:trident
+execute on origin run scoreboard players operation $val ca.custom_trident = @s ca.attr_ranged_damage_value
+scoreboard players operation @s ca.attr_ranged_damage_value = $val ca.custom_trident
+execute on origin run scoreboard players operation $val ca.custom_trident = @s ca.attr_ranged_damage_percent
+scoreboard players operation @s ca.attr_ranged_damage_percent = $val ca.custom_trident

@@ -1,5 +1,5 @@
 #Always take an Always Steal tag
-execute if data storage cartographer_charon:player temp.tag{AlwaysSteal:1b} run function cartographer_charon:inv/modify_slot
+execute if data storage cartographer_charon:player temp.components.minecraft:custom_data.AlwaysSteal run function cartographer_charon:inv/modify_slot
 
 execute if data storage cartographer_charon:player temp{id:"minecraft:lapis_lazuli"} run function cartographer_charon:inv/modify_slot
 execute if data storage cartographer_charon:player temp{id:"minecraft:player_head"} run function cartographer_charon:inv/modify_slot

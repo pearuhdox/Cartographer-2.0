@@ -1,7 +1,7 @@
 scoreboard players operation $cap ca.ench_var = $value ca.ench_var
 scoreboard players operation $cap ca.ench_var *= $4 ca.CONSTANT
 
-execute store result score $max ca.ench_var run attribute @s generic.max_health get
+execute store result score $max ca.ench_var run attribute @s max_health get
 
 scoreboard players operation $cap ca.ench_var < $max ca.ench_var
 

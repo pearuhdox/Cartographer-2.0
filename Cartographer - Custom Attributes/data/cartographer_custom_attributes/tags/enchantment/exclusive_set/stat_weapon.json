@@ -1,7 +1,7 @@
 {
     "values": [
-      "cartographer_custom_attributes:echo",
-      "cartographer_custom_attributes:reverb",
-      "cartographer_custom_attributes:lifesteal"
+      "cartographer_custom_attributes:custom/echo",
+      "cartographer_custom_attributes:custom/reverb",
+      "cartographer_custom_attributes:custom/lifesteal"
     ]
   }

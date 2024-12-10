@@ -1,10 +1,10 @@
 data modify storage cartographer_custom_attributes:calculator equips_attr set value {}
 data modify storage cartographer_custom_attributes:calculator equips_custom set value {}
 
-attribute @s generic.attack_damage modifier remove ca.adaptive_damage_value
-attribute @s generic.attack_damage modifier remove ca.adaptive_damage_percent
-attribute @s generic.attack_damage modifier remove ca.total_damage_value
-attribute @s generic.attack_damage modifier remove ca.total_damage_percent
+attribute @s attack_damage modifier remove ca.adaptive_damage_value
+attribute @s attack_damage modifier remove ca.adaptive_damage_percent
+attribute @s attack_damage modifier remove ca.total_damage_value
+attribute @s attack_damage modifier remove ca.total_damage_percent
 
 execute if entity @s[tag=ca.attr_slot_feet] run function cartographer_custom_attributes:calculator/mob/get_item_info {slot:"feet",path:"ArmorItems[0]"}
 execute if entity @s[tag=ca.attr_slot_legs] run function cartographer_custom_attributes:calculator/mob/get_item_info {slot:"legs",path:"ArmorItems[1]"}

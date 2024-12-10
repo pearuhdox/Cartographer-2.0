@@ -1,0 +1,3 @@
+$function carto_event:api/create_single_entity_event {event:"custom_ench/barrage",duration:$(barrage_time),delay:001,parameters:{projectile:"$(projectile_type)",time:0,count:$(barrage_ct),mod:$(barrage_mod),owner:"$(owner)",x:$(x_motion),y:$(y_motion),z:$(z_motion),pitch:$(pitch),yaw:$(yaw)},merge_behavior:"none"}
+
+function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/barrage/append_data with storage carto_event macro

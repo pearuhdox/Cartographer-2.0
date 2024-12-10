@@ -10,7 +10,7 @@ scoreboard players set $percent_hp ca.execute_hp 0
 
 $execute as $(target) at @s if score @s ca.execute_hp_past > @s ca.execute_hp run scoreboard players set $percent ca.execute_hp $(percentage)
 
-$execute as $(target) at @s if score @s ca.execute_hp_past > @s ca.execute_hp store result score $percent_hp ca.execute_hp run attribute @s minecraft:generic.max_health get 10
+$execute as $(target) at @s if score @s ca.execute_hp_past > @s ca.execute_hp store result score $percent_hp ca.execute_hp run attribute @s minecraft:max_health get 10
 $execute as $(target) at @s if score @s ca.execute_hp_past > @s ca.execute_hp run scoreboard players operation $percent_hp ca.execute_hp *= $percent ca.execute_hp
 $execute as $(target) at @s if score @s ca.execute_hp_past > @s ca.execute_hp run scoreboard players operation $percent_hp ca.execute_hp /= $100 ca.CONSTANT
 

@@ -1,0 +1,81 @@
+{
+  "description": {
+    "text": "Lightborn"
+  },
+  "exclusive_set": "#minecraft:exclusive_set/mining",
+  "supported_items": "#cartographer_core:enchant_support/tools",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 20,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "cartographer_custom_enchantments:enchantment/tool/lightborn/schedule"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {}
+        }
+      }
+    ],
+    "minecraft:hit_block": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "cartographer_custom_enchantments:enchantment/tool/lightborn/hit_block"
+        },
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "block": {
+                    "blocks": "#cartographer_custom_enchantments:torches"
+                  }
+                }
+              }
+            },
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "ca.ench_lightborn_lvl": {
+                  "min": 1
+                }
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "ca.lightborn_cooldown": {
+                    "min": 1
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

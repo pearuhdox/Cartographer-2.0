@@ -6,9 +6,7 @@
     "X"
   ],
   "key": {
-    "X": {
-      "item": "minecraft:iron_ingot"
-    }
+    "X": "minecraft:iron_ingot"
   },
   "result": {
     "id": "minecraft:chain",

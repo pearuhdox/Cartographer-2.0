@@ -1,9 +1,11 @@
-scoreboard players operation $lvl ca.ench_storm_lvl = @s ca.ench_storm_lvl
-execute if score $spawner_cause ca.ench_var matches 1.. run scoreboard players operation $lvl ca.ench_storm_lvl = @s ca.ench_storm_hand_lvl
+scoreboard players operation $lvl ca.ench_storm_lvl = $storm ca.ench_value
+execute if score $spawner_cause ca.ench_var matches 1.. run scoreboard players operation $lvl ca.ench_storm_lvl = $storm_hand ca.ench_value
+execute if score $summon_cause ca.ench_var matches 1.. run scoreboard players operation $lvl ca.ench_storm_lvl = $kinship_lvl ca.ench_var
 
-scoreboard players operation $duration ca.ench_storm_lvl = $lvl ca.ench_storm_lvl
+scoreboard players operation $duration ca.ench_storm_lvl = $storm ca.ench_value
 scoreboard players add $duration ca.ench_storm_lvl 4
 scoreboard players operation $duration ca.ench_storm_lvl *= $20 ca.CONSTANT
+scoreboard players add $duration ca.ench_storm_lvl 10
 
 
 scoreboard players set $mult ca.ench_var 15

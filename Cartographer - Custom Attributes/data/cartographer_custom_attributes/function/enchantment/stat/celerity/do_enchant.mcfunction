@@ -1,4 +1,4 @@
-attribute @s minecraft:generic.movement_speed modifier remove ca.celerity_stat
+attribute @s minecraft:movement_speed modifier remove ca.celerity_stat
 scoreboard players operation $value ca.stat_var = @s ca.ench_celerity_lvl
 scoreboard players operation $value ca.stat_var *= $4 ca.CONSTANT
 

@@ -21,3 +21,49 @@ execute if score $proc ca.ench_eruption_lvl matches 1 at @s if entity @s[tag=!ca
 execute if score $proc ca.ench_soulfire_lvl matches 1 at @s if entity @s[tag=!ca.enchant_first_blood] run function cartographer_custom_enchantments:enchantment/passive/soulfire/damage_event
 tag @s add ca.enchant_first_blood
 function carto_event:api/create_single_entity_event {event:"first_blood",duration:1,delay:300,parameters:{},merge_behavior:"none"}
+
+#Mob Activates Riposte
+execute if score $attack_type ca.ench_value matches 1.. unless entity @s[tag=has_custom_status_silenced] if score @s ca.ench_riposte_lvl matches 1.. unless entity @s[tag=ca.mob_use_riposte] store result score $active ca.ench_riposte_lvl run random value 1..3
+execute if score $attack_type ca.ench_value matches 1.. unless entity @s[tag=has_custom_status_silenced] if entity @s[tag=ca.riposte_first_hit] if score @s ca.ench_riposte_lvl matches 1.. unless entity @s[tag=ca.mob_use_riposte] run scoreboard players set $active ca.ench_riposte_lvl 3
+execute if score $attack_type ca.ench_value matches 1.. unless entity @s[tag=has_custom_status_silenced] if entity @s[tag=ca.riposte_half_health] if score @s ca.ench_riposte_lvl matches 1.. unless entity @s[tag=ca.mob_use_riposte] run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/riposte/half_health
+execute if score $attack_type ca.ench_value matches 1.. unless entity @s[tag=has_custom_status_silenced] if score @s ca.ench_riposte_lvl matches 1.. unless entity @s[tag=ca.mob_use_riposte] if score $active ca.ench_riposte_lvl matches 3.. at @s run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/riposte/setup_entity
+
+#Do Weapon Damage Enchantments
+scoreboard players set $active ca.concentration_time 0
+execute on attacker if score @s ca.concentration_time matches 1.. run scoreboard players set $active ca.concentration_time 1
+execute on attacker if score @s ca.concentration_time matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/damage/general/concentration/vfx
+
+execute if score $attack_type ca.ench_value matches 1.. if score $hex_eater ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/damage/general/hex_eater/hit
+execute if score $attack_type ca.ench_value matches 1.. if score $chaotic ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/damage/general/chaotic/hit
+execute if score $attack_type ca.ench_value matches 1.. if score $duelist ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/damage/general/duelist/hit
+execute if score $attack_type ca.ench_value matches 1.. if score $hunter ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/damage/general/hunter/hit
+
+execute if score $attack_type ca.ench_value matches 1.. if score $first_strike ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/damage/general/first_strike/hit
+execute if score $attack_type ca.ench_value matches 1.. if score $follow_up ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/damage/general/follow_up/hit
+execute if score $attack_type ca.ench_value matches 1.. if score $focus ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/damage/general/focus/hit
+execute if score $attack_type ca.ench_value matches 1.. if score $active ca.concentration_time matches 1.. if score $concentration ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/damage/general/concentration/hit
+
+execute if score $attack_type ca.ench_value matches 1 if score $rushdown ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/damage/melee/rushdown/hit
+execute if score $attack_type ca.ench_value matches 1 if score $leverage ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/damage/melee/leverage/hit
+
+execute if score $attack_type ca.ench_value matches 2 if score $overcharge ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/damage/ranged/overcharge/hit
+execute if score $attack_type ca.ench_value matches 2 if score $point_blank ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/damage/ranged/point_blank/hit
+execute if score $attack_type ca.ench_value matches 2 if score $sharpshot ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/damage/ranged/sharpshot/hit
+
+execute if score $attack_type ca.ench_value matches 1.. if score $explosive ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/general/explosive/hit
+execute if score $attack_type ca.ench_value matches 1.. if score $pulling ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/general/pulling/hit
+
+execute if score $attack_type ca.ench_value matches 1 if entity @s[tag=ca.ripper_tagged] run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/ripper/hit_melee
+
+execute if score $attack_type ca.ench_value matches 2 if score $grappling ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/grappling/activate_mob_hit
+
+execute if score $attack_type ca.ench_value matches 2 if score $shrapnel ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/shrapnel/hit
+execute if score $attack_type ca.ench_value matches 2 if score $ripper ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/ripper/hit
+execute if score $attack_type ca.ench_value matches 2 if score $barbed ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/barbed/hit
+
+tag @s remove ca.did_ench_particles
+
+tag @s remove ca.projectile_find_loc
+
+#Test All Nearby Projectiles and see if there are ones that need to bypass damage check - later mechanic not to do now
+#execute as @e[type=#bb:projectile,distance=..10] at @s run say proj

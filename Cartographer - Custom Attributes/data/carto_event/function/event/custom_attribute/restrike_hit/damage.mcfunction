@@ -1,9 +1,9 @@
-execute unless entity @s[type=player] run attribute @s minecraft:generic.knockback_resistance modifier add ca.restrike_kbr 0.4 add_value
-execute if entity @s[type=player] run attribute @s minecraft:generic.knockback_resistance modifier add ca.restrike_kbr 0.5 add_value
+execute unless entity @s[type=player] run attribute @s minecraft:knockback_resistance modifier add ca.restrike_kbr 0.4 add_value
+execute if entity @s[type=player] run attribute @s minecraft:knockback_resistance modifier add ca.restrike_kbr 0.5 add_value
 
 $damage @s $(restrike_damage) cartographer_custom_attributes:restrike_damage by $(restrike_owner)
 
-attribute @s minecraft:generic.knockback_resistance modifier remove ca.restrike_kbr
+attribute @s minecraft:knockback_resistance modifier remove ca.restrike_kbr
 
 execute if entity @s[type=player] run playsound minecraft:entity.player.attack.sweep hostile @a ~ ~ ~ 0.7 1.4
 execute unless entity @s[type=player] run playsound minecraft:entity.player.attack.sweep player @a ~ ~ ~ 0.7 1.4

@@ -1,7 +1,7 @@
 #Set the cap, but modify it to never exceed the player's max health, regardless
 #Anti Slimeking Preventative Measures
 $scoreboard players set $cap ca.apply_status_data $(cap)
-execute store result score $max_health ca.apply_status_data run attribute @s minecraft:generic.max_health get
+execute store result score $max_health ca.apply_status_data run attribute @s minecraft:max_health get
 scoreboard players operation $cap ca.apply_status_data < $max_health ca.apply_status_data
 
 $scoreboard players set $seconds ca.apply_status_data $(seconds)

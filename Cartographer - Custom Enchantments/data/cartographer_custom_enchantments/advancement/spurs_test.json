@@ -1,0 +1,15 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:enter_block",
+        "conditions": {
+          "player": [],
+          "block": "minecraft:cobweb"
+        }
+      }
+    },
+    "rewards": {
+      "function": "cartographer_custom_enchantments:enchantment/passive/spurs/reset"
+    }
+  }
+  

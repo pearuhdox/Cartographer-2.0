@@ -1,0 +1,2 @@
+execute if predicate cartographer_custom_enchantments:has_repeating_mainhand unless items entity @s weapon.mainhand *[minecraft:custom_data~{item_replaced:1b}] run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/consumable/replace {slot:"mainhand"}
+execute if predicate cartographer_custom_enchantments:has_repeating_offhand unless items entity @s weapon.offhand *[minecraft:custom_data~{item_replaced:1b}] run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/consumable/replace {slot:"offhand"}

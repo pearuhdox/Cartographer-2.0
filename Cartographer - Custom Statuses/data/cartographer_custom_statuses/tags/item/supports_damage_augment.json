@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+      "#cartographer_core:enchant_support/passive",
+      "#minecraft:pickaxes"
+    ]
+}  

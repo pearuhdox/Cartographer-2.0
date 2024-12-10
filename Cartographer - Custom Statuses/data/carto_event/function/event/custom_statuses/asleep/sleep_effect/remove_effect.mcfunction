@@ -1,6 +1,6 @@
-attribute @s minecraft:generic.follow_range modifier remove ca.asleep_follow_range
-attribute @s minecraft:generic.movement_speed modifier remove ca.asleep_speed
-attribute @s minecraft:generic.attack_damage modifier remove ca.asleep_damage
+attribute @s minecraft:follow_range modifier remove ca.asleep_follow_range
+attribute @s minecraft:movement_speed modifier remove ca.asleep_speed
+attribute @s minecraft:attack_damage modifier remove ca.asleep_damage
 
 playsound minecraft:entity.llama.spit hostile @a[distance=..16] ~ ~ ~ 0.5 1
 execute anchored eyes positioned ^ ^ ^ run particle minecraft:sneeze ~ ~ ~ 0.2 0 0.2 0.05 10 normal

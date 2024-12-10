@@ -1,0 +1,28 @@
+{
+  "description": {
+    "text": "Repeating Assist Because Charge Time Does Not Use Parameters"
+  },
+  "supported_items": "#cartographer_core:enchant_support/ranged_weapon",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 8
+  },
+  "max_cost": {
+    "base": 25,
+    "per_level_above_first": 8
+  },
+  "anvil_cost": 1024,
+  "slots": [
+    "offhand",
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:crossbow_charge_time": {
+      "type": "minecraft:set",
+      "value": 0.01
+      },
+    "minecraft:prevent_equipment_drop": {}
+  }
+}

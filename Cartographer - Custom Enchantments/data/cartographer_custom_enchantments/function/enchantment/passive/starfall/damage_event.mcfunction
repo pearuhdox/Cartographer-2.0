@@ -1,4 +1,4 @@
-execute on attacker run scoreboard players operation $lvl ca.ench_starfall_lvl = @s ca.ench_starfall_lvl
+execute on attacker run scoreboard players operation $lvl ca.ench_starfall_lvl = $starfall ca.ench_value
 
 #scoreboard players operation $chance ca.ench_starfall_lvl = $lvl ca.ench_starfall_lvl
 #scoreboard players operation $chance ca.ench_starfall_lvl *= $5 ca.CONSTANT
@@ -22,6 +22,11 @@ execute unless score $success ca.rand matches 1.. on attacker run scoreboard pla
 
 execute on attacker if score $success ca.rand matches 1.. run function cartographer_custom_enchantments:enchantment/passive/starfall/get_data
 execute if score $success ca.rand matches 1.. run function cartographer_custom_enchantments:enchantment/passive/starfall/get_position
+
+execute on attacker if score $success ca.rand matches 1.. run function cartographer_custom_enchantments:enchantment/passive/starfall/custom_statuses/check_allow_status
+
+execute on attacker if score $success ca.rand matches 1.. if score $allow_statuses ca.ench_starfall_lvl matches 1.. if entity @s[type=player] run function cartographer_custom_enchantments:enchantment/passive/starfall/custom_statuses/status_player
+execute on attacker if score $success ca.rand matches 1.. if score $allow_statuses ca.ench_starfall_lvl matches 1.. unless entity @s[type=player] run function cartographer_custom_enchantments:enchantment/passive/starfall/custom_statuses/status_mob
 
 execute on attacker if score $success ca.rand matches 1.. run function cartographer_custom_enchantments:enchantment/passive/starfall/create_meteor
 

@@ -1,16 +1,13 @@
 {
-        "type": "minecraft:crafting_shaped",
-        "pattern": [
-          "X"
-        ],
-        "key": {
-          "X": {
-            "item": "minecraft:chain"
-          }
-        },
-        "result": {
-          "id": "minecraft:iron_nugget",
-          "count": 3
-        }
-      }
-      
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X"
+  ],
+  "key": {
+    "X": "minecraft:chain"
+  },
+  "result": {
+    "id": "minecraft:iron_nugget",
+    "count": 3
+  }
+}

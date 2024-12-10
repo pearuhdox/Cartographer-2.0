@@ -4,6 +4,8 @@
       "#minecraft:swords",
       "#minecraft:axes",
       "#minecraft:hoes",
-      "minecraft:mace"
+      "minecraft:mace",
+      "minecraft:trident",
+      "minecraft:fishing_rod"
     ]
 }  

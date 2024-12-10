@@ -29,9 +29,14 @@ execute store result score $y ca.ench_trailblazer_lvl run data get entity @s Pos
 execute store result score $z ca.ench_trailblazer_lvl run data get entity @s Pos[2] 100
 
 execute store result storage cartographer:custom_enchantments x double 0.01 run scoreboard players get $x ca.ench_trailblazer_lvl
-execute store result storage cartographer:custom_enchantments y double 0.01 run scoreboard players get $y ca.ench_trailblazer_lvl
+#execute store result storage cartographer:custom_enchantments y double 0.01 run scoreboard players get $y ca.ench_trailblazer_lvl
 execute store result storage cartographer:custom_enchantments z double 0.01 run scoreboard players get $z ca.ench_trailblazer_lvl
 
-function cartographer_custom_enchantments:enchantment/passive/trailblazer/place with storage cartographer:custom_enchantments
+function cartographer_custom_enchantments:enchantment/passive/trailblazer/custom_statuses/check_allow_status
+execute if score $allow_statuses ca.ench_trailblazer_lvl matches 1.. if entity @s[type=player] run function cartographer_custom_enchantments:enchantment/passive/trailblazer/custom_statuses/status_player
+execute if score $allow_statuses ca.ench_trailblazer_lvl matches 1.. unless entity @s[type=player] run function cartographer_custom_enchantments:enchantment/passive/trailblazer/custom_statuses/status_mob
+
+
+function cartographer_custom_enchantments:enchantment/passive/trailblazer/place
 
 scoreboard players remove @s ca.sprint_dist_trailblazer 150

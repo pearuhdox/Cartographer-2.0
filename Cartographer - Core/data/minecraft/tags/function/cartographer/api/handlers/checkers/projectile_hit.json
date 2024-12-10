@@ -1,5 +1,12 @@
 {
     "values":[
-      "cartographer_core:debug/handlers/checkers/projectile_hit"
+      "cartographer_core:debug/handlers/checkers/projectile_hit",
+		  {"id":"cartographer_custom_attributes:system/potion_landed","required":false},
+		  {"id":"cartographer_custom_attributes:system/bobber_landed","required":false},
+      {"id":"cartographer_custom_statuses:apply_status/apply/potion_landed","required":false},
+		  {"id":"cartographer_custom_statuses:apply_status/apply/bobber_landed","required":false},
+      {"id":"cartographer_custom_enchantments:system/potion_landed","required":false},
+		  {"id":"cartographer_custom_enchantments:system/bobber_landed","required":false}
+      
     ]
   }

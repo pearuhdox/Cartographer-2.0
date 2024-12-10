@@ -1,0 +1,3 @@
+$execute if score $custom_attributes ca.installed matches 1.. run data modify storage carto_event all.$(current_tick)[-1].parameters.bobber_attr set from storage cartographer:custom_attributes projectile
+$execute if score $custom_statuses ca.installed matches 1.. run data modify storage carto_event all.$(current_tick)[-1].parameters.projectile_hit set from storage cartographer:custom_statuses projectile
+$execute if score $custom_enchantments ca.installed matches 1.. run data modify storage carto_event all.$(current_tick)[-1].parameters.enchant_data set from storage cartographer:custom_enchantments projectile

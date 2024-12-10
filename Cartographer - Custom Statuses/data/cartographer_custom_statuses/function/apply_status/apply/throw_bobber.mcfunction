@@ -1,0 +1,1 @@
+execute if entity @s[type=fishing_bobber] run function cartographer_custom_statuses:apply_status/apply/throw_bobber_branch

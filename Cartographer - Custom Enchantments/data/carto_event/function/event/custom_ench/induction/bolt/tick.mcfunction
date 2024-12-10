@@ -11,6 +11,6 @@ data modify storage carto_event current[-1].parameters.previous set from storage
 
 
 $execute if score $spread ca.ench_induction_lvl matches 1.. as $(target) at @s if entity @s[type=player] as @a[distance=..$(length),limit=1,sort=nearest,tag=!ca.induction_cdl] at @s run function carto_event:event/custom_ench/induction/bolt/transfer with storage carto_event current[-1].parameters
-$execute if score $spread ca.ench_induction_lvl matches 1.. as $(target) at @s unless entity @s[type=player] as @e[type=#bb:hostile,distance=..$(length),limit=1,sort=nearest,tag=!ca.induction_cdl] at @s run function carto_event:event/custom_ench/induction/bolt/transfer with storage carto_event current[-1].parameters
+$execute if score $spread ca.ench_induction_lvl matches 1.. as $(target) at @s unless entity @s[type=player] as @e[type=#cartographer_core:affected_by_carto,distance=..$(length),limit=1,sort=nearest,tag=!ca.induction_cdl] at @s run function carto_event:event/custom_ench/induction/bolt/transfer with storage carto_event current[-1].parameters
 
 return 0

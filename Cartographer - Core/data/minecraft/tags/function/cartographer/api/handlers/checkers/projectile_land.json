@@ -1,0 +1,7 @@
+{
+    "values":[
+      "cartographer_core:debug/handlers/checkers/projectile_land",
+		  {"id":"cartographer_custom_enchantments:enchantment/weapon/unique/ranged/grappling/test_activate_owner","required":false},
+      {"id":"cartographer_custom_enchantments:enchantment/weapon/unique/ranged/collapse/hit","required":false}
+    ]
+  }

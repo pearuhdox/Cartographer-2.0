@@ -1,0 +1,1 @@
+$clear @s $(arrow_id) 1

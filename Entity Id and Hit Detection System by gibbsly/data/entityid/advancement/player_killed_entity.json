@@ -762,20 +762,6 @@
                 ]
             }
         },
-        "boat": {
-            "trigger": "minecraft:player_killed_entity",
-            "conditions": {
-                "entity": [
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "type": "boat"
-                        }
-                    }
-                ]
-            }
-        },
         "bogged": {
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
@@ -855,20 +841,6 @@
                         "entity": "this",
                         "predicate": {
                             "type": "cave_spider"
-                        }
-                    }
-                ]
-            }
-        },
-        "chest_boat": {
-            "trigger": "minecraft:player_killed_entity",
-            "conditions": {
-                "entity": [
-                    {
-                        "condition": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "type": "chest_boat"
                         }
                     }
                 ]
@@ -2749,14 +2721,12 @@
             "bee",
             "blaze",
             "block_display",
-            "boat",
             "bogged",
             "breeze",
             "breeze_wind_charge",
             "camel",
             "cat",
             "cave_spider",
-            "chest_boat",
             "chest_minecart",
             "chicken",
             "cod",

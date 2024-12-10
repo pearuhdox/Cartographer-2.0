@@ -1,0 +1,4 @@
+data modify storage cartographer_custom_enchantments:item_lock new_item set value {}
+data modify storage cartographer_custom_enchantments:item_lock new_item set from storage cartographer_custom_enchantments:item_lock item.components.minecraft:custom_data.locked_item
+
+data modify storage cartographer_custom_enchantments:item_lock item set from storage cartographer_custom_enchantments:item_lock new_item

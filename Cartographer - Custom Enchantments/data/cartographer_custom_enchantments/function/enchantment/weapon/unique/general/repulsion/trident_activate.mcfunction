@@ -1,0 +1,1 @@
+execute if score @s ca.ench_repulsion_lvl matches 1.. unless score @s ca.repulsion_cooldown matches 1.. if score @s ca.aim_trident_time matches 5 run function cartographer_custom_enchantments:enchantment/weapon/unique/general/repulsion/activate

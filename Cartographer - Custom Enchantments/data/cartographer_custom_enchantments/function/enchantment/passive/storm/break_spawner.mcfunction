@@ -1,12 +1,13 @@
 scoreboard players set $spawner_cause ca.ench_var 1
 
+
 scoreboard players operation $previous ca.storm_stack = @s ca.storm_stack
 
-scoreboard players add @s ca.storm_stack 800
+scoreboard players add @s ca.storm_stack 75
 function cartographer_custom_enchantments:enchantment/passive/storm/tier_up_player_vfx
 
 scoreboard players set $used_storm ca.storm_stack 0
-execute if score @s ca.storm_stack matches 10000.. run scoreboard players set $used_storm ca.storm_stack 1
+execute if score @s ca.storm_stack matches 1500.. run scoreboard players set $used_storm ca.storm_stack 1
 
 execute if score $used_storm ca.storm_stack matches 1.. run scoreboard players set @s ca.storm_stack 0
 

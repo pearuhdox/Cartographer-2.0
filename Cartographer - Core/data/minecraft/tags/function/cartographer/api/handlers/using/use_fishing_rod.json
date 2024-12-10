@@ -1,0 +1,7 @@
+{
+    "values":[
+      "cartographer_core:debug/handlers/using/use_fishing_rod",
+      {"id":"cartographer_custom_enchantments:enchantment/weapon/unique/general/repulsion/melee_activate","required":false},
+      {"id":"cartographer_custom_enchantments:enchantment/weapon/unique/ranged/fleetfoot/other_activate","required":false}
+    ]
+  }

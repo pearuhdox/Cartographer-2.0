@@ -8,11 +8,10 @@ tag @s add ca.deadeye_owner
 data modify storage cartographer:custom_enchantments custom_statuses set value {}
 function cartographer_custom_enchantments:enchantment/passive/deadeye/custom_statuses/check_allow_status
 
+$execute if entity @s[type=player] facing entity @n[type=#cartographer_core:affected_by_carto,distance=..$(length),tag=!ca.deadeye_cdl] eyes rotated ~ ~3 positioned ^ ^ ^0.5 run function cartographer_custom_enchantments:enchantment/passive/deadeye/fire_raycast
+$execute unless entity @s[type=player] facing entity @n[type=player,distance=5..$(length),tag=!ca.deadeye_cdl] eyes rotated ~ ~3 positioned ^ ^ ^0.5 run function cartographer_custom_enchantments:enchantment/passive/deadeye/fire_projectile_mob
 
-$execute if entity @s[type=player] facing entity @n[type=#bb:hostile,distance=..$(length),tag=!ca.deadeye_cdl] eyes rotated ~ ~3 positioned ^ ^ ^0.5 run function cartographer_custom_enchantments:enchantment/passive/deadeye/fire_raycast
-$execute unless entity @s[type=player] facing entity @n[type=player,distance=..$(length),tag=!ca.deadeye_cdl] eyes rotated ~ ~3 positioned ^ ^ ^0.5 run function cartographer_custom_enchantments:enchantment/passive/deadeye/fire_raycast
-
-$execute unless score $hit ca.ench_deadeye_lvl matches 1.. if entity @s[type=player] as @n[type=#bb:hostile,distance=..$(length),tag=!ca.deadeye_cdl] at @s run function cartographer_custom_enchantments:enchantment/passive/deadeye/block_entity
+$execute unless score $hit ca.ench_deadeye_lvl matches 1.. if entity @s[type=player] as @n[type=#cartographer_core:affected_by_carto,distance=..$(length),tag=!ca.deadeye_cdl] at @s run function cartographer_custom_enchantments:enchantment/passive/deadeye/block_entity
 $execute unless score $hit ca.ench_deadeye_lvl matches 1.. unless entity @s[type=player] as @n[type=player,distance=..$(length),tag=!ca.deadeye_cdl] at @s run function cartographer_custom_enchantments:enchantment/passive/deadeye/block_entity
 
 tag @s remove ca.deadeye_owner

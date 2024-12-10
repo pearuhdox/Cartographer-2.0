@@ -1,5 +1,5 @@
-attribute @s minecraft:generic.oxygen_bonus modifier remove ca.attr_life_drain_chance_ench_percent
-attribute @s minecraft:generic.oxygen_bonus modifier remove ca.attr_life_drain_amount_ench_value
+attribute @s minecraft:oxygen_bonus modifier remove ca.attr_life_drain_chance_ench_percent
+attribute @s minecraft:oxygen_bonus modifier remove ca.attr_life_drain_amount_ench_value
 
 scoreboard players operation $value ca.stat_var = @s ca.ench_lifesteal_lvl
 scoreboard players operation $value ca.stat_var *= $5 ca.CONSTANT

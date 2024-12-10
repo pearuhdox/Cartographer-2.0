@@ -1,5 +1,5 @@
 
-summon chest_boat 4206859 1.2 4206866 {Silent:1b,Invulnerable:1b,Type:"spruce",LootTable:"minecraft:empty",UUID:[I;-436580125,-2140190702,-2102115516,-604871692]}
+summon spruce_chest_boat 4206859 1.2 4206866 {Silent:1b,Invulnerable:1b,Type:"spruce",LootTable:"minecraft:empty",UUID:[I;-436580125,-2140190702,-2102115516,-604871692]}
 data modify entity e5fa50e3-806f-4812-82b4-4344dbf263f4 LootTable set from entity @s item.components."minecraft:custom_data".loottable
 kill e5fa50e3-806f-4812-82b4-4344dbf263f4
 execute positioned 4206859 1.2 4206866 run tag @e[type=item,distance=..3] add dies.new_item

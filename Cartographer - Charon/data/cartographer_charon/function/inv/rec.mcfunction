@@ -3,8 +3,9 @@ data modify storage cartographer_charon:player temp set value {}
 data modify storage cartographer_charon:player temp set from storage inv:main inv.all[0]
 data remove storage inv:main inv.all[0]
 
-#Apply Vanishing or Shattering or Binding
-execute if data storage cartographer_charon:player temp.components.minecraft:custom_data.CustomEnchantments:[{id:"curse_shattering"}] run function cartographer_charon:item_effects/shattering
+#Apply Vanishing or Shattering or Binding or Haunting
+execute if data storage cartographer_charon:player temp.components.minecraft:enchantments.levels.cartographer_custom_enchantments:curse/shattering run function cartographer_charon:item_effects/shattering
+execute if data storage cartographer_charon:player temp.components.minecraft:enchantments.levels.cartographer_custom_enchantments:curse/haunting run function cartographer_charon:item_effects/haunting
 execute if data storage cartographer_charon:player temp.components.minecraft:enchantments.levels.minecraft:vanishing_curse run function cartographer_charon:item_effects/vanishing
 execute if data storage cartographer_charon:player temp.components.minecraft:enchantments.levels.minecraft:binding_curse run scoreboard players set $rand_t dt.var 0
 

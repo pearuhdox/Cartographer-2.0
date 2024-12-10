@@ -1,5 +1,20 @@
-#say player loop
+execute if score @s ca.attr_airdash_count_total matches 1.. unless block ~ ~-0.2 ~ #cartographer_core:can_raycast run scoreboard players set @s ca.airdash_count 0
+execute if score @s ca.attr_airdash_count_total matches 1.. unless block ~ ~-0.2 ~ #cartographer_core:can_raycast run tag @s remove ca.released_sprint_key
+execute if score @s ca.attr_airdash_count_total matches 1.. if score @s ca.airdash_count < @s ca.attr_airdash_count_total unless score @s ca.movement_tech_cdl matches 1.. if block ~ ~-0.2 ~ #cartographer_core:can_raycast unless entity @s[nbt={OnGround:1b}] run function cartographer_custom_attributes:custom_attributes/effects/airdash/tick
 
-#execute if score @s ca.ethereal_time matches 1.. run scoreboard players remove @s ca.ethereal_time 1
+execute if score @s ca.attr_extra_jump_count_total matches 1.. unless block ~ ~-0.2 ~ #cartographer_core:can_raycast run scoreboard players set @s ca.extra_jump_count 0
+execute if score @s ca.attr_extra_jump_count_total matches 1.. unless block ~ ~-0.2 ~ #cartographer_core:can_raycast run tag @s remove ca.released_jump_key
+execute if score @s ca.attr_extra_jump_count_total matches 1.. if score @s ca.extra_jump_count < @s ca.attr_extra_jump_count_total unless score @s ca.movement_tech_cdl matches 1.. if block ~ ~-0.2 ~ #cartographer_core:can_raycast unless entity @s[nbt={OnGround:1b}] run function cartographer_custom_attributes:custom_attributes/effects/extra_jump/tick
 
-#function cartographer_custom_enchantments:loop/tick/reset
+execute if score @s ca.movement_tech_cdl matches 1.. run scoreboard players remove @s ca.movement_tech_cdl 1
+
+
+#Save X and Z from last tick
+execute if score @s ca.attr_airdash_count_total matches 1.. unless score @s ca.attr_extra_jump_count_total matches 1.. run execute store result score @s ca.move_x run data get entity @s Pos[0] 1000
+execute if score @s ca.attr_airdash_count_total matches 1.. unless score @s ca.attr_extra_jump_count_total matches 1.. run execute store result score @s ca.move_z run data get entity @s Pos[2] 1000
+
+execute if score @s ca.attr_extra_jump_count_total matches 1.. unless score @s ca.attr_airdash_count_total matches 1.. run execute store result score @s ca.move_x run data get entity @s Pos[0] 1000
+execute if score @s ca.attr_extra_jump_count_total matches 1.. unless score @s ca.attr_airdash_count_total matches 1.. run execute store result score @s ca.move_z run data get entity @s Pos[2] 1000
+
+execute if score @s ca.attr_extra_jump_count_total matches 1.. if score @s ca.attr_airdash_count_total matches 1.. run execute store result score @s ca.move_x run data get entity @s Pos[0] 1000
+execute if score @s ca.attr_extra_jump_count_total matches 1.. if score @s ca.attr_airdash_count_total matches 1.. run execute store result score @s ca.move_z run data get entity @s Pos[2] 1000

@@ -36,7 +36,6 @@ execute store result score $power_level ca.attr_apply_var run data get entity @s
 
 execute if score @s ca.attr_ranged_damage_total matches -1999999.. run scoreboard players operation $ranged_damage ca.attr_apply_var = @s ca.attr_ranged_damage_total
 
-
 execute if score @s ca.attr_life_drain_chance_total matches -1999999.. run scoreboard players operation $life_drain_chance ca.attr_apply_var = @s ca.attr_life_drain_chance_total
 
 execute if score @s ca.attr_life_drain_amount_value matches -1999999.. run scoreboard players operation $life_drain_amount_flat ca.attr_apply_var = @s ca.attr_life_drain_amount_value

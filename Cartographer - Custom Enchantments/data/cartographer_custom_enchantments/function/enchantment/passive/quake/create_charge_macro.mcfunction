@@ -14,4 +14,5 @@ execute store result score @s ca.quake_max run data get storage cartographer:cus
 
 tag @s add ca.quake_marker
 
-$function carto_event:api/create_single_entity_event {event:"custom_ench/quake/charge",duration:100,delay:0,parameters:{block:"$(block)",size:0,damage:$(damage),owner:"$(owner)"},merge_behavior:"none"}
+$function carto_event:api/create_single_entity_event {event:"custom_ench/quake/charge",duration:100,delay:0,parameters:{telegraph:"$(telegraph)",block:"$(block)",size:0,damage:$(damage),owner:"$(owner)"},merge_behavior:"none"}
+function cartographer_custom_enchantments:enchantment/passive/quake/custom_statuses/append_status with storage carto_event macro

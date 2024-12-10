@@ -12,21 +12,21 @@ $execute as $(target) at @s positioned ^ ^0.2 ^ if score duration= carto_event m
 $execute as $(target) at @s positioned ^ ^0.2 ^ if score duration= carto_event matches 22 run function carto_event:event/custom_statuses/evocation/grasp_vfx/2
 $execute as $(target) at @s positioned ^ ^0.2 ^ if score duration= carto_event matches 20 run function carto_event:event/custom_statuses/evocation/grasp_vfx/3
 
-$execute as $(target) at @s if score duration= carto_event matches 20 as @e[type=#bb:hostile,distance=$(damage_range)..$(grasp_range),sort=nearest] at @s run function carto_event:event/custom_statuses/evocation/grasp with storage carto_event current[-1].parameters
+$execute as $(target) at @s if score duration= carto_event matches 20 as @e[type=#cartographer_core:affected_by_carto,distance=$(damage_range)..$(grasp_range),sort=nearest] at @s run function carto_event:event/custom_statuses/evocation/grasp with storage carto_event current[-1].parameters
 
-$execute as $(target) at @s if score duration= carto_event matches 9 as @e[type=#bb:hostile,distance=..$(damage_range),sort=nearest] at @s run function carto_event:event/custom_statuses/evocation/fang_summon
+$execute as $(target) at @s if score duration= carto_event matches 9 as @e[type=#cartographer_core:affected_by_carto,distance=..$(damage_range),sort=nearest] at @s run function carto_event:event/custom_statuses/evocation/fang_summon
 
-$execute as $(target) at @s if score duration= carto_event matches 2 as @e[type=#bb:hostile,distance=..$(damage_range),sort=nearest] at @s run function carto_event:event/custom_statuses/evocation/ench_add
+$execute as $(target) at @s if score duration= carto_event matches 2 as @e[type=#cartographer_core:affected_by_carto,distance=..$(damage_range),sort=nearest] at @s run function carto_event:event/custom_statuses/evocation/ench_add
 
-$execute as $(target) at @s if score duration= carto_event matches 1 as @e[type=#bb:hostile,distance=..$(damage_range),sort=nearest] at @s run function carto_event:event/custom_statuses/evocation/ench_remove
+$execute as $(target) at @s if score duration= carto_event matches 1 as @e[type=#cartographer_core:affected_by_carto,distance=..$(damage_range),sort=nearest] at @s run function carto_event:event/custom_statuses/evocation/ench_remove
 
-$execute if score duration= carto_event matches 1 as $(target) at @s as @e[type=#bb:hostile,distance=..$(damage_range),sort=nearest] at @s run damage @s $(damage) cartographer_custom_statuses:status_damage by $(owner)
+$execute if score duration= carto_event matches 1 as $(target) at @s as @e[type=#cartographer_core:affected_by_carto,distance=..$(damage_range),sort=nearest] at @s run damage @s $(damage) cartographer_custom_statuses:status_damage by $(owner)
 
-$execute if score duration= carto_event matches 1 as $(target) at @s as @e[type=#bb:hostile,distance=..$(damage_range),sort=nearest] at @s run scoreboard players add @s ca.evocation_buffer $(damage)
-$execute if score duration= carto_event matches 1 as $(target) at @s as @e[type=#bb:hostile,distance=..$(damage_range),sort=nearest] at @s if score @s ca.evocation_buffer matches 2.. anchored eyes positioned ^ ^-0.75 ^ run function cartographer_core:handlers/text_popup/indicator/create {scale:0.7,text:"-❤",color:"#c49458",buffer_name:"evocation"}
+$execute if score duration= carto_event matches 1 as $(target) at @s as @e[type=#cartographer_core:affected_by_carto,distance=..$(damage_range),sort=nearest] at @s run scoreboard players add @s ca.evocation_buffer $(damage)
+$execute if score duration= carto_event matches 1 as $(target) at @s as @e[type=#cartographer_core:affected_by_carto,distance=..$(damage_range),sort=nearest] at @s if score @s ca.evocation_buffer matches 2.. anchored eyes positioned ^ ^-0.75 ^ run function cartographer_core:handlers/text_popup/indicator/create {scale:0.7,text:"-❤",color:"#c49458",buffer_name:"evocation"}
 
 
-$execute if score duration= carto_event matches 1 as $(target) at @s as @e[type=#bb:hostile,distance=..$(damage_range),sort=nearest] at @s positioned ~ ~1 ~ run function carto_event:event/custom_statuses/evocation/vfx
+$execute if score duration= carto_event matches 1 as $(target) at @s as @e[type=#cartographer_core:affected_by_carto,distance=..$(damage_range),sort=nearest] at @s positioned ~ ~1 ~ run function carto_event:event/custom_statuses/evocation/vfx
 $execute if score duration= carto_event matches 1 as $(target) at @s run tag @s remove ca.has_custom_status_evocation
 
 $execute as $(target) at @s if score duration= carto_event matches 1 run playsound minecraft:entity.evoker.prepare_summon hostile @a[distance=..16] ~ ~ ~ 0.75 2

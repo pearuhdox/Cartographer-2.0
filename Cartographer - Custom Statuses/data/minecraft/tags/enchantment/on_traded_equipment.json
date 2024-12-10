@@ -1,0 +1,16 @@
+{
+    "replace": false,
+    "values": [
+      "cartographer_custom_statuses:passive/evasion",
+      "cartographer_custom_statuses:passive/nullifying",
+      "cartographer_custom_statuses:passive/regeneration",
+      "cartographer_custom_statuses:passive/shielding",
+      "cartographer_custom_statuses:kill/mightiness",
+      "cartographer_custom_statuses:kill/swiftness",
+      "cartographer_custom_statuses:kill/hastiness",
+      "cartographer_custom_statuses:kill/stealthiness",
+      "cartographer_custom_statuses:kill/sapper",
+      "cartographer_custom_statuses:kill/lifeblood",
+      "cartographer_custom_statuses:kill/bracing"
+    ]
+  }

@@ -1,5 +1,6 @@
-scoreboard players operation $lvl ca.ench_soulfire_lvl = @s ca.ench_soulfire_lvl
-execute if score $spawner_cause ca.ench_var matches 1.. run scoreboard players operation $lvl ca.ench_soulfire_lvl = @s ca.ench_soulfire_hand_lvl
+scoreboard players operation $lvl ca.ench_soulfire_lvl = $soulfire ca.ench_value
+execute if score $spawner_cause ca.ench_var matches 1.. run scoreboard players operation $lvl ca.ench_soulfire_lvl = $soulfire_hand ca.ench_value
+execute if score $summon_cause ca.ench_var matches 1.. run scoreboard players operation $lvl ca.ench_soulfire_lvl = $kinship_lvl ca.ench_var
 
 scoreboard players operation $mult ca.ench_var = $lvl ca.ench_soulfire_lvl
 scoreboard players operation $mult ca.ench_var *= $25 ca.CONSTANT

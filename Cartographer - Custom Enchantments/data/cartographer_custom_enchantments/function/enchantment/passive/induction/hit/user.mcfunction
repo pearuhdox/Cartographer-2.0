@@ -1,11 +1,11 @@
 scoreboard players operation $previous ca.induction_stack = @s ca.induction_stack
 
-scoreboard players add @s ca.induction_stack 400
+scoreboard players add @s ca.induction_stack 75
 
 execute if entity @s[type=player] run function cartographer_custom_enchantments:enchantment/passive/induction/tier_up_player_vfx
 execute unless entity @s[type=player] run function cartographer_custom_enchantments:enchantment/passive/induction/tier_up_vfx
 
-execute if score @s ca.induction_stack matches 10000.. run scoreboard players set $used_induction ca.induction_stack 1
+execute if score @s ca.induction_stack matches 1500.. run scoreboard players set $used_induction ca.induction_stack 1
 
 execute if score $used_induction ca.induction_stack matches 1.. run scoreboard players set @s ca.induction_stack 0
 
@@ -18,5 +18,5 @@ execute if score $used_induction ca.induction_stack matches 1.. unless entity @s
 execute if score $used_induction ca.induction_stack matches 1.. unless entity @s[type=player] run playsound minecraft:entity.lightning_bolt.thunder hostile @a[distance=..16] ~ ~ ~ 0.5 2
 
 
-execute if score $used_induction ca.induction_stack matches 1.. run scoreboard players operation $lvl ca.ench_induction_lvl = @s ca.ench_induction_lvl
+execute if score $used_induction ca.induction_stack matches 1.. run scoreboard players operation $lvl ca.ench_induction_lvl = $induction ca.ench_value
 execute if score $used_induction ca.induction_stack matches 1.. run function cartographer_custom_enchantments:enchantment/passive/induction/get_data

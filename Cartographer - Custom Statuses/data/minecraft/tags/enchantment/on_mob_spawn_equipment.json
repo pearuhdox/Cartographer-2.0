@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+      "cartographer_custom_statuses:passive/evasion",
+      "cartographer_custom_statuses:passive/nullifying",
+      "cartographer_custom_statuses:passive/regeneration",
+      "cartographer_custom_statuses:passive/shielding"
+    ]
+  }

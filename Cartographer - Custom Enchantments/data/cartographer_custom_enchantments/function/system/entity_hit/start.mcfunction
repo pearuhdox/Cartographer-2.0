@@ -31,3 +31,6 @@ execute if score @s ca.ench_eruption_lvl matches 1.. run scoreboard players set 
 
 scoreboard players set $proc ca.ench_soulfire_lvl 0
 execute if score @s ca.ench_soulfire_lvl matches 1.. run scoreboard players set $proc ca.ench_soulfire_lvl 1
+
+
+execute if score @s ca.ench_recoil_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/general/recoil/activate

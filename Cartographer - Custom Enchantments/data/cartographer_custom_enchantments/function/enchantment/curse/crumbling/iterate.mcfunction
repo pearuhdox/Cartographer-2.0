@@ -1,0 +1,11 @@
+data modify storage cartographer_custom_enchantments:crumbling item_check set value {}
+data modify storage cartographer_custom_enchantments:crumbling item_check set from storage cartographer_custom_enchantments:crumbling items[0]
+
+data modify storage cartographer_custom_enchantments:crumbling macro set value {}
+data modify storage cartographer_custom_enchantments:crumbling macro.level set from storage cartographer_custom_enchantments:crumbling item_check.components.minecraft:enchantments.levels.cartographer_custom_enchantments:curse/crumbling
+execute store result storage cartographer_custom_enchantments:crumbling macro.slot int 1 run data get storage cartographer_custom_enchantments:crumbling item_check.Slot
+
+execute if data storage cartographer_custom_enchantments:crumbling item_check.components.minecraft:enchantments.levels.cartographer_custom_enchantments:curse/crumbling run function cartographer_custom_enchantments:enchantment/curse/crumbling/attempt_repair with storage cartographer_custom_enchantments:crumbling macro
+
+data remove storage cartographer_custom_enchantments:crumbling items[0]
+execute if data storage cartographer_custom_enchantments:crumbling items[0] run function cartographer_custom_enchantments:enchantment/curse/crumbling/iterate

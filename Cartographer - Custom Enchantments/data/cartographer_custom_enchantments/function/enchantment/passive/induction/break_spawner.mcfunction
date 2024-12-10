@@ -2,11 +2,11 @@ scoreboard players set $spawner_cause ca.ench_var 1
 
 scoreboard players operation $previous ca.induction_stack = @s ca.induction_stack
 
-scoreboard players add @s ca.induction_stack 800
+scoreboard players add @s ca.induction_stack 75
 function cartographer_custom_enchantments:enchantment/passive/induction/tier_up_player_vfx
 
 scoreboard players set $used_induction ca.induction_stack 0
-execute if score @s ca.induction_stack matches 10000.. run scoreboard players set $used_induction ca.induction_stack 1
+execute if score @s ca.induction_stack matches 1500.. run scoreboard players set $used_induction ca.induction_stack 1
 
 execute if score $used_induction ca.induction_stack matches 1.. run scoreboard players set @s ca.induction_stack 0
 
@@ -18,7 +18,7 @@ execute if score $used_induction ca.induction_stack matches 1.. run function car
 
 execute if score $used_induction ca.induction_stack matches 1.. run function cartographer_custom_enchantments:enchantment/passive/induction/create_bolt_attacker
 
-execute if score $used_induction ca.induction_stack matches 1.. as @e[type=#bb:hostile,distance=..16,limit=1,sort=nearest] run function cartographer_custom_enchantments:enchantment/passive/induction/create_bolt
+execute if score $used_induction ca.induction_stack matches 1.. as @e[type=#cartographer_core:affected_by_carto,distance=..16,limit=1,sort=nearest] run function cartographer_custom_enchantments:enchantment/passive/induction/create_bolt
 
 scoreboard players set $used_induction ca.induction_stack 0
 

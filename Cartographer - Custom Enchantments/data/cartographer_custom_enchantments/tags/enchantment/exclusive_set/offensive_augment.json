@@ -1,7 +1,7 @@
 {
     "values": [
-      "cartographer_custom_enchantments:frenzy",
-      "cartographer_custom_enchantments:adrenaline",
-      "cartographer_custom_enchantments:vengeance"
+      "cartographer_custom_enchantments:passive/frenzy",
+      "cartographer_custom_enchantments:passive/adrenaline",
+      "cartographer_custom_enchantments:passive/vengeance"
     ]
   }

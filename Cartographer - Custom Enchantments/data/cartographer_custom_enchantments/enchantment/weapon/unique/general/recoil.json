@@ -1,0 +1,77 @@
+{
+  "description": {
+    "text": "Recoil"
+  },
+  "exclusive_set": "#cartographer_custom_enchantments:exclusive_set/movement_utility",
+  "supported_items": "#cartographer_core:enchant_support/weapons",
+  "weight": 1,
+  "max_level": 10,
+  "max_cost": {
+    "base": 65,
+    "per_level_above_first": 9
+  },
+  "min_cost": {
+    "base": 15,
+    "per_level_above_first": 9
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "offhand",
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "cartographer_custom_enchantments:enchantment/weapon/unique/general/recoil/schedule"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {}
+        }
+      }
+    ],
+    "minecraft:hit_block": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "cartographer_custom_enchantments:enchantment/weapon/unique/general/recoil/activate_block"
+        },
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:['ca.recoil_block']}"
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "block": {
+                    "blocks": "#cartographer_core:can_raycast"
+                  }
+                }
+              }
+            },
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "ca.ench_recoil_lvl": {
+                  "min": 1
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

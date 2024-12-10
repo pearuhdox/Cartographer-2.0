@@ -1,6 +1,15 @@
 {
     "values": [
-      "cartographer_custom_enchantments:starfall",
-      "cartographer_custom_enchantments:orbit"
+      "cartographer_custom_enchantments:passive/starfall",
+      "cartographer_custom_enchantments:passive/orbit",
+      "cartographer_custom_enchantments:passive/storm",
+      "cartographer_custom_enchantments:passive/induction",
+      "cartographer_custom_enchantments:passive/quake",
+      "cartographer_custom_enchantments:passive/aberration",
+      "cartographer_custom_enchantments:passive/eruption",
+      "cartographer_custom_enchantments:passive/soulfire",
+      "cartographer_custom_enchantments:passive/surge",
+      "cartographer_custom_enchantments:passive/deadeye",
+      "cartographer_custom_enchantments:passive/trailblazer"
     ]
   }

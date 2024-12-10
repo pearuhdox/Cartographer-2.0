@@ -1,3 +1,3 @@
-$execute if entity @s[type=player] as @e[type=#bb:hostile,distance=$(range),limit=$(limit),sort=nearest] at @s run function cartographer_custom_statuses:apply_status/apply/check_conditions/type/passive_branch_2
+$execute if entity @s[type=player] as @e[type=#cartographer_core:affected_by_carto,distance=$(range),limit=$(limit),sort=nearest] at @s run function cartographer_custom_statuses:apply_status/apply/check_conditions/type/passive_branch_2
 
 $execute unless entity @s[type=player] as @e[type=player,distance=$(range),limit=$(limit),sort=nearest] at @s run function cartographer_custom_statuses:apply_status/apply/check_conditions/type/passive_branch_2

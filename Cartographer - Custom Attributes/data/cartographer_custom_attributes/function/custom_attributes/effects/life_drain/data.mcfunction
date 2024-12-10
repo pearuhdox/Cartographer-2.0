@@ -1,0 +1,3 @@
+execute store result storage cartographer:custom_attributes projectile.life_drain_chance double 0.01 run scoreboard players get @s ca.attr_life_drain_chance_total
+execute store result storage cartographer:custom_attributes projectile.life_drain_amount_value double 0.01 run scoreboard players get @s ca.attr_life_drain_amount_value
+execute store result storage cartographer:custom_attributes projectile.life_drain_amount_percent double 0.01 run scoreboard players get @s ca.attr_life_drain_amount_percent

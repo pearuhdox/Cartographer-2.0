@@ -1,5 +1,5 @@
-attribute @s minecraft:player.block_interaction_range modifier remove ca.extended_stat
-attribute @s minecraft:player.entity_interaction_range modifier remove ca.extended_stat
+attribute @s minecraft:block_interaction_range modifier remove ca.extended_stat
+attribute @s minecraft:entity_interaction_range modifier remove ca.extended_stat
 scoreboard players operation $value ca.stat_var = @s ca.ench_extended_lvl
 scoreboard players operation $value ca.stat_var *= $25 ca.CONSTANT
 

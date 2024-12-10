@@ -1,6 +1,6 @@
-attribute @s generic.follow_range modifier remove ca.diversion_distract
+attribute @s follow_range modifier remove ca.diversion_distract
 
-$damage @s 0.001 cartographer_custom_enchantments:enchant_damage by $(target)
+$damage @s 0.001 cartographer_custom_enchantments:enchant_damage_bypass by $(target)
 
 execute if entity @s[tag=ca.diversion_silent] run data modify entity @s Silent set value 0b
 tag @s remove ca.diversion_silent

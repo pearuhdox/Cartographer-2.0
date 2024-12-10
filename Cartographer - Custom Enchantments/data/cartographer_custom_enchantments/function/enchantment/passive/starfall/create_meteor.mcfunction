@@ -14,6 +14,11 @@ execute run scoreboard players add @s ca.starfall_delay 5
 execute anchored feet positioned ^ ^-0.5 ^ run function cartographer_core:handlers/get_block/save
 data modify storage cartographer:custom_enchantments block set from storage cartographer_core:get_block id
 
+scoreboard players set $player_owned ca.ench_starfall_lvl 0
+execute if entity @s[type=player] run scoreboard players set $player_owned ca.ench_starfall_lvl 1
+
+execute summon text_display run function cartographer_custom_enchantments:enchantment/passive/starfall/create_telegraphing with storage cartographer:custom_enchantments
+
 function cartographer_custom_enchantments:enchantment/passive/starfall/create_meteor_macro with storage cartographer:custom_enchantments
 
 execute run scoreboard players set @s ca.starfall_entropy 0

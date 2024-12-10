@@ -1,5 +1,6 @@
-scoreboard players operation $lvl ca.ench_eruption_lvl = @s ca.ench_eruption_lvl
-execute if score $spawner_cause ca.ench_var matches 1.. run scoreboard players operation $lvl ca.ench_eruption_lvl = @s ca.ench_eruption_hand_lvl
+scoreboard players operation $lvl ca.ench_eruption_lvl = $eruption ca.ench_value
+execute if score $spawner_cause ca.ench_var matches 1.. run scoreboard players operation $lvl ca.ench_eruption_lvl = $eruption_hand ca.ench_value
+execute if score $summon_cause ca.ench_var matches 1.. run scoreboard players operation $lvl ca.ench_eruption_lvl = $kinship_lvl ca.ench_var
 
 
 scoreboard players operation $mult ca.ench_var = $lvl ca.ench_eruption_lvl

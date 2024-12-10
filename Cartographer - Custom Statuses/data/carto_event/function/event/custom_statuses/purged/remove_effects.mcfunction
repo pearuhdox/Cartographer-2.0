@@ -15,10 +15,10 @@ effect clear @s minecraft:dolphins_grace
 effect clear @s minecraft:conduit_power
 effect clear @s minecraft:hero_of_the_village
 
-attribute @s minecraft:generic.attack_damage modifier remove ca.positive_siphon_strength
-attribute @s minecraft:generic.movement_speed modifier remove ca.positive_siphon_speed
+attribute @s minecraft:attack_damage modifier remove ca.positive_siphon_strength
+attribute @s minecraft:movement_speed modifier remove ca.positive_siphon_speed
 
-attribute @s minecraft:generic.attack_damage modifier remove ca.speed
-attribute @s minecraft:generic.movement_speed modifier remove ca.strength
+attribute @s minecraft:attack_damage modifier remove ca.speed
+attribute @s minecraft:movement_speed modifier remove ca.strength
 
-attribute @s minecraft:generic.armor modifier remove ca.armor_buff
+attribute @s minecraft:armor modifier remove ca.armor_buff

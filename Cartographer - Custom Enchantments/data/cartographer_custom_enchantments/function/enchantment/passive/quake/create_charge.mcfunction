@@ -16,4 +16,6 @@ data modify storage cartographer:custom_enchantments block set from storage cart
 scoreboard players set $is_player ca.ench_quake_lvl 0
 execute if entity @s[type=player] run scoreboard players set $is_player ca.ench_quake_lvl 1
 
+execute summon text_display run function cartographer_custom_enchantments:enchantment/passive/quake/create_telegraphing with storage cartographer:custom_enchantments
+
 execute summon marker run function cartographer_custom_enchantments:enchantment/passive/quake/create_charge_macro with storage cartographer:custom_enchantments

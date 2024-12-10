@@ -1,0 +1,20 @@
+{
+    "replace": false,
+    "values": [
+      "cartographer_custom_attributes:vanilla/celerity",
+      "cartographer_custom_attributes:vanilla/finesse",
+      "cartographer_custom_attributes:vanilla/immovable",
+      "cartographer_custom_attributes:vanilla/vitality",
+      "cartographer_custom_attributes:vanilla/agility",
+      "cartographer_custom_attributes:vanilla/traveling",
+      "cartographer_custom_attributes:custom/amplitude",
+      "cartographer_custom_attributes:custom/lucky",
+      "cartographer_custom_attributes:custom/resonance",
+      "cartographer_custom_attributes:custom/technique",
+      "cartographer_custom_attributes:custom/invigorated",
+      "cartographer_custom_attributes:custom/precision",
+      "cartographer_custom_attributes:custom/echo",
+      "cartographer_custom_attributes:custom/reverb",
+      "cartographer_custom_attributes:custom/lifesteal"
+    ]
+  }

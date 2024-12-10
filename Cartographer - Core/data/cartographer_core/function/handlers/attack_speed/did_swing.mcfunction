@@ -1,4 +1,4 @@
-execute store result score @s ca.attack_cooldown_total run attribute @s minecraft:generic.attack_speed get 100
+execute store result score @s ca.attack_cooldown_total run attribute @s minecraft:attack_speed get 100
 
 scoreboard players set $val ca.attack_cooldown_total 100000
 

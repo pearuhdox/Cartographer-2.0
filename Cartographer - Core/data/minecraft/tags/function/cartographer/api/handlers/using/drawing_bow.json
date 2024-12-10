@@ -1,5 +1,9 @@
 {
     "values":[
-      "cartographer_core:debug/handlers/using/drawing_bow"
+      "cartographer_core:debug/handlers/using/drawing_bow",
+      {"id":"cartographer_custom_enchantments:enchantment/weapon/damage/general/concentration/charge_bow","required":false},
+      {"id":"cartographer_custom_enchantments:enchantment/weapon/damage/ranged/overcharge/charge_bow","required":false},
+      {"id":"cartographer_custom_enchantments:enchantment/weapon/unique/general/repulsion/bow_activate","required":false},
+      {"id":"cartographer_custom_enchantments:enchantment/weapon/unique/ranged/fleetfoot/bow_activate","required":false}
     ]
   }

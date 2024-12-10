@@ -28,5 +28,5 @@
     ],
     "supported_items": "#cartographer_core:enchant_support/passive_armor",
     "primary_items": "#minecraft:enchantable/foot_armor",
-    "weight": 5
+    "weight": 1
   }

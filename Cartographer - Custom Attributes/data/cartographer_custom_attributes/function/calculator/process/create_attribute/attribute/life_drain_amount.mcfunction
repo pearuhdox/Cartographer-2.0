@@ -1,19 +1,19 @@
-execute unless data storage cartographer_custom_attributes:calculator equips_attr.offh[{id:"minecraft:ca.attr_life_drain_amount_offh_value"}] run attribute @s minecraft:generic.oxygen_bonus modifier remove ca.attr_life_drain_amount_offh_value
-execute unless data storage cartographer_custom_attributes:calculator equips_attr.main[{id:"minecraft:ca.attr_life_drain_amount_main_value"}] run attribute @s minecraft:generic.oxygen_bonus modifier remove ca.attr_life_drain_amount_main_value
+execute unless data storage cartographer_custom_attributes:calculator equips_attr.offh[{id:"minecraft:ca.attr_life_drain_amount_offh_value"}] run attribute @s minecraft:oxygen_bonus modifier remove ca.attr_life_drain_amount_offh_value
+execute unless data storage cartographer_custom_attributes:calculator equips_attr.main[{id:"minecraft:ca.attr_life_drain_amount_main_value"}] run attribute @s minecraft:oxygen_bonus modifier remove ca.attr_life_drain_amount_main_value
 
-execute unless data storage cartographer_custom_attributes:calculator equips_attr.feet[{id:"minecraft:ca.attr_life_drain_amount_feet_value"}] run attribute @s minecraft:generic.oxygen_bonus modifier remove ca.attr_life_drain_amount_feet_value
-execute unless data storage cartographer_custom_attributes:calculator equips_attr.legs[{id:"minecraft:ca.attr_life_drain_amount_legs_value"}] run attribute @s minecraft:generic.oxygen_bonus modifier remove ca.attr_life_drain_amount_legs_value
-execute unless data storage cartographer_custom_attributes:calculator equips_attr.body[{id:"minecraft:ca.attr_life_drain_amount_body_value"}] run attribute @s minecraft:generic.oxygen_bonus modifier remove ca.attr_life_drain_amount_body_value
-execute unless data storage cartographer_custom_attributes:calculator equips_attr.head[{id:"minecraft:ca.attr_life_drain_amount_head_value"}] run attribute @s minecraft:generic.oxygen_bonus modifier remove ca.attr_life_drain_amount_head_value
+execute unless data storage cartographer_custom_attributes:calculator equips_attr.feet[{id:"minecraft:ca.attr_life_drain_amount_feet_value"}] run attribute @s minecraft:oxygen_bonus modifier remove ca.attr_life_drain_amount_feet_value
+execute unless data storage cartographer_custom_attributes:calculator equips_attr.legs[{id:"minecraft:ca.attr_life_drain_amount_legs_value"}] run attribute @s minecraft:oxygen_bonus modifier remove ca.attr_life_drain_amount_legs_value
+execute unless data storage cartographer_custom_attributes:calculator equips_attr.body[{id:"minecraft:ca.attr_life_drain_amount_body_value"}] run attribute @s minecraft:oxygen_bonus modifier remove ca.attr_life_drain_amount_body_value
+execute unless data storage cartographer_custom_attributes:calculator equips_attr.head[{id:"minecraft:ca.attr_life_drain_amount_head_value"}] run attribute @s minecraft:oxygen_bonus modifier remove ca.attr_life_drain_amount_head_value
 
 
-execute unless data storage cartographer_custom_attributes:calculator equips_attr.offh[{id:"minecraft:ca.attr_life_drain_amount_offh_percent"}] run attribute @s minecraft:generic.oxygen_bonus modifier remove ca.attr_life_drain_amount_offh_percent
-execute unless data storage cartographer_custom_attributes:calculator equips_attr.main[{id:"minecraft:ca.attr_life_drain_amount_main_percent"}] run attribute @s minecraft:generic.oxygen_bonus modifier remove ca.attr_life_drain_amount_main_percent
+execute unless data storage cartographer_custom_attributes:calculator equips_attr.offh[{id:"minecraft:ca.attr_life_drain_amount_offh_percent"}] run attribute @s minecraft:oxygen_bonus modifier remove ca.attr_life_drain_amount_offh_percent
+execute unless data storage cartographer_custom_attributes:calculator equips_attr.main[{id:"minecraft:ca.attr_life_drain_amount_main_percent"}] run attribute @s minecraft:oxygen_bonus modifier remove ca.attr_life_drain_amount_main_percent
 
-execute unless data storage cartographer_custom_attributes:calculator equips_attr.feet[{id:"minecraft:ca.attr_life_drain_amount_feet_percent"}] run attribute @s minecraft:generic.oxygen_bonus modifier remove ca.attr_life_drain_amount_feet_percent
-execute unless data storage cartographer_custom_attributes:calculator equips_attr.legs[{id:"minecraft:ca.attr_life_drain_amount_legs_percent"}] run attribute @s minecraft:generic.oxygen_bonus modifier remove ca.attr_life_drain_amount_legs_percent
-execute unless data storage cartographer_custom_attributes:calculator equips_attr.body[{id:"minecraft:ca.attr_life_drain_amount_body_percent"}] run attribute @s minecraft:generic.oxygen_bonus modifier remove ca.attr_life_drain_amount_body_percent
-execute unless data storage cartographer_custom_attributes:calculator equips_attr.head[{id:"minecraft:ca.attr_life_drain_amount_head_percent"}] run attribute @s minecraft:generic.oxygen_bonus modifier remove ca.attr_life_drain_amount_head_percent
+execute unless data storage cartographer_custom_attributes:calculator equips_attr.feet[{id:"minecraft:ca.attr_life_drain_amount_feet_percent"}] run attribute @s minecraft:oxygen_bonus modifier remove ca.attr_life_drain_amount_feet_percent
+execute unless data storage cartographer_custom_attributes:calculator equips_attr.legs[{id:"minecraft:ca.attr_life_drain_amount_legs_percent"}] run attribute @s minecraft:oxygen_bonus modifier remove ca.attr_life_drain_amount_legs_percent
+execute unless data storage cartographer_custom_attributes:calculator equips_attr.body[{id:"minecraft:ca.attr_life_drain_amount_body_percent"}] run attribute @s minecraft:oxygen_bonus modifier remove ca.attr_life_drain_amount_body_percent
+execute unless data storage cartographer_custom_attributes:calculator equips_attr.head[{id:"minecraft:ca.attr_life_drain_amount_head_percent"}] run attribute @s minecraft:oxygen_bonus modifier remove ca.attr_life_drain_amount_head_percent
 
 
 execute if items entity @s weapon.offhand *[minecraft:custom_data~{custom_attributes:{life_drain_amount:{value:{}}}}] unless data storage cartographer_custom_attributes:calculator equips_attr.offh[{id:"minecraft:ca.attr_life_drain_amount_offh_value"}] run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/helper/process_slot {attr:"life_drain_amount",type:"value",slot:"offh"}

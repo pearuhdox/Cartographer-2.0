@@ -1,0 +1,6 @@
+{
+	"values": [
+		{"id": "cartographer_custom_attributes:calculator/reset","required": false},
+		{"id": "cartographer_custom_statuses:calculator/reset","required": false}
+	]
+}

@@ -1,0 +1,2 @@
+execute unless score $repeating ca.ench_scavenger_slot matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/other/scavenger/consumable/activate/refill/normal
+execute if score $repeating ca.ench_scavenger_slot matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/other/scavenger/consumable/activate/refill/repeating/start

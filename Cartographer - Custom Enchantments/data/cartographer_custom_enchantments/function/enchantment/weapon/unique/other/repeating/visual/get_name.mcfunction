@@ -1,0 +1,4 @@
+setblock 4206905 3 4206905 air replace
+setblock 4206905 3 4206905 oak_sign{front_text:{messages:['[{"nbt":"visual.name","storage":"cartographer_custom_enchantments:repeating","interpret":true},{"text":" [","color":"white","bold":true,"italic":false},{"nbt":"visual.min","storage":"cartographer_custom_enchantments:repeating","color":"yellow","italic":false},{"text":"/","color":"white","italic":false},{"nbt":"visual.max","storage":"cartographer_custom_enchantments:repeating","color":"yellow","italic":false},{"text":"]","color":"white","bold":true,"italic":false}]','{"text":""}','{"text":""}','{"text":""}']}} replace
+
+data modify storage cartographer_custom_enchantments:repeating visual.return set from block 4206905 3 4206905 front_text.messages[0]

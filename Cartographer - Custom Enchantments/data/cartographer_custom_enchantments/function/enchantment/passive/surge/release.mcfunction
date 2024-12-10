@@ -34,6 +34,5 @@ execute if score @s ca.attr_aoe_damage_percent matches -1999999.. run scoreboard
 
 execute store result storage cartographer:custom_enchantments damage double 0.01 run scoreboard players get $damage ca.ench_surge_lvl
 
-
 scoreboard players set @s ca.raycast 10
 execute anchored feet positioned ^ ^ ^ rotated ~ 0 run function cartographer_custom_enchantments:enchantment/passive/surge/ground_rec_release

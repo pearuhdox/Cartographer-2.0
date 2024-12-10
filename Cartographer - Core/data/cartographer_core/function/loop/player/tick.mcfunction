@@ -8,7 +8,7 @@ function cartographer_core:systems/quick_drop/shulker/tick
 execute if score @s ca.first_blood_timer matches 1 run function cartographer_core:handlers/first_blood/reset
 execute if score @s ca.first_blood_timer matches 1.. run scoreboard players remove @s ca.first_blood_timer 1
 
-attribute @s player.entity_interaction_range modifier add ca.carto_hitbox_fix 0.5 add_value
+attribute @s entity_interaction_range modifier add ca.carto_hitbox_fix 0.5 add_value
 
 execute if score @s ca.glass_cdl matches 1.. run scoreboard players remove @s ca.glass_cdl 1
 
@@ -34,6 +34,7 @@ execute if score @s ca.death_check matches 1.. run function cartographer_core:ha
 execute if score @s ca.death_time matches 2 run function cartographer_core:handlers/death_check/respawn
 execute if score @s ca.death_check matches 1.. run scoreboard players set @s ca.death_check 0
 
+function cartographer_custom_attributes:loop/tick/player
 function cartographer_custom_enchantments:loop/tick/player
 function cartographer_custom_statuses:loop/tick/player
 #function cartographer_mob_abilities:loop/tick/player
@@ -73,7 +74,6 @@ execute if score @s ca.throw_trident matches 1.. run function cartographer_core:
 execute unless predicate cartographer_core:potion_effect/has_absorption if entity @s[tag=ca.carto_abs_applied] run function cartographer_core:handlers/absorption/reset
 
 #Resets
-scoreboard players set @s ca.use_lectern 0
 
 scoreboard players set @s[scores={ca.sprint=6..}] ca.sprint 5
 scoreboard players remove @s[scores={ca.sprint=1..}] ca.sprint 1
@@ -94,9 +94,9 @@ execute unless score @s ca.delta.cooldown matches 0.. run scoreboard players set
 #Reset Draw/Load/Use Timers and Booleans
 execute if score @s ca.is_drawing_bow matches 0 run scoreboard players set @s ca.draw_bow_time 0
 execute if score @s ca.is_loading_crossbow matches 0 run scoreboard players set @s ca.load_crossbow_time 0
-execute if score @s ca.is_using_eye matches 0 run scoreboard players set @s ca.hold_shield_time 0
-execute if score @s ca.is_holding_shield matches 0 run scoreboard players set @s ca.aim_trident_time 0
-execute if score @s ca.is_aiming_trident matches 0 run scoreboard players set @s ca.use_eye_time 0
+execute if score @s ca.is_using_eye matches 0 run scoreboard players set @s ca.use_eye_time 0
+execute if score @s ca.is_holding_shield matches 0 run scoreboard players set @s ca.hold_shield_time 0
+execute if score @s ca.is_aiming_trident matches 0 run scoreboard players set @s ca.aim_trident_time 0
 execute if score @s ca.is_using_other matches 0 run scoreboard players set @s ca.use_other_time 0
 
 execute if score @s ca.is_drawing_bow matches 1.. run function cartographer_core:handlers/using/calls/drawing_bow
@@ -116,6 +116,8 @@ execute if score @s ca.use_other_time matches 1.. run scoreboard players remove 
 execute if score @s ca.use_carrot_on_stick matches 1.. run function cartographer_core:handlers/using/calls/use_cos
 execute if score @s ca.use_warped_fungus_on_stick matches 1.. run function cartographer_core:handlers/using/calls/use_wfos
 
+execute if score @s ca.use_fishing_rod matches 1.. run function cartographer_core:handlers/using/calls/use_fishing_rod
+
 execute if entity @s[tag=ca.ate_food_check] run function cartographer_core:handlers/using/calls/ate_food
 
 execute if score @s ca.use_bow matches 1.. run function cartographer_core:handlers/using/calls/use_bow
@@ -131,6 +133,7 @@ execute if score @s ca.use_snowball matches 1.. run function cartographer_core:h
 scoreboard players set @s ca.use_trident 0
 scoreboard players set @s ca.use_carrot_on_stick 0
 scoreboard players set @s ca.use_warped_fungus_on_stick 0
+scoreboard players set @s ca.use_fishing_rod 0
 
 scoreboard players set @s ca.use_splash_potion 0
 scoreboard players set @s ca.use_lingering_potion 0

@@ -10,6 +10,7 @@ function cartographer_core:helper/heal_player/load
 
 #Enchantment Calculator Scores
 scoreboard objectives add ca.ench_var dummy
+scoreboard objectives add ca.ench_value dummy
 scoreboard objectives add ca.calc_type dummy
 scoreboard objectives add ca.popup_var dummy
 
@@ -42,6 +43,7 @@ scoreboard objectives add ca.x dummy
 scoreboard objectives add ca.y dummy
 scoreboard objectives add ca.z dummy
 
+scoreboard objectives add ca.telegraph_data dummy
 
 scoreboard players set $charon ca.installed 0
 scoreboard players set $custom_durability ca.installed 0
@@ -115,6 +117,7 @@ setblock 4206900 7 4206900 purple_shulker_box destroy
 
 #Create var scoreboard
 scoreboard objectives add ca.var dummy
+scoreboard objectives add ca.register dummy
 
 # Debug Messages have the following levels
 # 0 - None shown
@@ -146,6 +149,7 @@ scoreboard objectives add ca.use_other_time dummy
 
 scoreboard objectives add ca.use_carrot_on_stick minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add ca.use_warped_fungus_on_stick minecraft.used:minecraft.warped_fungus_on_a_stick
+scoreboard objectives add ca.use_fishing_rod minecraft.used:minecraft.fishing_rod
 
 scoreboard objectives add ca.use_bow minecraft.used:minecraft.bow
 scoreboard objectives add ca.use_crossbow minecraft.used:minecraft.crossbow

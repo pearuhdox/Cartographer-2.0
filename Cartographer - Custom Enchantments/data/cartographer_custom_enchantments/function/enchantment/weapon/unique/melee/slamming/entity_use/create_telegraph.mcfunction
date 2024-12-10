@@ -1,0 +1,10 @@
+data merge entity @s {line_width:210,text_opacity:65,alignment:"center",transformation:[1.0000f,0.0000f,0.0000f,-0.0192f,0.0000f,-0.0000f,1.0000f,0.0500f,0.0000f,-1.0000f,-0.0000f,0.1450f,0.0000f,0.0000f,0.0000f,1.0000f],text:'{"bold":false,"color":"#FF0000","font":"minecraft:uniform","italic":false,"strikethrough":false,"text":"⬤","underlined":false}',background:0}
+
+function gu:generate
+data modify storage cartographer:custom_enchantments telegraph set from storage gu:main out
+
+
+tag @s add ca.slamming_telegraph
+tag @s add ca.telegraph
+
+scoreboard players add $count ca.animations_var 1

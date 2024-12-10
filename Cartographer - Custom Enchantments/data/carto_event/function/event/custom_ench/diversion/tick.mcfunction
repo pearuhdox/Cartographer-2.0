@@ -1,7 +1,7 @@
 $execute as $(target) at @s run tp @s ~ ~ ~ ~8 ~
 $execute as $(target) at @s if predicate cartographer_core:periodic_tick/2 run particle minecraft:trial_spawner_detection_ominous ~ ~0.9 ~ 0.15 0 0.15 0.01 1 normal
 
-$execute as $(target) at @s if score duration= carto_event matches 119 as @e[type=#bb:hostile,distance=..24,tag=ca.diversion_distract] at @s run function carto_event:event/custom_ench/diversion/mob_branch with storage carto_event current[-1].parameters
+$execute as $(target) at @s if score duration= carto_event matches 119 as @e[type=#cartographer_core:affected_by_carto,distance=..24,tag=ca.diversion_distract] at @s run function carto_event:event/custom_ench/diversion/mob_branch with storage carto_event current[-1].parameters
 
 $execute as $(target) at @s if entity @s[nbt={HurtTime:9s}] run playsound minecraft:item.ominous_bottle.dispose player @a[distance=..12] ~ ~ ~ 0.5 1.5
 $execute as $(target) at @s if entity @s[nbt={HurtTime:9s}] run playsound minecraft:event.mob_effect.bad_omen player @a[distance=..12] ~ ~ ~ 0.5 1.5

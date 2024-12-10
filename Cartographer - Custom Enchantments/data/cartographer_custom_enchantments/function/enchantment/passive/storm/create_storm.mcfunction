@@ -11,4 +11,7 @@ execute store result storage cartographer:custom_enchantments half_size double 0
 execute store result storage cartographer:custom_enchantments size_neg_1 double 0.01 run scoreboard players get $size_neg_1 ca.ench_storm_lvl
 execute store result storage cartographer:custom_enchantments quarter_size double 0.01 run scoreboard players get $quarter_size ca.ench_storm_lvl
 
+
+execute summon text_display run function cartographer_custom_enchantments:enchantment/passive/storm/create_telegraphing with storage cartographer:custom_enchantments
+
 function cartographer_custom_enchantments:enchantment/passive/storm/create_storm_macro with storage cartographer:custom_enchantments

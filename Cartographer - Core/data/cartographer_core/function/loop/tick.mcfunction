@@ -58,7 +58,7 @@ execute if score $ca_timer_mod ca.timer matches 0 run scoreboard players set $60
 #Run all Cartographer Effects from Core Timers.
 #function cartographer_charon:loop/tick/base
 function cartographer_charon:tick
-#function cartographer_custom_enchantments:loop/tick
+function cartographer_custom_enchantments:loop/tick
 #function cartographer_custom_statuses:loop/tick
 #function cartographer_loot_additions:loop/tick
 #function cartographer_mimics:loop/tick

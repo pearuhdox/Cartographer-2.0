@@ -31,11 +31,11 @@ execute unless score $power_val ca.attr_ranged_damage_value matches 1.. run scor
 scoreboard players operation $arrow_val ca.attr_ranged_damage_value *= $power_mult ca.attr_ranged_damage_value
 scoreboard players operation $arrow_val ca.attr_ranged_damage_value /= $100 ca.CONSTANT
 
-execute on origin if entity @s[type=player] run function cartographer_custom_attributes:custom_attributes/effects/ranged_damage/arrow/player_draw_time
+execute on origin if entity @s[type=player] if score @s ca.is_drawing_bow matches 1.. run function cartographer_custom_attributes:custom_attributes/effects/ranged_damage/arrow/player_draw_time
 
 scoreboard players operation @s ca.attr_ranged_damage_total = $arrow_val ca.attr_ranged_damage_value
 
-data modify entity @s damage set value 0.01d
+data modify entity @s damage set value 0.0d
 
 execute store result score $crit ca.attr_ranged_damage_value run data get entity @s crit
 execute if score $crit ca.attr_ranged_damage_value matches 1.. run function carto_event:api/create_single_entity_event {event:"custom_attribute/arrow_crit",duration:100,delay:000,parameters:{prev_x:0,prev_y:0,prev_z:0},merge_behavior:"none"}

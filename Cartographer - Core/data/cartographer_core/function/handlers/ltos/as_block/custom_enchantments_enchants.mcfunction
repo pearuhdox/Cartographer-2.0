@@ -10,3 +10,5 @@ execute if score @s ca.ench_orbit_hand_lvl matches 1.. run function cartographer
 
 execute if score @s ca.ench_storm_hand_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/storm/break_spawner
 execute if score @s ca.ench_induction_hand_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/induction/break_spawner
+
+function cartographer_custom_enchantments:enchantment/passive/diversion/break_spawner

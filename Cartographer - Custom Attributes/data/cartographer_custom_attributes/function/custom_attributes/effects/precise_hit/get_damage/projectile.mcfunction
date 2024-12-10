@@ -10,3 +10,5 @@ execute if score $is_arrow ca.attr_apply_var matches 1.. if score $power_level c
 execute if score $is_arrow ca.attr_apply_var matches 1.. if score $power_level ca.attr_apply_var matches 1.. run scoreboard players operation $damage ca.precise_hit_var += $power ca.precise_hit_var
 
 execute if score $damage ca.precise_hit_var matches 0 run scoreboard players set $damage ca.precise_hit_var 100
+
+say proj

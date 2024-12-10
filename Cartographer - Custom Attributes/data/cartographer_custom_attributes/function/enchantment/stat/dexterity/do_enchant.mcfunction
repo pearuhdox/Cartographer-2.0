@@ -1,4 +1,4 @@
-attribute @s minecraft:generic.attack_speed modifier remove ca.dexterity_stat
+attribute @s minecraft:attack_speed modifier remove ca.dexterity_stat
 scoreboard players operation $value ca.stat_var = @s ca.ench_dexterity_lvl
 scoreboard players operation $value ca.stat_var *= $5 ca.CONSTANT
 

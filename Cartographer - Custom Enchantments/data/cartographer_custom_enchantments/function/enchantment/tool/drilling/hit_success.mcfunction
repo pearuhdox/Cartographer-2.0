@@ -1,0 +1,2 @@
+execute store result score @s ca.raycast run attribute @s block_interaction_range get 10
+execute as @s at @s anchored eyes positioned ^ ^ ^0.1 run function cartographer_custom_enchantments:enchantment/helper/find_block_hit {function:"cartographer_custom_enchantments:enchantment/tool/drilling/crit_block",offset:"~ ~ ~"}

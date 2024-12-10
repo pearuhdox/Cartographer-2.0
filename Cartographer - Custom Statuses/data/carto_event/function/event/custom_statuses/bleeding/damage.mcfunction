@@ -2,7 +2,7 @@ $damage @s $(damage) cartographer_custom_statuses:status_damage by $(owner)
 
 $scoreboard players add @s ca.bleed_buffer $(damage)
 
-playsound minecraft:entity.generic.hurt hostile @a[distance=..16] ~ ~ ~ 1 0.5
+playsound minecraft:entity.hurt hostile @a[distance=..16] ~ ~ ~ 1 0.5
 
 scoreboard players operation @s ca.bleed_amt /= $2 ca.CONSTANT
 

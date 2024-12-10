@@ -15,4 +15,4 @@ tag @s add ca.was_chained
 function carto_event:api/create_single_entity_event {event:"custom_attribute/chaining_hit",duration:3,delay:0,parameters:{},merge_behavior:"merge"}
 
 $execute if score $count ca.chaining_hit_var matches 1.. if entity @s[type=player] as @e[type=player,distance=0.1..$(chaining_range),limit=1,sort=nearest,tag=!ca.was_chained] at @s run function cartographer_custom_attributes:custom_attributes/effects/chaining_hit/rec with storage cartographer:custom_attributes
-$execute if score $count ca.chaining_hit_var matches 1.. unless entity @s[type=player] as @e[type=#bb:hostile,distance=0.1..$(chaining_range),limit=1,sort=nearest,tag=!ca.was_chained] at @s run function cartographer_custom_attributes:custom_attributes/effects/chaining_hit/rec with storage cartographer:custom_attributes
+$execute if score $count ca.chaining_hit_var matches 1.. unless entity @s[type=player] as @e[type=#cartographer_core:affected_by_carto,distance=0.1..$(chaining_range),limit=1,sort=nearest,tag=!ca.was_chained] at @s run function cartographer_custom_attributes:custom_attributes/effects/chaining_hit/rec with storage cartographer:custom_attributes

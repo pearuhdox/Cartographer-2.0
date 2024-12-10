@@ -27,6 +27,10 @@ scoreboard players operation @s ca.energized_stack += $diff_x ca.energized_x
 scoreboard players operation @s ca.energized_stack += $diff_y ca.energized_y
 scoreboard players operation @s ca.energized_stack += $diff_z ca.energized_z
 
+scoreboard players operation $math.isqrt.x bs.in = @s ca.energized_stack
+function #bs.math:isqrt
+scoreboard players operation @s ca.energized_stack = $math.isqrt bs.out
+
 execute if entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"energized/calculate",duration:6,delay:000,parameters:{},merge_behavior:"merge"}
 execute unless entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"energized/calculate",duration:21,delay:000,parameters:{},merge_behavior:"merge"}
 

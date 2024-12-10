@@ -1,0 +1,1 @@
+$damage @s $(damage) minecraft:mob_attack by $(target)

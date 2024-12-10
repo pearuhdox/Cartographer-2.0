@@ -1,8 +1,7 @@
 data modify storage cartographer:custom_enchantments custom_statuses set value {}
 $execute as $(target) at @s run function carto_event:event/custom_ench/orbit/custom_statuses/check_allow_status
 
-$damage @s $(damage) cartographer_custom_enchantments:enchant_damage by $(target)
-damage @s 0.001 cartographer_custom_enchantments:enchant_damage
+$damage @s $(damage) cartographer_custom_enchantments:enchant_damage_bypass by $(target)
 
 $execute as $(target) if entity @s[type=player] run playsound minecraft:item.trident.hit player @a[distance=..16] ~ ~ ~ 1 0.5
 $execute as $(target) if entity @s[type=player] run playsound minecraft:entity.zombie.attack_wooden_door player @a[distance=..16] ~ ~ ~ 0.5 1.5

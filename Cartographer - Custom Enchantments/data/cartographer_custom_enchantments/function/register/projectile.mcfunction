@@ -1,0 +1,1 @@
+execute if entity @s[type=#bb:projectile] run function cartographer_custom_enchantments:register/projectile_branch

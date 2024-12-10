@@ -1,7 +1,7 @@
 {
   "values":[
-	"cartographer_core:loop/tick",
-  "ltos:loop",
-  "carto_event:tick"
+    "ltos:loop",	
+    "cartographer_core:loop/tick",
+    "carto_event:tick"
   ]
 }

@@ -4,7 +4,6 @@
       "#minecraft:head_armor",
       "#minecraft:chest_armor",
       "#minecraft:leg_armor",
-      "#minecraft:foot_armor",
-      "minecraft:totem_of_undying"
+      "#minecraft:foot_armor"
     ]
 }  

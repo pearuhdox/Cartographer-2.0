@@ -27,7 +27,7 @@ $execute as $(target) at @s if score @s ca.shock_tick matches $(tick_rate).. run
 $execute as $(target) at @s if score @s ca.shock_tick matches $(tick_rate).. if data storage carto_event current[-1].parameters.proc_command run function carto_event:command_api/proc_command with storage carto_event current[-1].parameters
 
 
-$execute as $(target) at @s if score @s ca.shock_tick matches $(tick_rate).. as @e[type=#bb:hostile,distance=0.25..$(range),sort=nearest,limit=$(targets)] at @s run function carto_event:event/custom_statuses/shocked/proc_start with storage cartographer_custom_statuses:shocked data
+$execute as $(target) at @s if score @s ca.shock_tick matches $(tick_rate).. as @e[type=#cartographer_core:affected_by_carto,distance=0.25..$(range),sort=nearest,limit=$(targets)] at @s run function carto_event:event/custom_statuses/shocked/proc_start with storage cartographer_custom_statuses:shocked data
 
 $execute as $(target) at @s if score @s ca.shock_tick matches $(tick_rate).. run scoreboard players set @s ca.shock_tick 0
 

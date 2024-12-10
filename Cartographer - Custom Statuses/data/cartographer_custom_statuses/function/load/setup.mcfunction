@@ -52,6 +52,7 @@ scoreboard objectives add ca.infect_var dummy
 
 scoreboard objectives add ca.confused_reassign dummy
 scoreboard objectives add ca.confused_buffer dummy
+scoreboard objectives add ca.confused_cdl dummy
 
 scoreboard objectives add ca.morphed_persistance dummy
 scoreboard objectives add ca.morphed_ai dummy

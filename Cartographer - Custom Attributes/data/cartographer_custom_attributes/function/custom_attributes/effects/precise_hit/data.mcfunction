@@ -1,0 +1,3 @@
+execute store result storage cartographer:custom_attributes projectile.precise_hit_chance double 0.01 run scoreboard players get @s ca.attr_precise_hit_chance_total
+execute store result storage cartographer:custom_attributes projectile.precise_hit_damage_value double 0.01 run scoreboard players get @s ca.attr_precise_hit_damage_value
+execute store result storage cartographer:custom_attributes projectile.precise_hit_damage_percent double 0.01 run scoreboard players get @s ca.attr_precise_hit_damage_percent

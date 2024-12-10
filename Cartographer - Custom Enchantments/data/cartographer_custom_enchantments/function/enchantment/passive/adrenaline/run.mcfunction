@@ -1,4 +1,4 @@
-function cartographer_core:enchant_calculator/full_calculation {namespace:"cartographer_custom_enchantments",enchantment:"adrenaline",type:"passive"}
+function cartographer_core:enchant_calculator/full_calculation {namespace:"cartographer_custom_enchantments",category:"passive/",enchantment:"adrenaline",type:"passive"}
 
 execute unless score @s ca.adrenaline_stack matches 8.. run scoreboard players add @s ca.adrenaline_stack 1
 scoreboard players set @s ca.adrenaline_duration 160

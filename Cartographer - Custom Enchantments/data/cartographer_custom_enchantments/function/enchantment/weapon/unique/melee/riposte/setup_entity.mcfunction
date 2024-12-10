@@ -1,0 +1,4 @@
+execute summon item_display run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/riposte/create_telegraphing
+function cartographer_custom_enchantments:enchantment/weapon/unique/melee/riposte/setup_entity_macro with storage cartographer:custom_enchantments
+
+tag @s remove ca.riposte_first_hit

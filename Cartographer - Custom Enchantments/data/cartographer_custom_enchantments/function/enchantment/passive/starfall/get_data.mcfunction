@@ -1,4 +1,6 @@
 scoreboard players operation $mult ca.ench_var = $lvl ca.ench_starfall_lvl
+execute if score $spawner_cause ca.ench_var matches 1.. run scoreboard players operation $lvl ca.ench_starfall_lvl = $starfall_hand ca.ench_value
+
 scoreboard players operation $mult ca.ench_var *= $15 ca.CONSTANT
 scoreboard players operation $min_result_damage ca.ench_var = $lvl ca.ench_starfall_lvl
 scoreboard players operation $min_result_damage ca.ench_var *= $15 ca.CONSTANT

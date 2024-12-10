@@ -4,46 +4,46 @@ scoreboard players set $value ca.attr_var 0
 scoreboard players set $percent_add ca.attr_var 0
 scoreboard players set $value_add ca.attr_var 0
 
-execute store result score $value_add ca.attr_var run attribute @s generic.oxygen_bonus modifier value get ca.attr_aoe_size_feet_value 1000000000000
+execute store result score $value_add ca.attr_var run attribute @s oxygen_bonus modifier value get ca.attr_aoe_size_feet_value 1000000000000
 scoreboard players operation $value ca.attr_var += $value_add ca.attr_var
-execute store result score $value_add ca.attr_var run attribute @s generic.oxygen_bonus modifier value get ca.attr_aoe_size_legs_value 1000000000000
+execute store result score $value_add ca.attr_var run attribute @s oxygen_bonus modifier value get ca.attr_aoe_size_legs_value 1000000000000
 scoreboard players operation $value ca.attr_var += $value_add ca.attr_var
-execute store result score $value_add ca.attr_var run attribute @s generic.oxygen_bonus modifier value get ca.attr_aoe_size_body_value 1000000000000
+execute store result score $value_add ca.attr_var run attribute @s oxygen_bonus modifier value get ca.attr_aoe_size_body_value 1000000000000
 scoreboard players operation $value ca.attr_var += $value_add ca.attr_var
-execute store result score $value_add ca.attr_var run attribute @s generic.oxygen_bonus modifier value get ca.attr_aoe_size_head_value 1000000000000
+execute store result score $value_add ca.attr_var run attribute @s oxygen_bonus modifier value get ca.attr_aoe_size_head_value 1000000000000
 scoreboard players operation $value ca.attr_var += $value_add ca.attr_var
-execute store result score $value_add ca.attr_var run attribute @s generic.oxygen_bonus modifier value get ca.attr_aoe_size_offh_value 1000000000000
+execute store result score $value_add ca.attr_var run attribute @s oxygen_bonus modifier value get ca.attr_aoe_size_offh_value 1000000000000
 scoreboard players operation $value ca.attr_var += $value_add ca.attr_var
-execute store result score $value_add ca.attr_var run attribute @s generic.oxygen_bonus modifier value get ca.attr_aoe_size_main_value 1000000000000
+execute store result score $value_add ca.attr_var run attribute @s oxygen_bonus modifier value get ca.attr_aoe_size_main_value 1000000000000
 scoreboard players operation $value ca.attr_var += $value_add ca.attr_var
-execute store result score $value_add ca.attr_var run attribute @s generic.oxygen_bonus modifier value get ca.attr_aoe_size_effect_value 1000000000000
+execute store result score $value_add ca.attr_var run attribute @s oxygen_bonus modifier value get ca.attr_aoe_size_effect_value 1000000000000
 scoreboard players operation $value ca.attr_var += $value_add ca.attr_var
-execute store result score $value_add ca.attr_var run attribute @s generic.oxygen_bonus modifier value get ca.attr_aoe_size_event_value 1000000000000
+execute store result score $value_add ca.attr_var run attribute @s oxygen_bonus modifier value get ca.attr_aoe_size_event_value 1000000000000
 scoreboard players operation $value ca.attr_var += $value_add ca.attr_var
-execute store result score $value_add ca.attr_var run attribute @s generic.oxygen_bonus modifier value get ca.attr_aoe_size_ench_value 1000000000000
+execute store result score $value_add ca.attr_var run attribute @s oxygen_bonus modifier value get ca.attr_aoe_size_ench_value 1000000000000
 scoreboard players operation $value ca.attr_var += $value_add ca.attr_var
-execute store result score $value_add ca.attr_var run attribute @s generic.oxygen_bonus modifier value get ca.attr_aoe_size_user_value 1000000000000
+execute store result score $value_add ca.attr_var run attribute @s oxygen_bonus modifier value get ca.attr_aoe_size_user_value 1000000000000
 scoreboard players operation $value ca.attr_var += $value_add ca.attr_var
 
-execute store result score $percent_add ca.attr_var run attribute @s generic.oxygen_bonus modifier value get ca.attr_aoe_size_feet_percent 1000000000000
+execute store result score $percent_add ca.attr_var run attribute @s oxygen_bonus modifier value get ca.attr_aoe_size_feet_percent 1000000000000
 scoreboard players operation $percent ca.attr_var += $percent_add ca.attr_var
-execute store result score $percent_add ca.attr_var run attribute @s generic.oxygen_bonus modifier value get ca.attr_aoe_size_legs_percent 1000000000000
+execute store result score $percent_add ca.attr_var run attribute @s oxygen_bonus modifier value get ca.attr_aoe_size_legs_percent 1000000000000
 scoreboard players operation $percent ca.attr_var += $percent_add ca.attr_var
-execute store result score $percent_add ca.attr_var run attribute @s generic.oxygen_bonus modifier value get ca.attr_aoe_size_body_percent 1000000000000
+execute store result score $percent_add ca.attr_var run attribute @s oxygen_bonus modifier value get ca.attr_aoe_size_body_percent 1000000000000
 scoreboard players operation $percent ca.attr_var += $percent_add ca.attr_var
-execute store result score $percent_add ca.attr_var run attribute @s generic.oxygen_bonus modifier value get ca.attr_aoe_size_head_percent 1000000000000
+execute store result score $percent_add ca.attr_var run attribute @s oxygen_bonus modifier value get ca.attr_aoe_size_head_percent 1000000000000
 scoreboard players operation $percent ca.attr_var += $percent_add ca.attr_var
-execute store result score $percent_add ca.attr_var run attribute @s generic.oxygen_bonus modifier value get ca.attr_aoe_size_offh_percent 1000000000000
+execute store result score $percent_add ca.attr_var run attribute @s oxygen_bonus modifier value get ca.attr_aoe_size_offh_percent 1000000000000
 scoreboard players operation $percent ca.attr_var += $percent_add ca.attr_var
-execute store result score $percent_add ca.attr_var run attribute @s generic.oxygen_bonus modifier value get ca.attr_aoe_size_main_percent 1000000000000
+execute store result score $percent_add ca.attr_var run attribute @s oxygen_bonus modifier value get ca.attr_aoe_size_main_percent 1000000000000
 scoreboard players operation $percent ca.attr_var += $percent_add ca.attr_var
-execute store result score $percent_add ca.attr_var run attribute @s generic.oxygen_bonus modifier value get ca.attr_aoe_size_effect_percent 1000000000000
+execute store result score $percent_add ca.attr_var run attribute @s oxygen_bonus modifier value get ca.attr_aoe_size_effect_percent 1000000000000
 scoreboard players operation $percent ca.attr_var += $percent_add ca.attr_var
-execute store result score $percent_add ca.attr_var run attribute @s generic.oxygen_bonus modifier value get ca.attr_aoe_size_event_percent 1000000000000
+execute store result score $percent_add ca.attr_var run attribute @s oxygen_bonus modifier value get ca.attr_aoe_size_event_percent 1000000000000
 scoreboard players operation $percent ca.attr_var += $percent_add ca.attr_var
-execute store result score $percent_add ca.attr_var run attribute @s generic.oxygen_bonus modifier value get ca.attr_aoe_size_ench_percent 1000000000000
+execute store result score $percent_add ca.attr_var run attribute @s oxygen_bonus modifier value get ca.attr_aoe_size_ench_percent 1000000000000
 scoreboard players operation $percent ca.attr_var += $percent_add ca.attr_var
-execute store result score $percent_add ca.attr_var run attribute @s generic.oxygen_bonus modifier value get ca.attr_aoe_size_user_percent 1000000000000
+execute store result score $percent_add ca.attr_var run attribute @s oxygen_bonus modifier value get ca.attr_aoe_size_user_percent 1000000000000
 scoreboard players operation $percent ca.attr_var += $percent_add ca.attr_var
 
 scoreboard players set $attr_used ca.attr_var 0

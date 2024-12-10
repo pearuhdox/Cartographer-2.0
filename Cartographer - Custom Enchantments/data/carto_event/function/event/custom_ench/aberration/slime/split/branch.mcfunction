@@ -31,4 +31,9 @@ execute on passengers run data modify entity @s item set from storage cartograph
 tag @s remove ca.new_aberration_bomb
 tag @s add ca.aberration_spawn
 
+data modify storage cartographer:custom_enchantments status_enchant_hit.enchantment_hit set from storage carto_event current[-1].parameters.status_info.enchantment_hit
+
+execute summon text_display run function cartographer_custom_enchantments:enchantment/passive/aberration/create_telegraphing with storage cartographer:custom_enchantments
+
 $function carto_event:api/create_single_entity_event {event:"custom_ench/aberration/slime",duration:600,delay:2,parameters:{health:$(health),splits:$(splits),size:$(size),half_size:$(half_size),size_neg_1:$(size_neg_1),damage:$(damage),owner:"$(owner)"},merge_behavior:"none"}
+function carto_event:event/custom_ench/aberration/slime/split/append_status with storage carto_event macro

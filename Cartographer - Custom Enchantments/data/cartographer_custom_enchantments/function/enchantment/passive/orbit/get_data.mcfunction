@@ -1,7 +1,8 @@
-scoreboard players operation $lvl ca.ench_orbit_lvl = @s ca.ench_orbit_lvl
-scoreboard players operation $mult ca.ench_var = $lvl ca.ench_orbit_lvl
-execute if score $spawner_cause ca.ench_var matches 1.. run scoreboard players operation $lvl ca.ench_orbit_lvl = @s ca.ench_orbit_hand_lvl
+scoreboard players operation $lvl ca.ench_orbit_lvl = $orbit ca.ench_value
+execute if score $spawner_cause ca.ench_var matches 1.. run scoreboard players operation $lvl ca.ench_orbit_lvl = $orbit_hand ca.ench_value
+execute if score $summon_cause ca.ench_var matches 1.. run scoreboard players operation $lvl ca.ench_orbit_lvl = $kinship_lvl ca.ench_var
 
+scoreboard players operation $mult ca.ench_var = $lvl ca.ench_orbit_lvl
 scoreboard players operation $mult ca.ench_var *= $15 ca.CONSTANT
 scoreboard players operation $min_result_damage ca.ench_var = $lvl ca.ench_orbit_lvl
 scoreboard players operation $min_result_damage ca.ench_var *= $15 ca.CONSTANT

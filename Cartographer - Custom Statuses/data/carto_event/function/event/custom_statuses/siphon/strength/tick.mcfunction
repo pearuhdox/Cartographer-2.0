@@ -12,8 +12,8 @@ $scoreboard players set $(owner) ca.siphon_timer 160
 $execute as $(target) at @s run tag @s remove ca.has_custom_status_siphon_strength
 $execute as $(target) at @s if score duration= carto_event matches 2.. run tag @s add ca.has_custom_status_siphon_strength
 
-$execute as $(target) at @s run attribute @s minecraft:generic.attack_damage modifier remove ca.siphon_strength
-$execute as $(target) at @s if score duration= carto_event matches 2.. run attribute @s minecraft:generic.attack_damage modifier add ca.siphon_strength -$(amount) add_multiplied_total
+$execute as $(target) at @s run attribute @s minecraft:attack_damage modifier remove ca.siphon_strength
+$execute as $(target) at @s if score duration= carto_event matches 2.. run attribute @s minecraft:attack_damage modifier add ca.siphon_strength -$(amount) add_multiplied_total
 
 $execute if score duration= carto_event matches 1 as $(target) at @s store result score $siphon_strength_amt ca.status_var run data get storage carto_event current[-1].parameters.amount 100
 $execute if score duration= carto_event matches 1 as $(target) at @s run scoreboard players operation $(owner) ca.siphon_strength_player -= $siphon_strength_amt ca.status_var

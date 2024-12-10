@@ -6,7 +6,7 @@ $execute as $(target) at @s if score duration= carto_event matches 2.. run tag @
 
 scoreboard players set $end_stealth ca.status_var 0
 
-$execute as $(target) at @s if score duration= carto_event matches 2.. as @e[type=#bb:hostile,tag=!ca.stealth_mob_blindness_attr,distance=$(visible_range)..36] at @s run function carto_event:event/custom_statuses/stealth/player/mob with storage carto_event current[-1].parameters
+$execute as $(target) at @s if score duration= carto_event matches 2.. as @e[type=#cartographer_core:affected_by_carto,tag=!ca.stealth_mob_blindness_attr,distance=$(visible_range)..36] at @s run function carto_event:event/custom_statuses/stealth/player/mob with storage carto_event current[-1].parameters
 
 $execute as $(target) at @s if entity @s[tag=ca.remove_stealth_player] run function carto_event:event/custom_statuses/stealth/player/end
 $execute as $(target) at @s if entity @s[nbt=!{HurtTime:0s}] run function carto_event:event/custom_statuses/stealth/player/end

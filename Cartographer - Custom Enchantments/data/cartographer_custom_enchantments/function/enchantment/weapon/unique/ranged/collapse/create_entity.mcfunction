@@ -1,0 +1,5 @@
+data merge entity @s {brightness:{sky:0,block:0},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.55f,-0.05f,-0.55f],scale:[1.10f,0.01f,1.10f]},block_state:{Name:"minecraft:tinted_glass"}}
+
+function cartographer_custom_enchantments:enchantment/helper/weapon/send_ench_values
+
+$function carto_event:api/create_single_entity_event {event:"custom_ench/collapse",duration:1200,delay:000,parameters:{owner:"$(owner)",time:$(time),visual_time:$(visual_time)},merge_behavior:"none"}

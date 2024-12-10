@@ -1,0 +1,39 @@
+{
+  "description": {
+    "text": "Surge"
+  },
+  "exclusive_set": "#cartographer_custom_enchantments:exclusive_set/sprint_augment",
+  "supported_items": "#cartographer_core:enchant_support/passive",
+  "weight": 1,
+  "max_level": 10,
+  "max_cost": {
+    "base": 60,
+    "per_level_above_first": 20
+  },
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 20
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "armor",
+    "offhand",
+    "mainhand",
+    "body"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "cartographer_custom_enchantments:enchantment/passive/surge/schedule"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {}
+        }
+      }
+    ]
+  }
+}

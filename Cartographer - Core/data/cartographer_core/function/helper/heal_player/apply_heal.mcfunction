@@ -4,8 +4,8 @@ scoreboard players set $max_health ca.heal 0
 scoreboard players set @s ca.actual_heal 0
 
 scoreboard players operation @s ca.actual_heal += @s ca.heal
-attribute @s minecraft:generic.max_health modifier remove ca.heal_set_hp
-execute store result score $max_health ca.heal run attribute @s minecraft:generic.max_health get 10
+attribute @s minecraft:max_health modifier remove ca.heal_set_hp
+execute store result score $max_health ca.heal run attribute @s minecraft:max_health get 10
 execute store result score $current_health ca.heal run data get entity @s Health 10
 
 

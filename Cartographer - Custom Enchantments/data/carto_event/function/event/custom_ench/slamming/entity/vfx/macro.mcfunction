@@ -1,0 +1,1 @@
+$particle minecraft:dust_pillar{block_state:"$(block)"} ~ ~ ~ 0.65 0.1 0.65 0.1 50 normal

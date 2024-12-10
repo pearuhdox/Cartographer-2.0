@@ -1,0 +1,6 @@
+{
+    "values":[
+      "cartographer_core:debug/handlers/attack_speed/recharge",
+      {"id":"cartographer_custom_enchantments:enchantment/weapon/unique/general/repulsion/melee_activate","required":false}
+    ]
+  }

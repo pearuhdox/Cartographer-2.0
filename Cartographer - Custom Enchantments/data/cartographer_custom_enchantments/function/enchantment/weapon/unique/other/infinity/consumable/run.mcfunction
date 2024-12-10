@@ -1,0 +1,3 @@
+execute if predicate cartographer_custom_enchantments:has_infinity_mainhand unless items entity @s weapon.mainhand bow unless items entity @s weapon.mainhand *[minecraft:custom_data~{item_replaced:1b}] run function cartographer_custom_enchantments:enchantment/weapon/unique/other/infinity/consumable/replace {slot:"mainhand"}
+
+execute if predicate cartographer_custom_enchantments:has_infinity_offhand unless items entity @s weapon.offhand bow unless items entity @s weapon.offhand *[minecraft:custom_data~{item_replaced:1b}] run function cartographer_custom_enchantments:enchantment/weapon/unique/other/infinity/consumable/replace {slot:"offhand"}

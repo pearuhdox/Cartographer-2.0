@@ -1,6 +1,6 @@
 
 #Get player's max health
-execute store result score $target_max_health bbl.storage run attribute @s minecraft:generic.max_health get
+execute store result score $target_max_health bbl.storage run attribute @s minecraft:max_health get
 #Get player's current health
 function bb:lib/get_target_status/get_health
 #Multiply current health by 100

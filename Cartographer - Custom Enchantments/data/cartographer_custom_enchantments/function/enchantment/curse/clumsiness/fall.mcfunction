@@ -1,0 +1,1 @@
+execute if entity @s[nbt={HurtTime:10s}] run function cartographer_custom_enchantments:enchantment/curse/clumsiness/start_damage

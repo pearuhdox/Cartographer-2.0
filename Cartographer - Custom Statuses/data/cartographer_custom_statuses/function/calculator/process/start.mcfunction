@@ -12,10 +12,7 @@ function cartographer_custom_statuses:calculator/process/create_action {action:"
 function cartographer_custom_statuses:calculator/process/create_action {action:"consume"}
 function cartographer_custom_statuses:calculator/process/create_action {action:"attacked"}
 
-function cartographer_custom_statuses:calculator/process/create_action {action:"surge"}
-function cartographer_custom_statuses:calculator/process/create_action {action:"deadeye"}
-function cartographer_custom_statuses:calculator/process/create_action {action:"induction"}
-function cartographer_custom_statuses:calculator/process/create_action {action:"orbit"}
+execute if score $custom_enchantments ca.installed matches 1.. run function cartographer_custom_statuses:calculator/process/start_custom_enchantments
 
 #FUNCTION TAG HERE
 

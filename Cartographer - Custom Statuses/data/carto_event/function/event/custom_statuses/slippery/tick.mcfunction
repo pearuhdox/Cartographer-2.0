@@ -24,8 +24,8 @@ $execute as $(target) at @s if score duration= carto_event matches 2.. store res
 $scoreboard players set $fly_cdl ca.slippery_val $(cooldown)
 scoreboard players operation $fly_cdl ca.slippery_val *= $5 ca.CONSTANT
 
-$execute as $(target) at @s run attribute @s minecraft:generic.safe_fall_distance modifier remove ca.slippery_fall_debuff
-$execute as $(target) at @s if score duration= carto_event matches 2.. run attribute @s minecraft:generic.safe_fall_distance modifier add ca.slippery_fall_debuff -2.75 add_value
+$execute as $(target) at @s run attribute @s minecraft:safe_fall_distance modifier remove ca.slippery_fall_debuff
+$execute as $(target) at @s if score duration= carto_event matches 2.. run attribute @s minecraft:safe_fall_distance modifier add ca.slippery_fall_debuff -2.75 add_value
 
 $execute as $(target) at @s unless score @s ca.slippery_cooldown matches 1.. if entity @s[nbt={HurtTime:9s}] run function carto_event:event/custom_statuses/slippery/amplify with storage carto_event current[-1].parameters
 

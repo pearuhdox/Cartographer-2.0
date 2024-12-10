@@ -6,4 +6,4 @@ scoreboard players set @s co_y 2
 execute as @s at @s run function motion:motion/push
 tag @s remove co_rotation_lock
 
-$damage @s $(aoe) cartographer_custom_enchantments:enchant_damage by @n[tag=ca.momentum_owner]
+$damage @s $(aoe) cartographer_custom_enchantments:enchant_damage_bypass by @n[tag=ca.momentum_owner]

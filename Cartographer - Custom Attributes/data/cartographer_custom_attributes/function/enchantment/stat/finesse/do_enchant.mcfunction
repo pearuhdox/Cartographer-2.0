@@ -1,4 +1,4 @@
-attribute @s minecraft:generic.attack_damage modifier remove ca.finesse_stat
+attribute @s minecraft:attack_damage modifier remove ca.finesse_stat
 scoreboard players operation $value ca.stat_var = @s ca.ench_finesse_lvl
 scoreboard players operation $value ca.stat_var *= $5 ca.CONSTANT
 

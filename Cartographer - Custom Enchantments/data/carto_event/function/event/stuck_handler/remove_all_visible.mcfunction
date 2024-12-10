@@ -1,0 +1,1 @@
+execute on passengers if entity @s[type=item_display,tag=ca.stuck_proj_display] run kill @s

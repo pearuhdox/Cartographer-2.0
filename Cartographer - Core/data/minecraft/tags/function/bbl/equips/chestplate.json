@@ -1,0 +1,6 @@
+{
+	"values": [
+		{"id": "cartographer_custom_attributes:calculator/chestplate","required": false},
+		{"id": "cartographer_custom_statuses:calculator/chestplate","required": false}
+	]
+}

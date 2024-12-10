@@ -1,11 +1,11 @@
 scoreboard players operation $previous ca.momentum_stack = @s ca.momentum_stack
 
-scoreboard players add @s ca.momentum_stack 400
+scoreboard players add @s ca.momentum_stack 75
 
 execute if entity @s[type=player] run function cartographer_custom_enchantments:enchantment/passive/momentum/tier_up_player_vfx
 execute unless entity @s[type=player] run function cartographer_custom_enchantments:enchantment/passive/momentum/tier_up_vfx
 
-execute if score @s ca.momentum_stack matches 10000.. run scoreboard players set $used_momentum ca.momentum_stack 1
+execute if score @s ca.momentum_stack matches 1500.. run scoreboard players set $used_momentum ca.momentum_stack 1
 
 execute if score $used_momentum ca.momentum_stack matches 1.. if entity @s[type=player] run playsound minecraft:item.mace.smash_air player @a[distance=..16] ~ ~ ~ 1 1.3
 execute if score $used_momentum ca.momentum_stack matches 1.. unless entity @s[type=player] run playsound minecraft:item.mace.smash_air hostile @a[distance=..16] ~ ~ ~ 1 1.3

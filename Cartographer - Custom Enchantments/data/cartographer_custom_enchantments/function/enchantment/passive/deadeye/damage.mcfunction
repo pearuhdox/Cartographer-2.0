@@ -1,5 +1,4 @@
-$damage @s $(damage) cartographer_custom_enchantments:enchant_damage by @n[tag=ca.deadeye_owner]
-damage @s 0.001 cartographer_custom_enchantments:enchant_damage by @n[tag=ca.deadeye_owner]
+$damage @s $(damage) cartographer_custom_enchantments:enchant_damage_bypass by @n[tag=ca.deadeye_owner]
 
 execute unless entity @s[type=player] run function cartographer_custom_enchantments:enchantment/passive/deadeye/knockback_mob
 

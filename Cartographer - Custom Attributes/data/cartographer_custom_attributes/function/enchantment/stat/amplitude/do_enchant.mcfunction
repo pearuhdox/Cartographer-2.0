@@ -1,4 +1,4 @@
-attribute @s minecraft:generic.oxygen_bonus modifier remove ca.attr_aoe_size_ench_percent
+attribute @s minecraft:oxygen_bonus modifier remove ca.attr_aoe_size_ench_percent
 
 scoreboard players operation $value ca.stat_var = @s ca.ench_amplitude_lvl
 #scoreboard players operation $value ca.stat_var *= $1 ca.CONSTANT

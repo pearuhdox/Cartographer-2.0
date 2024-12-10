@@ -1,5 +1,5 @@
-execute if score @s ca.siphon_timer matches 1.. run attribute @s minecraft:generic.movement_speed modifier remove ca.positive_siphon_speed
-execute if score @s ca.siphon_timer matches 1.. run attribute @s minecraft:generic.attack_damage modifier remove ca.positive_siphon_strength
+execute if score @s ca.siphon_timer matches 1.. run attribute @s minecraft:movement_speed modifier remove ca.positive_siphon_speed
+execute if score @s ca.siphon_timer matches 1.. run attribute @s minecraft:attack_damage modifier remove ca.positive_siphon_strength
 
 execute if score @s ca.siphon_speed_player matches 1.. if predicate cartographer_core:periodic_tick/8 positioned ~ ~1 ~ run particle entity_effect{color:[0.200,0.922,1.000,1.00]} ~ ~ ~ 0.25 0.25 0.25 1 1 normal
 execute if score @s ca.siphon_strength_player matches 1.. if predicate cartographer_core:periodic_tick/8 positioned ~ ~1 ~ run particle entity_effect{color:[1.000,0.780,0.000,1.00]} ~ ~ ~ 0.25 0.25 0.25 1 1 normal

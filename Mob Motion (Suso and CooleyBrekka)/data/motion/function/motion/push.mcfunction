@@ -5,8 +5,9 @@ scoreboard players add @s co_pitch 0
 scoreboard players add @s co_yaw 0
 scoreboard players add @s co_send 0
 
+execute if entity @s[tag=co_execute_context] run function suso.mob_motion:internal/do
 execute rotated as @s[tag=co_rotation_lock] run function suso.mob_motion:internal/do
-execute if entity @s[tag=!co_rotation_lock] at @s run function suso.mob_motion:internal/no_rot_lock
+execute if entity @s[tag=!co_rotation_lock,tag=!co_execute_context] at @s run function suso.mob_motion:internal/no_rot_lock
 
 scoreboard players set @s co_x 0
 scoreboard players set @s co_y 0

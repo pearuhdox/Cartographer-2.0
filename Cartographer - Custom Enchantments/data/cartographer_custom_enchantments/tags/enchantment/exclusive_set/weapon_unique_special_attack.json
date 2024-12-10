@@ -1,0 +1,11 @@
+{
+    "values": [
+      "cartographer_custom_enchantments:weapon/unique/melee/quick_strike",
+      "cartographer_custom_enchantments:weapon/unique/melee/cleaving",
+      "cartographer_custom_enchantments:weapon/unique/melee/slamming",
+      "cartographer_custom_enchantments:weapon/unique/melee/thrusting",
+      "cartographer_custom_enchantments:weapon/unique/melee/lunging",
+      "cartographer_custom_enchantments:weapon/unique/melee/riposte",
+      "cartographer_custom_enchantments:weapon/unique/melee/throwable"
+    ]
+  }

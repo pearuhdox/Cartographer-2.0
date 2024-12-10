@@ -1,4 +1,4 @@
-execute store result score $max ca.tenacity_hp run attribute @s generic.max_health get 10
+execute store result score $max ca.tenacity_hp run attribute @s max_health get 10
 scoreboard players operation $max ca.tenacity_hp /= $10 ca.CONSTANT
 
 execute unless score @s ca.tenacity_hp matches 1.. run scoreboard players set @s ca.tenacity_hp 0

@@ -1,0 +1,6 @@
+{
+	"values": [
+		{"id": "cartographer_custom_attributes:calculator/offhand","required": false},
+		{"id": "cartographer_custom_statuses:calculator/offhand","required": false}
+	]
+}

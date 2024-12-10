@@ -1,5 +1,5 @@
 #$execute as $(target) if entity @s[type=player] 
-$execute as $(target) if entity @s[type=player] positioned ~-$(half_size) ~-1 ~-$(half_size) as @e[type=#bb:hostile,limit=1,tag=!ca.orbit_cdl,dx=$(size_neg_1),dy=1,dz=$(size_neg_1)] positioned ~$(half_size) ~1 ~$(half_size) run function carto_event:event/custom_ench/orbit/orbital/damage with storage carto_event current[-1].parameters
+$execute as $(target) if entity @s[type=player] positioned ~-$(half_size) ~-1 ~-$(half_size) as @e[type=#cartographer_core:affected_by_carto,limit=1,tag=!ca.orbit_cdl,dx=$(size_neg_1),dy=1,dz=$(size_neg_1)] positioned ~$(half_size) ~1 ~$(half_size) run function carto_event:event/custom_ench/orbit/orbital/damage with storage carto_event current[-1].parameters
 $execute as $(target) unless entity @s[type=player] positioned ~-$(half_size) ~-1 ~-$(half_size) as @a[tag=!ca.orbit_cdl,limit=1,dx=$(size_neg_1),dy=1,dz=$(size_neg_1)] positioned ~$(half_size) ~1 ~$(half_size) run function carto_event:event/custom_ench/orbit/orbital/damage with storage carto_event current[-1].parameters
 
 

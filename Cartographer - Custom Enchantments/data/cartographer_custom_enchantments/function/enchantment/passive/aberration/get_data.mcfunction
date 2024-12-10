@@ -1,5 +1,8 @@
-scoreboard players operation $lvl ca.ench_aberration_lvl = @s ca.ench_aberration_lvl
-execute if score $spawner_cause ca.ench_var matches 1.. run scoreboard players operation $lvl ca.ench_aberration_lvl = @s ca.ench_aberration_hand_lvl
+execute if entity @s[type=player] run scoreboard players operation $lvl ca.ench_aberration_lvl = $aberration ca.ench_value
+execute unless entity @s[type=player] run scoreboard players operation $lvl ca.ench_aberration_lvl = @s ca.ench_aberration_lvl
+
+execute if score $spawner_cause ca.ench_var matches 1.. run scoreboard players operation $lvl ca.ench_aberration_lvl = $aberration_hand ca.ench_value
+execute if score $summon_cause ca.ench_var matches 1.. run scoreboard players operation $lvl ca.ench_aberration_lvl = $kinship_lvl ca.ench_var
 
 scoreboard players operation $splits ca.ench_aberration_lvl = $lvl ca.ench_aberration_lvl
 scoreboard players remove $splits ca.ench_aberration_lvl 1
@@ -43,6 +46,6 @@ scoreboard players remove $size_neg_1 ca.ench_aberration_lvl 100
 scoreboard players set $health_scale ca.ench_aberration_lvl 3
 scoreboard players operation $health_scale ca.ench_aberration_lvl += $splits ca.ench_aberration_lvl
 
-execute store result score $health ca.ench_aberration_lvl run attribute @s generic.max_health get
+execute store result score $health ca.ench_aberration_lvl run attribute @s max_health get
 execute if entity @s[type=player] run scoreboard players operation $health ca.ench_aberration_lvl *= $health_scale ca.ench_aberration_lvl
 execute unless entity @s[type=player] run scoreboard players operation $health ca.ench_aberration_lvl /= $2 ca.CONSTANT

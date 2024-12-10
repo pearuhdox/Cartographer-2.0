@@ -1,4 +1,4 @@
-attribute @s minecraft:player.mining_efficiency modifier remove ca.handling_stat
+attribute @s minecraft:mining_efficiency modifier remove ca.handling_stat
 scoreboard players operation $value ca.stat_var = @s ca.ench_handling_lvl
 scoreboard players operation $value ca.stat_var *= $value ca.stat_var
 scoreboard players add $value ca.stat_var 7

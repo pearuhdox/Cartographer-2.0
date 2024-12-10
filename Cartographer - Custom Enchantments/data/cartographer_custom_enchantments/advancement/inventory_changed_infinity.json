@@ -1,0 +1,22 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Inventory:[{components:{\"minecraft:enchantments\":{levels:{\"minecraft:infinity\":1}}}}]}"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "cartographer_custom_enchantments:enchantment/weapon/unique/other/infinity/inventory_changed"
+    }
+  }
+  

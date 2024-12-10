@@ -1,4 +1,4 @@
-attribute @s minecraft:generic.water_movement_efficiency modifier remove ca.depth_strider_stat
+attribute @s minecraft:water_movement_efficiency modifier remove ca.depth_strider_stat
 scoreboard players operation $value ca.stat_var = @s ca.ench_depth_strider_lvl
 scoreboard players operation $value ca.stat_var *= $33 ca.CONSTANT
 

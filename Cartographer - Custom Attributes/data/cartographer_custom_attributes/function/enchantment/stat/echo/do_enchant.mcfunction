@@ -1,6 +1,6 @@
-attribute @s minecraft:generic.oxygen_bonus modifier remove ca.attr_restrike_chance_ench_percent
-attribute @s minecraft:generic.oxygen_bonus modifier remove ca.attr_restrike_amount_ench_value
-attribute @s minecraft:generic.oxygen_bonus modifier remove ca.attr_restrike_rate_ench_value
+attribute @s minecraft:oxygen_bonus modifier remove ca.attr_restrike_chance_ench_percent
+attribute @s minecraft:oxygen_bonus modifier remove ca.attr_restrike_amount_ench_value
+attribute @s minecraft:oxygen_bonus modifier remove ca.attr_restrike_rate_ench_value
 
 scoreboard players operation $value ca.stat_var = @s ca.ench_echo_lvl
 scoreboard players remove $value ca.stat_var 1

@@ -1,0 +1,18 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "predicates": {
+              "minecraft:custom_data": {"throwable_applied":1}
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "cartographer_custom_enchantments:enchantment/weapon/unique/melee/throwable/tick"
+    }
+  }
+  

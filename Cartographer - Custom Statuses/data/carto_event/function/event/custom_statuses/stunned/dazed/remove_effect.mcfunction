@@ -1,5 +1,5 @@
-attribute @s minecraft:generic.movement_speed modifier remove ca.dazed_speed
-attribute @s minecraft:generic.attack_damage modifier remove ca.dazed_damage
+attribute @s minecraft:movement_speed modifier remove ca.dazed_speed
+attribute @s minecraft:attack_damage modifier remove ca.dazed_damage
 
 scoreboard players set $stunned_remove ca.stunned_var 1
 

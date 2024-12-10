@@ -1,7 +1,6 @@
 particle minecraft:gust ~ ~0.25 ~ 0 0 0 1 1 force
 
-$damage @s $(damage) cartographer_custom_enchantments:enchant_damage by @n[tag=ca.surge_owner]
-damage @s 0.001 cartographer_custom_enchantments:enchant_damage by @n[tag=ca.surge_owner]
+$damage @s $(damage) cartographer_custom_enchantments:enchant_damage_bypass by @n[tag=ca.surge_owner]
 
 scoreboard players set $surge_hit ca.sprint_time_surge 1
 

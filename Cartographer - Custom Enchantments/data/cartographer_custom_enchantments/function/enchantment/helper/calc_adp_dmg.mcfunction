@@ -1,9 +1,11 @@
 # $mult and $min_result_damage need to be set before running this function
 # value is returned in $result_damage
 
-execute store result score $melee_damage ca.ench_var run attribute @s generic.attack_damage get 100
+
+execute store result score $melee_damage ca.ench_var run attribute @s attack_damage get 100
 execute unless predicate bb:cant_crit run scoreboard players operation $melee_damage ca.ench_var *= $150 ca.CONSTANT
 execute unless predicate bb:cant_crit run scoreboard players operation $melee_damage ca.ench_var /= $100 ca.CONSTANT
+
 
 execute store result score $ranged_damage ca.ench_var run scoreboard players get @s ca.attr_ranged_damage_value
 execute if score @s ca.attr_ranged_damage_percent matches -1999999.. run scoreboard players operation $ranged_damage ca.ench_var *= @s ca.attr_ranged_damage_percent

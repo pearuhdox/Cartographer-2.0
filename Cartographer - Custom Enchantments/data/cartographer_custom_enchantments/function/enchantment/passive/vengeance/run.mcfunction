@@ -1,4 +1,4 @@
-function cartographer_core:enchant_calculator/full_calculation {namespace:"cartographer_custom_enchantments",enchantment:"vengeance",type:"passive"}
+function cartographer_core:enchant_calculator/full_calculation {namespace:"cartographer_custom_enchantments",category:"passive/",enchantment:"vengeance",type:"passive"}
 
 scoreboard players set @s ca.vengeance_stack 1
 tag @s remove ca.used_vengeance_attack

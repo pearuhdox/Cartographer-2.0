@@ -1,4 +1,4 @@
-attribute @s minecraft:generic.step_height modifier remove ca.traveling_stat
+attribute @s minecraft:step_height modifier remove ca.traveling_stat
 scoreboard players operation $value ca.stat_var = @s ca.ench_traveling_lvl
 execute if score $value ca.stat_var matches 4.. run scoreboard players set $value ca.stat_var 3
 
