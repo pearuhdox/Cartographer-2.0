@@ -1,13 +1,13 @@
-execute if entity @s[type=player,tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. run tag @s remove ca.ench_repeating_main
-execute if entity @s[type=player,tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. run tag @s remove ca.ench_repeating_offh
-execute if entity @s[type=player,tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. run scoreboard players set @s ca.ench_repeating_lvl 0
-execute if entity @s[type=player,tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. run function cartographer_core:enchant_calculator/full_calculation {namespace:"cartographer_custom_enchantments",category:"weapon/unique/other/",enchantment:"repeating",type:"ranged"}
-execute if entity @s[type=player,tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. if score $was_main ca.calc_type matches 1.. run tag @s add ca.ench_repeating_main
-execute if entity @s[type=player,tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. if score $was_offh ca.calc_type matches 1.. run tag @s add ca.ench_repeating_offh
-execute if entity @s[type=player,tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. if score $was_main ca.calc_type matches 1.. store result score @s ca.repeating_load_time run data get entity @s SelectedItem.components.minecraft:custom_data.repeating_load_tick_time
-execute if entity @s[type=player,tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. if score $was_offh ca.calc_type matches 1.. store result score @s ca.repeating_load_time run data get entity @s Inventory[{Slot:-106b}].components.minecraft:custom_data.repeating_load_tick_time
-execute if entity @s[type=player,tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. run function cartographer_core:enchant_calculator/full_calculation {namespace:"minecraft",category:"",enchantment:"quick_charge",type:"ranged"}
-execute if entity @s[type=player,tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. run scoreboard players set $check ca.core_delay_check 1
+execute if entity @s[type=player] run tag @s remove ca.ench_repeating_main
+execute if entity @s[type=player] run tag @s remove ca.ench_repeating_offh
+execute if entity @s[type=player] run scoreboard players set @s ca.ench_repeating_lvl 0
+execute if entity @s[type=player] run function cartographer_core:enchant_calculator/full_calculation {namespace:"cartographer_custom_enchantments",category:"weapon/unique/other/",enchantment:"repeating",type:"ranged"}
+execute if entity @s[type=player] if score $was_main ca.calc_type matches 1.. run tag @s add ca.ench_repeating_main
+execute if entity @s[type=player] if score $was_offh ca.calc_type matches 1.. run tag @s add ca.ench_repeating_offh
+execute if entity @s[type=player] if score $was_main ca.calc_type matches 1.. store result score @s ca.repeating_load_time run data get entity @s SelectedItem.components.minecraft:custom_data.repeating_load_tick_time
+execute if entity @s[type=player] if score $was_offh ca.calc_type matches 1.. store result score @s ca.repeating_load_time run data get entity @s Inventory[{Slot:-106b}].components.minecraft:custom_data.repeating_load_tick_time
+execute if entity @s[type=player] run function cartographer_core:enchant_calculator/full_calculation {namespace:"minecraft",category:"",enchantment:"quick_charge",type:"ranged"}
+execute if entity @s[type=player] run scoreboard players set $check ca.core_delay_check 1
 
 execute unless entity @s[type=player] if predicate cartographer_core:periodic_tick/20 run scoreboard players set @s ca.ench_repeating_lvl 0
 execute unless entity @s[type=player] if predicate cartographer_core:periodic_tick/20 run function cartographer_core:enchant_calculator/full_calculation {namespace:"cartographer_custom_enchantments",category:"weapon/unique/other/",enchantment:"repeating",type:"ranged"}
