@@ -1,5 +1,5 @@
 tag @s add co_rotation_lock
-tp @s ~ ~ ~ facing entity @n[tag=ca.momentum_owner] feet
+rotate @s facing entity @n[tag=ca.momentum_owner] feet
 tp @s ~ ~ ~ ~ 30
 scoreboard players set @s co_send -5
 scoreboard players set @s co_y 2

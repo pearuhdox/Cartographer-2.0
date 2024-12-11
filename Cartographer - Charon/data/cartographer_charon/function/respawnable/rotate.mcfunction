@@ -1,4 +1,4 @@
-tp @s ~ ~ ~ facing entity @p feet
+rotate @s facing entity @p feet
 
 data remove entity @s CustomName
 

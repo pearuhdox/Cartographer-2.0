@@ -10,7 +10,7 @@ particle minecraft:cloud ~ ~-0.6 ~ 0.1 0.1 0.1 0.05 1 normal
 
 scoreboard players operation $value ca.revive_time = @s ca.revive_time
 
-tp @s ~ ~ ~ facing entity @p eyes
+rotate @s facing entity @p eyes
 
 execute if score @s ca.revive_time matches 1 on passengers run data merge entity @s {interpolation_duration:1,start_interpolation:0,transformation:[0.700f, 0.000f, 0.000f,0.000f,0.000f, 0.700f, 0.000f,0.050f,0.000f, 0.000f, 0.700f,0.000f,0.000f, 0.000f, 0.000f,1.000f]}
 

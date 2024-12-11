@@ -7,8 +7,8 @@ execute on passengers run data modify entity @s item set from storage cartograph
 
 execute unless score $pickup ca.custom_trident matches 1 on passengers if entity @s[type=item_display] run tag @s add ca.no_pickup
 
-$execute on passengers run tp @s ~ ~ ~ facing ~$(motion_x) ~$(motion_y) ~$(motion_z)
-$execute on passengers on passengers run tp @s ~ ~ ~ facing ~$(motion_x) ~$(motion_y) ~$(motion_z)
+$execute on passengers run rotate @s facing ~$(motion_x) ~$(motion_y) ~$(motion_z)
+$execute on passengers on passengers run rotate @s facing ~$(motion_x) ~$(motion_y) ~$(motion_z)
 
 execute on passengers on passengers run data modify entity @s data.Owner set from storage cartographer_custom_attributes:trident entity.Owner
 

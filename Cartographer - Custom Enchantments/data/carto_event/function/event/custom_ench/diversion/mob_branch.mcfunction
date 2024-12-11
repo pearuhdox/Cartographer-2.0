@@ -7,7 +7,7 @@ tag @s remove ca.diversion_silent
 tag @s remove ca.diversion_distract
 
 tag @s add co_rotation_lock
-$tp @s ~ ~ ~ facing entity $(target) feet
+$rotate @s facing entity $(target) feet
 scoreboard players set @s co_send -4
 scoreboard players set @s co_y 2
 execute as @s at @s run function motion:motion/push

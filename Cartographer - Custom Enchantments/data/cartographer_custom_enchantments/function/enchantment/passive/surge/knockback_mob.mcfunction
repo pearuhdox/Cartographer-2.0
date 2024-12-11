@@ -1,5 +1,5 @@
 tag @s add co_rotation_lock
-tp @s ~ ~ ~ facing entity @n[tag=ca.surge_owner] feet
+rotate @s facing entity @n[tag=ca.surge_owner] feet
 execute as @s at @s run tp @s ~ ~ ~ ~ 20
 scoreboard players set @s co_send -2
 scoreboard players set @s co_y 4

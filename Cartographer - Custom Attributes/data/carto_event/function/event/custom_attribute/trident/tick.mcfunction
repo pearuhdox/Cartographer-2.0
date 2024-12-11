@@ -9,7 +9,7 @@ $execute as $(target) at @s on vehicle run scoreboard players set $landed ca.cus
 
 $execute as $(target) at @s unless entity @s[tag=ca.orient_custom_trident] on vehicle run function carto_event:event/custom_attribute/trident/water/save
 
-$execute as $(target) at @s unless score $landed ca.custom_trident matches 0 if entity @s[tag=ca.orient_custom_trident] run tp @s ~ ~ ~ facing $(prev_x) $(prev_y) $(prev_z)
+$execute as $(target) at @s unless score $landed ca.custom_trident matches 0 if entity @s[tag=ca.orient_custom_trident] run rotate @s facing $(prev_x) $(prev_y) $(prev_z)
 
 $execute as $(target) at @s if score $custom_enchantments ca.installed matches 1.. unless score $landed ca.custom_trident matches 0 unless entity @s[tag=ca.ench_copied] on vehicle run function cartographer_custom_enchantments:enchantment/helper/weapon/get_ench_values
 $execute as $(target) at @s if score $custom_enchantments ca.installed matches 1.. unless score $landed ca.custom_trident matches 0 unless entity @s[tag=ca.ench_copied] run function cartographer_custom_enchantments:enchantment/helper/weapon/send_ench_values
