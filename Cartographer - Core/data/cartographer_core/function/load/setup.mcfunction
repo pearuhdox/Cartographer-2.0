@@ -356,6 +356,8 @@ execute unless score $gl_reload_msg ca.gamerule matches 0.. run scoreboard playe
 
 scoreboard objectives add give_dev_box trigger
 
+#I hate that its this simple but it looks nice and clean okay
+scoreboard objectives add bug trigger
 
 #Create options trigger score (for player options)
 scoreboard objectives add ca.options_trig trigger
