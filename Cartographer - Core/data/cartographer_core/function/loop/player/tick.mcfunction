@@ -79,7 +79,8 @@ execute unless predicate cartographer_core:potion_effect/has_absorption if entit
 #Resets
 
 #Reset All Enchant Flags every tick
-function #minecraft:cartographer/api/handlers/reset_ench_flags
+execute if score @s ca.reset_flags matches 1.. run function #minecraft:cartographer/api/handlers/reset_ench_flags
+execute if score @s ca.reset_flags matches 1.. run scoreboard players set @s ca.reset_flags 0
 
 scoreboard players set @s[scores={ca.sprint=6..}] ca.sprint 5
 scoreboard players remove @s[scores={ca.sprint=1..}] ca.sprint 1

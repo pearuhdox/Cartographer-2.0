@@ -1,3 +1,3 @@
-$execute as $(target) at @s run tag @s remove ca.ench_ran_flag_$(flag)
+$execute as $(target) at @s run function #minecraft:cartographer/api/handlers/reset_ench_flags
 
 return 0

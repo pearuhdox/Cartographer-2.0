@@ -15,3 +15,17 @@ function cartographer_custom_statuses:calculator/process/create_action {action:"
 function cartographer_custom_statuses:calculator/process/create_action {action:"aberration"}
 
 function cartographer_custom_statuses:calculator/process/create_action {action:"thorns"}
+
+# Repulsion
+
+# Explosive
+
+# Lunging
+
+# Slamming
+
+# Thrusting
+
+# Cleaving
+
+# Throwable should activate Ranged Conditions

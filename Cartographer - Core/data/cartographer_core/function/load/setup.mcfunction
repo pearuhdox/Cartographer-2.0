@@ -119,6 +119,8 @@ setblock 4206900 7 4206900 purple_shulker_box destroy
 scoreboard objectives add ca.var dummy
 scoreboard objectives add ca.register dummy
 
+scoreboard objectives add ca.reset_flags dummy
+
 # Debug Messages have the following levels
 # 0 - None shown
 # 1 - Basic procs
