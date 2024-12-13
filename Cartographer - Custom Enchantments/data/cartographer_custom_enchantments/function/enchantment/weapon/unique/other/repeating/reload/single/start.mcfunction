@@ -18,5 +18,3 @@ execute if entity @s[tag=ca.new_repeating_instance] if score @s ca.repeating_ava
 execute if entity @s[tag=ca.new_repeating_instance] store result score $current_ammo_amount ca.ench_repeating_lvl run data get storage cartographer_custom_enchantments:repeating data.item.components.minecraft:custom_data.repeating_ammo
 
 execute if score @s ca.repeating_avail_ammo matches 1.. if score $current_ammo_amount ca.ench_repeating_lvl < $allowed_max_ammo ca.ench_repeating_lvl run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/reload/single/do
-
-scoreboard players remove @s ca.repeating_avail_ammo 1
