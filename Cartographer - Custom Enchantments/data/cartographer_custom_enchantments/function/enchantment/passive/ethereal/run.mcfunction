@@ -15,6 +15,7 @@ execute unless entity @s[type=player] summon item_display run function cartograp
 execute unless entity @s[type=player] summon item_display run function cartographer_custom_enchantments:enchantment/passive/ethereal/create_telegraph/pos_z
 execute unless entity @s[type=player] summon item_display run function cartographer_custom_enchantments:enchantment/passive/ethereal/create_telegraph/neg_z
 
-function cartographer_custom_enchantments:enchantment/passive/ethereal/macro with storage cartographer_custom_enchantments:macro
+execute if entity @s[type=player] run function cartographer_custom_enchantments:enchantment/passive/ethereal/macro with storage cartographer_custom_enchantments:macro
+execute unless entity @s[type=player] run function cartographer_custom_enchantments:enchantment/passive/ethereal/macro_mob with storage cartographer_custom_enchantments:macro
 
 execute unless entity @s[type=player] anchored eyes positioned ^ ^ ^ run function cartographer_core:handlers/text_popup/create {text:"[{\"color\":\"#D87EE4\",\"italic\":false,\"text\":\"Enchant Effect\"},{\"color\":\"#B47EE4\",\"italic\":false,\"text\":\"\\\\nEthereal\"}]",popup_duration:25,teleport_duration:2,scale:0.5,background:16777215,text_opacity:150,teleport_position:"~ ~0.35 ~"}
