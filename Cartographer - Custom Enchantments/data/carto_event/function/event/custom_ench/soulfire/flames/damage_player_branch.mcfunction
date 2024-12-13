@@ -1,11 +1,31 @@
-$execute unless score $muted_damage ca.ench_soulfire_lvl matches 1.. run damage @s $(damage) cartographer_custom_enchantments:enchant_damage_bypass by $(owner)
+execute store result score $random ca.ench_soulfire_lvl run random value 1..15
 
-$execute unless score $muted_damage ca.ench_soulfire_lvl matches 1.. if data storage carto_event current[-1].parameters.status_info.enchantment_hit.self as $(owner) at @s run function cartographer_custom_statuses:apply_status/apply/start_loop {location:"carto_event",path:"current[-1].parameters.status_info",action:"enchantment_hit",type:"self"}
-execute unless score $muted_damage ca.ench_soulfire_lvl matches 1.. if data storage carto_event current[-1].parameters.status_info.enchantment_hit.target run function cartographer_custom_statuses:apply_status/apply/start_loop {location:"carto_event",path:"current[-1].parameters.status_info",action:"enchantment_hit",type:"target"}
+tag @s add co_rotation_lock
 
+execute if score $random ca.ench_soulfire_lvl matches 1 run rotate @s facing ~1 ~1 ~
+execute if score $random ca.ench_soulfire_lvl matches 2 run rotate @s facing ~-1 ~1 ~
+execute if score $random ca.ench_soulfire_lvl matches 3 run rotate @s facing ~ ~1 ~1
+execute if score $random ca.ench_soulfire_lvl matches 4 run rotate @s facing ~ ~1 ~-1
 
-$execute unless score $muted_damage ca.ench_soulfire_lvl matches 1.. as $(target) store result score @s ca.raycast run data get storage carto_event current[-1].parameters.length 10
-$execute unless score $muted_damage ca.ench_soulfire_lvl matches 1.. facing entity $(target) feet positioned ^ ^ ^0.1 as $(target) run function carto_event:event/custom_ench/soulfire/flames/raycast_vfx
+execute if score $random ca.ench_soulfire_lvl matches 5 run rotate @s facing ~1.5 ~1 ~
+execute if score $random ca.ench_soulfire_lvl matches 6 run rotate @s facing ~-1.5 ~1 ~
+execute if score $random ca.ench_soulfire_lvl matches 7 run rotate @s facing ~ ~1 ~1.5
+execute if score $random ca.ench_soulfire_lvl matches 8 run rotate @s facing ~ ~1 ~-1.5
 
-execute unless score $muted_damage ca.ench_soulfire_lvl matches 1.. run tag @s add ca.soulfire_cdl
-execute unless score $muted_damage ca.ench_soulfire_lvl matches 1.. run function carto_event:api/create_single_entity_event {event:"custom_ench/soulfire/cooldown",duration:9,delay:000,parameters:{},merge_behavior:"none"}
+execute if score $random ca.ench_soulfire_lvl matches 9 run rotate @s facing ~2 ~1 ~
+execute if score $random ca.ench_soulfire_lvl matches 10 run rotate @s facing ~-2 ~1 ~
+execute if score $random ca.ench_soulfire_lvl matches 11 run rotate @s facing ~ ~1 ~2
+execute if score $random ca.ench_soulfire_lvl matches 12 run rotate @s facing ~ ~1 ~-2
+
+execute if score $random ca.ench_soulfire_lvl matches 13.. run rotate @s facing ~ ~1 ~
+
+$data modify entity @s Owner set from entity $(owner) UUID
+
+execute at @s run playsound minecraft:entity.blaze.shoot hostile @a[distance=..16] ~ ~ ~ 1 1.5
+
+execute unless entity @s[tag=ca.player_spawned] run scoreboard players set @s co_send 9
+
+function motion:motion/push
+
+tag @s remove co_rotation_lock
+tag @s remove ca.new

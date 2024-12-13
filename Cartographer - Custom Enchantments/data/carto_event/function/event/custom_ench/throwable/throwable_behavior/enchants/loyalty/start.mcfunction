@@ -6,6 +6,8 @@ execute store result score $loyalty_speed ca.ench_throwable_lvl run data get sto
 scoreboard players operation $loyalty_speed ca.ench_throwable_lvl /= $2 ca.CONSTANT
 execute store result storage carto_event current[-1].parameters.step_scale double 0.001 run scoreboard players get $loyalty_speed ca.ench_throwable_lvl
 
+execute if entity @s[tag=ca.hit_block] run function carto_event:event/custom_ench/throwable/throwable_behavior/buttons/deactivate/start
+
 $execute as @s at @s facing entity $(owner) eyes run tp @s ^ ^ ^1
 $execute as @s at @s facing entity $(owner) eyes rotated ~ ~-20 run function carto_event:event/custom_ench/throwable/throwable_behavior/alter_direction with storage carto_event current[-1].parameters
 

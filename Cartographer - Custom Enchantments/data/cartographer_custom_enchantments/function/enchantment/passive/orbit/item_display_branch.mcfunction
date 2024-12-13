@@ -1,5 +1,5 @@
-execute if score $is_player ca.ench_orbit_lvl matches 1.. run data merge entity @s {teleport_duration:1,billboard:"fixed",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.2f,1.2f,1.2f]},item:{id:"minecraft:firework_star",count:1,components:{"minecraft:firework_explosion":{shape:"small_ball",colors:[I;3930367]}}}}
-execute unless score $is_player ca.ench_orbit_lvl matches 1.. run data merge entity @s {teleport_duration:1,billboard:"fixed",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.2f,1.2f,1.2f]},item:{id:"minecraft:firework_star",count:1,components:{"minecraft:firework_explosion":{shape:"small_ball",colors:[I;11743280]}}}}
+data merge entity @s {teleport_duration:1,billboard:"fixed",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0f],scale:[1.2f,1.2f,1.2f]},item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{id:[I;863215294,-1780921430,-1773460256,1982824210],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzAwYTFhN2JiMDdmZGI0ZTZhODZlMzQxODE2ZTg4NDNkZGFmN2NmMzcxM2EzNjY2ZDc0YjcyZjk4NjE5ZjA2MyJ9fX0="}]}}}}
+function cartographer_custom_enchantments:enchantment/passive/orbit/custom_skin/directory
 
 data modify storage gu:main out set value "-"
 function gu:generate

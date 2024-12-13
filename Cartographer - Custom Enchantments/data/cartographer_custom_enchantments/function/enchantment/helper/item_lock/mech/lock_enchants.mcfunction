@@ -13,5 +13,4 @@ execute if data storage cartographer_custom_enchantments:item_lock item.componen
 execute if data storage cartographer_custom_enchantments:item_lock item.components.minecraft:custom_data.locked_enchantments.levels.cartographer_custom_enchantments:curse/pride run data modify storage cartographer_custom_enchantments:item_lock item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:curse/pride set value 1
 execute if data storage cartographer_custom_enchantments:item_lock item.components.minecraft:custom_data.locked_enchantments.levels.cartographer_custom_enchantments:curse/two_handed run data modify storage cartographer_custom_enchantments:item_lock item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:curse/two_handed set value 1
 
-
 data modify storage cartographer_custom_enchantments:item_lock item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:curse/locked set value 1

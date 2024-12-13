@@ -7,3 +7,5 @@ execute unless entity @s[type=player] if predicate cartographer_core:periodic_ti
 execute unless entity @s[type=player] if predicate cartographer_core:periodic_tick/20 run scoreboard players set $check ca.core_delay_check 1
 
 execute if score @s ca.ench_invigorated_lvl matches 1.. run function cartographer_custom_attributes:enchantment/stat/invigorated/do_enchant
+
+execute if entity @s[type=player,tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. run function cartographer_custom_attributes:custom_attributes/effects/healing_power/tracking_start

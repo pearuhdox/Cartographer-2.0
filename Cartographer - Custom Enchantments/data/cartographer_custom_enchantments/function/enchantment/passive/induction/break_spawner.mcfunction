@@ -2,7 +2,8 @@ scoreboard players set $spawner_cause ca.ench_var 1
 
 scoreboard players operation $previous ca.induction_stack = @s ca.induction_stack
 
-scoreboard players add @s ca.induction_stack 75
+execute if entity @s[type=player] run scoreboard players add @s ca.induction_stack 75
+execute unless entity @s[type=player] run scoreboard players add @s ca.induction_stack 225
 function cartographer_custom_enchantments:enchantment/passive/induction/tier_up_player_vfx
 
 scoreboard players set $used_induction ca.induction_stack 0

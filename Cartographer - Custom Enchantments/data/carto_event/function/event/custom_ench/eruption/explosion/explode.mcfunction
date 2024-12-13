@@ -1,6 +1,6 @@
 particle minecraft:explosion ~ ~0.3 ~ 0 0 0 0 1 force
 
-playsound minecraft:entity.explode hostile @a[distance=..16] ~ ~ ~ 0.5 2
+playsound minecraft:entity.generic.explode hostile @a[distance=..16] ~ ~ ~ 0.5 2
 
 function carto_event:event/custom_ench/eruption/explosion/explode_vfx
 

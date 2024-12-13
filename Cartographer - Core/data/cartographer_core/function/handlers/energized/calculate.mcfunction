@@ -31,6 +31,8 @@ scoreboard players operation $math.isqrt.x bs.in = @s ca.energized_stack
 function #bs.math:isqrt
 scoreboard players operation @s ca.energized_stack = $math.isqrt bs.out
 
+execute unless entity @s[type=player] run scoreboard players operation @s ca.energized_stack *= $2 ca.CONSTANT
+
 execute if entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"energized/calculate",duration:6,delay:000,parameters:{},merge_behavior:"merge"}
 execute unless entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"energized/calculate",duration:21,delay:000,parameters:{},merge_behavior:"merge"}
 

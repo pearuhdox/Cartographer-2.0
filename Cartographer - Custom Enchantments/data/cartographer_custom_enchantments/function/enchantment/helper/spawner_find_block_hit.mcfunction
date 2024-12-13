@@ -1,6 +1,6 @@
 scoreboard players remove @s ca.raycast 1
 
-particle minecraft:end_rod ~ ~ ~ 0 0 0 0 1 force
+#particle minecraft:end_rod ~ ~ ~ 0 0 0 0 1 force
 
 execute if block ~ ~ ~ minecraft:spawner run scoreboard players set @s ca.raycast 0
 $execute if block ~ ~ ~ minecraft:spawner align xyz positioned ~0.5 ~0.5 ~0.5 positioned $(offset) run function $(function)

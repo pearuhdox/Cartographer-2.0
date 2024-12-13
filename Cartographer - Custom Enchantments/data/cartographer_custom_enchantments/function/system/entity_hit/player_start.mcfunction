@@ -1,3 +1,5 @@
+execute if entity @s[advancements={entityid:entity_hurt_player={panic_causes=true}}] on attacker at @s run function cartographer_custom_enchantments:system/entity_hit/energized_proc
+
 execute if entity @s[advancements={entityid:entity_hurt_player={panic_causes=true}}] if score $vengeance_damage ca.vengeance_stack matches 1.. run function cartographer_custom_enchantments:enchantment/passive/vengeance/hit
 
 execute if entity @s[advancements={entityid:entity_hurt_player={panic_causes=true}}] if score $used_momentum ca.momentum_stack matches 1.. run function cartographer_custom_enchantments:enchantment/passive/momentum/hit/victim

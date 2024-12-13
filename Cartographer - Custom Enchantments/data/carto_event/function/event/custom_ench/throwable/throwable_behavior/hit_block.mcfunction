@@ -1,3 +1,6 @@
+execute unless score @s ca.ench_ricochet_lvl matches 1.. if block ~ ~ ~ target run tag @s add ca.throwable_hit_target_block
+execute unless score @s ca.ench_ricochet_lvl matches 1.. if block ~ ~ ~ target run setblock ~ ~ ~ redstone_block replace
+
 execute unless score @s ca.ench_ricochet_lvl matches 1.. run tag @s add ca.hit_block
 
 execute if score @s ca.ench_collapse_lvl matches 1.. unless score @s ca.ench_ricochet_lvl matches 1.. run function carto_event:event/custom_ench/throwable/throwable_behavior/enchants/collapse/start

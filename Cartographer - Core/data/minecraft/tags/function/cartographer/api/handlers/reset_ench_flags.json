@@ -1,0 +1,9 @@
+{
+    "values":[
+        {"id": "cartographer_custom_enchantments:reset_enchant_flags","required": false},
+        {"id": "cartographer_custom_attributes:reset_enchant_flags","required": false},
+        {"id": "cartographer_custom_statuses:reset_enchant_flags","required": false},
+        {"id": "cartographer_enchantment_rework:reset_enchant_flags","required": false}
+
+    ]
+  }

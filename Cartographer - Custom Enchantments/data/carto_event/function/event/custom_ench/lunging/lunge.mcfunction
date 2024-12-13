@@ -10,14 +10,21 @@ execute unless entity @s[type=player] run playsound minecraft:block.slime_block.
 
 scoreboard players operation $force ca.ench_var = @s ca.ench_lunging_lvl
 execute if entity @s[type=player] run scoreboard players operation $force ca.ench_var *= $1000 ca.CONSTANT
-execute if entity @s[type=player] run scoreboard players add $force ca.ench_var 3500
+execute if entity @s[type=player] run scoreboard players add $force ca.ench_var 5000
 execute unless entity @s[type=player] run scoreboard players operation $force ca.ench_var *= $3 ca.CONSTANT
 execute unless entity @s[type=player] run scoreboard players add $force ca.ench_var 2
 
 execute store result score $rotation ca.ench_var run data get entity @s Rotation[1]
 
-execute if score $rotation ca.ench_var matches 41.. run scoreboard players set $rotation ca.ench_var 50
-execute if score $rotation ca.ench_var matches ..-41 run scoreboard players set $rotation ca.ench_var -50
+execute if score $rotation ca.ench_var matches 41.. run scoreboard players set $rotation ca.ench_var 40
+execute if score $rotation ca.ench_var matches ..-41 run scoreboard players set $rotation ca.ench_var -40
+
+execute if score $rotation ca.ench_var matches 20.. if entity @s[type=player] run scoreboard players remove $force ca.ench_var 500
+execute if score $rotation ca.ench_var matches ..-20 if entity @s[type=player] run scoreboard players remove $force ca.ench_var 500
+execute if score $rotation ca.ench_var matches 30.. if entity @s[type=player] run scoreboard players remove $force ca.ench_var 500
+execute if score $rotation ca.ench_var matches ..-30 if entity @s[type=player] run scoreboard players remove $force ca.ench_var 500
+execute if score $rotation ca.ench_var matches 40.. if entity @s[type=player] run scoreboard players remove $force ca.ench_var 500
+execute if score $rotation ca.ench_var matches ..-40 if entity @s[type=player] run scoreboard players remove $force ca.ench_var 500
 
 execute store result storage cartographer:custom_enchantments rotation float 1 run scoreboard players get $rotation ca.ench_var
 

@@ -1,0 +1,67 @@
+execute if block ~ ~ ~ oak_button[face=ceiling,facing=east,powered=false] run setblock ~ ~ ~ oak_button[face=ceiling,facing=east,powered=true] replace
+execute if block ~ ~ ~ oak_button[face=ceiling,facing=west,powered=false] run setblock ~ ~ ~ oak_button[face=ceiling,facing=west,powered=true] replace
+execute if block ~ ~ ~ oak_button[face=ceiling,facing=north,powered=false] run setblock ~ ~ ~ oak_button[face=ceiling,facing=north,powered=true] replace
+execute if block ~ ~ ~ oak_button[face=ceiling,facing=south,powered=false] run setblock ~ ~ ~ oak_button[face=ceiling,facing=south,powered=true] replace
+
+execute if block ~ ~ ~ oak_button[face=ceiling,facing=east,powered=false] run setblock ~ ~ ~ oak_button[face=ceiling,facing=east,powered=true] replace
+execute if block ~ ~ ~ oak_button[face=ceiling,facing=west,powered=false] run setblock ~ ~ ~ oak_button[face=ceiling,facing=west,powered=true] replace
+execute if block ~ ~ ~ oak_button[face=ceiling,facing=north,powered=false] run setblock ~ ~ ~ oak_button[face=ceiling,facing=north,powered=true] replace
+execute if block ~ ~ ~ oak_button[face=ceiling,facing=south,powered=false] run setblock ~ ~ ~ oak_button[face=ceiling,facing=south,powered=true] replace
+
+execute if block ~ ~ ~ spruce_button[face=ceiling,facing=east,powered=false] run setblock ~ ~ ~ spruce_button[face=ceiling,facing=east,powered=true] replace
+execute if block ~ ~ ~ spruce_button[face=ceiling,facing=west,powered=false] run setblock ~ ~ ~ spruce_button[face=ceiling,facing=west,powered=true] replace
+execute if block ~ ~ ~ spruce_button[face=ceiling,facing=north,powered=false] run setblock ~ ~ ~ spruce_button[face=ceiling,facing=north,powered=true] replace
+execute if block ~ ~ ~ spruce_button[face=ceiling,facing=south,powered=false] run setblock ~ ~ ~ spruce_button[face=ceiling,facing=south,powered=true] replace
+
+execute if block ~ ~ ~ birch_button[face=ceiling,facing=east,powered=false] run setblock ~ ~ ~ birch_button[face=ceiling,facing=east,powered=true] replace
+execute if block ~ ~ ~ birch_button[face=ceiling,facing=west,powered=false] run setblock ~ ~ ~ birch_button[face=ceiling,facing=west,powered=true] replace
+execute if block ~ ~ ~ birch_button[face=ceiling,facing=north,powered=false] run setblock ~ ~ ~ birch_button[face=ceiling,facing=north,powered=true] replace
+execute if block ~ ~ ~ birch_button[face=ceiling,facing=south,powered=false] run setblock ~ ~ ~ birch_button[face=ceiling,facing=south,powered=true] replace
+
+execute if block ~ ~ ~ jungle_button[face=ceiling,facing=east,powered=false] run setblock ~ ~ ~ jungle_button[face=ceiling,facing=east,powered=true] replace
+execute if block ~ ~ ~ jungle_button[face=ceiling,facing=west,powered=false] run setblock ~ ~ ~ jungle_button[face=ceiling,facing=west,powered=true] replace
+execute if block ~ ~ ~ jungle_button[face=ceiling,facing=north,powered=false] run setblock ~ ~ ~ jungle_button[face=ceiling,facing=north,powered=true] replace
+execute if block ~ ~ ~ jungle_button[face=ceiling,facing=south,powered=false] run setblock ~ ~ ~ jungle_button[face=ceiling,facing=south,powered=true] replace
+
+execute if block ~ ~ ~ acacia_button[face=ceiling,facing=east,powered=false] run setblock ~ ~ ~ acacia_button[face=ceiling,facing=east,powered=true] replace
+execute if block ~ ~ ~ acacia_button[face=ceiling,facing=west,powered=false] run setblock ~ ~ ~ acacia_button[face=ceiling,facing=west,powered=true] replace
+execute if block ~ ~ ~ acacia_button[face=ceiling,facing=north,powered=false] run setblock ~ ~ ~ acacia_button[face=ceiling,facing=north,powered=true] replace
+execute if block ~ ~ ~ acacia_button[face=ceiling,facing=south,powered=false] run setblock ~ ~ ~ acacia_button[face=ceiling,facing=south,powered=true] replace
+
+execute if block ~ ~ ~ dark_oak_button[face=ceiling,facing=east,powered=false] run setblock ~ ~ ~ dark_oak_button[face=ceiling,facing=east,powered=true] replace
+execute if block ~ ~ ~ dark_oak_button[face=ceiling,facing=west,powered=false] run setblock ~ ~ ~ dark_oak_button[face=ceiling,facing=west,powered=true] replace
+execute if block ~ ~ ~ dark_oak_button[face=ceiling,facing=north,powered=false] run setblock ~ ~ ~ dark_oak_button[face=ceiling,facing=north,powered=true] replace
+execute if block ~ ~ ~ dark_oak_button[face=ceiling,facing=south,powered=false] run setblock ~ ~ ~ dark_oak_button[face=ceiling,facing=south,powered=true] replace
+
+execute if block ~ ~ ~ mangrove_button[face=ceiling,facing=east,powered=false] run setblock ~ ~ ~ mangrove_button[face=ceiling,facing=east,powered=true] replace
+execute if block ~ ~ ~ mangrove_button[face=ceiling,facing=west,powered=false] run setblock ~ ~ ~ mangrove_button[face=ceiling,facing=west,powered=true] replace
+execute if block ~ ~ ~ mangrove_button[face=ceiling,facing=north,powered=false] run setblock ~ ~ ~ mangrove_button[face=ceiling,facing=north,powered=true] replace
+execute if block ~ ~ ~ mangrove_button[face=ceiling,facing=south,powered=false] run setblock ~ ~ ~ mangrove_button[face=ceiling,facing=south,powered=true] replace
+
+execute if block ~ ~ ~ cherry_button[face=ceiling,facing=east,powered=false] run setblock ~ ~ ~ cherry_button[face=ceiling,facing=east,powered=true] replace
+execute if block ~ ~ ~ cherry_button[face=ceiling,facing=west,powered=false] run setblock ~ ~ ~ cherry_button[face=ceiling,facing=west,powered=true] replace
+execute if block ~ ~ ~ cherry_button[face=ceiling,facing=north,powered=false] run setblock ~ ~ ~ cherry_button[face=ceiling,facing=north,powered=true] replace
+execute if block ~ ~ ~ cherry_button[face=ceiling,facing=south,powered=false] run setblock ~ ~ ~ cherry_button[face=ceiling,facing=south,powered=true] replace
+
+execute if block ~ ~ ~ bamboo_button[face=ceiling,facing=east,powered=false] run setblock ~ ~ ~ bamboo_button[face=ceiling,facing=east,powered=true] replace
+execute if block ~ ~ ~ bamboo_button[face=ceiling,facing=west,powered=false] run setblock ~ ~ ~ bamboo_button[face=ceiling,facing=west,powered=true] replace
+execute if block ~ ~ ~ bamboo_button[face=ceiling,facing=north,powered=false] run setblock ~ ~ ~ bamboo_button[face=ceiling,facing=north,powered=true] replace
+execute if block ~ ~ ~ bamboo_button[face=ceiling,facing=south,powered=false] run setblock ~ ~ ~ bamboo_button[face=ceiling,facing=south,powered=true] replace
+
+execute if block ~ ~ ~ warped_button[face=ceiling,facing=east,powered=false] run setblock ~ ~ ~ warped_button[face=ceiling,facing=east,powered=true] replace
+execute if block ~ ~ ~ warped_button[face=ceiling,facing=west,powered=false] run setblock ~ ~ ~ warped_button[face=ceiling,facing=west,powered=true] replace
+execute if block ~ ~ ~ warped_button[face=ceiling,facing=north,powered=false] run setblock ~ ~ ~ warped_button[face=ceiling,facing=north,powered=true] replace
+execute if block ~ ~ ~ warped_button[face=ceiling,facing=south,powered=false] run setblock ~ ~ ~ warped_button[face=ceiling,facing=south,powered=true] replace
+
+execute if block ~ ~ ~ crimson_button[face=ceiling,facing=east,powered=false] run setblock ~ ~ ~ crimson_button[face=ceiling,facing=east,powered=true] replace
+execute if block ~ ~ ~ crimson_button[face=ceiling,facing=west,powered=false] run setblock ~ ~ ~ crimson_button[face=ceiling,facing=west,powered=true] replace
+execute if block ~ ~ ~ crimson_button[face=ceiling,facing=north,powered=false] run setblock ~ ~ ~ crimson_button[face=ceiling,facing=north,powered=true] replace
+execute if block ~ ~ ~ crimson_button[face=ceiling,facing=south,powered=false] run setblock ~ ~ ~ crimson_button[face=ceiling,facing=south,powered=true] replace
+
+execute if block ~ ~ ~ pale_oak_button[face=ceiling,facing=east,powered=false] run setblock ~ ~ ~ pale_oak_button[face=ceiling,facing=east,powered=true] replace
+execute if block ~ ~ ~ pale_oak_button[face=ceiling,facing=west,powered=false] run setblock ~ ~ ~ pale_oak_button[face=ceiling,facing=west,powered=true] replace
+execute if block ~ ~ ~ pale_oak_button[face=ceiling,facing=north,powered=false] run setblock ~ ~ ~ pale_oak_button[face=ceiling,facing=north,powered=true] replace
+execute if block ~ ~ ~ pale_oak_button[face=ceiling,facing=south,powered=false] run setblock ~ ~ ~ pale_oak_button[face=ceiling,facing=south,powered=true] replace
+
+
+playsound minecraft:block.wooden_button.click_on block @a[distance=..24] ~ ~ ~ 1 1

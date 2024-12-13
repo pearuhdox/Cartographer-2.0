@@ -1,4 +1,4 @@
-execute on owner run function gu:generate
+execute on origin run function gu:generate
 data modify storage cartographer:custom_enchantments owner set from storage gu:main out
 
 scoreboard players operation $grappling ca.ench_value = @s ca.ench_grappling_lvl

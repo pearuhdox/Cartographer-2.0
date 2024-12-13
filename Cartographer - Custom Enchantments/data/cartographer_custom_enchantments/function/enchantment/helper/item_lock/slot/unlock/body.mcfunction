@@ -11,7 +11,7 @@ data remove storage cartographer_custom_enchantments:item_lock item.Slot
 data modify block 4206900 0 4206900 Items set value []
 data modify block 4206900 0 4206900 Items append from storage cartographer_custom_enchantments:item_lock item
 
-execute if entity @s[type=player] run loot replace entity @s armor.body 1 mine 4206900 0 4206900 dirt[minecraft:custom_data={drop_contents:1b}]
+execute if entity @s[type=player] run loot replace entity @s armor.chest 1 mine 4206900 0 4206900 dirt[minecraft:custom_data={drop_contents:1b}]
 execute unless entity @s[type=player] run data modify entity @s ArmorItems[2] set from storage cartographer_custom_enchantments:item_lock item
 
 execute if entity @s[type=player] run tag @s add ca.suppress_inv_update

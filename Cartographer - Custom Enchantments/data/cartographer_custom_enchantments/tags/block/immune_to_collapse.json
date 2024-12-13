@@ -15,6 +15,9 @@
         "minecraft:trial_spawner",
         "minecraft:vault",
         "minecraft:target",
-        "#bb:containers"     
+        "minecraft:ancient_debris",
+        "minecraft:netherite_block",
+        "minecraft:respawn_anchor",
+        "#bb:containers"
     ]
 }

@@ -9,6 +9,7 @@ execute unless entity @s[tag=ca.player_owned] positioned ~-0.5 ~-0.5 ~-0.5 as @a
 execute if score $hit_check ca.ench_throwable_lvl matches 1.. run function carto_event:event/custom_ench/throwable/throwable_behavior/hit_entity with storage carto_event current[-1].parameters
 
 #Block Hit
+
 $execute positioned ~$(x_step) ~$(y_step) ~$(z_step) unless block ~ ~ ~ #cartographer_core:can_raycast run function carto_event:event/custom_ench/throwable/throwable_behavior/hit_block with storage carto_event current[-1].parameters
 $execute positioned ~$(x_step) ~$(y_step) ~$(z_step) if block ~ ~ ~ #cartographer_core:can_raycast positioned ~$(x_step) ~$(y_step) ~$(z_step) unless block ~ ~ ~ #cartographer_core:can_raycast run function carto_event:event/custom_ench/throwable/throwable_behavior/hit_block with storage carto_event current[-1].parameters
 

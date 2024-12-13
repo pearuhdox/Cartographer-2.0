@@ -19,7 +19,7 @@ $execute as $(target) at @s if score duration= carto_event matches 28 run playso
 $execute as $(target) at @s if score duration= carto_event matches 26 run playsound minecraft:block.note_block.hat hostile @a[distance=..16] ~ ~ ~ 1 1.9
 #$execute as $(target) at @s if score duration= carto_event matches 15 run playsound minecraft:block.note_block.hat hostile @a[distance=..16] ~ ~ ~ 1 2.0
 
-
+$execute as $(telegraph) at @s if score duration= carto_event matches 45 at $(target) run tp @s ~ ~ ~ ~ ~
 $execute as $(telegraph) at @s if score duration= carto_event matches 44 run function carto_event:event/custom_ench/cleaving/entity/telegraph_animation with storage carto_event current[-1].parameters
 
 $execute as $(target) at @s if score duration= carto_event matches 40 run attribute @s minecraft:movement_speed modifier add ca.cleaving_slow -0.35 add_multiplied_total
@@ -39,6 +39,11 @@ $execute as $(target) at @s if score duration= carto_event matches 15 run attrib
 $execute as $(target) at @s if score duration= carto_event matches 5 run attribute @s minecraft:attack_damage modifier remove ca.cleaving_damage
 $execute as $(telegraph) at @s if score duration= carto_event matches 15 run scoreboard players remove $count ca.animations_var 1
 $execute as $(telegraph) at @s if score duration= carto_event matches 15 run kill @s
+
+$execute if score duration= carto_event matches 31.. as $(target) at @s on target run tag @s add ca.mob_cleaving_target
+$execute if score duration= carto_event matches 31.. as $(target) unless entity @s[type=minecraft:zoglin] as $(telegraph) at $(target) facing entity @p[tag=ca.mob_cleaving_target] feet run tp @s ~ ~ ~ ~ 0
+$execute if score duration= carto_event matches 31.. as $(target) if entity @s[type=minecraft:zoglin] as $(telegraph) at $(target) facing entity @p feet run tp @s ~ ~ ~ ~ 0
+$execute if score duration= carto_event matches 31.. as $(target) at @s run tag @a remove ca.mob_cleaving_target
 
 $execute if score duration= carto_event matches 31.. as $(target) on target positioned as $(target) facing entity @s feet as $(telegraph) run tp @s ~ ~ ~ ~ 0
 $execute if score duration= carto_event matches ..30 as $(telegraph) at @s positioned as $(target) run tp @s ~ ~ ~

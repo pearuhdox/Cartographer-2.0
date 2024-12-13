@@ -1,5 +1,5 @@
-execute unless score @s ca.aberration_jump matches 1.. if entity @s[tag=ca.player_spawned] on passengers at @s facing entity @e[type=#cartographer_core:affected_by_carto,limit=1,sort=nearest,distance=..16] feet rotated ~180 0 run tp @s ~ ~ ~ ~ ~
-execute unless score @s ca.aberration_jump matches 1.. if entity @s[tag=ca.mob_spawned] on passengers at @s facing entity @p[distance=..16] feet rotated ~180 0 run tp @s ~ ~ ~ ~ ~
+execute unless score @s ca.aberration_jump matches 1.. if entity @s[tag=ca.player_spawned] on passengers at @s facing entity @e[type=#cartographer_core:affected_by_carto,limit=1,sort=nearest,distance=..16] feet rotated ~180 0 run rotate @s ~ ~
+execute unless score @s ca.aberration_jump matches 1.. if entity @s[tag=ca.mob_spawned] on passengers at @s facing entity @p[distance=..16] feet rotated ~180 0 run rotate @s ~ ~
 
 execute unless score @s ca.aberration_jump matches 1.. run playsound minecraft:entity.slime.squish_small hostile @a[distance=..16] ~ ~ ~ 1 0.5
 

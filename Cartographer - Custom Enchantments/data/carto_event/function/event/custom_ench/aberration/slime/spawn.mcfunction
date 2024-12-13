@@ -1,7 +1,7 @@
 tag @s remove ca.aberration_spawn
 
-execute if entity @s[tag=ca.player_spawned] on passengers at @s facing entity @e[type=#cartographer_core:affected_by_carto,limit=1,sort=nearest,distance=..32] feet rotated ~180 0 run tp @s ~ ~ ~ ~ ~
-execute if entity @s[tag=ca.mob_spawned] on passengers at @s facing entity @p[distance=..32] feet rotated ~180 0 run tp @s ~ ~ ~ ~ ~
+execute if entity @s[tag=ca.player_spawned] on passengers at @s facing entity @e[type=#cartographer_core:affected_by_carto,limit=1,sort=nearest,distance=..32] feet rotated ~180 0 run rotate @s ~ ~
+execute if entity @s[tag=ca.mob_spawned] on passengers at @s facing entity @p[distance=..32] feet rotated ~180 0 run rotate @s ~ ~
 
 scoreboard players operation $splits ca.aberration_splits = @s ca.aberration_splits
 execute on passengers run scoreboard players operation @s ca.aberration_splits = $splits ca.aberration_splits

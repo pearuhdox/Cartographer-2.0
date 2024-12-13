@@ -14,7 +14,11 @@ $execute as $(target) at @s if score duration= carto_event matches 1.. if score 
 
 $execute as $(target) at @s if score duration= carto_event matches 1 run tag @s remove ca.has_thrown
 
-$execute if score duration= carto_event matches 30.. as $(telegraph) at $(target) facing entity @p feet run tp @s ~ ~ ~ ~ 0
+$execute if score duration= carto_event matches 30.. as $(target) at @s on target run tag @s add ca.mob_throwable_target
+$execute if score duration= carto_event matches 30.. as $(target) unless entity @s[type=minecraft:zoglin] as $(telegraph) at $(target) facing entity @p[tag=ca.mob_throwable_target] feet run tp @s ~ ~ ~ ~ 0
+$execute if score duration= carto_event matches 30.. as $(target) if entity @s[type=minecraft:zoglin] as $(telegraph) at $(target) facing entity @p feet run tp @s ~ ~ ~ ~ 0
+$execute if score duration= carto_event matches 30.. as $(target) at @s run tag @a remove ca.mob_throwable_target
+
 $execute if score duration= carto_event matches 40 as $(telegraph) at @s run function carto_event:event/custom_ench/throwable/entity_use/telegraph_animation
 $execute if score duration= carto_event matches 20 as $(telegraph) at @s run scoreboard players remove $count ca.animations_var 1
 $execute if score duration= carto_event matches 20 as $(telegraph) at @s run kill @s

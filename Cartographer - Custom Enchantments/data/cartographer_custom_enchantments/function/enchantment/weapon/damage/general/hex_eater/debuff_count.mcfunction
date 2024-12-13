@@ -1,5 +1,7 @@
 scoreboard players set $debuff_count ca.ench_var 0
 
+execute if predicate cartographer_core:world/is_on_fire run scoreboard players add $debuff_count ca.ench_var 1
+
 execute if predicate cartographer_core:potion_effect/has_bad_omen run scoreboard players add $debuff_count ca.ench_var 1
 execute if predicate cartographer_core:potion_effect/has_blindness run scoreboard players add $debuff_count ca.ench_var 1
 execute if predicate cartographer_core:potion_effect/has_darkness run scoreboard players add $debuff_count ca.ench_var 1

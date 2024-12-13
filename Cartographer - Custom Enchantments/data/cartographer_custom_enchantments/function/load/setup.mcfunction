@@ -217,6 +217,7 @@ scoreboard objectives add ca.eruption_time dummy
 
 scoreboard objectives add ca.soulfire_time dummy
 scoreboard objectives add ca.soulfire_animation dummy
+scoreboard objectives add ca.soulfire_count dummy
 
 scoreboard objectives add ca.orbit_bonus_speed dummy
 

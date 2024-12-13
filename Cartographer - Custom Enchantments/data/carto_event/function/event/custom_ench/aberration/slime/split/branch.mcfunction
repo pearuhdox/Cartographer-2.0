@@ -21,7 +21,7 @@ tag @s add co_rotation_lock
 scoreboard players set @s co_send 5
 scoreboard players set @s co_y 4
 
-$execute at @s facing entity $(target) feet rotated ~ 0 run tp @s ~ ~ ~ ~ ~
+$execute at @s facing entity $(target) feet rotated ~ 0 run rotate @s ~ ~
 execute as @s at @s run function motion:motion/push
 
 tag @s remove co_rotation_lock

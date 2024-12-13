@@ -6,7 +6,7 @@ execute if entity @s[tag=ca.player_spawned] run scoreboard players set @s co_y 3
 execute unless entity @s[tag=ca.player_spawned] run scoreboard players set @s co_send -7
 execute unless entity @s[tag=ca.player_spawned] run scoreboard players set @s co_y 4
 
-execute on passengers rotated as @s on vehicle run tp @s ~ ~ ~ ~ ~
+execute on passengers rotated as @s on vehicle run rotate @s ~ ~
 function motion:motion/push
 
 tag @s remove co_rotation_lock

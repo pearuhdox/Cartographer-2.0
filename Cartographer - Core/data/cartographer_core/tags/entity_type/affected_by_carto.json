@@ -1,5 +1,6 @@
 {
 	"values": [
-        "#bb:hostile"
+        "#bb:hostile",
+		"minecraft:end_crystal"
 	]
 }

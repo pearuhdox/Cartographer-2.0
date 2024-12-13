@@ -1,3 +1,9 @@
+execute as 31182015-2051-9195-1813-000000000001 at @s run setblock ~ ~ ~ air replace
+execute as 31182015-2051-9195-1813-000000000001 run scoreboard players set $tesseract_del ca.tesseract 1
+
+
 kill 31182015-2051-9195-1813-000000000001
 
 kill 31182015-2051-9195-1813-000000000002
+
+return 0

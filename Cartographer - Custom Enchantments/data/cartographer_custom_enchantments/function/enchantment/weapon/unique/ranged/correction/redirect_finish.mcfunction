@@ -20,7 +20,11 @@ execute if score $type ca.ench_correction_lvl matches 2 run scoreboard players s
 
 scoreboard players set @s co_y 3
 
-execute if score $type ca.ench_correction_lvl matches 1 facing ^ ^ ^3 run tp @s ~ ~ ~ ~ ~
+#execute positioned ~ ~ ~ run particle minecraft:block_marker{block_state:"barrier"} ~ ~ ~ 0 0 0 1 1 force
+#execute positioned ^ ^ ^3 run particle minecraft:block_marker{block_state:"barrier"} ~ ~ ~ 0 0 0 1 1 force
+
+execute if score $type ca.ench_correction_lvl matches 1 facing ^ ^ ^3 run rotate @s ~ ~
+execute if score $type ca.ench_correction_lvl matches 2 facing ^ ^ ^3 run rotate @s ~ ~
 function motion:motion/push
 
 tag @s add ca.corrected

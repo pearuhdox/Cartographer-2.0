@@ -1,6 +1,7 @@
 scoreboard players operation $previous ca.storm_stack = @s ca.storm_stack
 
-scoreboard players add @s ca.storm_stack 75
+execute if entity @s[type=player] run scoreboard players add @s ca.storm_stack 75
+execute unless entity @s[type=player] run scoreboard players add @s ca.storm_stack 225
 
 execute if entity @s[type=player] run function cartographer_custom_enchantments:enchantment/passive/storm/tier_up_player_vfx
 execute unless entity @s[type=player] run function cartographer_custom_enchantments:enchantment/passive/storm/tier_up_vfx
