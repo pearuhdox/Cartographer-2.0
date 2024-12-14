@@ -3,8 +3,9 @@ $execute as $(target) at @s if score @s ca.quick_strike_active matches 1.. run t
 $execute as $(target) at @s if score @s ca.quick_strike_active matches 1.. run scoreboard players remove @s ca.quick_strike_active 1
 $execute as $(target) at @s if score @s ca.quick_strike_active matches 1.. run attribute @s minecraft:attack_speed modifier add ca.quick_strike_buff 1000 add_value
 
+
 # Early End Conditions
-$execute as $(target) at @s if score @s ca.quick_strike_stacks matches 0 run scoreboard players set @s ca.quick_strike_active 0
+#$execute as $(target) at @s if score @s ca.quick_strike_stacks matches 0 run scoreboard players set @s ca.quick_strike_active 0
 $execute as $(target) at @s if score @s ca.ench_quick_strike_lvl matches 0 run scoreboard players set @s ca.quick_strike_active 0
 
 # Do Ending Process

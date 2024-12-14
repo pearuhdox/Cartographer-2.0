@@ -4,11 +4,10 @@ execute unless entity @s[tag=ca.no_ench_calc] if entity @s[type=#bb:arrow] run f
 
 execute unless entity @s[tag=ca.no_ench_calc] run function cartographer_custom_enchantments:register/add_player_enchants
 
-
 #Do Various VFX on origin based on enchants
 execute on origin if score @s ca.concentration_time matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/damage/general/concentration/vfx
 
-execute if entity @s[type=#bb:projectile,tag=!ca.custom_trident] on origin if score @s ca.ench_recoil_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/general/recoil/activate_projectile
+execute if entity @s[type=#bb:projectile,tag=!ca.custom_trident] on origin if score @s ca.ench_recoil_lvl matches 1.. unless score @s ca.draw_bow_time matches 1..10 run function cartographer_custom_enchantments:enchantment/weapon/unique/general/recoil/activate_projectile
 execute if entity @s[type=fishing_bobber] on origin if score @s ca.ench_recoil_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/general/recoil/activate_projectile
 
 function cartographer_custom_enchantments:register/convert_to_data
