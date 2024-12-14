@@ -1,4 +1,4 @@
-attribute @s minecraft:oxygen_bonus modifier add ca.attr_restrike_chance_ench_percent 0.0000000001 add_value
+attribute @s minecraft:oxygen_bonus modifier add ca.attr_restrike_chance_ench_percent 0.0000000002 add_value
 $attribute @s minecraft:oxygen_bonus modifier add ca.attr_restrike_amount_ench_value $(value) add_value
 $attribute @s minecraft:oxygen_bonus modifier add ca.attr_restrike_rate_ench_value -$(rate) add_value
 

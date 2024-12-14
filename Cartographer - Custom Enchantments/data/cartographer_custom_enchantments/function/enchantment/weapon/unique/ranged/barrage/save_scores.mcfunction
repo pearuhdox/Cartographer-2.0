@@ -3,20 +3,20 @@ data modify storage cartographer_custom_enchantments:barrage data set value {}
 execute store result storage cartographer_custom_enchantments:barrage data.attributes.ranged_damage int 1 on origin run scoreboard players get @s ca.attr_ranged_damage_total
 execute store result storage cartographer_custom_enchantments:barrage data.attributes.ranged_velocity int 1 on origin run scoreboard players get @s ca.attr_ranged_velocity_total
 
-execute store result storage cartographer_custom_enchantments:barrage data.attributes.ranged_velocity int 1 on origin run scoreboard players get @s ca.attr_precise_hit_chance_total
-execute store result storage cartographer_custom_enchantments:barrage data.attributes.ranged_velocity int 1 on origin run scoreboard players get @s ca.attr_precise_hit_damage_total
+execute store result storage cartographer_custom_enchantments:barrage data.attributes.precise_hit_chance int 1 on origin run scoreboard players get @s ca.attr_precise_hit_chance_total
+execute store result storage cartographer_custom_enchantments:barrage data.attributes.precise_hit_damage int 1 on origin run scoreboard players get @s ca.attr_precise_hit_damage_total
 
-execute store result storage cartographer_custom_enchantments:barrage data.attributes.ranged_velocity int 1 on origin run scoreboard players get @s ca.attr_chaining_chance_total
-execute store result storage cartographer_custom_enchantments:barrage data.attributes.ranged_velocity int 1 on origin run scoreboard players get @s ca.attr_chaining_damage_total
-execute store result storage cartographer_custom_enchantments:barrage data.attributes.ranged_velocity int 1 on origin run scoreboard players get @s ca.attr_chaining_amount_total
+execute store result storage cartographer_custom_enchantments:barrage data.attributes.chaining_chance int 1 on origin run scoreboard players get @s ca.attr_chaining_chance_total
+execute store result storage cartographer_custom_enchantments:barrage data.attributes.chaining_damage int 1 on origin run scoreboard players get @s ca.attr_chaining_damage_total
+execute store result storage cartographer_custom_enchantments:barrage data.attributes.chaining_amount int 1 on origin run scoreboard players get @s ca.attr_chaining_amount_total
 
-execute store result storage cartographer_custom_enchantments:barrage data.attributes.ranged_velocity int 1 on origin run scoreboard players get @s ca.attr_restrike_chance_total
-execute store result storage cartographer_custom_enchantments:barrage data.attributes.ranged_velocity int 1 on origin run scoreboard players get @s ca.attr_restrike_damage_total
-execute store result storage cartographer_custom_enchantments:barrage data.attributes.ranged_velocity int 1 on origin run scoreboard players get @s ca.attr_restrike_amount_total
-execute store result storage cartographer_custom_enchantments:barrage data.attributes.ranged_velocity int 1 on origin run scoreboard players get @s ca.attr_restrike_rate_total
+execute store result storage cartographer_custom_enchantments:barrage data.attributes.restrike_chance int 1 on origin run scoreboard players get @s ca.attr_restrike_chance_total
+execute store result storage cartographer_custom_enchantments:barrage data.attributes.restrike_damage int 1 on origin run scoreboard players get @s ca.attr_restrike_damage_total
+execute store result storage cartographer_custom_enchantments:barrage data.attributes.restrike_amount int 1 on origin run scoreboard players get @s ca.attr_restrike_amount_total
+execute store result storage cartographer_custom_enchantments:barrage data.attributes.restrike_rate int 1 on origin run scoreboard players get @s ca.attr_restrike_rate_total
 
-execute store result storage cartographer_custom_enchantments:barrage data.attributes.ranged_velocity int 1 on origin run scoreboard players get @s ca.attr_life_drain_chance_total
-execute store result storage cartographer_custom_enchantments:barrage data.attributes.ranged_velocity int 1 on origin run scoreboard players get @s ca.attr_life_drain_amount_total
+execute store result storage cartographer_custom_enchantments:barrage data.attributes.life_drain_chance int 1 on origin run scoreboard players get @s ca.attr_life_drain_chance_total
+execute store result storage cartographer_custom_enchantments:barrage data.attributes.life_drain_amount int 1 on origin run scoreboard players get @s ca.attr_life_drain_amount_total
 
 data modify storage cartographer:custom_enchantments x_motion set from entity @s Motion[0]
 data modify storage cartographer:custom_enchantments y_motion set from entity @s Motion[1]

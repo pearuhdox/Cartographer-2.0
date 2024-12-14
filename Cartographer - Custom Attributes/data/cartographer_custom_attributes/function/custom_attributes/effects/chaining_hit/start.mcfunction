@@ -13,7 +13,7 @@ execute on attacker run function cartographer_core:handlers/random/roll
 
 execute unless score $success ca.rand matches 1.. run scoreboard players operation $value ca.chaining_hit_entropy = $target ca.rand
 execute unless score $success ca.rand matches 1.. run scoreboard players operation $value ca.chaining_hit_entropy /= $10 ca.CONSTANT
-execute unless score $success ca.rand matches 1.. if score $value ca.chaining_hit_entropy matches 0 run scoreboard players set $value ca.chaining_hit_entropy 1
+execute unless score $success ca.rand matches 1.. if score $value ca.chaining_hit_entropy matches ..0 run scoreboard players set $value ca.chaining_hit_entropy 1
 execute unless score $success ca.rand matches 1.. on attacker run scoreboard players operation @s ca.chaining_hit_entropy += $value ca.chaining_hit_entropy
 
 $execute if score $success ca.rand matches 1.. run function cartographer_custom_attributes:custom_attributes/effects/chaining_hit/get_damage/$(attack_type)

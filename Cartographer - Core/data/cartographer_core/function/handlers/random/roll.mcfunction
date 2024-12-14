@@ -8,6 +8,8 @@ scoreboard players set $success ca.rand 0
 scoreboard players set $advantage ca.rand 0
 scoreboard players set $disadvantage ca.rand 0
 
+execute if score $entropy ca.rand matches ..-31 run scoreboard players set $entropy ca.rand -30
+
 function cartographer_core:handlers/random/func/calc_advantage
 function cartographer_core:handlers/random/func/calc_disadvantage
 

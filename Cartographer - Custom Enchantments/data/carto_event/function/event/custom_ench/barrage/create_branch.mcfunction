@@ -83,20 +83,30 @@ execute store result score @s ca.attr_ranged_damage_total run data get storage c
 execute store result score @s ca.attr_ranged_damage_value run data get storage carto_event current[-1].parameters.attributes.ranged_damage 1
 execute store result score @s ca.attr_ranged_velocity_total run data get storage carto_event current[-1].parameters.attributes.ranged_velocity 1
 
-execute store result score @s ca.attr_precise_hit_chance_total run data get storage carto_event current[-1].parameters.attributes.ranged_velocity 1
-execute store result score @s ca.attr_precise_hit_damage_total run data get storage carto_event current[-1].parameters.attributes.ranged_velocity 1
+execute store result score @s ca.attr_precise_hit_chance_total run data get storage carto_event current[-1].parameters.attributes.precise_hit_chance 1
+execute store result score @s ca.attr_precise_hit_damage_total run data get storage carto_event current[-1].parameters.attributes.precise_hit_damage 1
 
-execute store result score @s ca.attr_chaining_chance_total run data get storage carto_event current[-1].parameters.attributes.ranged_velocity 1
-execute store result score @s ca.attr_chaining_damage_total run data get storage carto_event current[-1].parameters.attributes.ranged_velocity 1
-execute store result score @s ca.attr_chaining_amount_total run data get storage carto_event current[-1].parameters.attributes.ranged_velocity 1
 
-execute store result score @s ca.attr_restrike_chance_total run data get storage carto_event current[-1].parameters.attributes.ranged_velocity 1
-execute store result score @s ca.attr_restrike_damage_total run data get storage carto_event current[-1].parameters.attributes.ranged_velocity 1
-execute store result score @s ca.attr_restrike_amount_total run data get storage carto_event current[-1].parameters.attributes.ranged_velocity 1
-execute store result score @s ca.attr_restrike_rate_total run data get storage carto_event current[-1].parameters.attributes.ranged_velocity 1
+execute store result score @s ca.attr_chaining_chance_total run data get storage carto_event current[-1].parameters.attributes.chaining_chance 1
+execute store result score @s ca.attr_chaining_damage_total run data get storage carto_event current[-1].parameters.attributes.chaining_damage 1
+execute store result score @s ca.attr_chaining_amount_total run data get storage carto_event current[-1].parameters.attributes.chaining_amount 1
 
-execute store result score @s ca.attr_life_drain_chance_total run data get storage carto_event current[-1].parameters.attributes.ranged_velocity 1
-execute store result score @s ca.attr_life_drain_amount_total run data get storage carto_event current[-1].parameters.attributes.ranged_velocity 1
+execute store result score @s ca.attr_chaining_damage_value run data get storage carto_event current[-1].parameters.attributes.chaining_damage 1
+execute store result score @s ca.attr_chaining_amount_value run data get storage carto_event current[-1].parameters.attributes.chaining_amount 1
+
+
+execute store result score @s ca.attr_restrike_chance_total run data get storage carto_event current[-1].parameters.attributes.restrike_chance 1
+execute store result score @s ca.attr_restrike_damage_total run data get storage carto_event current[-1].parameters.attributes.restrike_damage 1
+execute store result score @s ca.attr_restrike_amount_total run data get storage carto_event current[-1].parameters.attributes.restrike_amount 1
+execute store result score @s ca.attr_restrike_rate_total run data get storage carto_event current[-1].parameters.attributes.restrike_rate 1
+
+execute store result score @s ca.attr_restrike_damage_value run data get storage carto_event current[-1].parameters.attributes.restrike_damage 1
+execute store result score @s ca.attr_restrike_amount_value run data get storage carto_event current[-1].parameters.attributes.restrike_amount 1
+execute store result score @s ca.attr_restrike_rate_value run data get storage carto_event current[-1].parameters.attributes.restrike_rate 1
+
+
+execute store result score @s ca.attr_life_drain_chance_total run data get storage carto_event current[-1].parameters.attributes.life_drain_chance 1
+execute store result score @s ca.attr_life_drain_amount_total run data get storage carto_event current[-1].parameters.attributes.life_drain_amount 1
 
 execute if score @s ca.attr_ranged_damage_total matches 1.. run data modify entity @s damage set value 0.0d
 

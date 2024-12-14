@@ -29,6 +29,7 @@ execute if entity @s[name=gibbsly] run tag @s add degenerate
 execute if entity @s[name=gibagul] run tag @s add degenerate
 execute if entity @s[name=BoldNBlue] run tag @s add degenerate
 execute if entity @s[name=Eniah] run tag @s add degenerate
+execute if entity @s[name=Matoreichon] run tag @s add degenerate
 
 #store name
 function bb:lib/pldata/read

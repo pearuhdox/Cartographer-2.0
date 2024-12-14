@@ -1,4 +1,4 @@
-attribute @s minecraft:oxygen_bonus modifier add ca.attr_chaining_chance_ench_percent 0.0000000001 add_value
+attribute @s minecraft:oxygen_bonus modifier add ca.attr_chaining_chance_ench_percent 0.0000000002 add_value
 $attribute @s minecraft:oxygen_bonus modifier add ca.attr_chaining_amount_ench_value $(value) add_value
 
 function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/chaining_chance
