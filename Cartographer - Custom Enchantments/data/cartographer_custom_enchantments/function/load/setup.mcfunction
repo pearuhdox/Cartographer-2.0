@@ -255,7 +255,10 @@ scoreboard objectives add ca.special_attack_animation dummy
 scoreboard objectives add ca.special_attack_delay dummy
 
 scoreboard objectives add ca.riposte_time dummy
+
 scoreboard objectives add ca.lunging_time dummy
+scoreboard objectives add ca.lunging_cancel dummy
+
 scoreboard objectives add ca.throwable_time dummy
 scoreboard objectives add ca.throwable_cooldown dummy
 scoreboard objectives add ca.throwable_loyalty dummy

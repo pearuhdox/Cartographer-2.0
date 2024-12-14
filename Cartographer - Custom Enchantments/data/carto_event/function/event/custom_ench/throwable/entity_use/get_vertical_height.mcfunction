@@ -1,0 +1,1 @@
+$execute rotated ~ ~$(rot) run function carto_event:event/custom_ench/throwable/throw/do

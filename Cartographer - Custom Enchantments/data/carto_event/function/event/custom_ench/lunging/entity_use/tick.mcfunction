@@ -21,8 +21,10 @@ $execute as $(target) at @s if score duration= carto_event matches 1 run tag @s 
 
 #$say $(telegraph)
 $execute if score duration= carto_event matches 177..200 as $(target) at @s on target run tag @s add ca.mob_lunging_target
-$execute if score duration= carto_event matches 177..200 as $(target) unless entity @s[type=minecraft:zoglin] as $(telegraph) at $(target) facing entity @p[tag=ca.mob_lunging_target] feet run tp @s ~ ~ ~ ~ 0
-$execute if score duration= carto_event matches 177..200 as $(target) if entity @s[type=minecraft:zoglin] as $(telegraph) at $(target) facing entity @p feet run tp @s ~ ~ ~ ~ 0
+$execute if score duration= carto_event matches 178..200 as $(target) unless entity @s[type=minecraft:zoglin] as $(telegraph) at $(target) facing entity @p[tag=ca.mob_lunging_target] feet run tp @s ~ ~ ~ ~ 0
+$execute if score duration= carto_event matches 178..200 as $(target) if entity @s[type=minecraft:zoglin] as $(telegraph) at $(target) facing entity @p feet run tp @s ~ ~ ~ ~ 0
+$execute if score duration= carto_event matches 177 as $(target) unless entity @s[type=minecraft:zoglin] as $(telegraph) at $(target) facing entity @p[tag=ca.mob_lunging_target] feet run tp @s ~ ~ ~ ~ ~
+$execute if score duration= carto_event matches 177 as $(target) if entity @s[type=minecraft:zoglin] as $(telegraph) at $(target) facing entity @p feet run tp @s ~ ~ ~ ~ ~
 $execute if score duration= carto_event matches 177..200 as $(target) at @s run tag @a remove ca.mob_lunging_target
 $execute if score duration= carto_event matches 170..176 as $(telegraph) positioned as $(target) run tp @s ~ ~ ~
 $execute if score duration= carto_event matches 200 as $(target) at @s run scoreboard players operation $size ca.ench_lunging_lvl = @s ca.ench_lunging_lvl

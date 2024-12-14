@@ -12,7 +12,7 @@ scoreboard players operation $force ca.ench_var = @s ca.ench_lunging_lvl
 execute if entity @s[type=player] run scoreboard players operation $force ca.ench_var *= $1000 ca.CONSTANT
 execute if entity @s[type=player] run scoreboard players add $force ca.ench_var 5000
 execute unless entity @s[type=player] run scoreboard players operation $force ca.ench_var *= $3 ca.CONSTANT
-execute unless entity @s[type=player] run scoreboard players add $force ca.ench_var 2
+execute unless entity @s[type=player] run scoreboard players add $force ca.ench_var 3
 
 execute store result score $rotation ca.ench_var run data get entity @s Rotation[1]
 
