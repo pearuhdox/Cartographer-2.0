@@ -11,6 +11,9 @@ execute if score $repeating_offhand ca.ench_var matches 1 run data modify storag
 #Clear Slot Data
 data remove storage cartographer_custom_enchantments:consumable data.item.Slot
 
+data modify storage cartographer_custom_enchantments:consumable data.item.count set value 1
+data modify storage cartographer_custom_enchantments:consumable data.item.components.minecraft:max_stack_size set value 1
+
 #Set Use Max Parameter
 execute store result score $use_max ca.ench_var run data get storage cartographer_custom_enchantments:consumable data.item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/unique/other/repeating
 scoreboard players add $use_max ca.ench_var 1

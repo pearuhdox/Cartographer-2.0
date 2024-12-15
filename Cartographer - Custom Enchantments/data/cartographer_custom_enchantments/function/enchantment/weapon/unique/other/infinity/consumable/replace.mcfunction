@@ -8,6 +8,9 @@ execute if score $inf_offhand ca.ench_var matches 1 run data modify storage cart
 
 data remove storage cartographer_custom_enchantments:infinity data.item.Slot
 
+data modify storage cartographer_custom_enchantments:infinity data.item.count set value 1
+data modify storage cartographer_custom_enchantments:infinity data.item.components.minecraft:max_stack_size set value 1
+
 #Set Use Cooldown Parameter
 execute store result score $use_cdl ca.ench_var run data get storage cartographer_custom_enchantments:infinity data.item.components.minecraft:custom_data.use_cooldown 100
 data modify storage cartographer_custom_enchantments:infinity data.use_cooldown set value {seconds:0.2,cooldown_group:"cartographer_infinity"}
