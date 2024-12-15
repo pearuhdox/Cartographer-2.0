@@ -31,8 +31,8 @@ execute store result storage cartographer:custom_enchantments projectile.enchant
 
 execute store result storage cartographer:custom_enchantments projectile.enchants.collapse byte 1 run scoreboard players get @s ca.ench_collapse_lvl
 
-execute store result storage cartographer:custom_enchantments projectile.enchants.collapse byte 1 run scoreboard players get @s ca.ench_drilling_lvl
-execute store result storage cartographer:custom_enchantments projectile.enchants.collapse byte 1 run scoreboard players get @s ca.ench_excavator_lvl
+execute store result storage cartographer:custom_enchantments projectile.enchants.drilling byte 1 run scoreboard players get @s ca.ench_drilling_lvl
+execute store result storage cartographer:custom_enchantments projectile.enchants.excavator byte 1 run scoreboard players get @s ca.ench_excavator_lvl
 
 
 execute store result storage cartographer:custom_enchantments projectile.enchants.starfall byte 1 run scoreboard players get @s ca.ench_starfall_lvl

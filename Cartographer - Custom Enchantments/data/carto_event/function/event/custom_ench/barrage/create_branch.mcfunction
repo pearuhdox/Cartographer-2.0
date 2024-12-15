@@ -30,6 +30,8 @@ data modify storage cartographer:custom_enchantments UUID set value []
 $execute as $(owner) at @s run data modify storage cartographer:custom_enchantments UUID set from entity @s UUID
 data modify entity @s Owner set from storage cartographer:custom_enchantments UUID
 
+
+data modify storage cartographer:custom_enchantments active_projectile.enchants set value {}
 data modify storage cartographer:custom_enchantments active_projectile.enchants set from storage carto_event current[-1].parameters.enchants
 function cartographer_custom_enchantments:register/data_to_enchants
 
@@ -56,6 +58,7 @@ scoreboard players operation @s ca.ench_shrapnel_lvl = $shrapnel ca.ench_value
 scoreboard players operation @s ca.ench_ripper_lvl = $ripper ca.ench_value
 scoreboard players operation @s ca.ench_barbed_lvl = $barbed ca.ench_value
 scoreboard players operation @s ca.ench_collapse_lvl = $collapse ca.ench_value
+
 
 scoreboard players operation @s ca.ench_drilling_lvl = $drilling ca.ench_value
 scoreboard players operation @s ca.ench_excavator_lvl = $excavator ca.ench_value
@@ -116,5 +119,10 @@ execute if entity @s[type=#bb:arrow] on origin if entity @s[type=minecraft:pigli
 execute if entity @s[type=#bb:arrow] on origin if entity @s[type=!minecraft:piglin,type=!minecraft:pillager,type=!#minecraft:skeletons] run playsound minecraft:entity.skeleton.shoot hostile @a[distance=..16] ~ ~ ~ 1 1.5
 
 execute if entity @s[type=trident] run playsound minecraft:item.trident.throw hostile @a[distance=..16] ~ ~ ~ 1 1.5
+
+
+execute if score @s ca.ench_grappling_lvl matches 1.. run tag @s add ca.check_land
+execute if score @s ca.ench_collapse_lvl matches 1.. run tag @s add ca.check_land
+
 
 tag @s remove ca.barrage_created
