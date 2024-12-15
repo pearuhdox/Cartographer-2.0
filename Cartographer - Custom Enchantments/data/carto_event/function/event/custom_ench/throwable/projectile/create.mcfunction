@@ -47,9 +47,13 @@ tp @s ~ ~ ~ ~ ~
 execute if score $is_player ca.ench_throwable_lvl matches 1.. run tag @s add ca.player_owned
 
 function carto_event:event/custom_ench/throwable/projectile/get_enchants
+function carto_event:event/custom_ench/throwable/projectile/get_enchants_passives with storage carto_event current[-1].parameters
+function carto_event:event/custom_ench/throwable/projectile/get_attributes with storage carto_event current[-1].parameters
 
 $execute if score @s ca.ench_collapse_lvl matches 1.. run scoreboard players set $(target) ca.collapse_break_speed 0
 $execute if score @s ca.ench_collapse_lvl matches 1.. as $(target) at @s run function carto_event:event/custom_ench/throwable/throwable_behavior/enchants/collapse/get_mining_speed
 $execute if score @s ca.ench_collapse_lvl matches 1.. run scoreboard players operation @s ca.collapse_break_speed = $(target) ca.collapse_break_speed
 
 function carto_event:event/custom_ench/throwable/projectile/create_macro with storage cartographer:custom_enchantments
+
+$execute as $(target) at @s if score @s ca.ench_recoil_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/general/recoil/activate_projectile

@@ -1,3 +1,4 @@
+execute if score $restrike_chance ca.restrike_hit_var matches 1.. run say ajkghasfhk
 
 execute if score $ranged_damage ca.attr_apply_var matches 1.. run function cartographer_custom_attributes:custom_attributes/effects/ranged_damage/hit/apply
 

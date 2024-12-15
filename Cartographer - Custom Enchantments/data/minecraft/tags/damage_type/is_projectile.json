@@ -2,6 +2,7 @@
     "values": [
       "cartographer_custom_enchantments:projectile_damage_bypass",
       "cartographer_custom_enchantments:projectile_damage_bypass_no_kb",
-      "cartographer_custom_attributes:potion_damage"
+      "cartographer_custom_attributes:potion_damage",
+      "cartographer_custom_enchantments:throwable_damage"
     ]
   }
