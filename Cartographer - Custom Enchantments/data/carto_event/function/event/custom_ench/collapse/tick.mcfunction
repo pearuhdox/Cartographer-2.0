@@ -20,8 +20,14 @@ $execute as $(target) at @s if score @s ca.collapse_mod matches 5.. run scoreboa
 $execute as $(target) at @s if score @s ca.collapse_time <= $particle_time ca.collapse_time run particle minecraft:portal ~ ~ ~ 0 0 0 1 3 normal
 $execute as $(target) at @s unless score @s ca.collapse_time <= $particle_time ca.collapse_time run particle minecraft:witch ~ ~ ~ 0.35 0.35 0.35 0.2 1 normal
 
-$execute as $(target) at @s if score @s ca.collapse_time matches 2 run data merge entity @s {Glowing:1b,glow_color_override:4665003,interpolation_duration:$(visual_time),start_interpolation:0,Tags:["ca.do_anim"],transformation:[1.0500f,0.0000f,0.0000f,-0.5250f,0.0000f,1.0500f,0.0000f,-0.5250f,0.0000f,0.0000f,1.0500f,-0.5250f,0.0000f,0.0000f,0.0000f,1.0000f]}
+$execute as $(target) at @s unless entity @s[tag=ca.player_head_model] if score @s ca.collapse_time matches 2 run data merge entity @s {Glowing:1b,interpolation_duration:$(visual_time),start_interpolation:0,transformation:[1.0500f,0.0000f,0.0000f,0.0100f,0.0000f,1.0500f,0.0000f,-0.0100f,0.0000f,0.0000f,1.0500f,0.0100f,0.0000f,0.0000f,0.0000f,1.0000f]}
+$execute as $(target) at @s if entity @s[tag=ca.player_head_model] if score @s ca.collapse_time matches 2 run data merge entity @s {Glowing:1b,interpolation_duration:$(visual_time),start_interpolation:0,transformation:[2.0500f,0.0000f,0.0000f,0.0100f,0.0000f,2.0500f,0.0000f,0.5100f,0.0000f,0.0000f,2.0500f,0.0100f,0.0000f,0.0000f,0.0000f,1.0000f]}
+$execute as $(target) at @s if score @s ca.collapse_time matches 2 run tag @s add ca.do_anim
+
+$execute as $(target) at @s if entity @s[tag=ca.revolving] if score @s ca.collapse_time matches 2.. run rotate @s ~5 ~
+
 $execute as $(target) at @s run scoreboard players add @s ca.collapse_time 1
+
 
 $execute as $(target) at @s run scoreboard players set $despawn ca.collapse_time $(time)
 $execute as $(target) at @s run scoreboard players add $despawn ca.collapse_time 5

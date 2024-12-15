@@ -1,0 +1,3 @@
+data merge entity @s {teleport_duration:2,glow_color_override:12773887,brightness:{sky:12,block:12},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0.0f,-0.05f,0.0f],scale:[2.05f,0.01f,2.05f]},item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{id:[I;-1076765683,702890726,-1347769883,2137794636],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTdkN2IzYzhlNTczNWIwZGEzZGI3NGFiZmRjZTg3MGMyZTkwNDY4OWY1Y2IyYzI5YmNkMmE1MWVkNzFmZGRmZiJ9fX0="}]}}}}
+tag @s add ca.player_head_model
+tag @s add ca.revolving

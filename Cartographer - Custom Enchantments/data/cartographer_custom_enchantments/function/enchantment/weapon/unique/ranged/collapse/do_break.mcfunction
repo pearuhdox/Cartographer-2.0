@@ -21,7 +21,7 @@ execute store result storage cartographer:custom_enchantments time int 1 run sco
 execute store result storage cartographer:custom_enchantments visual_time int 1 run scoreboard players get $visual_time ca.ench_collapse_lvl
 
 function cartographer_custom_enchantments:enchantment/helper/weapon/get_ench_values
-execute align xyz positioned ~0.5 ~0.5 ~0.5 unless block ~ ~ ~ #cartographer_custom_enchantments:immune_to_collapse summon block_display run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/collapse/create_entity with storage cartographer:custom_enchantments
+execute align xyz positioned ~0.5 ~0.5 ~0.5 unless block ~ ~ ~ #cartographer_custom_enchantments:immune_to_collapse summon item_display run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/collapse/create_entity with storage cartographer:custom_enchantments
 
 #execute align xyz positioned ~0.5 ~0.5 ~0.5 run particle minecraft:block_marker{block_state:"minecraft:barrier"} ~ ~ ~ 0 0 0 1 1 force
 
