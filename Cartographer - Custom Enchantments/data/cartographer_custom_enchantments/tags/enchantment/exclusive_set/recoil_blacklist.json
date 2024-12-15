@@ -1,0 +1,9 @@
+{
+  "values": [
+    "cartographer_custom_enchantments:weapon/unique/other/repeating",
+    "cartographer_custom_enchantments:weapon/unique/ranged/grappling",
+    "cartographer_custom_enchantments:weapon/unique/general/recoil",
+    "cartographer_custom_enchantments:weapon/unique/ranged/fleetfoot",
+    "minecraft:wind_burst"
+  ]
+}
