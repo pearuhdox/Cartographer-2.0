@@ -1,5 +1,7 @@
 scoreboard players operation $strength player_motion.api.launch = $force ca.ench_var
 
+$execute as $(owner) at @s run tp @s @s
+
 $execute positioned as $(owner) facing entity @s feet as $(owner) run function player_motion:api/launch_looking
 
 $execute as $(owner) at @s run playsound minecraft:item.crossbow.shoot player @a[distance=..16] ~ ~ ~ 0.5 0.5
