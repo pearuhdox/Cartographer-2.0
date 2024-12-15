@@ -25,7 +25,9 @@
         "conditions": {
           "items": [
             {
-              "nbt": "{DeathTimepiece:1b}"
+              "predicates": {
+                "minecraft:custom_data": {"DeathTimepiece":1}
+              }
             }
           ]
         }

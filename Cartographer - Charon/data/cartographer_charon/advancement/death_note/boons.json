@@ -25,7 +25,9 @@
         "conditions": {
           "items": [
             {
-              "nbt": "{CartographerAmbrosia:1b}"
+              "predicates": {
+                "minecraft:custom_data": {"CartographerAmbrosia":1}
+              }
             }
           ]
         }
