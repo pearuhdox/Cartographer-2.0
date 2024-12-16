@@ -188,6 +188,7 @@ scoreboard objectives add ca.life_drain_buffer dummy
 scoreboard objectives add ca.movement_tech_cdl dummy
 scoreboard objectives add ca.extra_jump_count dummy
 scoreboard objectives add ca.airdash_count dummy
+scoreboard objectives add ca.airdash_time dummy
 
 scoreboard objectives add ca.move_x dummy
 scoreboard objectives add ca.move_z dummy
