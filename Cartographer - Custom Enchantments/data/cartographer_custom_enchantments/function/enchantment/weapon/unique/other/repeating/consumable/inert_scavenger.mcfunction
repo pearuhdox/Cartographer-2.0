@@ -8,5 +8,9 @@ data modify storage cartographer_custom_enchantments:consumable data.inert_item.
 data modify storage cartographer_custom_enchantments:consumable data.inert_item.components.minecraft:use_remainder.components.minecraft:custom_data.scavenger_tracker set value 0
 data modify storage cartographer_custom_enchantments:consumable data.inert_item.components.minecraft:custom_data.item_replaced set value 1b
 
+execute if data storage cartographer_custom_enchantments:consumable data.item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/soulbound run data modify storage cartographer_custom_enchantments:consumable data.inert_item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/soulbound set value 1
+execute if data storage cartographer_custom_enchantments:consumable data.item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:curse/haunting run data modify storage cartographer_custom_enchantments:consumable data.inert_item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:curse/haunting set value 1
+execute if data storage cartographer_custom_enchantments:consumable data.item.components.minecraft:enchantments.levels.minecraft:vanishing_curse run data modify storage cartographer_custom_enchantments:consumable data.inert_item.components.minecraft:enchantments.levels.minecraft:vanishing_curse set value 1
+
 data modify storage cartographer_custom_enchantments:consumable data.item.components.minecraft:use_cooldown set from storage cartographer_custom_enchantments:consumable data.use_cooldown
 data modify storage cartographer_custom_enchantments:consumable data.item.components.minecraft:use_remainder set from storage cartographer_custom_enchantments:consumable data.inert_item
