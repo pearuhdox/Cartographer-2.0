@@ -30,7 +30,6 @@ scoreboard players operation $math.isqrt.x bs.in = $forward ca.attr_var
 function #bs.math:isqrt
 scoreboard players operation $forward ca.attr_var = $math.isqrt bs.out
 
-
 execute store result score $rotation ca.attr_var run data get entity @s Rotation[0] 1
 
 execute if predicate cartographer_core:player/key_press/left unless predicate cartographer_core:player/key_press/forwards unless predicate cartographer_core:player/key_press/backwards run scoreboard players remove $rotation ca.attr_var 90

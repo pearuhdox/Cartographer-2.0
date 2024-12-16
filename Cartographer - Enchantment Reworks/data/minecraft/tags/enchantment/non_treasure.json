@@ -36,7 +36,7 @@
     "minecraft:swift_sneak",
     "minecraft:soul_speed",
     "cartographer_enchantment_rework:melee_protection",
-    "cartographer_enchantment_rework:projectile_protection",
+    "cartographer_enchantment_rework:ranged_protection",
     "cartographer_enchantment_rework:hazard_protection"
   ]
 }

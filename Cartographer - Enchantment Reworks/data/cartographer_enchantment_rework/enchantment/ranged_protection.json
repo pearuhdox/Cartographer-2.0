@@ -1,6 +1,6 @@
 {
   "description": {
-    "text": "Projectile Protection"
+    "text": "Ranged Protection"
   },
   "exclusive_set": "#cartographer_enchantment_rework:exclusive_set/protection_type",
   "supported_items": "#cartographer_core:enchant_support/passive_armor",

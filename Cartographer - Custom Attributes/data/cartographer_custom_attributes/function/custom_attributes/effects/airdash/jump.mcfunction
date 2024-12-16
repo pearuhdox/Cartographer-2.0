@@ -30,6 +30,8 @@ scoreboard players operation $math.isqrt.x bs.in = $forward ca.attr_var
 function #bs.math:isqrt
 scoreboard players operation $forward ca.attr_var = $math.isqrt bs.out
 
+execute if score $forward ca.attr_var matches ..199 run scoreboard players set $forward ca.attr_var 200
+execute if score $forward ca.attr_var matches 301.. run scoreboard players set $forward ca.attr_var 300
 
 execute store result score $rotation ca.attr_var run data get entity @s Rotation[0] 1
 
@@ -72,7 +74,7 @@ scoreboard players operation $z_c ca.attr_var *= $3 ca.CONSTANT
 execute if predicate cartographer_core:player/key_press/backwards run scoreboard players operation $x_c ca.attr_var *= $-1 ca.CONSTANT
 execute if predicate cartographer_core:player/key_press/backwards run scoreboard players operation $z_c ca.attr_var *= $-1 ca.CONSTANT
 
-scoreboard players set $y_force ca.attr_var 700
+scoreboard players set $y_force ca.attr_var 200
 
 execute if score $x_c ca.attr_var matches 8001.. run scoreboard players set $x_c ca.attr_var 8000
 execute if score $z_c ca.attr_var matches 8001.. run scoreboard players set $z_c ca.attr_var 8000
@@ -90,3 +92,5 @@ function player_motion:api/launch_xyz
 playsound minecraft:entity.bat.takeoff player @a[distance=..16] ~ ~ ~ 0.35 1.75
 playsound minecraft:entity.firework_rocket.launch player @a[distance=..16] ~ ~ ~ 1 1.75
 particle minecraft:cloud ~ ~-0.2 ~ 0.2 0 0.2 0.025 10 normal
+
+function carto_event:api/create_single_entity_event {event:"custom_attribute/airdash",duration:5,delay:000,parameters:{},merge_behavior:"none"}
