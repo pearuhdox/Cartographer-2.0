@@ -2,6 +2,8 @@ execute if score $current_ammo_amount ca.ench_auto_charge_slot matches 1 run fun
 
 data modify storage cartographer_custom_enchantments:repeating visual.name set value '{"fallback":"Crossbow","translate":"item.minecraft.crossbow","color":"aqua","italic":false}'
 execute if data storage cartographer_custom_enchantments:auto_charge items[0].components.minecraft:custom_name run data modify storage cartographer_custom_enchantments:repeating visual.name set from storage cartographer_custom_enchantments:auto_charge items[0].components.minecraft:custom_name
+execute if data storage cartographer_custom_enchantments:auto_charge items[0].components.minecraft:item_name run data modify storage cartographer_custom_enchantments:repeating visual.name set from storage cartographer_custom_enchantments:auto_charge items[0].components.minecraft:item_name
+
 execute if data storage cartographer_custom_enchantments:auto_charge items[0].components.minecraft:custom_data.repeating_name run data modify storage cartographer_custom_enchantments:repeating visual.name set from storage cartographer_custom_enchantments:auto_charge items[0].components.minecraft:custom_data.repeating_name
 execute unless data storage cartographer_custom_enchantments:auto_charge items[0].components.minecraft:custom_data.repeating_name run data modify storage cartographer_custom_enchantments:auto_charge items[0].components.minecraft:custom_data.repeating_name set from storage cartographer_custom_enchantments:repeating visual.name
 data modify storage cartographer_custom_enchantments:repeating visual.min set from storage cartographer_custom_enchantments:auto_charge items[0].components.minecraft:custom_data.repeating_ammo
