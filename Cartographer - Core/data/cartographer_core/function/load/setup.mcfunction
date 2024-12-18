@@ -37,6 +37,8 @@ scoreboard objectives add ca.energized_x dummy
 scoreboard objectives add ca.energized_y dummy
 scoreboard objectives add ca.energized_z dummy
 
+scoreboard objectives add ca.drop_item minecraft.custom:minecraft.drop
+
 scoreboard objectives add ca.rand dummy
 
 scoreboard objectives add ca.x dummy

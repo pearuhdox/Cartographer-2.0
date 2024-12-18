@@ -54,6 +54,10 @@ execute unless score @s ca.ench_reverb_lvl matches 1.. run function cartographer
 
 execute unless score @s ca.ench_echo_lvl matches 1.. run function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/restrike_chance
 execute unless score @s ca.ench_echo_lvl matches 1.. run function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/restrike_amount
+execute unless score @s ca.ench_echo_lvl matches 1.. run function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/restrike_rate
 
 execute unless score @s ca.ench_lifesteal_lvl matches 1.. run function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/life_drain_chance
 execute unless score @s ca.ench_lifesteal_lvl matches 1.. run function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/life_drain_amount
+
+execute unless score @s ca.ench_cloudstep_lvl matches 1.. run function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/extra_jump_count
+execute unless score @s ca.ench_windborn_lvl matches 1.. run function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/airdash_count

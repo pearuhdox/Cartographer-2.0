@@ -1,0 +1,11 @@
+data modify storage cartographer:custom_enchantments lunging_item set value {}
+data modify storage cartographer:custom_enchantments lunging_item set from entity @s Inventory[{Slot:-106b}]
+
+data modify storage cartographer:custom_enchantments lunging_item.components.minecraft:consumable set value {consume_seconds:1000,animation:"bow",has_consume_particles:false}
+data modify storage cartographer:custom_enchantments lunging_item.components.minecraft:custom_data.lunging_applied set value 1b
+data modify storage cartographer:custom_enchantments lunging_item.Slot set value 0b
+
+data modify block 4206900 0 4206900 Items set value []
+data modify block 4206900 0 4206900 Items append from storage cartographer:custom_enchantments lunging_item
+
+loot replace entity @s weapon.offhand 1 mine 4206900 0 4206900 dirt[minecraft:custom_data={drop_contents:1b}]

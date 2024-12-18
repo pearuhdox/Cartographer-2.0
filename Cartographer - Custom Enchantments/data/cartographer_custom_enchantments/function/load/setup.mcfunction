@@ -3,9 +3,7 @@
 
 #Setup scoreboards for level tracking
 scoreboard objectives add ca.ench_spurs_lvl dummy
-
 scoreboard objectives add ca.ench_ethereal_lvl dummy
-
 scoreboard objectives add ca.ench_hardened_lvl dummy
 scoreboard objectives add ca.ench_poise_lvl dummy
 scoreboard objectives add ca.ench_steadfast_lvl dummy
@@ -16,21 +14,15 @@ scoreboard objectives add ca.ench_courageous_lvl dummy
 scoreboard objectives add ca.ench_unseen_lvl dummy
 scoreboard objectives add ca.ench_tenacity_lvl dummy
 scoreboard objectives add ca.ench_inertia_lvl dummy
-
 scoreboard objectives add ca.ench_diversion_hand_lvl dummy
-
 scoreboard objectives add ca.ench_frenzy_lvl dummy
 scoreboard objectives add ca.ench_adrenaline_lvl dummy
 scoreboard objectives add ca.ench_vengeance_lvl dummy
-
 scoreboard objectives add ca.ench_gravity_lvl dummy
 scoreboard objectives add ca.ench_momentum_lvl dummy
-
 scoreboard objectives add ca.ench_surge_lvl dummy
 scoreboard objectives add ca.ench_deadeye_lvl dummy
 scoreboard objectives add ca.ench_trailblazer_lvl dummy
-
-
 scoreboard objectives add ca.ench_starfall_lvl dummy
 scoreboard objectives add ca.ench_orbit_lvl dummy
 scoreboard objectives add ca.ench_storm_lvl dummy
@@ -39,9 +31,7 @@ scoreboard objectives add ca.ench_eruption_lvl dummy
 scoreboard objectives add ca.ench_soulfire_lvl dummy
 scoreboard objectives add ca.ench_quake_lvl dummy
 scoreboard objectives add ca.ench_aberration_lvl dummy
-
 scoreboard objectives add ca.ench_thorns_lvl dummy
-
 scoreboard objectives add ca.ench_starfall_hand_lvl dummy
 scoreboard objectives add ca.ench_orbit_hand_lvl dummy
 scoreboard objectives add ca.ench_storm_hand_lvl dummy
@@ -50,35 +40,27 @@ scoreboard objectives add ca.ench_eruption_hand_lvl dummy
 scoreboard objectives add ca.ench_soulfire_hand_lvl dummy
 scoreboard objectives add ca.ench_quake_hand_lvl dummy
 scoreboard objectives add ca.ench_aberration_hand_lvl dummy
-
-
 scoreboard objectives add ca.ench_chaotic_lvl dummy
 scoreboard objectives add ca.ench_hex_eater_lvl dummy
 scoreboard objectives add ca.ench_duelist_lvl dummy
 scoreboard objectives add ca.ench_hunter_lvl dummy
-
 scoreboard objectives add ca.ench_first_strike_lvl dummy
 scoreboard objectives add ca.ench_follow_up_lvl dummy
 scoreboard objectives add ca.ench_focus_lvl dummy
 scoreboard objectives add ca.ench_concentration_lvl dummy
-
 scoreboard objectives add ca.ench_rushdown_lvl dummy
 scoreboard objectives add ca.ench_leverage_lvl dummy
-
 scoreboard objectives add ca.ench_overcharge_lvl dummy
 scoreboard objectives add ca.ench_point_blank_lvl dummy
 scoreboard objectives add ca.ench_sharpshot_lvl dummy
-
 scoreboard objectives add ca.ench_drilling_lvl dummy
 scoreboard objectives add ca.ench_excavator_lvl dummy
 scoreboard objectives add ca.ench_multitool_lvl dummy
 scoreboard objectives add ca.ench_lightborn_lvl dummy
-
 scoreboard objectives add ca.ench_explosive_lvl dummy
 scoreboard objectives add ca.ench_pulling_lvl dummy
 scoreboard objectives add ca.ench_recoil_lvl dummy
 scoreboard objectives add ca.ench_repulsion_lvl dummy
-
 scoreboard objectives add ca.ench_cleaving_lvl dummy
 scoreboard objectives add ca.ench_thrusting_lvl dummy
 scoreboard objectives add ca.ench_slamming_lvl dummy
@@ -86,7 +68,6 @@ scoreboard objectives add ca.ench_quick_strike_lvl dummy
 scoreboard objectives add ca.ench_throwable_lvl dummy
 scoreboard objectives add ca.ench_riposte_lvl dummy
 scoreboard objectives add ca.ench_lunging_lvl dummy
-
 scoreboard objectives add ca.ench_fleetfoot_lvl dummy
 scoreboard objectives add ca.ench_grappling_lvl dummy
 scoreboard objectives add ca.ench_barbed_lvl dummy
@@ -95,35 +76,194 @@ scoreboard objectives add ca.ench_shrapnel_lvl dummy
 scoreboard objectives add ca.ench_ricochet_lvl dummy
 scoreboard objectives add ca.ench_correction_lvl dummy
 scoreboard objectives add ca.ench_barrage_lvl dummy
-
 scoreboard objectives add ca.ench_multishot_lvl dummy
 scoreboard objectives add ca.ench_quick_charge_lvl dummy
 scoreboard objectives add ca.ench_piercing_lvl dummy
 scoreboard objectives add ca.ench_loyalty_lvl dummy
-
 scoreboard objectives add ca.ench_collapse_lvl dummy
-
 scoreboard objectives add ca.ench_repeating_lvl dummy
+scoreboard objectives add ca.ench_haunting_lvl dummy
+scoreboard objectives add ca.ench_corruption_lvl dummy
+scoreboard objectives add ca.ench_crippling_lvl dummy
+scoreboard objectives add ca.ench_pride_lvl dummy
+scoreboard objectives add ca.ench_two_handed_lvl dummy
+scoreboard objectives add ca.ench_instability_lvl dummy
+scoreboard objectives add ca.ench_melee_fragility_lvl dummy
+scoreboard objectives add ca.ench_projectile_fragility_lvl dummy
+scoreboard objectives add ca.ench_clumsiness_lvl dummy
+scoreboard objectives add ca.ench_encumbering_lvl dummy
+
+# Scoreboards part 2
+scoreboard objectives add ca.ench_spurs_hand_lvl dummy
+scoreboard objectives add ca.ench_ethereal_hand_lvl dummy
+scoreboard objectives add ca.ench_hardened_hand_lvl dummy
+scoreboard objectives add ca.ench_poise_hand_lvl dummy
+scoreboard objectives add ca.ench_steadfast_hand_lvl dummy
+scoreboard objectives add ca.ench_bulwark_hand_lvl dummy
+scoreboard objectives add ca.ench_sidestep_hand_lvl dummy
+scoreboard objectives add ca.ench_diversion_hand_lvl dummy
+scoreboard objectives add ca.ench_courageous_hand_lvl dummy
+scoreboard objectives add ca.ench_unseen_hand_lvl dummy
+scoreboard objectives add ca.ench_tenacity_hand_lvl dummy
+scoreboard objectives add ca.ench_inertia_hand_lvl dummy
+scoreboard objectives add ca.ench_frenzy_hand_lvl dummy
+scoreboard objectives add ca.ench_adrenaline_hand_lvl dummy
+scoreboard objectives add ca.ench_vengeance_hand_lvl dummy
+scoreboard objectives add ca.ench_gravity_hand_lvl dummy
+scoreboard objectives add ca.ench_momentum_hand_lvl dummy
+scoreboard objectives add ca.ench_surge_hand_lvl dummy
+scoreboard objectives add ca.ench_deadeye_hand_lvl dummy
+scoreboard objectives add ca.ench_trailblazer_hand_lvl dummy
+scoreboard objectives add ca.ench_starfall_hand_lvl dummy
+scoreboard objectives add ca.ench_orbit_hand_lvl dummy
+scoreboard objectives add ca.ench_storm_hand_lvl dummy
+scoreboard objectives add ca.ench_induction_hand_lvl dummy
+scoreboard objectives add ca.ench_eruption_hand_lvl dummy
+scoreboard objectives add ca.ench_soulfire_hand_lvl dummy
+scoreboard objectives add ca.ench_quake_hand_lvl dummy
+scoreboard objectives add ca.ench_aberration_hand_lvl dummy
+scoreboard objectives add ca.ench_thorns_hand_lvl dummy
+scoreboard objectives add ca.ench_chaotic_hand_lvl dummy
+scoreboard objectives add ca.ench_hex_eater_hand_lvl dummy
+scoreboard objectives add ca.ench_duelist_hand_lvl dummy
+scoreboard objectives add ca.ench_hunter_hand_lvl dummy
+scoreboard objectives add ca.ench_first_strike_hand_lvl dummy
+scoreboard objectives add ca.ench_follow_up_hand_lvl dummy
+scoreboard objectives add ca.ench_focus_hand_lvl dummy
+scoreboard objectives add ca.ench_concentration_hand_lvl dummy
+scoreboard objectives add ca.ench_rushdown_hand_lvl dummy
+scoreboard objectives add ca.ench_leverage_hand_lvl dummy
+scoreboard objectives add ca.ench_overcharge_hand_lvl dummy
+scoreboard objectives add ca.ench_point_blank_hand_lvl dummy
+scoreboard objectives add ca.ench_sharpshot_hand_lvl dummy
+scoreboard objectives add ca.ench_drilling_hand_lvl dummy
+scoreboard objectives add ca.ench_excavator_hand_lvl dummy
+scoreboard objectives add ca.ench_multitool_hand_lvl dummy
+scoreboard objectives add ca.ench_lightborn_hand_lvl dummy
+scoreboard objectives add ca.ench_explosive_hand_lvl dummy
+scoreboard objectives add ca.ench_pulling_hand_lvl dummy
+scoreboard objectives add ca.ench_recoil_hand_lvl dummy
+scoreboard objectives add ca.ench_repulsion_hand_lvl dummy
+scoreboard objectives add ca.ench_cleaving_hand_lvl dummy
+scoreboard objectives add ca.ench_thrusting_hand_lvl dummy
+scoreboard objectives add ca.ench_slamming_hand_lvl dummy
+scoreboard objectives add ca.ench_quick_strike_hand_lvl dummy
+scoreboard objectives add ca.ench_throwable_hand_lvl dummy
+scoreboard objectives add ca.ench_riposte_hand_lvl dummy
+scoreboard objectives add ca.ench_lunging_hand_lvl dummy
+scoreboard objectives add ca.ench_fleetfoot_hand_lvl dummy
+scoreboard objectives add ca.ench_grappling_hand_lvl dummy
+scoreboard objectives add ca.ench_barbed_hand_lvl dummy
+scoreboard objectives add ca.ench_ripper_hand_lvl dummy
+scoreboard objectives add ca.ench_shrapnel_hand_lvl dummy
+scoreboard objectives add ca.ench_ricochet_hand_lvl dummy
+scoreboard objectives add ca.ench_correction_hand_lvl dummy
+scoreboard objectives add ca.ench_barrage_hand_lvl dummy
+scoreboard objectives add ca.ench_multishot_hand_lvl dummy
+scoreboard objectives add ca.ench_quick_charge_hand_lvl dummy
+scoreboard objectives add ca.ench_piercing_hand_lvl dummy
+scoreboard objectives add ca.ench_loyalty_hand_lvl dummy
+scoreboard objectives add ca.ench_collapse_hand_lvl dummy
+scoreboard objectives add ca.ench_repeating_hand_lvl dummy
+scoreboard objectives add ca.ench_haunting_hand_lvl dummy
+scoreboard objectives add ca.ench_corruption_hand_lvl dummy
+scoreboard objectives add ca.ench_crippling_hand_lvl dummy
+scoreboard objectives add ca.ench_pride_hand_lvl dummy
+scoreboard objectives add ca.ench_two_handed_hand_lvl dummy
+scoreboard objectives add ca.ench_instability_hand_lvl dummy
+scoreboard objectives add ca.ench_melee_fragility_hand_lvl dummy
+scoreboard objectives add ca.ench_projectile_fragility_hand_lvl dummy
+scoreboard objectives add ca.ench_clumsiness_hand_lvl dummy
+scoreboard objectives add ca.ench_encumbering_hand_lvl dummy
+
+# Scoreboards part 3
+scoreboard objectives add ca.ench_spurs_gear_lvl dummy
+scoreboard objectives add ca.ench_ethereal_gear_lvl dummy
+scoreboard objectives add ca.ench_hardened_gear_lvl dummy
+scoreboard objectives add ca.ench_poise_gear_lvl dummy
+scoreboard objectives add ca.ench_steadfast_gear_lvl dummy
+scoreboard objectives add ca.ench_bulwark_gear_lvl dummy
+scoreboard objectives add ca.ench_sidestep_gear_lvl dummy
+scoreboard objectives add ca.ench_diversion_gear_lvl dummy
+scoreboard objectives add ca.ench_courageous_gear_lvl dummy
+scoreboard objectives add ca.ench_unseen_gear_lvl dummy
+scoreboard objectives add ca.ench_tenacity_gear_lvl dummy
+scoreboard objectives add ca.ench_inertia_gear_lvl dummy
+scoreboard objectives add ca.ench_frenzy_gear_lvl dummy
+scoreboard objectives add ca.ench_adrenaline_gear_lvl dummy
+scoreboard objectives add ca.ench_vengeance_gear_lvl dummy
+scoreboard objectives add ca.ench_gravity_gear_lvl dummy
+scoreboard objectives add ca.ench_momentum_gear_lvl dummy
+scoreboard objectives add ca.ench_surge_gear_lvl dummy
+scoreboard objectives add ca.ench_deadeye_gear_lvl dummy
+scoreboard objectives add ca.ench_trailblazer_gear_lvl dummy
+scoreboard objectives add ca.ench_starfall_gear_lvl dummy
+scoreboard objectives add ca.ench_orbit_gear_lvl dummy
+scoreboard objectives add ca.ench_storm_gear_lvl dummy
+scoreboard objectives add ca.ench_induction_gear_lvl dummy
+scoreboard objectives add ca.ench_eruption_gear_lvl dummy
+scoreboard objectives add ca.ench_soulfire_gear_lvl dummy
+scoreboard objectives add ca.ench_quake_gear_lvl dummy
+scoreboard objectives add ca.ench_aberration_gear_lvl dummy
+scoreboard objectives add ca.ench_thorns_gear_lvl dummy
+scoreboard objectives add ca.ench_chaotic_gear_lvl dummy
+scoreboard objectives add ca.ench_hex_eater_gear_lvl dummy
+scoreboard objectives add ca.ench_duelist_gear_lvl dummy
+scoreboard objectives add ca.ench_hunter_gear_lvl dummy
+scoreboard objectives add ca.ench_first_strike_gear_lvl dummy
+scoreboard objectives add ca.ench_follow_up_gear_lvl dummy
+scoreboard objectives add ca.ench_focus_gear_lvl dummy
+scoreboard objectives add ca.ench_concentration_gear_lvl dummy
+scoreboard objectives add ca.ench_rushdown_gear_lvl dummy
+scoreboard objectives add ca.ench_leverage_gear_lvl dummy
+scoreboard objectives add ca.ench_overcharge_gear_lvl dummy
+scoreboard objectives add ca.ench_point_blank_gear_lvl dummy
+scoreboard objectives add ca.ench_sharpshot_gear_lvl dummy
+scoreboard objectives add ca.ench_drilling_gear_lvl dummy
+scoreboard objectives add ca.ench_excavator_gear_lvl dummy
+scoreboard objectives add ca.ench_multitool_gear_lvl dummy
+scoreboard objectives add ca.ench_lightborn_gear_lvl dummy
+scoreboard objectives add ca.ench_explosive_gear_lvl dummy
+scoreboard objectives add ca.ench_pulling_gear_lvl dummy
+scoreboard objectives add ca.ench_recoil_gear_lvl dummy
+scoreboard objectives add ca.ench_repulsion_gear_lvl dummy
+scoreboard objectives add ca.ench_cleaving_gear_lvl dummy
+scoreboard objectives add ca.ench_thrusting_gear_lvl dummy
+scoreboard objectives add ca.ench_slamming_gear_lvl dummy
+scoreboard objectives add ca.ench_quick_strike_gear_lvl dummy
+scoreboard objectives add ca.ench_throwable_gear_lvl dummy
+scoreboard objectives add ca.ench_riposte_gear_lvl dummy
+scoreboard objectives add ca.ench_lunging_gear_lvl dummy
+scoreboard objectives add ca.ench_fleetfoot_gear_lvl dummy
+scoreboard objectives add ca.ench_grappling_gear_lvl dummy
+scoreboard objectives add ca.ench_barbed_gear_lvl dummy
+scoreboard objectives add ca.ench_ripper_gear_lvl dummy
+scoreboard objectives add ca.ench_shrapnel_gear_lvl dummy
+scoreboard objectives add ca.ench_ricochet_gear_lvl dummy
+scoreboard objectives add ca.ench_correction_gear_lvl dummy
+scoreboard objectives add ca.ench_barrage_gear_lvl dummy
+scoreboard objectives add ca.ench_multishot_gear_lvl dummy
+scoreboard objectives add ca.ench_quick_charge_gear_lvl dummy
+scoreboard objectives add ca.ench_piercing_gear_lvl dummy
+scoreboard objectives add ca.ench_loyalty_gear_lvl dummy
+scoreboard objectives add ca.ench_collapse_gear_lvl dummy
+scoreboard objectives add ca.ench_repeating_gear_lvl dummy
+scoreboard objectives add ca.ench_haunting_gear_lvl dummy
+scoreboard objectives add ca.ench_corruption_gear_lvl dummy
+scoreboard objectives add ca.ench_crippling_gear_lvl dummy
+scoreboard objectives add ca.ench_pride_gear_lvl dummy
+scoreboard objectives add ca.ench_two_handed_gear_lvl dummy
+scoreboard objectives add ca.ench_instability_gear_lvl dummy
+scoreboard objectives add ca.ench_melee_fragility_gear_lvl dummy
+scoreboard objectives add ca.ench_projectile_fragility_gear_lvl dummy
+scoreboard objectives add ca.ench_clumsiness_gear_lvl dummy
+scoreboard objectives add ca.ench_encumbering_gear_lvl dummy
+
 
 scoreboard objectives add ca.ench_auto_charge_slot dummy
 scoreboard objectives add ca.ench_scavenger_slot dummy
 
 scoreboard objectives add ca.ench_throwable_slot dummy
-
-scoreboard objectives add ca.ench_haunting_lvl dummy
-
-scoreboard objectives add ca.ench_corruption_lvl dummy
-scoreboard objectives add ca.ench_crippling_lvl dummy
-scoreboard objectives add ca.ench_pride_lvl dummy
-scoreboard objectives add ca.ench_two_handed_lvl dummy
-
-scoreboard objectives add ca.ench_instability_lvl dummy
-
-scoreboard objectives add ca.ench_melee_fragility_lvl dummy
-scoreboard objectives add ca.ench_projectile_fragility_lvl dummy
-scoreboard objectives add ca.ench_clumsiness_lvl dummy
-
-scoreboard objectives add ca.ench_encumbering_lvl dummy
 
 
 scoreboard objectives add ca.ench_regret_lvl dummy

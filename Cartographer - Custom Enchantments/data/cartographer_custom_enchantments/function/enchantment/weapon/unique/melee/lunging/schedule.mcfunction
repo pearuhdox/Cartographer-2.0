@@ -1,7 +1,10 @@
-execute if entity @s[type=player,tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. run scoreboard players set @s ca.ench_lunging_lvl 0
-execute if entity @s[type=player,tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. run function cartographer_core:enchant_calculator/full_calculation {namespace:"cartographer_custom_enchantments",category:"weapon/unique/melee/",enchantment:"lunging",type:"weapon"}
-execute if entity @s[type=player,tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. run scoreboard players set $check ca.core_delay_check 1
-execute if entity @s[type=player,tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. unless data entity @s SelectedItem.components."minecraft:custom_data".lunging_applied run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/lunging/apply
+#execute if entity @s[type=player,tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. run scoreboard players set @s ca.ench_lunging_lvl 0
+#execute if entity @s[type=player,tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. run function cartographer_core:enchant_calculator/full_calculation {namespace:"cartographer_custom_enchantments",category:"weapon/unique/melee/",enchantment:"lunging",type:"weapon"}
+#execute if entity @s[type=player,tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. run scoreboard players set $check ca.core_delay_check 1
+
+execute if predicate cartographer_custom_enchantments:has_lunging_offhand unless data entity @s Inventory[{Slot:-106b}].components."minecraft:custom_data".lunging_applied run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/lunging/apply_offhand
+execute if predicate cartographer_custom_enchantments:has_lunging_mainhand unless data entity @s SelectedItem.components."minecraft:custom_data".lunging_applied run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/lunging/apply
+
 
 execute unless entity @s[type=player] if predicate cartographer_core:periodic_tick/20 run scoreboard players set @s ca.ench_lunging_lvl 0
 execute unless entity @s[type=player] if predicate cartographer_core:periodic_tick/20 run function cartographer_core:enchant_calculator/full_calculation {namespace:"cartographer_custom_enchantments",category:"weapon/unique/melee/",enchantment:"lunging",type:"weapon"}

@@ -1,6 +1,12 @@
 {
     "replace": false,
     "values": [
+      "cartographer_custom_enchantments:passive/adrenaline",
+      "cartographer_custom_enchantments:passive/frenzy",
+      "cartographer_custom_enchantments:passive/soulbound",
+      "cartographer_custom_enchantments:passive/spurs",
+      "cartographer_custom_enchantments:passive/momentum",
+      "cartographer_custom_enchantments:passive/momentum",
       "cartographer_custom_enchantments:passive/ethereal",
       "cartographer_custom_enchantments:passive/hardened",
       "cartographer_custom_enchantments:passive/poise",
@@ -12,6 +18,8 @@
       "cartographer_custom_enchantments:passive/tenacity",
       "cartographer_custom_enchantments:passive/inertia",
       "cartographer_custom_enchantments:passive/diversion",
+      "cartographer_custom_enchantments:passive/gravity",
+      "cartographer_custom_enchantments:passive/momentum",
       "cartographer_custom_enchantments:passive/surge",
       "cartographer_custom_enchantments:passive/deadeye",
       "cartographer_custom_enchantments:passive/trailblazer",

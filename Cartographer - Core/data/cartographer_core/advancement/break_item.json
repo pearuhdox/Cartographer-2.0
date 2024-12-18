@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:item_durability_changed",
+        "conditions": {
+          "durability": {
+            "min": -100,
+            "max": 0
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "cartographer_core:loop/player/break_item"
+    }
+  }

@@ -15,6 +15,12 @@ scoreboard objectives add ca.ench_sapper_lvl dummy
 scoreboard objectives add ca.ench_lifeblood_lvl dummy
 scoreboard objectives add ca.ench_bracing_lvl dummy
 
+
+scoreboard objectives add ca.ench_evasion_hand_lvl dummy
+scoreboard objectives add ca.ench_nullifying_hand_lvl dummy
+scoreboard objectives add ca.ench_regeneration_hand_lvl dummy
+scoreboard objectives add ca.ench_shielding_hand_lvl dummy
+
 scoreboard objectives add ca.ench_mightiness_hand_lvl dummy
 scoreboard objectives add ca.ench_swiftness_hand_lvl dummy
 scoreboard objectives add ca.ench_hastiness_hand_lvl dummy
@@ -23,6 +29,22 @@ scoreboard objectives add ca.ench_stealthiness_hand_lvl dummy
 scoreboard objectives add ca.ench_sapper_hand_lvl dummy
 scoreboard objectives add ca.ench_lifeblood_hand_lvl dummy
 scoreboard objectives add ca.ench_bracing_hand_lvl dummy
+
+
+scoreboard objectives add ca.ench_evasion_gear_lvl dummy
+scoreboard objectives add ca.ench_nullifying_gear_lvl dummy
+scoreboard objectives add ca.ench_regeneration_gear_lvl dummy
+scoreboard objectives add ca.ench_shielding_gear_lvl dummy
+
+scoreboard objectives add ca.ench_mightiness_gear_lvl dummy
+scoreboard objectives add ca.ench_swiftness_gear_lvl dummy
+scoreboard objectives add ca.ench_hastiness_gear_lvl dummy
+scoreboard objectives add ca.ench_stealthiness_gear_lvl dummy
+
+scoreboard objectives add ca.ench_sapper_gear_lvl dummy
+scoreboard objectives add ca.ench_lifeblood_gear_lvl dummy
+scoreboard objectives add ca.ench_bracing_gear_lvl dummy
+
 
 #Enchantment scoreboards functionality
 scoreboard objectives add ca.shielding_time dummy

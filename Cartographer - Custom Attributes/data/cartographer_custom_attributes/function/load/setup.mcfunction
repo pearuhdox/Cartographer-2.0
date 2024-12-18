@@ -43,6 +43,77 @@ scoreboard objectives add ca.ench_respiration_lvl dummy
 scoreboard objectives add ca.ench_swift_sneak_lvl dummy
 scoreboard objectives add ca.ench_soul_speed_lvl dummy
 
+#Setup scoreboards for level tracking
+scoreboard objectives add ca.ench_celerity_gear_lvl dummy
+scoreboard objectives add ca.ench_dexterity_gear_lvl dummy
+scoreboard objectives add ca.ench_finesse_gear_lvl dummy
+scoreboard objectives add ca.ench_immovable_gear_lvl dummy
+scoreboard objectives add ca.ench_vitality_gear_lvl dummy
+
+scoreboard objectives add ca.ench_agility_gear_lvl dummy
+scoreboard objectives add ca.ench_extended_gear_lvl dummy
+scoreboard objectives add ca.ench_traveling_gear_lvl dummy
+scoreboard objectives add ca.ench_handling_gear_lvl dummy
+
+scoreboard objectives add ca.ench_precision_gear_lvl dummy
+scoreboard objectives add ca.ench_amplitude_gear_lvl dummy
+scoreboard objectives add ca.ench_lucky_gear_lvl dummy
+scoreboard objectives add ca.ench_technique_gear_lvl dummy
+scoreboard objectives add ca.ench_resonance_gear_lvl dummy
+scoreboard objectives add ca.ench_invigorated_gear_lvl dummy
+
+scoreboard objectives add ca.ench_cloudstep_gear_lvl dummy
+scoreboard objectives add ca.ench_windborn_gear_lvl dummy
+
+scoreboard objectives add ca.ench_echo_gear_lvl dummy
+scoreboard objectives add ca.ench_reverb_gear_lvl dummy
+scoreboard objectives add ca.ench_lifesteal_gear_lvl dummy
+
+scoreboard objectives add ca.ench_blast_protection_gear_lvl dummy
+scoreboard objectives add ca.ench_fire_protection_gear_lvl dummy
+
+scoreboard objectives add ca.ench_aqua_affinity_gear_lvl dummy
+scoreboard objectives add ca.ench_depth_strider_gear_lvl dummy
+scoreboard objectives add ca.ench_respiration_gear_lvl dummy
+scoreboard objectives add ca.ench_swift_sneak_gear_lvl dummy
+scoreboard objectives add ca.ench_soul_speed_gear_lvl dummy
+
+#Setup scoreboards for level tracking
+scoreboard objectives add ca.ench_celerity_hand_lvl dummy
+scoreboard objectives add ca.ench_dexterity_hand_lvl dummy
+scoreboard objectives add ca.ench_finesse_hand_lvl dummy
+scoreboard objectives add ca.ench_immovable_hand_lvl dummy
+scoreboard objectives add ca.ench_vitality_hand_lvl dummy
+
+scoreboard objectives add ca.ench_agility_hand_lvl dummy
+scoreboard objectives add ca.ench_extended_hand_lvl dummy
+scoreboard objectives add ca.ench_traveling_hand_lvl dummy
+scoreboard objectives add ca.ench_handling_hand_lvl dummy
+
+scoreboard objectives add ca.ench_precision_hand_lvl dummy
+scoreboard objectives add ca.ench_amplitude_hand_lvl dummy
+scoreboard objectives add ca.ench_lucky_hand_lvl dummy
+scoreboard objectives add ca.ench_technique_hand_lvl dummy
+scoreboard objectives add ca.ench_resonance_hand_lvl dummy
+scoreboard objectives add ca.ench_invigorated_hand_lvl dummy
+
+scoreboard objectives add ca.ench_cloudstep_hand_lvl dummy
+scoreboard objectives add ca.ench_windborn_hand_lvl dummy
+
+scoreboard objectives add ca.ench_echo_hand_lvl dummy
+scoreboard objectives add ca.ench_reverb_hand_lvl dummy
+scoreboard objectives add ca.ench_lifesteal_hand_lvl dummy
+
+scoreboard objectives add ca.ench_blast_protection_hand_lvl dummy
+scoreboard objectives add ca.ench_fire_protection_hand_lvl dummy
+
+scoreboard objectives add ca.ench_aqua_affinity_hand_lvl dummy
+scoreboard objectives add ca.ench_depth_strider_hand_lvl dummy
+scoreboard objectives add ca.ench_respiration_hand_lvl dummy
+scoreboard objectives add ca.ench_swift_sneak_hand_lvl dummy
+scoreboard objectives add ca.ench_soul_speed_hand_lvl dummy
+
+
 #Values for enchantments working
 
 #Values for attributes
