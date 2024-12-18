@@ -15,3 +15,5 @@ scoreboard players operation $eruption_hand ca.ench_value = @s ca.ench_eruption_
 scoreboard players operation $soulfire_hand ca.ench_value = @s ca.ench_soulfire_hand_lvl
 scoreboard players operation $aberration_hand ca.ench_value = @s ca.ench_aberration_hand_lvl
 scoreboard players operation $quake_hand ca.ench_value = @s ca.ench_quake_hand_lvl
+
+say test

@@ -1,0 +1,2 @@
+$summon $(entity_id) ~ ~ ~ {Tags:["ca.new_diversion_copy"]}
+$execute as @e[type=$(entity_id),tag=ca.new_diversion_copy,sort=nearest,limit=1,distance=..1] run function cartographer_custom_enchantments:enchantment/passive/diversion/entity/spawn_clones_branch
