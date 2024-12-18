@@ -2,7 +2,7 @@
 scoreboard players set $confusion_target_success ca.status_var 0
 
 #Can target any allowed entity in the charm attack category
-$execute store success score $confusion_target_success ca.status_var if entity @s[type=!#cartographer_custom_statuses:confused/illager,type=!#cartographer_custom_statuses:confused/pack_mobs] run damage @s $(damage) cartographer_custom_statuses:status_damage by @e[type=#cartographer_custom_statuses:confused/target/all,sort=nearest,limit=1,distance=0.25..$(range),tag=!ca.has_custom_status_confused]
+$execute store success score $confusion_target_success ca.status_var if entity @s[type=!#cartographer_custom_statuses:confused/illager,type=!#cartographer_custom_statuses:confused/pack_mobs] if entity @s[type=#cartographer_custom_statuses:confused/allowed] run damage @s $(damage) cartographer_custom_statuses:status_damage by @e[type=#cartographer_custom_statuses:confused/target/all,sort=nearest,limit=1,distance=0.25..$(range),tag=!ca.has_custom_status_confused]
 
 #Illagers can attack any entity that is not another illager
 $execute store success score $confusion_target_success ca.status_var if entity @s[type=#cartographer_custom_statuses:confused/illager] run damage @s $(damage) cartographer_custom_statuses:status_damage by @e[type=#cartographer_custom_statuses:confused/target/illager,sort=nearest,limit=1,distance=0.25..$(range),tag=!ca.has_custom_status_confused]
