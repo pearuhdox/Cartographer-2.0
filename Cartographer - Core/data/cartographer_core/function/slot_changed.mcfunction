@@ -4,6 +4,7 @@ execute unless items entity @s weapon.mainhand #cartographer_core:enchant_suppor
 execute if score $custom_enchantments ca.installed matches 1.. run function cartographer_custom_enchantments:calculate_hand
 execute if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:calculate_hand
 execute if score $custom_statuses ca.installed matches 1.. run function cartographer_custom_statuses:calculate_hand
+execute if score $enchantment_rework ca.installed matches 1.. run function cartographer_enchantment_rework:calculate_hand
 
 #scoreboard players set @s ca.load_crossbow_time 0
 #scoreboard players set @s ca.draw_bow_time 0

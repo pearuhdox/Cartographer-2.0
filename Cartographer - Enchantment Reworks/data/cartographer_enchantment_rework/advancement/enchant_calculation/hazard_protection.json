@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantments": "cartographer_enchantment_rework:hazard_protection",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "cartographer_enchantment_rework:enchantment/protection/hazard_protection/player_calculation"
+  }
+}

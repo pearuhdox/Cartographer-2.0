@@ -78,7 +78,7 @@ execute if entity @s[tag=ca.do_ench_reset] if entity @s[tag=ca.do_enchant_calc] 
 execute if entity @s[tag=ca.do_ench_reset] if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:do_reset_calc
 execute if entity @s[tag=ca.do_ench_reset] if score $custom_enchantments ca.installed matches 1.. run function cartographer_custom_enchantments:do_reset_calc
 execute if entity @s[tag=ca.do_ench_reset] if score $custom_statuses ca.installed matches 1.. run function cartographer_custom_statuses:do_reset_calc
-#execute if entity @s[tag=ca.do_ench_reset] if score $enchantment_rework ca.installed matches 1.. run function cartographer_enchantment_rework:do_ench_calc
+execute if entity @s[tag=ca.do_ench_reset] if score $enchantment_rework ca.installed matches 1.. run function cartographer_enchantment_rework:do_reset_calc
 
 
 execute unless entity @s[tag=ca.suppress_inv_update] if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:do_ench_calc

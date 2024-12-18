@@ -4,6 +4,8 @@ scoreboard objectives add ca.stat_var dummy
 
 #Setup scoreboards for level tracking
 scoreboard objectives add ca.ench_hazard_protection_lvl dummy
+scoreboard objectives add ca.ench_hazard_protection_gear_lvl dummy
+scoreboard objectives add ca.ench_hazard_protection_hand_lvl dummy
 
 #Values for enchantments working
 
