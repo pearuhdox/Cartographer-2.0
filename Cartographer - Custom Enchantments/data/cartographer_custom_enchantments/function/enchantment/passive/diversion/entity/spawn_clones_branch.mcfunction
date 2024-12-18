@@ -10,9 +10,10 @@ data modify entity @s ArmorDropChances set from storage cartographer_custom_ench
 
 data modify entity @s Health set from storage cartographer_custom_enchantments:diversion data.Health
 
-data modify entity @s DeathLootTable set value "empty"
+data modify entity @s DeathLootTable set value "minecraft:entities/slime"
 
 tag @s add ca.diversion_copy
 
+function #minecraft:cartographer/api/handlers/reset_ench_flags
 
 function carto_event:api/create_single_entity_event {event:"custom_ench/diversion/clone",duration:200,delay:001,parameters:{},merge_behavior:"none"}

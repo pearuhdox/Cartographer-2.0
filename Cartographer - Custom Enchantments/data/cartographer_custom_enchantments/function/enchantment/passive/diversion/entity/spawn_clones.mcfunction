@@ -1,6 +1,6 @@
 playsound minecraft:entity.illusioner.mirror_move hostile @a[distance=..16] ~ ~ ~ 1 1
 
-execute store result score $positions ca.ench_diversion_lvl run random value 1..3
+execute store result score $positions ca.ench_diversion_lvl run random value 1..6
 
 particle minecraft:large_smoke ~ ~1 ~ 0.2 0.2 0.2 0.05 30 normal
 execute rotated ~ 0 positioned ^0.5 ^ ^0.5 run particle minecraft:gust ~ ~1 ~ 0 0 0 0 1 force
@@ -79,14 +79,25 @@ execute store result storage cartographer_custom_enchantments:diversion data.Hea
 #effect give @s slowness 2 1 true
 effect give @s slowness 1 7 true
 
-execute if score $positions ca.ench_diversion_lvl matches 1 rotated ~ 0 positioned ^0.5 ^ ^0.5 run function cartographer_custom_enchantments:enchantment/passive/diversion/entity/spawn_clones_macro with storage cartographer:custom_enchantments
-execute if score $positions ca.ench_diversion_lvl matches 1 rotated ~ 0 positioned ^-0.5 ^ ^0.5 run function cartographer_custom_enchantments:enchantment/passive/diversion/entity/spawn_clones_macro with storage cartographer:custom_enchantments
-execute if score $positions ca.ench_diversion_lvl matches 1 positioned ^ ^ ^-0.71 run tp @s ~ ~ ~ ~ ~
+execute if score @s ca.ench_diversion_lvl matches 1 if score $positions ca.ench_diversion_lvl matches 1..3 rotated ~ 0 positioned ^0.5 ^ ^0.5 run function cartographer_custom_enchantments:enchantment/passive/diversion/entity/spawn_clones_macro with storage cartographer:custom_enchantments
+execute if score @s ca.ench_diversion_lvl matches 1 if score $positions ca.ench_diversion_lvl matches 1..3 rotated ~ 0 positioned ^-0.5 ^ ^0.5 run tp @s ~ ~ ~ ~ ~
 
-execute if score $positions ca.ench_diversion_lvl matches 2 rotated ~ 0 positioned ^0.5 ^ ^0.5 run function cartographer_custom_enchantments:enchantment/passive/diversion/entity/spawn_clones_macro with storage cartographer:custom_enchantments
-execute if score $positions ca.ench_diversion_lvl matches 2 rotated ~ 0 positioned ^-0.5 ^ ^0.5 run tp @s ~ ~ ~ ~ ~
-execute if score $positions ca.ench_diversion_lvl matches 2 positioned ^ ^ ^-0.71 run function cartographer_custom_enchantments:enchantment/passive/diversion/entity/spawn_clones_macro with storage cartographer:custom_enchantments
+execute if score @s ca.ench_diversion_lvl matches 1 if score $positions ca.ench_diversion_lvl matches 4..6 rotated ~ 0 positioned ^0.5 ^ ^0.5 run tp @s ~ ~ ~ ~ ~
+execute if score @s ca.ench_diversion_lvl matches 1 if score $positions ca.ench_diversion_lvl matches 4..6 rotated ~ 0 positioned ^-0.5 ^ ^0.5 run function cartographer_custom_enchantments:enchantment/passive/diversion/entity/spawn_clones_macro with storage cartographer:custom_enchantments
 
-execute if score $positions ca.ench_diversion_lvl matches 3 rotated ~ 0 positioned ^0.5 ^ ^0.5 run tp @s ~ ~ ~ ~ ~
-execute if score $positions ca.ench_diversion_lvl matches 3 rotated ~ 0 positioned ^-0.5 ^ ^0.5 run function cartographer_custom_enchantments:enchantment/passive/diversion/entity/spawn_clones_macro with storage cartographer:custom_enchantments
-execute if score $positions ca.ench_diversion_lvl matches 3 positioned ^ ^ ^-0.71 run function cartographer_custom_enchantments:enchantment/passive/diversion/entity/spawn_clones_macro with storage cartographer:custom_enchantments
+
+execute if score @s ca.ench_diversion_lvl matches 2.. if score $positions ca.ench_diversion_lvl matches 1..2 rotated ~ 0 positioned ^0.5 ^ ^0.5 run function cartographer_custom_enchantments:enchantment/passive/diversion/entity/spawn_clones_macro with storage cartographer:custom_enchantments
+execute if score @s ca.ench_diversion_lvl matches 2.. if score $positions ca.ench_diversion_lvl matches 1..2 rotated ~ 0 positioned ^-0.5 ^ ^0.5 run function cartographer_custom_enchantments:enchantment/passive/diversion/entity/spawn_clones_macro with storage cartographer:custom_enchantments
+execute if score @s ca.ench_diversion_lvl matches 2.. if score $positions ca.ench_diversion_lvl matches 1..2 positioned ^ ^ ^-0.71 run tp @s ~ ~ ~ ~ ~
+
+execute if score @s ca.ench_diversion_lvl matches 2.. if score $positions ca.ench_diversion_lvl matches 3..4 rotated ~ 0 positioned ^0.5 ^ ^0.5 run function cartographer_custom_enchantments:enchantment/passive/diversion/entity/spawn_clones_macro with storage cartographer:custom_enchantments
+execute if score @s ca.ench_diversion_lvl matches 2.. if score $positions ca.ench_diversion_lvl matches 3..4 rotated ~ 0 positioned ^-0.5 ^ ^0.5 run tp @s ~ ~ ~ ~ ~
+execute if score @s ca.ench_diversion_lvl matches 2.. if score $positions ca.ench_diversion_lvl matches 3..4 positioned ^ ^ ^-0.71 run function cartographer_custom_enchantments:enchantment/passive/diversion/entity/spawn_clones_macro with storage cartographer:custom_enchantments
+
+execute if score @s ca.ench_diversion_lvl matches 2.. if score $positions ca.ench_diversion_lvl matches 5..6 rotated ~ 0 positioned ^0.5 ^ ^0.5 run tp @s ~ ~ ~ ~ ~
+execute if score @s ca.ench_diversion_lvl matches 2.. if score $positions ca.ench_diversion_lvl matches 5..6 rotated ~ 0 positioned ^-0.5 ^ ^0.5 run function cartographer_custom_enchantments:enchantment/passive/diversion/entity/spawn_clones_macro with storage cartographer:custom_enchantments
+execute if score @s ca.ench_diversion_lvl matches 2.. if score $positions ca.ench_diversion_lvl matches 5..6 positioned ^ ^ ^-0.71 run function cartographer_custom_enchantments:enchantment/passive/diversion/entity/spawn_clones_macro with storage cartographer:custom_enchantments
+
+execute if score @s ca.ench_diversion_lvl matches 3.. run scoreboard players operation $extra_clones ca.ench_diversion_lvl = @s ca.ench_diversion_lvl
+execute if score @s ca.ench_diversion_lvl matches 3.. run scoreboard players remove $extra_clones ca.ench_diversion_lvl 2
+execute if score @s ca.ench_diversion_lvl matches 3.. run function cartographer_custom_enchantments:enchantment/passive/diversion/entity/extra_clones_recurse
