@@ -88,5 +88,6 @@ execute unless entity @s[tag=ca.suppress_inv_update] if score $enchantment_rewor
 
 #Reset Attributes if required
 execute unless entity @s[tag=ca.suppress_inv_update] if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:reset_attributes
+execute unless entity @s[tag=ca.suppress_inv_update] if score $enchantment_rework ca.installed matches 1.. run function cartographer_enchantment_rework:reset_attributes
 
 #execute if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:calculator/process/start
