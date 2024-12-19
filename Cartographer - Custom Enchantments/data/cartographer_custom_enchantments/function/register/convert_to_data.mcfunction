@@ -52,3 +52,7 @@ execute store result storage cartographer:custom_enchantments projectile.enchant
 execute store result storage cartographer:custom_enchantments projectile.enchants.soulfire_hand byte 1 run scoreboard players get @s ca.ench_soulfire_hand_lvl
 execute store result storage cartographer:custom_enchantments projectile.enchants.quake_hand byte 1 run scoreboard players get @s ca.ench_quake_hand_lvl
 execute store result storage cartographer:custom_enchantments projectile.enchants.aberration_hand byte 1 run scoreboard players get @s ca.ench_aberration_hand_lvl
+
+execute store result storage cartographer:custom_enchantments projectile.enchants.flame byte 1 run scoreboard players get @s ca.ench_flame_lvl
+execute store result storage cartographer:custom_enchantments projectile.enchants.power byte 1 run scoreboard players get @s ca.ench_power_lvl
+execute store result storage cartographer:custom_enchantments projectile.enchants.punch byte 1 run scoreboard players get @s ca.ench_punch_lvl

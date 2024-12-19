@@ -62,3 +62,7 @@ execute store result score @s ca.ench_eruption_hand_lvl run data get entity @s i
 execute store result score @s ca.ench_soulfire_hand_lvl run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/soulfire
 execute store result score @s ca.ench_quake_hand_lvl run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/quake
 execute store result score @s ca.ench_aberration_hand_lvl run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/aberration
+
+execute store result score @s ca.ench_flame_lvl run data get entity @s item.components.minecraft:enchantments.levels.minecraft:flame
+execute store result score @s ca.ench_power_lvl run data get entity @s item.components.minecraft:enchantments.levels.minecraft:power
+execute store result score @s ca.ench_punch_lvl run data get entity @s item.components.minecraft:enchantments.levels.minecraft:punch

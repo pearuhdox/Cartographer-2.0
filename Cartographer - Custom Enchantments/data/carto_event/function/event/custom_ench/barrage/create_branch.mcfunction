@@ -81,6 +81,11 @@ scoreboard players operation @s ca.ench_soulfire_hand_lvl = $soulfire_hand ca.en
 scoreboard players operation @s ca.ench_aberration_hand_lvl = $aberration_hand ca.ench_value
 scoreboard players operation @s ca.ench_quake_hand_lvl = $quake_hand ca.ench_value
 
+scoreboard players operation @s ca.ench_flame_lvl = $flame ca.ench_value
+scoreboard players operation @s ca.ench_power_lvl = $power ca.ench_value
+scoreboard players operation @s ca.ench_punch_lvl = $punch ca.ench_value
+
+execute if score @s ca.ench_flame_lvl matches 1.. run data modify entity @s Fire set value 100s
 
 execute store result score @s ca.attr_ranged_damage_total run data get storage carto_event current[-1].parameters.attributes.ranged_damage 1
 execute store result score @s ca.attr_ranged_damage_value run data get storage carto_event current[-1].parameters.attributes.ranged_damage 1

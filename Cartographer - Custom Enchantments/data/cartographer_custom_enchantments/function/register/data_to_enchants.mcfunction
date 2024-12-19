@@ -53,3 +53,7 @@ execute store result score $eruption_hand ca.ench_value run data get storage car
 execute store result score $soulfire_hand ca.ench_value run data get storage cartographer:custom_enchantments active_projectile.enchants.soulfire_hand
 execute store result score $quake_hand ca.ench_value run data get storage cartographer:custom_enchantments active_projectile.enchants.quake_hand
 execute store result score $aberration_hand ca.ench_value run data get storage cartographer:custom_enchantments active_projectile.enchants.aberration_hand
+
+execute store result score $power ca.ench_value run data get storage cartographer:custom_enchantments active_projectile.enchants.power
+execute store result score $punch ca.ench_value run data get storage cartographer:custom_enchantments active_projectile.enchants.punch
+execute store result score $flame ca.ench_value run data get storage cartographer:custom_enchantments active_projectile.enchants.flame

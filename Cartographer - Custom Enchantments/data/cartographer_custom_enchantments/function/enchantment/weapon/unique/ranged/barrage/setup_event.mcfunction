@@ -21,6 +21,9 @@ execute if entity @s[type=snowball] run data modify storage cartographer:custom_
 execute if entity @s[type=potion] run data modify storage cartographer:custom_enchantments projectile_type set value "minecraft:potion"
 execute if entity @s[type=trident] run data modify storage cartographer:custom_enchantments projectile_type set value "minecraft:trident"
 execute if entity @s[type=experience_bottle] run data modify storage cartographer:custom_enchantments projectile_type set value "minecraft:experience_bottle"
+execute if entity @s[type=small_fireball] run data modify storage cartographer:custom_enchantments projectile_type set value "minecraft:small_fireball"
+execute if entity @s[type=fireball] run data modify storage cartographer:custom_enchantments projectile_type set value "minecraft:fireball"
+execute if entity @s[type=wind_charge] run data modify storage cartographer:custom_enchantments projectile_type set value "minecraft:wind_charge"
 
 data modify storage gu:main out set value "-"
 execute on origin run function gu:generate

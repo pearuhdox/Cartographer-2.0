@@ -149,3 +149,17 @@ scoreboard players set $value ca.ench_var 0
 execute on passengers if entity @s[type=item_display] store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/aberration
 scoreboard players operation @s ca.ench_aberration_lvl = $value ca.ench_var
 scoreboard players operation @s ca.ench_aberration_hand_lvl = $value ca.ench_var
+
+
+
+scoreboard players set $value ca.ench_var 0
+execute on passengers if entity @s[type=item_display] store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.minecraft:flame
+scoreboard players operation @s ca.ench_flame_lvl = $value ca.ench_var
+
+scoreboard players set $value ca.ench_var 0
+execute on passengers if entity @s[type=item_display] store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.minecraft:power
+scoreboard players operation @s ca.ench_power_lvl = $value ca.ench_var
+
+scoreboard players set $value ca.ench_var 0
+execute on passengers if entity @s[type=item_display] store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.minecraft:punch
+scoreboard players operation @s ca.ench_punch_lvl = $value ca.ench_var

@@ -911,3 +911,56 @@ scoreboard players operation @s ca.ench_multitool_lvl += @s ca.ench_multitool_ge
 scoreboard players operation @s ca.ench_multitool_lvl += @s ca.ench_multitool_hand_lvl
 
 
+scoreboard players set @s ca.ench_flame_hand_lvl 0
+scoreboard players set @s ca.ench_flame_lvl 0
+
+scoreboard players set $ench ca.ench_var 0
+execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.main.components.minecraft:enchantments.levels.minecraft:flame
+scoreboard players operation @s ca.ench_flame_hand_lvl += $ench ca.ench_var
+
+scoreboard players operation @s ca.ench_flame_lvl += @s ca.ench_flame_gear_lvl
+scoreboard players operation @s ca.ench_flame_lvl += @s ca.ench_flame_hand_lvl
+
+
+scoreboard players set @s ca.ench_power_hand_lvl 0
+scoreboard players set @s ca.ench_power_lvl 0
+
+scoreboard players set $ench ca.ench_var 0
+execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.main.components.minecraft:enchantments.levels.minecraft:power
+scoreboard players operation @s ca.ench_power_hand_lvl += $ench ca.ench_var
+
+scoreboard players operation @s ca.ench_power_lvl += @s ca.ench_power_gear_lvl
+scoreboard players operation @s ca.ench_power_lvl += @s ca.ench_power_hand_lvl
+
+
+scoreboard players set @s ca.ench_punch_hand_lvl 0
+scoreboard players set @s ca.ench_punch_lvl 0
+
+scoreboard players set $ench ca.ench_var 0
+execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.main.components.minecraft:enchantments.levels.minecraft:punch
+scoreboard players operation @s ca.ench_punch_hand_lvl += $ench ca.ench_var
+
+scoreboard players operation @s ca.ench_punch_lvl += @s ca.ench_punch_gear_lvl
+scoreboard players operation @s ca.ench_punch_lvl += @s ca.ench_punch_hand_lvl
+
+
+scoreboard players set @s ca.ench_knockback_hand_lvl 0
+scoreboard players set @s ca.ench_knockback_lvl 0
+
+scoreboard players set $ench ca.ench_var 0
+execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.main.components.minecraft:enchantments.levels.minecraft:knockback
+scoreboard players operation @s ca.ench_knockback_hand_lvl += $ench ca.ench_var
+
+scoreboard players operation @s ca.ench_knockback_lvl += @s ca.ench_knockback_gear_lvl
+scoreboard players operation @s ca.ench_knockback_lvl += @s ca.ench_knockback_hand_lvl
+
+
+scoreboard players set @s ca.ench_thorns_hand_lvl 0
+scoreboard players set @s ca.ench_thorns_lvl 0
+
+scoreboard players set $ench ca.ench_var 0
+execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.main.components.minecraft:enchantments.levels.minecraft:thorns
+scoreboard players operation @s ca.ench_thorns_hand_lvl += $ench ca.ench_var
+
+scoreboard players operation @s ca.ench_thorns_lvl += @s ca.ench_thorns_gear_lvl
+scoreboard players operation @s ca.ench_thorns_lvl += @s ca.ench_thorns_hand_lvl

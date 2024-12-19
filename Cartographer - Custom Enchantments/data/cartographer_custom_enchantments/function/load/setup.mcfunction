@@ -93,6 +93,12 @@ scoreboard objectives add ca.ench_projectile_fragility_lvl dummy
 scoreboard objectives add ca.ench_clumsiness_lvl dummy
 scoreboard objectives add ca.ench_encumbering_lvl dummy
 
+scoreboard objectives add ca.ench_flame_lvl dummy
+scoreboard objectives add ca.ench_knockback_lvl dummy
+scoreboard objectives add ca.ench_power_lvl dummy
+scoreboard objectives add ca.ench_punch_lvl dummy
+scoreboard objectives add ca.ench_thorns_lvl dummy
+
 # Scoreboards part 2
 scoreboard objectives add ca.ench_spurs_hand_lvl dummy
 scoreboard objectives add ca.ench_ethereal_hand_lvl dummy
@@ -176,6 +182,12 @@ scoreboard objectives add ca.ench_projectile_fragility_hand_lvl dummy
 scoreboard objectives add ca.ench_clumsiness_hand_lvl dummy
 scoreboard objectives add ca.ench_encumbering_hand_lvl dummy
 
+scoreboard objectives add ca.ench_flame_hand_lvl dummy
+scoreboard objectives add ca.ench_knockback_hand_lvl dummy
+scoreboard objectives add ca.ench_power_hand_lvl dummy
+scoreboard objectives add ca.ench_punch_hand_lvl dummy
+scoreboard objectives add ca.ench_thorns_hand_lvl dummy
+
 # Scoreboards part 3
 scoreboard objectives add ca.ench_spurs_gear_lvl dummy
 scoreboard objectives add ca.ench_ethereal_gear_lvl dummy
@@ -258,6 +270,12 @@ scoreboard objectives add ca.ench_melee_fragility_gear_lvl dummy
 scoreboard objectives add ca.ench_projectile_fragility_gear_lvl dummy
 scoreboard objectives add ca.ench_clumsiness_gear_lvl dummy
 scoreboard objectives add ca.ench_encumbering_gear_lvl dummy
+
+scoreboard objectives add ca.ench_flame_gear_lvl dummy
+scoreboard objectives add ca.ench_knockback_gear_lvl dummy
+scoreboard objectives add ca.ench_power_gear_lvl dummy
+scoreboard objectives add ca.ench_punch_gear_lvl dummy
+scoreboard objectives add ca.ench_thorns_gear_lvl dummy
 
 
 scoreboard objectives add ca.ench_auto_charge_slot dummy

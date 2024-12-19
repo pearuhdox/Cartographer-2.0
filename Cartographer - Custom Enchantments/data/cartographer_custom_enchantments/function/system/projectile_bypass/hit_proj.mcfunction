@@ -1,6 +1,7 @@
 #tag @s remove ca.allow_damage
 #scoreboard players set @s ca.raycast 0
 
+
 execute store result score $piercing ca.ench_var run data get entity @s weapon.components."minecraft:enchantments".levels.minecraft:piercing
 execute store result score $pierce_ct ca.ench_var run data get entity @s PierceLevel
 scoreboard players remove $pierce_ct ca.ench_var 1

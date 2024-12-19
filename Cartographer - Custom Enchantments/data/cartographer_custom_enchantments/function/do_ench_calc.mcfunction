@@ -81,3 +81,9 @@ execute if entity @s[tag=ca.do_enchant_calc_drilling] run function cartographer_
 execute if entity @s[tag=ca.do_enchant_calc_excavator] run function cartographer_custom_enchantments:ench_calc/excavator
 execute if entity @s[tag=ca.do_enchant_calc_lightborn] run function cartographer_custom_enchantments:ench_calc/lightborn
 execute if entity @s[tag=ca.do_enchant_calc_multitool] run function cartographer_custom_enchantments:ench_calc/multitool
+
+execute if entity @s[tag=ca.do_enchant_calc_flame] run function cartographer_custom_enchantments:ench_calc/flame
+execute if entity @s[tag=ca.do_enchant_calc_knockback] run function cartographer_custom_enchantments:ench_calc/knockback
+execute if entity @s[tag=ca.do_enchant_calc_power] run function cartographer_custom_enchantments:ench_calc/power
+execute if entity @s[tag=ca.do_enchant_calc_punch] run function cartographer_custom_enchantments:ench_calc/punch
+execute if entity @s[tag=ca.do_enchant_calc_thorns] run function cartographer_custom_enchantments:ench_calc/thorns

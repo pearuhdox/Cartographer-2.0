@@ -177,3 +177,17 @@ scoreboard players operation @s ca.ench_quake_hand_lvl += $value ca.ench_var
 scoreboard players set $value ca.ench_var 0
 execute on origin run scoreboard players operation $value ca.ench_var = @s ca.ench_aberration_hand_lvl
 scoreboard players operation @s ca.ench_aberration_hand_lvl += $value ca.ench_var
+
+
+
+scoreboard players set $value ca.ench_var 0
+execute on origin run scoreboard players operation $value ca.ench_var = @s ca.ench_flame_lvl
+scoreboard players operation @s ca.ench_flame_lvl += $value ca.ench_var
+
+scoreboard players set $value ca.ench_var 0
+execute on origin run scoreboard players operation $value ca.ench_var = @s ca.ench_power_lvl
+scoreboard players operation @s ca.ench_power_lvl += $value ca.ench_var
+
+scoreboard players set $value ca.ench_var 0
+execute on origin run scoreboard players operation $value ca.ench_var = @s ca.ench_punch_lvl
+scoreboard players operation @s ca.ench_punch_lvl += $value ca.ench_var

@@ -9,6 +9,7 @@ execute store result storage cartographer:custom_enchantments z_step double 0.00
 
 scoreboard players set @s ca.raycast 6
 scoreboard players set $hit ca.ench_var 0
+execute store result score $flame ca.ench_var run data get entity @s weapon.components."minecraft:enchantments".levels.minecraft:flame
 execute if entity @s[type=#bb:arrow] positioned ~ ~-0.5 ~ run function cartographer_custom_enchantments:system/projectile_bypass/raycast with storage cartographer:custom_enchantments
 execute if entity @s[type=trident] positioned ~ ~-0.5 ~ run function cartographer_custom_enchantments:system/projectile_bypass/raycast with storage cartographer:custom_enchantments
 execute if entity @s[type=!#bb:arrow,type=!trident,type=!potion] positioned ~ ~-0.2 ~ run function cartographer_custom_enchantments:system/projectile_bypass/raycast with storage cartographer:custom_enchantments
