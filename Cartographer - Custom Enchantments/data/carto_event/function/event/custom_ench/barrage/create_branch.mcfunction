@@ -19,10 +19,14 @@ execute if entity @s[tag=ca.potion_owner_req]
 #$data modify entity @s Motion[2] set value $(z)
 
 data modify entity @s Air set value 1b
+data modify entity @s HasBeenShot set value 0b
+data remove entity @s LeftOwner
 
 data modify entity @s item set from storage carto_event current[-1].parameters.item
 data modify entity @s Item set from storage carto_event current[-1].parameters.Item
 data modify entity @s weapon set from storage carto_event current[-1].parameters.weapon
+
+data modify entity @s acceleration_power set from storage carto_event current[-1].parameters.acceleration_power
 
 execute if entity @s[type=trident] run data remove entity @s item.components.minecraft:enchantments.levels.minecraft:loyalty
 

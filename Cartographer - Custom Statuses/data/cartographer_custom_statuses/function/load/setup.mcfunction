@@ -177,6 +177,8 @@ scoreboard objectives add ca.dazed_time dummy
 scoreboard objectives add ca.dazed_value dummy
 scoreboard objectives add ca.dazed_max dummy
 
+scoreboard objectives add ca.deafened_loop_time dummy
+
 scoreboard objectives add ca.status_var dummy
 scoreboard objectives add ca.stat_calc_var dummy
 scoreboard objectives add ca.merge_var dummy

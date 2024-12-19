@@ -37,3 +37,4 @@ execute if entity @s[tag=ca.has_custom_status_oiled] run scoreboard players add 
 execute if entity @s[tag=ca.has_custom_status_siphon_speed] run scoreboard players add $debuff_count ca.ench_var 1
 execute if entity @s[tag=ca.has_custom_status_siphon_strength] run scoreboard players add $debuff_count ca.ench_var 1
 execute if entity @s[tag=ca.has_custom_status_slippery] run scoreboard players add $debuff_count ca.ench_var 1
+execute if entity @s[tag=ca.has_custom_status_deafened] run scoreboard players add $debuff_count ca.ench_var 1

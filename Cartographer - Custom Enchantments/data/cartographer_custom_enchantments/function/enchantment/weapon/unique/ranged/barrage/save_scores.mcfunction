@@ -36,3 +36,5 @@ execute store result storage cartographer:custom_enchantments pitch float 1 run 
 data modify storage cartographer_custom_enchantments:barrage data.item set from entity @s item
 data modify storage cartographer_custom_enchantments:barrage data.Item set from entity @s Item
 data modify storage cartographer_custom_enchantments:barrage data.weapon set from entity @s weapon
+
+data modify storage cartographer_custom_enchantments:barrage data.acceleration_power set from entity @s acceleration_power
