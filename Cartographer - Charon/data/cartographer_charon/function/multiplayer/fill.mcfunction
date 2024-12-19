@@ -8,3 +8,4 @@ execute on passengers if entity @s[tag=ca.charon_shade_text,type=text_display] r
 
 tag @s remove new
 
+#$function carto_event:api/create_single_entity_event {event:"shade_behavior/shade_tick",duration:6000,delay:000,parameters:{player:"$(player)"},merge_behavior:"none"}

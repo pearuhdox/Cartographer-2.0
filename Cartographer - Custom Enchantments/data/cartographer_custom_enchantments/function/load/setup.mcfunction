@@ -432,6 +432,8 @@ scoreboard objectives add ca.repeating_ammo dummy
 scoreboard objectives add ca.repeating_avail_ammo dummy
 scoreboard objectives add ca.repeating_reload_cdl dummy
 scoreboard objectives add ca.repeating_load_time dummy
+scoreboard objectives add ca.repeating_current_ammo dummy
+scoreboard objectives add ca.repeating_max_ammo dummy
 
 scoreboard objectives add ca.auto_charge_time dummy
 scoreboard objectives add ca.auto_charge_time_max dummy

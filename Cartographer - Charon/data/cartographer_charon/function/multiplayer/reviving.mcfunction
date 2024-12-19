@@ -1,3 +1,5 @@
+scoreboard players remove @s ca.lifetime 5
+
 scoreboard players add @s ca.revive_time 1
 
 scoreboard players set @s ca.revive_cdl 4
@@ -13,6 +15,7 @@ scoreboard players operation $value ca.revive_time = @s ca.revive_time
 rotate @s facing entity @p eyes
 
 execute if score @s ca.revive_time matches 1 on passengers run data merge entity @s {interpolation_duration:1,start_interpolation:0,transformation:[0.700f, 0.000f, 0.000f,0.000f,0.000f, 0.700f, 0.000f,0.050f,0.000f, 0.000f, 0.700f,0.000f,0.000f, 0.000f, 0.000f,1.000f]}
+
 
 execute if score @s ca.revive_time matches 1 on passengers run data modify entity @s text set value '[{"text":"[","color":"white","italic":false},{"text":"Reviving...","color":"dark_gray","italic":false},{"text":"]","color":"white","italic":false}]'
 

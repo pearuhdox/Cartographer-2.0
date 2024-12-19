@@ -19,7 +19,7 @@ execute if score @s ca.place_charon matches 1.. run function cartographer_charon
 
 execute if score @s dt.home_cooldown matches 1.. run scoreboard players remove @s dt.home_cooldown 1
 
-execute positioned ~ -165 ~ if entity @s[distance=..100] positioned as @s run function cartographer_charon:void/trigger_void_save
+execute positioned ~ -165 ~ if entity @s[distance=..100] if entity @s[gamemode=!spectator] positioned as @s run function cartographer_charon:void/trigger_void_save
 
 execute if score @s taxes.time matches 6001.. run function cartographer_charon:taxes/progressive/decrease
 

@@ -1,0 +1,9 @@
+$execute as $(player) run gamemode spectator @s
+
+$execute as $(player) at @s if score $shade_forced_spectate charon.gmr matches 1.. run spectate @p[gamemode=!spectator] @s
+
+$execute unless score $shades_auto_revive charon.gmr matches 1.. unless score @s ca.is_reviving matches 1.. if score $time_left ca.revive_time matches 10.. as $(player) at @s run title @s actionbar [{"text":"Shade fades away in ","color":"gray"},{"bold":true,"color":"white","italic":false,"score":{"name":"$time_left","objective":"ca.revive_time"}},{"text":" seconds.","color":"gray"}]
+$execute unless score $shades_auto_revive charon.gmr matches 1.. unless score @s ca.is_reviving matches 1.. unless score $time_left ca.revive_time matches 10.. as $(player) at @s run title @s actionbar [{"text":"Shade fades away in ","color":"yellow"},{"bold":true,"color":"red","italic":false,"score":{"name":"$time_left","objective":"ca.revive_time"}},{"text":" seconds.","color":"yellow"}]
+
+$execute if score $shades_auto_revive charon.gmr matches 1.. unless score @s ca.is_reviving matches 1.. if score $time_left ca.revive_time matches 10.. as $(player) at @s run title @s actionbar [{"text":"You respawn in ","color":"gray"},{"bold":true,"color":"white","italic":false,"score":{"name":"$time_left","objective":"ca.revive_time"}},{"text":" seconds.","color":"gray"}]
+$execute if score $shades_auto_revive charon.gmr matches 1.. unless score @s ca.is_reviving matches 1.. unless score $time_left ca.revive_time matches 10.. as $(player) at @s run title @s actionbar [{"text":"You respawn in ","color":"yellow"},{"bold":true,"color":"green","italic":false,"score":{"name":"$time_left","objective":"ca.revive_time"}},{"text":" seconds.","color":"yellow"}]

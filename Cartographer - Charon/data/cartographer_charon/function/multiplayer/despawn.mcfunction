@@ -24,6 +24,8 @@ particle minecraft:sculk_soul ~ ~0.5 ~ 0 0 0 0.1 25 normal
 execute as @a at @s run function cartographer_charon:multiplayer/send_despawn_message
 
 execute on passengers run kill @s
+execute on vehicle on vehicle on passengers if entity @s[type=interaction] run kill @s
+execute on vehicle on vehicle run kill @s
 execute on vehicle run kill @s
 
 scoreboard players remove $shades_active dt.var 1
