@@ -3,7 +3,7 @@ execute unless entity @s[type=player] run scoreboard players set $force ca.ench_
 
 
 
-execute if entity @s[type=player] run playsound minecraft:entity.breeze.jump player @a[distance=..16] ~ ~ ~ 1 1.25
+execute if entity @s[type=player] unless predicate cartographer_core:player/sneaking run playsound minecraft:entity.breeze.jump player @a[distance=..16] ~ ~ ~ 1 1.25
 execute unless entity @s[type=player] run playsound minecraft:entity.breeze.jump hostile @a[distance=..16] ~ ~ ~ 1 1.25
 
 execute store result score $x_pos ca.ench_var run data get entity @s Pos[0] 10000
@@ -16,7 +16,7 @@ execute store result storage cartographer:custom_enchantments z_pos double 0.000
 
 execute store result storage cartographer:custom_enchantments force int 1 run scoreboard players get $force ca.ench_var
 
-execute if entity @s[type=player] at @s run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/fleetfoot/setup_effect with storage cartographer:custom_enchantments
+execute if entity @s[type=player] unless predicate cartographer_core:player/sneaking at @s run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/fleetfoot/setup_effect with storage cartographer:custom_enchantments
 execute unless entity @s[type=player] at @s run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/fleetfoot/setup_effect with storage cartographer:custom_enchantments
 
 
