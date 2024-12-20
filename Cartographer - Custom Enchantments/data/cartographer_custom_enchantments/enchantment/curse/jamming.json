@@ -1,0 +1,28 @@
+{
+    "description": {
+      "text": "Curse of Jamming"
+    },
+    "supported_items": "minecraft:crossbow",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+      "base": 5,
+      "per_level_above_first": 8
+    },
+    "max_cost": {
+      "base": 25,
+      "per_level_above_first": 8
+    },
+    "anvil_cost": 1,
+    "slots": [
+      "offhand",
+      "mainhand"
+    ],
+    "effects": {
+      "minecraft:crossbow_charge_time": {
+        "type": "minecraft:set",
+        "value": 3600
+      },
+      "minecraft:prevent_equipment_drop": {}
+    }
+  }

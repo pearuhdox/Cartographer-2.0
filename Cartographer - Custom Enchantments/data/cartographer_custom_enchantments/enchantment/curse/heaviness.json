@@ -1,0 +1,31 @@
+{
+    "description": {
+      "text": "Curse of Heaviness"
+    },
+    "supported_items": "minecraft:crossbow",
+    "weight": 1,
+    "max_level": 10,
+    "min_cost": {
+      "base": 5,
+      "per_level_above_first": 8
+    },
+    "max_cost": {
+      "base": 25,
+      "per_level_above_first": 8
+    },
+    "anvil_cost": 1,
+    "slots": [
+      "offhand",
+      "mainhand"
+    ],
+    "effects": {
+      "minecraft:crossbow_charge_time": {
+        "type": "minecraft:add",
+        "value": {
+          "type": "minecraft:linear",
+          "base": 0.5,
+          "per_level_above_first": 0.5
+        }
+      }
+    }
+  }
