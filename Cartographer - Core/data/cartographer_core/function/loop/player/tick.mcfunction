@@ -48,7 +48,7 @@ tag @s remove ca.core_check_inv_inspector
 #Enable triggers
 scoreboard players enable @s menu
 scoreboard players enable @s give_dev_box
-scoreboard players enable @a bug
+scoreboard players enable @s bug
 
 #Test if triggers are activated.
 execute if score @s menu matches 1.. run function cartographer_core:load/reload/full

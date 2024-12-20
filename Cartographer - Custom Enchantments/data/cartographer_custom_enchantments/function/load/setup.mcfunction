@@ -1,5 +1,6 @@
 
 #Setup all necessary scoreboard commands.
+scoreboard objectives add lightborn trigger
 
 #Setup scoreboards for level tracking
 scoreboard objectives add ca.ench_spurs_lvl dummy
@@ -394,7 +395,6 @@ scoreboard objectives add ca.overcharge_time dummy
 scoreboard objectives add ca.drilling_entropy dummy
 scoreboard objectives add ca.drilling_cooldown dummy
 scoreboard objectives add ca.excavator_cooldown dummy
-scoreboard objectives add ca.lightborn_cooldown dummy
 
 scoreboard objectives add ca.recoil_cooldown dummy
 scoreboard objectives add ca.repulsion_cooldown dummy
@@ -403,6 +403,7 @@ scoreboard objectives add ca.lightborn_redstone_torch dummy
 scoreboard objectives add ca.lightborn_soul_torch dummy
 scoreboard objectives add ca.lightborn_torch dummy
 scoreboard objectives add ca.lightborn_cooldown dummy
+scoreboard objectives add ca.lightborn_behavior dummy
 
 scoreboard objectives add ca.quick_strike_stacks dummy
 scoreboard objectives add ca.quick_strike_cooldown dummy

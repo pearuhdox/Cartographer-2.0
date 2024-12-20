@@ -4,6 +4,8 @@
 
 #function cartographer_custom_enchantments:loop/tick/reset
 
+scoreboard players enable @s lightborn
+execute if score @s lightborn matches 1.. run function cartographer_custom_enchantments:enchantment/tool/lightborn/toggle
 
 execute if score @s ca.concentration_time matches 1.. run scoreboard players remove @s ca.concentration_time 1
 execute if score @s ca.overcharge_time matches 1.. run scoreboard players remove @s ca.overcharge_time 1
