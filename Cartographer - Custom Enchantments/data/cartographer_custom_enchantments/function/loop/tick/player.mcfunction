@@ -32,5 +32,8 @@ execute if predicate cartographer_core:periodic_tick/20 if predicate cartographe
 execute if score @s ca.special_attack_delay matches 1.. run scoreboard players remove @s ca.special_attack_delay 1
 
 
+execute if entity @s[tag=ca.indicator_warning] run function cartographer_custom_enchantments:indicator/warning/tick
+
+
 #Infinity Processing
 function cartographer_custom_enchantments:enchantment/weapon/unique/other/infinity/player

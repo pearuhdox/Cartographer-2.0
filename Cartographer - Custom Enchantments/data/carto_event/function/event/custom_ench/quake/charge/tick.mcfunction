@@ -5,6 +5,9 @@ $execute if score duration= carto_event matches 99 as $(target) at @s run scoreb
 $execute if score duration= carto_event matches 99 as $(telegraph) run function carto_event:event/custom_ench/quake/charge/telegraph_animation
 $execute if score duration= carto_event matches ..90 as $(telegraph) at @s run tp @s ~ ~ ~ ~2 ~
 
+$execute as $(target) unless entity @s[tag=ca.player_spawned] unless score @s ca.quake_time matches 9.. as $(telegraph) at @s run function carto_event:event/custom_ench/quake/charge/detect_player/start
+
+
 scoreboard players operation $mod ca.ench_quake_lvl = duration= carto_event
 scoreboard players operation $mod ca.ench_quake_lvl %= $2 ca.CONSTANT
 

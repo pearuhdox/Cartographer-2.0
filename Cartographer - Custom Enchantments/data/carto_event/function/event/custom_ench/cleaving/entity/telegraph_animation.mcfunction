@@ -10,7 +10,7 @@ $execute as $(target) if score @s ca.attr_aoe_size_percent matches -1999999.. ru
 
 scoreboard players operation $t_size ca.telegraph_data = $size ca.ench_cleaving_lvl
 
-scoreboard players operation $t_size ca.telegraph_data *= $75 ca.CONSTANT
+scoreboard players operation $t_size ca.telegraph_data *= $65 ca.CONSTANT
 scoreboard players operation $t_size ca.telegraph_data /= $100 ca.CONSTANT
 
 scoreboard players operation $t_x ca.telegraph_data = $t_size ca.telegraph_data

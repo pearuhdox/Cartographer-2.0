@@ -466,6 +466,8 @@ scoreboard objectives add ca.instability_type dummy
 
 scoreboard objectives add ca.clumsiness_falling minecraft.custom:minecraft.fall_one_cm
 
+scoreboard objectives add ca.warning_time dummy
+scoreboard objectives add ca.warning_anim dummy
 
 #Infinity Edge Cases
 scoreboard objectives add ca.use_firework_rocket minecraft.used:minecraft.firework_rocket

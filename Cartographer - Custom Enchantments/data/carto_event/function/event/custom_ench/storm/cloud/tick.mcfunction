@@ -7,6 +7,8 @@ $execute as $(telegraph) at @s run scoreboard players add @s ca.storm_time 1
 $execute as $(telegraph) at @s if score @s ca.storm_time matches 2 run function carto_event:event/custom_ench/storm/cloud/telegraph_animation
 $execute as $(telegraph) at @s if score @s ca.storm_time matches 6.. at @s positioned $(x) $(y) $(z) align y positioned ~ ~0.05 ~ run tp @s ~ ~ ~ ~2 ~
 
+$execute as $(target) unless entity @s[type=player] as $(telegraph) at @s as @a[distance=..$(half_size)] run function carto_event:event/custom_ench/storm/cloud/detect_player/warning
+
 
 execute store result score $rotation ca.ench_storm_lvl run data get storage carto_event current[-1].parameters.rotation 1
 scoreboard players add $rotation ca.ench_storm_lvl 9

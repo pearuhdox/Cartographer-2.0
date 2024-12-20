@@ -9,6 +9,7 @@ $execute if score duration= carto_event matches 40 as $(target) positioned $(x) 
 $execute if score duration= carto_event matches 39 as $(telegraph) run function carto_event:event/custom_ench/starfall/meteor/telegraph_animation
 $execute if score duration= carto_event matches ..34 as $(telegraph) at @s run tp @s ~ ~ ~ ~2 ~
 
+$execute if score duration= carto_event matches 5.. as $(target) unless entity @s[type=player] as $(telegraph) at @s as @a[distance=..$(half_size)] run function carto_event:event/custom_ench/starfall/meteor/detect_player/warning
 
 #$execute as $(target) if entity @s[type=player] positioned $(x) $(y) $(z) positioned ~ ~0.1 ~ run particle minecraft:dust{color:[1,1,1],scale:2.0} ~ ~ ~ 0.75 0.1 0.75 0.1 2 normal
 #$execute as $(target) unless entity @s[type=player] positioned $(x) $(y) $(z) positioned ~ ~0.1 ~ run particle minecraft:dust{color:[0.7,0.3,0.3],scale:2.0} ~ ~ ~ 0.75 0.1 0.75 0.1 2 normal

@@ -26,18 +26,22 @@ $execute as $(target) at @s if score duration= carto_event matches 40 run attrib
 
 $execute as $(target) at $(telegraph) if entity @s[nbt={DeathTime:0s}] if score duration= carto_event matches 23 run function carto_event:event/custom_ench/thrusting/entity/damage_zone/start with storage carto_event current[-1].parameters
 
-$execute as $(target) at $(telegraph) if entity @s[nbt={DeathTime:0s}] if score duration= carto_event matches 23 run function carto_event:event/custom_ench/thrusting/entity/vfx/start with storage carto_event current[-1].parameters
+$execute as $(target) at $(telegraph) if entity @s[nbt={DeathTime:0s}] if score duration= carto_event matches 23 run function carto_event:event/custom_ench/thrusting/entity/vfx/frame_1 with storage carto_event current[-1].parameters
+$execute as $(target) at $(telegraph) if entity @s[nbt={DeathTime:0s}] if score duration= carto_event matches 22 run function carto_event:event/custom_ench/thrusting/entity/vfx/frame_2 with storage carto_event current[-1].parameters
+$execute as $(target) at $(telegraph) if entity @s[nbt={DeathTime:0s}] if score duration= carto_event matches 21 run function carto_event:event/custom_ench/thrusting/entity/vfx/frame_3 with storage carto_event current[-1].parameters
 
 
 $execute as $(target) at @s if score duration= carto_event matches 23 run attribute @s minecraft:movement_speed modifier remove ca.thrusting_slow
 $execute as $(target) at @s if score duration= carto_event matches 17 run attribute @s minecraft:attack_damage modifier remove ca.thrusting_damage
-$execute as $(telegraph) at @s if score duration= carto_event matches 23 run scoreboard players remove $count ca.animations_var 1
-$execute as $(telegraph) at @s if score duration= carto_event matches 23 run kill @s
+$execute as $(telegraph) at @s if score duration= carto_event matches 21 run scoreboard players remove $count ca.animations_var 1
+$execute as $(telegraph) at @s if score duration= carto_event matches 21 run kill @s
 
 $execute if score duration= carto_event matches 36..44 as $(target) at @s on target run tag @s add ca.mob_thrusting_target
 $execute if score duration= carto_event matches 36..44 as $(target) unless entity @s[type=minecraft:zoglin] as $(telegraph) at $(target) facing entity @p[tag=ca.mob_thrusting_target] feet run tp @s ~ ~ ~ ~ 0
 $execute if score duration= carto_event matches 36..44 as $(target) if entity @s[type=minecraft:zoglin] as $(telegraph) at $(target) facing entity @p feet run tp @s ~ ~ ~ ~ 0
 $execute if score duration= carto_event matches 36..44 as $(target) at @s run tag @a remove ca.mob_thrusting_target
+
+$execute if score duration= carto_event matches 25.. as $(telegraph) at @s run function carto_event:event/custom_ench/thrusting/entity/detect_player/start
 
 $execute if score duration= carto_event matches ..35 as $(telegraph) at @s positioned as $(target) run tp @s ~ ~ ~
 

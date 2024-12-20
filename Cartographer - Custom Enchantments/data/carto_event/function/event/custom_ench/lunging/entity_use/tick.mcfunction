@@ -32,5 +32,8 @@ $execute if score duration= carto_event matches 200 as $(telegraph) at @s run fu
 $execute if score duration= carto_event matches 169 as $(telegraph) at @s run scoreboard players remove $count ca.animations_var 1
 $execute if score duration= carto_event matches 169 as $(telegraph) at @s run kill @s
 
+$execute if score duration= carto_event matches 170.. as $(target) at @s run scoreboard players operation $warn ca.ench_lunging_lvl = @s ca.ench_lunging_lvl
+$execute if score duration= carto_event matches 170.. as $(telegraph) at @s run function carto_event:event/custom_ench/lunging/entity_use/detect_player/start
+
 
 return 1

@@ -4,9 +4,9 @@ execute summon text_display run function cartographer_custom_enchantments:enchan
 
 scoreboard players set $size ca.ench_thrusting_lvl 500
 
-execute if score @s ca.attr_aoe_size_value matches -1999999.. run scoreboard players operation $size ca.ench_surge_lvl += @s ca.attr_aoe_size_value
-execute if score @s ca.attr_aoe_size_percent matches -1999999.. run scoreboard players operation $size ca.ench_surge_lvl *= @s ca.attr_aoe_size_percent
-execute if score @s ca.attr_aoe_size_percent matches -1999999.. run scoreboard players operation $size ca.ench_surge_lvl /= $100 ca.CONSTANT
+execute if score @s ca.attr_aoe_size_value matches -1999999.. run scoreboard players operation $size ca.ench_thrusting_lvl += @s ca.attr_aoe_size_value
+execute if score @s ca.attr_aoe_size_percent matches -1999999.. run scoreboard players operation $size ca.ench_thrusting_lvl *= @s ca.attr_aoe_size_percent
+execute if score @s ca.attr_aoe_size_percent matches -1999999.. run scoreboard players operation $size ca.ench_thrusting_lvl /= $100 ca.CONSTANT
 
 execute store result storage cartographer:custom_enchantments size double 0.01 run scoreboard players get $size ca.ench_thrusting_lvl
 

@@ -45,6 +45,8 @@ $execute if score duration= carto_event matches 31.. as $(target) unless entity 
 $execute if score duration= carto_event matches 31.. as $(target) if entity @s[type=minecraft:zoglin] as $(telegraph) at $(target) facing entity @p feet run tp @s ~ ~ ~ ~ 0
 $execute if score duration= carto_event matches 31.. as $(target) at @s run tag @a remove ca.mob_cleaving_target
 
+$execute if score duration= carto_event matches 17.. as $(telegraph) at @s run function carto_event:event/custom_ench/cleaving/entity/detect_player with storage carto_event current[-1].parameters
+
 $execute if score duration= carto_event matches 31.. as $(target) on target positioned as $(target) facing entity @s feet as $(telegraph) run tp @s ~ ~ ~ ~ 0
 $execute if score duration= carto_event matches ..30 as $(telegraph) at @s positioned as $(target) run tp @s ~ ~ ~
 
