@@ -1,3 +1,6 @@
+scoreboard players set $user_id ca.ench_diversion_lvl 0
+$execute as $(owner) if entity @s[name=Sequex] run scoreboard players set $user_id ca.ench_diversion_lvl 1
+
 function cartographer_custom_enchantments:enchantment/passive/diversion/custom_skin/directory
 
 $function carto_event:api/create_single_entity_event {event:"custom_ench/diversion",duration:125,delay:003,parameters:{owner:"$(owner)"},merge_behavior:"merge"}

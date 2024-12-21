@@ -3,7 +3,7 @@ tag @s remove ca.two_handed_main_disable
 tag @s remove ca.two_handed_offh_lock
 tag @s remove ca.two_handed_offh_disable
 
-function cartographer_core:enchant_calculator/full_calculation {namespace:"cartographer_custom_enchantments",category:"curse/",enchantment:"two_handed",type:"slot"}
+execute unless entity @s[type=player] run function cartographer_core:enchant_calculator/full_calculation {namespace:"cartographer_custom_enchantments",category:"curse/",enchantment:"two_handed",type:"slot"}
 
 execute if score $was_main ca.calc_type matches 1 run tag @s add ca.two_handed_main_lock
 execute if score $was_main ca.calc_type matches 2.. run tag @s add ca.two_handed_main_disable

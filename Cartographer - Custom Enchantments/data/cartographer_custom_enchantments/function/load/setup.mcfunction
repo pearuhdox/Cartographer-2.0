@@ -1,6 +1,7 @@
 
 #Setup all necessary scoreboard commands.
 scoreboard objectives add lightborn trigger
+scoreboard objectives add toggle_warning trigger
 
 #Setup scoreboards for level tracking
 scoreboard objectives add ca.ench_spurs_lvl dummy
@@ -68,6 +69,7 @@ scoreboard objectives add ca.ench_slamming_lvl dummy
 scoreboard objectives add ca.ench_quick_strike_lvl dummy
 scoreboard objectives add ca.ench_throwable_lvl dummy
 scoreboard objectives add ca.ench_riposte_lvl dummy
+scoreboard objectives add ca.ench_ambushing_lvl dummy
 scoreboard objectives add ca.ench_lunging_lvl dummy
 scoreboard objectives add ca.ench_fleetfoot_lvl dummy
 scoreboard objectives add ca.ench_grappling_lvl dummy
@@ -157,6 +159,7 @@ scoreboard objectives add ca.ench_slamming_hand_lvl dummy
 scoreboard objectives add ca.ench_quick_strike_hand_lvl dummy
 scoreboard objectives add ca.ench_throwable_hand_lvl dummy
 scoreboard objectives add ca.ench_riposte_hand_lvl dummy
+scoreboard objectives add ca.ench_ambushing_hand_lvl dummy
 scoreboard objectives add ca.ench_lunging_hand_lvl dummy
 scoreboard objectives add ca.ench_fleetfoot_hand_lvl dummy
 scoreboard objectives add ca.ench_grappling_hand_lvl dummy
@@ -246,6 +249,7 @@ scoreboard objectives add ca.ench_slamming_gear_lvl dummy
 scoreboard objectives add ca.ench_quick_strike_gear_lvl dummy
 scoreboard objectives add ca.ench_throwable_gear_lvl dummy
 scoreboard objectives add ca.ench_riposte_gear_lvl dummy
+scoreboard objectives add ca.ench_ambushing_gear_lvl dummy
 scoreboard objectives add ca.ench_lunging_gear_lvl dummy
 scoreboard objectives add ca.ench_fleetfoot_gear_lvl dummy
 scoreboard objectives add ca.ench_grappling_gear_lvl dummy
@@ -282,6 +286,7 @@ scoreboard objectives add ca.ench_thorns_gear_lvl dummy
 scoreboard objectives add ca.ench_auto_charge_slot dummy
 scoreboard objectives add ca.ench_scavenger_slot dummy
 
+scoreboard objectives add ca.ench_ambushing_slot dummy
 scoreboard objectives add ca.ench_throwable_slot dummy
 
 
@@ -302,7 +307,6 @@ scoreboard objectives add ca.ench_head_gluttony_lvl dummy
 scoreboard objectives add ca.ench_body_gluttony_lvl dummy
 scoreboard objectives add ca.ench_legs_gluttony_lvl dummy
 scoreboard objectives add ca.ench_feet_gluttony_lvl dummy
-
 
 scoreboard objectives add ca.animations_var dummy
 
@@ -418,6 +422,11 @@ scoreboard objectives add ca.riposte_time dummy
 scoreboard objectives add ca.lunging_time dummy
 scoreboard objectives add ca.lunging_cancel dummy
 
+scoreboard objectives add ca.ambushing_time dummy
+scoreboard objectives add ca.ambushing_look dummy
+scoreboard objectives add ca.ambushing_cancel dummy
+scoreboard objectives add ca.ambushing_safety dummy
+
 scoreboard objectives add ca.throwable_time dummy
 scoreboard objectives add ca.throwable_cooldown dummy
 scoreboard objectives add ca.throwable_loyalty dummy
@@ -466,8 +475,11 @@ scoreboard objectives add ca.instability_type dummy
 
 scoreboard objectives add ca.clumsiness_falling minecraft.custom:minecraft.fall_one_cm
 
+scoreboard objectives add ca.ench_two_handed_check dummy
+
 scoreboard objectives add ca.warning_time dummy
 scoreboard objectives add ca.warning_anim dummy
+scoreboard objectives add ca.no_warning dummy
 
 #Infinity Edge Cases
 scoreboard objectives add ca.use_firework_rocket minecraft.used:minecraft.firework_rocket

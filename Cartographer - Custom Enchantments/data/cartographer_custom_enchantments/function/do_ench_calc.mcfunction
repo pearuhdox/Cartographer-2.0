@@ -50,6 +50,7 @@ execute if entity @s[tag=ca.do_enchant_calc_slamming] run function cartographer_
 execute if entity @s[tag=ca.do_enchant_calc_thrusting] run function cartographer_custom_enchantments:ench_calc/thrusting
 execute if entity @s[tag=ca.do_enchant_calc_quick_strike] run function cartographer_custom_enchantments:ench_calc/quick_strike
 execute if entity @s[tag=ca.do_enchant_calc_riposte] run function cartographer_custom_enchantments:ench_calc/riposte
+execute if entity @s[tag=ca.do_enchant_calc_ambushing] run function cartographer_custom_enchantments:ench_calc/ambushing
 execute if entity @s[tag=ca.do_enchant_calc_lunging] run function cartographer_custom_enchantments:ench_calc/lunging
 execute if entity @s[tag=ca.do_enchant_calc_throwable] run function cartographer_custom_enchantments:ench_calc/throwable
 execute if entity @s[tag=ca.do_enchant_calc_correction] run function cartographer_custom_enchantments:ench_calc/correction

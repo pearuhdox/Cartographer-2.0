@@ -7,6 +7,9 @@
 scoreboard players enable @s lightborn
 execute if score @s lightborn matches 1.. run function cartographer_custom_enchantments:enchantment/tool/lightborn/toggle
 
+scoreboard players enable @s toggle_warning
+execute if score @s toggle_warning matches 1.. run function cartographer_custom_enchantments:indicator/warning/toggle
+
 execute if score @s ca.concentration_time matches 1.. run scoreboard players remove @s ca.concentration_time 1
 execute if score @s ca.overcharge_time matches 1.. run scoreboard players remove @s ca.overcharge_time 1
 
@@ -25,15 +28,21 @@ execute if predicate cartographer_core:periodic_tick/100 if predicate cartograph
 #Run Throwable Cooldowns
 execute if predicate cartographer_core:periodic_tick/20 if predicate cartographer_custom_enchantments:has_throwable run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/throwable/recharge/check
 
+#Run Ambushing Cooldowns
+execute if predicate cartographer_core:periodic_tick/20 if predicate cartographer_custom_enchantments:has_ambushing run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/ambushing/recharge/check
+
 #execute if score @s ca.ench_auto_charge_slot matches -106.. if entity @s[tag=ca.auto_charge_needs_recharge] run scoreboard players add @s ca.auto_charge_time 1
 #execute if score @s ca.ench_auto_charge_slot matches -106.. if entity @s[tag=ca.auto_charge_needs_recharge] if score @s ca.auto_charge_time >= @s ca.auto_charge_time_max run say AUTO CHARGE
 
 
 execute if score @s ca.special_attack_delay matches 1.. run scoreboard players remove @s ca.special_attack_delay 1
 
+execute if entity @s[tag=ca.indicator_warning] if score @s ca.no_warning matches 1 run scoreboard players set @s ca.warning_time 0
+execute if entity @s[tag=ca.indicator_warning] if score @s ca.no_warning matches 1 run tag @s remove ca.indicator_warning
 
 execute if entity @s[tag=ca.indicator_warning] run function cartographer_custom_enchantments:indicator/warning/tick
 
+execute if score @s ca.ambushing_safety matches 1.. run scoreboard players remove @s ca.ambushing_safety 1
 
 #Infinity Processing
 function cartographer_custom_enchantments:enchantment/weapon/unique/other/infinity/player
