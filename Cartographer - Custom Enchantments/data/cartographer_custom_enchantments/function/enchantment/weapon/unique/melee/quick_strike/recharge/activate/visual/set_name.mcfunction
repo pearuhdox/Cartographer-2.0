@@ -1,0 +1,1 @@
+$data modify storage cartographer_custom_enchantments:quick_strike visual.name set value '{"fallback":"Quick Strike Item","translate":"item.minecraft.$(macro)","color":"aqua","italic":false}'

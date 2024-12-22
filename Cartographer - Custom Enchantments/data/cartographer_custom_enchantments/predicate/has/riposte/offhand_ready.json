@@ -1,0 +1,21 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "slots": {
+      "weapon.offhand": {
+        "predicates": {
+          "minecraft:enchantments": [
+            {
+              "enchantments": "cartographer_custom_enchantments:weapon/unique/melee/riposte",
+              "levels": {
+                "min": 1
+              }
+            }
+          ],
+          "minecraft:custom_data": {"riposte_state":2}
+        }
+      }
+    }
+  }
+}

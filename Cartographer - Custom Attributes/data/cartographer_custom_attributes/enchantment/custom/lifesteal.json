@@ -1,6 +1,7 @@
 {
     "description": {
-      "text": "Lifesteal"
+      "translate": "enchantment.cartographer.lifesteal",
+      "fallback": "Lifesteal"
     },
     "exclusive_set": "#cartographer_custom_attributes:exclusive_set/stat_weapon",
     "supported_items": "#cartographer_core:enchant_support/weapons",

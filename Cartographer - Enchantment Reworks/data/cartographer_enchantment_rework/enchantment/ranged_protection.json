@@ -1,6 +1,7 @@
 {
   "description": {
-    "text": "Ranged Protection"
+    "translate": "enchantment.cartographer.ranged_protection",
+    "fallback": "Ranged Protection"
   },
   "exclusive_set": "#cartographer_enchantment_rework:exclusive_set/protection_type",
   "supported_items": "#cartographer_core:enchant_support/passive_armor",

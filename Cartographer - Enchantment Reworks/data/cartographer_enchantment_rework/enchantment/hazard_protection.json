@@ -1,6 +1,7 @@
 {
   "description": {
-    "text": "Hazard Protection"
+    "translate": "enchantment.cartographer.hazard_protection",
+    "fallback": "Hazard Protection"
   },
   "exclusive_set": "#cartographer_enchantment_rework:exclusive_set/protection_type",
   "supported_items": "#cartographer_core:enchant_support/passive_armor",

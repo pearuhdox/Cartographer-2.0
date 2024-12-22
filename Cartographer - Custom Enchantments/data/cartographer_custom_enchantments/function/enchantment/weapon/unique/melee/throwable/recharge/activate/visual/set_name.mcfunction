@@ -1,0 +1,1 @@
+$data modify storage cartographer_custom_enchantments:throwable visual.name set value '{"fallback":"Throwable Item","translate":"item.minecraft.$(macro)","color":"aqua","italic":false}'

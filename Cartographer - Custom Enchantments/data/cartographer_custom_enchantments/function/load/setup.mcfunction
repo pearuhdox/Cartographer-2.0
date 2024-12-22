@@ -289,6 +289,8 @@ scoreboard objectives add ca.ench_scavenger_slot dummy
 scoreboard objectives add ca.ench_ambushing_slot dummy
 scoreboard objectives add ca.ench_quick_strike_slot dummy
 scoreboard objectives add ca.ench_throwable_slot dummy
+scoreboard objectives add ca.ench_lunging_slot dummy
+scoreboard objectives add ca.ench_riposte_slot dummy
 
 
 scoreboard objectives add ca.ench_regret_lvl dummy

@@ -1,6 +1,7 @@
 {
   "description": {
-    "text": "Reverb"
+    "translate": "enchantment.cartographer.reverb",
+    "fallback": "Reverb"
   },
   "exclusive_set": "#cartographer_custom_attributes:exclusive_set/stat_weapon",
   "supported_items": "#cartographer_core:enchant_support/weapons",

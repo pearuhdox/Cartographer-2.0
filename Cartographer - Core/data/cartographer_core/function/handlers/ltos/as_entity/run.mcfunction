@@ -75,7 +75,7 @@ $execute if score $custom_enchantments ca.installed matches 1.. if data storage 
 
 
 #Scavenger
-$execute if score $custom_enchantments ca.installed matches 1.. as $(killer) at @s if predicate cartographer_custom_enchantments:has_scavenger run function cartographer_custom_enchantments:enchantment/weapon/unique/other/scavenger/check
+$execute if score $custom_enchantments ca.installed matches 1.. as $(killer) at @s if predicate cartographer_custom_enchantments:has/scavenger run function cartographer_custom_enchantments:enchantment/weapon/unique/other/scavenger/check
 
 scoreboard players set $used_momentum ca.momentum_stack 0
 $execute as $(killer) at @s if score @s ca.ench_momentum_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/momentum/hit/user

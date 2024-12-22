@@ -1,8 +1,8 @@
-execute unless entity @s[tag=ca.ench_ran_flag_repeating] if predicate cartographer_custom_enchantments:has_repeating_mainhand unless items entity @s weapon.mainhand crossbow run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/consumable/run
-execute unless entity @s[tag=ca.ench_ran_flag_repeating] if predicate cartographer_custom_enchantments:has_repeating_offhand unless items entity @s weapon.offhand crossbow run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/consumable/run
+execute unless entity @s[tag=ca.ench_ran_flag_repeating] if predicate cartographer_custom_enchantments:has/repeating/mainhand unless items entity @s weapon.mainhand crossbow run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/consumable/run
+execute unless entity @s[tag=ca.ench_ran_flag_repeating] if predicate cartographer_custom_enchantments:has/repeating/offhand unless items entity @s weapon.offhand crossbow run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/consumable/run
 
-execute unless entity @s[tag=ca.ench_ran_flag_repeating] if predicate cartographer_custom_enchantments:has_repeating_mainhand if items entity @s weapon.mainhand crossbow run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/run
-execute unless entity @s[tag=ca.ench_ran_flag_repeating] if predicate cartographer_custom_enchantments:has_repeating_offhand if items entity @s weapon.offhand crossbow run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/run
+execute unless entity @s[tag=ca.ench_ran_flag_repeating] if predicate cartographer_custom_enchantments:has/repeating/mainhand if items entity @s weapon.mainhand crossbow run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/run
+execute unless entity @s[tag=ca.ench_ran_flag_repeating] if predicate cartographer_custom_enchantments:has/repeating/offhand if items entity @s weapon.offhand crossbow run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/run
 
 execute if entity @s[type=player] run scoreboard players set @s ca.reset_flags 1
 

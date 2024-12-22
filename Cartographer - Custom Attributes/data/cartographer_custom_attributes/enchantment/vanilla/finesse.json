@@ -1,6 +1,7 @@
 {
   "description": {
-    "text": "Finesse"
+    "translate": "enchantment.cartographer.finesse",
+    "fallback": "Finesse"
   },
   "exclusive_set": "#cartographer_custom_attributes:exclusive_set/stat_armor",
   "supported_items": "#cartographer_core:enchant_support/passive_armor",

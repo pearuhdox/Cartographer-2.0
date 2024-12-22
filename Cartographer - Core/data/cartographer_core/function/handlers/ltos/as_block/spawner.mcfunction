@@ -6,3 +6,6 @@ $execute if score $custom_statuses ca.installed matches 1.. as $(destroyer) run 
 
 #Enchantments
 $execute if score $custom_enchantments ca.installed matches 1.. as $(destroyer) run function cartographer_core:handlers/ltos/as_block/custom_enchantments_enchants
+
+#Scavenger
+$execute if score $custom_enchantments ca.installed matches 1.. as $(destroyer) at @s if predicate cartographer_custom_enchantments:has/scavenger run function cartographer_custom_enchantments:enchantment/weapon/unique/other/scavenger/check

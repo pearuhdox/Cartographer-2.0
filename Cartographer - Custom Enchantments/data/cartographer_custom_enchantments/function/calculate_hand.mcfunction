@@ -1,3 +1,6 @@
+scoreboard players operation @s ca.hand_slot_prev = @s ca.hand_slot
+execute store result score @s ca.hand_slot run data get entity @s SelectedItemSlot
+
 scoreboard players set @s ca.ench_adrenaline_hand_lvl 0
 scoreboard players set @s ca.ench_adrenaline_lvl 0
 
@@ -980,5 +983,8 @@ scoreboard players operation @s ca.ench_thorns_lvl += @s ca.ench_thorns_hand_lvl
 
 scoreboard players set @s ca.throwable_time 0
 scoreboard players set @s ca.lunging_time 0
-scoreboard players set @s ca.riposte_time 0
 scoreboard players set @s ca.ambushing_time 0
+
+execute if score @s ca.riposte_time matches 1.. store result storage cartographer:core slot int 1 run scoreboard players get @s ca.hand_slot_prev
+execute if score @s ca.riposte_time matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/riposte/unapply_slot with storage cartographer:core
+scoreboard players set @s ca.riposte_time 0

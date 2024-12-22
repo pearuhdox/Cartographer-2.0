@@ -10,6 +10,8 @@ function cartographer_core:helper/heal_player/load
 
 #Enchantment Calculator Scores
 scoreboard objectives add ca.ench_var dummy
+scoreboard objectives add ca.hand_slot dummy
+scoreboard objectives add ca.hand_slot_prev dummy
 scoreboard objectives add ca.ench_value dummy
 scoreboard objectives add ca.calc_type dummy
 scoreboard objectives add ca.popup_var dummy

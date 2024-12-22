@@ -1,0 +1,1 @@
+$data modify storage cartographer_custom_enchantments:riposte visual.name set value '{"fallback":"Riposte Item","translate":"item.minecraft.$(macro)","color":"aqua","italic":false}'
