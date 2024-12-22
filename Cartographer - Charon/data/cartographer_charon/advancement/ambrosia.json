@@ -5,7 +5,10 @@
       "conditions": {
         "item": {
           "predicates": {
-            "minecraft:custom_data": {"CartographerAmbrosia":1}
+            "minecraft:custom_data": 
+              {
+              "CartographerAmbrosia":1
+            }
           }
         }
       }
