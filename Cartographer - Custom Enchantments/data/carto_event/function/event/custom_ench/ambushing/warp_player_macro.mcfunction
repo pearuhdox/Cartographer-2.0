@@ -4,5 +4,3 @@ tag @s add ca.is_ambushing
 
 execute if entity @s[type=player] if score @s ca.ench_ambushing_lvl matches 1.. if predicate cartographer_custom_enchantments:has_ambushing_offhand_ready unless predicate cartographer_custom_enchantments:has_ambushing_mainhand_ready run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/ambushing/unapply_offhand
 execute if entity @s[type=player] if score @s ca.ench_ambushing_lvl matches 1.. if predicate cartographer_custom_enchantments:has_ambushing_mainhand_ready run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/ambushing/unapply
-
-say wrong
