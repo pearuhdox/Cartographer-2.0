@@ -31,6 +31,9 @@ execute if predicate cartographer_core:periodic_tick/20 if predicate cartographe
 #Run Ambushing Cooldowns
 execute if predicate cartographer_core:periodic_tick/20 if predicate cartographer_custom_enchantments:has_ambushing run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/ambushing/recharge/check
 
+#Run Quick Strike Cooldowns
+execute if predicate cartographer_core:periodic_tick/20 if predicate cartographer_custom_enchantments:has_quick_strike run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/quick_strike/recharge/check
+
 #execute if score @s ca.ench_auto_charge_slot matches -106.. if entity @s[tag=ca.auto_charge_needs_recharge] run scoreboard players add @s ca.auto_charge_time 1
 #execute if score @s ca.ench_auto_charge_slot matches -106.. if entity @s[tag=ca.auto_charge_needs_recharge] if score @s ca.auto_charge_time >= @s ca.auto_charge_time_max run say AUTO CHARGE
 

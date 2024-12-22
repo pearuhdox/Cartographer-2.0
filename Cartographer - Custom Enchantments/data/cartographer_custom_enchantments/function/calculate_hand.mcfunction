@@ -976,3 +976,9 @@ scoreboard players operation @s ca.ench_thorns_hand_lvl += $ench ca.ench_var
 
 scoreboard players operation @s ca.ench_thorns_lvl += @s ca.ench_thorns_gear_lvl
 scoreboard players operation @s ca.ench_thorns_lvl += @s ca.ench_thorns_hand_lvl
+
+
+scoreboard players set @s ca.throwable_time 0
+scoreboard players set @s ca.lunging_time 0
+scoreboard players set @s ca.riposte_time 0
+scoreboard players set @s ca.ambushing_time 0

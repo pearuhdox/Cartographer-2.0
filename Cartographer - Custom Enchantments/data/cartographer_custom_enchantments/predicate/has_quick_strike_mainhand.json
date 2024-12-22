@@ -1,0 +1,20 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "slots": {
+      "weapon.mainhand": {
+        "predicates": {
+          "minecraft:enchantments": [
+            {
+              "enchantments": "cartographer_custom_enchantments:weapon/unique/melee/quick_strike",
+              "levels": {
+                "min": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
