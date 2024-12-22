@@ -22,6 +22,13 @@ function cartographer_custom_statuses:calculator/process/create_action {action:"
 # Explosive
 function cartographer_custom_statuses:calculator/process/create_action {action:"explosive"}
 
+# Lunging
+function cartographer_custom_statuses:calculator/process/create_action {action:"lunging"}
+# Ambushing
+function cartographer_custom_statuses:calculator/process/create_action {action:"ambushing"}
+# Riposte
+function cartographer_custom_statuses:calculator/process/create_action {action:"riposte"}
+
 
 
 # Throwable should activate Ranged Conditions

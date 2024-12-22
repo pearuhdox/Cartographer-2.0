@@ -694,6 +694,17 @@ scoreboard players operation @s ca.ench_barrage_lvl += @s ca.ench_barrage_gear_l
 scoreboard players operation @s ca.ench_barrage_lvl += @s ca.ench_barrage_hand_lvl
 
 
+scoreboard players set @s ca.ench_collapse_hand_lvl 0
+scoreboard players set @s ca.ench_collapse_lvl 0
+
+scoreboard players set $ench ca.ench_var 0
+execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.main.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/unique/ranged/collapse
+scoreboard players operation @s ca.ench_collapse_hand_lvl += $ench ca.ench_var
+
+scoreboard players operation @s ca.ench_collapse_lvl += @s ca.ench_collapse_gear_lvl
+scoreboard players operation @s ca.ench_collapse_lvl += @s ca.ench_collapse_hand_lvl
+
+
 #scoreboard players set @s ca.ench_auto_charge_hand_lvl 0
 #scoreboard players set @s ca.ench_auto_charge_lvl 0
 

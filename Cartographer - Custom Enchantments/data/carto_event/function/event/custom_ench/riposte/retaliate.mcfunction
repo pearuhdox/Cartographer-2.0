@@ -1,3 +1,8 @@
+function cartographer_custom_enchantments:enchantment/weapon/unique/melee/riposte/custom_statuses/check_allow_status
+
+execute if score $allow_statuses_self ca.ench_riposte_lvl matches 1.. unless entity @s[type=player] run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/riposte/custom_statuses/status_self_mob
+execute if score $allow_statuses_self ca.ench_riposte_lvl matches 1.. if entity @s[type=player] run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/riposte/custom_statuses/status_self_player
+
 scoreboard players operation $mult ca.ench_var = @s ca.ench_riposte_lvl
 scoreboard players operation $mult ca.ench_var *= $25 ca.CONSTANT
 scoreboard players set $min_result_damage ca.ench_var 200
