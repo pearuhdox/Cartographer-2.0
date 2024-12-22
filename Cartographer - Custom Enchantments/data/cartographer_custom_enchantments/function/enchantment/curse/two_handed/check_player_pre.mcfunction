@@ -3,8 +3,6 @@ tag @s remove ca.two_handed_main_disable
 tag @s remove ca.two_handed_offh_lock
 tag @s remove ca.two_handed_offh_disable
 
-say test
-
 execute if score @s ca.ench_two_handed_hand_lvl matches 1 run tag @s add ca.two_handed_main_lock
 execute if score @s ca.ench_two_handed_hand_lvl matches 2.. run tag @s add ca.two_handed_main_disable
 execute if score @s ca.ench_two_handed_hand_lvl matches 1.. run scoreboard players add $count ca.ench_two_handed_lvl 1

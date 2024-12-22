@@ -11,6 +11,7 @@
         "minecraft:nether_quartz_ore",
         "minecraft:nether_gold_ore",
         "minecraft:decorated_pot",
-        "minecraft:spawner"
+        "minecraft:spawner",
+        "minecraft:cobweb"
     ]
 }

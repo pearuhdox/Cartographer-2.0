@@ -426,6 +426,7 @@ scoreboard objectives add ca.ambushing_time dummy
 scoreboard objectives add ca.ambushing_look dummy
 scoreboard objectives add ca.ambushing_cancel dummy
 scoreboard objectives add ca.ambushing_safety dummy
+scoreboard objectives add ca.ambushing_cooldown dummy
 
 scoreboard objectives add ca.throwable_time dummy
 scoreboard objectives add ca.throwable_cooldown dummy
