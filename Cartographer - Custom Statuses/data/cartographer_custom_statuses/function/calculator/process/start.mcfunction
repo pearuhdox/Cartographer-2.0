@@ -1,7 +1,7 @@
 function bb:lib/pldata/read
 data modify storage bbl:pldata sudo_root.working_data.cartographer.apply_status_data.actions set value {}
 
-
+say START
 
 function cartographer_custom_statuses:calculator/process/create_action/melee_hit
 function cartographer_custom_statuses:calculator/process/create_action/ranged_hit

@@ -1,0 +1,20 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "slots": {},
+          "items": [
+            {
+              "predicates": {
+                "minecraft:custom_data": "{apply_status:{break_spawner:{}}}"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "cartographer_custom_statuses:status_calc/adv/break_spawner"
+    }
+  }

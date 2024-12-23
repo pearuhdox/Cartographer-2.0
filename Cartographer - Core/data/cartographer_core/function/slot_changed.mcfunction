@@ -6,6 +6,8 @@ execute if score $custom_attributes ca.installed matches 1.. run function cartog
 execute if score $custom_statuses ca.installed matches 1.. run function cartographer_custom_statuses:calculate_hand
 execute if score $enchantment_rework ca.installed matches 1.. run function cartographer_enchantment_rework:calculate_hand
 
+execute if score $custom_statuses ca.installed matches 1.. run function cartographer_custom_statuses:calculate_hand_status
+
 #scoreboard players set @s ca.load_crossbow_time 0
 #scoreboard players set @s ca.draw_bow_time 0
 #scoreboard players set @s ca.hold_shield_time 0

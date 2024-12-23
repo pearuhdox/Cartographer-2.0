@@ -71,9 +71,14 @@ scoreboard players set @s ca.attribute_cleanse_delay 1
 execute if score @s ca.drop_item matches 1.. run function cartographer_core:loop/player/break_item
 execute if score @s ca.drop_item matches 1.. run scoreboard players set @s ca.drop_item 0
 
-execute unless entity @s[tag=ca.suppress_inv_update] if entity @s[tag=ca.do_enchant_calc] run function cartographer_core:fetch_inventory
+execute unless entity @s[tag=ca.suppress_inv_update] if entity @s[tag=ca.do_enchant_calc] unless entity @s[tag=ca.do_status_calc] run function cartographer_core:fetch_inventory
+execute unless entity @s[tag=ca.suppress_inv_update] unless entity @s[tag=ca.do_enchant_calc] if entity @s[tag=ca.do_status_calc] run function cartographer_core:fetch_inventory
+execute unless entity @s[tag=ca.suppress_inv_update] if entity @s[tag=ca.do_enchant_calc] if entity @s[tag=ca.do_status_calc] run function cartographer_core:fetch_inventory
 
-execute if entity @s[tag=ca.do_ench_reset] if entity @s[tag=ca.do_enchant_calc] run function cartographer_core:fetch_inventory
+execute if entity @s[tag=ca.do_ench_reset] if entity @s[tag=ca.do_enchant_calc] unless entity @s[tag=ca.do_status_calc] run function cartographer_core:fetch_inventory
+execute if entity @s[tag=ca.do_ench_reset] unless entity @s[tag=ca.do_enchant_calc] if entity @s[tag=ca.do_status_calc] run function cartographer_core:fetch_inventory
+execute if entity @s[tag=ca.do_ench_reset] if entity @s[tag=ca.do_enchant_calc] if entity @s[tag=ca.do_status_calc] run function cartographer_core:fetch_inventory
+
 
 execute if entity @s[tag=ca.do_ench_reset] if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:do_reset_calc
 execute if entity @s[tag=ca.do_ench_reset] if score $custom_enchantments ca.installed matches 1.. run function cartographer_custom_enchantments:do_reset_calc
@@ -85,6 +90,8 @@ execute unless entity @s[tag=ca.suppress_inv_update] if score $custom_attributes
 execute unless entity @s[tag=ca.suppress_inv_update] if score $custom_enchantments ca.installed matches 1.. run function cartographer_custom_enchantments:do_ench_calc
 execute unless entity @s[tag=ca.suppress_inv_update] if score $custom_statuses ca.installed matches 1.. run function cartographer_custom_statuses:do_ench_calc
 execute unless entity @s[tag=ca.suppress_inv_update] if score $enchantment_rework ca.installed matches 1.. run function cartographer_enchantment_rework:do_ench_calc
+
+execute unless entity @s[tag=ca.suppress_inv_update] if entity @s[tag=ca.do_status_calc] if score $custom_statuses ca.installed matches 1.. run function cartographer_custom_statuses:do_status_calc
 
 #Reset Attributes if required
 execute unless entity @s[tag=ca.suppress_inv_update] if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:reset_attributes

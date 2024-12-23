@@ -1,0 +1,20 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "slots": {},
+          "items": [
+            {
+              "predicates": {
+                "minecraft:custom_data": "{apply_status:{trailblazer:{}}}"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "cartographer_custom_statuses:status_calc/adv/enchantments/trailblazer"
+    }
+  }
