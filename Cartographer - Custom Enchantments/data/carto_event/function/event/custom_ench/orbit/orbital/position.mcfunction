@@ -3,7 +3,7 @@ $execute as $(target) if entity @s[type=player] positioned ~-$(half_size) ~-1 ~-
 $execute as $(target) unless entity @s[type=player] positioned ~-$(half_size) ~-1 ~-$(half_size) as @a[tag=!ca.orbit_cdl,limit=1,dx=$(size_neg_1),dy=1,dz=$(size_neg_1)] positioned ~$(half_size) ~1 ~$(half_size) run function carto_event:event/custom_ench/orbit/orbital/damage with storage carto_event current[-1].parameters
 
 
-$execute facing entity $(target) eyes rotated ~ 0 run tp $(display_entity) ~ ~ ~ ~ ~
+$execute facing entity $(target) eyes rotated ~ 0 run tp $(display_entity) ~ ~ ~ ~180 ~
 
 
 execute if score $mod ca.ench_orbit_lvl matches 1 run function carto_event:event/custom_ench/orbit/orbital/vfx with storage carto_event current[-1].parameters

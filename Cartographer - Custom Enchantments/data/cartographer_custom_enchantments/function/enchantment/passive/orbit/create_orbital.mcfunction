@@ -27,6 +27,9 @@ execute run scoreboard players add @s ca.orbit_delay 15
 scoreboard players set $is_player ca.ench_orbit_lvl 0
 execute if entity @s[type=player] run scoreboard players set $is_player ca.ench_orbit_lvl 1
 
+scoreboard players set $user_id ca.ench_orbit_lvl 0
+execute if entity @s[name=Matoreichon] run scoreboard players set $user_id ca.ench_orbit_lvl 1
+
 execute at @s rotated ~ 0 positioned ^ ^ ^-3.5 summon item_display run function cartographer_custom_enchantments:enchantment/passive/orbit/item_display_branch
 
 function cartographer_custom_enchantments:enchantment/passive/orbit/create_orbital_macro with storage cartographer:custom_enchantments

@@ -1,5 +1,6 @@
 scoreboard players set $user_id ca.ench_diversion_lvl 0
-$execute as $(owner) if entity @s[name=Sequex] run scoreboard players set $user_id ca.ench_diversion_lvl 1
+#$execute as $(owner) if entity @s[name=Matoreichon] run scoreboard players set $user_id ca.ench_diversion_lvl 1
+$execute as $(owner) if entity @s[name=Sequex] run scoreboard players set $user_id ca.ench_diversion_lvl 2
 
 function cartographer_custom_enchantments:enchantment/passive/diversion/custom_skin/directory
 
