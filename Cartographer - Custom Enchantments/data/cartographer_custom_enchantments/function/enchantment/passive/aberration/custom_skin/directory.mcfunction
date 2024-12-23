@@ -5,5 +5,6 @@ execute if score $is_player ca.ench_aberration_lvl matches 0 run function cartog
 
 execute if score $user_id ca.ench_aberration_lvl matches 1 run function cartographer_custom_enchantments:enchantment/passive/aberration/custom_skin/mato
 execute if score $user_id ca.ench_aberration_lvl matches 10 run function cartographer_custom_enchantments:enchantment/passive/aberration/custom_skin/slimeking
+execute if score $user_id ca.ench_aberration_lvl matches 20 run function cartographer_custom_enchantments:enchantment/passive/aberration/custom_skin/matt97
 
 #Any future custom skins go here

@@ -33,7 +33,10 @@ tellraw @s [{"text":"              Mulv ","color":"#3dddc8","bold":false,"italic
 #tellraw @s [{"text":"           Suso","color":"#61C0FF","bold":false,"italic":false,"hoverEvent":{"action":"show_text","contents":[{"text":"Technical Debt Collector","color":"#FFE0A3","italic":true}]}},{"text":" Asometric ","color":"#FFCD03","bold":false,"italic":false,"hoverEvent":{"action":"show_text","contents":[{"text":"\"Brought to you by Harassment\"","color":"#FFE0A3","italic":true}]}},{"text":"Gibbsly","color":"#BF0000","bold":false,"italic":false,"hoverEvent":{"action":"show_text","contents":[{"text":"\"Your feet, hand them over.\"","color":"#FFE0A3","italic":true}]}}]
 
 tellraw @s [{"text":"\n             ❰ ","color":"gold"},{"text":"Testing / Proofreading","color":"#CFFFFD","bold":false,"italic":false,"underlined":false},{"text":" ❱ ","color":"gold"}]
+execute if entity @s[tag=degenerate] run tellraw @s [{"text":"                   ❤ Matoreichon ❤","color":"#e6e6e6","bold":false,"italic":false}]
+execute unless entity @s[tag=degenerate] run tellraw @s [{"text":"                   Matoreichon","color":"#e6e6e6","bold":false,"italic":false}]
 tellraw @s [{"text":"                Gizmo","color":"#3DFFC5","bold":false,"italic":false},{"text":" Compsogbrickus","color":"#ACFF1C","bold":false,"italic":false}]
+tellraw @s [{"text":"         SlimeKing77777","color":"#3dff77","bold":false,"italic":false},{"text":" Matt97","color":"#ffca1c","bold":false,"italic":false},{"text":" Sequex","color":"#1ca4ff","bold":false,"italic":false},{"text":" KVT","color":"#b449cf","bold":false,"italic":false}]
 
 #tellraw @s [{"text":"     ❰ ","color":"gold"},{"text":"Additional Credits or Shoutouts","color":"#CFFFFD","bold":false,"italic":false,"underlined":false},{"text":" ❱ ","color":"gold"}]
 #tellraw @s [{"text":"  Nava, GavstarB, Novalescent, Vazkii, 14er","color":"white","bold":false,"italic":false,"underlined":false}]

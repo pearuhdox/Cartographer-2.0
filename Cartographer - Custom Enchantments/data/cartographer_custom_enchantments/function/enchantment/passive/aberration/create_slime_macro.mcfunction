@@ -20,6 +20,7 @@ execute at @s run particle minecraft:cloud ~ ~0.5 ~ 0.15 0.15 0.15 0.05 20 norma
 scoreboard players set $user_id ca.ench_aberration_lvl 0
 $execute as $(owner) if entity @s[name=Matoreichon] run scoreboard players set $user_id ca.ench_aberration_lvl 1
 $execute as $(owner) if entity @s[name=SlimeKing77777] run scoreboard players set $user_id ca.ench_aberration_lvl 10
+$execute as $(owner) if entity @s[name=Matt_97] run scoreboard players set $user_id ca.ench_aberration_lvl 20
 
 execute on passengers run function cartographer_custom_enchantments:enchantment/passive/aberration/custom_skin/directory
 

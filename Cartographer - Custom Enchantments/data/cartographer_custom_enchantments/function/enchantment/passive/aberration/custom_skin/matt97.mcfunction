@@ -1,0 +1,1 @@
+data merge entity @s {item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{id:[I;180370594,-339000589,-1973126076,-1793859388],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjk4MTMyM2U0NGM3OTE1MDBjZDdiNTRmMDViZDAwNzgxZGIzYTM4YWI1YzU4MmEyZWFhYjI5OTdlNzVhNTQ4NiJ9fX0="}]}}}}
