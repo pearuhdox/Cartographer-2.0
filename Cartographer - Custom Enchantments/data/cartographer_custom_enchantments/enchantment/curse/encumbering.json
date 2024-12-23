@@ -1,6 +1,7 @@
 {
   "description": {
-    "text": "Curse of Encumbering"
+    "translate": "enchantment.cartographer.encumbering_curse",
+    "fallback": "Curse of Encumbering"
   },
   "supported_items": "#minecraft:enchantable/durability",
   "weight": 1,

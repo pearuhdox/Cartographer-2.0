@@ -1,6 +1,7 @@
 {
     "description": {
-      "text": "Curse of Gluttony"
+      "translate": "enchantment.cartographer.gluttony_curse",
+    "fallback": "Curse of Gluttony"
     },
     "supported_items": "#minecraft:enchantable/durability",
     "weight": 1,

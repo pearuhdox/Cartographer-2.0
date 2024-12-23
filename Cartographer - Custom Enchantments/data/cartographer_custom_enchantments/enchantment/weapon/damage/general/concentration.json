@@ -1,6 +1,7 @@
 {
     "description": {
-      "text": "Concentration"
+      "translate": "enchantment.cartographer.concentration",
+    "fallback": "Concentration"
     },
     "exclusive_set": "#cartographer_custom_enchantments:exclusive_set/weapon_damage",
     "supported_items": "#cartographer_custom_enchantments:weapons_no_crossbow",

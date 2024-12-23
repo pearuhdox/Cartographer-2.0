@@ -1,6 +1,7 @@
 {
   "description": {
-    "text": "Curse of Shattering"
+    "translate": "enchantment.cartographer.shattering_curse",
+    "fallback": "Curse of Shattering"
   },
   "supported_items": "#minecraft:enchantable/durability",
   "weight": 1,

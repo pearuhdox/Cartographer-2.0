@@ -1,6 +1,7 @@
 {
   "description": {
-    "text": "Curse of Crippling"
+    "translate": "enchantment.cartographer.crippling_curse",
+    "fallback": "Curse of Crippling"
   },
   "supported_items": "#minecraft:enchantable/durability",
   "weight": 1,

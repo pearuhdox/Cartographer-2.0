@@ -1,6 +1,7 @@
 {
   "description": {
-    "text": "Melee Fragility"
+    "translate": "enchantment.cartographer.melee_fragility_curse",
+    "fallback": "Melee Fragility"
   },
   "supported_items": "#cartographer_core:enchant_support/passive",
   "weight": 1,

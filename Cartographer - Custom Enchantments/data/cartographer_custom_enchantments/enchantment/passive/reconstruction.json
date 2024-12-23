@@ -1,6 +1,7 @@
 {
   "description": {
-    "text": "Reconstruction"
+    "translate": "enchantment.cartographer.reconstruction",
+    "fallback": "Reconstruction"
   },
   "supported_items": "#minecraft:enchantable/durability",
   "weight": 1,

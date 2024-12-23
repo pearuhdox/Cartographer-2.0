@@ -1,6 +1,7 @@
 {
     "description": {
-      "text": "Leverage"
+      "translate": "enchantment.cartographer.leverage",
+    "fallback": "Leverage"
     },
     "exclusive_set": "#cartographer_custom_enchantments:exclusive_set/weapon_damage",
     "supported_items": "#cartographer_core:enchant_support/melee_weapon",

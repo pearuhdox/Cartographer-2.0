@@ -1,6 +1,7 @@
 {
     "description": {
-      "text": "Explosive"
+      "translate": "enchantment.cartographer.explosive",
+    "fallback": "Explosive"
     },
     "exclusive_set": "#cartographer_custom_enchantments:exclusive_set/unique_hit_effect",
     "supported_items": "#cartographer_core:enchant_support/weapons",

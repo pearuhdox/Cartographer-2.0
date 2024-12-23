@@ -1,6 +1,7 @@
 {
   "description": {
-    "text": "Curse of Haunting"
+    "translate": "enchantment.cartographer.haunting_curse",
+    "fallback": "Curse of Haunting"
   },
   "supported_items": "#minecraft:enchantable/durability",
   "weight": 1,

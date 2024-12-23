@@ -1,6 +1,7 @@
 {
   "description": {
-    "text": "Poise"
+    "translate": "enchantment.cartographer.poise",
+    "fallback": "Poise"
   },
   "supported_items": "#cartographer_core:enchant_support/passive",
   "exclusive_set": "#cartographer_custom_enchantments:exclusive_set/secondary_defense",

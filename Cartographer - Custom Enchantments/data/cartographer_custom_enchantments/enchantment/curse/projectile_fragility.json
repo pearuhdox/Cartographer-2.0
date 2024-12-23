@@ -1,6 +1,7 @@
 {
   "description": {
-    "text": "Projectile Fragility"
+    "translate": "enchantment.cartographer.projectile_fragility_curse",
+    "fallback": "Projectile Fragility"
   },
   "supported_items": "#cartographer_core:enchant_support/passive",
   "weight": 1,

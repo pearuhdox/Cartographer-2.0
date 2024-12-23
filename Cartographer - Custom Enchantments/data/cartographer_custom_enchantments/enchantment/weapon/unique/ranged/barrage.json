@@ -1,6 +1,7 @@
 {
     "description": {
-      "text": "Barrage"
+      "translate": "enchantment.cartographer.barrage",
+    "fallback": "Barrage"
     },
     "exclusive_set": "#cartographer_custom_enchantments:exclusive_set/multishot",
     "primary_items": "#cartographer_custom_enchantments:ranged_weapon_no_fishing",

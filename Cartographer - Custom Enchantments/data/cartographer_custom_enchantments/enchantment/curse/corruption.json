@@ -1,6 +1,7 @@
 {
   "description": {
-    "text": "Curse of Corruption"
+    "translate": "enchantment.cartographer.corruption_curse",
+    "fallback": "Curse of Corruption"
   },
   "supported_items": "#minecraft:enchantable/durability",
   "weight": 1,

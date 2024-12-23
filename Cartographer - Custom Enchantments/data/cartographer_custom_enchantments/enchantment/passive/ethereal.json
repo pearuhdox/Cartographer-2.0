@@ -1,6 +1,7 @@
 {
   "description": {
-    "text": "Ethereal"
+    "translate": "enchantment.cartographer.ethereal",
+    "fallback": "Ethereal"
   },
   "supported_items": "#cartographer_core:enchant_support/passive",
   "exclusive_set": "#cartographer_custom_enchantments:exclusive_set/defensive_augment",

@@ -1,6 +1,7 @@
 {
   "description": {
-    "text": "Two Handed"
+    "translate": "enchantment.cartographer.two_handed_curse",
+    "fallback": "Two Handed"
   },
   "supported_items": "#minecraft:enchantable/durability",
   "weight": 1,

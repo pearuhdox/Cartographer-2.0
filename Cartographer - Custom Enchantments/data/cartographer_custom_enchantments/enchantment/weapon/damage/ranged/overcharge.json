@@ -1,6 +1,7 @@
 {
     "description": {
-      "text": "Overcharge"
+      "translate": "enchantment.cartographer.overcharge",
+    "fallback": "Overcharge"
     },
     "exclusive_set": "#cartographer_custom_enchantments:exclusive_set/weapon_damage",
     "primary_items": "#cartographer_core:enchant_support/ranged_weapon",

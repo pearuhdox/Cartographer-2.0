@@ -1,6 +1,7 @@
 {
   "description": {
-    "text": "🔒 Locked 🔒"
+    "translate": "enchantment.cartographer.locked_curse",
+    "fallback": "🔒 Locked 🔒"
   },
   "supported_items": "#minecraft:enchantable/durability",
   "weight": 1,

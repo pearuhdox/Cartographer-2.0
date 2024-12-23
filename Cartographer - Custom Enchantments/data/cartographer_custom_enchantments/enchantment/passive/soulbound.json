@@ -1,6 +1,7 @@
 {
   "description": {
-    "text": "Soulbound"
+    "translate": "enchantment.cartographer.soulbound",
+    "fallback": "Soulbound"
   },
   "supported_items": "#minecraft:enchantable/durability",
   "weight": 1,

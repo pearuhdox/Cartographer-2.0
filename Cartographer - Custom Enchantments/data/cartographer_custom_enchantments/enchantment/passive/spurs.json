@@ -1,6 +1,7 @@
 {
   "description": {
-    "text": "Spurs"
+    "translate": "enchantment.cartographer.spurs",
+    "fallback": "Spurs"
   },
   "supported_items": "#cartographer_core:enchant_support/passive",
   "weight": 1,

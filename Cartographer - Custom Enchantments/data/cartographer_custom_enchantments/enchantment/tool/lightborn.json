@@ -1,6 +1,7 @@
 {
   "description": {
-    "text": "Lightborn"
+    "translate": "enchantment.cartographer.lightborn",
+    "fallback": "Lightborn"
   },
   "exclusive_set": "#minecraft:exclusive_set/mining",
   "supported_items": "#cartographer_core:enchant_support/tools",

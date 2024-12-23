@@ -1,6 +1,7 @@
 {
     "description": {
-      "text": "Multitool"
+      "translate": "enchantment.cartographer.multitool",
+    "fallback": "Multitool"
     },
     "exclusive_set": "#minecraft:exclusive_set/mining",
     "supported_items": "#cartographer_core:enchant_support/tools",

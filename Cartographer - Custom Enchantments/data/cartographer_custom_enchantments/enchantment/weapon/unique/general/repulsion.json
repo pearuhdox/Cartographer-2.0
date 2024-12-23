@@ -1,6 +1,7 @@
 {
     "description": {
-      "text": "Repulsion"
+      "translate": "enchantment.cartographer.repulsion",
+    "fallback": "Repulsion"
     },
     "supported_items": "#cartographer_core:enchant_support/weapons",
     "weight": 1,

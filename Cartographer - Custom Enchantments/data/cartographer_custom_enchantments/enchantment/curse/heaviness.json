@@ -1,6 +1,7 @@
 {
     "description": {
-      "text": "Curse of Heaviness"
+      "translate": "enchantment.cartographer.heaviness_curse",
+    "fallback": "Curse of Heaviness"
     },
     "supported_items": "minecraft:crossbow",
     "weight": 1,

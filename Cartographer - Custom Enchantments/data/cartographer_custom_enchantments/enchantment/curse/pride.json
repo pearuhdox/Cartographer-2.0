@@ -1,6 +1,7 @@
 {
   "description": {
-    "text": "Curse of Pride"
+    "translate": "enchantment.cartographer.pride_curse",
+    "fallback": "Curse of Pride"
   },
   "supported_items": "#minecraft:enchantable/durability",
   "weight": 1,

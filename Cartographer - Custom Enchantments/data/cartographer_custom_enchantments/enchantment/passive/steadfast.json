@@ -1,6 +1,7 @@
 {
   "description": {
-    "text": "Steadfast"
+    "translate": "enchantment.cartographer.steadfast",
+    "fallback": "Steadfast"
   },
   "supported_items": "#cartographer_core:enchant_support/passive",
   "exclusive_set": "#cartographer_custom_enchantments:exclusive_set/secondary_defense",

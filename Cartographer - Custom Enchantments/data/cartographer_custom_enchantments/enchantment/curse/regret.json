@@ -1,6 +1,7 @@
 {
     "description": {
-      "text": "Curse of Regret"
+      "translate": "enchantment.cartographer.regret_curse",
+    "fallback": "Curse of Regret"
     },
     "supported_items": "#minecraft:enchantable/durability",
     "weight": 1,

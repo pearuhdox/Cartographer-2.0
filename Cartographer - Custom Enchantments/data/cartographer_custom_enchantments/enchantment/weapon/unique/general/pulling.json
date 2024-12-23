@@ -1,6 +1,7 @@
 {
     "description": {
-      "text": "Pulling"
+      "translate": "enchantment.cartographer.pulling",
+    "fallback": "Pulling"
     },
     "exclusive_set": "#cartographer_custom_enchantments:exclusive_set/pulling",
     "supported_items": "#cartographer_core:enchant_support/weapons",

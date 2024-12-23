@@ -1,6 +1,7 @@
 {
     "description": {
-      "text": "Curse of Jamming"
+      "translate": "enchantment.cartographer.jamming_curse",
+    "fallback": "Curse of Jamming"
     },
     "supported_items": "minecraft:crossbow",
     "weight": 1,

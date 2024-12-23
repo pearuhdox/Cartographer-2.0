@@ -1,6 +1,7 @@
 {
   "description": {
-    "text": "Curse of Instability"
+    "translate": "enchantment.cartographer.instability_curse",
+    "fallback": "Curse of Instability"
   },
   "supported_items": "#minecraft:enchantable/durability",
   "weight": 1,

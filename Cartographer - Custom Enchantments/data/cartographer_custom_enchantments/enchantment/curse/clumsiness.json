@@ -1,6 +1,7 @@
 {
   "description": {
-    "text": "Curse of Clumsiness"
+    "translate": "enchantment.cartographer.clumsiness_curse",
+    "fallback": "Curse of Clumsiness"
   },
   "supported_items": "#cartographer_core:enchant_support/passive",
   "weight": 1,
