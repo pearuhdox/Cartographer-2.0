@@ -3,4 +3,4 @@ execute unless entity @s[tag=ca.suppress_inv_update] run data modify storage bbl
 execute unless entity @s[tag=ca.suppress_inv_update] run function bb:lib/pldata/write
 
 #Start the process here since it runs last
-execute unless entity @s[tag=ca.suppress_inv_update] run function cartographer_custom_statuses:calculator/process/start
+execute unless entity @s[tag=ca.suppress_inv_update] run function cartographer_custom_statuses:calculator/process/coating_check

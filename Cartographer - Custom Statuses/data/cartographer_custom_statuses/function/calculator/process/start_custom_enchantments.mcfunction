@@ -1,33 +1,33 @@
-function cartographer_custom_statuses:calculator/process/create_action {action:"surge"}
-function cartographer_custom_statuses:calculator/process/create_action {action:"deadeye"}
-function cartographer_custom_statuses:calculator/process/create_action {action:"trailblazer"}
+function cartographer_custom_statuses:calculator/process/create_action/enchantment/surge
+function cartographer_custom_statuses:calculator/process/create_action/enchantment/deadeye
+function cartographer_custom_statuses:calculator/process/create_action/enchantment/trailblazer
 
-function cartographer_custom_statuses:calculator/process/create_action {action:"starfall"}
-function cartographer_custom_statuses:calculator/process/create_action {action:"orbit"}
+function cartographer_custom_statuses:calculator/process/create_action/enchantment/starfall
+function cartographer_custom_statuses:calculator/process/create_action/enchantment/orbit
 
-function cartographer_custom_statuses:calculator/process/create_action {action:"storm"}
-function cartographer_custom_statuses:calculator/process/create_action {action:"induction"}
+function cartographer_custom_statuses:calculator/process/create_action/enchantment/storm
+function cartographer_custom_statuses:calculator/process/create_action/enchantment/induction
 
-function cartographer_custom_statuses:calculator/process/create_action {action:"eruption"}
-function cartographer_custom_statuses:calculator/process/create_action {action:"soulfire"}
+function cartographer_custom_statuses:calculator/process/create_action/enchantment/eruption
+function cartographer_custom_statuses:calculator/process/create_action/enchantment/soulfire
 
-function cartographer_custom_statuses:calculator/process/create_action {action:"quake"}
-function cartographer_custom_statuses:calculator/process/create_action {action:"aberration"}
+function cartographer_custom_statuses:calculator/process/create_action/enchantment/quake
+function cartographer_custom_statuses:calculator/process/create_action/enchantment/aberration
 
-function cartographer_custom_statuses:calculator/process/create_action {action:"thorns"}
+function cartographer_custom_statuses:calculator/process/create_action/enchantment/thorns
 
 # Repulsion
-function cartographer_custom_statuses:calculator/process/create_action {action:"repulsion"}
+function cartographer_custom_statuses:calculator/process/create_action/enchantment/repulsion
 
 # Explosive
-function cartographer_custom_statuses:calculator/process/create_action {action:"explosive"}
+function cartographer_custom_statuses:calculator/process/create_action/enchantment/explosive
 
 # Lunging
-function cartographer_custom_statuses:calculator/process/create_action {action:"lunging"}
+function cartographer_custom_statuses:calculator/process/create_action/enchantment/lunging
 # Ambushing
-function cartographer_custom_statuses:calculator/process/create_action {action:"ambushing"}
+function cartographer_custom_statuses:calculator/process/create_action/enchantment/ambushing
 # Riposte
-function cartographer_custom_statuses:calculator/process/create_action {action:"riposte"}
+function cartographer_custom_statuses:calculator/process/create_action/enchantment/riposte
 
 
 
