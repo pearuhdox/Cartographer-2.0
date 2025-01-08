@@ -20,5 +20,6 @@ execute if entity @s[type=player] run scoreboard players set $player_owned ca.en
 execute summon text_display run function cartographer_custom_enchantments:enchantment/passive/starfall/create_telegraphing with storage cartographer:custom_enchantments
 
 function cartographer_custom_enchantments:enchantment/passive/starfall/create_meteor_macro with storage cartographer:custom_enchantments
+scoreboard players add @s ca.starfall_ct 1
 
 execute run scoreboard players set @s ca.starfall_entropy 0

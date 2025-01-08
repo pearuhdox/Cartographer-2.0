@@ -15,3 +15,4 @@ execute store result storage cartographer:custom_enchantments quarter_size doubl
 execute summon text_display run function cartographer_custom_enchantments:enchantment/passive/storm/create_telegraphing with storage cartographer:custom_enchantments
 
 function cartographer_custom_enchantments:enchantment/passive/storm/create_storm_macro with storage cartographer:custom_enchantments
+scoreboard players add @s ca.storm_ct 1

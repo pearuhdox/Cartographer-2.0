@@ -9,5 +9,7 @@ execute unless score $created_fireball ca.ench_soulfire_lvl matches 1.. unless e
 
 scoreboard players remove @s ca.soulfire_count 1
 
+$execute if score @s ca.soulfire_count matches ..0 as $(owner) at @s if score @s ca.soulfire_ct matches 1.. run scoreboard players remove @s ca.soulfire_ct 1
 execute if score @s ca.soulfire_count matches ..0 if entity @s[tag=ca.placed_light] if block ~ ~ ~ light run setblock ~ ~ ~ air replace
+execute if score @s ca.soulfire_count matches ..0 run scoreboard players remove $count ca.entity_purge_var 1
 execute if score @s ca.soulfire_count matches ..0 run kill @s

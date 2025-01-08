@@ -1,3 +1,6 @@
+$execute as $(telegraph) at @s run scoreboard players set @s ca.entity_purge_var 0
+$execute as $(target) at @s run scoreboard players set @s ca.entity_purge_var 0
+
 $execute as $(target) at @s unless score @s ca.quake_time matches 10.. run particle minecraft:block{block_state:{Name:"$(block)"}} ~ ~0.5 ~ 0.3 0.15 0.3 0.1 2 normal
 $execute as $(target) at @s if score @s ca.quake_time matches 5..10 unless entity @s[tag=ca.player_spawned] run particle minecraft:large_smoke ~ ~0.5 ~ 0.3 0.15 0.3 0 1 normal
 
@@ -23,10 +26,12 @@ $execute as $(target) at @s unless entity @s[tag=ca.player_spawned] if score $mo
 
 $execute as $(target) at @s if score $mod ca.ench_quake_lvl matches 1 run scoreboard players add @s ca.quake_time 1
 
+$execute as $(target) at @s if score duration= carto_event matches 1 run scoreboard players remove $count ca.entity_purge_var 1
 $execute as $(target) at @s if score duration= carto_event matches 1 run kill @s
 $execute as $(target) at @s run return 1
 
-$execute as $(telegraph) at @s run scoreboard players remove $count ca.animations_var 1
+$execute as $(target) if score @s ca.quake_ct matches 1.. run scoreboard players remove @s ca.quake_ct 1
+$execute as $(telegraph) at @s run scoreboard players remove $count ca.entity_purge_var 1
 $kill $(telegraph)
 
 return 0

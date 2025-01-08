@@ -14,6 +14,7 @@ function cartographer_charon:load/load_check
 function cartographer_custom_attributes:load/load_check
 function cartographer_custom_enchantments:load/load_check
 function cartographer_custom_statuses:load/load_check
+function cartographer_lexica:load/load_check
 #function cartographer_loot_additions:load/load_check
 #function cartographer_loot_table_tweaks:load/load_check
 #function cartographer_mimics:load/load_check

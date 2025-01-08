@@ -37,6 +37,7 @@ execute if score @s ca.death_check matches 1.. run scoreboard players set @s ca.
 function cartographer_custom_attributes:loop/tick/player
 function cartographer_custom_enchantments:loop/tick/player
 function cartographer_custom_statuses:loop/tick/player
+function cartographer_lexica:loop/tick/player
 #function cartographer_mob_abilities:loop/tick/player
 #function cartographer_mimics:loop/tick/player
 function cartographer_repair_stations:loop/tick/player
@@ -49,6 +50,7 @@ tag @s remove ca.core_check_inv_inspector
 scoreboard players enable @s menu
 scoreboard players enable @s give_dev_box
 scoreboard players enable @s bug
+scoreboard players enable @s ca.credits_menu
 
 #Test if triggers are activated.
 execute if score @s menu matches 1.. run function cartographer_core:load/reload/full
@@ -56,8 +58,13 @@ execute if score @s give_dev_box matches 1.. run function cartographer_core:give
 
 execute if score @s bug matches 1.. run function cartographer_core:bug_report
 
-#Check if the player used the options menu
+execute if score @s ca.credits_menu matches 1.. run function cartographer_core:load/reload/credits/trigger_link
+
 execute if score @s ca.options_trig matches 1.. run function cartographer_core:options/player/trigger
+
+#Check if players place item frames
+execute if score @s ca.place_frame matches 1.. run function cartographer_core:handlers/place/master
+scoreboard players set @s ca.place_frame 0
 
 #Reduce the interal attack timer system scores.
 execute if score @s ca.atk_time matches 1.. run scoreboard players remove @s ca.atk_time 1

@@ -1,3 +1,5 @@
+$execute as $(telegraph) at @s run scoreboard players set @s ca.entity_purge_var 0
+
 $execute as $(target) at @s unless score @s ca.ambushing_time matches 71.. run scoreboard players add @s ca.ambushing_time 2
 $execute as $(target) at @s if score @s ca.ambushing_time matches 1..70 run function carto_event:event/custom_ench/ambushing/charge_vfx_entity
 
@@ -27,7 +29,7 @@ $execute if score duration= carto_event matches 1 as $(target) at @s run functio
 
 $execute if score duration= carto_event matches 1 as $(target) at @s positioned ~-$(half_size) ~ ~-$(half_size) as @a[dx=$(size_neg_1),dy=1,dz=$(size_neg_1)] positioned ~$(half_size) ~ ~$(half_size) if entity @s[distance=..$(half_size)] run function carto_event:event/custom_ench/ambushing/entity_use/damage with storage carto_event current[-1].parameters
 
-$execute if score duration= carto_event matches 1 as $(telegraph) at @s run scoreboard players remove $count ca.animations_var 1
+$execute if score duration= carto_event matches 1 as $(telegraph) at @s run scoreboard players remove $count ca.entity_purge_var 1
 $execute if score duration= carto_event matches 1 as $(telegraph) at @s run kill @s
 $execute if score duration= carto_event matches 1 as $(target) at @s run tag @s remove ca.is_ambushing
 $execute if score duration= carto_event matches 1 as $(target) at @s run scoreboard players set @s ca.ambushing_time 0

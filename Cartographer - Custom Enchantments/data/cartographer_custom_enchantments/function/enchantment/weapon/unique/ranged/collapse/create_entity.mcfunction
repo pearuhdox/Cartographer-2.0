@@ -5,3 +5,6 @@ function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/colla
 function cartographer_custom_enchantments:enchantment/helper/weapon/send_ench_values
 
 $function carto_event:api/create_single_entity_event {event:"custom_ench/collapse",duration:1200,delay:000,parameters:{owner:"$(owner)",time:$(time),visual_time:$(visual_time)},merge_behavior:"none"}
+
+scoreboard players add $count ca.entity_purge_var 1
+tag @s add ca.purgable_entity

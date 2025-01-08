@@ -1,3 +1,5 @@
+$execute as $(target) at @s run scoreboard players set @s ca.entity_purge_var 0
+
 $execute as $(target) at @s if score @s ca.collapse_time matches 2 run playsound minecraft:block.ender_chest.open player @a[distance=..16] ~ ~ ~ 0.3 1.25
 
 $execute as $(target) at @s if score @s ca.collapse_time matches 2 if score @s ca.ench_drilling_lvl matches 1.. run scoreboard players operation $collapse ca.ench_drilling_lvl = @s ca.ench_drilling_lvl
@@ -44,8 +46,11 @@ $execute as $(target) at @s if score @s ca.collapse_time matches $(time) run fun
 $execute as $(target) at @s if score @s ca.collapse_time matches $(time) run function carto_event:event/custom_ench/collapse/break_block with storage carto_event current[-1].parameters
 
 $execute as $(target) at @s if score @s ca.collapse_time matches $(time) run data merge entity @s {Glowing:1b,glow_color_override:2641224,interpolation_duration:5,start_interpolation:0,transformation:[0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f]}
+
+$execute as $(target) at @s if score @s ca.collapse_time >= $despawn ca.collapse_time run scoreboard players remove $count ca.entity_purge_var 1
 $execute as $(target) at @s if score @s ca.collapse_time >= $despawn ca.collapse_time run kill @s
 
+$execute as $(target) at @s unless score @s ca.collapse_time matches $(time).. if block ~ ~ ~ air run scoreboard players remove $count ca.entity_purge_var 1
 $execute as $(target) at @s unless score @s ca.collapse_time matches $(time).. if block ~ ~ ~ air run kill @s
 
 $execute as $(target) at @s run return 1

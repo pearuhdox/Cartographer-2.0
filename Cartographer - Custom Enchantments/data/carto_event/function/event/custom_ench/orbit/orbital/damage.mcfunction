@@ -3,13 +3,13 @@ $execute as $(target) at @s run function carto_event:event/custom_ench/orbit/cus
 
 $damage @s $(damage) cartographer_custom_enchantments:enchant_damage_bypass by $(target)
 
-$execute as $(target) if entity @s[type=player] run playsound minecraft:item.trident.hit player @a[distance=..16] ~ ~ ~ 1 0.5
-$execute as $(target) if entity @s[type=player] run playsound minecraft:entity.zombie.attack_wooden_door player @a[distance=..16] ~ ~ ~ 0.5 1.5
-$execute as $(target) if entity @s[type=player] run playsound minecraft:entity.iron_golem.damage player @a[distance=..16] ~ ~ ~ 0.9 0.5
+$execute as $(target) if entity @s[type=player] run playsound minecraft:item.trident.hit player @a[distance=..16] ~ ~ ~ 1 0.13
+$execute as $(target) if entity @s[type=player] run playsound minecraft:entity.zombie.attack_wooden_door player @a[distance=..16] ~ ~ ~ 0.13 1.5
+$execute as $(target) if entity @s[type=player] run playsound minecraft:entity.iron_golem.damage player @a[distance=..16] ~ ~ ~ 0.23 0.5
 
-$execute as $(target) unless entity @s[type=player] run playsound minecraft:item.trident.hit hostile @a[distance=..16] ~ ~ ~ 1 0.5
-$execute as $(target) unless entity @s[type=player] run playsound minecraft:entity.zombie.attack_wooden_door hostile @a[distance=..16] ~ ~ ~ 0.5 1.5
-$execute as $(target) if entity @s[type=player] run playsound minecraft:entity.iron_golem.damage hostile @a[distance=..16] ~ ~ ~ 0.9 0.5
+$execute as $(target) unless entity @s[type=player] run playsound minecraft:item.trident.hit hostile @a[distance=..16] ~ ~ ~ 1 0.13
+$execute as $(target) unless entity @s[type=player] run playsound minecraft:entity.zombie.attack_wooden_door hostile @a[distance=..16] ~ ~ ~ 0.13 1.5
+$execute as $(target) unless entity @s[type=player] run playsound minecraft:entity.iron_golem.damage hostile @a[distance=..16] ~ ~ ~ 0.23 0.5
 
 particle minecraft:crit ~ ~ ~ 0.2 0.2 0.2 0.3 30 normal
 

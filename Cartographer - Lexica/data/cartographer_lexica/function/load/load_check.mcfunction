@@ -1,0 +1,1 @@
+scoreboard players set $lexica ca.installed 1

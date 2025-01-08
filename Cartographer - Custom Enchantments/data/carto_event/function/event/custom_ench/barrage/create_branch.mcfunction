@@ -95,8 +95,8 @@ execute store result score @s ca.attr_ranged_damage_total run data get storage c
 execute store result score @s ca.attr_ranged_damage_value run data get storage carto_event current[-1].parameters.attributes.ranged_damage 1
 execute store result score @s ca.attr_ranged_velocity_total run data get storage carto_event current[-1].parameters.attributes.ranged_velocity 1
 
-execute store result score @s ca.attr_precise_hit_chance_total run data get storage carto_event current[-1].parameters.attributes.precise_hit_chance 1
-execute store result score @s ca.attr_precise_hit_damage_total run data get storage carto_event current[-1].parameters.attributes.precise_hit_damage 1
+execute store result score @s ca.attr_lucky_hit_chance_total run data get storage carto_event current[-1].parameters.attributes.lucky_hit_chance 1
+execute store result score @s ca.attr_lucky_hit_damage_total run data get storage carto_event current[-1].parameters.attributes.lucky_hit_damage 1
 
 
 execute store result score @s ca.attr_chaining_chance_total run data get storage carto_event current[-1].parameters.attributes.chaining_chance 1

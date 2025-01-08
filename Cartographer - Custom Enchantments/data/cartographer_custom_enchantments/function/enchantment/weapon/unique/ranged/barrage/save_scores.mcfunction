@@ -3,8 +3,8 @@ data modify storage cartographer_custom_enchantments:barrage data set value {}
 execute store result storage cartographer_custom_enchantments:barrage data.attributes.ranged_damage int 1 on origin run scoreboard players get @s ca.attr_ranged_damage_total
 execute store result storage cartographer_custom_enchantments:barrage data.attributes.ranged_velocity int 1 on origin run scoreboard players get @s ca.attr_ranged_velocity_total
 
-execute store result storage cartographer_custom_enchantments:barrage data.attributes.precise_hit_chance int 1 on origin run scoreboard players get @s ca.attr_precise_hit_chance_total
-execute store result storage cartographer_custom_enchantments:barrage data.attributes.precise_hit_damage int 1 on origin run scoreboard players get @s ca.attr_precise_hit_damage_total
+execute store result storage cartographer_custom_enchantments:barrage data.attributes.lucky_hit_chance int 1 on origin run scoreboard players get @s ca.attr_lucky_hit_chance_total
+execute store result storage cartographer_custom_enchantments:barrage data.attributes.lucky_hit_damage int 1 on origin run scoreboard players get @s ca.attr_lucky_hit_damage_total
 
 execute store result storage cartographer_custom_enchantments:barrage data.attributes.chaining_chance int 1 on origin run scoreboard players get @s ca.attr_chaining_chance_total
 execute store result storage cartographer_custom_enchantments:barrage data.attributes.chaining_damage int 1 on origin run scoreboard players get @s ca.attr_chaining_damage_total

@@ -16,3 +16,5 @@ execute if entity @s[type=player] run scoreboard players set $is_player ca.ench_
 execute summon text_display run function cartographer_custom_enchantments:enchantment/passive/eruption/create_telegraphing with storage cartographer:custom_enchantments
 
 execute summon item_display run function cartographer_custom_enchantments:enchantment/passive/eruption/create_explosion_macro with storage cartographer:custom_enchantments
+
+scoreboard players add @s ca.eruption_ct 1

@@ -5,5 +5,7 @@ playsound minecraft:item.ominous_bottle.dispose player @a[distance=..12] ~ ~ ~ 0
 
 data modify entity @s ArmorItems set value [{},{},{},{}]
 
+scoreboard players remove $count ca.entity_purge_var 1
+
 tp @s ~ ~1 ~
 $damage @s 1024 player_attack by $(owner)

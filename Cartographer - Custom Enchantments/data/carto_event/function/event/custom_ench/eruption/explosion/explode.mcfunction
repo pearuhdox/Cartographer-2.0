@@ -11,6 +11,9 @@ $execute if entity @s[tag=ca.player_spawned] positioned ~-$(half_size) ~-1 ~-$(h
 $execute unless entity @s[tag=ca.player_spawned] positioned ~-$(half_size) ~-1 ~-$(half_size) as @a[limit=2,dx=$(size_neg_1),dy=1,dz=$(size_neg_1)] positioned ~$(half_size) ~1 ~$(half_size) run function carto_event:event/custom_ench/eruption/explosion/damage_player
 tag @a remove ca.eruption_cdl
 
+$execute as $(owner) at @s if score @s ca.eruption_ct matches 1.. run scoreboard players remove @s ca.eruption_ct 1
+
+scoreboard players remove $count ca.entity_purge_var 1
 kill @s
 
 return 0

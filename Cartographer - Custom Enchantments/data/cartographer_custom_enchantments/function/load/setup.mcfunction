@@ -2,6 +2,7 @@
 #Setup all necessary scoreboard commands.
 scoreboard objectives add lightborn trigger
 scoreboard objectives add toggle_warning trigger
+scoreboard objectives add toggle_charging trigger
 
 #Setup scoreboards for level tracking
 scoreboard objectives add ca.ench_spurs_lvl dummy
@@ -297,6 +298,14 @@ scoreboard objectives add ca.ench_regret_lvl dummy
 scoreboard objectives add ca.ench_gluttony_lvl dummy
 
 
+scoreboard objectives add ca.ench_main_pride_lvl dummy
+scoreboard objectives add ca.ench_offh_pride_lvl dummy
+scoreboard objectives add ca.ench_head_pride_lvl dummy
+scoreboard objectives add ca.ench_body_pride_lvl dummy
+scoreboard objectives add ca.ench_legs_pride_lvl dummy
+scoreboard objectives add ca.ench_feet_pride_lvl dummy
+
+
 scoreboard objectives add ca.ench_main_regret_lvl dummy
 scoreboard objectives add ca.ench_offh_regret_lvl dummy
 scoreboard objectives add ca.ench_head_regret_lvl dummy
@@ -387,6 +396,18 @@ scoreboard objectives add ca.soulfire_count dummy
 
 scoreboard objectives add ca.orbit_bonus_speed dummy
 
+scoreboard objectives add ca.starfall_ct dummy
+scoreboard objectives add ca.orbit_ct dummy
+scoreboard objectives add ca.aberration_ct dummy
+scoreboard objectives add ca.quake_ct dummy
+scoreboard objectives add ca.storm_ct dummy
+scoreboard objectives add ca.eruption_ct dummy
+scoreboard objectives add ca.soulfire_ct dummy
+
+scoreboard objectives add ca.diversion_ct dummy
+scoreboard objectives add ca.collapse_ct dummy
+
+
 scoreboard objectives add ca.hit_damage_buildup dummy
 scoreboard objectives add ca.hit_damage_max dummy
 
@@ -419,6 +440,7 @@ scoreboard objectives add ca.quick_strike_active dummy
 scoreboard objectives add ca.special_attack_cooldown dummy
 scoreboard objectives add ca.special_attack_animation dummy
 scoreboard objectives add ca.special_attack_delay dummy
+scoreboard objectives add ca.special_attack_wait dummy
 
 scoreboard objectives add ca.riposte_time dummy
 
@@ -480,10 +502,15 @@ scoreboard objectives add ca.instability_type dummy
 scoreboard objectives add ca.clumsiness_falling minecraft.custom:minecraft.fall_one_cm
 
 scoreboard objectives add ca.ench_two_handed_check dummy
+scoreboard objectives add ca.ench_pride_check dummy
 
 scoreboard objectives add ca.warning_time dummy
 scoreboard objectives add ca.warning_anim dummy
 scoreboard objectives add ca.no_warning dummy
+
+scoreboard objectives add ca.charging_time dummy
+scoreboard objectives add ca.charging_anim dummy
+scoreboard objectives add ca.no_charging dummy
 
 #Infinity Edge Cases
 scoreboard objectives add ca.use_firework_rocket minecraft.used:minecraft.firework_rocket

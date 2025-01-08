@@ -795,13 +795,17 @@ scoreboard players operation @s ca.ench_crippling_lvl += @s ca.ench_crippling_ha
 
 scoreboard players set @s ca.ench_pride_hand_lvl 0
 scoreboard players set @s ca.ench_pride_lvl 0
+scoreboard players set @s ca.ench_main_pride_lvl 0
 
 scoreboard players set $ench ca.ench_var 0
 execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.main.components.minecraft:enchantments.levels.cartographer_custom_enchantments:curse/pride
 scoreboard players operation @s ca.ench_pride_hand_lvl += $ench ca.ench_var
+scoreboard players operation @s ca.ench_main_pride_lvl += $ench ca.ench_var
 
 scoreboard players operation @s ca.ench_pride_lvl += @s ca.ench_pride_gear_lvl
 scoreboard players operation @s ca.ench_pride_lvl += @s ca.ench_pride_hand_lvl
+
+execute if score @s ca.ench_pride_lvl matches 1.. run scoreboard players set @s ca.ench_pride_check 1
 
 
 scoreboard players set @s ca.ench_two_handed_hand_lvl 0

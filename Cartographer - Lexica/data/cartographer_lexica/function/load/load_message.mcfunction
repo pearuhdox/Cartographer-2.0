@@ -1,0 +1,1 @@
+tellraw @a [{"text":"❱ ","color":"#FFE0A3"},{"text":"Lexica","color":"#dab758","hoverEvent":{"action":"show_text","contents":[{"text":"Adds an item that explains custom features from Cartographer.","color":"#FFE0A3","italic":true}]}},{"text":" installed!","color":"#FFE0A3"}]

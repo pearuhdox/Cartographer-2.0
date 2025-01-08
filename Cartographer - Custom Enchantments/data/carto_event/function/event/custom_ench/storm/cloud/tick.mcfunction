@@ -1,3 +1,5 @@
+$execute as $(telegraph) at @s run scoreboard players set @s ca.entity_purge_var 0
+
 scoreboard players operation $mod ca.ench_storm_lvl = duration= carto_event
 scoreboard players operation $mod ca.ench_storm_lvl %= $20 ca.CONSTANT
 
@@ -20,7 +22,8 @@ $execute if score $mod ca.ench_storm_lvl matches 5 as $(target) positioned $(x) 
 $execute if score $mod ca.ench_storm_lvl matches 1 as $(target) positioned $(x) $(y) $(z) unless entity @s[type=player] positioned ~-$(half_size) ~ ~-$(half_size) as @a[tag=!ca.storm_cdl,limit=2,dx=$(size_neg_1),dy=1,dz=$(size_neg_1)] at @s run function carto_event:event/custom_ench/storm/cloud/damage with storage carto_event current[-1].parameters
 $execute if score $mod ca.ench_storm_lvl matches 2 as $(target) positioned $(x) $(y) $(z) unless entity @s[type=player] positioned ~-$(half_size) ~ ~-$(half_size) as @a[tag=!ca.storm_cdl,limit=1,sort=nearest,dx=$(size_neg_1),dy=1,dz=$(size_neg_1)] at @s run function carto_event:event/custom_ench/storm/cloud/damage_adjust with storage carto_event current[-1].parameters
 
-$execute as $(telegraph) if score duration= carto_event matches 1 run scoreboard players remove $count ca.animations_var 1
+$execute as $(telegraph) if score duration= carto_event matches 1 run scoreboard players remove $count ca.entity_purge_var 1
+$execute if score duration= carto_event matches 1 as $(target) if score @s ca.storm_ct matches 1.. run scoreboard players remove @s ca.storm_ct 1
 $execute if score duration= carto_event matches 1 run kill $(telegraph)
 
 return 1

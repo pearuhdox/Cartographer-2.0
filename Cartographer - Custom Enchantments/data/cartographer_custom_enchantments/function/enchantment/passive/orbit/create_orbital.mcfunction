@@ -33,5 +33,6 @@ execute if entity @s[name=Matoreichon] run scoreboard players set $user_id ca.en
 execute at @s rotated ~ 0 positioned ^ ^ ^-3.5 summon item_display run function cartographer_custom_enchantments:enchantment/passive/orbit/item_display_branch
 
 function cartographer_custom_enchantments:enchantment/passive/orbit/create_orbital_macro with storage cartographer:custom_enchantments
+scoreboard players add @s ca.orbit_ct 1
 
 execute run scoreboard players set @s ca.orbit_entropy 0

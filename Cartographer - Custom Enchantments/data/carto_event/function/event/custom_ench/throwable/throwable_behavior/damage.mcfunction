@@ -7,7 +7,7 @@ function carto_event:event/custom_ench/throwable/throwable_behavior/apply_enchan
 
 $execute as $(target) at @s run function cartographer_custom_attributes:system/projectile_find/get_data
 
-execute if score $precise_hit_chance ca.attr_apply_var matches 1.. run function cartographer_custom_attributes:custom_attributes/effects/precise_hit/start {proc_coeff:"75",attack_type:"throwable"}
+execute if score $lucky_hit_chance ca.attr_apply_var matches 1.. run function cartographer_custom_attributes:custom_attributes/effects/lucky_hit/start {proc_coeff:"75",attack_type:"throwable"}
 
 execute if score $chaining_chance ca.attr_apply_var matches 1.. unless entity @s[tag=ca.was_chained] run function cartographer_custom_attributes:custom_attributes/effects/chaining_hit/start {proc_coeff:"75",attack_type:"throwable"}
 

@@ -34,8 +34,8 @@ execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run funct
 execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/status_apply_duration
 execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/status_apply_potency
 execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/healing_power
-execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/precise_hit_chance
-execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/precise_hit_damage
+execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/lucky_hit_chance
+execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/lucky_hit_damage
 execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/restrike_chance
 execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/restrike_damage
 execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/restrike_amount
@@ -70,8 +70,8 @@ function cartographer_custom_attributes:calculator/process/create_attribute/read
 
 function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/healing_power
 
-function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/precise_hit_chance
-function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/precise_hit_damage
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/lucky_hit_chance
+function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/lucky_hit_damage
 
 function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/restrike_chance
 function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/restrike_damage

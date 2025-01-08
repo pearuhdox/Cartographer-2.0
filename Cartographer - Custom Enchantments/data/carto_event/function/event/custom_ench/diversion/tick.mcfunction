@@ -1,3 +1,5 @@
+$execute as $(target) at @s run scoreboard players set @s ca.entity_purge_var 0
+
 $execute as $(target) at @s run tp @s ~ ~ ~ ~8 ~
 $execute as $(target) at @s if predicate cartographer_core:periodic_tick/2 run particle minecraft:trial_spawner_detection_ominous ~ ~0.9 ~ 0.15 0 0.15 0.01 1 normal
 

@@ -3,4 +3,5 @@ data merge entity @s {teleport_duration:0,line_width:210,text_opacity:65,alignme
 tag @s add ca.surge_telegraphing
 tag @s add ca.telegraph
 
-scoreboard players add $count ca.animations_var 1
+scoreboard players add $count ca.entity_purge_var 1
+tag @s add ca.purgable_entity

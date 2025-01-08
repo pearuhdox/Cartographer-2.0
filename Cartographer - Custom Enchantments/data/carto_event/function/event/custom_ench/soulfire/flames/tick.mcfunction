@@ -1,3 +1,5 @@
+$execute as $(target) at @s run scoreboard players set @s ca.entity_purge_var 0
+
 $execute as $(target) at @s run scoreboard players add @s ca.soulfire_animation 1
 $execute as $(target) at @s unless score @s ca.soulfire_animation matches 1 run function carto_event:event/custom_ench/soulfire/flames/vfx_start
 $execute as $(target) at @s unless score @s ca.soulfire_animation matches 21.. run function carto_event:event/custom_ench/soulfire/flames/vfx

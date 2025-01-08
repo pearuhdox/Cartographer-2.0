@@ -21,3 +21,6 @@ tp @s ~ ~1.15 ~
 
 $function carto_event:api/create_single_entity_event {event:"custom_ench/soulfire/flames",duration:600,delay:$(delay),parameters:{length:$(length),damage:$(damage),owner:"$(owner)"},merge_behavior:"none"}
 function cartographer_custom_enchantments:enchantment/passive/soulfire/custom_statuses/append_status with storage carto_event macro
+
+scoreboard players add $count ca.entity_purge_var 1
+tag @s add ca.purgable_entity

@@ -4,3 +4,6 @@ function cartographer_custom_enchantments:enchantment/passive/orbit/custom_skin/
 data modify storage gu:main out set value "-"
 function gu:generate
 data modify storage cartographer:custom_enchantments display_entity set from storage gu:main out
+
+scoreboard players add $count ca.entity_purge_var 1
+tag @s add ca.purgable_entity

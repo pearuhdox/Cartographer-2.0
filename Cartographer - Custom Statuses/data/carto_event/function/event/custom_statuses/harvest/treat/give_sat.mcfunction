@@ -1,0 +1,1 @@
+$effect give @s saturation $(sat_amount) 0 true

@@ -3,7 +3,7 @@ particle minecraft:explosion ~ ~0.3 ~ 0 0 0 0 1 force
 playsound minecraft:entity.slime.jump hostile @a[distance=..16] ~ ~ ~ 1 0.5
 playsound minecraft:block.slime_block.place hostile @a[distance=..16] ~ ~ ~ 1 0.5
 playsound minecraft:block.slime_block.place hostile @a[distance=..16] ~ ~ ~ 1 0.5
-playsound minecraft:entity.explode hostile @a[distance=..16] ~ ~ ~ 0.5 2
+playsound minecraft:entity.generic.explode hostile @a[distance=..16] ~ ~ ~ 0.5 2
 
 execute at @s anchored feet positioned ^ ^ ^ rotated ~ 0 if entity @s[tag=ca.player_spawned] positioned ~ ~0.5 ~ run function carto_event:event/custom_ench/aberration/slime/vfx_player with storage carto_event current[-1].parameters
 execute at @s anchored feet positioned ^ ^ ^ rotated ~ 0 unless entity @s[tag=ca.player_spawned] positioned ~ ~0.5 ~ run function carto_event:event/custom_ench/aberration/slime/vfx_enemy with storage carto_event current[-1].parameters
@@ -18,6 +18,9 @@ execute unless entity @s[tag=ca.player_spawned] as @a[distance=..16] run scorebo
 
 execute if score $should_split ca.ench_aberration_lvl matches 1.. if score @s ca.aberration_splits matches 1.. run function carto_event:event/custom_ench/aberration/slime/split/data
 
+$execute as $(owner) at @s if score @s ca.aberration_ct matches 1.. run scoreboard players remove @s ca.aberration_ct 1
+
+scoreboard players remove $count ca.entity_purge_var 2
 execute on passengers run kill @s
 tp @s ~ -500 ~
 

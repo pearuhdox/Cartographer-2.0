@@ -1,3 +1,7 @@
+$execute as $(telegraph) at @s run scoreboard players set @s ca.entity_purge_var 0
+$execute as $(target) at @s run scoreboard players set @s ca.entity_purge_var 0
+$execute as $(target) on passengers run scoreboard players set @s ca.entity_purge_var 0
+
 $execute as $(telegraph) positioned as $(target) if block ~ ~-0.01 ~ #cartographer_core:can_raycast if block ~ ~-1.01 ~ #cartographer_core:can_raycast positioned ~ ~-1.01 ~ align y positioned ~ ~0.05 ~ run tp $(telegraph) ~ ~ ~
 $execute as $(telegraph) positioned as $(target) if block ~ ~-0.01 ~ #cartographer_core:can_raycast unless block ~ ~-1.01 ~ #cartographer_core:can_raycast positioned ~ ~-0.01 ~ align y positioned ~ ~0.05 ~ run tp $(telegraph) ~ ~ ~
 $execute as $(telegraph) positioned as $(target) unless block ~ ~-0.01 ~ #cartographer_core:can_raycast align y positioned ~ ~0.05 ~ run tp $(telegraph) ~ ~ ~
@@ -22,7 +26,7 @@ $execute as $(target) at @s if score @s ca.aberration_time matches 25 as $(teleg
 $execute as $(target) at @s if score @s ca.aberration_time matches ..20 as $(telegraph) at @s run tp @s ~ ~ ~ ~2 ~
 
 $execute as $(target) at @s unless score @s ca.aberration_anim matches 1.. if score @s ca.aberration_time matches 0 run kill $(telegraph)
-$execute as $(target) at @s unless score @s ca.aberration_anim matches 1.. if score @s ca.aberration_time matches 0 run scoreboard players remove $count ca.animations_var 1
+$execute as $(target) at @s unless score @s ca.aberration_anim matches 1.. if score @s ca.aberration_time matches 0 run scoreboard players remove $count ca.entity_purge_var 1
 
 $execute as $(target) at @s unless score @s ca.aberration_anim matches 1.. if score @s ca.aberration_time matches 9 run playsound minecraft:entity.creeper.primed hostile @a[distance=..16] ~ ~ ~ 1 1.5 
 #$execute as $(target) at @s unless score @s ca.aberration_anim matches 1.. if score @s ca.aberration_time matches 9 anchored feet positioned ^ ^ ^ rotated ~ 0 if entity @s[tag=ca.player_spawned] positioned ~ ~0.5 ~ run function carto_event:event/custom_ench/aberration/slime/vfx_player with storage carto_event current[-1].parameters
@@ -38,10 +42,10 @@ $execute as $(target) at @s unless score @s ca.aberration_anim matches 1.. if sc
 $execute as $(target) at @s unless score @s ca.aberration_anim matches 1.. if score @s ca.aberration_time matches 9 as $(telegraph) at @s unless entity @s[tag=ca.already_telegraphed] run function carto_event:event/custom_ench/aberration/slime/telegraph_animation
 
 scoreboard players set $death ca.ench_aberration_lvl 0
-$execute as $(target) at @s if entity @s[nbt={AbsorptionAmount:0.0f}] run function carto_event:event/custom_ench/aberration/slime/death
+$execute as $(target) at @s if entity @s[nbt={AbsorptionAmount:0.0f}] run function carto_event:event/custom_ench/aberration/slime/death with storage carto_event current[-1].parameters
 
 $execute if score $death ca.ench_aberration_lvl matches 1.. run kill $(telegraph)
-$execute if score $death ca.ench_aberration_lvl matches 1.. as $(telegraph) run scoreboard players remove $count ca.animations_var 1
+$execute if score $death ca.ench_aberration_lvl matches 1.. as $(telegraph) run scoreboard players remove $count ca.entity_purge_var 1
 execute if score $death ca.ench_aberration_lvl matches 1.. run return 0
 
 return 1

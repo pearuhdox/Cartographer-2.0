@@ -1,0 +1,1 @@
+execute as @e[type=glow_item_frame,distance=..8,nbt={Item:{id:"minecraft:structure_void",components:{"minecraft:custom_data":{CartoCreditsBlock:1b}}}}] at @s run function cartographer_core:handlers/place/credits

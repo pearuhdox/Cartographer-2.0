@@ -75,6 +75,11 @@ execute as @a[predicate=cartographer_core:in_valid_dimension] at @s run function
 # Register any entity
 execute as @e[type=!player,tag=!ca.registered] at @s run function cartographer_core:handlers/register/start
 
+#Run Failsafe for Purgable Entities - All Should die in 5 seconds regardless of their moves.
+execute if score $count ca.entity_purge_var matches 1.. as @e[tag=ca.purgable_entity] at @s run function cartographer_core:handlers/entity_purge/tick
+execute if score $count ca.entity_purge_var matches ..-1 run scoreboard players set $count ca.entity_purge_var 0
+
+#Projectile and Creeper Checks
 execute if score $projectile_check ca.systems matches 1.. as @e[type=marker,tag=ca.projectile_checker] at @s run function cartographer_core:handlers/checkers/projectile
 execute if score $creeper_check ca.systems matches 1.. as @e[type=marker,tag=ca.creeper_checker] at @s run function cartographer_core:handlers/checkers/creeper
 

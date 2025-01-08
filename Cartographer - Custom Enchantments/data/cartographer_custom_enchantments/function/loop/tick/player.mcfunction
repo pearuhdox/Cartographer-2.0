@@ -10,6 +10,9 @@ execute if score @s lightborn matches 1.. run function cartographer_custom_encha
 scoreboard players enable @s toggle_warning
 execute if score @s toggle_warning matches 1.. run function cartographer_custom_enchantments:indicator/warning/toggle
 
+scoreboard players enable @s toggle_charging
+execute if score @s toggle_charging matches 1.. run function cartographer_custom_enchantments:indicator/charging/toggle
+
 execute if score @s ca.concentration_time matches 1.. run scoreboard players remove @s ca.concentration_time 1
 execute if score @s ca.overcharge_time matches 1.. run scoreboard players remove @s ca.overcharge_time 1
 
@@ -49,8 +52,11 @@ execute if score @s ca.special_attack_delay matches 1.. run scoreboard players r
 
 execute if entity @s[tag=ca.indicator_warning] if score @s ca.no_warning matches 1 run scoreboard players set @s ca.warning_time 0
 execute if entity @s[tag=ca.indicator_warning] if score @s ca.no_warning matches 1 run tag @s remove ca.indicator_warning
-
 execute if entity @s[tag=ca.indicator_warning] run function cartographer_custom_enchantments:indicator/warning/tick
+
+execute if entity @s[tag=ca.indicator_charging] if score @s ca.no_charging matches 1 run scoreboard players set @s ca.charging_time 0
+execute if entity @s[tag=ca.indicator_charging] if score @s ca.no_charging matches 1 run tag @s remove ca.indicator_charging
+execute if entity @s[tag=ca.indicator_charging] run function cartographer_custom_enchantments:indicator/charging/tick
 
 execute if score @s ca.ambushing_safety matches 1.. run scoreboard players remove @s ca.ambushing_safety 1
 

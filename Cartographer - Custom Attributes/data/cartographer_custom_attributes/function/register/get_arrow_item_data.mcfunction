@@ -5,10 +5,10 @@ function cartographer_custom_attributes:register/get_arrow_attr_data {attribute:
 function cartographer_custom_attributes:register/get_arrow_attr_data {attribute:"aoe_damage",base_value:0}
 
 #precise hit chance
-function cartographer_custom_attributes:register/get_arrow_attr_data {attribute:"precise_hit_chance",base_value:100}
+function cartographer_custom_attributes:register/get_arrow_attr_data {attribute:"lucky_hit_chance",base_value:100}
 
 #precise hit damage
-function cartographer_custom_attributes:register/get_arrow_attr_data {attribute:"precise_hit_damage",base_value:0}
+function cartographer_custom_attributes:register/get_arrow_attr_data {attribute:"lucky_hit_damage",base_value:0}
 
 #chaining chance
 function cartographer_custom_attributes:register/get_arrow_attr_data {attribute:"chaining_chance",base_value:100}

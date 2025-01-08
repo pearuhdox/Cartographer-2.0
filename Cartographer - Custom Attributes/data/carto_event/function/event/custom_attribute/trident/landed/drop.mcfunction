@@ -8,7 +8,7 @@ data modify entity @s item set from storage cartographer_custom_attributes:tride
 data modify entity @s Owner set from storage cartographer_custom_attributes:trident owner
 
 function cartographer_custom_enchantments:enchantment/helper/weapon/send_ench_values
-execute if score $custom_enchantments ca.installed matches 1.. unless entity @e[distance=..4.5,type=#cartographer_core:affected_by_carto,nbt={HurtTime:10s}] run function carto_event:event/custom_attribute/trident/landed/collapse_test
+execute if score $custom_enchantments ca.installed matches 1.. unless entity @e[distance=..4.5,type=#cartographer_core:affected_by_carto,nbt={HurtTime:10s}] run function carto_event:event/custom_attribute/trident/landed/collapse_test with storage cartographer_custom_attributes:trident
 
 tag @s remove ca.custom_trident_drop
 

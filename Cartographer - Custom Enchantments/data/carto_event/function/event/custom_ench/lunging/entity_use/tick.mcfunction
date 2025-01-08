@@ -1,3 +1,5 @@
+$execute as $(telegraph) at @s run scoreboard players set @s ca.entity_purge_var 0
+
 $execute as $(target) at @s if score duration= carto_event matches 170.. unless entity @s[tag=ca.is_lunging] run tag @s add ca.lunging_charging
 $execute as $(target) at @s if score duration= carto_event matches 170.. unless entity @s[tag=ca.is_lunging] run scoreboard players add @s ca.lunging_time 1
 
@@ -29,7 +31,7 @@ $execute if score duration= carto_event matches 177..200 as $(target) at @s run 
 $execute if score duration= carto_event matches 170..176 as $(telegraph) positioned as $(target) run tp @s ~ ~ ~
 $execute if score duration= carto_event matches 200 as $(target) at @s run scoreboard players operation $size ca.ench_lunging_lvl = @s ca.ench_lunging_lvl
 $execute if score duration= carto_event matches 200 as $(telegraph) at @s run function carto_event:event/custom_ench/lunging/entity_use/telegraph_animation
-$execute if score duration= carto_event matches 169 as $(telegraph) at @s run scoreboard players remove $count ca.animations_var 1
+$execute if score duration= carto_event matches 169 as $(telegraph) at @s run scoreboard players remove $count ca.entity_purge_var 1
 $execute if score duration= carto_event matches 169 as $(telegraph) at @s run kill @s
 
 $execute if score duration= carto_event matches 170.. as $(target) at @s run scoreboard players operation $warn ca.ench_lunging_lvl = @s ca.ench_lunging_lvl

@@ -8,5 +8,5 @@ $execute facing entity $(target) eyes rotated ~ 0 run tp $(display_entity) ~ ~ ~
 
 execute if score $mod ca.ench_orbit_lvl matches 1 run function carto_event:event/custom_ench/orbit/orbital/vfx with storage carto_event current[-1].parameters
 
-$execute as $(target) if entity @s[type=player] run particle minecraft:dust{color:[0.020,0.890,0.659],scale:1} ~ ~ ~ 0.2 0.2 0.2 0 3 normal
-$execute as $(target) unless entity @s[type=player] run particle minecraft:dust{color:[0.541,0.110,0.110],scale:1} ~ ~ ~ 0.2 0.2 0.2 0 3 normal
+$execute as $(target) unless score @s ca.orbit_ct matches 3.. if entity @s[type=player] run particle minecraft:dust{color:[0.020,0.890,0.659],scale:1} ~ ~ ~ 0.2 0.2 0.2 0 3 normal
+$execute as $(target) unless score @s ca.orbit_ct matches 3.. unless entity @s[type=player] run particle minecraft:dust{color:[0.541,0.110,0.110],scale:1} ~ ~ ~ 0.2 0.2 0.2 0 3 normal

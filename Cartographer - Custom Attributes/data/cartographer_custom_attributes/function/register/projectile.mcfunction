@@ -5,7 +5,7 @@ scoreboard players set $custom_aoe_size ca.attr_var 0
 scoreboard players set $custom_potion_size ca.attr_var 0
 
 scoreboard players set $life_drain ca.attr_var 0
-scoreboard players set $precise_hit ca.attr_var 0
+scoreboard players set $lucky_hit ca.attr_var 0
 scoreboard players set $chaining_hit ca.attr_var 0
 scoreboard players set $restrike_hit ca.attr_var 0
 
@@ -28,8 +28,8 @@ execute unless entity @s[tag=ca.no_attr_calc] if score $custom_ranged_velocity c
 execute unless entity @s[tag=ca.no_attr_calc] if score $life_drain ca.attr_var matches 1.. run function cartographer_custom_attributes:custom_attributes/effects/life_drain/ranged
 execute if score $life_drain ca.attr_var matches 1.. run function cartographer_custom_attributes:custom_attributes/effects/life_drain/data
 
-execute unless entity @s[tag=ca.no_attr_calc] if score $precise_hit ca.attr_var matches 1.. run function cartographer_custom_attributes:custom_attributes/effects/precise_hit/ranged
-execute if score $precise_hit ca.attr_var matches 1.. run function cartographer_custom_attributes:custom_attributes/effects/precise_hit/data
+execute unless entity @s[tag=ca.no_attr_calc] if score $lucky_hit ca.attr_var matches 1.. run function cartographer_custom_attributes:custom_attributes/effects/lucky_hit/ranged
+execute if score $lucky_hit ca.attr_var matches 1.. run function cartographer_custom_attributes:custom_attributes/effects/lucky_hit/data
 
 execute unless entity @s[tag=ca.no_attr_calc] if score $chaining_hit ca.attr_var matches 1.. run function cartographer_custom_attributes:custom_attributes/effects/chaining_hit/ranged
 execute if score $chaining_hit ca.attr_var matches 1.. run function cartographer_custom_attributes:custom_attributes/effects/chaining_hit/data

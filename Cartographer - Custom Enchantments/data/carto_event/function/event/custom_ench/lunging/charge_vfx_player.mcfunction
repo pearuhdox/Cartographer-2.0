@@ -14,3 +14,6 @@ execute if score @s ca.lunging_time matches 13 run playsound minecraft:block.not
 execute if score @s ca.lunging_time matches 14 run playsound minecraft:block.note_block.hat player @a[distance=..16] ~ ~ ~ 0.6 1.8
 execute if score @s ca.lunging_time matches 15 run playsound minecraft:block.note_block.hat player @a[distance=..16] ~ ~ ~ 0.6 1.85
 execute if score @s ca.lunging_time matches 15 run playsound minecraft:entity.blaze.hurt player @a[distance=..16] ~ ~ ~ 1 2
+
+execute if score @s ca.lunging_time matches 4 run tag @s add ca.indicator_charging
+execute if score @s ca.lunging_time matches 4 run scoreboard players set @s ca.charging_time 10

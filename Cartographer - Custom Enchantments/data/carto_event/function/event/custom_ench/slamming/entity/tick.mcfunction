@@ -1,3 +1,5 @@
+$execute as $(telegraph) at @s run scoreboard players set @s ca.entity_purge_var 0
+
 $execute as $(target) at @s if score duration= carto_event matches 45 store result score @s ca.special_attack_animation run random value 1..2
 
 $execute as $(target) at @s if score duration= carto_event matches 45 run attribute @s minecraft:attack_damage modifier add ca.slamming_damage -100 add_multiplied_total
@@ -30,7 +32,7 @@ $execute as $(target) at $(telegraph) if entity @s[nbt={DeathTime:0s}] if score 
 
 $execute as $(target) at @s if score duration= carto_event matches 15 run attribute @s minecraft:movement_speed modifier remove ca.slamming_slow
 $execute as $(target) at @s if score duration= carto_event matches 5 run attribute @s minecraft:attack_damage modifier remove ca.slamming_damage
-$execute as $(telegraph) at @s if score duration= carto_event matches 15 run scoreboard players remove $count ca.animations_var 1
+$execute as $(telegraph) at @s if score duration= carto_event matches 15 run scoreboard players remove $count ca.entity_purge_var 1
 $execute as $(telegraph) at @s if score duration= carto_event matches 15 run kill @s
 
 $execute if score duration= carto_event matches 15.. as $(telegraph) at @s positioned as $(target) run tp @s ~ ~ ~ ~ 0

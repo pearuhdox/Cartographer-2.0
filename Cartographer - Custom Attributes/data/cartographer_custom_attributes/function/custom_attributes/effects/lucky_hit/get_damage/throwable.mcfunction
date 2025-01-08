@@ -1,0 +1,1 @@
+scoreboard players operation $damage ca.lucky_hit_var = $damage ca.ench_throwable_lvl

@@ -1,3 +1,5 @@
+$execute as $(telegraph) at @s run scoreboard players set @s ca.entity_purge_var 0
+
 #$execute as $(target) at @s if score duration= carto_event matches 1.. unless entity @s[tag=ca.is_lunging] run tag @s add ca.lunging_charging
 #$execute as $(target) at @s if score duration= carto_event matches 1.. unless entity @s[tag=ca.is_lunging] run scoreboard players add @s ca.throwable_time 1
 
@@ -23,7 +25,7 @@ $execute if score duration= carto_event matches 30.. as $(target) at @s run tag 
 $execute if score duration= carto_event matches 25.. as $(telegraph) at @s run function carto_event:event/custom_ench/throwable/entity_use/detect_player
 
 $execute if score duration= carto_event matches 40 as $(telegraph) at @s run function carto_event:event/custom_ench/throwable/entity_use/telegraph_animation
-$execute if score duration= carto_event matches 20 as $(telegraph) at @s run scoreboard players remove $count ca.animations_var 1
+$execute if score duration= carto_event matches 20 as $(telegraph) at @s run scoreboard players remove $count ca.entity_purge_var 1
 $execute if score duration= carto_event matches 20 as $(telegraph) at @s run kill @s
 
 return 1

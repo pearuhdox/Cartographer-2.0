@@ -8,4 +8,5 @@ data modify storage cartographer:custom_enchantments telegraph set from storage 
 tag @s add ca.thrusting_telegraph
 tag @s add ca.telegraph
 
-scoreboard players add $count ca.animations_var 1
+scoreboard players add $count ca.entity_purge_var 1
+tag @s add ca.purgable_entity

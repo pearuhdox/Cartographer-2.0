@@ -35,5 +35,13 @@ data modify storage cartographer:custom_enchantments status_enchant_hit.enchantm
 
 execute summon text_display run function cartographer_custom_enchantments:enchantment/passive/aberration/create_telegraphing with storage cartographer:custom_enchantments
 
+$execute as $(owner) at @s run scoreboard players add @s ca.aberration_ct 1
+
 $function carto_event:api/create_single_entity_event {event:"custom_ench/aberration/slime",duration:600,delay:2,parameters:{health:$(health),splits:$(splits),size:$(size),half_size:$(half_size),size_neg_1:$(size_neg_1),damage:$(damage),owner:"$(owner)"},merge_behavior:"none"}
 function carto_event:event/custom_ench/aberration/slime/split/append_status with storage carto_event macro
+
+scoreboard players add $count ca.entity_purge_var 1
+tag @s add ca.purgable_entity
+
+scoreboard players add $count ca.entity_purge_var 1
+execute on passengers run tag @s add ca.purgable_entity

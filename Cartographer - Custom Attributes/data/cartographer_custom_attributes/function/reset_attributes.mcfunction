@@ -24,7 +24,7 @@ execute unless score @s ca.ench_precision_lvl matches 1.. run attribute @s minec
 execute unless score @s ca.ench_lucky_lvl matches 1.. run attribute @s minecraft:oxygen_bonus modifier remove ca.attr_combat_luck_ench_value
 execute unless score @s ca.ench_amplitude_lvl matches 1.. run attribute @s minecraft:oxygen_bonus modifier remove ca.attr_aoe_size_ench_percent
 execute unless score @s ca.ench_resonance_lvl matches 1.. run attribute @s minecraft:oxygen_bonus modifier remove ca.attr_aoe_damage_ench_percent
-execute unless score @s ca.ench_technique_lvl matches 1.. run attribute @s minecraft:oxygen_bonus modifier remove ca.attr_precise_hit_chance_ench_percent
+execute unless score @s ca.ench_technique_lvl matches 1.. run attribute @s minecraft:oxygen_bonus modifier remove ca.attr_lucky_hit_chance_ench_percent
 execute unless score @s ca.ench_invigorated_lvl matches 1.. run attribute @s minecraft:oxygen_bonus modifier remove ca.attr_healing_power_ench_percent
 
 execute unless score @s ca.ench_cloudstep_lvl matches 1.. run attribute @s minecraft:oxygen_bonus modifier remove ca.attr_extra_jump_count_ench_value
@@ -46,7 +46,7 @@ execute unless score @s ca.ench_precision_lvl matches 1.. run function cartograp
 execute unless score @s ca.ench_lucky_lvl matches 1.. run function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/combat_luck
 execute unless score @s ca.ench_amplitude_lvl matches 1.. run function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/aoe_size
 execute unless score @s ca.ench_resonance_lvl matches 1.. run function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/aoe_damage
-execute unless score @s ca.ench_technique_lvl matches 1.. run function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/precise_hit_chance
+execute unless score @s ca.ench_technique_lvl matches 1.. run function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/lucky_hit_chance
 execute unless score @s ca.ench_invigorated_lvl matches 1.. run function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/healing_power
 
 execute unless score @s ca.ench_reverb_lvl matches 1.. run function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/chaining_chance

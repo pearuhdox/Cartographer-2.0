@@ -1,3 +1,5 @@
+$execute as $(telegraph) at @s run scoreboard players set @s ca.entity_purge_var 0
+
 $execute as $(telegraph) at @s if score duration= carto_event matches 199 run function carto_event:event/custom_ench/riposte/entity_use/telegraph_animation
 
 $execute as $(target) at @s if score duration= carto_event matches 160.. run tag @s add ca.riposte_blocking
@@ -12,7 +14,8 @@ $execute as $(target) at @s if score duration= carto_event matches 159 run attri
 
 $execute as $(telegraph) at $(target) if score duration= carto_event matches 159.. run tp @s ~ ~ ~ ~ ~
 
-#$execute as $(telegraph) at @s if score duration= carto_event matches 159 run scoreboard players remove $count ca.animations_var 1
+#$execute as $(telegraph) at @s if score duration= carto_event matches 159 run scoreboard players remove $count ca.entity_purge_var 1
+$execute as $(telegraph) at @s if score duration= carto_event matches 159 run scoreboard players remove $count ca.entity_purge_var 1
 $execute as $(telegraph) at @s if score duration= carto_event matches 159 run kill @s
 
 #Riposte Code

@@ -49,6 +49,8 @@ scoreboard objectives add ca.z dummy
 
 scoreboard objectives add ca.telegraph_data dummy
 
+scoreboard objectives add ca.entity_purge_var dummy
+
 scoreboard players set $charon ca.installed 0
 scoreboard players set $custom_durability ca.installed 0
 scoreboard players set $custom_enchantments ca.installed 0
@@ -103,9 +105,6 @@ scoreboard objectives add ca.glass_cdl dummy
 
 #Create mutex score
 scoreboard objectives add ca.mutex dummy
-
-#Trigger scoreboards for menus
-scoreboard objectives add menu trigger
 
 #Place Shulker Boxes needed for Shulker Box trick.
 forceload add 4206900 4206900
@@ -360,15 +359,16 @@ scoreboard objectives add ca.ui_loc dummy
 
 execute unless score $gl_reload_msg ca.gamerule matches 0.. run scoreboard players set $gl_reload_msg ca.gamerule 0
 
+#Trigger scoreboards for menus
+scoreboard objectives add menu trigger
+scoreboard objectives add ca.credits_menu trigger
 scoreboard objectives add give_dev_box trigger
-
-
-#I hate that its this simple but it looks nice and clean okay
 scoreboard objectives add bug trigger
-
-#Create options trigger score (for player options)
 scoreboard objectives add ca.options_trig trigger
-scoreboard players enable @a ca.options_trig
+
+#Create Place Score for Item Frame Placing
+scoreboard objectives add ca.place_frame minecraft.used:minecraft.glow_item_frame
+
 
 #Create the anvil, enchant table, and grindstone destruction scores.
 scoreboard objectives add ca.use_anvil minecraft.custom:minecraft.interact_with_anvil
@@ -380,7 +380,7 @@ function cartographer_core:load/integration/active/clear
 #Schedule the loading message.
 execute unless score $gl_reload_msg ca.gamerule matches 100 as @a at @s run playsound minecraft:ui.cartography_table.take_result master @s ~ ~ ~ 1 0.75
 
-function cartographer_core:load/find_libraries/start
+schedule function cartographer_core:load/find_libraries/start 2t
 
 schedule function cartographer_core:load/reload_panel 5t
 schedule function cartographer_core:load/make_dev_box 7t

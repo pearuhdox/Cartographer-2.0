@@ -16,3 +16,6 @@ tag @s add ca.quake_marker
 
 $function carto_event:api/create_single_entity_event {event:"custom_ench/quake/charge",duration:100,delay:0,parameters:{telegraph:"$(telegraph)",block:"$(block)",size:0,damage:$(damage),owner:"$(owner)"},merge_behavior:"none"}
 function cartographer_custom_enchantments:enchantment/passive/quake/custom_statuses/append_status with storage carto_event macro
+
+scoreboard players add $count ca.entity_purge_var 1
+tag @s add ca.purgable_entity

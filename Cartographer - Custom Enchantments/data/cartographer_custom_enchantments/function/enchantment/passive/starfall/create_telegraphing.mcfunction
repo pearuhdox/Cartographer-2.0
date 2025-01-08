@@ -10,4 +10,5 @@ $execute positioned $(x) $(y) $(z) align y positioned ~ ~0.05 ~ run tp @s ~ ~ ~
 tag @s add ca.starfall_telegraph
 tag @s add ca.telegraph
 
-scoreboard players add $count ca.animations_var 1
+scoreboard players add $count ca.entity_purge_var 1
+tag @s add ca.purgable_entity

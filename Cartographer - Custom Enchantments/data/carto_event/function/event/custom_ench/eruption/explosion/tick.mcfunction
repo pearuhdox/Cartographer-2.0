@@ -1,3 +1,6 @@
+$execute as $(target) at @s run scoreboard players set @s ca.entity_purge_var 0
+$execute as $(telegraph) at @s run scoreboard players set @s ca.entity_purge_var 0
+
 $execute as $(target) at @s if entity @s[tag=ca.player_spawned] if entity @s[tag=!ca.spawn_animation] at @s run function carto_event:event/custom_ench/eruption/explosion/warn_vfx_player with storage cartographer:custom_enchantments
 $execute as $(target) at @s unless entity @s[tag=ca.player_spawned] if entity @s[tag=!ca.spawn_animation] at @s run function carto_event:event/custom_ench/eruption/explosion/warn_vfx_enemy with storage cartographer:custom_enchantments
 
@@ -12,7 +15,7 @@ $execute as $(target) at @s unless entity @s[tag=ca.player_spawned] at @s run pa
 
 $execute as $(target) at @s if score @s ca.eruption_time matches 1.. run scoreboard players remove @s ca.eruption_time 1
 $execute as $(target) at @s if score @s ca.eruption_time matches 1 run kill $(telegraph)
-$execute as $(target) at @s if score @s ca.eruption_time matches 1 run scoreboard players remove $count ca.animations_var 1
+$execute as $(target) at @s if score @s ca.eruption_time matches 1 run scoreboard players remove $count ca.entity_purge_var 1
 $execute as $(target) at @s if score @s ca.eruption_time matches 1 run function carto_event:event/custom_ench/eruption/explosion/explode with storage cartographer:custom_enchantments
 
 $execute as $(target) at @s run return 1

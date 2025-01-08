@@ -172,13 +172,13 @@ scoreboard objectives add ca.attr_healing_power_percent dummy
 scoreboard objectives add ca.attr_healing_power_total dummy
 
 
-scoreboard objectives add ca.attr_precise_hit_chance_value dummy
-scoreboard objectives add ca.attr_precise_hit_chance_percent dummy
-scoreboard objectives add ca.attr_precise_hit_chance_total dummy
+scoreboard objectives add ca.attr_lucky_hit_chance_value dummy
+scoreboard objectives add ca.attr_lucky_hit_chance_percent dummy
+scoreboard objectives add ca.attr_lucky_hit_chance_total dummy
 
-scoreboard objectives add ca.attr_precise_hit_damage_value dummy
-scoreboard objectives add ca.attr_precise_hit_damage_percent dummy
-scoreboard objectives add ca.attr_precise_hit_damage_total dummy
+scoreboard objectives add ca.attr_lucky_hit_damage_value dummy
+scoreboard objectives add ca.attr_lucky_hit_damage_percent dummy
+scoreboard objectives add ca.attr_lucky_hit_damage_total dummy
 
 
 scoreboard objectives add ca.attr_chaining_damage_value dummy
@@ -244,12 +244,12 @@ scoreboard objectives add ca.healing_power_hp_past dummy
 scoreboard objectives add ca.healing_power_bank dummy
 scoreboard objectives add ca.healing_power_bank_subtract dummy
 
-scoreboard objectives add ca.precise_hit_var dummy
+scoreboard objectives add ca.lucky_hit_var dummy
 scoreboard objectives add ca.chaining_hit_var dummy
 scoreboard objectives add ca.restrike_hit_var dummy
 scoreboard objectives add ca.restrike_time dummy
 
-scoreboard objectives add ca.precise_hit_entropy dummy
+scoreboard objectives add ca.lucky_hit_entropy dummy
 scoreboard objectives add ca.restrike_entropy dummy
 scoreboard objectives add ca.chaining_hit_entropy dummy
 scoreboard objectives add ca.life_drain_entropy dummy

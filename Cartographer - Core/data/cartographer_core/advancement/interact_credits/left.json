@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"ca.core_credits_block\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "cartographer_core:handlers/place/credits/interact/left"
+  }
+}
