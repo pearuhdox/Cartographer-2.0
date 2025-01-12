@@ -16,6 +16,18 @@ tag @a remove ca.aberration_cdl
 execute if entity @s[tag=ca.player_spawned] as @e[type=#cartographer_core:affected_by_carto,distance=..16] run scoreboard players set $should_split ca.ench_aberration_lvl 1
 execute unless entity @s[tag=ca.player_spawned] as @a[distance=..16] run scoreboard players set $should_split ca.ench_aberration_lvl 1
 
+
+scoreboard players set $target ca.rand 50
+$execute as $(owner) at @s run scoreboard players operation $entropy ca.rand = @s ca.aberration_entropy
+$execute as $(owner) at @s run function cartographer_core:handlers/random/roll
+
+execute unless score $success ca.rand matches 1.. run scoreboard players set $value ca.aberration_entropy 5
+execute unless score $success ca.rand matches 1.. if score $value ca.aberration_entropy matches 0 run scoreboard players set $value ca.aberration_entropy 1
+$execute unless score $success ca.rand matches 1.. as $(owner) at @s run scoreboard players operation @s ca.aberration_entropy += $value ca.aberration_entropy
+
+execute unless score $success ca.rand matches 1.. run scoreboard players set $should_split ca.ench_aberration_lvl 0
+
+
 execute if score $should_split ca.ench_aberration_lvl matches 1.. if score @s ca.aberration_splits matches 1.. run function carto_event:event/custom_ench/aberration/slime/split/data
 
 $execute as $(owner) at @s if score @s ca.aberration_ct matches 1.. run scoreboard players remove @s ca.aberration_ct 1

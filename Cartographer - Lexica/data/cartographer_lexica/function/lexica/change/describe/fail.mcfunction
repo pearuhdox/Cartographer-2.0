@@ -1,0 +1,2 @@
+data modify storage cartographer:lexica item.components.minecraft:lore append value '{"color":"white","text":" "}'
+data modify storage cartographer:lexica item.components.minecraft:lore append value '[{"color":"red","bold":false,"italic":false,"translate":"cartographer.lexica.lore.read_fail_1","fallback":"This item does not work in"},{"color":"red","bold":false,"italic":false,"text":" "},{"color":"red","bold":true,"italic":false,"translate":"cartographer.lexica.lore.read_fail_2","fallback":"Creative Mode!"}]'

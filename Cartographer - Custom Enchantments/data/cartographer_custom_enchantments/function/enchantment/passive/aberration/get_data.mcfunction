@@ -4,17 +4,20 @@ execute unless entity @s[type=player] run scoreboard players operation $lvl ca.e
 execute if score $spawner_cause ca.ench_var matches 1.. run scoreboard players operation $lvl ca.ench_aberration_lvl = $aberration_hand ca.ench_value
 execute if score $summon_cause ca.ench_var matches 1.. run scoreboard players operation $lvl ca.ench_aberration_lvl = $kinship_lvl ca.ench_var
 
-scoreboard players operation $splits ca.ench_aberration_lvl = $lvl ca.ench_aberration_lvl
-scoreboard players remove $splits ca.ench_aberration_lvl 1
-execute if score $splits ca.ench_aberration_lvl matches 5.. run scoreboard players set $splits ca.ench_aberration_lvl 4
+#Change to modify split mechanics
+
+#scoreboard players operation $splits ca.ench_aberration_lvl = $lvl ca.ench_aberration_lvl
+#scoreboard players remove $splits ca.ench_aberration_lvl 1
+#execute if score $splits ca.ench_aberration_lvl matches 5.. run scoreboard players set $splits ca.ench_aberration_lvl 4
+scoreboard players set $splits ca.ench_aberration_lvl 2
 
 scoreboard players operation $mult ca.ench_var = $lvl ca.ench_aberration_lvl
-scoreboard players remove $mult ca.ench_var 4
-execute if score $mult ca.ench_var matches ..0 run scoreboard players set $mult ca.ench_var 1
+#scoreboard players remove $mult ca.ench_var 4
+#execute if score $mult ca.ench_var matches ..0 run scoreboard players set $mult ca.ench_var 1
 
 scoreboard players operation $min_result_damage ca.ench_var = $lvl ca.ench_aberration_lvl
-scoreboard players remove $min_result_damage ca.ench_var 4
-execute if score $min_result_damage ca.ench_var matches ..0 run scoreboard players set $min_result_damage ca.ench_var 1
+#scoreboard players remove $min_result_damage ca.ench_var 4
+#execute if score $min_result_damage ca.ench_var matches ..0 run scoreboard players set $min_result_damage ca.ench_var 1
 
 scoreboard players operation $mult ca.ench_var *= $20 ca.CONSTANT
 

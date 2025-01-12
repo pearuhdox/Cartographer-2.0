@@ -3,7 +3,7 @@ execute if score $spawner_cause ca.ench_var matches 1.. run scoreboard players o
 execute if score $summon_cause ca.ench_var matches 1.. run scoreboard players operation $lvl ca.ench_soulfire_lvl = $kinship_lvl ca.ench_var
 
 scoreboard players operation $mult ca.ench_var = $lvl ca.ench_soulfire_lvl
-scoreboard players operation $mult ca.ench_var *= $25 ca.CONSTANT
+scoreboard players operation $mult ca.ench_var *= $20 ca.CONSTANT
 scoreboard players operation $min_result_damage ca.ench_var = $lvl ca.ench_soulfire_lvl
 scoreboard players operation $min_result_damage ca.ench_var *= $15 ca.CONSTANT
 scoreboard players operation $min_result_damage ca.ench_var *= $10 ca.CONSTANT

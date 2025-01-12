@@ -3,8 +3,8 @@ execute if score $spawner_cause ca.ench_var matches 1.. run scoreboard players o
 execute if score $summon_cause ca.ench_var matches 1.. run scoreboard players operation $lvl ca.ench_storm_lvl = $kinship_lvl ca.ench_var
 
 scoreboard players operation $duration ca.ench_storm_lvl = $storm ca.ench_value
-scoreboard players add $duration ca.ench_storm_lvl 4
-scoreboard players operation $duration ca.ench_storm_lvl *= $20 ca.CONSTANT
+scoreboard players add $duration ca.ench_storm_lvl 3
+scoreboard players operation $duration ca.ench_storm_lvl *= $30 ca.CONSTANT
 scoreboard players add $duration ca.ench_storm_lvl 10
 
 

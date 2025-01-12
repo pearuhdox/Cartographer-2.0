@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "change_lexica": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "lexica_cartographia": 1
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "cartographer_lexica:lexica/change"
+  }
+}

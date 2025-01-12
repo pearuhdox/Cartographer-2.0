@@ -1,7 +1,7 @@
 $execute as $(telegraph) at @s run scoreboard players set @s ca.entity_purge_var 0
 
 scoreboard players operation $mod ca.ench_storm_lvl = duration= carto_event
-scoreboard players operation $mod ca.ench_storm_lvl %= $20 ca.CONSTANT
+scoreboard players operation $mod ca.ench_storm_lvl %= $30 ca.CONSTANT
 
 $execute as $(target) positioned $(x) $(y) $(z) rotated $(rotation) 0 run function carto_event:event/custom_ench/storm/cloud/vfx with storage carto_event current[-1].parameters
 

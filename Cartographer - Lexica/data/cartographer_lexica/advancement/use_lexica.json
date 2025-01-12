@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "draw_bow": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "item": {
+          "items": [
+            "minecraft:bundle"
+          ],
+          "predicates": {
+            "minecraft:custom_data": {
+              "lexica_cartographia": 1
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "cartographer_lexica:lexica/using"
+  }
+}

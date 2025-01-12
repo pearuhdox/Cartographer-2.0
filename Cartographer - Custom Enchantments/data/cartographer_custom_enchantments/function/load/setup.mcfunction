@@ -375,6 +375,7 @@ scoreboard objectives add ca.sprint_dist_trailblazer minecraft.custom:minecraft.
 
 scoreboard objectives add ca.starfall_entropy dummy
 scoreboard objectives add ca.orbit_entropy dummy
+scoreboard objectives add ca.aberration_entropy dummy
 
 scoreboard objectives add ca.starfall_tick_cap dummy
 scoreboard objectives add ca.orbit_tick_cap dummy

@@ -7,8 +7,8 @@ execute if score $summon_cause ca.ench_var matches 1.. run scoreboard players op
 scoreboard players operation $mult ca.ench_var = $lvl ca.ench_quake_lvl
 scoreboard players operation $min_result_damage ca.ench_var = $lvl ca.ench_quake_lvl
 
-scoreboard players operation $mult ca.ench_var *= $25 ca.CONSTANT
-scoreboard players operation $min_result_damage ca.ench_var *= $20 ca.CONSTANT
+scoreboard players operation $mult ca.ench_var *= $15 ca.CONSTANT
+scoreboard players operation $min_result_damage ca.ench_var *= $15 ca.CONSTANT
 scoreboard players operation $min_result_damage ca.ench_var *= $10 ca.CONSTANT
 function cartographer_custom_enchantments:enchantment/helper/calc_adp_dmg
 

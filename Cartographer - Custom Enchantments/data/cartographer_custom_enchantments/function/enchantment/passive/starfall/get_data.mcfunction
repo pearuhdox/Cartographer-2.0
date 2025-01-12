@@ -3,7 +3,7 @@ execute if score $spawner_cause ca.ench_var matches 1.. run scoreboard players o
 
 scoreboard players operation $mult ca.ench_var *= $15 ca.CONSTANT
 scoreboard players operation $min_result_damage ca.ench_var = $lvl ca.ench_starfall_lvl
-scoreboard players operation $min_result_damage ca.ench_var *= $15 ca.CONSTANT
+scoreboard players operation $min_result_damage ca.ench_var *= $125 ca.CONSTANT
 scoreboard players operation $min_result_damage ca.ench_var *= $10 ca.CONSTANT
 function cartographer_custom_enchantments:enchantment/helper/calc_adp_dmg
 

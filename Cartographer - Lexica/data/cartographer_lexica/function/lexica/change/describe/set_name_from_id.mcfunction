@@ -1,0 +1,1 @@
+$data modify storage cartographer:lexica visual set value '{"fallback":"Lexica Item","translate":"item.minecraft.$(item_id)","color":"white","italic":false}'
