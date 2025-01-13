@@ -4,8 +4,8 @@ scoreboard players set $min_result_damage ca.ench_var 200
 execute on attacker run function cartographer_custom_enchantments:enchantment/helper/calc_adp_dmg
 
 scoreboard players operation $range ca.ench_var = $explosive ca.ench_value
-scoreboard players operation $range ca.ench_var *= $25 ca.CONSTANT
-scoreboard players add $range ca.ench_var 125
+scoreboard players operation $range ca.ench_var *= $20 ca.CONSTANT
+scoreboard players add $range ca.ench_var 160
 
 execute if score @s ca.attr_aoe_damage_value matches -1999999.. run scoreboard players operation $result_damage ca.ench_var += @s ca.attr_aoe_damage_value
 
