@@ -309,18 +309,18 @@ execute if score $ench_sharpshot ca.lexica_var matches 1.. run function cartogra
 execute store result score $ench_explosive ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/unique/general/explosive
 execute if score $ench_explosive ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"explosive",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.explosive", "fallback": "Explosive", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
 execute if score $ench_explosive ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
-execute if score $ench_explosive ca.lexica_var matches 1.. run scoreboard players set $keyword_direct_attacks ca.lexica_var 1
+execute if score $ench_explosive ca.lexica_var matches 1.. run scoreboard players set $keyword_direct_attack ca.lexica_var 1
 execute if score $ench_explosive ca.lexica_var matches 1.. run scoreboard players set $keyword_dynamic ca.lexica_var 1
 
 execute store result score $ench_pulling ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/unique/general/pulling
 execute if score $ench_pulling ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"pulling",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.pulling", "fallback": "Pulling", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
 execute if score $ench_pulling ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
-execute if score $ench_pulling ca.lexica_var matches 1.. run scoreboard players set $keyword_direct_attacks ca.lexica_var 1
+execute if score $ench_pulling ca.lexica_var matches 1.. run scoreboard players set $keyword_direct_attack ca.lexica_var 1
 
 execute store result score $ench_recoil ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/unique/general/recoil
 execute if score $ench_recoil ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"recoil",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.recoil", "fallback": "Recoil", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
 execute if score $ench_recoil ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
-execute if score $ench_recoil ca.lexica_var matches 1.. run scoreboard players set $keyword_direct_attacks ca.lexica_var 1
+execute if score $ench_recoil ca.lexica_var matches 1.. run scoreboard players set $keyword_direct_attack ca.lexica_var 1
 execute if score $ench_recoil ca.lexica_var matches 1.. run scoreboard players set $keyword_self_movement ca.lexica_var 1
 
 execute store result score $ench_repulsion ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/unique/general/repulsion
