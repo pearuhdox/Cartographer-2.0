@@ -68,6 +68,7 @@ scoreboard players set @s ca.equip_turtle_helmet 0
 
 scoreboard players set @s ca.attribute_cleanse_delay 1
 
+
 execute if score @s ca.drop_item matches 1.. run function cartographer_core:loop/player/break_item
 execute if score @s ca.drop_item matches 1.. run scoreboard players set @s ca.drop_item 0
 

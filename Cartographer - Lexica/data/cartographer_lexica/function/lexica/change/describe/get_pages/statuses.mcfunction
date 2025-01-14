@@ -1,5 +1,3 @@
-scoreboard players set $status_stealth ca.lexica_var 0
-
 
 execute if score $status_stealth ca.lexica_var matches 0 store result score $status_stealth ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"stealth"}]
 execute if score $status_stealth ca.lexica_var matches 0 store result score $status_stealth ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.target[{id:"stealth"}]
@@ -105,8 +103,6 @@ execute if score $status_stealth ca.lexica_var matches 0 store result score $sta
 execute if score $status_stealth ca.lexica_var matches 0 store result score $status_stealth ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.target[{id:"stealth"}]
 
 execute if score $status_stealth ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"stealth",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.stealth", "fallback": "Stealth", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
-
-scoreboard players set $status_barricade ca.lexica_var 0
 
 
 execute if score $status_barricade ca.lexica_var matches 0 store result score $status_barricade ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"barricade"}]
@@ -214,8 +210,6 @@ execute if score $status_barricade ca.lexica_var matches 0 store result score $s
 
 execute if score $status_barricade ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"barricade",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.barricade", "fallback": "Barricade", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
 
-scoreboard players set $status_nullify ca.lexica_var 0
-
 
 execute if score $status_nullify ca.lexica_var matches 0 store result score $status_nullify ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"nullify"}]
 execute if score $status_nullify ca.lexica_var matches 0 store result score $status_nullify ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.target[{id:"nullify"}]
@@ -321,8 +315,6 @@ execute if score $status_nullify ca.lexica_var matches 0 store result score $sta
 execute if score $status_nullify ca.lexica_var matches 0 store result score $status_nullify ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.target[{id:"nullify"}]
 
 execute if score $status_nullify ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"nullify",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.nullify", "fallback": "Nullify", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
-
-scoreboard players set $status_evasion ca.lexica_var 0
 
 
 execute if score $status_evasion ca.lexica_var matches 0 store result score $status_evasion ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"evasion"}]
@@ -430,8 +422,6 @@ execute if score $status_evasion ca.lexica_var matches 0 store result score $sta
 
 execute if score $status_evasion ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"evasion",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.evasion", "fallback": "Evasion", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
 
-scoreboard players set $status_absorption ca.lexica_var 0
-
 
 execute if score $status_absorption ca.lexica_var matches 0 store result score $status_absorption ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"absorption"}]
 execute if score $status_absorption ca.lexica_var matches 0 store result score $status_absorption ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.target[{id:"absorption"}]
@@ -537,8 +527,6 @@ execute if score $status_absorption ca.lexica_var matches 0 store result score $
 execute if score $status_absorption ca.lexica_var matches 0 store result score $status_absorption ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.target[{id:"absorption"}]
 
 execute if score $status_absorption ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"absorption",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.absorption", "fallback": "Absorption", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
-
-scoreboard players set $status_instant_absorption ca.lexica_var 0
 
 
 execute if score $status_instant_absorption ca.lexica_var matches 0 store result score $status_instant_absorption ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"instant_absorption"}]
@@ -646,8 +634,6 @@ execute if score $status_instant_absorption ca.lexica_var matches 0 store result
 
 execute if score $status_instant_absorption ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"instant_absorption",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.instant_absorption", "fallback": "Instant Absorption", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
 
-scoreboard players set $status_regeneration ca.lexica_var 0
-
 
 execute if score $status_regeneration ca.lexica_var matches 0 store result score $status_regeneration ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"regeneration"}]
 execute if score $status_regeneration ca.lexica_var matches 0 store result score $status_regeneration ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.target[{id:"regeneration"}]
@@ -753,8 +739,6 @@ execute if score $status_regeneration ca.lexica_var matches 0 store result score
 execute if score $status_regeneration ca.lexica_var matches 0 store result score $status_regeneration ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.target[{id:"regeneration"}]
 
 execute if score $status_regeneration ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"regeneration",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.regeneration", "fallback": "Regeneration", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
-
-scoreboard players set $status_instant_healing ca.lexica_var 0
 
 
 execute if score $status_instant_healing ca.lexica_var matches 0 store result score $status_instant_healing ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"instant_healing"}]
@@ -862,8 +846,6 @@ execute if score $status_instant_healing ca.lexica_var matches 0 store result sc
 
 execute if score $status_instant_healing ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"instant_healing",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.instant_healing", "fallback": "Instant Healing", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
 
-scoreboard players set $status_instant_damage ca.lexica_var 0
-
 
 execute if score $status_instant_damage ca.lexica_var matches 0 store result score $status_instant_damage ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"instant_damage"}]
 execute if score $status_instant_damage ca.lexica_var matches 0 store result score $status_instant_damage ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.target[{id:"instant_damage"}]
@@ -969,8 +951,6 @@ execute if score $status_instant_damage ca.lexica_var matches 0 store result sco
 execute if score $status_instant_damage ca.lexica_var matches 0 store result score $status_instant_damage ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.target[{id:"instant_damage"}]
 
 execute if score $status_instant_damage ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"instant_damage",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.instant_damage", "fallback": "Instant Damage", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
-
-scoreboard players set $status_fire_aspect ca.lexica_var 0
 
 
 execute if score $status_fire_aspect ca.lexica_var matches 0 store result score $status_fire_aspect ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"fire_aspect"}]
@@ -1078,8 +1058,6 @@ execute if score $status_fire_aspect ca.lexica_var matches 0 store result score 
 
 execute if score $status_fire_aspect ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"fire_aspect",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.fire_aspect", "fallback": "Fire Aspect", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
 
-scoreboard players set $status_cleansed ca.lexica_var 0
-
 
 execute if score $status_cleansed ca.lexica_var matches 0 store result score $status_cleansed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"cleansed"}]
 execute if score $status_cleansed ca.lexica_var matches 0 store result score $status_cleansed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.target[{id:"cleansed"}]
@@ -1185,8 +1163,6 @@ execute if score $status_cleansed ca.lexica_var matches 0 store result score $st
 execute if score $status_cleansed ca.lexica_var matches 0 store result score $status_cleansed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.target[{id:"cleansed"}]
 
 execute if score $status_cleansed ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"cleansed",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.cleansed", "fallback": "Cleansed", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
-
-scoreboard players set $status_purged ca.lexica_var 0
 
 
 execute if score $status_purged ca.lexica_var matches 0 store result score $status_purged ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"purged"}]
@@ -1294,8 +1270,6 @@ execute if score $status_purged ca.lexica_var matches 0 store result score $stat
 
 execute if score $status_purged ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"purged",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.purged", "fallback": "Purged", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
 
-scoreboard players set $status_unstoppable ca.lexica_var 0
-
 
 execute if score $status_unstoppable ca.lexica_var matches 0 store result score $status_unstoppable ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"unstoppable"}]
 execute if score $status_unstoppable ca.lexica_var matches 0 store result score $status_unstoppable ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.target[{id:"unstoppable"}]
@@ -1401,8 +1375,6 @@ execute if score $status_unstoppable ca.lexica_var matches 0 store result score 
 execute if score $status_unstoppable ca.lexica_var matches 0 store result score $status_unstoppable ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.target[{id:"unstoppable"}]
 
 execute if score $status_unstoppable ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"unstoppable",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.unstoppable", "fallback": "Unstoppable", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
-
-scoreboard players set $status_wither ca.lexica_var 0
 
 
 execute if score $status_wither ca.lexica_var matches 0 store result score $status_wither ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"wither"}]
@@ -1510,8 +1482,6 @@ execute if score $status_wither ca.lexica_var matches 0 store result score $stat
 
 execute if score $status_wither ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"wither",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.wither", "fallback": "Wither", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
 
-scoreboard players set $status_bleeding ca.lexica_var 0
-
 
 execute if score $status_bleeding ca.lexica_var matches 0 store result score $status_bleeding ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"bleeding"}]
 execute if score $status_bleeding ca.lexica_var matches 0 store result score $status_bleeding ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.target[{id:"bleeding"}]
@@ -1617,8 +1587,6 @@ execute if score $status_bleeding ca.lexica_var matches 0 store result score $st
 execute if score $status_bleeding ca.lexica_var matches 0 store result score $status_bleeding ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.target[{id:"bleeding"}]
 
 execute if score $status_bleeding ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"bleeding",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.bleeding", "fallback": "Bleeding", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
-
-scoreboard players set $status_shocked ca.lexica_var 0
 
 
 execute if score $status_shocked ca.lexica_var matches 0 store result score $status_shocked ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"shocked"}]
@@ -1726,8 +1694,6 @@ execute if score $status_shocked ca.lexica_var matches 0 store result score $sta
 
 execute if score $status_shocked ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"shocked",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.shocked", "fallback": "Shocked", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
 
-scoreboard players set $status_infected ca.lexica_var 0
-
 
 execute if score $status_infected ca.lexica_var matches 0 store result score $status_infected ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"infected"}]
 execute if score $status_infected ca.lexica_var matches 0 store result score $status_infected ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.target[{id:"infected"}]
@@ -1833,8 +1799,6 @@ execute if score $status_infected ca.lexica_var matches 0 store result score $st
 execute if score $status_infected ca.lexica_var matches 0 store result score $status_infected ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.target[{id:"infected"}]
 
 execute if score $status_infected ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"infected",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.infected", "fallback": "Infected", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
-
-scoreboard players set $status_grounded ca.lexica_var 0
 
 
 execute if score $status_grounded ca.lexica_var matches 0 store result score $status_grounded ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"grounded"}]
@@ -1942,8 +1906,6 @@ execute if score $status_grounded ca.lexica_var matches 0 store result score $st
 
 execute if score $status_grounded ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"grounded",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.grounded", "fallback": "Grounded", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
 
-scoreboard players set $status_silenced ca.lexica_var 0
-
 
 execute if score $status_silenced ca.lexica_var matches 0 store result score $status_silenced ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"silenced"}]
 execute if score $status_silenced ca.lexica_var matches 0 store result score $status_silenced ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.target[{id:"silenced"}]
@@ -2049,8 +2011,6 @@ execute if score $status_silenced ca.lexica_var matches 0 store result score $st
 execute if score $status_silenced ca.lexica_var matches 0 store result score $status_silenced ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.target[{id:"silenced"}]
 
 execute if score $status_silenced ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"silenced",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.silenced", "fallback": "Silenced", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
-
-scoreboard players set $status_slowness ca.lexica_var 0
 
 
 execute if score $status_slowness ca.lexica_var matches 0 store result score $status_slowness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"slowness"}]
@@ -2158,8 +2118,6 @@ execute if score $status_slowness ca.lexica_var matches 0 store result score $st
 
 execute if score $status_slowness ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"slowness",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.slowness", "fallback": "Slowness", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
 
-scoreboard players set $status_weakness ca.lexica_var 0
-
 
 execute if score $status_weakness ca.lexica_var matches 0 store result score $status_weakness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"weakness"}]
 execute if score $status_weakness ca.lexica_var matches 0 store result score $status_weakness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.target[{id:"weakness"}]
@@ -2265,8 +2223,6 @@ execute if score $status_weakness ca.lexica_var matches 0 store result score $st
 execute if score $status_weakness ca.lexica_var matches 0 store result score $status_weakness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.target[{id:"weakness"}]
 
 execute if score $status_weakness ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"weakness",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.weakness", "fallback": "Weakness", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
-
-scoreboard players set $status_blindness ca.lexica_var 0
 
 
 execute if score $status_blindness ca.lexica_var matches 0 store result score $status_blindness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"blindness"}]
@@ -2374,8 +2330,6 @@ execute if score $status_blindness ca.lexica_var matches 0 store result score $s
 
 execute if score $status_blindness ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"blindness",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.blindness", "fallback": "Blindness", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
 
-scoreboard players set $status_armor_shred ca.lexica_var 0
-
 
 execute if score $status_armor_shred ca.lexica_var matches 0 store result score $status_armor_shred ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"armor_shred"}]
 execute if score $status_armor_shred ca.lexica_var matches 0 store result score $status_armor_shred ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.target[{id:"armor_shred"}]
@@ -2481,8 +2435,6 @@ execute if score $status_armor_shred ca.lexica_var matches 0 store result score 
 execute if score $status_armor_shred ca.lexica_var matches 0 store result score $status_armor_shred ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.target[{id:"armor_shred"}]
 
 execute if score $status_armor_shred ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"armor_shred",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.armor_shred", "fallback": "Armor Shred", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
-
-scoreboard players set $status_speed ca.lexica_var 0
 
 
 execute if score $status_speed ca.lexica_var matches 0 store result score $status_speed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"speed"}]
@@ -2590,8 +2542,6 @@ execute if score $status_speed ca.lexica_var matches 0 store result score $statu
 
 execute if score $status_speed ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"speed",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.speed", "fallback": "Speed", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
 
-scoreboard players set $status_strength ca.lexica_var 0
-
 
 execute if score $status_strength ca.lexica_var matches 0 store result score $status_strength ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"strength"}]
 execute if score $status_strength ca.lexica_var matches 0 store result score $status_strength ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.target[{id:"strength"}]
@@ -2697,8 +2647,6 @@ execute if score $status_strength ca.lexica_var matches 0 store result score $st
 execute if score $status_strength ca.lexica_var matches 0 store result score $status_strength ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.target[{id:"strength"}]
 
 execute if score $status_strength ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"strength",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.strength", "fallback": "Strength", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
-
-scoreboard players set $status_armor_buff ca.lexica_var 0
 
 
 execute if score $status_armor_buff ca.lexica_var matches 0 store result score $status_armor_buff ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"armor_buff"}]
@@ -2806,8 +2754,6 @@ execute if score $status_armor_buff ca.lexica_var matches 0 store result score $
 
 execute if score $status_armor_buff ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"armor_buff",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.armor_buff", "fallback": "Armor Buff", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
 
-scoreboard players set $status_exposed ca.lexica_var 0
-
 
 execute if score $status_exposed ca.lexica_var matches 0 store result score $status_exposed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"exposed"}]
 execute if score $status_exposed ca.lexica_var matches 0 store result score $status_exposed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.target[{id:"exposed"}]
@@ -2913,8 +2859,6 @@ execute if score $status_exposed ca.lexica_var matches 0 store result score $sta
 execute if score $status_exposed ca.lexica_var matches 0 store result score $status_exposed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.target[{id:"exposed"}]
 
 execute if score $status_exposed ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"exposed",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.exposed", "fallback": "Exposed", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
-
-scoreboard players set $status_shackled ca.lexica_var 0
 
 
 execute if score $status_shackled ca.lexica_var matches 0 store result score $status_shackled ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"shackled"}]
@@ -3022,8 +2966,6 @@ execute if score $status_shackled ca.lexica_var matches 0 store result score $st
 
 execute if score $status_shackled ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"shackled",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.shackled", "fallback": "Shackled", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
 
-scoreboard players set $status_evocation ca.lexica_var 0
-
 
 execute if score $status_evocation ca.lexica_var matches 0 store result score $status_evocation ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"evocation"}]
 execute if score $status_evocation ca.lexica_var matches 0 store result score $status_evocation ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.target[{id:"evocation"}]
@@ -3129,8 +3071,6 @@ execute if score $status_evocation ca.lexica_var matches 0 store result score $s
 execute if score $status_evocation ca.lexica_var matches 0 store result score $status_evocation ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.target[{id:"evocation"}]
 
 execute if score $status_evocation ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"evocation",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.evocation", "fallback": "Evocation", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
-
-scoreboard players set $status_brittle ca.lexica_var 0
 
 
 execute if score $status_brittle ca.lexica_var matches 0 store result score $status_brittle ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"brittle"}]
@@ -3238,8 +3178,6 @@ execute if score $status_brittle ca.lexica_var matches 0 store result score $sta
 
 execute if score $status_brittle ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"brittle",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.brittle", "fallback": "Brittle", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
 
-scoreboard players set $status_execute ca.lexica_var 0
-
 
 execute if score $status_execute ca.lexica_var matches 0 store result score $status_execute ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"execute"}]
 execute if score $status_execute ca.lexica_var matches 0 store result score $status_execute ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.target[{id:"execute"}]
@@ -3345,8 +3283,6 @@ execute if score $status_execute ca.lexica_var matches 0 store result score $sta
 execute if score $status_execute ca.lexica_var matches 0 store result score $status_execute ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.target[{id:"execute"}]
 
 execute if score $status_execute ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"execute",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.execute", "fallback": "Execute", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
-
-scoreboard players set $status_windblast ca.lexica_var 0
 
 
 execute if score $status_windblast ca.lexica_var matches 0 store result score $status_windblast ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"windblast"}]
@@ -3454,8 +3390,6 @@ execute if score $status_windblast ca.lexica_var matches 0 store result score $s
 
 execute if score $status_windblast ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"windblast",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.windblast", "fallback": "Windblast", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
 
-scoreboard players set $status_slippery ca.lexica_var 0
-
 
 execute if score $status_slippery ca.lexica_var matches 0 store result score $status_slippery ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"slippery"}]
 execute if score $status_slippery ca.lexica_var matches 0 store result score $status_slippery ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.target[{id:"slippery"}]
@@ -3561,8 +3495,6 @@ execute if score $status_slippery ca.lexica_var matches 0 store result score $st
 execute if score $status_slippery ca.lexica_var matches 0 store result score $status_slippery ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.target[{id:"slippery"}]
 
 execute if score $status_slippery ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"slippery",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.slippery", "fallback": "Slippery", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
-
-scoreboard players set $status_oiled ca.lexica_var 0
 
 
 execute if score $status_oiled ca.lexica_var matches 0 store result score $status_oiled ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"oiled"}]
@@ -3670,8 +3602,6 @@ execute if score $status_oiled ca.lexica_var matches 0 store result score $statu
 
 execute if score $status_oiled ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"oiled",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.oiled", "fallback": "Oiled", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
 
-scoreboard players set $status_siphon_speed ca.lexica_var 0
-
 
 execute if score $status_siphon_speed ca.lexica_var matches 0 store result score $status_siphon_speed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"siphon_speed"}]
 execute if score $status_siphon_speed ca.lexica_var matches 0 store result score $status_siphon_speed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.target[{id:"siphon_speed"}]
@@ -3777,8 +3707,6 @@ execute if score $status_siphon_speed ca.lexica_var matches 0 store result score
 execute if score $status_siphon_speed ca.lexica_var matches 0 store result score $status_siphon_speed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.target[{id:"siphon_speed"}]
 
 execute if score $status_siphon_speed ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"siphon_speed",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.siphon_speed", "fallback": "Siphon Speed", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
-
-scoreboard players set $status_siphon_strength ca.lexica_var 0
 
 
 execute if score $status_siphon_strength ca.lexica_var matches 0 store result score $status_siphon_strength ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"siphon_strength"}]
@@ -3886,8 +3814,6 @@ execute if score $status_siphon_strength ca.lexica_var matches 0 store result sc
 
 execute if score $status_siphon_strength ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"siphon_strength",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.siphon_strength", "fallback": "Siphon Strength", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
 
-scoreboard players set $status_siphon_health ca.lexica_var 0
-
 
 execute if score $status_siphon_health ca.lexica_var matches 0 store result score $status_siphon_health ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"siphon_health"}]
 execute if score $status_siphon_health ca.lexica_var matches 0 store result score $status_siphon_health ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.target[{id:"siphon_health"}]
@@ -3993,8 +3919,6 @@ execute if score $status_siphon_health ca.lexica_var matches 0 store result scor
 execute if score $status_siphon_health ca.lexica_var matches 0 store result score $status_siphon_health ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.target[{id:"siphon_health"}]
 
 execute if score $status_siphon_health ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"siphon_health",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.siphon_health", "fallback": "Siphon Health", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
-
-scoreboard players set $status_harvest ca.lexica_var 0
 
 
 execute if score $status_harvest ca.lexica_var matches 0 store result score $status_harvest ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"harvest"}]
@@ -4102,8 +4026,6 @@ execute if score $status_harvest ca.lexica_var matches 0 store result score $sta
 
 execute if score $status_harvest ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"harvest",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.harvest", "fallback": "Harvest", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
 
-scoreboard players set $status_confused ca.lexica_var 0
-
 
 execute if score $status_confused ca.lexica_var matches 0 store result score $status_confused ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"confused"}]
 execute if score $status_confused ca.lexica_var matches 0 store result score $status_confused ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.target[{id:"confused"}]
@@ -4209,8 +4131,6 @@ execute if score $status_confused ca.lexica_var matches 0 store result score $st
 execute if score $status_confused ca.lexica_var matches 0 store result score $status_confused ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.target[{id:"confused"}]
 
 execute if score $status_confused ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"confused",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.confused", "fallback": "Confused", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
-
-scoreboard players set $status_morphed ca.lexica_var 0
 
 
 execute if score $status_morphed ca.lexica_var matches 0 store result score $status_morphed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"morphed"}]
@@ -4318,8 +4238,6 @@ execute if score $status_morphed ca.lexica_var matches 0 store result score $sta
 
 execute if score $status_morphed ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"morphed",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.morphed", "fallback": "Morphed", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
 
-scoreboard players set $status_frozen ca.lexica_var 0
-
 
 execute if score $status_frozen ca.lexica_var matches 0 store result score $status_frozen ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"frozen"}]
 execute if score $status_frozen ca.lexica_var matches 0 store result score $status_frozen ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.target[{id:"frozen"}]
@@ -4425,8 +4343,6 @@ execute if score $status_frozen ca.lexica_var matches 0 store result score $stat
 execute if score $status_frozen ca.lexica_var matches 0 store result score $status_frozen ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.target[{id:"frozen"}]
 
 execute if score $status_frozen ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"frozen",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.frozen", "fallback": "Frozen", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
-
-scoreboard players set $status_asleep ca.lexica_var 0
 
 
 execute if score $status_asleep ca.lexica_var matches 0 store result score $status_asleep ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"asleep"}]
@@ -4534,8 +4450,6 @@ execute if score $status_asleep ca.lexica_var matches 0 store result score $stat
 
 execute if score $status_asleep ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"asleep",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.asleep", "fallback": "Asleep", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
 
-scoreboard players set $status_stunned ca.lexica_var 0
-
 
 execute if score $status_stunned ca.lexica_var matches 0 store result score $status_stunned ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"stunned"}]
 execute if score $status_stunned ca.lexica_var matches 0 store result score $status_stunned ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.target[{id:"stunned"}]
@@ -4641,8 +4555,7 @@ execute if score $status_stunned ca.lexica_var matches 0 store result score $sta
 execute if score $status_stunned ca.lexica_var matches 0 store result score $status_stunned ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.target[{id:"stunned"}]
 
 execute if score $status_stunned ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"stunned",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.stunned", "fallback": "Stunned", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
-
-scoreboard players set $status_dazed ca.lexica_var 0
+execute if score $status_stunned ca.lexica_var matches 1.. run scoreboard players set $status_dazed ca.lexica_var 1
 
 
 execute if score $status_dazed ca.lexica_var matches 0 store result score $status_dazed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"dazed"}]

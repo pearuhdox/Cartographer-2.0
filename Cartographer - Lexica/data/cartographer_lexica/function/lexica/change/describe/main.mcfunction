@@ -18,3 +18,6 @@ execute if entity @s[gamemode=creative] run function cartographer_lexica:lexica/
 
 
 function cartographer_lexica:lexica/change/describe/return_item
+
+tag @s add ca.do_enchant_calc
+tag @s add ca.do_ench_reset
