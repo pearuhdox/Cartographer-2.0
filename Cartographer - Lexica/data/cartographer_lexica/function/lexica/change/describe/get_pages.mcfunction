@@ -17,7 +17,7 @@ execute store result score @s ca.lexica_size run data get storage cartographer:l
 execute if score @s ca.lexica_size matches 1 run data modify storage cartographer:lexica item.components.minecraft:bundle_contents append value {id:"minecraft:filled_map",components:{"minecraft:item_model":"minecraft:barrier","minecraft:max_stack_size":1,"minecraft:custom_name":'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "lexica.lore.no_information", "fallback": "No Lexica Information", "bold": true, "underlined": false, "italic": false, "color": "red"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',"minecraft:custom_data":{lexica_page:1b,category:"no_information",id:"no_information"}}}
 execute if score @s ca.lexica_size matches 1 run scoreboard players add @s ca.lexica_size 1
 
-#execute if score @s ca.lexica_size matches 13.. run function cartographer_lexica:lexica/change/describe/get_pages/sub_pages/start
+execute if score @s ca.lexica_size matches 13.. run function cartographer_lexica:lexica/change/describe/get_pages/sub_pages/start
 
 data modify storage cartographer:lexica item.components.minecraft:custom_data.contents set value []
 data modify storage cartographer:lexica item.components.minecraft:custom_data.contents set from storage cartographer:lexica item.components.minecraft:bundle_contents
