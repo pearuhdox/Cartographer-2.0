@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+      "#cartographer_core:enchant_support/passive_armor",
+      "#cartographer_core:enchant_support/passive_offhand",
+      "#minecraft:pickaxes"
+    ]
+}  

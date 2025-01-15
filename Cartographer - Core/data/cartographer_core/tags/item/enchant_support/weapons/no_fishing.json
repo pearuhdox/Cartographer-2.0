@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+      "#cartographer_core:melee_weapons",
+      "minecraft:bow",
+      "minecraft:trident",
+      "minecraft:crossbow"
+    ]
+}  

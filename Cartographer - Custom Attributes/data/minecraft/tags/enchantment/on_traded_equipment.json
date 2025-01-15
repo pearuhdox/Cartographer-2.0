@@ -18,6 +18,8 @@
       "cartographer_custom_attributes:custom/precision",
       "cartographer_custom_attributes:custom/echo",
       "cartographer_custom_attributes:custom/reverb",
-      "cartographer_custom_attributes:custom/lifesteal"
+      "cartographer_custom_attributes:custom/lifesteal",
+      "cartographer_custom_attributes:custom/cloudstep",
+      "cartographer_custom_attributes:custom/windborn"
     ]
   }

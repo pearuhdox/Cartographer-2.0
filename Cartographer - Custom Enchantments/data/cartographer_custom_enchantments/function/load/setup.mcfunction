@@ -3,6 +3,7 @@
 scoreboard objectives add lightborn trigger
 scoreboard objectives add toggle_warning trigger
 scoreboard objectives add toggle_charging trigger
+scoreboard objectives add toggle_cc trigger
 
 #Setup scoreboards for level tracking
 scoreboard objectives add ca.ench_spurs_lvl dummy
@@ -512,6 +513,10 @@ scoreboard objectives add ca.no_warning dummy
 scoreboard objectives add ca.charging_time dummy
 scoreboard objectives add ca.charging_anim dummy
 scoreboard objectives add ca.no_charging dummy
+
+scoreboard objectives add ca.cc_time dummy
+scoreboard objectives add ca.cc_anim dummy
+scoreboard objectives add ca.no_cc dummy
 
 #Infinity Edge Cases
 scoreboard objectives add ca.use_firework_rocket minecraft.used:minecraft.firework_rocket

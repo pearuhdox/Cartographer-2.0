@@ -5,7 +5,7 @@
   },
   "exclusive_set": "#cartographer_custom_attributes:exclusive_set/stat_weapon",
   "supported_items": "#cartographer_core:enchant_support/weapons",
-  "primary_items": "#cartographer_core:enchant_support/weapons",
+  "primary_items": "#cartographer_core:enchant_support/weapons/no_fishing",
   "weight": 1,
   "max_level": 10,
   "min_cost": {

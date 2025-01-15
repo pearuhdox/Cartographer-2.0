@@ -2,6 +2,7 @@
     "replace": false,
     "values": [
       "#cartographer_core:enchant_support/passive",
-      "#minecraft:pickaxes"
+      "#minecraft:pickaxes",
+      "#cartographer_core:enchant_support/weapons"
     ]
 }  

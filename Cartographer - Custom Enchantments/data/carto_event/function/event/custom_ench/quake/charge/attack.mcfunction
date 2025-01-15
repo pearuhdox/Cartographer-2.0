@@ -1,4 +1,4 @@
-playsound minecraft:entity.zombie.attack_wooden_door player @a[distance=..16] ~ ~ ~ 0.35 0.85
+playsound minecraft:entity.zombie.attack_wooden_door player @a[distance=..16] ~ ~ ~ 0.15 0.85
 
 $execute rotated ~15 0 positioned ^ ^ ^$(size) run function carto_event:event/custom_ench/quake/charge/attack_part
 $execute rotated ~30 0 positioned ^ ^ ^$(size) run function carto_event:event/custom_ench/quake/charge/attack_part

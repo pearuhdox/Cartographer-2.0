@@ -1,1 +1,0 @@
-advancement revoke @s from cartographer_charon:death_note/root

@@ -3,8 +3,8 @@
       "translate": "enchantment.cartographer.correction",
     "fallback": "Correction"
     },
-    "primary_items": "#cartographer_custom_enchantments:ranged_weapon_no_fishing",
-    "supported_items": "#cartographer_custom_enchantments:weapons_no_fishing",
+    "primary_items": "#cartographer_core:enchant_support/weapons/ranged_no_fishing",
+    "supported_items": "#cartographer_core:enchant_support/weapons/no_fishing",
     "weight": 1,
     "max_level": 1,
     "max_cost": {

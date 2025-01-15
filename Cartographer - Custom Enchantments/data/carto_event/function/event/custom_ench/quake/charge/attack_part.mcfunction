@@ -1,4 +1,4 @@
-execute if entity @s[tag=ca.player_spawned] run particle minecraft:dust_color_transition{from_color:[0.8,0.8,0.8],scale:2,to_color:[1.000,1.000,1.000]} ~ ~ ~ 0 0 0 0 1 force
+execute if entity @s[tag=ca.player_spawned] run particle minecraft:dust_color_transition{from_color:[0.8,0.8,0.8],scale:1.25,to_color:[1.000,1.000,1.000]} ~ ~ ~ 0 0 0 0 1 force
 execute unless entity @s[tag=ca.player_spawned] run particle minecraft:dust_color_transition{from_color:[0.678,0.357,0.345],scale:2,to_color:[0.000,0.000,0.000]} ~ ~ ~ 0 0 0 0 1 force
 
 #particle minecraft:dust_pillar{block_state:"minecraft:dirt"}

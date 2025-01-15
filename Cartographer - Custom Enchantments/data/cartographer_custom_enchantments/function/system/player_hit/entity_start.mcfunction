@@ -23,10 +23,10 @@ tag @s add ca.enchant_first_blood
 function carto_event:api/create_single_entity_event {event:"first_blood",duration:1,delay:300,parameters:{},merge_behavior:"none"}
 
 #Mob Activates Riposte
-execute if score $attack_type ca.ench_value matches 1.. unless entity @s[tag=has_custom_status_silenced] if score @s ca.ench_riposte_lvl matches 1.. unless entity @s[tag=ca.mob_use_riposte] store result score $active ca.ench_riposte_lvl run random value 1..3
-execute if score $attack_type ca.ench_value matches 1.. unless entity @s[tag=has_custom_status_silenced] if entity @s[tag=ca.riposte_first_hit] if score @s ca.ench_riposte_lvl matches 1.. unless entity @s[tag=ca.mob_use_riposte] run scoreboard players set $active ca.ench_riposte_lvl 3
-execute if score $attack_type ca.ench_value matches 1.. unless entity @s[tag=has_custom_status_silenced] if entity @s[tag=ca.riposte_half_health] if score @s ca.ench_riposte_lvl matches 1.. unless entity @s[tag=ca.mob_use_riposte] run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/riposte/half_health
-execute if score $attack_type ca.ench_value matches 1.. unless entity @s[tag=has_custom_status_silenced] if score @s ca.ench_riposte_lvl matches 1.. unless entity @s[tag=ca.mob_use_riposte] if score $active ca.ench_riposte_lvl matches 3.. at @s run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/riposte/setup_entity
+execute if score $attack_type ca.ench_value matches 1.. unless entity @s[tag=ca.has_custom_status_silenced] if score @s ca.ench_riposte_lvl matches 1.. unless entity @s[tag=ca.mob_use_riposte] store result score $active ca.ench_riposte_lvl run random value 1..3
+execute if score $attack_type ca.ench_value matches 1.. unless entity @s[tag=ca.has_custom_status_silenced] if entity @s[tag=ca.riposte_first_hit] if score @s ca.ench_riposte_lvl matches 1.. unless entity @s[tag=ca.mob_use_riposte] run scoreboard players set $active ca.ench_riposte_lvl 3
+execute if score $attack_type ca.ench_value matches 1.. unless entity @s[tag=ca.has_custom_status_silenced] if entity @s[tag=ca.riposte_half_health] if score @s ca.ench_riposte_lvl matches 1.. unless entity @s[tag=ca.mob_use_riposte] run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/riposte/half_health
+execute if score $attack_type ca.ench_value matches 1.. unless entity @s[tag=ca.has_custom_status_silenced] if score @s ca.ench_riposte_lvl matches 1.. unless entity @s[tag=ca.mob_use_riposte] if score $active ca.ench_riposte_lvl matches 3.. at @s run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/riposte/setup_entity
 
 #Do Weapon Damage Enchantments
 scoreboard players set $active ca.concentration_time 0

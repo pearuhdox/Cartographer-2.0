@@ -4,7 +4,7 @@ execute if score @s ca.quick_strike_active matches 1.. if score @s ca.quick_stri
 execute if score @s ca.quick_strike_active matches 1.. if score @s ca.quick_strike_stacks matches 1.. run scoreboard players remove @s ca.quick_strike_stacks 1
 
 #execute if score @s ca.quick_strike_active matches 1.. if score @s ca.quick_strike_stacks matches 0 run function carto_event:api/create_single_entity_event {event:"custom_ench/quick_strike/cooldown",duration:601,delay:000,parameters:{},merge_behavior:"merge"}
-execute if score @s ca.quick_strike_active matches 1.. if score @s ca.quick_strike_stacks matches 0 run playsound minecraft:block.bubble_column.whirlpool_inside player @s ~ ~ ~ 0.7 1.7
+execute if score @s ca.quick_strike_active matches 1.. if score @s ca.quick_strike_stacks matches 0 run playsound minecraft:block.bubble_column.whirlpool_inside player @s ~ ~ ~ 1.0 1.7
 #execute if score @s ca.quick_strike_active matches 1.. if score @s ca.quick_strike_stacks matches 0 run scoreboard players operation $cooldown ca.quick_strike_cooldown = @s ca.ench_quick_strike_lvl
 #execute if score @s ca.quick_strike_active matches 1.. if score @s ca.quick_strike_stacks matches 0 run scoreboard players operation $cooldown ca.quick_strike_cooldown *= $20 ca.CONSTANT
 #execute if score @s ca.quick_strike_active matches 1.. if score @s ca.quick_strike_stacks matches 0 run scoreboard players add $cooldown ca.quick_strike_cooldown 20

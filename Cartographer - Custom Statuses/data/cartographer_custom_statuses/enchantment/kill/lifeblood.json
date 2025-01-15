@@ -4,6 +4,7 @@
     "fallback": "Lifeblood"
   },
   "supported_items": "#cartographer_custom_statuses:supports_damage_augment",
+  "primary_items": "#cartographer_core:enchant_support/passive",
   "exclusive_set": "#cartographer_custom_enchantments:exclusive_set/kill_sustain",
   "weight": 1,
   "max_level": 10,
