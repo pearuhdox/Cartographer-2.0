@@ -9,6 +9,7 @@ execute if entity @s[type=player] run playsound minecraft:entity.player.attack.s
 execute unless entity @s[type=player] run playsound minecraft:entity.player.attack.sweep player @a ~ ~ ~ 0.7 1.4
 
 scoreboard players set @s ca.raycast 30
+$scoreboard players set $tier_mob ca.restrike_hit_var $(restrike_tier)
 execute anchored eyes run function carto_event:event/custom_attribute/restrike_hit/vfx
 
 scoreboard players set @s ca.restrike_time 0

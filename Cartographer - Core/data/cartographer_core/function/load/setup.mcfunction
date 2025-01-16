@@ -227,11 +227,15 @@ scoreboard objectives add ca.epf dummy
 
 scoreboard objectives add ca.delta.cooldown dummy
 
-# Block Name Obtainer Armor Stand
+# Block Name - Item Tag Checker Obtainer Armor Stand
 # 31182015-4512-2011-3118-115180000000
 # [I;823664661,1158815761,823660881,-2147483648]
 summon armor_stand 4206900 128 4206900 {UUID:[I;823664661,1158815761,823660881,-2147483648],NoGravity:1b,Marker:1b}
 
+#Summon Armor Stand for Item Tag Evaluation
+# "31192011-4452-2112-0000-000000000000"
+# [I;823730193,1146233106,0,0]
+summon armor_stand 4206900 0 4206900 {Marker:1b,Invisible:1b,NoGravity:1b,UUID:[I;823730193,1146233106,0,0]}
 
 #Add the phe_listen and ehp_listen scores
 scoreboard objectives add ehp_listen dummy
@@ -390,7 +394,3 @@ schedule function cartographer_core:load/make_dev_box 7t
 #Schedule core clocks.
 
 setblock 4206905 3 4206905 oak_sign replace
-
-#Summon Armor Stand for Item Tag Evaluation
-# "31192011-4452-2112-0000-000000000000"
-summon armor_stand 4206900 0 4206900 {Marker:1b,Invisible:1b,NoGravity:1b,UUID:[I;823730193,1146233106,0,0]}

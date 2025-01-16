@@ -18,4 +18,4 @@ execute unless score $success ca.rand matches 1.. on attacker run scoreboard pla
 
 $execute if score $success ca.rand matches 1.. run function cartographer_custom_attributes:custom_attributes/effects/chaining_hit/get_damage/$(attack_type)
 
-execute if score $success ca.rand matches 1.. run function cartographer_custom_attributes:custom_attributes/effects/chaining_hit/do
+execute if score $success ca.rand matches 1.. run function cartographer_custom_attributes:custom_attributes/effects/chaining_hit/tier_up

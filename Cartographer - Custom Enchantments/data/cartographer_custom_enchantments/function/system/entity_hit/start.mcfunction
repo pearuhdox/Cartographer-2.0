@@ -9,8 +9,7 @@ execute unless entity @s[tag=ca.used_vengeance_attack] if score @s ca.ench_venge
 
 scoreboard players set $check ca.gravity_var 0
 scoreboard players set $damage ca.gravity_var 0
-execute if score @s ca.ench_gravity_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/gravity/test
-execute if score $check ca.gravity_var matches 1.. run function cartographer_custom_enchantments:enchantment/passive/gravity/hit/user
+execute if entity @s[tag=ca.can_gravity] unless score @s ca.gravity_time matches 1.. run function cartographer_custom_enchantments:enchantment/passive/gravity/hit/user
 
 
 scoreboard players set $proc ca.ench_starfall_lvl 0

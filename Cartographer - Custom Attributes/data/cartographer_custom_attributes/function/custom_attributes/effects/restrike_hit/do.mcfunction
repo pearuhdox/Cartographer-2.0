@@ -15,8 +15,11 @@ execute on attacker if score $restrike_amount_flat ca.attr_apply_var matches -19
 execute on attacker if score $restrike_amount_percent ca.attr_apply_var matches -1999999.. run scoreboard players operation $count ca.restrike_hit_var *= $restrike_amount_percent ca.attr_apply_var
 execute on attacker if score $restrike_amount_percent ca.attr_apply_var matches -1999999.. run scoreboard players operation $count ca.restrike_hit_var /= $100 ca.CONSTANT
 
+scoreboard players operation $count ca.restrike_hit_var *= $tier ca.restrike_hit_var
+
 execute store result storage cartographer:custom_attributes restrike_damage double 0.01 run scoreboard players get $damage ca.restrike_hit_var
 execute store result storage cartographer:custom_attributes restrike_count int 1 run scoreboard players get $count ca.restrike_hit_var
+execute store result storage cartographer:custom_attributes restrike_tier int 1 run scoreboard players get $tier ca.restrike_hit_var
 
 scoreboard players set $rate ca.restrike_hit_var 7
 

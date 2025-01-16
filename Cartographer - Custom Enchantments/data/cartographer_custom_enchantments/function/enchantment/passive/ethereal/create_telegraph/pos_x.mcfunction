@@ -2,3 +2,6 @@ data merge entity @s {item:{id:"minecraft:barrier",count:1},transformation:[-0.0
 
 function gu:generate
 data modify storage cartographer_custom_enchantments:macro pos_x set from storage gu:main out
+
+scoreboard players add $count ca.entity_purge_var 1
+tag @s add ca.purgable_entity

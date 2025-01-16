@@ -249,6 +249,7 @@ scoreboard objectives add ca.chaining_hit_var dummy
 scoreboard objectives add ca.restrike_hit_var dummy
 scoreboard objectives add ca.restrike_time dummy
 
+
 scoreboard objectives add ca.lucky_hit_entropy dummy
 scoreboard objectives add ca.restrike_entropy dummy
 scoreboard objectives add ca.chaining_hit_entropy dummy

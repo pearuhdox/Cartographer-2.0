@@ -1,5 +1,6 @@
 execute store result score $rot ca.restrike_hit_var run random value 1..16
 
+
 execute if score $rot ca.restrike_hit_var matches 1 rotated 45 10 positioned ^ ^ ^0.5 run function carto_event:event/custom_attribute/restrike_hit/raycast
 execute if score $rot ca.restrike_hit_var matches 2 rotated 90 10 positioned ^ ^ ^0.5 run function carto_event:event/custom_attribute/restrike_hit/raycast
 execute if score $rot ca.restrike_hit_var matches 3 rotated 135 10 positioned ^ ^ ^0.5 run function carto_event:event/custom_attribute/restrike_hit/raycast

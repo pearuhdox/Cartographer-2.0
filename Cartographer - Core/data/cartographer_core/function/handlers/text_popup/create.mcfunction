@@ -25,4 +25,4 @@ $execute if score $pos_rand ca.var matches 20 rotated ~30 0 run summon text_disp
 $execute if score $pos_rand ca.var matches 21 rotated ~45 0 run summon text_display ^ ^-0.5 ^0.5 {billboard:"vertical",text_opacity:$(text_opacity),alignment:"center",teleport_duration:$(teleport_duration),Tags:["ca.text_popup","ca.new_popup"],brightness:{sky:15,block:15},text:'$(text)',background:$(background),transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[$(scale)f,$(scale)f,$(scale)f]}}
 
 $execute as @e[type=text_display,tag=ca.new_popup,limit=1,sort=nearest] at @s run function carto_event:api/create_single_entity_event {event:"text_popup",duration:$(popup_duration),delay:1,parameters:{teleport_position:"$(teleport_position)"},merge_behavior:"none"}
-execute as @e[type=text_display,tag=ca.new_popup,limit=1,sort=nearest] at @s run tag @s remove ca.new_popup
+execute as @e[type=text_display,tag=ca.new_popup,limit=1,sort=nearest] at @s run function cartographer_core:handlers/text_popup/create_branch

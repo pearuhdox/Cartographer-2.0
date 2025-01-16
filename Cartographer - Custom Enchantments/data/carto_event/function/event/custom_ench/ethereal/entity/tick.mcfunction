@@ -1,12 +1,12 @@
 $execute as $(pos_x) at @s run scoreboard players set @s ca.entity_purge_var 0
-$execute as $(pos_z) at @s run scoreboard players set @s ca.entity_purge_var 0
+#$execute as $(pos_z) at @s run scoreboard players set @s ca.entity_purge_var 0
 $execute as $(neg_x) at @s run scoreboard players set @s ca.entity_purge_var 0
-$execute as $(neg_z) at @s run scoreboard players set @s ca.entity_purge_var 0
+#$execute as $(neg_z) at @s run scoreboard players set @s ca.entity_purge_var 0
 
 $execute as $(pos_x) unless entity @s[tag=ca.animated] positioned as $(target) run tp @s ~ ~ ~ ~ 0
-$execute as $(pos_z) unless entity @s[tag=ca.animated] positioned as $(target) run tp @s ~ ~ ~ ~90 0
+#$execute as $(pos_z) unless entity @s[tag=ca.animated] positioned as $(target) run tp @s ~ ~ ~ ~90 0
 $execute as $(neg_x) unless entity @s[tag=ca.animated] positioned as $(target) run tp @s ~ ~ ~ ~180 0
-$execute as $(neg_z) unless entity @s[tag=ca.animated] positioned as $(target) run tp @s ~ ~ ~ ~270 0
+#$execute as $(neg_z) unless entity @s[tag=ca.animated] positioned as $(target) run tp @s ~ ~ ~ ~270 0
 
 #$execute as $(pos_x) run say pos_x
 #$execute as $(pos_z) run say pos_z
@@ -14,14 +14,14 @@ $execute as $(neg_z) unless entity @s[tag=ca.animated] positioned as $(target) r
 #$execute as $(neg_z) run say neg_z
 
 $execute as $(target) if entity @s[tag=ca.etheral_sound_played] as $(pos_x) unless entity @s[tag=ca.animated] at @s run function carto_event:event/custom_ench/ethereal/entity/telegraph_animation
-$execute as $(target) if entity @s[tag=ca.etheral_sound_played] as $(pos_z) unless entity @s[tag=ca.animated] at @s run function carto_event:event/custom_ench/ethereal/entity/telegraph_animation
+#$execute as $(target) if entity @s[tag=ca.etheral_sound_played] as $(pos_z) unless entity @s[tag=ca.animated] at @s run function carto_event:event/custom_ench/ethereal/entity/telegraph_animation
 $execute as $(target) if entity @s[tag=ca.etheral_sound_played] as $(neg_x) unless entity @s[tag=ca.animated] at @s run function carto_event:event/custom_ench/ethereal/entity/telegraph_animation
-$execute as $(target) if entity @s[tag=ca.etheral_sound_played] as $(neg_z) unless entity @s[tag=ca.animated] at @s run function carto_event:event/custom_ench/ethereal/entity/telegraph_animation
+#$execute as $(target) if entity @s[tag=ca.etheral_sound_played] as $(neg_z) unless entity @s[tag=ca.animated] at @s run function carto_event:event/custom_ench/ethereal/entity/telegraph_animation
 
 $execute as $(pos_x) if entity @s[tag=ca.animated] at @s positioned as $(target) run tp @s ~ ~ ~ ~10 0
-$execute as $(pos_z) if entity @s[tag=ca.animated] at @s positioned as $(target) run tp @s ~ ~ ~ ~10 0
+#$execute as $(pos_z) if entity @s[tag=ca.animated] at @s positioned as $(target) run tp @s ~ ~ ~ ~10 0
 $execute as $(neg_x) if entity @s[tag=ca.animated] at @s positioned as $(target) run tp @s ~ ~ ~ ~10 0
-$execute as $(neg_z) if entity @s[tag=ca.animated] at @s positioned as $(target) run tp @s ~ ~ ~ ~10 0
+#$execute as $(neg_z) if entity @s[tag=ca.animated] at @s positioned as $(target) run tp @s ~ ~ ~ ~10 0
 
 
 $execute as $(target) at @s unless entity @s[tag=ca.etheral_sound_played] if score @s ca.ethereal_time matches 19.. run playsound minecraft:ambient.crimson_forest.mood hostile @a[distance=..16] ~ ~ ~ 2 2
@@ -39,12 +39,12 @@ $execute as $(target) at @s if score @s ca.ethereal_time matches 1.. run scorebo
 
 
 $execute as $(pos_x) at @s if score duration= carto_event matches 1 run scoreboard players remove $count ca.entity_purge_var 1
-$execute as $(pos_z) at @s if score duration= carto_event matches 1 run scoreboard players remove $count ca.entity_purge_var 1
+#$execute as $(pos_z) at @s if score duration= carto_event matches 1 run scoreboard players remove $count ca.entity_purge_var 1
 $execute as $(neg_x) at @s if score duration= carto_event matches 1 run scoreboard players remove $count ca.entity_purge_var 1
-$execute as $(neg_z) at @s if score duration= carto_event matches 1 run scoreboard players remove $count ca.entity_purge_var 1
+#$execute as $(neg_z) at @s if score duration= carto_event matches 1 run scoreboard players remove $count ca.entity_purge_var 1
 
 $execute as $(pos_x) at @s if score duration= carto_event matches 1 run kill @s
-$execute as $(pos_z) at @s if score duration= carto_event matches 1 run kill @s
+#$execute as $(pos_z) at @s if score duration= carto_event matches 1 run kill @s
 $execute as $(neg_x) at @s if score duration= carto_event matches 1 run kill @s
-$execute as $(neg_z) at @s if score duration= carto_event matches 1 run kill @s
+#$execute as $(neg_z) at @s if score duration= carto_event matches 1 run kill @s
 return 1

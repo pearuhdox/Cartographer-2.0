@@ -93,3 +93,5 @@ tag @s remove ca.ench_ran_flag_grappling
 tag @s remove ca.ench_ran_flag_ricochet
 tag @s remove ca.ench_ran_flag_ripper
 tag @s remove ca.ench_ran_flag_shrapnel
+
+tag @s remove ca.ench_ran_flag_thorns

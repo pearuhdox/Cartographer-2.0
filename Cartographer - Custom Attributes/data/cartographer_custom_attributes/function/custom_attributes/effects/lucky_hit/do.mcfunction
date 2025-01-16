@@ -1,5 +1,3 @@
-scoreboard players operation $orig_damage ca.lucky_hit_var = $damage ca.lucky_hit_var
-
 scoreboard players operation $damage ca.lucky_hit_var *= $25 ca.CONSTANT
 scoreboard players operation $damage ca.lucky_hit_var /= $100 ca.CONSTANT
 

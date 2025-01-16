@@ -5,4 +5,4 @@ execute store result storage cartographer:custom_enchantments damage double 1 ru
 
 execute unless entity @s[tag=ca.first_striked] run function cartographer_custom_enchantments:enchantment/weapon/damage/general/first_strike/damage with storage cartographer:custom_enchantments
 
-function carto_event:api/create_single_entity_event {event:"custom_ench/first_strike",duration:60,delay:000,parameters:{},merge_behavior:"merge"}
+execute unless entity @s[tag=ca.first_striked] run function carto_event:api/create_single_entity_event {event:"custom_ench/first_strike",duration:60,delay:000,parameters:{},merge_behavior:"merge"}
