@@ -1,35 +1,60 @@
 {
-    "criteria": {
-      "on_block": {
-        "trigger": "minecraft:item_used_on_block",
-        "conditions": {
-          "location": [
-            {
-              "condition": "minecraft:match_tool",
-              "predicate": {
-                "predicates": {
-                  "minecraft:enchantments": [
-                    {
-                      "enchantments": "minecraft:infinity",
-                      "levels": {
-                        "min": 1
-                      }
-                    }
-                  ]
+  "criteria": {
+    "on_block": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:inverted",
+                "term": {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:soul_campfire"
+                }
+              },
+              {
+                "condition": "minecraft:inverted",
+                "term": {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:decorated_pot"
+                }
+              },
+              {
+                "condition": "minecraft:inverted",
+                "term": {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:campfire"
                 }
               }
+            ]
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "predicates": {
+                "minecraft:enchantments": [
+                  {
+                    "enchantments": "minecraft:infinity",
+                    "levels": {
+                      "min": 1
+                    }
+                  }
+                ]
+              }
             }
-          ]
-        }
+          }
+        ]
       }
-    },
-    "requirements": [
-      [
-        "on_block"
-      ]
-    ],
-    "rewards": {
-      "function": "cartographer_custom_enchantments:enchantment/weapon/unique/other/infinity/consume"
     }
+  },
+  "requirements": [
+    [
+      "on_block"
+    ]
+  ],
+  "rewards": {
+    "function": "cartographer_custom_enchantments:enchantment/weapon/unique/other/infinity/consume"
   }
-  
+}
