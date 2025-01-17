@@ -425,6 +425,7 @@ scoreboard objectives add ca.overcharge_time dummy
 scoreboard objectives add ca.drilling_entropy dummy
 scoreboard objectives add ca.drilling_cooldown dummy
 scoreboard objectives add ca.excavator_cooldown dummy
+scoreboard objectives add ca.excavator_progress dummy
 
 scoreboard objectives add ca.recoil_cooldown dummy
 scoreboard objectives add ca.repulsion_cooldown dummy

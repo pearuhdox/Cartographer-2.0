@@ -12,6 +12,9 @@
         "minecraft:nether_gold_ore",
         "minecraft:decorated_pot",
         "minecraft:spawner",
-        "minecraft:cobweb"
+        "minecraft:cobweb",
+        "minecraft:wither_rose",
+        "minecraft:sweet_berry_bush",
+        "minecraft:powder_snow"
     ]
 }
