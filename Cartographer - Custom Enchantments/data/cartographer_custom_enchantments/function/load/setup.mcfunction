@@ -518,6 +518,8 @@ scoreboard objectives add ca.cc_time dummy
 scoreboard objectives add ca.cc_anim dummy
 scoreboard objectives add ca.no_cc dummy
 
+scoreboard objectives add ca.inf_var dummy
+
 #Infinity Edge Cases
 scoreboard objectives add ca.use_firework_rocket minecraft.used:minecraft.firework_rocket
 scoreboard objectives add ca.use_water_bucket minecraft.used:minecraft.water_bucket
