@@ -11,6 +11,34 @@
                 "condition": "minecraft:inverted",
                 "term": {
                   "condition": "minecraft:block_state_property",
+                  "block": "minecraft:chiseled_bookshelf"
+                }
+              },
+              {
+                "condition": "minecraft:inverted",
+                "term": {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:jukebox"
+                }
+              },
+              {
+                "condition": "minecraft:inverted",
+                "term": {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:cauldron"
+                }
+              },
+              {
+                "condition": "minecraft:inverted",
+                "term": {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:composter"
+                }
+              },
+              {
+                "condition": "minecraft:inverted",
+                "term": {
+                  "condition": "minecraft:block_state_property",
                   "block": "minecraft:soul_campfire"
                 }
               },
