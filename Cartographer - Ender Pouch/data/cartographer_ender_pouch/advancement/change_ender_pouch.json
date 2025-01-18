@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "change_lexica": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "ender_pouch": 1
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "cartographer_ender_pouch:player/check_inv"
+  }
+}

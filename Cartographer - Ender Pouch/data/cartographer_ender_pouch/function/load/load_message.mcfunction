@@ -1,0 +1,1 @@
+tellraw @a [{"text":"❱ ","color":"#FFE0A3"},{"text":"Ender Pouch","color":"#42a090","hoverEvent":{"action":"show_text","contents":[{"text":"Adds a bundle variant that can store infinite items that can be retrieved later via an Ender Chest.","color":"#FFE0A3","italic":true}]}},{"text":" installed!","color":"#FFE0A3"}]
