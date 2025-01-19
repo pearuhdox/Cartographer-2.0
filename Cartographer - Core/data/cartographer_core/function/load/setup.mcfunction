@@ -370,6 +370,12 @@ scoreboard objectives add give_dev_box trigger
 scoreboard objectives add bug trigger
 scoreboard objectives add ca.options_trig trigger
 
+scoreboard objectives add disable_player_skins trigger
+scoreboard objectives add disable_other_skins trigger
+
+scoreboard objectives add ca.disable_player_skins dummy
+scoreboard objectives add ca.disable_other_skins dummy
+
 #Create Place Score for Item Frame Placing
 scoreboard objectives add ca.place_frame minecraft.used:minecraft.glow_item_frame
 

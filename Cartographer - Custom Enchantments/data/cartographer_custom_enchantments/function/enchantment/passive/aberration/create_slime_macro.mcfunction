@@ -18,9 +18,9 @@ execute at @s run particle minecraft:item_slime ~ ~0.1 ~ 0.65 0.1 0.65 0.1 50 no
 execute at @s run particle minecraft:cloud ~ ~0.5 ~ 0.15 0.15 0.15 0.05 20 normal
 
 scoreboard players set $user_id ca.ench_aberration_lvl 0
-$execute as $(owner) if entity @s[name=Matoreichon] run scoreboard players set $user_id ca.ench_aberration_lvl 1
-$execute as $(owner) if entity @s[name=SlimeKing77777] run scoreboard players set $user_id ca.ench_aberration_lvl 10
-$execute as $(owner) if entity @s[name=Matt_97] run scoreboard players set $user_id ca.ench_aberration_lvl 20
+$execute as $(owner) unless score @s ca.disable_player_skins matches 1.. if entity @s[name=Matoreichon] run scoreboard players set $user_id ca.ench_aberration_lvl 1
+$execute as $(owner) unless score @s ca.disable_player_skins matches 1.. if entity @s[name=SlimeKing77777] run scoreboard players set $user_id ca.ench_aberration_lvl 10
+$execute as $(owner) unless score @s ca.disable_player_skins matches 1.. if entity @s[name=Matt_97] run scoreboard players set $user_id ca.ench_aberration_lvl 20
 
 execute on passengers run function cartographer_custom_enchantments:enchantment/passive/aberration/custom_skin/directory
 

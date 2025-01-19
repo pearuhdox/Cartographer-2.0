@@ -1,0 +1,19 @@
+{
+    "values": [
+        "minecraft:bedrock",
+        "minecraft:barrier",
+        "minecraft:structure_block",
+        "minecraft:jigsaw",
+        "minecraft:command_block",
+        "minecraft:repeating_command_block",
+        "minecraft:chain_command_block",
+        "minecraft:structure_void",
+        "minecraft:light",
+        "minecraft:reinforced_deepslate",
+        "minecraft:trial_spawner",
+        "minecraft:vault",
+        "minecraft:target",
+        "minecraft:respawn_anchor",
+        "#bb:containers"
+    ]
+}

@@ -2,6 +2,13 @@
 function cartographer_core:systems/quick_drop/shulker/tick
 #End of Quick Drop Shulker Box System
 
+#Toggleable Options for Players
+scoreboard players enable @s disable_other_skins
+execute if score @s disable_other_skins matches 1.. run function cartographer_core:options/skin/other_toggle
+
+scoreboard players enable @s disable_player_skins
+execute if score @s disable_player_skins matches 1.. run function cartographer_core:options/skin/player_toggle
+
 #execute unless predicate cartographer_core:player/sprinting unless predicate cartographer_core:player/sneaking unless predicate cartographer_core:player/swimming if score @s ca.sprint_active matches 1.. run function cartographer_core:handlers/sprint_bug_check/start
 #execute if predicate cartographer_core:player/sprinting run scoreboard players set @s ca.sprint_active 61
 

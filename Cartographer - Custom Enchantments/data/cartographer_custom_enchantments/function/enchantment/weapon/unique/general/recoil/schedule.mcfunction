@@ -2,9 +2,6 @@
 #execute if entity @s[type=player,tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. run function cartographer_core:enchant_calculator/full_calculation {namespace:"cartographer_custom_enchantments",category:"weapon/unique/general/",enchantment:"recoil",type:"weapon"}
 #execute if entity @s[type=player,tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. run scoreboard players set $check ca.core_delay_check 1
 
-#execute if entity @s[type=player,tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. run tag @s remove ca.recoil_block
-#execute if entity @s[type=player,tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. if data storage cartographer:enchantment_data equipped.main.components.minecraft:custom_data.recoil_block run tag @s add ca.recoil_block
-
 execute if entity @s[type=player] if entity @s[tag=ca.has_custom_status_grounded] run tag @s add ca.indicator_cc
 execute if entity @s[type=player] if entity @s[tag=ca.has_custom_status_grounded] run scoreboard players set @s ca.cc_time 4
 

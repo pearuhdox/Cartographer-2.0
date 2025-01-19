@@ -39,7 +39,7 @@ $execute as $(target) at @s run scoreboard players remove $particle_time ca.coll
 
 $execute as $(target) at @s if score @s ca.collapse_time matches $(time) if block ~ ~ ~ spawner run function carto_event:event/custom_ench/collapse/run_spawner/get_data
 
-$execute as $(target) at @s if score @s ca.collapse_time matches $(time) if score @s ca.ench_excavator_lvl matches 1.. as $(owner) run scoreboard players operation $collapse ca.ench_excavator_lvl = @s ca.ench_excavator_lvl
+$execute as $(target) at @s if score @s ca.collapse_time matches $(time) if score @s ca.ench_excavator_lvl matches 1.. run scoreboard players operation $collapse ca.ench_excavator_lvl = @s ca.ench_excavator_lvl
 
 
 $execute as $(target) at @s if score @s ca.collapse_time matches $(time) run function carto_event:event/custom_ench/collapse/get_block

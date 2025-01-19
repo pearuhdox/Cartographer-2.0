@@ -21,3 +21,8 @@ execute if score @s ca.attr_extra_jump_count_total matches 1.. unless score @s c
 
 execute if score @s ca.attr_extra_jump_count_total matches 1.. if score @s ca.attr_airdash_count_total matches 1.. run execute store result score @s ca.move_x run data get entity @s Pos[0] 1000
 execute if score @s ca.attr_extra_jump_count_total matches 1.. if score @s ca.attr_airdash_count_total matches 1.. run execute store result score @s ca.move_z run data get entity @s Pos[2] 1000
+
+
+#Initialize Scores Properly
+execute unless score @s ca.extra_jump_count matches 0.. run scoreboard players set @s ca.extra_jump_count 0
+execute unless score @s ca.airdash_count matches 0.. run scoreboard players set @s ca.airdash_count 0

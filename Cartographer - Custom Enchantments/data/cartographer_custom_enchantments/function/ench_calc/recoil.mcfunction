@@ -14,4 +14,8 @@ scoreboard players operation @s ca.ench_recoil_hand_lvl += $ench ca.ench_var
 execute unless score @s ca.ench_recoil_hand_lvl matches 1.. run scoreboard players operation @s ca.ench_recoil_lvl += @s ca.ench_recoil_gear_lvl
 scoreboard players operation @s ca.ench_recoil_lvl += @s ca.ench_recoil_hand_lvl
 
+#Special Recoil Hand Condition
+execute if score @s ca.ench_recoil_hand_lvl matches 1.. run tag @s remove ca.recoil_block
+execute if score @s ca.ench_recoil_hand_lvl matches 1.. if data storage cartographer_core:player_equip data.main.components.minecraft:custom_data.recoil_block run tag @s add ca.recoil_block
+
 tag @s remove ca.do_enchant_calc_recoil

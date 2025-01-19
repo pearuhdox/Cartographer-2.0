@@ -5,7 +5,7 @@ execute if entity @s[tag=ca.player_spawned] run scoreboard players set @s ca.eru
 execute unless entity @s[tag=ca.player_spawned] run scoreboard players set @s ca.eruption_time 45
 
 scoreboard players set $user_id ca.ench_eruption_lvl 0
-$execute as $(owner) if entity @s[name=Matoreichon] run scoreboard players set $user_id ca.ench_eruption_lvl 1
+$execute as $(owner) unless score @s ca.disable_player_skins matches 1.. if entity @s[name=Matoreichon] run scoreboard players set $user_id ca.ench_eruption_lvl 1
 
 tp @s ~ ~0.65 ~
 

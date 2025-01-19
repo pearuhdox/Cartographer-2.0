@@ -28,7 +28,7 @@ scoreboard players set $is_player ca.ench_orbit_lvl 0
 execute if entity @s[type=player] run scoreboard players set $is_player ca.ench_orbit_lvl 1
 
 scoreboard players set $user_id ca.ench_orbit_lvl 0
-execute if entity @s[name=Matoreichon] run scoreboard players set $user_id ca.ench_orbit_lvl 1
+execute unless score @s ca.disable_player_skins matches 1.. if entity @s[name=Matoreichon] run scoreboard players set $user_id ca.ench_orbit_lvl 1
 
 execute at @s rotated ~ 0 positioned ^ ^ ^-3.5 summon item_display run function cartographer_custom_enchantments:enchantment/passive/orbit/item_display_branch
 
