@@ -6,6 +6,8 @@ $execute as $(target) unless entity @s[type=player] at @s run data modify storag
 
 data modify entity @s item set from storage cartographer:custom_enchantments item
 
+data modify entity @s item.components.minecraft:item_model set from storage cartographer:custom_enchantments item.components.minecraft:custom_data.throwable_item_model
+
 data modify entity @s {} merge value {transformation:[0.0001f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,-0.0001f,0.0000f,0.0000f,0.0001f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f]}
 
 tp @s ~ ~ ~ ~ ~
