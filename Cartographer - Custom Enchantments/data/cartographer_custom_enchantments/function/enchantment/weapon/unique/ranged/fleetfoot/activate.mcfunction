@@ -1,6 +1,12 @@
-execute if entity @s[type=player] run scoreboard players set $force ca.ench_var 7000
-execute unless entity @s[type=player] run scoreboard players set $force ca.ench_var -9
+execute if entity @s[type=player] run scoreboard players operation $force ca.ench_var = @s ca.ench_fleetfoot_lvl
+execute if entity @s[type=player] run scoreboard players operation $force ca.ench_var *= $20 ca.CONSTANT
+execute if entity @s[type=player] run scoreboard players operation $force ca.ench_var *= $100 ca.CONSTANT
+execute if entity @s[type=player] run scoreboard players add $force ca.ench_var 5000
 
+execute unless entity @s[type=player] run scoreboard players operation $force ca.ench_var = @s ca.ench_fleetfoot_lvl
+execute unless entity @s[type=player] run scoreboard players operation $force ca.ench_var *= $3 ca.CONSTANT
+execute unless entity @s[type=player] run scoreboard players operation $force ca.ench_var *= $-1 ca.CONSTANT
+execute unless entity @s[type=player] run scoreboard players remove $force ca.ench_var 6
 
 
 execute if entity @s[type=player] unless predicate cartographer_core:player/sneaking run playsound minecraft:entity.breeze.jump player @a[distance=..16] ~ ~ ~ 1 1.25
