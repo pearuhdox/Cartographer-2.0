@@ -1,6 +1,9 @@
 $execute as $(target) at @s if entity @s[tag=ca.riposte_blocking] if score @s ca.riposte_time matches 2 if entity @s[type=player] run playsound minecraft:entity.zombie.attack_iron_door player @a[distance=..16] ~ ~ ~ 0.5 2
 $execute as $(target) at @s if entity @s[tag=ca.riposte_blocking] if score @s ca.riposte_time matches 2 if entity @s[type=!player] run playsound minecraft:entity.zombie.attack_iron_door hostile @a[distance=..16] ~ ~ ~ 0.5 2
 
+$execute as $(target) at @s unless entity @s[tag=ca.has_custom_status_grounded] if score @s ca.riposte_time matches 1 if score @s ca.ench_fleetfoot_lvl matches 1.. unless score @s ca.fleetfoot_cooldown matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/fleetfoot/activate
+$execute as $(target) at @s if score @s ca.ench_repulsion_lvl matches 1.. if score @s ca.riposte_time matches 5 run function cartographer_custom_enchantments:enchantment/weapon/unique/general/repulsion/channel_activate
+
 $execute as $(target) at @s unless score @s ca.riposte_time matches 60.. unless predicate cartographer_custom_enchantments:riposte_resistance run effect give @s resistance 1 1
 
 $execute as $(target) at @s unless score @s ca.riposte_time matches 60.. if entity @s[type=player] if entity @s[nbt={HurtTime:9s}] run playsound minecraft:item.shield.block player @a[distance=..16] ~ ~ ~ 1 1.25

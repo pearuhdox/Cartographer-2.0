@@ -70,7 +70,7 @@ execute if score $attack_type ca.ench_value matches 2 if score $point_blank ca.e
 execute if score $attack_type ca.ench_value matches 2 if score $sharpshot ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/damage/ranged/sharpshot/hit
 
 #Run Repulsion Here for Mobs - Prime it in 2 seconds
-execute if score $attack_type ca.ench_value matches 1 on attacker at @s if score @s ca.ench_repulsion_lvl matches 1.. run function carto_event:api/create_single_entity_event {event:"custom_ench/repulsion/activate",duration:41,delay:000,parameters:{},merge_behavior:"merge"}
+execute if score $attack_type ca.ench_value matches 1 on attacker at @s if score @s ca.ench_repulsion_lvl matches 1.. unless score @s ca.repulsion_cooldown matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/general/repulsion/mob_activate
 
 execute if score $attack_type ca.ench_value matches 1.. if score $explosive ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/general/explosive/hit
 execute if score $attack_type ca.ench_value matches 1.. if score $pulling ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/general/pulling/hit

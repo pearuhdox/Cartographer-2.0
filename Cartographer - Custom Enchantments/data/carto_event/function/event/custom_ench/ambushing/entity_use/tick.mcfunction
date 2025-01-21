@@ -34,4 +34,6 @@ $execute if score duration= carto_event matches 1 as $(telegraph) at @s run kill
 $execute if score duration= carto_event matches 1 as $(target) at @s run tag @s remove ca.is_ambushing
 $execute if score duration= carto_event matches 1 as $(target) at @s run scoreboard players set @s ca.ambushing_time 0
 
+$execute if score duration= carto_event matches 1 as $(target) at @s if score @s ca.ench_repulsion_lvl matches 1.. unless score @s ca.repulsion_cooldown matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/general/repulsion/mob_activate
+
 return 1

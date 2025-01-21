@@ -1,5 +1,8 @@
 $execute as $(target) at @s if entity @s[tag=ca.ambushing_charging] if score @s ca.ambushing_time matches 1..15 if entity @s[type=player] run function carto_event:event/custom_ench/ambushing/charge_vfx_player
 
+$execute as $(target) at @s unless entity @s[tag=ca.has_custom_status_grounded] if entity @s[tag=ca.ambushing_charging] if score @s ca.ambushing_time matches 1 if score @s ca.ench_fleetfoot_lvl matches 1.. unless score @s ca.fleetfoot_cooldown matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/fleetfoot/activate
+$execute as $(target) at @s if entity @s[tag=ca.ambushing_charging] if score @s ca.ambushing_time matches 5 if score @s ca.ench_repulsion_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/general/repulsion/channel_activate
+
 #Find targets
 $execute as $(target) at @s unless entity @s[tag=ca.ambushing_spawner] if entity @s[tag=ca.ambushing_charging] if score @s ca.ambushing_time matches 5.. if entity @s[type=player] if predicate cartographer_core:player/looking_at/hostile/24 run scoreboard players set @s ca.ambushing_look 10
 $execute as $(target) at @s unless entity @s[tag=ca.ambushing_spawner] unless entity @s[tag=ca.is_ambushing] if entity @s[tag=ca.ambushing_charging] if score @s ca.ambushing_time matches 5.. if score @s ca.ambushing_look matches 1.. if entity @s[type=player] anchored eyes positioned ^ ^ ^ run function carto_event:event/custom_ench/ambushing/find_target/start

@@ -2,6 +2,8 @@ $execute as $(telegraph) at @s run scoreboard players set @s ca.entity_purge_var
 
 $execute as $(telegraph) at @s if score duration= carto_event matches 199 run function carto_event:event/custom_ench/riposte/entity_use/telegraph_animation
 
+$execute if score duration= carto_event matches 199 as $(target) at @s if score @s ca.ench_repulsion_lvl matches 1.. unless score @s ca.repulsion_cooldown matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/general/repulsion/mob_activate
+
 $execute as $(target) at @s if score duration= carto_event matches 160.. run tag @s add ca.riposte_blocking
 $execute as $(target) at @s if score duration= carto_event matches 160.. run scoreboard players add @s ca.riposte_time 1
 

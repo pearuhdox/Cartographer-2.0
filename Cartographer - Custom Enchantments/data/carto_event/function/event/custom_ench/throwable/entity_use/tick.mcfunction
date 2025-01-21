@@ -28,4 +28,7 @@ $execute if score duration= carto_event matches 40 as $(telegraph) at @s run fun
 $execute if score duration= carto_event matches 20 as $(telegraph) at @s run scoreboard players remove $count ca.entity_purge_var 1
 $execute if score duration= carto_event matches 20 as $(telegraph) at @s run kill @s
 
+$execute if score duration= carto_event matches 20 as $(target) at @s if score @s ca.ench_repulsion_lvl matches 1.. unless score @s ca.repulsion_cooldown matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/general/repulsion/mob_activate
+
+
 return 1

@@ -37,5 +37,7 @@ $execute if score duration= carto_event matches 169 as $(telegraph) at @s run ki
 $execute if score duration= carto_event matches 170.. as $(target) at @s run scoreboard players operation $warn ca.ench_lunging_lvl = @s ca.ench_lunging_lvl
 $execute if score duration= carto_event matches 170.. as $(telegraph) at @s run function carto_event:event/custom_ench/lunging/entity_use/detect_player/start
 
+$execute if score duration= carto_event matches 169 as $(target) at @s if score @s ca.ench_repulsion_lvl matches 1.. unless score @s ca.repulsion_cooldown matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/general/repulsion/mob_activate
+
 
 return 1
