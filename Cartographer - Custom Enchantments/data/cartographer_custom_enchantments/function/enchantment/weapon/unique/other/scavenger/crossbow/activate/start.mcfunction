@@ -7,6 +7,7 @@ execute if score $kills_current ca.ench_scavenger_slot >= $kills_max ca.ench_sca
 
 execute store result storage cartographer_custom_enchantments:scavenger items[0].components.minecraft:custom_data.scavenger_tracker int 1 run scoreboard players get $kills_current ca.ench_scavenger_slot
 
+
 #Setup Visual
 execute unless score $repeating ca.ench_scavenger_slot matches 1.. run data remove storage cartographer_custom_enchantments:scavenger visual.name
 execute unless score $repeating ca.ench_scavenger_slot matches 1.. unless data storage cartographer_custom_enchantments:scavenger items[0].components.minecraft:custom_data.scavenger_name if data storage cartographer_custom_enchantments:scavenger items[0].components.minecraft:custom_name run data modify storage cartographer_custom_enchantments:scavenger visual.name set from storage cartographer_custom_enchantments:scavenger items[0].components.minecraft:custom_name
@@ -14,7 +15,7 @@ execute unless score $repeating ca.ench_scavenger_slot matches 1.. unless data s
 execute unless score $repeating ca.ench_scavenger_slot matches 1.. unless data storage cartographer_custom_enchantments:scavenger visual.name run data modify storage cartographer_custom_enchantments:scavenger visual.name set value '{"fallback":"Crossbow","translate":"item.minecraft.crossbow","color":"aqua","italic":false}'
 
 execute unless score $repeating ca.ench_scavenger_slot matches 1.. if data storage cartographer_custom_enchantments:scavenger items[0].components.minecraft:custom_data.scavenger_name run data modify storage cartographer_custom_enchantments:scavenger visual.name set from storage cartographer_custom_enchantments:scavenger items[0].components.minecraft:custom_data.scavenger_name
-execute unless score $repeating ca.ench_scavenger_slot matches 1.. unless data storage cartographer_custom_enchantments:scavenger data.item.components.minecraft:custom_data.scavenger_name run data modify storage cartographer_custom_enchantments:scavenger data.item.components.minecraft:custom_data.scavenger_name set from storage cartographer_custom_enchantments:scavenger visual.name
+execute unless score $repeating ca.ench_scavenger_slot matches 1.. unless data storage cartographer_custom_enchantments:scavenger items[0].components.minecraft:custom_data.scavenger_name run data modify storage cartographer_custom_enchantments:scavenger items[0].components.minecraft:custom_data.scavenger_name set from storage cartographer_custom_enchantments:scavenger visual.name
 
 execute unless score $repeating ca.ench_scavenger_slot matches 1.. store result score $kills_red ca.ench_scavenger_slot run data get storage cartographer_custom_enchantments:scavenger items[0].components.minecraft:custom_data.scavenger_tracker
 execute unless score $repeating ca.ench_scavenger_slot matches 1.. run scoreboard players operation $kills_left ca.ench_scavenger_slot = $kills_max ca.ench_scavenger_slot
