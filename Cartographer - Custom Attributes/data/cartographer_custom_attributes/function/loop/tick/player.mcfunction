@@ -1,4 +1,5 @@
 execute if score @s ca.attr_airdash_count_total matches 1.. if score @s ca.airdash_count matches 1.. run scoreboard players add @s ca.airdash_time 1
+execute if score @s ca.attr_airdash_count_total matches 1.. if score @s ca.airdash_count matches 1.. if score @s ca.airdash_time matches 80.. run playsound minecraft:entity.breeze.slide player @s ~ ~ ~ 1 2
 execute if score @s ca.attr_airdash_count_total matches 1.. if score @s ca.airdash_count matches 1.. if score @s ca.airdash_time matches 80.. run scoreboard players remove @s ca.airdash_count 100
 execute if score @s ca.attr_airdash_count_total matches 1.. if score @s ca.airdash_time matches 80.. run scoreboard players remove @s ca.airdash_time 80
 
