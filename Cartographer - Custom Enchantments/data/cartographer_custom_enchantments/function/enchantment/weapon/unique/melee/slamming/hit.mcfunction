@@ -36,6 +36,9 @@ playsound minecraft:entity.player.attack.crit player @a[distance=..16] ~ ~ ~ 1 0
 
 tag @s add ca.slamming_owner
 
+data modify storage cartographer:custom_enchantments custom_statuses set value {}
+function cartographer_custom_enchantments:enchantment/weapon/unique/melee/slamming/custom_statuses/check_allow_status
+
 execute as @e[type=#cartographer_core:affected_by_carto,limit=1,sort=nearest,nbt=!{HurtTime:0s}] at @s run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/slamming/macro with storage cartographer:custom_enchantments
 
 tag @s remove ca.slamming_owner

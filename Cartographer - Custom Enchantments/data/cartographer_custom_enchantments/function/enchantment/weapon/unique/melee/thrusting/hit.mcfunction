@@ -25,6 +25,9 @@ playsound minecraft:entity.player.attack.knockback player @a[distance=..16] ~ ~ 
 
 tag @s add ca.thrusting_owner
 
+data modify storage cartographer:custom_enchantments custom_statuses set value {}
+function cartographer_custom_enchantments:enchantment/weapon/unique/melee/thrusting/custom_statuses/check_allow_status
+
 scoreboard players set $no_particle ca.ench_thrusting_lvl 0
 execute as @s at @s anchored eyes positioned ^ ^ ^1 run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/thrusting/raycast
 

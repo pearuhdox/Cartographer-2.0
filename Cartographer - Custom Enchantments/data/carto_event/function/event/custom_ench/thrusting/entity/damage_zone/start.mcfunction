@@ -1,3 +1,6 @@
+data modify storage cartographer:custom_enchantments custom_statuses set value {}
+function cartographer_custom_enchantments:enchantment/weapon/unique/melee/thrusting/custom_statuses/check_allow_status
+
 execute store result score @s ca.raycast run data get storage carto_event current[-1].parameters.size 2
 
 scoreboard players add @s ca.raycast 2

@@ -29,6 +29,8 @@ function cartographer_custom_statuses:calculator/process/create_action/enchantme
 # Riposte
 function cartographer_custom_statuses:calculator/process/create_action/enchantment/riposte
 
+# Special Attack - E.g Cleaving, Slamming, Thrusting
+function cartographer_custom_statuses:calculator/process/create_action/enchantment/special_attack
 
 
 # Throwable should activate Ranged Conditions

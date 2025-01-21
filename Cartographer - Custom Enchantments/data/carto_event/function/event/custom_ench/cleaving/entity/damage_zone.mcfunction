@@ -1,3 +1,6 @@
+data modify storage cartographer:custom_enchantments custom_statuses set value {}
+function cartographer_custom_enchantments:enchantment/weapon/unique/melee/cleaving/custom_statuses/check_allow_status
+
 $execute positioned ^ ^ ^$(half_size) positioned ~-$(half_size) ~-0.5 ~-$(half_size) as @a[dx=$(size_neg_1),dy=2,dz=$(size_neg_1)] at @s run tag @s add ca.cleaving_hit_1
 $execute positioned ^ ^ ^$(half_size) as @a[distance=..$(half_size)] at @s run tag @s add ca.cleaving_hit_2
 $execute positioned ^ ^1 ^$(half_size) as @a[distance=..$(half_size)] at @s run tag @s add ca.cleaving_hit_2

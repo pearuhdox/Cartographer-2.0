@@ -25,6 +25,9 @@ function cartographer_custom_statuses:calculator/process/create_action {action:"
 
 function cartographer_custom_statuses:calculator/process/create_action {action:"thorns"}
 
+function cartographer_custom_statuses:calculator/process/create_action {action:"special_attack"}
+
+
 #function cartographer_custom_statuses:calculator/process/create_action {action:"kill"}
 #function cartographer_custom_statuses:calculator/process/create_action {action:"passive"}
 #function cartographer_custom_statuses:calculator/process/create_action {action:"jump"}
