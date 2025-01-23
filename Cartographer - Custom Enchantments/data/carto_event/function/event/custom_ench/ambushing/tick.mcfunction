@@ -25,6 +25,7 @@ $execute as $(target) at @s if entity @s[tag=ca.ambushing_spawner] unless entity
 
 $execute as $(target) at @s unless entity @s[tag=ca.ambushing_charging] run scoreboard players set @s ca.ambushing_time 0
 $execute as $(target) at @s unless entity @s[tag=ca.ambushing_charging] run scoreboard players set @s ca.ambushing_look 0
+$execute as $(target) at @s unless entity @s[tag=ca.ambushing_charging] run scoreboard players set @s ca.channeling_time 0
 
 $execute as $(target) at @s unless entity @s[tag=ca.ambushing_charging] run return 0
 
