@@ -2,6 +2,9 @@
     "values": [
       "cartographer_custom_enchantments:passive/frenzy",
       "cartographer_custom_enchantments:passive/adrenaline",
-      "cartographer_custom_enchantments:passive/vengeance"
+      "cartographer_custom_enchantments:passive/vengeance",
+      "cartographer_custom_enchantments:passive/gravity",
+      "cartographer_custom_enchantments:passive/momentum",
+      "minecraft:thorns"
     ]
   }

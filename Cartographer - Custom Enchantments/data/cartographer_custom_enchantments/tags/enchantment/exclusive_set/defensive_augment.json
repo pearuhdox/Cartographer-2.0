@@ -1,7 +1,6 @@
 {
     "values": [
       "cartographer_custom_enchantments:passive/ethereal",
-      "cartographer_custom_enchantments:passive/diversion",
-      "minecraft:thorns"
+      "cartographer_custom_enchantments:passive/diversion"
     ]
   }
