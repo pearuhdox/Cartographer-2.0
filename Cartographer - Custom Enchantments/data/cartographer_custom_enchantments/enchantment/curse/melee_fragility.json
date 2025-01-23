@@ -3,7 +3,7 @@
     "translate": "enchantment.cartographer.melee_fragility_curse",
     "fallback": "Melee Fragility"
   },
-  "supported_items": "#cartographer_core:enchant_support/passive",
+  "supported_items": "#minecraft:enchantable/durability",
   "weight": 1,
   "max_level": 10,
   "max_cost": {
