@@ -23,7 +23,7 @@ $execute as $(target) at @s unless entity @s[tag=ca.ambushing_spawner] unless en
 $execute as $(target) at @s if entity @s[tag=ca.ambushing_spawner] unless entity @s[tag=ca.is_ambushing] unless entity @s[tag=ca.ambushing_charging] if score @s ca.ambushing_time matches 15.. if data storage carto_event current[-1].parameters.x run function carto_event:event/custom_ench/ambushing/warp_start with storage carto_event current[-1].parameters
 $execute as $(target) at @s if entity @s[tag=ca.ambushing_spawner] unless entity @s[tag=ca.is_ambushing] unless entity @s[tag=ca.ambushing_charging] if score @s ca.ambushing_time matches 15.. unless data storage carto_event current[-1].parameters.x run function carto_event:event/custom_ench/ambushing/fizzle with storage carto_event current[-1].parameters
 
-$execute as $(target) at @s unless entity @s[tag=ca.ambushing_charging] run scoreboard players set @s ca.ambushing_time 0
+$execute as $(target) at @s unless entity @s[tag=ca.ambushing_charging] run scoreboard players set @s ca.ambushing_time -10000
 $execute as $(target) at @s unless entity @s[tag=ca.ambushing_charging] run scoreboard players set @s ca.ambushing_look 0
 $execute as $(target) at @s unless entity @s[tag=ca.ambushing_charging] run scoreboard players set @s ca.channeling_time 0
 
