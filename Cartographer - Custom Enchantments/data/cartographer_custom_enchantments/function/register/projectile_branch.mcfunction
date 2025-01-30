@@ -49,6 +49,7 @@ execute if score @s ca.ench_collapse_lvl matches 1.. if entity @s[type=#bb:arrow
 
 
 execute if entity @s[type=potion] run tag @s add ca.has_enchant_data
+execute if entity @s[type=snowball] run tag @s add ca.has_enchant_data
 
 execute on origin run function gu:generate
 data modify storage cartographer:custom_enchantments projectile.owner set from storage gu:main out

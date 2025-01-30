@@ -8,6 +8,7 @@ execute if score $custom_statuses ca.installed matches 1.. if entity @s[type=pot
 execute if score $custom_attributes ca.installed matches 1.. if entity @s[type=potion,tag=ca.has_attribute_data] on passengers if entity @s[type=marker,tag=ca.new,tag=ca.projectile_checker] run data modify entity @s data.attr_data.potion_attr set from storage cartographer:custom_attributes projectile
 
 execute if score $custom_enchantments ca.installed matches 1.. if entity @s[type=potion,tag=ca.has_enchant_data] on passengers if entity @s[type=marker,tag=ca.new,tag=ca.projectile_checker] run data modify entity @s data.enchant_data set from storage cartographer:custom_enchantments projectile
+execute if score $custom_enchantments ca.installed matches 1.. if entity @s[type=snowball,tag=ca.has_enchant_data] on passengers if entity @s[type=marker,tag=ca.new,tag=ca.projectile_checker] run data modify entity @s data.enchant_data set from storage cartographer:custom_enchantments projectile
 
 execute if score $custom_attributes ca.installed matches 1.. if score $custom_statuses ca.installed matches 1.. if entity @s[type=potion,tag=ca.has_attribute_data] on passengers if entity @s[type=marker,tag=ca.new,tag=ca.projectile_checker] run data modify entity @s data.status_data.projectile_hit.radius set from entity @s data.attr_data.potion_attr.radius
 execute if score $custom_attributes ca.installed matches 1.. if score $custom_enchantments ca.installed matches 1.. if entity @s[type=potion,tag=ca.has_attribute_data] on passengers if entity @s[type=marker,tag=ca.new,tag=ca.projectile_checker] run data modify entity @s data.enchant_data.radius set from entity @s data.attr_data.potion_attr.radius
@@ -27,7 +28,10 @@ execute if entity @s[type=fishing_bobber] on passengers if entity @s[type=marker
 execute if score $custom_statuses ca.installed matches 1.. if entity @s[type=potion,tag=ca.apply_status_potion_throw_self] on passengers if entity @s[type=marker,tag=ca.new,tag=ca.projectile_checker] run tag @s add ca.apply_status_potion_throw_self
 execute if score $custom_statuses ca.installed matches 1.. if entity @s[type=potion,tag=ca.apply_status_potion_throw_target] on passengers if entity @s[type=marker,tag=ca.new,tag=ca.projectile_checker] run tag @s add ca.apply_status_potion_throw_target
 
-execute on passengers if entity @s[type=marker,tag=ca.new,tag=ca.projectile_checker] run tag @s remove ca.new
+data modify storage cartographer:core owner set value []
+data modify storage cartographer:core owner set from entity @s Owner
 
+execute on passengers if entity @s[type=marker,tag=ca.new,tag=ca.projectile_checker] run data modify entity @s data.Owner set from storage cartographer:core owner
+execute on passengers if entity @s[type=marker,tag=ca.new,tag=ca.projectile_checker] run tag @s remove ca.new
 
 scoreboard players set $projectile_check ca.systems 20

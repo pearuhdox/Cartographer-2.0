@@ -11,10 +11,15 @@ execute store result storage cartographer:custom_enchantments active_projectile.
 
 scoreboard players set $potion_hit ca.ench_var 1
 
+
 #Convert Data to Enchants for use here
 function cartographer_custom_enchantments:register/data_to_enchants
 
 #Potion Damage from Ranged Damage
 function cartographer_custom_enchantments:system/potion_landed/target with storage cartographer:custom_enchantments active_projectile
+
+#Run Various Enchantments Here that affect the user when activated - Grappling
+execute if score $grappling ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/grappling/activate_hit_potion
+
 
 scoreboard players set $potion_hit ca.ench_var 0

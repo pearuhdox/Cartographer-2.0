@@ -19,8 +19,6 @@ execute if score $sharpshot ca.ench_value matches 1.. run function cartographer_
 execute if score $explosive ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/general/explosive/hit
 execute if score $pulling ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/general/pulling/hit
 
-execute if score $grappling ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/grappling/activate_hit_potion
-
 execute if score $shrapnel ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/shrapnel/hit
 execute if score $ripper ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/ripper/hit
 execute if score $barbed ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/barbed/hit
