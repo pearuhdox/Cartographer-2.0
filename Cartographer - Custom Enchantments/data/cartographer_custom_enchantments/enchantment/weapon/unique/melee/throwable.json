@@ -4,8 +4,8 @@
     "fallback": "Throwable"
     },
     "exclusive_set": "#cartographer_custom_enchantments:exclusive_set/weapon_unique_special_attack",
-    "primary_items": "#cartographer_core:enchant_support/weapons/melee_no_fishing",
-    "supported_items": "#cartographer_core:enchant_support/weapons/melee_no_fishing",
+    "primary_items": "#cartographer_core:enchant_support/weapons/melee_no_fishing_no_trident",
+    "supported_items": "#cartographer_core:enchant_support/weapons/melee_no_fishing_no_trident",
     "weight": 1,
     "max_level": 10,
     "min_cost": {
