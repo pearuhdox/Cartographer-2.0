@@ -237,6 +237,10 @@ summon armor_stand 4206900 128 4206900 {UUID:[I;823664661,1158815761,823660881,-
 # [I;823730193,1146233106,0,0]
 summon armor_stand 4206900 0 4206900 {Marker:1b,Invisible:1b,NoGravity:1b,UUID:[I;823730193,1146233106,0,0]}
 
+
+execute unless entity 91bb5-0-0-0-ffff run summon item_display 4206900 0 4206900 {UUID:[I;596917,0,0,65535],CustomName:'"gm.math_entity"'}
+
+
 #Add the phe_listen and ehp_listen scores
 scoreboard objectives add ehp_listen dummy
 scoreboard objectives add phe_listen dummy

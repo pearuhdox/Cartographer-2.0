@@ -1,4 +1,3 @@
-
 scoreboard players operation $diff ca.healing_power_hp = @s ca.healing_power_hp
 scoreboard players operation $diff ca.healing_power_hp -= @s ca.healing_power_hp_past
 
