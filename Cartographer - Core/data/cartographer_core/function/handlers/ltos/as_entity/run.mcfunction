@@ -58,8 +58,8 @@ $execute if score $custom_enchantments ca.installed matches 1.. as $(killer) at 
 
 $execute if score $custom_enchantments ca.installed matches 1.. as $(killer) at @s if score @s ca.ench_recoil_lvl matches 1.. if data storage ltos:main data.is_player_attack unless data storage ltos:main data.is_projectile run function cartographer_custom_enchantments:enchantment/weapon/unique/general/recoil/activate
 
-$execute if score $custom_enchantments ca.installed matches 1.. if data storage ltos:main data.is_player_attack as $(killer) at @s if score @s ca.ench_explosive_lvl matches 1.. as $(killed) at @s run function cartographer_custom_enchantments:enchantment/weapon/unique/general/explosive/hit
-$execute if score $custom_enchantments ca.installed matches 1.. if data storage ltos:main data.is_projectile as $(killer) at @s if score @s ca.ench_explosive_lvl matches 1.. as $(killed) at @s run function cartographer_custom_enchantments:enchantment/weapon/unique/general/explosive/hit
+$execute if score $custom_enchantments ca.installed matches 1.. if data storage ltos:main data.is_player_attack as $(killer) at @s if score @s ca.ench_explosive_lvl matches 1.. as $(killed) at @s run function cartographer_custom_enchantments:enchantment/weapon/unique/general/explosive/kill with storage ltos:main macro
+$execute if score $custom_enchantments ca.installed matches 1.. if data storage ltos:main data.is_projectile as $(killer) at @s if score @s ca.ench_explosive_lvl matches 1.. as $(killed) at @s run function cartographer_custom_enchantments:enchantment/weapon/unique/general/explosive/kill with storage ltos:main macro
 
 $execute if score $custom_enchantments ca.installed matches 1.. if data storage ltos:main data.is_player_attack as $(killer) at @s if score @s ca.ench_quick_strike_lvl matches 1.. unless entity @s[tag=ca.quick_strike_processed] run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/quick_strike/hit
 
