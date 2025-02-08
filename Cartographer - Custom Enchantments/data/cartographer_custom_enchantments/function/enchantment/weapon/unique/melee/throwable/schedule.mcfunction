@@ -7,6 +7,8 @@ execute if entity @s[type=player] if predicate cartographer_custom_enchantments:
 execute if entity @s[type=player] if entity @s[tag=ca.has_custom_status_silenced] run tag @s add ca.indicator_cc
 execute if entity @s[type=player] if entity @s[tag=ca.has_custom_status_silenced] run scoreboard players set @s ca.cc_time 4
 
+execute if entity @s[type=player] if score @s ca.throwable_cooldown matches 1.. run scoreboard players remove @s ca.throwable_cooldown 1
+
 execute unless entity @s[type=player] if predicate cartographer_core:periodic_tick/20 run scoreboard players set @s ca.ench_throwable_lvl 0
 execute unless entity @s[type=player] if predicate cartographer_core:periodic_tick/20 run function cartographer_core:enchant_calculator/full_calculation {namespace:"cartographer_custom_enchantments",category:"weapon/unique/melee/",enchantment:"throwable",type:"ranged"}
 execute unless entity @s[type=player] if predicate cartographer_core:periodic_tick/20 run scoreboard players set $check ca.core_delay_check 1
