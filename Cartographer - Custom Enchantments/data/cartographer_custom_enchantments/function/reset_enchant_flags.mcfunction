@@ -45,6 +45,12 @@ tag @s remove ca.ench_ran_flag_trailblazer
 tag @s remove ca.ench_ran_flag_unseen
 tag @s remove ca.ench_ran_flag_vengeance
 
+tag @s remove ca.ench_ran_flag_hardened_blast
+tag @s remove ca.ench_ran_flag_hardened_projectile
+tag @s remove ca.ench_ran_flag_hardened_melee
+tag @s remove ca.ench_ran_flag_hardened_magic
+
+
 tag @s remove ca.ench_ran_flag_drilling
 tag @s remove ca.ench_ran_flag_excavator
 tag @s remove ca.ench_ran_flag_lightborn
@@ -95,3 +101,11 @@ tag @s remove ca.ench_ran_flag_ripper
 tag @s remove ca.ench_ran_flag_shrapnel
 
 tag @s remove ca.ench_ran_flag_thorns
+
+tag @s remove ca.ench_ran_flag_crippling_hit
+tag @s remove ca.ench_ran_flag_instability_hit
+tag @s remove ca.ench_ran_flag_courageous_hit
+tag @s remove ca.ench_ran_flag_inertia_hit
+tag @s remove ca.ench_ran_flag_poise_hit
+tag @s remove ca.ench_ran_flag_tenacity_hit
+tag @s remove ca.ench_ran_flag_unseen_hit

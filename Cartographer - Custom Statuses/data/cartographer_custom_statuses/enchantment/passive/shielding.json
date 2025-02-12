@@ -34,21 +34,6 @@
           "predicate": {}
         }
       }
-    ],
-    "minecraft:post_attack": [
-      {
-        "enchanted": "victim",
-        "affected": "victim",
-        "effect": {
-          "type": "minecraft:run_function",
-          "function": "cartographer_custom_statuses:enchantment/passive/shielding/schedule_hit"
-        },
-        "requirements": {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {}
-        }
-      }
     ]
   }
 }

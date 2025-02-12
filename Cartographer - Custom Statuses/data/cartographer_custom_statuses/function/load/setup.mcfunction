@@ -48,6 +48,7 @@ scoreboard objectives add ca.ench_bracing_gear_lvl dummy
 
 #Enchantment scoreboards functionality
 scoreboard objectives add ca.shielding_time dummy
+scoreboard objectives add ca.shielding_state dummy
 
 #Setup all necessary scoreboard commands.
 scoreboard objectives add ca.wither_tick dummy

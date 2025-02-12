@@ -1,8 +1,12 @@
 data modify storage cartographer_core:abs_helper effect set value {}
 data modify storage cartographer_core:abs_helper effect set from entity @s active_effects[{id:"minecraft:absorption"}]
 
+execute store result score $saved_dec ca.abs_handler run data get entity @s AbsorptionAmount 100
+scoreboard players operation $saved_dec ca.abs_handler %= $100 ca.CONSTANT
+
 execute store result score $saved_amt ca.abs_handler run data get entity @s AbsorptionAmount 1
 execute store result score $saved_dur ca.abs_handler run data get storage cartographer_core:abs_helper effect.duration 0.05
+execute if score $saved_dec ca.abs_handler matches 1.. run scoreboard players add $saved_amt ca.abs_handler 1
 
 data modify storage cartographer_core:abs_helper effect set value {}
 data modify storage cartographer_core:abs_helper effect set from entity @s active_effects[{id:"minecraft:absorption"}]
