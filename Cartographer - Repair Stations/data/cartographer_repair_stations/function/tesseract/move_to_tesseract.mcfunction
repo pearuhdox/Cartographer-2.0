@@ -23,12 +23,12 @@ execute if score $void_legs ca.tesseract matches 1.. unless score $repair_cost c
 execute if score $void_feet ca.tesseract matches 1.. store result score $repair_cost ca.tesseract run data get storage cartographer_repair_stations:tesseract Data.Equipped[5].components.minecraft:repair_cost
 execute if score $void_feet ca.tesseract matches 1.. unless score $repair_cost ca.tesseract <= $xp_maximum ca.repair_station_state run scoreboard players set $void_feet ca.tesseract 0
 
-execute if score $void_main ca.tesseract matches 1.. run tellraw @s {"text":"An item you were using has broken, and has been transported to the Repair Tesseract!","color":"#E24FFF","italic":false}
-execute if score $void_off ca.tesseract matches 1.. run tellraw @s {"text":"An item you were using has broken, and has been transported to the Repair Tesseract!","color":"#E24FFF","italic":false}
-execute if score $void_head ca.tesseract matches 1.. run tellraw @s {"text":"An item you were using has broken, and has been transported to the Repair Tesseract!","color":"#E24FFF","italic":false}
-execute if score $void_body ca.tesseract matches 1.. run tellraw @s {"text":"An item you were using has broken, and has been transported to the Repair Tesseract!","color":"#E24FFF","italic":false}
-execute if score $void_legs ca.tesseract matches 1.. run tellraw @s {"text":"An item you were using has broken, and has been transported to the Repair Tesseract!","color":"#E24FFF","italic":false}
-execute if score $void_feet ca.tesseract matches 1.. run tellraw @s {"text":"An item you were using has broken, and has been transported to the Repair Tesseract!","color":"#E24FFF","italic":false}
+execute if score $void_main ca.tesseract matches 1.. run tellraw @s {"translate":"cartographer.repair_tesseract.break_item","fallback":"An item you were using has broken, and has been transported to the Repair Tesseract!","color":"#E24FFF","italic":false}
+execute if score $void_off ca.tesseract matches 1.. run tellraw @s {"translate":"cartographer.repair_tesseract.break_item","fallback":"An item you were using has broken, and has been transported to the Repair Tesseract!","color":"#E24FFF","italic":false}
+execute if score $void_head ca.tesseract matches 1.. run tellraw @s {"translate":"cartographer.repair_tesseract.break_item","fallback":"An item you were using has broken, and has been transported to the Repair Tesseract!","color":"#E24FFF","italic":false}
+execute if score $void_body ca.tesseract matches 1.. run tellraw @s {"translate":"cartographer.repair_tesseract.break_item","fallback":"An item you were using has broken, and has been transported to the Repair Tesseract!","color":"#E24FFF","italic":false}
+execute if score $void_legs ca.tesseract matches 1.. run tellraw @s {"translate":"cartographer.repair_tesseract.break_item","fallback":"An item you were using has broken, and has been transported to the Repair Tesseract!","color":"#E24FFF","italic":false}
+execute if score $void_feet ca.tesseract matches 1.. run tellraw @s {"translate":"cartographer.repair_tesseract.break_item","fallback":"An item you were using has broken, and has been transported to the Repair Tesseract!","color":"#E24FFF","italic":false}
 
 execute if score $void_main ca.tesseract matches 1.. run data modify storage cartographer_repair_stations:tesseract Data.Queue append from storage cartographer_repair_stations:tesseract Data.Equipped[0]
 execute if score $void_off ca.tesseract matches 1.. run data modify storage cartographer_repair_stations:tesseract Data.Queue append from storage cartographer_repair_stations:tesseract Data.Equipped[1]

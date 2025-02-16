@@ -53,7 +53,7 @@ team modify CharonShadeRespawnSoon color green
 
 # When a player has a score in Boons, instead of being subject to the traditional death mechanics, they will instead lose 1 Boon. At 0, Death penalties occur as normal.
 # It is up to the mapmaker to decide how Boons are obtained, outside of the Ambrosia item which is innately supported.
-scoreboard objectives add ca.boons dummy [{"text":"⛃","color":"gold","italic":false},{"text":" Boons ","color":"green","bold":true,"italic":false},{"text":"⛃","italic":false}]
+scoreboard objectives add ca.boons dummy [{"text":"⛃ ","color":"gold"},{"text":"Boons","color":"green"},{"text":" ⛃"}]
 
 scoreboard players set 1 dt.var 1
 scoreboard players set 2 dt.var 2

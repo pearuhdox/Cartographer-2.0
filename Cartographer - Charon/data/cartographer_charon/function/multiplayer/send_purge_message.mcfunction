@@ -9,4 +9,4 @@ execute store result score $bag_p2 dt.var run data get storage cartographer_char
 execute store result score $bag_p3 dt.var run data get storage cartographer_charon:multiplayer_uuid UUID[3]
 
 
-execute if score $uuid_p0 dt.var = $bag_p0 dt.var if score $uuid_p1 dt.var = $bag_p1 dt.var if score $uuid_p2 dt.var = $bag_p2 dt.var if score $uuid_p3 dt.var = $bag_p3 dt.var run tellraw @s {"text":"Another player has collected your shade's items.","color":"green","italic":false}
+execute if score $uuid_p0 dt.var = $bag_p0 dt.var if score $uuid_p1 dt.var = $bag_p1 dt.var if score $uuid_p2 dt.var = $bag_p2 dt.var if score $uuid_p3 dt.var = $bag_p3 dt.var run tellraw @s {"translate":"cartographer.charon.shade.notify.collection","fallback":"Another player has collected your shade's items.","color":"green","italic":false}

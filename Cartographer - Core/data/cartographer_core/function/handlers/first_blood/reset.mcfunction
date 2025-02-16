@@ -1,1 +1,1 @@
-tag @s remove ca.enchant_first_blood
+tag @s remove ca.enchant_opportunist

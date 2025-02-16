@@ -10,7 +10,7 @@ execute align xyz run summon minecraft:item_display ~-0.85 ~1.275 ~0.1 {Tags:["n
 
 function cartographer_repair_stations:station/full_reset
 
-data modify entity 31182015-1851-6191-8192-000000000008 text set value '[{"text":"[","color":"white","italic":false},{"keybind":"key.use","color":"aqua","italic":false},{"text":"] with an item\\nto repair it.","color":"white","italic":false}]'
+data modify entity 31182015-1851-6191-8192-000000000008 text set value '{"translate":"cartographer.repair_station.display","fallback":"[%s] with an item\\nto repair it.","color":"white","italic":false,"with":[{"keybind":"key.use","color":"aqua"}]}'
 
 
 scoreboard players set $upgrade_1 ca.repair_station_state 0

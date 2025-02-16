@@ -20,12 +20,11 @@ effect give @s resistance 5 4 true
 
 tag @s add ca.revived_player
 
-execute unless score $shades_auto_revive charon.gmr matches 1.. run title @s actionbar [{"selector":"@p[distance=1..]","color":"gold","italic":false},{"text":" has revived you via your shade!","color":"aqua"}]
-execute if score $shades_auto_revive charon.gmr matches 1.. run title @s actionbar [{"text":"You have respawned!","color":"aqua"}]
+execute unless score $shades_auto_revive charon.gmr matches 1.. run title @s actionbar {"translate":"cartographer.charon.shade.revive.auto_off","fallback":"%s has revived you via your shade!","color":"aqua","with":[{"selector":"@p[distance=1..]","color":"gold","italic":false}]}
+execute if score $shades_auto_revive charon.gmr matches 1.. run title @s actionbar {"translate":"cartographer.charon.shade.revive.auto_on","fallback":"You have respawned!","color":"aqua"}
 
+execute unless score $shades_auto_revive charon.gmr matches 1.. run tellraw @s {"translate":"cartographer.charon.shade.revive.auto_off","fallback":"%s has revived you via your shade!","color":"aqua","with":[{"selector":"@p[distance=1..]","color":"gold","italic":false}]}
+execute if score $shades_auto_revive charon.gmr matches 1.. run tellraw @s {"translate":"cartographer.charon.shade.revive.auto_on","fallback":"You have respawned!","color":"aqua"}
 
-execute unless score $shades_auto_revive charon.gmr matches 1.. run tellraw @s [{"selector":"@p[distance=1..]","color":"gold","italic":false},{"text":" has revived you via your shade!","color":"aqua"}]
-execute if score $shades_auto_revive charon.gmr matches 1.. run tellraw @s [{"text":"You have respawned!","color":"aqua"}]
-
-tellraw @s {"text":"You have returned to your death location.","color":"yellow","italic":false,"hoverEvent":{"action":"show_text","contents":[{"text":"","color":"aqua"}]}}
-tellraw @s {"text":"Your items have been returned to you.","color":"yellow","italic":false,"hoverEvent":{"action":"show_text","contents":[{"text":"","color":"aqua"}]}}
+tellraw @s {"translate":"cartographer.charon.shade.revive.1","fallback":"You have returned to your death location.","color":"yellow","italic":false,"hoverEvent":{"action":"show_text","contents":[{"text":"","color":"aqua"}]}}
+tellraw @s {"translate":"cartographer.charon.shade.revive.2","fallback":"Your items have been returned to you.","color":"yellow","italic":false,"hoverEvent":{"action":"show_text","contents":[{"text":"","color":"aqua"}]}}

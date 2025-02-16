@@ -6,16 +6,21 @@ scoreboard players set $has_status ca.lexica_var 0
 scoreboard players set $keyword_energized ca.lexica_var 0
 scoreboard players set $keyword_splintering ca.lexica_var 0
 scoreboard players set $keyword_lethal ca.lexica_var 0
-scoreboard players set $keyword_first_blood ca.lexica_var 0
+scoreboard players set $keyword_opportunist ca.lexica_var 0
 scoreboard players set $keyword_self_movement ca.lexica_var 0
 scoreboard players set $keyword_channeled ca.lexica_var 0
-scoreboard players set $keyword_randomly ca.lexica_var 0
-scoreboard players set $keyword_direct_damage ca.lexica_var 0
-scoreboard players set $keyword_direct_attack ca.lexica_var 0
+scoreboard players set $keyword_random ca.lexica_var 0
+scoreboard players set $keyword_attacked ca.lexica_var 0
+scoreboard players set $keyword_damaged ca.lexica_var 0
+scoreboard players set $keyword_weapon ca.lexica_var 0
 scoreboard players set $keyword_locked ca.lexica_var 0
-scoreboard players set $keyword_tool_usage ca.lexica_var 0
+scoreboard players set $keyword_tool ca.lexica_var 0
 scoreboard players set $keyword_dynamic ca.lexica_var 0
 scoreboard players set $keyword_stacking ca.lexica_var 0
+scoreboard players set $keyword_sprinting ca.lexica_var 0
+scoreboard players set $keyword_passive ca.lexica_var 0
+scoreboard players set $keyword_equipped ca.lexica_var 0
+scoreboard players set $keyword_cooldown ca.lexica_var 0
 
 
 scoreboard players set $attr_ranged_damage ca.lexica_var 0

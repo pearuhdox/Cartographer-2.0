@@ -46,8 +46,8 @@ $execute if score $custom_enchantments ca.installed matches 1.. as $(killed) at 
 $execute if score $custom_enchantments ca.installed matches 1.. as $(killed) at $(killed) if score @s ca.ench_quake_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/quake/kill/victim
 
 
-$execute if score $custom_enchantments ca.installed matches 1.. as $(killer) if score @s ca.ench_eruption_lvl matches 1.. as $(killed) at @s unless entity @s[tag=ca.enchant_first_blood] run function cartographer_custom_enchantments:enchantment/passive/eruption/damage_event
-$execute if score $custom_enchantments ca.installed matches 1.. as $(killer) if score @s ca.ench_soulfire_lvl matches 1.. as $(killed) at @s unless entity @s[tag=ca.enchant_first_blood] run function cartographer_custom_enchantments:enchantment/passive/soulfire/damage_event
+$execute if score $custom_enchantments ca.installed matches 1.. as $(killer) if score @s ca.ench_eruption_lvl matches 1.. as $(killed) at @s unless entity @s[tag=ca.enchant_opportunist] run function cartographer_custom_enchantments:enchantment/passive/eruption/damage_event
+$execute if score $custom_enchantments ca.installed matches 1.. as $(killer) if score @s ca.ench_soulfire_lvl matches 1.. as $(killed) at @s unless entity @s[tag=ca.enchant_opportunist] run function cartographer_custom_enchantments:enchantment/passive/soulfire/damage_event
 
 #Weapon Enchantment Kill Effects
 $execute if score $custom_enchantments ca.installed matches 1.. as $(killer) at @s if score @s ca.ench_focus_lvl matches 1.. run scoreboard players add @s ca.focus_stacks 1

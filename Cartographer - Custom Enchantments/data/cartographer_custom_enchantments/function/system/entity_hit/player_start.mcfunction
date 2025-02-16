@@ -31,14 +31,14 @@ execute if score $proc ca.ench_orbit_lvl matches 2 at @s run function cartograph
 execute if score $proc ca.ench_orbit_lvl matches 3 at @s run function cartographer_custom_enchantments:enchantment/passive/orbit/damage_event {proc_chance:75}
 execute if score $proc ca.ench_orbit_lvl matches 4 at @s run function cartographer_custom_enchantments:enchantment/passive/orbit/damage_event {proc_chance:5}
 
-execute if score $proc ca.ench_eruption_lvl matches 1 at @s if entity @s[tag=!ca.enchant_first_blood] run function cartographer_custom_enchantments:enchantment/passive/eruption/damage_event
-execute if score $proc ca.ench_soulfire_lvl matches 1 at @s if entity @s[tag=!ca.enchant_first_blood] run function cartographer_custom_enchantments:enchantment/passive/soulfire/damage_event
+execute if score $proc ca.ench_eruption_lvl matches 1 at @s if entity @s[tag=!ca.enchant_opportunist] run function cartographer_custom_enchantments:enchantment/passive/eruption/damage_event
+execute if score $proc ca.ench_soulfire_lvl matches 1 at @s if entity @s[tag=!ca.enchant_opportunist] run function cartographer_custom_enchantments:enchantment/passive/soulfire/damage_event
 
-execute if score $proc ca.ench_eruption_lvl matches 1 at @s if entity @s[tag=!ca.enchant_first_blood] run execute unless score @s ca.first_blood_timer matches 1.. run scoreboard players set @s ca.first_blood_timer 300
-execute if score $proc ca.ench_eruption_lvl matches 1 at @s if entity @s[tag=!ca.enchant_first_blood] run tag @s add ca.enchant_first_blood
+execute if score $proc ca.ench_eruption_lvl matches 1 at @s if entity @s[tag=!ca.enchant_opportunist] run execute unless score @s ca.opportunist_timer matches 1.. run scoreboard players set @s ca.opportunist_timer 300
+execute if score $proc ca.ench_eruption_lvl matches 1 at @s if entity @s[tag=!ca.enchant_opportunist] run tag @s add ca.enchant_opportunist
 
-execute if score $proc ca.ench_soulfire_lvl matches 1 at @s if entity @s[tag=!ca.enchant_first_blood] run execute unless score @s ca.first_blood_timer matches 1.. run scoreboard players set @s ca.first_blood_timer 300
-execute if score $proc ca.ench_soulfire_lvl matches 1 at @s if entity @s[tag=!ca.enchant_first_blood] run tag @s add ca.enchant_first_blood
+execute if score $proc ca.ench_soulfire_lvl matches 1 at @s if entity @s[tag=!ca.enchant_opportunist] run execute unless score @s ca.opportunist_timer matches 1.. run scoreboard players set @s ca.opportunist_timer 300
+execute if score $proc ca.ench_soulfire_lvl matches 1 at @s if entity @s[tag=!ca.enchant_opportunist] run tag @s add ca.enchant_opportunist
 
 
 #Get Generic Weapon Damage Values - Only Direct Melee/Projectile Hits

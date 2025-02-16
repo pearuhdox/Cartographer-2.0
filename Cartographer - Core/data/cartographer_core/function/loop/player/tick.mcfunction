@@ -12,8 +12,8 @@ execute if score @s disable_player_skins matches 1.. run function cartographer_c
 #execute unless predicate cartographer_core:player/sprinting unless predicate cartographer_core:player/sneaking unless predicate cartographer_core:player/swimming if score @s ca.sprint_active matches 1.. run function cartographer_core:handlers/sprint_bug_check/start
 #execute if predicate cartographer_core:player/sprinting run scoreboard players set @s ca.sprint_active 61
 
-execute if score @s ca.first_blood_timer matches 1 run function cartographer_core:handlers/first_blood/reset
-execute if score @s ca.first_blood_timer matches 1.. run scoreboard players remove @s ca.first_blood_timer 1
+execute if score @s ca.opportunist_timer matches 1 run function cartographer_core:handlers/opportunist/reset
+execute if score @s ca.opportunist_timer matches 1.. run scoreboard players remove @s ca.opportunist_timer 1
 
 attribute @s entity_interaction_range modifier add ca.carto_hitbox_fix 0.5 add_value
 

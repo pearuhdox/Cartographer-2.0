@@ -1,4 +1,4 @@
-data modify entity 31182015-1851-6191-8192-000000000010 text set value '{"text":"Item is too expensive to repair!","color":"red","bold":true,"italic":false}'
+data modify entity 31182015-1851-6191-8192-000000000010 text set value '{"translate":"cartographer.repair_station.repair.expensive","fallback":"Item is too expensive to repair!","color":"red","bold":true,"italic":false}'
 scoreboard players set $display_warning ca.repair_station_state 80
 
 scoreboard players set $state ca.repair_station_state 1000

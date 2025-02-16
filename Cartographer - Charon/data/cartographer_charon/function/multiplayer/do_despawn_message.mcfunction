@@ -1,7 +1,7 @@
-tellraw @s {"text":"Your shade was not revived, and dropped its items normally.","color":"red","italic":false}
-title @s actionbar {"text":"Your shade was not revived.","color":"red","italic":false}
+tellraw @s {"translate":"cartographer.charon.shade.despawn.notify.chat","fallback":"Your shade was not revived, and dropped its items normally.","color":"red","italic":false}
+title @s actionbar {"translate":"cartographer.charon.shade.despawn.notify.actionbar","fallback":"Your shade was not revived.","color":"red","italic":false}
 
-tellraw @a[distance=1..] [{"selector":"@s","color":"yellow","italic":false},{"text":"'s","color":"yellow","italic":false},{"text":" shade has despawned!","color":"red","italic":false}]
+tellraw @a[distance=1..] {"translate":"cartographer.charon.shade.despawn.announce","fallback":"%s shade has despawned!","color":"red","with":[{"translate":"format.grammar.possessive","fallback":"%s\'s","color":"yellow","with":[{"selector":"@s","color":"yellow"}]},{"selector":"@s","color":"yellow"}]}
 
 gamemode survival @s
 

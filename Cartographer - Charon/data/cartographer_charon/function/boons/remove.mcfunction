@@ -1,7 +1,7 @@
 scoreboard players remove @s ca.boons 1
-tellraw @s {"text":"A Boon has been taken away to protect your items!","color":"#EB87FF","bold":false,"italic":false}
-execute if score @s ca.boons matches 1.. run tellraw @s [{"text":"Boons Remaining: ","color":"gold","bold":false,"italic":false},{"score":{"name":"@s","objective":"ca.boons"},"color":"green","bold":true,"italic":false}]
-execute if score @s ca.boons matches 0 run tellraw @s [{"text":"☠ ","color":"red","bold":false,"italic":false},{"text":"Out Of Boons","bold":true,"italic":false},{"text":" ☠"}]
+tellraw @s {"translate":"cartographer.charon.boons.take","fallback":"A Boon has been taken away to protect your items!","color":"#EB87FF"}
+execute if score @s ca.boons matches 1.. run tellraw @s {"translate":"cartographer.charon.boons.remaining","fallback":"Boons Remaining: %s","color":"gold","with":[{"score":{"name":"@s","objective":"ca.boons"},"color":"green","bold":true}]}
+execute if score @s ca.boons matches 0 run tellraw @s [{"text":"☠ ","color":"red"},{"translate":"cartographer.charon.boons.no_remaining","fallback":"Out Of Boons","bold":true},{"text":" ☠","bold":false}]
 
 execute if score @s ca.boons matches 1.. run playsound minecraft:block.bell.resonate player @a[distance=..8] ~ ~ ~ 1 2
 execute if score @s ca.boons matches 0 run playsound minecraft:entity.lightning_bolt.thunder player @a[distance=..8] ~ ~ ~ 1 2
