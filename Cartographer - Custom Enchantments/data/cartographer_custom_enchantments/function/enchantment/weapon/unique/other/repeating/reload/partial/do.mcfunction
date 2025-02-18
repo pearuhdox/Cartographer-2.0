@@ -8,5 +8,4 @@ execute if score $ammo_reload_per ca.ench_repeating_lvl matches 0 run scoreboard
 
 function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/reload/partial/do_recurse
 
-
 function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/reload/partial/replace

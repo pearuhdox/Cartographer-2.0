@@ -109,6 +109,10 @@ scoreboard players set $value ca.ench_var 0
 execute on passengers if entity @s[type=item_display] store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.minecraft:multishot
 scoreboard players operation @s ca.ench_multishot_lvl = $value ca.ench_var
 
+scoreboard players set $value ca.ench_var 0
+execute on passengers if entity @s[type=item_display] store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.minecraft:infinity
+scoreboard players operation @s ca.ench_infinity_lvl = $value ca.ench_var
+
 
 scoreboard players set $value ca.ench_var 0
 execute on passengers if entity @s[type=item_display] store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/starfall

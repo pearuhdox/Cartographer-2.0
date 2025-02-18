@@ -29,7 +29,7 @@
         "requirements": {
           "condition": "minecraft:match_tool",
           "predicate": {
-            "items": "minecraft:arrow"
+            "items": "#minecraft:arrows"
           }
         }
       }

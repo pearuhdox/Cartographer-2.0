@@ -82,6 +82,7 @@ scoreboard objectives add ca.ench_ricochet_lvl dummy
 scoreboard objectives add ca.ench_correction_lvl dummy
 scoreboard objectives add ca.ench_barrage_lvl dummy
 scoreboard objectives add ca.ench_multishot_lvl dummy
+scoreboard objectives add ca.ench_infinity_lvl dummy
 scoreboard objectives add ca.ench_quick_charge_lvl dummy
 scoreboard objectives add ca.ench_piercing_lvl dummy
 scoreboard objectives add ca.ench_loyalty_lvl dummy
@@ -172,6 +173,7 @@ scoreboard objectives add ca.ench_ricochet_hand_lvl dummy
 scoreboard objectives add ca.ench_correction_hand_lvl dummy
 scoreboard objectives add ca.ench_barrage_hand_lvl dummy
 scoreboard objectives add ca.ench_multishot_hand_lvl dummy
+scoreboard objectives add ca.ench_infinity_hand_lvl dummy
 scoreboard objectives add ca.ench_quick_charge_hand_lvl dummy
 scoreboard objectives add ca.ench_piercing_hand_lvl dummy
 scoreboard objectives add ca.ench_loyalty_hand_lvl dummy
@@ -262,6 +264,7 @@ scoreboard objectives add ca.ench_ricochet_gear_lvl dummy
 scoreboard objectives add ca.ench_correction_gear_lvl dummy
 scoreboard objectives add ca.ench_barrage_gear_lvl dummy
 scoreboard objectives add ca.ench_multishot_gear_lvl dummy
+scoreboard objectives add ca.ench_infinity_gear_lvl dummy
 scoreboard objectives add ca.ench_quick_charge_gear_lvl dummy
 scoreboard objectives add ca.ench_piercing_gear_lvl dummy
 scoreboard objectives add ca.ench_loyalty_gear_lvl dummy

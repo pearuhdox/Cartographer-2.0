@@ -1,4 +1,4 @@
-execute if entity @s[tag=i.restore_inventory] run function cartographer_custom_enchantments:enchantment/weapon/unique/other/infinity/restore
+execute if entity @s[tag=ca.infinity_restore_inv] run function cartographer_custom_enchantments:enchantment/weapon/unique/other/infinity/restore
 
 #No Entities are created so there are no edge cases to check
 

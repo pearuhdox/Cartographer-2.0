@@ -10,7 +10,10 @@ execute store result storage cartographer_custom_enchantments:repeating visual.m
 function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/visual/get_name
 data modify storage cartographer_custom_enchantments:repeating data.item.components.minecraft:custom_name set from storage cartographer_custom_enchantments:repeating visual.return
 
-function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/reload/partial/take_arrows
+scoreboard players set $has_infinity ca.ench_repeating_lvl 0
+execute if data storage cartographer_custom_enchantments:repeating data.item.components.minecraft:enchantments.levels.minecraft:infinity run scoreboard players set $has_infinity ca.ench_repeating_lvl 1
+
+execute unless score $has_infinity ca.ench_repeating_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/reload/partial/take_arrows
 
 playsound minecraft:block.chest.locked player @a[distance=..16] ~ ~ ~ 1 2
 

@@ -104,6 +104,9 @@ scoreboard players set $value ca.ench_var 0
 execute store result score $value ca.ench_var run data get entity @s weapon.components.minecraft:enchantments.levels.minecraft:multishot
 scoreboard players operation @s ca.ench_multishot_lvl += $value ca.ench_var
 
+#scoreboard players set $value ca.ench_var 0
+#execute store result score $value ca.ench_var run data get entity @s weapon.components.minecraft:enchantments.levels.minecraft:infinity
+#scoreboard players operation @s ca.ench_infinity_lvl += $value ca.ench_var
 
 #Repeating Calculation
 scoreboard players set $value ca.ench_var 0

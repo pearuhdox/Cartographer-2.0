@@ -44,6 +44,7 @@ execute store result score @s ca.ench_excavator_lvl run data get entity @s item.
 
 execute store result score @s ca.ench_multishot_lvl run data get entity @s item.components.minecraft:enchantments.levels.minecraft:multishot
 
+execute store result score @s ca.ench_infinity_lvl run data get entity @s item.components.minecraft:enchantments.levels.minecraft:infinity
 
 execute store result score @s ca.ench_starfall_lvl run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/starfall
 execute store result score @s ca.ench_orbit_lvl run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/orbit

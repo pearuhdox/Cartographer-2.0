@@ -14,10 +14,15 @@ execute store result storage cartographer_custom_enchantments:repeating visual.m
 function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/visual/get_name
 data modify storage bbl:pldata sudo_root.working_data.cartographer.enchants.repeating.returned_item.components.minecraft:custom_name set from storage cartographer_custom_enchantments:repeating visual.return
 
-function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/reload/single/take_arrows
+function bb:lib/pldata/write
 
-execute unless score @s ca.repeating_avail_ammo < $ammo_taken ca.repeating_avail_ammo run summon item ~ ~ ~ {Tags:["ca.repeating_refund"],Item:{id:"minecraft:stone",count:1}}
-execute unless score @s ca.repeating_avail_ammo < $ammo_taken ca.repeating_avail_ammo as @e[type=item,sort=nearest,limit=1,distance=..1,tag=ca.repeating_refund] at @s run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/reload/single/replace_refund
+scoreboard players set $has_infinity ca.ench_repeating_lvl 0
+execute if data storage bbl:pldata sudo_root.working_data.cartographer.enchants.repeating.returned_item.components.minecraft:enchantments.levels.minecraft:infinity run scoreboard players set $has_infinity ca.ench_repeating_lvl 1
+
+execute unless score $has_infinity ca.ench_repeating_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/reload/single/take_arrows
+
+execute unless score $has_infinity ca.ench_repeating_lvl matches 1.. unless score @s ca.repeating_avail_ammo < $ammo_taken ca.repeating_avail_ammo run summon item ~ ~ ~ {Tags:["ca.repeating_refund"],Item:{id:"minecraft:stone",count:1}}
+execute unless score $has_infinity ca.ench_repeating_lvl matches 1.. unless score @s ca.repeating_avail_ammo < $ammo_taken ca.repeating_avail_ammo as @e[type=item,sort=nearest,limit=1,distance=..1,tag=ca.repeating_refund] at @s run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/reload/single/replace_refund
 
 playsound minecraft:block.chest.locked player @a[distance=..16] ~ ~ ~ 1 2
 
