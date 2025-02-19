@@ -3,7 +3,7 @@
     "translate": "enchantment.cartographer.two_handed_curse",
     "fallback": "Two Handed"
   },
-  "supported_items": "#minecraft:enchantable/durability",
+  "supported_items": "#cartographer_core:enchant_support/passive_holdable",
   "weight": 1,
   "max_level": 2,
   "min_cost": {
