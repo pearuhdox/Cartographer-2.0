@@ -8,7 +8,7 @@
               "predicates": {
                 "minecraft:enchantments": [
                   {
-                    "enchantments": "minecraft:flame",
+                    "enchantments": "minecraft:multishot",
                     "levels": {
                       "min": 1
                     }
@@ -21,6 +21,6 @@
       }
     },
     "rewards": {
-      "function": "cartographer_custom_enchantments:enchantment/vanilla/punch/player_calculation"
+      "function": "cartographer_custom_enchantments:enchantment/vanilla/multishot/player_calculation"
     }
   }

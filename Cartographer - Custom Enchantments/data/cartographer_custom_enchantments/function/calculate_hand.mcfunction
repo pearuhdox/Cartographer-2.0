@@ -945,6 +945,39 @@ scoreboard players operation @s ca.ench_multitool_lvl += @s ca.ench_multitool_ge
 scoreboard players operation @s ca.ench_multitool_lvl += @s ca.ench_multitool_hand_lvl
 
 
+scoreboard players set @s ca.ench_quick_charge_hand_lvl 0
+scoreboard players set @s ca.ench_quick_charge_lvl 0
+
+scoreboard players set $ench ca.ench_var 0
+execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.main.components.minecraft:enchantments.levels.minecraft:quick_charge
+scoreboard players operation @s ca.ench_quick_charge_hand_lvl += $ench ca.ench_var
+
+execute unless score @s ca.ench_quick_charge_hand_lvl matches 1.. run scoreboard players operation @s ca.ench_quick_charge_lvl += @s ca.ench_quick_charge_gear_lvl
+scoreboard players operation @s ca.ench_quick_charge_lvl += @s ca.ench_quick_charge_hand_lvl
+
+
+scoreboard players set @s ca.ench_multishot_hand_lvl 0
+scoreboard players set @s ca.ench_multishot_lvl 0
+
+scoreboard players set $ench ca.ench_var 0
+execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.main.components.minecraft:enchantments.levels.minecraft:multishot
+scoreboard players operation @s ca.ench_multishot_hand_lvl += $ench ca.ench_var
+
+execute unless score @s ca.ench_multishot_hand_lvl matches 1.. run scoreboard players operation @s ca.ench_multishot_lvl += @s ca.ench_multishot_gear_lvl
+scoreboard players operation @s ca.ench_multishot_lvl += @s ca.ench_multishot_hand_lvl
+
+
+scoreboard players set @s ca.ench_infinity_hand_lvl 0
+scoreboard players set @s ca.ench_infinity_lvl 0
+
+scoreboard players set $ench ca.ench_var 0
+execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.main.components.minecraft:enchantments.levels.minecraft:infinity
+scoreboard players operation @s ca.ench_infinity_hand_lvl += $ench ca.ench_var
+
+execute unless score @s ca.ench_infinity_hand_lvl matches 1.. run scoreboard players operation @s ca.ench_infinity_lvl += @s ca.ench_infinity_gear_lvl
+scoreboard players operation @s ca.ench_infinity_lvl += @s ca.ench_infinity_hand_lvl
+
+
 scoreboard players set @s ca.ench_flame_hand_lvl 0
 scoreboard players set @s ca.ench_flame_lvl 0
 

@@ -1,0 +1,4 @@
+tag @s add ca.do_enchant_calc
+tag @s add ca.do_enchant_calc_multishot
+
+advancement revoke @s only cartographer_custom_enchantments:enchant_calculation/vanilla/multishot
