@@ -1,4 +1,4 @@
-$function carto_event:api/create_single_entity_event {event:"custom_attribute/chaining_hit/damage",duration:1,delay:1,parameters:{chaining_damage:$(chaining_damage),chaining_damage_type:"$(chaining_damage_type)",chaining_owner:"$(chaining_owner)"},merge_behavior:"merge"}
+$function carto_event:api/create_single_entity_event {event:"custom_attribute/chaining_hit/damage",duration:1,delay:1,parameters:{chaining_hit_damage:$(chaining_hit_damage),chaining_hit_damage_type:"$(chaining_hit_damage_type)",chaining_owner:"$(chaining_owner)"},merge_behavior:"merge"}
 
 scoreboard players remove $count ca.chaining_hit_var 1
 

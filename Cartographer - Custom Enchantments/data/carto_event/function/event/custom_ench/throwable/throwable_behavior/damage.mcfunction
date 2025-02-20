@@ -9,9 +9,9 @@ $execute as $(target) at @s run function cartographer_custom_attributes:system/p
 
 execute if score $lucky_hit_chance ca.attr_apply_var matches 1.. run function cartographer_custom_attributes:custom_attributes/effects/lucky_hit/start {proc_coeff:"75",attack_type:"throwable"}
 
-execute if score $chaining_chance ca.attr_apply_var matches 1.. unless entity @s[tag=ca.was_chained] run function cartographer_custom_attributes:custom_attributes/effects/chaining_hit/start {proc_coeff:"75",attack_type:"throwable"}
+execute if score $chaining_hit_chance ca.attr_apply_var matches 1.. unless entity @s[tag=ca.was_chained] run function cartographer_custom_attributes:custom_attributes/effects/chaining_hit/start {proc_coeff:"75",attack_type:"throwable"}
 
-execute if score $restrike_chance ca.attr_apply_var matches 1.. unless entity @s[tag=ca.was_restriked] run function cartographer_custom_attributes:custom_attributes/effects/restrike_hit/start {proc_coeff:"75",attack_type:"throwable"}
+execute if score $restrike_hit_chance ca.attr_apply_var matches 1.. unless entity @s[tag=ca.was_restriked] run function cartographer_custom_attributes:custom_attributes/effects/restrike_hit/start {proc_coeff:"75",attack_type:"throwable"}
 
 
 #execute if entity @s[type=end_crystal] at @s run summon snowball ~ ~0.65 ~ {Motion:[0.0,-10.0,0.0]}

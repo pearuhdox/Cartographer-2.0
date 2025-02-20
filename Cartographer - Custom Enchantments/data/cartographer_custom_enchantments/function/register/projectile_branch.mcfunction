@@ -7,6 +7,7 @@ execute unless entity @s[tag=ca.no_ench_calc] run function cartographer_custom_e
 #Do Various VFX on origin based on enchants
 execute on origin if score @s ca.concentration_time matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/damage/general/concentration/vfx
 
+
 execute if entity @s[type=#bb:projectile,tag=!ca.custom_trident] on origin if score @s ca.ench_recoil_lvl matches 1.. unless score @s ca.draw_bow_time matches 1..10 run function cartographer_custom_enchantments:enchantment/weapon/unique/general/recoil/activate_projectile
 execute if entity @s[type=fishing_bobber] on origin if score @s ca.ench_recoil_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/general/recoil/activate_projectile
 
@@ -34,6 +35,7 @@ execute if score @s ca.ench_barrage_lvl matches 1.. run tag @s add ca.needs_chec
 execute if score @s ca.ench_barrage_lvl matches 1.. run tag @s add ca.allow_damage_bypass
 
 #Add Multishot - Tag for checker
+execute unless entity @s[tag=ca.custom_trident] unless entity @s[tag=ca.no_ench_calc] unless entity @s[tag=ca.multishot_spawned] if score @s ca.ench_multishot_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/multishot/setup_event
 execute if score @s ca.ench_multishot_lvl matches 1.. run tag @s add ca.needs_checker
 execute if score $arrow_owner_type ca.ench_var matches 1.. if score @s ca.ench_multishot_lvl matches 1.. run tag @s add ca.allow_damage_bypass
 

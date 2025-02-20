@@ -1,24 +1,24 @@
 scoreboard players operation $damage ca.chaining_hit_var *= $50 ca.CONSTANT
 scoreboard players operation $damage ca.chaining_hit_var /= $100 ca.CONSTANT
 
-execute on attacker if score $chaining_damage_flat ca.attr_apply_var matches -1999999.. run scoreboard players operation $damage ca.chaining_hit_var += $chaining_damage_flat ca.attr_apply_var
+execute on attacker if score $chaining_hit_damage_flat ca.attr_apply_var matches -1999999.. run scoreboard players operation $damage ca.chaining_hit_var += $chaining_hit_damage_flat ca.attr_apply_var
 
-execute on attacker if score $chaining_damage_percent ca.attr_apply_var matches -1999999.. run scoreboard players operation $damage ca.chaining_hit_var *= $chaining_damage_percent ca.attr_apply_var
-execute on attacker if score $chaining_damage_percent ca.attr_apply_var matches -1999999.. run scoreboard players operation $damage ca.chaining_hit_var /= $100 ca.CONSTANT
+execute on attacker if score $chaining_hit_damage_percent ca.attr_apply_var matches -1999999.. run scoreboard players operation $damage ca.chaining_hit_var *= $chaining_hit_damage_percent ca.attr_apply_var
+execute on attacker if score $chaining_hit_damage_percent ca.attr_apply_var matches -1999999.. run scoreboard players operation $damage ca.chaining_hit_var /= $100 ca.CONSTANT
 
 scoreboard players set $count ca.chaining_hit_var 1
-execute on attacker run scoreboard players operation $count_attr ca.chaining_hit_var = $chaining_amount_flat ca.attr_apply_var
+execute on attacker run scoreboard players operation $count_attr ca.chaining_hit_var = $chaining_hit_amount_flat ca.attr_apply_var
 scoreboard players operation $count_attr ca.chaining_hit_var /= $100 ca.CONSTANT
 
-execute on attacker if score $chaining_amount_flat ca.attr_apply_var matches -1999999.. run scoreboard players operation $count ca.chaining_hit_var += $count_attr ca.chaining_hit_var
+execute on attacker if score $chaining_hit_amount_flat ca.attr_apply_var matches -1999999.. run scoreboard players operation $count ca.chaining_hit_var += $count_attr ca.chaining_hit_var
 
-execute on attacker if score $chaining_amount_percent ca.attr_apply_var matches -1999999.. run scoreboard players operation $count ca.chaining_hit_var *= $chaining_amount_percent ca.attr_apply_var
-execute on attacker if score $chaining_amount_percent ca.attr_apply_var matches -1999999.. run scoreboard players operation $count ca.chaining_hit_var /= $100 ca.CONSTANT
+execute on attacker if score $chaining_hit_amount_percent ca.attr_apply_var matches -1999999.. run scoreboard players operation $count ca.chaining_hit_var *= $chaining_hit_amount_percent ca.attr_apply_var
+execute on attacker if score $chaining_hit_amount_percent ca.attr_apply_var matches -1999999.. run scoreboard players operation $count ca.chaining_hit_var /= $100 ca.CONSTANT
 
 scoreboard players operation $count ca.chaining_hit_var *= $tier ca.chaining_hit_var
 
 
-execute store result storage cartographer:custom_attributes chaining_damage double 0.01 run scoreboard players get $damage ca.chaining_hit_var
+execute store result storage cartographer:custom_attributes chaining_hit_damage double 0.01 run scoreboard players get $damage ca.chaining_hit_var
 
 data modify storage gu:main out set value "-"
 execute on attacker run function gu:generate

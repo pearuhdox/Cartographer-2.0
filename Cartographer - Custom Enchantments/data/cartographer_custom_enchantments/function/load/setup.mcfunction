@@ -464,6 +464,7 @@ scoreboard objectives add ca.ambushing_cooldown dummy
 scoreboard objectives add ca.throwable_time dummy
 scoreboard objectives add ca.throwable_cooldown dummy
 scoreboard objectives add ca.throwable_loyalty dummy
+scoreboard objectives add ca.throwable_multishot dummy
 
 scoreboard objectives add ca.channeling_time dummy
 

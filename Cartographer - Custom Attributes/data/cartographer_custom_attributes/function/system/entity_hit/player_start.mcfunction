@@ -16,6 +16,6 @@ execute if entity @s[advancements={entityid:entity_hurt_player={is_projectile=tr
 execute if entity @s[advancements={entityid:entity_hurt_player={panic_causes=false}}] if score $do_lucky_hit ca.lucky_hit_var matches 1.. run function cartographer_custom_attributes:custom_attributes/effects/lucky_hit/start {proc_coeff:"5",attack_type:"melee"}
 
 scoreboard players set $do_restrike ca.restrike_hit_var 0
-execute on attacker if score @s ca.attr_restrike_chance_total matches -1999999.. run scoreboard players set $do_restrike ca.restrike_hit_var 1
+execute on attacker if score @s ca.attr_restrike_hit_chance_total matches -1999999.. run scoreboard players set $do_restrike ca.restrike_hit_var 1
 execute if entity @s[advancements={entityid:entity_hurt_player={is_projectile=false}}] unless entity @s[tag=ca.was_restriked] if score $do_restrike ca.restrike_hit_var matches 1.. run function cartographer_custom_attributes:custom_attributes/effects/restrike_hit/start {proc_coeff:"100",attack_type:"melee"}
 execute if entity @s[advancements={entityid:entity_hurt_player={is_projectile=true}}] unless entity @s[tag=ca.was_restriked] if score $do_restrike ca.restrike_hit_var matches 1.. run function cartographer_custom_attributes:custom_attributes/effects/restrike_hit/start {proc_coeff:"75",attack_type:"projectile"}

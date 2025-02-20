@@ -25,3 +25,6 @@ data modify storage cartographer:custom_enchantments step_scale set from storage
 
 $execute as $(target) if entity @s[type=player] at @s anchored eyes positioned ^ ^ ^0.25 summon item_display run function carto_event:event/custom_ench/throwable/projectile/create with storage carto_event current[-1].parameters
 $execute as $(target) unless entity @s[type=player] at @s anchored eyes positioned ^ ^ ^0.25 summon item_display run function carto_event:event/custom_ench/throwable/projectile/create with storage carto_event current[-1].parameters
+
+$execute as $(target) if score @s ca.throwable_multishot matches 1.. if entity @s[type=player] at @s anchored eyes positioned ^ ^ ^0.25 run function carto_event:event/custom_ench/throwable/projectile/multishot
+$execute as $(target) if score @s ca.throwable_multishot matches 1.. unless entity @s[type=player] at @s anchored eyes positioned ^ ^ ^0.25 run function carto_event:event/custom_ench/throwable/projectile/multishot

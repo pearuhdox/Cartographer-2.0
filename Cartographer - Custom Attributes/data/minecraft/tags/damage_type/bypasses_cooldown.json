@@ -2,6 +2,6 @@
     "values": [
       "cartographer_custom_attributes:attribute_damage_bypass",
       "cartographer_custom_attributes:fishing_bobber_damage_bypass",
-      "cartographer_custom_attributes:restrike_damage"
+      "cartographer_custom_attributes:restrike_hit_damage"
     ]
   }

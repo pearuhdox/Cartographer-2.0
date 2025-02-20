@@ -2,7 +2,7 @@ execute if score @s ca.chaining_hit_entropy matches ..-1 run scoreboard players 
 
 $scoreboard players set $proc_coeff ca.chaining_hit_var $(proc_coeff)
 
-execute on attacker run scoreboard players operation $target ca.rand = $chaining_chance ca.attr_apply_var
+execute on attacker run scoreboard players operation $target ca.rand = $chaining_hit_chance ca.attr_apply_var
 scoreboard players remove $target ca.rand 100
 
 scoreboard players operation $target ca.rand *= $proc_coeff ca.chaining_hit_var

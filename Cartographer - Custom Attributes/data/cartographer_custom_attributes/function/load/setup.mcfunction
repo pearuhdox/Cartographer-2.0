@@ -181,33 +181,33 @@ scoreboard objectives add ca.attr_lucky_hit_damage_percent dummy
 scoreboard objectives add ca.attr_lucky_hit_damage_total dummy
 
 
-scoreboard objectives add ca.attr_chaining_damage_value dummy
-scoreboard objectives add ca.attr_chaining_damage_percent dummy
-scoreboard objectives add ca.attr_chaining_damage_total dummy
+scoreboard objectives add ca.attr_chaining_hit_damage_value dummy
+scoreboard objectives add ca.attr_chaining_hit_damage_percent dummy
+scoreboard objectives add ca.attr_chaining_hit_damage_total dummy
 
-scoreboard objectives add ca.attr_chaining_chance_value dummy
-scoreboard objectives add ca.attr_chaining_chance_percent dummy
-scoreboard objectives add ca.attr_chaining_chance_total dummy
+scoreboard objectives add ca.attr_chaining_hit_chance_value dummy
+scoreboard objectives add ca.attr_chaining_hit_chance_percent dummy
+scoreboard objectives add ca.attr_chaining_hit_chance_total dummy
 
-scoreboard objectives add ca.attr_chaining_amount_value dummy
-scoreboard objectives add ca.attr_chaining_amount_percent dummy
-scoreboard objectives add ca.attr_chaining_amount_total dummy
+scoreboard objectives add ca.attr_chaining_hit_amount_value dummy
+scoreboard objectives add ca.attr_chaining_hit_amount_percent dummy
+scoreboard objectives add ca.attr_chaining_hit_amount_total dummy
 
-scoreboard objectives add ca.attr_restrike_damage_value dummy
-scoreboard objectives add ca.attr_restrike_damage_percent dummy
-scoreboard objectives add ca.attr_restrike_damage_total dummy
+scoreboard objectives add ca.attr_restrike_hit_damage_value dummy
+scoreboard objectives add ca.attr_restrike_hit_damage_percent dummy
+scoreboard objectives add ca.attr_restrike_hit_damage_total dummy
 
-scoreboard objectives add ca.attr_restrike_chance_value dummy
-scoreboard objectives add ca.attr_restrike_chance_percent dummy
-scoreboard objectives add ca.attr_restrike_chance_total dummy
+scoreboard objectives add ca.attr_restrike_hit_chance_value dummy
+scoreboard objectives add ca.attr_restrike_hit_chance_percent dummy
+scoreboard objectives add ca.attr_restrike_hit_chance_total dummy
 
-scoreboard objectives add ca.attr_restrike_amount_value dummy
-scoreboard objectives add ca.attr_restrike_amount_percent dummy
-scoreboard objectives add ca.attr_restrike_amount_total dummy
+scoreboard objectives add ca.attr_restrike_hit_amount_value dummy
+scoreboard objectives add ca.attr_restrike_hit_amount_percent dummy
+scoreboard objectives add ca.attr_restrike_hit_amount_total dummy
 
-scoreboard objectives add ca.attr_restrike_rate_value dummy
-scoreboard objectives add ca.attr_restrike_rate_percent dummy
-scoreboard objectives add ca.attr_restrike_rate_total dummy
+scoreboard objectives add ca.attr_restrike_hit_rate_value dummy
+scoreboard objectives add ca.attr_restrike_hit_rate_percent dummy
+scoreboard objectives add ca.attr_restrike_hit_rate_total dummy
 
 
 scoreboard objectives add ca.attr_life_drain_chance_value dummy

@@ -1,4 +1,3 @@
-
 $execute store result score $temp ca.ench_var run data get storage cartographer:enchantment_data equipped.$(slot).components.minecraft:enchantments.levels.$(namespace):$(category)$(enchantment)
 $execute if score $temp ca.ench_var matches 1.. run scoreboard players operation @s ca.ench_$(enchantment)_lvl += $temp ca.ench_var
 $execute if score $temp ca.ench_var matches 1.. run scoreboard players operation $was_$(slot) ca.calc_type += $temp ca.ench_var

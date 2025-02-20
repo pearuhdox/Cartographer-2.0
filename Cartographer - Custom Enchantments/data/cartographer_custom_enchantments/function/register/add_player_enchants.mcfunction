@@ -101,7 +101,7 @@ execute on origin run scoreboard players operation $value ca.ench_var = @s ca.en
 scoreboard players operation @s ca.ench_excavator_lvl += $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s weapon.components.minecraft:enchantments.levels.minecraft:multishot
+execute on origin run scoreboard players operation $value ca.ench_var = @s ca.ench_multishot_lvl
 scoreboard players operation @s ca.ench_multishot_lvl += $value ca.ench_var
 
 #scoreboard players set $value ca.ench_var 0

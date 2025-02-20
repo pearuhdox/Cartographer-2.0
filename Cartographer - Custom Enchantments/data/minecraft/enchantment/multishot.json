@@ -4,27 +4,11 @@
       "translate": "enchantment.minecraft.multishot"
     },
     "effects": {
-      "minecraft:projectile_count": [
+      "minecraft:tick": [
         {
           "effect": {
-            "type": "minecraft:add",
-            "value": {
-              "type": "minecraft:linear",
-              "base": 2.0,
-              "per_level_above_first": 2.0
-            }
-          }
-        }
-      ],
-      "minecraft:projectile_spread": [
-        {
-          "effect": {
-            "type": "minecraft:add",
-            "value": {
-              "type": "minecraft:linear",
-              "base": 10.0,
-              "per_level_above_first": 10.0
-            }
+            "type": "minecraft:run_function",
+            "function": "cartographer_custom_enchantments:enchantment/weapon/unique/ranged/multishot/schedule"
           }
         }
       ]
@@ -42,7 +26,8 @@
         "per_level_above_first": 15
       },
     "slots": [
-      "mainhand"
+      "mainhand",
+      "offhand"
     ],
     "weight": 1
   }

@@ -1,3 +1,5 @@
+scoreboard players operation @s ca.throwable_multishot = @s ca.ench_multishot_lvl
+
 execute if entity @s[type=player] run function carto_event:event/custom_ench/throwable/throw/branch with storage carto_event current[-1].parameters
 execute unless entity @s[type=player] run function carto_event:event/custom_ench/throwable/throw/branch_mob with storage carto_event current[-1].parameters
 

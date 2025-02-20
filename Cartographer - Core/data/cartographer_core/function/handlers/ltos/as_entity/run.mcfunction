@@ -11,8 +11,8 @@ $execute if score $custom_statuses ca.installed matches 1.. as $(killer) at $(ki
 #Run Custom Attributes On Kill
 $execute if score $custom_attributes ca.installed matches 1.. as $(killer) at @s if score @s ca.attr_life_drain_chance_total matches -1999999.. run function cartographer_custom_attributes:custom_attributes/effects/life_drain/start {proc_coeff:"100"}
 
-$execute if score $custom_attributes ca.installed matches 1.. if data storage ltos:main data.is_player_attack as $(killer) if score @s ca.attr_chaining_chance_total matches -1999999.. as $(killed) at @s unless entity @s[tag=ca.was_chained] run function cartographer_custom_attributes:custom_attributes/effects/chaining_hit/start {proc_coeff:"100",attack_type:"melee"}
-$execute if score $custom_attributes ca.installed matches 1.. if data storage ltos:main data.is_projectile as $(killer) if score @s ca.attr_chaining_chance_total matches -1999999.. as $(killed) at @s unless entity @s[tag=ca.was_chained] run function cartographer_custom_attributes:custom_attributes/effects/chaining_hit/start {proc_coeff:"100",attack_type:"projectile"}
+$execute if score $custom_attributes ca.installed matches 1.. if data storage ltos:main data.is_player_attack as $(killer) if score @s ca.attr_chaining_hit_chance_total matches -1999999.. as $(killed) at @s unless entity @s[tag=ca.was_chained] run function cartographer_custom_attributes:custom_attributes/effects/chaining_hit/start {proc_coeff:"100",attack_type:"melee"}
+$execute if score $custom_attributes ca.installed matches 1.. if data storage ltos:main data.is_projectile as $(killer) if score @s ca.attr_chaining_hit_chance_total matches -1999999.. as $(killed) at @s unless entity @s[tag=ca.was_chained] run function cartographer_custom_attributes:custom_attributes/effects/chaining_hit/start {proc_coeff:"100",attack_type:"projectile"}
 
 #Run All At the Killer Only Enchantments in Statuses
 $execute if score $custom_statuses ca.installed matches 1.. as $(killer) at @s run function cartographer_core:handlers/ltos/as_entity/custom_statuses_enchants
