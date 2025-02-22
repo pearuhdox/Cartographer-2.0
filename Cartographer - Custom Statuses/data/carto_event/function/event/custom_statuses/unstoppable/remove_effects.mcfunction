@@ -3,6 +3,7 @@ effect clear @s minecraft:darkness
 effect clear @s minecraft:mining_fatigue
 effect clear @s minecraft:slowness
 effect clear @s minecraft:weakness
+effect clear @s minecraft:levitation
 
 
 attribute @s minecraft:attack_damage modifier remove ca.siphon_strength
