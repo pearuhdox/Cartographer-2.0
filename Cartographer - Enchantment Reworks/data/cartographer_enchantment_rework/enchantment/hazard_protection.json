@@ -7,7 +7,7 @@
   "supported_items": "#cartographer_core:enchant_support/passive_armor",
   "primary_items": "#cartographer_core:enchant_support/passive_armor",
   "weight": 10,
-  "max_level": 10,
+  "max_level": 20,
   "min_cost": {
     "base": 5,
     "per_level_above_first": 8
@@ -29,8 +29,8 @@
           "type": "minecraft:add",
           "value": {
             "type": "minecraft:linear",
-            "base": 2.0,
-            "per_level_above_first": 2.0
+            "base": 1.0,
+            "per_level_above_first": 1.0
           }
         },
         "requirements": {

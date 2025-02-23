@@ -9,6 +9,9 @@ execute if score @s ca.induction_stack matches 1501.. run scoreboard players set
 execute if entity @s[type=player] run function cartographer_custom_enchantments:enchantment/passive/induction/tier_up_player_vfx
 execute unless entity @s[type=player] run function cartographer_custom_enchantments:enchantment/passive/induction/tier_up_vfx
 
+execute if entity @s[type=player] if score @s ca.induction_stack matches 1500.. if predicate cartographer_core:periodic_tick/5 run function cartographer_core:handlers/energized/vfx
+execute unless entity @s[type=player] if score @s ca.induction_stack matches 1500.. if predicate cartographer_core:periodic_tick/5 run function cartographer_core:handlers/energized/vfx_entity
+
 #execute if entity @s[type=player] run function cartographer_core:enchant_calculator/full_calculation {namespace:"cartographer_custom_enchantments",category:"passive/",enchantment:"induction",type:"passive"}
 #execute if entity @s[type=player,tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. run function cartographer_core:enchant_calculator/hand_calculation {namespace:"cartographer_custom_enchantments",category:"passive/",enchantment:"induction",type:"passive"}
 

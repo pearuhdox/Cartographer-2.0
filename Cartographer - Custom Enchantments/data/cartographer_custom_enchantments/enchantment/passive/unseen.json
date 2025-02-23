@@ -6,7 +6,7 @@
     "exclusive_set": "#cartographer_custom_enchantments:exclusive_set/secondary_defense",
     "supported_items": "#cartographer_core:enchant_support/passive",
     "weight": 1,
-    "max_level": 7,
+    "max_level": 10,
     "min_cost": {
       "base": 10,
       "per_level_above_first": 15
@@ -44,8 +44,8 @@
             "type": "minecraft:add",
             "value": {
                 "type": "minecraft:linear",
-                "base": 0.75,
-                "per_level_above_first": 0.75
+                "base": 0.5,
+                "per_level_above_first": 0.5
               }
           },
           "requirements": {

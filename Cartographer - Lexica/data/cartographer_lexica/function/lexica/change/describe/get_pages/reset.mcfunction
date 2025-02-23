@@ -14,13 +14,18 @@ scoreboard players set $keyword_attacked ca.lexica_var 0
 scoreboard players set $keyword_damaged ca.lexica_var 0
 scoreboard players set $keyword_weapon ca.lexica_var 0
 scoreboard players set $keyword_locked ca.lexica_var 0
-scoreboard players set $keyword_tool ca.lexica_var 0
+scoreboard players set $keyword_tool_usage ca.lexica_var 0
 scoreboard players set $keyword_dynamic ca.lexica_var 0
 scoreboard players set $keyword_stacking ca.lexica_var 0
 scoreboard players set $keyword_sprinting ca.lexica_var 0
 scoreboard players set $keyword_passive ca.lexica_var 0
 scoreboard players set $keyword_equipped ca.lexica_var 0
 scoreboard players set $keyword_cooldown ca.lexica_var 0
+scoreboard players set $keyword_monstrous ca.lexica_var 0
+scoreboard players set $keyword_humanoid ca.lexica_var 0
+scoreboard players set $keyword_positive_status ca.lexica_var 0
+scoreboard players set $keyword_negative_status ca.lexica_var 0
+scoreboard players set $keyword_crowd_control ca.lexica_var 0
 
 
 scoreboard players set $attr_ranged_damage ca.lexica_var 0
@@ -122,3 +127,14 @@ scoreboard players set $status_frozen ca.lexica_var 0
 scoreboard players set $status_asleep ca.lexica_var 0
 scoreboard players set $status_stunned ca.lexica_var 0
 scoreboard players set $status_dazed ca.lexica_var 0
+
+scoreboard players set $is_tool ca.lexica_var 0
+scoreboard players set $is_crossbow ca.lexica_var 0
+
+data modify entity 31192011-4452-2112-0000-000000000000 HandItems[0] set value {}
+data modify entity 31192011-4452-2112-0000-000000000000 HandItems[0] set from storage cartographer:lexica item.components.minecraft:bundle_contents[0]
+
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #minecraft:pickaxes run scoreboard players set $is_tool ca.lexica_var 1
+execute if data entity 31192011-4452-2112-0000-000000000000 HandItems[0].components."minecraft:tool" run scoreboard players set $is_tool ca.lexica_var 1
+
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand minecraft:crossbow run scoreboard players set $is_crossbow ca.lexica_var 1

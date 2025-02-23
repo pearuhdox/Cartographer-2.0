@@ -144,6 +144,7 @@ execute if score $ench_bracing ca.lexica_var matches 1.. run scoreboard players 
 execute if score $ench_bracing ca.lexica_var matches 1.. run scoreboard players set $keyword_lethal ca.lexica_var 1
 execute if score $ench_bracing ca.lexica_var matches 1.. run scoreboard players set $has_status ca.lexica_var 1
 execute if score $ench_bracing ca.lexica_var matches 1.. run scoreboard players set $status_barricade ca.lexica_var 1
+execute if score $ench_bracing ca.lexica_var matches 1.. if score $is_tool ca.lexica_var matches 1.. run scoreboard players set $keyword_tool_usage ca.lexica_var 1
 
 execute store result score $ench_evasion ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_statuses:passive/evasion
 execute if score $ench_evasion ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"evasion",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.evasion", "fallback": "Evasion", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
@@ -158,17 +159,20 @@ execute if score $ench_hastiness ca.lexica_var matches 1.. run scoreboard player
 execute if score $ench_hastiness ca.lexica_var matches 1.. run scoreboard players set $keyword_lethal ca.lexica_var 1
 execute if score $ench_hastiness ca.lexica_var matches 1.. run scoreboard players set $attr_attack_speed ca.lexica_var 1
 execute if score $ench_hastiness ca.lexica_var matches 1.. run scoreboard players set $attr_mining_efficiency ca.lexica_var 1
+execute if score $ench_hastiness ca.lexica_var matches 1.. if score $is_tool ca.lexica_var matches 1.. run scoreboard players set $keyword_tool_usage ca.lexica_var 1
 
 execute store result score $ench_lifeblood ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_statuses:kill/lifeblood
 execute if score $ench_lifeblood ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"lifeblood",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.lifeblood", "fallback": "Lifeblood", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
 execute if score $ench_lifeblood ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
 execute if score $ench_lifeblood ca.lexica_var matches 1.. run scoreboard players set $keyword_lethal ca.lexica_var 1
+execute if score $ench_lifeblood ca.lexica_var matches 1.. if score $is_tool ca.lexica_var matches 1.. run scoreboard players set $keyword_tool_usage ca.lexica_var 1
 
 execute store result score $ench_mightiness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_statuses:kill/mightiness
 execute if score $ench_mightiness ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"mightiness",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.mightiness", "fallback": "Mightiness", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
 execute if score $ench_mightiness ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
 execute if score $ench_mightiness ca.lexica_var matches 1.. run scoreboard players set $keyword_lethal ca.lexica_var 1
 execute if score $ench_mightiness ca.lexica_var matches 1.. run scoreboard players set $attr_attack_damage ca.lexica_var 1
+execute if score $ench_mightiness ca.lexica_var matches 1.. if score $is_tool ca.lexica_var matches 1.. run scoreboard players set $keyword_tool_usage ca.lexica_var 1
 
 execute store result score $ench_nullifying ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_statuses:passive/nullifying
 execute if score $ench_nullifying ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"nullifying",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.nullifying", "fallback": "Nullifying", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
@@ -185,6 +189,7 @@ execute store result score $ench_sapper ca.lexica_var run data get storage carto
 execute if score $ench_sapper ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"sapper",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.sapper", "fallback": "Sapper", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
 execute if score $ench_sapper ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
 execute if score $ench_sapper ca.lexica_var matches 1.. run scoreboard players set $keyword_lethal ca.lexica_var 1
+execute if score $ench_sapper ca.lexica_var matches 1.. if score $is_tool ca.lexica_var matches 1.. run scoreboard players set $keyword_tool_usage ca.lexica_var 1
 
 execute store result score $ench_shielding ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_statuses:passive/shielding
 execute if score $ench_shielding ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"shielding",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.shielding", "fallback": "Shielding", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
@@ -204,6 +209,7 @@ execute if score $ench_swiftness ca.lexica_var matches 1.. run function cartogra
 execute if score $ench_swiftness ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
 execute if score $ench_swiftness ca.lexica_var matches 1.. run scoreboard players set $keyword_lethal ca.lexica_var 1
 execute if score $ench_swiftness ca.lexica_var matches 1.. run scoreboard players set $attr_speed ca.lexica_var 1
+execute if score $ench_swiftness ca.lexica_var matches 1.. if score $is_tool ca.lexica_var matches 1.. run scoreboard players set $keyword_tool_usage ca.lexica_var 1
 
 execute store result score $ench_adrenaline ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/adrenaline
 execute if score $ench_adrenaline ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"adrenaline",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.adrenaline", "fallback": "Adrenaline", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
@@ -226,6 +232,7 @@ execute if score $ench_diversion ca.lexica_var matches 1.. run function cartogra
 execute if score $ench_diversion ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
 execute if score $ench_diversion ca.lexica_var matches 1.. run scoreboard players set $keyword_attacked ca.lexica_var 1
 execute if score $ench_diversion ca.lexica_var matches 1.. run scoreboard players set $keyword_random ca.lexica_var 1
+execute if score $ench_diversion ca.lexica_var matches 1.. if score $is_tool ca.lexica_var matches 1.. run scoreboard players set $keyword_tool_usage ca.lexica_var 1
 
 execute store result score $ench_ethereal ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/ethereal
 execute if score $ench_ethereal ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"ethereal",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.ethereal", "fallback": "Ethereal", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
@@ -246,7 +253,7 @@ execute if score $ench_hardened ca.lexica_var matches 1.. run scoreboard players
 execute store result score $ench_inertia ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/inertia
 execute if score $ench_inertia ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"inertia",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.inertia", "fallback": "Inertia", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
 execute if score $ench_inertia ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
-execute if score $ench_inertia ca.lexica_var matches 1.. run scoreboard players set $keyword_energize ca.lexica_var 1
+execute if score $ench_inertia ca.lexica_var matches 1.. run scoreboard players set $keyword_energized ca.lexica_var 1
 
 execute store result score $ench_poise ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/poise
 execute if score $ench_poise ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"poise",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.poise", "fallback": "Poise", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
@@ -280,6 +287,7 @@ execute if score $ench_aberration ca.lexica_var matches 1.. run scoreboard playe
 execute if score $ench_aberration ca.lexica_var matches 1.. run scoreboard players set $keyword_lethal ca.lexica_var 1
 execute if score $ench_aberration ca.lexica_var matches 1.. run scoreboard players set $keyword_dynamic ca.lexica_var 1
 execute if score $ench_aberration ca.lexica_var matches 1.. run scoreboard players set $keyword_random ca.lexica_var 1
+execute if score $ench_aberration ca.lexica_var matches 1.. if score $is_tool ca.lexica_var matches 1.. run scoreboard players set $keyword_tool_usage ca.lexica_var 1
 
 execute store result score $ench_deadeye ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/deadeye
 execute if score $ench_deadeye ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"deadeye",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.deadeye", "fallback": "Deadeye", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
@@ -291,6 +299,7 @@ execute if score $ench_eruption ca.lexica_var matches 1.. run function cartograp
 execute if score $ench_eruption ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
 execute if score $ench_eruption ca.lexica_var matches 1.. run scoreboard players set $keyword_opportunist ca.lexica_var 1
 execute if score $ench_eruption ca.lexica_var matches 1.. run scoreboard players set $keyword_dynamic ca.lexica_var 1
+execute if score $ench_eruption ca.lexica_var matches 1.. if score $is_tool ca.lexica_var matches 1.. run scoreboard players set $keyword_tool_usage ca.lexica_var 1
 
 execute store result score $ench_gravity ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/gravity
 execute if score $ench_gravity ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"gravity",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.gravity", "fallback": "Gravity", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
@@ -302,41 +311,48 @@ execute if score $ench_induction ca.lexica_var matches 1.. run function cartogra
 execute if score $ench_induction ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
 execute if score $ench_induction ca.lexica_var matches 1.. run scoreboard players set $keyword_opportunist ca.lexica_var 1
 execute if score $ench_induction ca.lexica_var matches 1.. run scoreboard players set $keyword_dynamic ca.lexica_var 1
+execute if score $ench_induction ca.lexica_var matches 1.. if score $is_tool ca.lexica_var matches 1.. run scoreboard players set $keyword_tool_usage ca.lexica_var 1
+execute if score $ench_induction ca.lexica_var matches 1.. run scoreboard players set $keyword_energized ca.lexica_var 1
 
 execute store result score $ench_momentum ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/momentum
 execute if score $ench_momentum ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"momentum",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.momentum", "fallback": "Momentum", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
 execute if score $ench_momentum ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
-execute if score $ench_momentum ca.lexica_var matches 1.. run scoreboard players set $keyword_energize ca.lexica_var 1
+execute if score $ench_momentum ca.lexica_var matches 1.. run scoreboard players set $keyword_energized ca.lexica_var 1
 
 execute store result score $ench_orbit ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/orbit
 execute if score $ench_orbit ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"orbit",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.orbit", "fallback": "Orbit", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
 execute if score $ench_orbit ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
 execute if score $ench_orbit ca.lexica_var matches 1.. run scoreboard players set $keyword_random ca.lexica_var 1
 execute if score $ench_orbit ca.lexica_var matches 1.. run scoreboard players set $keyword_dynamic ca.lexica_var 1
+execute if score $ench_orbit ca.lexica_var matches 1.. if score $is_tool ca.lexica_var matches 1.. run scoreboard players set $keyword_tool_usage ca.lexica_var 1
 
 execute store result score $ench_quake ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/quake
 execute if score $ench_quake ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"quake",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.quake", "fallback": "Quake", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
 execute if score $ench_quake ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
 execute if score $ench_quake ca.lexica_var matches 1.. run scoreboard players set $keyword_lethal ca.lexica_var 1
 execute if score $ench_quake ca.lexica_var matches 1.. run scoreboard players set $keyword_dynamic ca.lexica_var 1
+execute if score $ench_quake ca.lexica_var matches 1.. if score $is_tool ca.lexica_var matches 1.. run scoreboard players set $keyword_tool_usage ca.lexica_var 1
 
 execute store result score $ench_soulfire ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/soulfire
 execute if score $ench_soulfire ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"soulfire",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.soulfire", "fallback": "Soulfire", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
 execute if score $ench_soulfire ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
 execute if score $ench_soulfire ca.lexica_var matches 1.. run scoreboard players set $keyword_opportunist ca.lexica_var 1
 execute if score $ench_soulfire ca.lexica_var matches 1.. run scoreboard players set $keyword_dynamic ca.lexica_var 1
+execute if score $ench_soulfire ca.lexica_var matches 1.. if score $is_tool ca.lexica_var matches 1.. run scoreboard players set $keyword_tool_usage ca.lexica_var 1
 
 execute store result score $ench_starfall ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/starfall
 execute if score $ench_starfall ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"starfall",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.starfall", "fallback": "Starfall", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
 execute if score $ench_starfall ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
 execute if score $ench_starfall ca.lexica_var matches 1.. run scoreboard players set $keyword_random ca.lexica_var 1
 execute if score $ench_starfall ca.lexica_var matches 1.. run scoreboard players set $keyword_dynamic ca.lexica_var 1
+execute if score $ench_starfall ca.lexica_var matches 1.. if score $is_tool ca.lexica_var matches 1.. run scoreboard players set $keyword_tool_usage ca.lexica_var 1
 
 execute store result score $ench_storm ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/storm
 execute if score $ench_storm ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"storm",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.storm", "fallback": "Storm", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
 execute if score $ench_storm ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
-execute if score $ench_storm ca.lexica_var matches 1.. run scoreboard players set $keyword_energize ca.lexica_var 1
 execute if score $ench_storm ca.lexica_var matches 1.. run scoreboard players set $keyword_dynamic ca.lexica_var 1
+execute if score $ench_storm ca.lexica_var matches 1.. if score $is_tool ca.lexica_var matches 1.. run scoreboard players set $keyword_tool_usage ca.lexica_var 1
+execute if score $ench_storm ca.lexica_var matches 1.. run scoreboard players set $keyword_energized ca.lexica_var 1
 
 execute store result score $ench_surge ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/surge
 execute if score $ench_surge ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"surge",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.surge", "fallback": "Surge", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
@@ -403,7 +419,14 @@ execute if score $ench_concentration ca.lexica_var matches 1.. run scoreboard pl
 execute store result score $ench_duelist ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/damage/general/duelist
 execute if score $ench_duelist ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"duelist",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.duelist", "fallback": "Duelist", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
 execute if score $ench_duelist ca.lexica_var matches 1.. run scoreboard players set $keyword_weapon ca.lexica_var 1
+execute if score $ench_duelist ca.lexica_var matches 1.. run scoreboard players set $keyword_humanoid ca.lexica_var 1
 execute if score $ench_duelist ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
+
+execute store result score $ench_hunter ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/damage/general/hunter
+execute if score $ench_hunter ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"hunter",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.hunter", "fallback": "Hunter", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
+execute if score $ench_hunter ca.lexica_var matches 1.. run scoreboard players set $keyword_weapon ca.lexica_var 1
+execute if score $ench_hunter ca.lexica_var matches 1.. run scoreboard players set $keyword_monstrous ca.lexica_var 1
+execute if score $ench_hunter ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
 
 execute store result score $ench_first_strike ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/damage/general/first_strike
 execute if score $ench_first_strike ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"first_strike",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.first_strike", "fallback": "First Strike", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
@@ -423,12 +446,8 @@ execute if score $ench_follow_up ca.lexica_var matches 1.. run scoreboard player
 execute store result score $ench_hex_eater ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/damage/general/hex_eater
 execute if score $ench_hex_eater ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"hex_eater",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.hex_eater", "fallback": "Hex Eater", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
 execute if score $ench_hex_eater ca.lexica_var matches 1.. run scoreboard players set $keyword_weapon ca.lexica_var 1
+execute if score $ench_hex_eater ca.lexica_var matches 1.. run scoreboard players set $keyword_negative_status ca.lexica_var 1
 execute if score $ench_hex_eater ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
-
-execute store result score $ench_hunter ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/damage/general/hunter
-execute if score $ench_hunter ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"hunter",name:'""',color:4713937}
-execute if score $ench_hunter ca.lexica_var matches 1.. run scoreboard players set $keyword_weapon ca.lexica_var 1
-execute if score $ench_hunter ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
 
 execute store result score $ench_leverage ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/damage/melee/leverage
 execute if score $ench_leverage ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"leverage",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.leverage", "fallback": "Leverage", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
@@ -579,7 +598,8 @@ execute if score $ench_auto_charge ca.lexica_var matches 1.. run scoreboard play
 execute if score $ench_auto_charge ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
 
 execute store result score $ench_repeating ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/unique/other/repeating
-execute if score $ench_repeating ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"repeating",name:'""',color:4713937}
+execute if score $is_crossbow ca.lexica_var matches 1.. if score $ench_repeating ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"repeating_crossbow",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.repeating", "fallback": "Repeating", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
+execute unless score $is_crossbow ca.lexica_var matches 1.. if score $ench_repeating ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"repeating_consumable",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.repeating", "fallback": "Repeating", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
 execute if score $ench_repeating ca.lexica_var matches 1.. run scoreboard players set $keyword_passive ca.lexica_var 1
 execute if score $ench_repeating ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
 
