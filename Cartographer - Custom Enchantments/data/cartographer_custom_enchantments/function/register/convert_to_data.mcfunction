@@ -1,3 +1,4 @@
+
 data modify storage cartographer:custom_enchantments projectile.enchants set value {}
 execute store result storage cartographer:custom_enchantments projectile.enchants.hex_eater byte 1 run scoreboard players get @s ca.ench_hex_eater_lvl
 execute store result storage cartographer:custom_enchantments projectile.enchants.chaotic byte 1 run scoreboard players get @s ca.ench_chaotic_lvl

@@ -22,7 +22,7 @@ execute if entity @s[tag=ca.tagged_entity] if score $grappling ca.ench_value mat
 
 execute if score $shrapnel ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/shrapnel/hit
 
-execute if score $ripper ca.ench_value matches 1.. if entity @s[tag=ca.tagged_entity] run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/ripper/hit_melee
+execute if score $ripper ca.ench_value matches 1.. if entity @s[tag=ca.tagged_entity] run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/ripper/hit_reel
 scoreboard players set @s ca.fishing_stuck 3
 execute if entity @s[tag=ca.tagged_entity] run scoreboard players set @s ca.fishing_stuck 0
 

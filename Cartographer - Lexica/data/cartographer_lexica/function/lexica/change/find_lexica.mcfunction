@@ -2,7 +2,8 @@ data modify storage cartographer:lexica inventory set value []
 
 data modify storage cartographer:lexica inventory append from entity @s Inventory[{components:{"minecraft:custom_data":{lexica_cartographia:1b}}}]
 
-execute store result score @s ca.lexica_slot run data get storage cartographer:lexica inventory[0].Slot
+scoreboard players set @s ca.lexica_slot -1000
+execute if data storage cartographer:lexica inventory[0] store result score @s ca.lexica_slot run data get storage cartographer:lexica inventory[0].Slot
 
 execute store result score $count ca.lexica_size run data get storage cartographer:lexica inventory[0].components.minecraft:bundle_contents
 

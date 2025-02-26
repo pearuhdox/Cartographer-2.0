@@ -1,1 +1,2 @@
+execute on passengers if entity @s[type=item_display,tag=ca.stuck_proj_display] run scoreboard players remove $count ca.entity_purge_var 1
 execute on passengers if entity @s[type=item_display,tag=ca.stuck_proj_display] run kill @s

@@ -57,7 +57,7 @@ execute if score $attack_type ca.ench_value matches 2 if score $sharpshot ca.enc
 execute if score $attack_type ca.ench_value matches 1.. if score $explosive ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/general/explosive/hit
 execute if score $attack_type ca.ench_value matches 1.. if score $pulling ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/general/pulling/hit
 
-execute if score $attack_type ca.ench_value matches 1 if entity @s[tag=ca.ripper_tagged] run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/ripper/hit_melee
+execute if score $attack_type ca.ench_value matches 1 if score @s ca.stuck_count matches 1.. run function carto_event:event/stuck_handler/melee_hit
 
 execute if score $attack_type ca.ench_value matches 2 if score $grappling ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/grappling/activate_mob_hit
 

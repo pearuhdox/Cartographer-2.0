@@ -482,6 +482,8 @@ scoreboard objectives add ca.barbed_z dummy
 
 scoreboard objectives add ca.ripper_lvl dummy
 
+scoreboard objectives add ca.stuck_time dummy
+
 scoreboard objectives add ca.stuck_count dummy
 scoreboard objectives add ca.fishing_stuck dummy
 

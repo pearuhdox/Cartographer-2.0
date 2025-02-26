@@ -1164,6 +1164,7 @@ execute if score $status_cleansed ca.lexica_var matches 0 store result score $st
 
 execute if score $status_cleansed ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"cleansed",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.cleansed", "fallback": "Cleansed", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
 execute if score $status_cleansed ca.lexica_var matches 1.. run scoreboard players set $keyword_negative_status ca.lexica_var 1
+execute if score $status_cleansed ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
 
 
 execute if score $status_purged ca.lexica_var matches 0 store result score $status_purged ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"purged"}]
@@ -1271,6 +1272,7 @@ execute if score $status_purged ca.lexica_var matches 0 store result score $stat
 
 execute if score $status_purged ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"purged",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.purged", "fallback": "Purged", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
 execute if score $status_purged ca.lexica_var matches 1.. run scoreboard players set $keyword_positive_status ca.lexica_var 1
+execute if score $status_purged ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
 
 
 execute if score $status_unstoppable ca.lexica_var matches 0 store result score $status_unstoppable ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"unstoppable"}]
@@ -1378,6 +1380,7 @@ execute if score $status_unstoppable ca.lexica_var matches 0 store result score 
 
 execute if score $status_unstoppable ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"unstoppable",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.unstoppable", "fallback": "Unstoppable", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}
 execute if score $status_unstoppable ca.lexica_var matches 1.. run scoreboard players set $keyword_crowd_control ca.lexica_var 1
+execute if score $status_unstoppable ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
 
 
 execute if score $status_wither ca.lexica_var matches 0 store result score $status_wither ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.melee_hit.self[{id:"wither"}]
@@ -4664,4 +4667,4 @@ execute if score $status_dazed ca.lexica_var matches 0 store result score $statu
 execute if score $status_dazed ca.lexica_var matches 0 store result score $status_dazed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"dazed"}]
 execute if score $status_dazed ca.lexica_var matches 0 store result score $status_dazed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.target[{id:"dazed"}]
 
-execute if score $status_dazed ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"dazed",name:'""',color:14055679}
+execute if score $status_dazed ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"effect",id:"dazed",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "effect.cartographer.dazed", "fallback": "Dazed", "bold": true, "underlined": false, "italic": false, "color": "#D678FF"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:14055679}

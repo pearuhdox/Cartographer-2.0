@@ -11,6 +11,6 @@ execute on attacker run function gu:generate
 data modify storage cartographer:custom_enchantments owner set from storage gu:main out
 
 function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/barbed/macro with storage cartographer:custom_enchantments
-
-function carto_event:api/create_single_entity_event {event:"stuck_handler",duration:80,delay:000,parameters:{},merge_behavior:"merge"}
+tag @s add ca.barbed_tagged
+function carto_event:api/create_single_entity_event {event:"stuck_handler",duration:600,delay:000,parameters:{duration:77},merge_behavior:"merge"}
 

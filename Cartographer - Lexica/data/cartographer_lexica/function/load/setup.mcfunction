@@ -13,3 +13,4 @@ setblock 4206900 7 4206900 purple_shulker_box destroy
 setblock 4206900 6 4206900 purple_shulker_box destroy
 
 function cartographer_lexica:load/create_descriptions
+function cartographer_lexica:load/create_vanilla_descriptions

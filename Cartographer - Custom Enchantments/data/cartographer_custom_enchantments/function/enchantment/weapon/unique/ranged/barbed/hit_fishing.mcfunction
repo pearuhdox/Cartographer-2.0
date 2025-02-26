@@ -5,10 +5,11 @@ execute store result score @s ca.barbed_y run data get entity @s Pos[1] 100
 execute store result score @s ca.barbed_z run data get entity @s Pos[2] 100
 
 data modify storage gu:main out set value "-"
-execute on attacker run function gu:generate
+execute as @p[tag=ca.bobber_owner] at @s run function gu:generate
 data modify storage cartographer:custom_enchantments owner set from storage gu:main out
 
 function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/barbed/macro with storage cartographer:custom_enchantments
 
+tag @s add ca.barbed_tagged
 #function carto_event:api/create_single_entity_event {event:"stuck_handler",duration:80,delay:000,parameters:{},merge_behavior:"merge"}
 
