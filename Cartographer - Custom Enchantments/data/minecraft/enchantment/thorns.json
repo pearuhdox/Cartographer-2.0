@@ -22,29 +22,6 @@
     "minecraft:post_attack": [
       {
         "enchanted": "victim",
-        "affected": "attacker",
-        "effect": {
-          "type": "minecraft:damage_entity",
-          "damage_type": "minecraft:thorns",
-          "min_damage": {
-            "type": "minecraft:linear",
-            "base": 1,
-            "per_level_above_first": 1
-          },
-          "max_damage": {
-            "type": "minecraft:linear",
-            "base": 1,
-            "per_level_above_first": 1
-          }
-        },
-        "requirements": {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {}
-        }
-      },
-      {
-        "enchanted": "victim",
         "affected": "victim",
         "effect": {
           "type": "minecraft:run_function",

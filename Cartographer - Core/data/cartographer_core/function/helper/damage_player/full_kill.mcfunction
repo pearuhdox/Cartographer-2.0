@@ -1,0 +1,1 @@
+damage @s 1024 cartographer_core:true_damage

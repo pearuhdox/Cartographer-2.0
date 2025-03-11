@@ -41,6 +41,9 @@ execute if score @s ca.death_check matches 1.. run function cartographer_core:ha
 execute if score @s ca.death_time matches 2 run function cartographer_core:handlers/death_check/respawn
 execute if score @s ca.death_check matches 1.. run scoreboard players set @s ca.death_check 0
 
+#Run Resistor
+execute if entity @s[tag=ca.resistor_active] run function cartographer_core:handlers/resistor/tick
+
 function cartographer_custom_attributes:loop/tick/player
 function cartographer_custom_enchantments:loop/tick/player
 function cartographer_custom_statuses:loop/tick/player

@@ -1,7 +1,5 @@
 advancement revoke @s only cartographer_custom_enchantments:hardened_explosion
 
-function cartographer_core:enchant_calculator/full_calculation {namespace:"cartographer_custom_enchantments",category:"passive/",enchantment:"hardened",type:"passive"}
-
 execute if score @s ca.ench_hardened_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/hardened/damage_type/blast
 
 #function cartographer_core:enchant_calculator/full_calculation {namespace:"cartographer_custom_enchantments",category:"passive/",enchantment:"second_wind",type:"passive"}

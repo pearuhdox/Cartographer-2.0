@@ -7,6 +7,7 @@
 ########################################
 
 function cartographer_core:helper/heal_player/load
+function cartographer_core:helper/damage_player/load
 
 #Enchantment Calculator Scores
 scoreboard objectives add ca.ench_var dummy
@@ -164,9 +165,11 @@ scoreboard objectives add ca.use_splash_potion minecraft.used:minecraft.splash_p
 scoreboard objectives add ca.use_lingering_potion minecraft.used:minecraft.lingering_potion
 scoreboard objectives add ca.use_snowball minecraft.used:minecraft.snowball
 
-scoreboard objectives add ca.deal_damage_melee_normal minecraft.custom:minecraft.damage_dealt
-scoreboard objectives add ca.deal_damage_melee_absorption minecraft.custom:minecraft.damage_dealt_absorbed
-scoreboard objectives add ca.deal_damage_melee_resistance minecraft.custom:minecraft.damage_dealt_resisted
+scoreboard objectives add ca.resistor_var dummy
+scoreboard objectives add ca.resistor_damage_amt minecraft.custom:minecraft.damage_resisted
+scoreboard objectives add ca.resistor_fall_damage minecraft.custom:minecraft.fall_one_cm
+scoreboard objectives add ca.resistor_queue dummy
+scoreboard objectives add ca.resistor_frames dummy
 
 scoreboard objectives add ca.is_drawing_bow dummy
 scoreboard objectives add ca.is_loading_crossbow dummy
@@ -237,6 +240,8 @@ summon armor_stand 4206900 128 4206900 {UUID:[I;823664661,1158815761,823660881,-
 # [I;823730193,1146233106,0,0]
 summon armor_stand 4206900 0 4206900 {Marker:1b,Invisible:1b,NoGravity:1b,UUID:[I;823730193,1146233106,0,0]}
 
+#Summon pincushion sheep for resistance shenanigans
+function cartographer_core:handlers/resistor/setup
 
 execute unless entity 91bb5-0-0-0-ffff run summon item_display 4206900 0 4206900 {UUID:[I;596917,0,0,65535],CustomName:'"gm.math_entity"'}
 

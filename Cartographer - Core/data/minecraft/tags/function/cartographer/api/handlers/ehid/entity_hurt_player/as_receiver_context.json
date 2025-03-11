@@ -1,5 +1,6 @@
 {
     "values":[
-      "cartographer_core:debug/handlers/ehid/entity_hurt_player/as_receiver_debug"
+      "cartographer_core:debug/handlers/ehid/entity_hurt_player/as_receiver_debug",
+      "cartographer_core:handlers/resistor/process/entity_hit"
     ]
   }

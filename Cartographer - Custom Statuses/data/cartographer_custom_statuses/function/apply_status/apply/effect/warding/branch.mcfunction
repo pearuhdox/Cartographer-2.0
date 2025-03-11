@@ -1,0 +1,1 @@
+$function carto_event:api/create_single_entity_event {event:"custom_statuses/warding",duration:$(duration),delay:000,parameters:{resistance_percent:100,max_cascade:100,cascade_count:$(count),cascade_time:20,tick_command:""},merge_behavior:"custom"}

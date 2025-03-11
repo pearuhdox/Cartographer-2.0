@@ -1,0 +1,1 @@
+$damage @s $(damage) minecraft:thorns by @e[tag=ca.thorns_owner,limit=1,sort=nearest]

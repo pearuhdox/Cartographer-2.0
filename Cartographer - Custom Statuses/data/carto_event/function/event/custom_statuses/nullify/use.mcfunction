@@ -1,3 +1,5 @@
+scoreboard players set @s ca.resistor_queue 0
+
 execute if data storage carto_event current[-1].parameters.proc_command run function carto_event:command_api/proc_command with storage carto_event current[-1].parameters
 
 execute if entity @s[type=player] run playsound minecraft:entity.breeze.deflect player @a[distance=..16] ~ ~ ~ 2 0.75

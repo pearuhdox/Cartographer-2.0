@@ -86,12 +86,13 @@ execute if score $diff void_home.y matches 310..320 run effect give @s slow_fall
 
 effect give @s darkness 3 0 true
 
-scoreboard players operation @s bbl.damage_queue = $diff void_home.y
-scoreboard players operation @s bbl.damage_queue /= $7 ca.CONSTANT
-#scoreboard players operation @s bbl.damage_queue /= $2 ca.CONSTANT
-execute if score @s bbl.damage_queue matches ..4 run scoreboard players set @s bbl.damage_queue 4
-execute if score @s bbl.damage_queue matches 11.. run scoreboard players set @s bbl.damage_queue 10
+scoreboard players operation @s ca.damage = $diff void_home.y
+scoreboard players operation @s ca.damage *= $10 ca.CONSTANT
+scoreboard players operation @s ca.damage /= $7 ca.CONSTANT
 
-function bb:call/hpm/player/damage/true
+execute if score @s ca.damage matches ..39 run scoreboard players set @s ca.damage 40
+execute if score @s ca.damage_queue matches 101.. run scoreboard players set @s ca.damage 100
+
+function cartographer_core:helper/damage_player/apply_damage
 
 playsound minecraft:entity.player.hurt player @s ~ ~ ~ 1 1

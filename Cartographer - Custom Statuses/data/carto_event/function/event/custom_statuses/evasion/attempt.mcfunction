@@ -1,3 +1,5 @@
+execute if score @s ca.evasion_chance <= @s ca.evasion_amount run scoreboard players set @s ca.resistor_queue 0
+
 execute store result score $entropy ca.evasion_amount run scoreboard players get @s ca.evasion_amount
 scoreboard players operation $entropy ca.evasion_amount /= $6 ca.CONSTANT
 scoreboard players operation $entropy ca.evasion_amount < $8 ca.CONSTANT

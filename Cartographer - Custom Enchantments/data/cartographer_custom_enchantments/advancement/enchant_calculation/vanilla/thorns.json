@@ -8,7 +8,7 @@
               "predicates": {
                 "minecraft:enchantments": [
                   {
-                    "enchantments": "minecraft:flame",
+                    "enchantments": "minecraft:thorns",
                     "levels": {
                       "min": 1
                     }

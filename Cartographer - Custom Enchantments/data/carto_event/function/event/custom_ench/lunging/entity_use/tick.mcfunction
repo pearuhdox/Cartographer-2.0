@@ -10,14 +10,11 @@ $execute as $(target) at @s if score duration= carto_event matches 170.. if enti
 $execute as $(target) at @s if score duration= carto_event matches 170.. if entity @s[tag=ca.lunging_charging] if score @s ca.lunging_time matches 1..20 if entity @s[type=!player] run function carto_event:event/custom_ench/lunging/charge_vfx_entity
 
 
-$execute as $(target) at @s unless entity @s[tag=ca.lunging_charging] if score @s ca.lunging_time matches 20.. run function carto_event:event/custom_ench/lunging/lunge
+$execute as $(target) at @s unless entity @s[tag=ca.lunging_charging] if score @s ca.lunging_time matches 30.. run function carto_event:event/custom_ench/lunging/lunge
 $execute as $(target) at @s unless entity @s[tag=ca.lunging_charging] run scoreboard players set @s ca.lunging_time 0
 $execute as $(target) at @s unless entity @s[tag=ca.lunging_charging] run scoreboard players set @s ca.channeling_time 0
 
-$execute as $(target) at @s run tag @s remove ca.lunging_charging
-
-#Remove return 0 condition
-
+$execute as $(target) at @s if entity @s[tag=ca.lunging_charging] if entity @s[nbt={DeathTime:0s}] run tag @s remove ca.lunging_charging
 
 $execute as $(target) at @s if score duration= carto_event matches 2.. run tag @s add ca.mob_use_lunging
 $execute as $(target) at @s if score duration= carto_event matches 1 run tag @s remove ca.mob_use_lunging
@@ -39,6 +36,5 @@ $execute if score duration= carto_event matches 170.. as $(target) at @s run sco
 $execute if score duration= carto_event matches 170.. as $(telegraph) at @s run function carto_event:event/custom_ench/lunging/entity_use/detect_player/start
 
 $execute if score duration= carto_event matches 169 as $(target) at @s if score @s ca.ench_repulsion_lvl matches 1.. unless score @s ca.repulsion_cooldown matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/general/repulsion/mob_activate
-
 
 return 1

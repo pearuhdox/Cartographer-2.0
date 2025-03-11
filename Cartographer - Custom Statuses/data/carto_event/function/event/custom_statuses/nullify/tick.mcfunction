@@ -19,7 +19,7 @@ $execute as $(target) at @s if score duration= carto_event matches 25.. if score
 $execute as $(target) at @s if score duration= carto_event matches 25.. if entity @s[type=!player] if score @s ca.nullify_cooldown matches 1 positioned ~ ~1.2 ~ run function carto_event:event/custom_statuses/nullify/vfx
 
 
-$execute as $(target) at @s if score duration= carto_event matches 2.. unless score @s ca.nullify_cooldown matches 1.. if entity @s[nbt={HurtTime:8s}] run function carto_event:event/custom_statuses/nullify/use with storage carto_event current[-1].parameters
+$execute as $(target) at @s if score duration= carto_event matches 2.. unless score @s ca.nullify_cooldown matches 1.. if entity @s[nbt={HurtTime:9s}] run function carto_event:event/custom_statuses/nullify/use with storage carto_event current[-1].parameters
 $execute as $(target) at @s if score duration= carto_event matches 2.. if score @s ca.nullify_cooldown matches 1.. run scoreboard players remove @s ca.nullify_cooldown 1
 
 $execute as $(target) at @s store result storage carto_event current[-1].parameters.tick_count int 1 run scoreboard players get @s ca.nullify_cooldown

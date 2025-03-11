@@ -1,0 +1,1 @@
+execute as @e[tag=ca.warding_trigger] at @s run function carto_event:event/custom_statuses/warding/cascade/schedule_branch

@@ -412,10 +412,6 @@ scoreboard objectives add ca.soulfire_ct dummy
 scoreboard objectives add ca.diversion_ct dummy
 scoreboard objectives add ca.collapse_ct dummy
 
-
-scoreboard objectives add ca.hit_damage_buildup dummy
-scoreboard objectives add ca.hit_damage_max dummy
-
 scoreboard objectives add ca.ench_aggro_count dummy
 
 scoreboard objectives add ca.diversion_entropy dummy

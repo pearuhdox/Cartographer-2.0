@@ -1,4 +1,4 @@
-function cartographer_core:enchant_calculator/full_calculation {namespace:"cartographer_custom_enchantments",category:"passive/",enchantment:"thorns",type:"passive"}
+execute unless entity @s[type=player] run function cartographer_core:enchant_calculator/full_calculation {namespace:"minecraft",category:"",enchantment:"thorns",type:"passive"}
 
 function carto_event:event/custom_ench/orbit/custom_statuses/check_allow_status
 

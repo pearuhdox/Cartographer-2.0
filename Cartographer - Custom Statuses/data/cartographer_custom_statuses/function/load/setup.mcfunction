@@ -158,6 +158,17 @@ scoreboard objectives add ca.evasion_entropy dummy
 
 scoreboard objectives add ca.nullify_cooldown dummy
 
+scoreboard objectives add ca.defiance_var dummy
+scoreboard objectives add ca.defiance_health dummy
+scoreboard objectives add ca.defiance_health_old dummy
+scoreboard objectives add ca.defiance_bailout totalKillCount
+
+scoreboard objectives add ca.warding_var dummy
+scoreboard objectives add ca.warding_bank dummy
+scoreboard objectives add ca.warding_hits dummy
+scoreboard objectives add ca.warding_health dummy
+scoreboard objectives add ca.warding_health_old dummy
+
 scoreboard objectives add ca.absorption_tick dummy
 scoreboard objectives add ca.absorption_buffer dummy
 

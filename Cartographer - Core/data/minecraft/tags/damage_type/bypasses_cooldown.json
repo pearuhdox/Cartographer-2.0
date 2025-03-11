@@ -1,5 +1,14 @@
 {
   "values": [
-    "cartographer_core:true_damage"
+    "cartographer_core:true_damage",
+    "cartographer_core:resistor_damage",
+    "cartographer_core:resistor/block",
+    "cartographer_core:resistor/fall",
+    "cartographer_core:resistor/magic",
+    "cartographer_core:resistor/melee",
+    "cartographer_core:resistor/projectile",
+    "cartographer_core:resistor/explosion",
+    "cartographer_core:resistor/fire",
+    "cartographer_core:resistor/freeze"
   ]
 }

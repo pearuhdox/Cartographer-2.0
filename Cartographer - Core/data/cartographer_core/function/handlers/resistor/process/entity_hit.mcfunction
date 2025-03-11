@@ -1,0 +1,1 @@
+execute if entity @s[tag=ca.resistor_active] unless score @s ca.resistor_frames matches 1.. run function cartographer_core:handlers/resistor/process/entity_hit_branch

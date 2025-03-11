@@ -1,4 +1,4 @@
-function cartographer_core:enchant_calculator/full_calculation {namespace:"cartographer_custom_enchantments",category:"passive/",enchantment:"frenzy",type:"passive"}
+execute unless entity @s[type=player] run function cartographer_core:enchant_calculator/full_calculation {namespace:"cartographer_custom_enchantments",category:"passive/",enchantment:"frenzy",type:"passive"}
 
 execute unless score @s ca.frenzy_stack matches 8.. run scoreboard players add @s ca.frenzy_stack 1
 scoreboard players set @s ca.frenzy_duration 160

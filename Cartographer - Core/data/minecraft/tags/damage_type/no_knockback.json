@@ -1,5 +1,7 @@
 {
   "values": [
-    "cartographer_core:true_damage"
+    "cartographer_core:true_damage",
+    "cartographer_core:almost_true_damage",
+    "cartographer_core:resistor_damage"
   ]
 }
