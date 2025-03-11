@@ -13,6 +13,4 @@ $execute as $(target) at @s unless entity @s[tag=ca.lunging_charging] run return
 
 $execute as $(target) at @s run tag @s remove ca.lunging_charging
 
-say test
-
 return 1
