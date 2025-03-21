@@ -46,7 +46,7 @@ scoreboard players set $attack_type ca.ench_value 0
 function cartographer_custom_enchantments:enchantment/helper/weapon/reset_ench_values
 execute if entity @s[advancements={entityid:entity_hurt_player={panic_causes=true,is_projectile=false}}] run scoreboard players set $attack_type ca.ench_value 1
 execute if entity @s[advancements={entityid:entity_hurt_player={is_projectile=true,panic_causes=true}}] run scoreboard players set $attack_type ca.ench_value 2
-execute if score $attack_type ca.ench_value matches 1 on attacker run function cartographer_custom_enchantments:enchantment/helper/weapon/get_hand_ench_values
+execute if score $attack_type ca.ench_value matches 1 on attacker run function cartographer_custom_enchantments:enchantment/helper/weapon/get_ench_values
 
 execute if score $attack_type ca.ench_value matches 2 on attacker run function cartographer_custom_enchantments:system/projectile_find/owner_uuid
 execute if score $attack_type ca.ench_value matches 2 at @s run function cartographer_custom_enchantments:system/projectile_find/scan

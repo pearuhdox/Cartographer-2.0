@@ -17,14 +17,14 @@ execute if score $proc ca.ench_orbit_lvl matches 2 run function cartographer_cus
 execute if score $proc ca.ench_orbit_lvl matches 3 run function cartographer_custom_enchantments:enchantment/passive/orbit/damage_event {proc_chance:75}
 execute if score $proc ca.ench_orbit_lvl matches 4 run function cartographer_custom_enchantments:enchantment/passive/orbit/damage_event {proc_chance:5}
 
-execute if score $proc ca.ench_eruption_lvl matches 1 at @s if entity @s[tag=!ca.enchant_opportunist] run function cartographer_custom_enchantments:enchantment/passive/eruption/damage_event
-execute if score $proc ca.ench_soulfire_lvl matches 1 at @s if entity @s[tag=!ca.enchant_opportunist] run function cartographer_custom_enchantments:enchantment/passive/soulfire/damage_event
+execute if score $proc ca.ench_eruption_lvl matches 1.. at @s if entity @s[tag=!ca.enchant_opportunist] run function cartographer_custom_enchantments:enchantment/passive/eruption/damage_event
+execute if score $proc ca.ench_soulfire_lvl matches 1.. at @s if entity @s[tag=!ca.enchant_opportunist] run function cartographer_custom_enchantments:enchantment/passive/soulfire/damage_event
 
-execute if score $proc ca.ench_eruption_lvl matches 1 at @s if entity @s[tag=!ca.enchant_opportunist] run function carto_event:api/create_single_entity_event {event:"opportunist",duration:300,delay:0,parameters:{},merge_behavior:"none"}
-execute if score $proc ca.ench_soulfire_lvl matches 1 at @s if entity @s[tag=!ca.enchant_opportunist] run function carto_event:api/create_single_entity_event {event:"opportunist",duration:300,delay:0,parameters:{},merge_behavior:"none"}
+execute if score $proc ca.ench_eruption_lvl matches 1.. at @s if entity @s[tag=!ca.enchant_opportunist] run function carto_event:api/create_single_entity_event {event:"opportunist",duration:300,delay:0,parameters:{},merge_behavior:"none"}
+execute if score $proc ca.ench_soulfire_lvl matches 1.. at @s if entity @s[tag=!ca.enchant_opportunist] run function carto_event:api/create_single_entity_event {event:"opportunist",duration:300,delay:0,parameters:{},merge_behavior:"none"}
 
-execute if score $proc ca.ench_eruption_lvl matches 1 at @s if entity @s[tag=!ca.enchant_opportunist] run tag @s add ca.enchant_opportunist
-execute if score $proc ca.ench_soulfire_lvl matches 1 at @s if entity @s[tag=!ca.enchant_opportunist] run tag @s add ca.enchant_opportunist
+execute if score $proc ca.ench_eruption_lvl matches 1.. at @s if entity @s[tag=!ca.enchant_opportunist] run tag @s add ca.enchant_opportunist
+execute if score $proc ca.ench_soulfire_lvl matches 1.. at @s if entity @s[tag=!ca.enchant_opportunist] run tag @s add ca.enchant_opportunist
 
 #Mob Activates Riposte
 execute if score $attack_type ca.ench_value matches 1.. unless entity @s[tag=ca.has_custom_status_silenced] if score @s ca.ench_riposte_lvl matches 1.. unless entity @s[tag=ca.mob_use_riposte] store result score $active ca.ench_riposte_lvl run random value 1..3

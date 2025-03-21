@@ -28,6 +28,7 @@ execute if score @s ca.ench_correction_lvl matches 1.. run tag @s add ca.needs_c
 
 #Add Ricochet - Tag for checker
 execute if score @s ca.ench_ricochet_lvl matches 1.. run tag @s add ca.needs_checker
+execute if score @s ca.ench_ricochet_lvl matches 1.. run tag @s add ca.check_land
 
 #Add Barrage - Tag for checker
 execute unless entity @s[tag=ca.custom_trident] unless entity @s[tag=ca.no_ench_calc] if score @s ca.ench_barrage_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/barrage/setup_event

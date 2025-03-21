@@ -9,5 +9,5 @@ $execute as $(owner) at @s run playsound minecraft:block.tripwire.detach hostile
 $execute positioned as $(owner) facing entity @s feet as $(owner) run tp @s ~ ~ ~ ~ ~
 $execute as $(owner) at @s run function motion:motion/push
 
-$execute as $(owner) at @s run scoreboard players set @s ca.grappling_cooldown 40
-$execute as $(owner) at @s run function carto_event:api/create_single_entity_event {event:"custom_ench/grappling",duration:10,delay:000,parameters:{},merge_behavior:"none"}
+$execute as $(owner) at @s run scoreboard players set @s ca.grappling_cooldown 60
+$execute as $(owner) at @s run function carto_event:api/create_single_entity_event {event:"custom_ench/grappling",duration:60,delay:000,parameters:{},merge_behavior:"none"}

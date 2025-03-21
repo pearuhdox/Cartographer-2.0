@@ -6,6 +6,7 @@ execute unless entity @s[type=player] run scoreboard players operation $force ca
 execute unless entity @s[type=player] run scoreboard players add $force ca.ench_var 2
 
 #execute at @s run tp @s @s
+say testing
 
 execute if entity @s[type=player] run data modify storage gu:main out set value "-"
 execute if entity @s[type=player] on attacker run function gu:generate

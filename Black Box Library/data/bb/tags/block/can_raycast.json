@@ -13,10 +13,11 @@
     "minecraft:big_dripleaf",
     "#minecraft:candles",
     "#minecraft:wool_carpets",
-	"minecraft:bubble_column",
-	"minecraft:cave_vines",
+	  "minecraft:bubble_column",
+	  "minecraft:cave_vines",
     "minecraft:cave_vines_plant",
     "minecraft:moss_carpet",
-    "minecraft:resin_clump"
+    "minecraft:resin_clump",
+    "minecraft:pale_moss_carpet"
   ]
 }

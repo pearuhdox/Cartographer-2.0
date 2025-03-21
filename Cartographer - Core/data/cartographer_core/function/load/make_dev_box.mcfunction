@@ -1,4 +1,4 @@
-scoreboard players enable @a give_dev_box
+scoreboard players enable @a[gamemode=creative] give_dev_box
 
 # Make the Dev Box
 setblock 4206900 16 4206900 air replace
