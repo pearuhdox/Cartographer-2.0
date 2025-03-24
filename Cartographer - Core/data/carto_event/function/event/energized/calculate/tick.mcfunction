@@ -4,4 +4,4 @@ $execute as $(target) at @s if score duration= carto_event matches 1 run scorebo
 $execute as $(target) at @s if score duration= carto_event matches 1 run scoreboard players reset @s ca.energized_y
 $execute as $(target) at @s if score duration= carto_event matches 1 run scoreboard players reset @s ca.energized_z
 
-return 1
+$execute as $(target) run return 1

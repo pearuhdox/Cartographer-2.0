@@ -7,8 +7,8 @@ execute on attacker if entity @s[type=player] run scoreboard players set $speed 
 execute on attacker unless entity @s[type=player] run scoreboard players set $speed ca.ench_orbit_lvl 5
 
 
-execute on attacker if entity @s[type=player] run scoreboard players set $hit_start ca.ench_orbit_lvl 0
-execute on attacker unless entity @s[type=player] run scoreboard players set $hit_start ca.ench_orbit_lvl 2
+execute on attacker if entity @s[type=player] run scoreboard players set $hit_start ca.ench_orbit_lvl 6
+execute on attacker unless entity @s[type=player] run scoreboard players set $hit_start ca.ench_orbit_lvl 3
 
 
 $scoreboard players set $proc_coeff ca.ench_orbit_lvl $(proc_chance)

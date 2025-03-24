@@ -14,9 +14,6 @@ execute store result storage cartographer:custom_enchantments rotation int 1 run
 execute store result storage cartographer:custom_enchantments damage double 0.01 run scoreboard players get $result_damage ca.ench_var
 
 execute store result storage cartographer:custom_enchantments size double 0.01 run scoreboard players get $size ca.ench_orbit_lvl
-execute store result storage cartographer:custom_enchantments half_size double 0.01 run scoreboard players get $half_size ca.ench_orbit_lvl
-execute store result storage cartographer:custom_enchantments size_neg_1 double 0.01 run scoreboard players get $size_neg_1 ca.ench_orbit_lvl
-execute store result storage cartographer:custom_enchantments length double 0.01 run scoreboard players get $length ca.ench_orbit_lvl
 
 execute store result storage cartographer:custom_enchantments speed int 1 run scoreboard players get $speed ca.ench_orbit_lvl
 execute store result storage cartographer:custom_enchantments hits int 1 run scoreboard players get $hit_start ca.ench_orbit_lvl
@@ -38,11 +35,15 @@ execute unless score @s ca.disable_player_skins matches 1.. if entity @s[name=Ma
 execute unless score @s ca.disable_player_skins matches 1.. if entity @s[name=UserOwo] run scoreboard players set $user_id ca.ench_orbit_lvl 47
 execute unless score @s ca.disable_player_skins matches 1.. if entity @s[name=ConeOfSnow] run scoreboard players set $user_id ca.ench_orbit_lvl 47
 
-execute unless score @s ca.disable_player_skins matches 1.. if entity @s[name=PearUhDox] run scoreboard players set $user_id ca.ench_orbit_lvl 47
+data modify storage gu:main out set value "-"
+function gu:generate
+data modify storage cartographer:custom_enchantments owner set from storage gu:main out
 
-execute at @s rotated ~ 0 positioned ^ ^ ^-3.5 summon item_display run function cartographer_custom_enchantments:enchantment/passive/orbit/item_display_branch
-
-function cartographer_custom_enchantments:enchantment/passive/orbit/create_orbital_macro with storage cartographer:custom_enchantments
 scoreboard players add @s ca.orbit_ct 1
+
+execute if score @s ca.orbit_ct matches 1 at @s summon item_display run function cartographer_custom_enchantments:enchantment/passive/orbit/create_orbital_macro with storage cartographer:custom_enchantments
+execute if score @s ca.orbit_ct matches 2..8 as @e[type=item_display,tag=ca.orbit_holder] at @s run function cartographer_custom_enchantments:enchantment/passive/orbit/append_orbital with storage cartographer:custom_enchantments
+execute if score @s ca.orbit_ct matches 9.. as @e[type=item_display,tag=ca.orbit_holder] at @s run function cartographer_custom_enchantments:enchantment/passive/orbit/extend_orbital with storage cartographer:custom_enchantments
+execute if score @s ca.orbit_ct matches 9.. run scoreboard players set @s ca.orbit_ct 8
 
 execute run scoreboard players set @s ca.orbit_entropy 0

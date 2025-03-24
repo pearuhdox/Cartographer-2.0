@@ -9,4 +9,4 @@ $execute if score duration= carto_event matches 1 as $(target) at @s run kill @s
 
 
 
-return 1
+$execute as $(target) run return 1

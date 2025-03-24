@@ -400,6 +400,9 @@ scoreboard objectives add ca.soulfire_animation dummy
 scoreboard objectives add ca.soulfire_count dummy
 
 scoreboard objectives add ca.orbit_bonus_speed dummy
+scoreboard objectives add ca.orbit_time dummy
+scoreboard objectives add ca.orbit_cdl dummy
+scoreboard objectives add ca.orbit_hits dummy
 
 scoreboard objectives add ca.starfall_ct dummy
 scoreboard objectives add ca.orbit_ct dummy

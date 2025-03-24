@@ -5,4 +5,4 @@ $execute as $(target) at @s if score duration= carto_event matches 1 run attribu
 $execute as $(target) at @s if score duration= carto_event matches 2.. run attribute @s minecraft:movement_speed modifier add ca.mob_sprint 0.3 add_multiplied_total
 
 
-return 1
+$execute as $(target) run return 1
