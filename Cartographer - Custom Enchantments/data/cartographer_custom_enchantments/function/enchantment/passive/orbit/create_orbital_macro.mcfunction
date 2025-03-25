@@ -13,4 +13,4 @@ execute summon item_display run function cartographer_custom_enchantments:enchan
 
 scoreboard players add @s ca.orbit_ct 1
 
-$function carto_event:api/create_single_entity_event {event:"custom_ench/orbit/orbital",duration:6000,delay:$(delay),parameters:{owner:"$(owner)",hits:$(hits),rotation:$(rotation),speed:$(speed),bonus_speed:$(speed),size:$(size),length:$(length),half_size:"$(half_size)",size_neg_1:"$(size_neg_1)",damage:"$(damage)"},merge_behavior:"merge"}
+$function carto_event:api/create_single_entity_event {event:"custom_ench/orbit/orbital",duration:6000,delay:$(delay),parameters:{owner:"$(owner)",hits:$(hits),speed:$(speed),bonus_speed:$(speed),size:$(size),damage:"$(damage)"},merge_behavior:"merge"}

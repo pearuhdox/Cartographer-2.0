@@ -15,6 +15,9 @@ scoreboard objectives add ca.ench_sapper_lvl dummy
 scoreboard objectives add ca.ench_lifeblood_lvl dummy
 scoreboard objectives add ca.ench_bracing_lvl dummy
 
+scoreboard objectives add ca.ench_decontaminate_lvl dummy
+scoreboard objectives add ca.ench_annulling_lvl dummy
+
 
 scoreboard objectives add ca.ench_evasion_hand_lvl dummy
 scoreboard objectives add ca.ench_nullifying_hand_lvl dummy
@@ -29,6 +32,9 @@ scoreboard objectives add ca.ench_stealthiness_hand_lvl dummy
 scoreboard objectives add ca.ench_sapper_hand_lvl dummy
 scoreboard objectives add ca.ench_lifeblood_hand_lvl dummy
 scoreboard objectives add ca.ench_bracing_hand_lvl dummy
+
+scoreboard objectives add ca.ench_decontaminate_hand_lvl dummy
+scoreboard objectives add ca.ench_annulling_hand_lvl dummy
 
 
 scoreboard objectives add ca.ench_evasion_gear_lvl dummy
@@ -45,8 +51,16 @@ scoreboard objectives add ca.ench_sapper_gear_lvl dummy
 scoreboard objectives add ca.ench_lifeblood_gear_lvl dummy
 scoreboard objectives add ca.ench_bracing_gear_lvl dummy
 
+scoreboard objectives add ca.ench_decontaminate_gear_lvl dummy
+scoreboard objectives add ca.ench_annulling_gear_lvl dummy
+
 
 #Enchantment scoreboards functionality
+scoreboard objectives add ca.decontaminate_ct dummy
+scoreboard objectives add ca.decontaminate_entropy dummy
+
+scoreboard objectives add ca.annulling_ct dummy
+
 scoreboard objectives add ca.shielding_time dummy
 scoreboard objectives add ca.shielding_state dummy
 

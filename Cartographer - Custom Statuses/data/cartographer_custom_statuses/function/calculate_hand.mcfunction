@@ -120,3 +120,23 @@ scoreboard players operation @s ca.ench_shielding_lvl += @s ca.ench_shielding_ge
 scoreboard players operation @s ca.ench_shielding_lvl += @s ca.ench_shielding_hand_lvl
 
 
+scoreboard players set @s ca.ench_decontaminate_hand_lvl 0
+scoreboard players set @s ca.ench_decontaminate_lvl 0
+
+scoreboard players set $ench ca.ench_var 0
+execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.main.components.minecraft:enchantments.levels.cartographer_custom_statuses:passive/decontaminate
+scoreboard players operation @s ca.ench_decontaminate_hand_lvl += $ench ca.ench_var
+
+scoreboard players operation @s ca.ench_decontaminate_lvl += @s ca.ench_decontaminate_gear_lvl
+scoreboard players operation @s ca.ench_decontaminate_lvl += @s ca.ench_decontaminate_hand_lvl
+
+
+scoreboard players set @s ca.ench_annulling_hand_lvl 0
+scoreboard players set @s ca.ench_annulling_lvl 0
+
+scoreboard players set $ench ca.ench_var 0
+execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.main.components.minecraft:enchantments.levels.cartographer_custom_statuses:curse/annulling
+scoreboard players operation @s ca.ench_annulling_hand_lvl += $ench ca.ench_var
+
+scoreboard players operation @s ca.ench_annulling_lvl += @s ca.ench_annulling_gear_lvl
+scoreboard players operation @s ca.ench_annulling_lvl += @s ca.ench_annulling_hand_lvl

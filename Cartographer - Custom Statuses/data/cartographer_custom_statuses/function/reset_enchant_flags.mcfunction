@@ -10,4 +10,7 @@ tag @s remove ca.ench_ran_flag_nullifying
 tag @s remove ca.ench_ran_flag_regeneration
 tag @s remove ca.ench_ran_flag_shielding
 
+tag @s remove ca.ench_ran_flag_decontaminate
+tag @s remove ca.ench_ran_flag_annulling
+
 tag @s remove ca.ench_ran_flag_shielding_hit

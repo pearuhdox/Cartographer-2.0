@@ -9,3 +9,6 @@ execute if score @s ca.ench_evasion_lvl matches 1.. run function cartographer_cu
 execute if score @s ca.ench_nullifying_lvl matches 1.. run function cartographer_custom_statuses:ench_calc/nullifying
 execute if score @s ca.ench_regeneration_lvl matches 1.. run function cartographer_custom_statuses:ench_calc/regeneration
 execute if score @s ca.ench_shielding_lvl matches 1.. run function cartographer_custom_statuses:ench_calc/shielding
+
+execute if score @s ca.ench_decontaminate_lvl matches 1.. run function cartographer_custom_statuses:ench_calc/decontaminate
+execute if score @s ca.ench_annulling_lvl matches 1.. run function cartographer_custom_statuses:ench_calc/annulling

@@ -1,0 +1,38 @@
+{
+  "description": {
+    "translate": "enchantment.cartographer.annulling_curse",
+    "fallback": "Curse of Annulling"
+  },
+  "supported_items": "#minecraft:enchantable/durability",
+  "weight": 1,
+  "max_level": 20,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 9
+  },
+  "max_cost": {
+    "base": 20,
+    "per_level_above_first": 9
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "armor",
+    "offhand",
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "cartographer_custom_statuses:enchantment/curse/annulling/schedule"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {}
+        }
+      }
+    ]
+  }
+}
