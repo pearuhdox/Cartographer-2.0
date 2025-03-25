@@ -6,10 +6,11 @@ execute store result score $add_upgrade ca.repair_station_state run data get sto
 
 scoreboard players set $state ca.repair_station_state 10
 
-execute unless data storage cartographer_repair_stations:item_input data.Count run scoreboard players set $state ca.repair_station_state 1000
+execute unless data storage cartographer_repair_stations:item_input data.count run scoreboard players set $state ca.repair_station_state 1000
 
 execute unless data storage cartographer_repair_stations:item_input data.minecraft:custom_data.RepairStationUpgrade if score $item_damage ca.repair_station_state matches 1.. run scoreboard players set $state ca.repair_station_state 1
 execute if score $add_upgrade ca.repair_station_state matches 1.. run scoreboard players set $state ca.repair_station_state 5
+
 
 execute store result score $xp_cost ca.repair_station_state run data get storage cartographer_repair_stations:item_input data.components.minecraft:repair_cost
 execute store result score $lapis_cost ca.repair_station_state run data get storage cartographer_repair_stations:item_input data.components.minecraft:custom_data.LapisCost

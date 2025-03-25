@@ -1,8 +1,8 @@
 execute if score @s ca.cursor_anvil matches 1.. run function cartographer_repair_stations:cursor_anvil/tick
-execute if items entity @s player.cursor anvil run scoreboard players set @s ca.cursor_anvil 2
+execute if items entity @s player.cursor echo_shard[minecraft:custom_data~{repair_anvil:1b}] run scoreboard players set @s ca.cursor_anvil 2
 
-execute if score @s[gamemode=!creative,gamemode=!spectator] ca.repair_anvil_place matches 1.. run function cartographer_repair_stations:repair_anvil/func/place_anvil/main
-execute if score @s[gamemode=!creative,gamemode=!spectator] ca.repair_anvil_use matches 1.. run function cartographer_repair_stations:repair_anvil/func/use_anvil/main
+#execute if score @s[gamemode=!creative,gamemode=!spectator] ca.repair_anvil_place matches 1.. run function cartographer_repair_stations:repair_anvil/func/place_anvil/main
+#execute if score @s[gamemode=!creative,gamemode=!spectator] ca.repair_anvil_use matches 1.. run function cartographer_repair_stations:repair_anvil/func/use_anvil/main
 
 execute if score @s ca.place_repair matches 1.. run function cartographer_repair_stations:place/master
 

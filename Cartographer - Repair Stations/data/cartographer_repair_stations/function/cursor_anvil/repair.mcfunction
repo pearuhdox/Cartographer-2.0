@@ -1,4 +1,4 @@
-clear @s anvil 1
+clear @s echo_shard[minecraft:custom_data~{repair_anvil:1b}] 1
 
 playsound minecraft:block.anvil.use player @s ~ ~ ~
 
