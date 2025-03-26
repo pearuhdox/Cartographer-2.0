@@ -1,3 +1,6 @@
+#Cancel functionality unless a mode is selected
+execute unless score $death_drop charon.gmr matches 1.. unless score $cage charon.gmr matches 1.. unless score $trader charon.gmr matches 1.. unless score $collector charon.gmr matches 1.. run return 0
+
 #Grab player specific data
 execute unless score @s ca.boons matches 1.. run function cartographer_charon:respawn_items_branch
 

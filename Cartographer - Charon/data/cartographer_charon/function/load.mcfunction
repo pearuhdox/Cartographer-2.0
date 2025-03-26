@@ -66,6 +66,11 @@ scoreboard players set 8 dt.var 8
 scoreboard players set 9 dt.var 9
 scoreboard players set 10 dt.var 10
 
+#Disable dropping hotbar and armor and offhand by default
+execute unless score $drop_coeff charon.gmr matches 1.. run scoreboard players set $never_drop_armor charon.gmr 1
+execute unless score $drop_coeff charon.gmr matches 1.. run scoreboard players set $never_drop_hotbar charon.gmr 1
+execute unless score $drop_coeff charon.gmr matches 1.. run scoreboard players set $never_drop_offhand charon.gmr 1
+
 execute unless score $drop_coeff charon.gmr matches 1.. run scoreboard players set $drop_coeff charon.gmr 5
 execute unless score $inv_coeff charon.gmr matches 1.. run scoreboard players set $inv_coeff charon.gmr 9
 execute unless score $scale_coeff charon.gmr matches 0.. run scoreboard players set $scale_coeff charon.gmr 0

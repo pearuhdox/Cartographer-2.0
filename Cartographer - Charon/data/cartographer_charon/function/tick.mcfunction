@@ -1,3 +1,6 @@
+#Cancel functionality unless a mode is selected
+execute unless score $death_drop charon.gmr matches 1.. unless score $cage charon.gmr matches 1.. unless score $trader charon.gmr matches 1.. unless score $collector charon.gmr matches 1.. run return 0
+
 scoreboard players set $dead_player dt.var 0
 execute as @a if score @s dt.respawn matches 0..10 run scoreboard players set $dead_player dt.var 1
 
