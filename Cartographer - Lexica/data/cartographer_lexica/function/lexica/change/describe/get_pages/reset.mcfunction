@@ -127,6 +127,8 @@ scoreboard players set $status_frozen ca.lexica_var 0
 scoreboard players set $status_asleep ca.lexica_var 0
 scoreboard players set $status_stunned ca.lexica_var 0
 scoreboard players set $status_dazed ca.lexica_var 0
+scoreboard players set $status_defiance ca.lexica_var 0
+scoreboard players set $status_warding ca.lexica_var 0
 
 scoreboard players set $is_tool ca.lexica_var 0
 scoreboard players set $is_crossbow ca.lexica_var 0

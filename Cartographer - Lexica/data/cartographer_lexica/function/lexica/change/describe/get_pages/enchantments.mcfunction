@@ -211,6 +211,16 @@ execute if score $ench_swiftness ca.lexica_var matches 1.. run scoreboard player
 execute if score $ench_swiftness ca.lexica_var matches 1.. run scoreboard players set $attr_speed ca.lexica_var 1
 execute if score $ench_swiftness ca.lexica_var matches 1.. if score $is_tool ca.lexica_var matches 1.. run scoreboard players set $keyword_tool_usage ca.lexica_var 1
 
+execute store result score $ench_decontaminate ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_statuses:passive/decontaminate
+execute if score $ench_decontaminate ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"decontaminate",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.decontaminate", "fallback": "Decontaminate", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
+execute if score $ench_decontaminate ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
+execute if score $ench_decontaminate ca.lexica_var matches 1.. run scoreboard players set $has_status ca.lexica_var 1
+execute if score $ench_decontaminate ca.lexica_var matches 1.. run scoreboard players set $status_cleansed ca.lexica_var 1
+execute if score $ench_decontaminate ca.lexica_var matches 1.. run scoreboard players set $keyword_negative_status ca.lexica_var 1
+execute if score $ench_decontaminate ca.lexica_var matches 1.. run scoreboard players set $keyword_random ca.lexica_var 1
+execute if score $ench_decontaminate ca.lexica_var matches 1.. if score $is_tool ca.lexica_var matches 1.. run scoreboard players set $keyword_tool_usage ca.lexica_var 1
+
+
 execute store result score $ench_adrenaline ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/adrenaline
 execute if score $ench_adrenaline ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"adrenaline",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.adrenaline", "fallback": "Adrenaline", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
 execute if score $ench_adrenaline ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
@@ -607,6 +617,15 @@ execute store result score $ench_scavenger ca.lexica_var run data get storage ca
 execute if score $ench_scavenger ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"scavenger",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.scavenger", "fallback": "Scavenger", "bold": true, "underlined": false, "italic": false, "color": "#47EDD1"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:4713937}
 execute if score $ench_scavenger ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
 execute if score $ench_scavenger ca.lexica_var matches 1.. run scoreboard players set $keyword_lethal ca.lexica_var 1
+
+
+execute store result score $ench_annulling ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_statuses:curse/annulling
+execute if score $ench_annulling ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"annulling",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.annulling", "fallback": "Annulling", "bold": true, "underlined": false, "italic": false, "color": "red"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:16733525}
+execute if score $ench_annulling ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
+execute if score $ench_annulling ca.lexica_var matches 1.. run scoreboard players set $has_status ca.lexica_var 1
+execute if score $ench_annulling ca.lexica_var matches 1.. run scoreboard players set $status_purged ca.lexica_var 1
+execute if score $ench_annulling ca.lexica_var matches 1.. run scoreboard players set $keyword_random ca.lexica_var 1
+execute if score $ench_annulling ca.lexica_var matches 1.. run scoreboard players set $keyword_positive_status ca.lexica_var 1
 
 execute store result score $ench_clumsiness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:curse/clumsiness
 execute if score $ench_clumsiness ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment_curse",id:"clumsiness",name:'[{"text": "[", "bold": true, "underlined": false, "italic": false, "color": "white"},{"translate": "enchantment.cartographer.clumsiness", "fallback": "Clumsiness", "bold": true, "underlined": false, "italic": false, "color": "red"},{"text": "]", "bold": true, "underlined": false, "italic": false, "color": "white"}]',color:16733525}
