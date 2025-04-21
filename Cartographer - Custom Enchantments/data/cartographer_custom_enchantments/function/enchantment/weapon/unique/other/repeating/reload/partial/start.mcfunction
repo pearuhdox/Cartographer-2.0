@@ -5,7 +5,7 @@ scoreboard players add @s ca.repeating_max_ammo 1
 
 data modify storage cartographer_custom_enchantments:repeating data.item set value {}
 execute if entity @s[tag=ca.ench_repeating_main] run data modify storage cartographer_custom_enchantments:repeating data.item set from entity @s SelectedItem
-execute unless entity @s[tag=ca.ench_repeating_main] run data modify storage cartographer_custom_enchantments:repeating data.item set from entity @s Inventory[{Slot:-106b}]
+execute unless entity @s[tag=ca.ench_repeating_main] run data modify storage cartographer_custom_enchantments:repeating data.item set from entity @s equipment.offhand
 
 data modify storage cartographer_custom_enchantments:repeating data.arrows set value []
 data modify storage cartographer_custom_enchantments:repeating data.arrow_id set value ""

@@ -28,7 +28,7 @@ data modify entity @s Motion set from storage cartographer:custom_enchantments n
 execute if entity @s[type=#minecraft:arrows] run data modify entity @s pickup set value 2b
 execute if entity @s[type=minecraft:trident] run data modify entity @s pickup set value 2b
 
-execute if entity @s[type=minecraft:trident] if data entity @s item.components.minecraft:enchantments.levels.minecraft:loyalty run data remove entity @s item.components.minecraft:enchantments.levels.minecraft:loyalty
+execute if entity @s[type=minecraft:trident] if data entity @s item.components.minecraft:enchantments.minecraft:loyalty run data remove entity @s item.components.minecraft:enchantments.minecraft:loyalty
 
 tag @s add ca.multishot_spawned
 

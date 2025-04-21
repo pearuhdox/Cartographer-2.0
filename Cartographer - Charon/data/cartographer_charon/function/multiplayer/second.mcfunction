@@ -2,7 +2,7 @@ particle minecraft:glow_squid_ink ~ ~ ~ 0 0 0 0.05 1 force
 playsound minecraft:entity.allay.ambient_without_item player @a ~ ~ ~ 0.35 2
 
 data modify storage cartographer_charon:multiplayer_uuid UUID set value []
-data modify storage cartographer_charon:multiplayer_uuid UUID set from entity @s HandItems[0].components.minecraft:custom_data.Owner
+data modify storage cartographer_charon:multiplayer_uuid UUID set from entity @s equipment.mainhand.components.minecraft:custom_data.Owner
 
 data modify storage gu:main out set value "-"
 function gu:convert with storage cartographer_charon:multiplayer_uuid

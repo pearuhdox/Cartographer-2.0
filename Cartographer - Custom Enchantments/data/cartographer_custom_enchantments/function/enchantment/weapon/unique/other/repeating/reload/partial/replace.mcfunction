@@ -1,6 +1,6 @@
 
 
-data modify storage cartographer_custom_enchantments:repeating visual.name set value '{"fallback":"Crossbow","translate":"item.minecraft.crossbow","color":"aqua","italic":false}'
+data modify storage cartographer_custom_enchantments:repeating visual.name set value {"fallback":"Crossbow","translate":"item.minecraft.crossbow","color":"aqua","italic":false}
 execute if data storage cartographer_custom_enchantments:repeating data.item.components.minecraft:custom_name run data modify storage cartographer_custom_enchantments:repeating visual.name set from storage cartographer_custom_enchantments:repeating data.item.components.minecraft:custom_name
 execute if data storage cartographer_custom_enchantments:repeating data.item.components.minecraft:custom_data.repeating_name run data modify storage cartographer_custom_enchantments:repeating visual.name set from storage cartographer_custom_enchantments:repeating data.item.components.minecraft:custom_data.repeating_name
 execute unless data storage cartographer_custom_enchantments:repeating data.item.components.minecraft:custom_data.repeating_name run data modify storage cartographer_custom_enchantments:repeating data.item.components.minecraft:custom_data.repeating_name set from storage cartographer_custom_enchantments:repeating visual.name
@@ -11,7 +11,7 @@ function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeat
 data modify storage cartographer_custom_enchantments:repeating data.item.components.minecraft:custom_name set from storage cartographer_custom_enchantments:repeating visual.return
 
 scoreboard players set $has_infinity ca.ench_repeating_lvl 0
-execute if data storage cartographer_custom_enchantments:repeating data.item.components.minecraft:enchantments.levels.minecraft:infinity run scoreboard players set $has_infinity ca.ench_repeating_lvl 1
+execute if data storage cartographer_custom_enchantments:repeating data.item.components.minecraft:enchantments.minecraft:infinity run scoreboard players set $has_infinity ca.ench_repeating_lvl 1
 
 execute unless score $has_infinity ca.ench_repeating_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/reload/partial/take_arrows
 

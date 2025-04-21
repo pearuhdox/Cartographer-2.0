@@ -10,7 +10,7 @@ $execute as $(target) at @s if entity @s[tag=ca.aberration_spawn] run function c
 
 $execute as $(target) at @s if entity @s[nbt={HurtTime:9s}] run function carto_event:event/custom_ench/aberration/slime/hurt
 
-$execute as $(target) at @s if score duration= carto_event matches ..590 if score @s ca.aberration_time matches 11.. if entity @s[nbt={FallDistance:0.0f}] run function carto_event:event/custom_ench/aberration/slime/jump with storage carto_event current[-1].parameters
+$execute as $(target) at @s if score duration= carto_event matches ..590 if score @s ca.aberration_time matches 11.. if entity @s[nbt={fall_distance:0.0d}] run function carto_event:event/custom_ench/aberration/slime/jump with storage carto_event current[-1].parameters
 
 $execute as $(target) at @s if score @s ca.aberration_anim matches 10 on passengers run function carto_event:event/custom_ench/aberration/slime/squish
 $execute as $(target) at @s if score @s ca.aberration_anim matches 5 on passengers run function carto_event:event/custom_ench/aberration/slime/unsquish
@@ -31,7 +31,7 @@ $execute as $(target) at @s unless score @s ca.aberration_anim matches 1.. if sc
 $execute as $(target) at @s unless score @s ca.aberration_anim matches 1.. if score @s ca.aberration_time matches 9 run playsound minecraft:entity.creeper.primed hostile @a[distance=..16] ~ ~ ~ 1 1.5 
 #$execute as $(target) at @s unless score @s ca.aberration_anim matches 1.. if score @s ca.aberration_time matches 9 anchored feet positioned ^ ^ ^ rotated ~ 0 if entity @s[tag=ca.player_spawned] positioned ~ ~0.5 ~ run function carto_event:event/custom_ench/aberration/slime/vfx_player with storage carto_event current[-1].parameters
 #$execute as $(target) at @s unless score @s ca.aberration_anim matches 1.. if score @s ca.aberration_time matches 9 anchored feet positioned ^ ^ ^ rotated ~ 0 unless entity @s[tag=ca.player_spawned] positioned ~ ~0.5 ~ run function carto_event:event/custom_ench/aberration/slime/vfx_enemy with storage carto_event current[-1].parameters
-$execute as $(target) at @s unless score @s ca.aberration_anim matches 1.. if score @s ca.aberration_time matches 9 if entity @s[tag=ca.player_spawned] as @e[type=#cartographer_core:affected_by_carto,limit=5,sort=nearest,distance=..$(half_size)] run function carto_event:api/create_single_entity_event {event:"custom_ench/aberration/immobilize",duration:10,delay:000,parameters:{},merge_behavior:"none"}
+$execute as $(target) at @s unless score @s ca.aberration_anim matches 1.. if score @s ca.aberration_time matches 9 if entity @s[tag=ca.player_spawned] as @e[type=#cartographer_core:affected_by_carto,limit=5,sort=nearest,distance=..$(half_size)] run function carto_event:api/create_single_entity_event {event:"custom_ench/aberration/immobilize",duration:10,delay:0,parameters:{},merge_behavior:"none"}
 
 
 $execute as $(target) at @s unless score @s ca.aberration_anim matches 1.. if score @s ca.aberration_time matches ..6 run particle minecraft:smoke ~ ~0.25 ~ 0.1 0.1 0.1 0.1 2 normal

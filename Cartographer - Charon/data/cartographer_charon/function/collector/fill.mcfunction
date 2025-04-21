@@ -1,6 +1,6 @@
-data modify entity @s ArmorItems[1] set from storage cartographer_charon:bundle bundle
-data modify entity @s ArmorItems[1].components.minecraft:custom_data.CartoCollectorDropped set value 1b
-data modify entity @s ArmorDropChances set value [0.0F,1.0F,0.0F,0.0F]
+data modify entity @s equipment.legs set from storage cartographer_charon:bundle bundle
+data modify entity @s equipment.legs.components.minecraft:custom_data.CartoCollectorDropped set value 1b
+data modify entity @s drop_chances set value {legs:1.000}
 
 team join CharonCageVisual @s
 

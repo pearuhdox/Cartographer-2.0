@@ -16,14 +16,14 @@ tag @s add watched_die_already
 tag @s remove the_one_dying
 
 #Grab player specific data
-function bb:lib/pldata/read
+function cartographer_core:pldata/read
 
 #Save cartographer_charon:player inv to working data - Resets it first
-data modify storage bbl:pldata sudo_root.working_data.charon_player.inv set value []
-data modify storage bbl:pldata sudo_root.working_data.charon_player.inv set from storage cartographer_charon:player inv
+data modify storage cartographer:player_data main.working_data.charon_player.inv set value []
+data modify storage cartographer:player_data main.working_data.charon_player.inv set from storage cartographer_charon:player inv
 
 #Push to saved space
-function bb:lib/pldata/write
+function cartographer_core:pldata/write
 
 function cartographer_charon:effect_manager/get_effects
 

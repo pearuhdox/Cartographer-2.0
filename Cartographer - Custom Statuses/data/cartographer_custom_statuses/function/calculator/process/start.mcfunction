@@ -1,5 +1,5 @@
-function bb:lib/pldata/read
-data modify storage bbl:pldata sudo_root.working_data.cartographer.apply_status_data.actions set value {}
+function cartographer_core:pldata/read
+data modify storage cartographer:player_data main.working_data.cartographer.apply_status_data.actions set value {}
 
 
 
@@ -18,4 +18,4 @@ execute if score $custom_enchantments ca.installed matches 1.. run function cart
 
 #FUNCTION TAG HERE
 
-function bb:lib/pldata/write
+function cartographer_core:pldata/write

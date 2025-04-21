@@ -1,8 +1,8 @@
 data modify storage cartographer:custom_enchantments item set value {}
-$execute as $(target) if entity @s[type=player] at @s if predicate cartographer_custom_enchantments:has/throwable/offhand unless predicate cartographer_custom_enchantments:has/throwable/mainhand run data modify storage cartographer:custom_enchantments item set from entity @s Inventory[{Slot:-106b}]
+$execute as $(target) if entity @s[type=player] at @s if predicate cartographer_custom_enchantments:has/throwable/offhand unless predicate cartographer_custom_enchantments:has/throwable/mainhand run data modify storage cartographer:custom_enchantments item set from entity @s equipment.offhand
 $execute as $(target) if entity @s[type=player] at @s if predicate cartographer_custom_enchantments:has/throwable/mainhand run data modify storage cartographer:custom_enchantments item set from entity @s SelectedItem
 
-$execute as $(target) unless entity @s[type=player] at @s run data modify storage cartographer:custom_enchantments item set from entity @s HandItems[0]
+$execute as $(target) unless entity @s[type=player] at @s run data modify storage cartographer:custom_enchantments item set from entity @s equipment.mainhand
 
 data modify entity @s item set from storage cartographer:custom_enchantments item
 

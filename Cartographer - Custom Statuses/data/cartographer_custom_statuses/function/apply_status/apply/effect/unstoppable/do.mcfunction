@@ -1,1 +1,1 @@
-$function carto_event:api/create_single_entity_event {event:"custom_statuses/unstoppable",duration:$(duration),delay:000,parameters:{},merge_behavior:"none"}
+$function carto_event:api/create_single_entity_event {event:"custom_statuses/unstoppable",duration:$(duration),delay:0,parameters:{},merge_behavior:"none"}

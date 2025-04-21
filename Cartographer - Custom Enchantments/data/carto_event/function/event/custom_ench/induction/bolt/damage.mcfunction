@@ -11,4 +11,4 @@ execute if score $allow_statuses_self ca.ench_induction_lvl matches 1.. on attac
 
 
 tag @s add ca.induction_cdl
-function carto_event:api/create_single_entity_event {event:"custom_ench/induction/cooldown",duration:20,delay:000,parameters:{},merge_behavior:"none"}
+function carto_event:api/create_single_entity_event {event:"custom_ench/induction/cooldown",duration:20,delay:0,parameters:{},merge_behavior:"none"}

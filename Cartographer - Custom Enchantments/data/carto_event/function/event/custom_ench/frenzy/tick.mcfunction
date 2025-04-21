@@ -13,6 +13,6 @@ $execute if score duration= carto_event matches 1 as $(target) at @s run scorebo
 $execute if score duration= carto_event matches 1 as $(target) at @s unless score @s ca.adrenaline_stack matches 1.. run attribute @s minecraft:attack_damage modifier remove ca.frenzy_amt
 
 $execute if score duration= carto_event matches 1 as $(target) at @s if score @s ca.frenzy_stack matches 1.. run scoreboard players set @s ca.frenzy_duration 157
-$execute if score duration= carto_event matches 1 as $(target) at @s if score @s ca.frenzy_stack matches 1.. run function carto_event:api/create_single_entity_event {event:"custom_ench/frenzy",duration:157,delay:003,parameters:{},merge_behavior:"merge"}
+$execute if score duration= carto_event matches 1 as $(target) at @s if score @s ca.frenzy_stack matches 1.. run function carto_event:api/create_single_entity_event {event:"custom_ench/frenzy",duration:157,delay:3,parameters:{},merge_behavior:"merge"}
 
 return 1

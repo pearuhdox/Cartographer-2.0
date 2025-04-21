@@ -12,7 +12,6 @@ execute if score @s disable_player_skins matches 1.. run function cartographer_c
 #execute unless predicate cartographer_core:player/sprinting unless predicate cartographer_core:player/sneaking unless predicate cartographer_core:player/swimming if score @s ca.sprint_active matches 1.. run function cartographer_core:handlers/sprint_bug_check/start
 #execute if predicate cartographer_core:player/sprinting run scoreboard players set @s ca.sprint_active 61
 
-execute if score @s ca.opportunist_timer matches 1 run function cartographer_core:handlers/opportunist/reset
 execute if score @s ca.opportunist_timer matches 1.. run scoreboard players remove @s ca.opportunist_timer 1
 
 attribute @s entity_interaction_range modifier add ca.carto_hitbox_fix 0.5 add_value
@@ -21,7 +20,6 @@ execute if score @s ca.glass_cdl matches 1.. run scoreboard players remove @s ca
 
 execute if entity @s[tag=!ca.init] run function cartographer_core:load/init_player
 
-execute unless score @s ca.player_id matches 1.. run function cartographer_core:helper/player_id/assign
 
 execute if entity @s[tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. if score $check ca.core_delay_check matches 1.. run function cartographer_core:helper/inventory/do_inventory_check
 execute if score @s ca.core_delay_check matches 1.. run scoreboard players remove @s ca.core_delay_check 1
@@ -29,8 +27,7 @@ execute if score @s ca.core_delay_check matches 1.. run scoreboard players remov
 execute if score @s ca.attribute_cleanse_delay matches 3.. run function cartographer_core:remove_attributes
 execute if score @s ca.attribute_cleanse_delay matches 1.. run scoreboard players add @s ca.attribute_cleanse_delay 1
 
-#Check Inspector When Inventory Updates
-execute if entity @s[tag=ca.core_check_inv_inspector] run function cartographer_core:systems/inspector/find_slot
+
 
 #Reduce Combat Score and Attack Speed Handler Calcs - Do these before running player effects
 execute if score @s ca.combat_score matches 1.. run scoreboard players remove @s ca.combat_score 1
@@ -59,7 +56,7 @@ tag @s remove ca.core_check_inv_inspector
 
 #Enable triggers
 scoreboard players enable @s menu
-scoreboard players enable @s give_dev_box
+execute if entity @s[gamemode=creative] run scoreboard players enable @s give_dev_box
 scoreboard players enable @s bug
 scoreboard players enable @s ca.credits_menu
 
@@ -77,19 +74,9 @@ execute if score @s ca.options_trig matches 1.. run function cartographer_core:o
 execute if score @s ca.place_frame matches 1.. run function cartographer_core:handlers/place/master
 scoreboard players set @s ca.place_frame 0
 
-#Reduce the interal attack timer system scores.
-execute if score @s ca.atk_time matches 1.. run scoreboard players remove @s ca.atk_time 1
-execute if score @s ca.atk_time_true matches 1.. run scoreboard players remove @s ca.atk_time_true 1
-
 #Run anvil and grindstone destruction
 execute if score $no_anvil ca.gamerule matches 1 if score @s ca.use_anvil matches 1.. if entity @s[gamemode=!creative,gamemode=!spectator] run function cartographer_core:systems/disables/anvil/tick
 execute if score $no_grindstone ca.gamerule matches 1 if score @s ca.use_grind matches 1.. if entity @s[gamemode=!creative,gamemode=!spectator] run function cartographer_core:systems/disables/grindstone/tick
-
-
-#Do Checks for Player created projectiles.
-execute if score @s ca.shoot_bow matches 1.. run function cartographer_core:helper/tag_player_projectile
-execute if score @s ca.shoot_cross matches 1.. run function cartographer_core:helper/tag_player_projectile
-execute if score @s ca.throw_trident matches 1.. run function cartographer_core:helper/tag_player_projectile
 
 #Custom Absorption Handler Reset
 execute unless predicate cartographer_core:potion_effect/has_absorption if entity @s[tag=ca.carto_abs_applied] run function cartographer_core:handlers/absorption/reset

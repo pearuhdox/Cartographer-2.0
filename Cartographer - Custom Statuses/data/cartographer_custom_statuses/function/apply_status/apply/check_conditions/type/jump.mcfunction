@@ -1,3 +1,4 @@
+
 scoreboard players set $condition_failed ca.apply_status_conditions 0
 
 function cartographer_custom_statuses:apply_status/apply/check_conditions/copy_data

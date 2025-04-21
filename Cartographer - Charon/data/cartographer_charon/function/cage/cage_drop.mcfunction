@@ -1,7 +1,7 @@
 summon item ~ ~1.75 ~ {Tags:["ca.charon_cage_bag"],Item:{id:"minecraft:bundle",count:1}}
 
 data modify storage cartographer_charon:cage bundle set value {}
-data modify storage cartographer_charon:cage bundle set from entity @s ArmorItems[1]
+data modify storage cartographer_charon:cage bundle set from entity @s equipment.legs
 
 stopsound @a[distance=..16] hostile minecraft:block.chain.break
 stopsound @a[distance=..16] hostile minecraft:block.conduit.ambient

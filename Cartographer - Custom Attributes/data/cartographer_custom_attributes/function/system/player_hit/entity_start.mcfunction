@@ -1,5 +1,3 @@
-execute if score $restrike_hit_chance ca.restrike_hit_var matches 1.. run say ajkghasfhk
-
 execute if score $ranged_damage ca.attr_apply_var matches 1.. run function cartographer_custom_attributes:custom_attributes/effects/ranged_damage/hit/apply
 
 execute if score $do_lucky_hit ca.lucky_hit_var matches 1 run function cartographer_custom_attributes:custom_attributes/effects/lucky_hit/start {proc_coeff:"100",attack_type:"melee"}

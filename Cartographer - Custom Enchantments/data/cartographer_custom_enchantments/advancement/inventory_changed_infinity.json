@@ -8,7 +8,7 @@
               "condition": "minecraft:entity_properties",
               "entity": "this",
               "predicate": {
-                "nbt": "{Inventory:[{components:{\"minecraft:enchantments\":{levels:{\"minecraft:infinity\":1}}}}]}"
+                "nbt": "{Inventory:[{components:{\"minecraft:enchantments\":{\"minecraft:infinity\":1}}}]}"
               }
             }
           ]

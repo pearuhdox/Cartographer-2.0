@@ -1,4 +1,4 @@
-$execute unless entity @s[tag=ca.used_regret_head] unless entity @s[tag=ca.used_regret_body] unless entity @s[tag=ca.used_regret_legs] unless entity @s[tag=ca.used_regret_feet] run function carto_event:api/create_single_entity_event {event:"custom_ench/regret",duration:1,delay:005,parameters:{damage:$(damage),real_damage:0.01},merge_behavior:"none"}
+$execute unless entity @s[tag=ca.used_regret_head] unless entity @s[tag=ca.used_regret_body] unless entity @s[tag=ca.used_regret_legs] unless entity @s[tag=ca.used_regret_feet] run function carto_event:api/create_single_entity_event {event:"custom_ench/regret",duration:1,delay:5,parameters:{damage:$(damage),real_damage:0.00},merge_behavior:"none"}
 execute unless entity @s[tag=ca.used_regret_head] unless entity @s[tag=ca.used_regret_body] unless entity @s[tag=ca.used_regret_legs] unless entity @s[tag=ca.used_regret_feet] run return 1
 
-$function carto_event:api/create_single_entity_event {event:"custom_ench/regret",duration:1,delay:005,parameters:{damage:$(damage),real_damage:0.0},merge_behavior:"none"}
+$function carto_event:api/create_single_entity_event {event:"custom_ench/regret",duration:1,delay:5,parameters:{damage:$(damage),real_damage:0.0},merge_behavior:"none"}

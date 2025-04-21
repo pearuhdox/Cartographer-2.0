@@ -3,7 +3,7 @@ scoreboard players operation $force ca.ench_var *= $1000 ca.CONSTANT
 scoreboard players add $force ca.ench_var 2500
 
 
-execute store result score $fall_dist ca.ench_recoil_lvl run data get entity @s FallDistance 100
+execute store result score $fall_dist ca.ench_recoil_lvl run data get entity @s fall_distance 100
 
 scoreboard players operation $fall_dist ca.ench_recoil_lvl *= $5 ca.CONSTANT
 execute if score $fall_dist ca.ench_recoil_lvl matches 3501.. run scoreboard players set $fall_dist ca.ench_recoil_lvl 3500

@@ -6,13 +6,13 @@ function cartographer_core:amd/read
 execute if data storage amd:mob_data working_data.data.custom_status_equips run data modify storage cartographer_custom_statuses:mob equips set from storage amd:mob_data working_data.data.custom_status_equips
 execute unless data storage amd:mob_data working_data.data.custom_status_equips run data modify storage cartographer_custom_statuses:mob equips set value []
 
-execute if entity @s[tag=ca.status_slot_feet] run function cartographer_custom_statuses:calculator/mob/get_item_info {path:"ArmorItems[0]"}
-execute if entity @s[tag=ca.status_slot_legs] run function cartographer_custom_statuses:calculator/mob/get_item_info {path:"ArmorItems[1]"}
-execute if entity @s[tag=ca.status_slot_body] run function cartographer_custom_statuses:calculator/mob/get_item_info {path:"ArmorItems[2]"}
-execute if entity @s[tag=ca.status_slot_head] run function cartographer_custom_statuses:calculator/mob/get_item_info {path:"ArmorItems[3]"}
+execute if entity @s[tag=ca.status_slot_feet] run function cartographer_custom_statuses:calculator/mob/get_item_info {path:"equipment.feet"}
+execute if entity @s[tag=ca.status_slot_legs] run function cartographer_custom_statuses:calculator/mob/get_item_info {path:"equipment.legs"}
+execute if entity @s[tag=ca.status_slot_body] run function cartographer_custom_statuses:calculator/mob/get_item_info {path:"equipment.chest"}
+execute if entity @s[tag=ca.status_slot_head] run function cartographer_custom_statuses:calculator/mob/get_item_info {path:"equipment.head"}
 
-execute if entity @s[tag=ca.status_slot_offh] run function cartographer_custom_statuses:calculator/mob/get_item_info {path:"HandItems[1]"}
-execute if entity @s[tag=ca.status_slot_main] run function cartographer_custom_statuses:calculator/mob/get_item_info {path:"HandItems[0]"}
+execute if entity @s[tag=ca.status_slot_offh] run function cartographer_custom_statuses:calculator/mob/get_item_info {path:"equipment.offhand"}
+execute if entity @s[tag=ca.status_slot_main] run function cartographer_custom_statuses:calculator/mob/get_item_info {path:"equipment.mainhand"}
 
 data modify storage amd:mob_data working_data.data.custom_status_equips set from storage cartographer_custom_statuses:mob equips
 

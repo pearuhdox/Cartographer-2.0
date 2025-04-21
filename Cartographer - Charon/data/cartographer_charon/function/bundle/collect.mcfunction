@@ -9,6 +9,8 @@ data modify storage cartographer_charon:player inv set value []
 
 data modify storage cartographer_charon:player inventory_test set value []
 data modify storage cartographer_charon:player inventory_test set from entity @s Inventory
+data modify storage cartographer_charon:player equipment_test set value {}
+data modify storage cartographer_charon:player equipment_test set from entity @s equipment
 
 data modify storage cartographer_charon:player returning_items set value []
 

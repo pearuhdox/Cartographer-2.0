@@ -12,6 +12,7 @@
       "cartographer_custom_statuses:kill/stealthiness",
       "cartographer_custom_statuses:kill/sapper",
       "cartographer_custom_statuses:kill/lifeblood",
-      "cartographer_custom_statuses:kill/bracing"
+      "cartographer_custom_statuses:kill/bracing",
+      "cartographer_custom_statuses:curse/annulling"
     ]
   }

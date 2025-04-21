@@ -1,5 +1,5 @@
-data modify entity 31192011-4452-2112-0000-000000000000 HandItems[0] set value {}
-data modify entity 31192011-4452-2112-0000-000000000000 HandItems[0] set from entity @s Item
+data remove entity 31192011-4452-2112-0000-000000000000 equipment.mainhand
+data modify entity 31192011-4452-2112-0000-000000000000 equipment.mainhand set from entity @s Item
 
 data modify storage gu:main out set value "-"
 function gu:generate

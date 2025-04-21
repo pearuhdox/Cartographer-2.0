@@ -1,5 +1,5 @@
 #Do Custom Effects for landing - grappling in custom enchantments
-execute if score $custom_enchantments ca.installed matches 1.. store result score $trident_val ca.ench_grappling_lvl run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/unique/ranged/grappling
+execute if score $custom_enchantments ca.installed matches 1.. store result score $trident_val ca.ench_grappling_lvl run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/ranged/grappling
 execute if score $custom_enchantments ca.installed matches 1.. store result score $trident_val ca.ench_grappling_lvl run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/grappling/activate_hit_trident
 
 #Do a player damage check

@@ -1,1 +1,1 @@
-$function carto_event:api/create_single_entity_event {event:"custom_ench/throwable/entity_use",duration:41,delay:000,parameters:{telegraph:"$(telegraph)"},merge_behavior:"merge"}
+$function carto_event:api/create_single_entity_event {event:"custom_ench/throwable/entity_use",duration:41,delay:0,parameters:{telegraph:"$(telegraph)"},merge_behavior:"merge"}

@@ -14,7 +14,7 @@ data modify storage cartographer_custom_enchantments:consumable data.item set fr
 #Copy Repeating Replace Code For Resetting Properly - Starts Here
 
 #Set Use Max Parameter
-execute store result score $use_max ca.ench_var run data get storage cartographer_custom_enchantments:consumable data.item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/unique/other/repeating
+execute store result score $use_max ca.ench_var run data get storage cartographer_custom_enchantments:consumable data.item.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/other/repeating
 scoreboard players add $use_max ca.ench_var 1
 
 #Set Use Count Parameter
@@ -44,7 +44,7 @@ data remove storage cartographer_custom_enchantments:consumable data.item.compon
 data modify storage cartographer_custom_enchantments:consumable data.item.components.minecraft:custom_data.item_replaced set value 1b
 
 #Handle Last Use For Auto Charge and Scavenger (Inert Items)
-execute if score $use_count ca.ench_var matches 0 if data storage cartographer_custom_enchantments:consumable data.item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/unique/other/scavenger run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/consumable/inert_scavenger
+execute if score $use_count ca.ench_var matches 0 if data storage cartographer_custom_enchantments:consumable data.item.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/other/scavenger run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/consumable/inert_scavenger
 
 
 #END OF REPLACE CODE

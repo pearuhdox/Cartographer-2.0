@@ -20,6 +20,6 @@ execute if score $surge_hit ca.sprint_time_surge matches 1.. run playsound minec
 $execute if score $surge_hit ca.sprint_time_surge matches 1.. run scoreboard players set $surge_vfx_size ca.ench_surge_lvl $(vfx_size)
 $execute if score $surge_hit ca.sprint_time_surge matches 1.. positioned ^ ^ ^ rotated ~ 0 positioned ^ ^ ^-$(place_pos) positioned ^ ^ ^0.75 run function cartographer_custom_enchantments:enchantment/passive/surge/vfx/start
 
-execute if score $surge_hit ca.sprint_time_surge matches 1.. run function carto_event:api/create_single_entity_event {event:"custom_ench/surge",duration:10,delay:000,parameters:{},merge_behavior:"merge"}
-execute unless score $surge_hit ca.sprint_time_surge matches 1.. unless entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"custom_ench/surge",duration:10,delay:000,parameters:{},merge_behavior:"merge"}
+execute if score $surge_hit ca.sprint_time_surge matches 1.. run function carto_event:api/create_single_entity_event {event:"custom_ench/surge",duration:10,delay:0,parameters:{},merge_behavior:"merge"}
+execute unless score $surge_hit ca.sprint_time_surge matches 1.. unless entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"custom_ench/surge",duration:10,delay:0,parameters:{},merge_behavior:"merge"}
 execute unless score $surge_hit ca.sprint_time_surge matches 1.. unless entity @s[type=player] run tag @s add ca.surge_inactive

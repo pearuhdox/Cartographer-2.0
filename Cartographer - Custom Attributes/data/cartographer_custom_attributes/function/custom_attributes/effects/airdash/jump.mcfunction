@@ -93,4 +93,4 @@ playsound minecraft:entity.bat.takeoff player @a[distance=..16] ~ ~ ~ 0.35 1.75
 playsound minecraft:entity.firework_rocket.launch player @a[distance=..16] ~ ~ ~ 1 1.75
 particle minecraft:cloud ~ ~-0.2 ~ 0.2 0 0.2 0.025 10 normal
 
-function carto_event:api/create_single_entity_event {event:"custom_attribute/airdash",duration:5,delay:000,parameters:{},merge_behavior:"none"}
+function carto_event:api/create_single_entity_event {event:"custom_attribute/airdash",duration:5,delay:0,parameters:{},merge_behavior:"none"}

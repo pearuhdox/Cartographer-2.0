@@ -1,2 +1,2 @@
 
-execute if data entity @s Inventory[{Slot:103b}] run function bb:lib/drop/unchecked/103
+execute if data entity @s equipment.head run function bb:lib/drop/unchecked/103

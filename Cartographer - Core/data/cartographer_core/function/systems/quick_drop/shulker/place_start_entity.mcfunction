@@ -6,4 +6,4 @@ scoreboard players operation @s ca.drop_box = $color ca.drop_box
 
 scoreboard players set @s ca.quick_drop_anim 1
 
-function carto_event:api/create_single_entity_event {event:"sb_quick_drop",duration:6,delay:000,parameters:{},merge_behavior:"none"}
+function carto_event:api/create_single_entity_event {event:"sb_quick_drop",duration:6,delay:0,parameters:{},merge_behavior:"none"}

@@ -3,7 +3,7 @@ $setblock 4206900 65 4206900 $(block) replace
 
 $particle minecraft:block{block_state:{Name:"minecraft:$(block)"}} ~ ~ ~ 0.3 0.3 0.3 2 60 normal
 
-execute store result score $has_silk_touch ca.ench_drilling_lvl run data get entity @s SelectedItem.components."minecraft:enchantments".levels.minecraft:silk_touch
+execute store result score $has_silk_touch ca.ench_drilling_lvl run data get entity @s SelectedItem.components."minecraft:enchantments".minecraft:silk_touch
 
 execute if block 4206900 65 4206900 spawner run function cartographer_custom_enchantments:enchantment/helper/tool/generate_xp {size:29}
 

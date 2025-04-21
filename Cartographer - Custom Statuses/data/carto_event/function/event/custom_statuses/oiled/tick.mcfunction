@@ -19,7 +19,7 @@ $execute as $(target) at @s if entity @s[type=#cartographer_core:classes/fire_im
 
 $execute as $(target) at @s if entity @s[tag=ca.has_custom_status_ignited_oiled] run scoreboard players set @s ca.oiled_warmup 32767
 
-$execute as $(target) at @s if score @s ca.oiled_warmup >= $warmup_time ca.oiled_duration run function carto_event:api/create_single_entity_event {event:"custom_statuses/oiled/ignited",duration:$(tick_rate),delay:002,parameters:{tick_command:"$(tick_command)",proc_command:"$(proc_command)",owner:"$(owner)",tick_rate:$(tick_rate),damage:$(damage),cauterize_threshold:$(cauterize_threshold),cauterize_percent:$(cauterize_percent),wildfire_range:$(wildfire_range),wildfire_targets:$(wildfire_targets),wildfire_time:$(wildfire_time)},merge_behavior:"custom"}
+$execute as $(target) at @s if score @s ca.oiled_warmup >= $warmup_time ca.oiled_duration run function carto_event:api/create_single_entity_event {event:"custom_statuses/oiled/ignited",duration:$(tick_rate),delay:2,parameters:{tick_command:"$(tick_command)",proc_command:"$(proc_command)",owner:"$(owner)",tick_rate:$(tick_rate),damage:$(damage),cauterize_threshold:$(cauterize_threshold),cauterize_percent:$(cauterize_percent),wildfire_range:$(wildfire_range),wildfire_targets:$(wildfire_targets),wildfire_time:$(wildfire_time)},merge_behavior:"custom"}
 $execute as $(target) at @s if score @s ca.oiled_warmup >= $warmup_time ca.oiled_duration run damage @s $(damage) cartographer_custom_statuses:status_damage by $(owner)
 $execute as $(target) at @s if score @s ca.oiled_warmup >= $warmup_time ca.oiled_duration run damage @s 0.0001 cartographer_custom_statuses:status_damage by $(owner)
 

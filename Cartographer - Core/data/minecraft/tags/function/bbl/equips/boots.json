@@ -1,6 +1,5 @@
 {
 	"values": [
-		{"id": "cartographer_custom_attributes:calculator/boots","required": false},
 		{"id": "cartographer_custom_statuses:calculator/boots","required": false},
 		{"id": "cartographer_core:handlers/inventory/cancel_suppression","required": true}
 	]

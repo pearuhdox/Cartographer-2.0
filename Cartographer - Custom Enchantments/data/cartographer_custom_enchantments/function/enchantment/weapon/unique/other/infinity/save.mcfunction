@@ -1,3 +1,4 @@
-function bb:lib/pldata/read
-data modify storage bbl:pldata sudo_root.working_data.infinity set from entity @s Inventory
-function bb:lib/pldata/write
+function cartographer_core:pldata/read
+data modify storage cartographer:player_data main.working_data.infinity set from entity @s Inventory
+data modify storage cartographer:player_data main.working_data.infinity_equips set from entity @s equipment
+function cartographer_core:pldata/write

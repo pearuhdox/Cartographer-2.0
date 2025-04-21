@@ -20,14 +20,14 @@ $execute as $(target) at @s if data storage carto_event current[-1].parameters.t
 
 $execute as $(target) at @s if score duration= carto_event matches 1 run function carto_event:event/custom_statuses/stunned/remove_effect with storage carto_event current[-1].parameters
 
-$execute as $(target) at @s if score $stunned_remove ca.stunned_var matches 1.. run function carto_event:api/create_single_entity_event {event:"custom_statuses/block_effect/stunned",duration:$(block_duration),delay:003,parameters:{},merge_behavior:"none"}
+$execute as $(target) at @s if score $stunned_remove ca.stunned_var matches 1.. run function carto_event:api/create_single_entity_event {event:"custom_statuses/block_effect/stunned",duration:$(block_duration),delay:3,parameters:{},merge_behavior:"none"}
 $execute as $(target) at @s if score $stunned_remove ca.stunned_var matches 1.. run return 0
 
 $execute as $(target) at @s if entity @s[tag=ca.unstoppable] run function carto_event:event/custom_statuses/stunned/remove_effect with storage carto_event current[-1].parameters
-$execute as $(target) at @s if entity @s[tag=ca.unstoppable] run function carto_event:api/create_single_entity_event {event:"custom_statuses/block_effect/stunned",duration:$(block_duration),delay:003,parameters:{},merge_behavior:"none"}
+$execute as $(target) at @s if entity @s[tag=ca.unstoppable] run function carto_event:api/create_single_entity_event {event:"custom_statuses/block_effect/stunned",duration:$(block_duration),delay:3,parameters:{},merge_behavior:"none"}
 $execute as $(target) at @s if entity @s[tag=ca.unstoppable] run return 0
 
 $execute as $(target) at @s if entity @s[tag=ca.cleansed] run function carto_event:event/custom_statuses/stunned/remove_effect with storage carto_event current[-1].parameters
-$execute as $(target) at @s if entity @s[tag=ca.cleansed] run function carto_event:api/create_single_entity_event {event:"custom_statuses/block_effect/stunned",duration:$(block_duration),delay:003,parameters:{},merge_behavior:"none"}
+$execute as $(target) at @s if entity @s[tag=ca.cleansed] run function carto_event:api/create_single_entity_event {event:"custom_statuses/block_effect/stunned",duration:$(block_duration),delay:3,parameters:{},merge_behavior:"none"}
 $execute as $(target) at @s if entity @s[tag=ca.cleansed] run return 0
 return 1

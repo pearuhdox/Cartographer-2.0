@@ -10,4 +10,4 @@ execute store result storage cartographer:custom_enchantments count int 1 run sc
 
 function cartographer_custom_enchantments:enchantment/curse/fragility/projectile/macro with storage cartographer:custom_enchantments
 
-function carto_event:api/create_single_entity_event {event:"custom_ench/fragility",duration:10,delay:000,parameters:{},merge_behavior:"none"}
+function carto_event:api/create_single_entity_event {event:"custom_ench/fragility",duration:10,delay:0,parameters:{},merge_behavior:"none"}

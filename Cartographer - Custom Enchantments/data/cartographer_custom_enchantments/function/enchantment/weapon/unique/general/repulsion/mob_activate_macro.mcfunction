@@ -1,1 +1,1 @@
-$function carto_event:api/create_single_entity_event {event:"custom_ench/repulsion/activate",duration:41,delay:000,parameters:{size:$(size),telegraph:"$(telegraph)",damage:$(damage)},merge_behavior:"merge"}
+$function carto_event:api/create_single_entity_event {event:"custom_ench/repulsion/activate",duration:41,delay:0,parameters:{size:$(size),telegraph:"$(telegraph)",damage:$(damage)},merge_behavior:"merge"}

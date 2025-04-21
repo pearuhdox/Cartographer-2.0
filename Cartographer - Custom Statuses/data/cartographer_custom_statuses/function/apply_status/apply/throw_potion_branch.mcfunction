@@ -4,7 +4,8 @@ scoreboard players set $owned_target ca.apply_status_conditions 0
 data modify storage cartographer:custom_statuses projectile set value {self:[],target:[],owner:""}
 
 data modify storage cartographer:custom_statuses projectile_data set value {}
-execute if entity @s[type=potion] run data modify storage cartographer:custom_statuses projectile_data set from entity @s item.components.minecraft:custom_data.apply_status
+execute if entity @s[type=splash_potion] run data modify storage cartographer:custom_statuses projectile_data set from entity @s item.components.minecraft:custom_data.apply_status
+execute if entity @s[type=lingering_potion] run data modify storage cartographer:custom_statuses projectile_data set from entity @s item.components.minecraft:custom_data.apply_status
 
 execute on origin run function cartographer_custom_statuses:apply_status/apply/get_potion_radius
 scoreboard players operation @s ca.attr_aoe_size_total = $potion_radius ca.status_var

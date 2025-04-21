@@ -25,7 +25,7 @@ execute store result storage cartographer_custom_enchantments:quick_strike visua
 function cartographer_custom_enchantments:enchantment/weapon/unique/melee/quick_strike/recharge/activate/visual/get_name
 data modify storage cartographer_custom_enchantments:quick_strike items[0].components.minecraft:custom_name set from storage cartographer_custom_enchantments:quick_strike visual.return
 
-execute if score $time_current ca.ench_quick_strike_slot matches 1 run function carto_event:api/create_single_entity_event {event:"custom_ench/quick_strike/cooldown",duration:20,delay:000,parameters:{},merge_behavior:"none"}
+execute if score $time_current ca.ench_quick_strike_slot matches 1 run function carto_event:api/create_single_entity_event {event:"custom_ench/quick_strike/cooldown",duration:20,delay:0,parameters:{},merge_behavior:"none"}
 
 execute if score $slot ca.ench_quick_strike_slot matches -106 run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/quick_strike/recharge/activate/return_offhand
 execute if score $slot ca.ench_quick_strike_slot matches 0..8 run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/quick_strike/recharge/activate/return with storage cartographer_custom_enchantments:quick_strike macro

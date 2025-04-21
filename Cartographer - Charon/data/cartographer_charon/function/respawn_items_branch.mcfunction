@@ -1,8 +1,8 @@
 #Grab player specific data
-function bb:lib/pldata/read
+function cartographer_core:pldata/read
 
 #Save cartographer_charon:player inv to working data
-data modify storage inv:main inv.all set from storage bbl:pldata sudo_root.working_data.charon_player.inv
+data modify storage inv:main inv.all set from storage cartographer:player_data main.working_data.charon_player.inv
 
 function cartographer_charon:inv/iterate_respawn
 

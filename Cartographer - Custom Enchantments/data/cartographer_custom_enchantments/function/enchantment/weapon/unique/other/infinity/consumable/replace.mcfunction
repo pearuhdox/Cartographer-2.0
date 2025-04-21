@@ -4,7 +4,7 @@ $scoreboard players set $inf_$(slot) ca.ench_var 1
 
 data modify storage cartographer_custom_enchantments:infinity data set value {}
 execute if score $inf_mainhand ca.ench_var matches 1 run data modify storage cartographer_custom_enchantments:infinity data.item set from entity @s SelectedItem
-execute if score $inf_offhand ca.ench_var matches 1 run data modify storage cartographer_custom_enchantments:infinity data.item set from entity @s Inventory[{Slot:-106b}]
+execute if score $inf_offhand ca.ench_var matches 1 run data modify storage cartographer_custom_enchantments:infinity data.item set from entity @s equipment.offhand
 
 data remove storage cartographer_custom_enchantments:infinity data.item.Slot
 

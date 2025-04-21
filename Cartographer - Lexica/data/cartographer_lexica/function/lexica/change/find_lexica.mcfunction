@@ -2,6 +2,10 @@ data modify storage cartographer:lexica inventory set value []
 
 data modify storage cartographer:lexica inventory append from entity @s Inventory[{components:{"minecraft:custom_data":{lexica_cartographia:1b}}}]
 
+execute if data entity @s equipment.offhand.components.minecraft:custom_data.lexica_cartographia run data modify storage cartographer:lexica items append from entity @s equipment.offhand
+execute if data entity @s equipment.offhand.components.minecraft:custom_data.lexica_cartographia run data modify storage cartographer:lexica items[-1].Slot set value -106b
+
+
 scoreboard players set @s ca.lexica_slot -1000
 execute if data storage cartographer:lexica inventory[0] store result score @s ca.lexica_slot run data get storage cartographer:lexica inventory[0].Slot
 

@@ -4,10 +4,10 @@ execute if score $rot ca.ench_orbit_lvl matches 181.. run scoreboard players rem
 
 #Bonus Speed to Orbs divided by 10 then +1 - decreases over time
 execute unless entity @s[type=player] run scoreboard players set @s ca.orbit_bonus_speed 40
-execute unless entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"custom_ench/orbit",duration:40,delay:000,parameters:{},merge_behavior:"none"}
+execute unless entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"custom_ench/orbit",duration:40,delay:0,parameters:{},merge_behavior:"none"}
 
 execute if entity @s[type=player] run scoreboard players set @s ca.orbit_bonus_speed 80
-execute if entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"custom_ench/orbit",duration:80,delay:000,parameters:{},merge_behavior:"none"}
+execute if entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"custom_ench/orbit",duration:80,delay:0,parameters:{},merge_behavior:"none"}
 
 execute store result storage cartographer:custom_enchantments rotation int 1 run scoreboard players get $rot ca.ench_orbit_lvl
 

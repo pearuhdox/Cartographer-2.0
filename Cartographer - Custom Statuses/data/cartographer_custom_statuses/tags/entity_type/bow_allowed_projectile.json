@@ -3,6 +3,7 @@
       "minecraft:arrow",
       "minecraft:spectral_arrow",
       "minecraft:snowball",
-	    "minecraft:potion"
+	    "minecraft:splash_potion",
+      "minecraft:lingering_potion"
     ]
   }

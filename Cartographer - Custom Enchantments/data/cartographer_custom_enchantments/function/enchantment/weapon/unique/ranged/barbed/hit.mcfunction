@@ -12,5 +12,5 @@ data modify storage cartographer:custom_enchantments owner set from storage gu:m
 
 function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/barbed/macro with storage cartographer:custom_enchantments
 tag @s add ca.barbed_tagged
-function carto_event:api/create_single_entity_event {event:"stuck_handler",duration:600,delay:000,parameters:{duration:77},merge_behavior:"merge"}
+function carto_event:api/create_single_entity_event {event:"stuck_handler",duration:600,delay:0,parameters:{duration:77},merge_behavior:"merge"}
 

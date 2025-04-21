@@ -6,14 +6,13 @@ data modify entity 31182015-1851-6191-8192-000000000007 item set from storage ca
 
 data merge entity 31182015-1851-6191-8192-000000000007 {Glowing:1b,glow_color_override:10741839,interpolation_duration:12,start_interpolation:0,transformation:[-0.7f, 0f, 0f,0f,0f, 0.7f, 0f,1.600f,0.000f, 0.000f, -0.700f,0.000f,0.000f, 0.000f, 0.000f,1.000f]}
 
-data modify entity 31182015-1851-6191-8192-000000000008 text set value '{"translate":"cartographer.repair_station.display.use","fallback":"[%s] to repair the item.\\n[%s] to return the item.","color":"white","italic":false,"with":[{"keybind":"key.attack","color":"aqua"},{"keybind":"key.use","color":"aqua"}]}'
+data modify entity 31182015-1851-6191-8192-000000000008 text set value {"translate":"cartographer.repair_station.display.use","fallback":"[%s] to repair the item.\n[%s] to return the item.","color":"white","italic":false,"with":[{"keybind":"key.attack","color":"aqua"},{"keybind":"key.use","color":"aqua"}]}
 
-execute as 31182015-1851-6191-8192-000000000007 at @s if data storage cartographer_repair_stations:item_input data.components.minecraft:custom_data.custom_repair.material run function cartographer_repair_stations:station/identify_custom_material
-execute as 31182015-1851-6191-8192-000000000007 at @s unless data storage cartographer_repair_stations:item_input data.components.minecraft:custom_data.custom_repair.material run function cartographer_repair_stations:station/identify_material
+execute as 31182015-1851-6191-8192-000000000007 at @s run function cartographer_repair_stations:station/identify_material
 
 function cartographer_repair_stations:station/create_cost_text
 
-data modify entity 31182015-1851-6191-8192-000000000009 text set value '[{"text":" ","color":"white","italic":false}]'
+data modify entity 31182015-1851-6191-8192-000000000009 text set value [{"text":" ","color":"white","italic":false}]
 data modify entity 31182015-1851-6191-8192-000000000009 text set from storage cartographer_repair_stations:full_string data
 
 scoreboard players set $display_warning ca.repair_station_state 1

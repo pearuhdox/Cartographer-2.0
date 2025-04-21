@@ -19,4 +19,4 @@ scoreboard players operation $do_status ca.apply_status_check += $ranged_hit_che
 execute unless score $ranged_hit_check ca.apply_status_check matches 1.. run scoreboard players set $ranged_hit_self ca.apply_status_check 0
 execute unless score $ranged_hit_check ca.apply_status_check matches 1.. run scoreboard players set $ranged_hit_target ca.apply_status_check 0
 
-execute if score $do_status ca.apply_status_check matches 1.. run function bb:lib/pldata/read
+execute if score $do_status ca.apply_status_check matches 1.. run function cartographer_core:pldata/read

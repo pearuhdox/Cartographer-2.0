@@ -1,1 +1,1 @@
-$function carto_event:api/create_single_entity_event {event:"custom_statuses/defiance",duration:$(duration),delay:000,parameters:{health_floor:$(health_floor),immunity_time:60,bailout:0,tick_command:""},merge_behavior:"custom"}
+$function carto_event:api/create_single_entity_event {event:"custom_statuses/defiance",duration:$(duration),delay:0,parameters:{health_floor:$(health_floor),immunity_time:60,bailout:0,tick_command:""},merge_behavior:"custom"}

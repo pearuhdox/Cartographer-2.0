@@ -32,4 +32,4 @@ execute if score $success ca.rand matches 1.. on attacker run function cartograp
 execute if score $success ca.rand matches 1.. on attacker run function cartographer_custom_enchantments:enchantment/passive/orbit/create_orbital
 
 execute on attacker run scoreboard players add @s ca.orbit_tick_cap 1
-execute on attacker run function carto_event:api/create_single_entity_event {event:"custom_ench/orbit/cap",duration:1,delay:000,parameters:{},merge_behavior:"none"}
+execute on attacker run function carto_event:api/create_single_entity_event {event:"custom_ench/orbit/cap",duration:1,delay:0,parameters:{},merge_behavior:"none"}

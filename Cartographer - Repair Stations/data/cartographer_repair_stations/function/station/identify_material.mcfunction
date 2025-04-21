@@ -1,124 +1,85 @@
-scoreboard players set $wooden ca.repair_station_state 0
-scoreboard players set $stone ca.repair_station_state 0
-scoreboard players set $golden ca.repair_station_state 0
-scoreboard players set $iron ca.repair_station_state 0
-scoreboard players set $diamond ca.repair_station_state 0
-scoreboard players set $netherite ca.repair_station_state 0
-scoreboard players set $leather ca.repair_station_state 0
-scoreboard players set $chain ca.repair_station_state 0
-scoreboard players set $scute ca.repair_station_state 0
-scoreboard players set $a_scute ca.repair_station_state 0
-scoreboard players set $membrane ca.repair_station_state 0
-scoreboard players set $string ca.repair_station_state 0
-scoreboard players set $quartz ca.repair_station_state 0
-scoreboard players set $redstone ca.repair_station_state 0
-scoreboard players set $amethyst ca.repair_station_state 0
-scoreboard players set $copper ca.repair_station_state 0
-scoreboard players set $emerald ca.repair_station_state 0
-scoreboard players set $carrot ca.repair_station_state 0
-scoreboard players set $warped ca.repair_station_state 0
-scoreboard players set $prismarine ca.repair_station_state 0
-scoreboard players set $breeze_rods ca.repair_station_state 0
+scoreboard players set $amount ca.repair_station_state 0
 
-scoreboard players set $ink ca.repair_station_state 0
-scoreboard players set $ender ca.repair_station_state 0
-scoreboard players set $gunpowder ca.repair_station_state 0
-scoreboard players set $glowstone ca.repair_station_state 0
-scoreboard players set $blaze_powder ca.repair_station_state 0
-scoreboard players set $blaze_rod ca.repair_station_state 0
+data remove entity 31192011-4452-2112-0000-000000000000 equipment.mainhand
+data modify entity 31192011-4452-2112-0000-000000000000 equipment.mainhand set from entity @s item
 
-scoreboard players set $slime ca.repair_station_state 0
-scoreboard players set $magma ca.repair_station_state 0
-scoreboard players set $star ca.repair_station_state 0
-scoreboard players set $echo ca.repair_station_state 0
-scoreboard players set $shulker ca.repair_station_state 0
+data modify storage cartographer_repair_stations:data material set value ""
+data modify storage cartographer_repair_stations:data visual set value ""
 
 
-execute if entity @s[nbt={item:{id:"minecraft:wooden_sword"}}] run scoreboard players set $wooden ca.repair_station_state 2
-execute if entity @s[nbt={item:{id:"minecraft:wooden_axe"}}] run scoreboard players set $wooden ca.repair_station_state 2
-execute if entity @s[nbt={item:{id:"minecraft:wooden_pickaxe"}}] run scoreboard players set $wooden ca.repair_station_state 2
-execute if entity @s[nbt={item:{id:"minecraft:wooden_shovel"}}] run scoreboard players set $wooden ca.repair_station_state 2
-execute if entity @s[nbt={item:{id:"minecraft:wooden_hoe"}}] run scoreboard players set $wooden ca.repair_station_state 2
+#Default
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #cartographer_repair_stations:materials/wooden run data modify storage cartographer_repair_stations:data material set value "#minecraft:planks"
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #cartographer_repair_stations:materials/stone run data modify storage cartographer_repair_stations:data material set value "#minecraft:stone_tool_materials"
 
-execute if entity @s[nbt={item:{id:"minecraft:stone_sword"}}] run scoreboard players set $stone ca.repair_station_state 2
-execute if entity @s[nbt={item:{id:"minecraft:stone_axe"}}] run scoreboard players set $stone ca.repair_station_state 2
-execute if entity @s[nbt={item:{id:"minecraft:stone_pickaxe"}}] run scoreboard players set $stone ca.repair_station_state 2
-execute if entity @s[nbt={item:{id:"minecraft:stone_shovel"}}] run scoreboard players set $stone ca.repair_station_state 2
-execute if entity @s[nbt={item:{id:"minecraft:stone_hoe"}}] run scoreboard players set $stone ca.repair_station_state 2
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #cartographer_repair_stations:materials/golden run data modify storage cartographer_repair_stations:data material set value "minecraft:gold_ingot"
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #cartographer_repair_stations:materials/iron run data modify storage cartographer_repair_stations:data material set value "minecraft:iron_ingot"
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #cartographer_repair_stations:materials/diamond run data modify storage cartographer_repair_stations:data material set value "minecraft:diamond"
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #cartographer_repair_stations:materials/netherite run data modify storage cartographer_repair_stations:data material set value "minecraft:netherite_ingot"
 
-execute if entity @s[nbt={item:{id:"minecraft:golden_sword"}}] run scoreboard players set $golden ca.repair_station_state 2
-execute if entity @s[nbt={item:{id:"minecraft:golden_axe"}}] run scoreboard players set $golden ca.repair_station_state 2
-execute if entity @s[nbt={item:{id:"minecraft:golden_pickaxe"}}] run scoreboard players set $golden ca.repair_station_state 2
-execute if entity @s[nbt={item:{id:"minecraft:golden_shovel"}}] run scoreboard players set $golden ca.repair_station_state 2
-execute if entity @s[nbt={item:{id:"minecraft:golden_hoe"}}] run scoreboard players set $golden ca.repair_station_state 2
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #cartographer_repair_stations:materials/leather run data modify storage cartographer_repair_stations:data material set value "minecraft:leather"
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #cartographer_repair_stations:materials/chainmail run data modify storage cartographer_repair_stations:data material set value "minecraft:chain"
 
-execute if entity @s[nbt={item:{id:"minecraft:iron_sword"}}] run scoreboard players set $iron ca.repair_station_state 2
-execute if entity @s[nbt={item:{id:"minecraft:iron_axe"}}] run scoreboard players set $iron ca.repair_station_state 2
-execute if entity @s[nbt={item:{id:"minecraft:iron_pickaxe"}}] run scoreboard players set $iron ca.repair_station_state 2
-execute if entity @s[nbt={item:{id:"minecraft:iron_shovel"}}] run scoreboard players set $iron ca.repair_station_state 2
-execute if entity @s[nbt={item:{id:"minecraft:iron_hoe"}}] run scoreboard players set $iron ca.repair_station_state 2
-execute if entity @s[nbt={item:{id:"minecraft:shears"}}] run scoreboard players set $iron ca.repair_station_state 1
-execute if entity @s[nbt={item:{id:"minecraft:flint_and_steel"}}] run scoreboard players set $iron ca.repair_station_state 1
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand turtle_helmet run data modify storage cartographer_repair_stations:data material set value "minecraft:turtle_scute"
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand wolf_armor run data modify storage cartographer_repair_stations:data material set value "minecraft:armadillo_scute"
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand elytra run data modify storage cartographer_repair_stations:data material set value "minecraft:phantom_membrane"
 
-execute if entity @s[nbt={item:{id:"minecraft:diamond_sword"}}] run scoreboard players set $diamond ca.repair_station_state 2
-execute if entity @s[nbt={item:{id:"minecraft:diamond_axe"}}] run scoreboard players set $diamond ca.repair_station_state 2
-execute if entity @s[nbt={item:{id:"minecraft:diamond_pickaxe"}}] run scoreboard players set $diamond ca.repair_station_state 2
-execute if entity @s[nbt={item:{id:"minecraft:diamond_shovel"}}] run scoreboard players set $diamond ca.repair_station_state 2
-execute if entity @s[nbt={item:{id:"minecraft:diamond_hoe"}}] run scoreboard players set $diamond ca.repair_station_state 2
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand bow run data modify storage cartographer_repair_stations:data material set value "minecraft:string"
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand crossbow run data modify storage cartographer_repair_stations:data material set value "minecraft:string"
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand brush run data modify storage cartographer_repair_stations:data material set value "minecraft:string"
 
-execute if entity @s[nbt={item:{id:"minecraft:netherite_sword"}}] run scoreboard players set $netherite ca.repair_station_state 1
-execute if entity @s[nbt={item:{id:"minecraft:netherite_axe"}}] run scoreboard players set $netherite ca.repair_station_state 1
-execute if entity @s[nbt={item:{id:"minecraft:netherite_pickaxe"}}] run scoreboard players set $netherite ca.repair_station_state 1
-execute if entity @s[nbt={item:{id:"minecraft:netherite_shovel"}}] run scoreboard players set $netherite ca.repair_station_state 1
-execute if entity @s[nbt={item:{id:"minecraft:netherite_hoe"}}] run scoreboard players set $netherite ca.repair_station_state 1
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand trident run data modify storage cartographer_repair_stations:data material set value "minecraft:prismarine_shard"
+
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand carrot_on_a_stick run data modify storage cartographer_repair_stations:data material set value "minecraft:carrot"
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand warped_fungus_on_a_stick run data modify storage cartographer_repair_stations:data material set value "minecraft:warped_fungus"
+
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand mace run data modify storage cartographer_repair_stations:data material set value "minecraft:breeze_rod"
+
+#Visual for Wood and Stone
+execute unless data entity 31192011-4452-2112-0000-000000000000 equipment.mainhand.components."minecraft:custom_data".custom_repairable if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #cartographer_repair_stations:materials/wooden run data modify storage cartographer_repair_stations:data visual set value "minecraft:oak_planks"
+execute unless data entity 31192011-4452-2112-0000-000000000000 equipment.mainhand.components."minecraft:custom_data".custom_repairable if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #cartographer_repair_stations:materials/stone run data modify storage cartographer_repair_stations:data visual set value "minecraft:cobblestone"
+
+execute unless data entity 31192011-4452-2112-0000-000000000000 equipment.mainhand.components."minecraft:custom_data".custom_repairable.item unless data entity 31192011-4452-2112-0000-000000000000 equipment.mainhand.components."minecraft:custom_data".custom_repairable.tag run data modify storage cartographer_repair_stations:data visual set from storage cartographer_repair_stations:data material
+
+#Custom
+execute if data entity 31192011-4452-2112-0000-000000000000 equipment.mainhand.components."minecraft:custom_data".custom_repairable.item run data modify storage cartographer_repair_stations:data material set from entity 31192011-4452-2112-0000-000000000000 equipment.mainhand.components."minecraft:custom_data".custom_repairable.item
+execute if data entity 31192011-4452-2112-0000-000000000000 equipment.mainhand.components."minecraft:custom_data".custom_repairable.item run data modify storage cartographer_repair_stations:data visual set from storage cartographer_repair_stations:data material
+
+execute if data entity 31192011-4452-2112-0000-000000000000 equipment.mainhand.components."minecraft:custom_data".custom_repairable.tag run data modify storage cartographer_repair_stations:data material set from entity 31192011-4452-2112-0000-000000000000 equipment.mainhand.components."minecraft:custom_data".custom_repairable.tag
+execute if data entity 31192011-4452-2112-0000-000000000000 equipment.mainhand.components."minecraft:custom_data".custom_repairable.visual run data modify storage cartographer_repair_stations:data visual set from entity 31192011-4452-2112-0000-000000000000 equipment.mainhand.components."minecraft:custom_data".custom_repairable.visual
 
 
-execute if entity @s[nbt={item:{id:"minecraft:leather_helmet"}}] run scoreboard players set $leather ca.repair_station_state 4
-execute if entity @s[nbt={item:{id:"minecraft:leather_chestplate"}}] run scoreboard players set $leather ca.repair_station_state 4
-execute if entity @s[nbt={item:{id:"minecraft:leather_leggings"}}] run scoreboard players set $leather ca.repair_station_state 4
-execute if entity @s[nbt={item:{id:"minecraft:leather_boots"}}] run scoreboard players set $leather ca.repair_station_state 4
 
-execute if entity @s[nbt={item:{id:"minecraft:golden_helmet"}}] run scoreboard players set $golden ca.repair_station_state 4
-execute if entity @s[nbt={item:{id:"minecraft:golden_chestplate"}}] run scoreboard players set $golden ca.repair_station_state 4
-execute if entity @s[nbt={item:{id:"minecraft:golden_leggings"}}] run scoreboard players set $golden ca.repair_station_state 4
-execute if entity @s[nbt={item:{id:"minecraft:golden_boots"}}] run scoreboard players set $golden ca.repair_station_state 4
+#Amount
+scoreboard players set $amount ca.repair_station_state 2
 
-execute if entity @s[nbt={item:{id:"minecraft:chainmail_helmet"}}] run scoreboard players set $chain ca.repair_station_state 4
-execute if entity @s[nbt={item:{id:"minecraft:chainmail_chestplate"}}] run scoreboard players set $chain ca.repair_station_state 4
-execute if entity @s[nbt={item:{id:"minecraft:chainmail_leggings"}}] run scoreboard players set $chain ca.repair_station_state 4
-execute if entity @s[nbt={item:{id:"minecraft:chainmail_boots"}}] run scoreboard players set $chain ca.repair_station_state 4
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #minecraft:pickaxes run scoreboard players set $amount ca.repair_station_state 2
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #minecraft:axes run scoreboard players set $amount ca.repair_station_state 2
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #minecraft:shovels run scoreboard players set $amount ca.repair_station_state 1
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #minecraft:hoes run scoreboard players set $amount ca.repair_station_state 1
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #minecraft:swords run scoreboard players set $amount ca.repair_station_state 1
 
-execute if entity @s[nbt={item:{id:"minecraft:iron_helmet"}}] run scoreboard players set $iron ca.repair_station_state 4
-execute if entity @s[nbt={item:{id:"minecraft:iron_chestplate"}}] run scoreboard players set $iron ca.repair_station_state 4
-execute if entity @s[nbt={item:{id:"minecraft:iron_leggings"}}] run scoreboard players set $iron ca.repair_station_state 4
-execute if entity @s[nbt={item:{id:"minecraft:iron_boots"}}] run scoreboard players set $iron ca.repair_station_state 4
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand bow run scoreboard players set $amount ca.repair_station_state 3
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand crossbow run scoreboard players set $amount ca.repair_station_state 3
 
-execute if entity @s[nbt={item:{id:"minecraft:diamond_helmet"}}] run scoreboard players set $diamond ca.repair_station_state 4
-execute if entity @s[nbt={item:{id:"minecraft:diamond_chestplate"}}] run scoreboard players set $diamond ca.repair_station_state 4
-execute if entity @s[nbt={item:{id:"minecraft:diamond_leggings"}}] run scoreboard players set $diamond ca.repair_station_state 4
-execute if entity @s[nbt={item:{id:"minecraft:diamond_boots"}}] run scoreboard players set $diamond ca.repair_station_state 4
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand trident run scoreboard players set $amount ca.repair_station_state 4
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand mace run scoreboard players set $amount ca.repair_station_state 4
 
-execute if entity @s[nbt={item:{id:"minecraft:netherite_helmet"}}] run scoreboard players set $netherite ca.repair_station_state 2
-execute if entity @s[nbt={item:{id:"minecraft:netherite_chestplate"}}] run scoreboard players set $netherite ca.repair_station_state 2
-execute if entity @s[nbt={item:{id:"minecraft:netherite_leggings"}}] run scoreboard players set $netherite ca.repair_station_state 2
-execute if entity @s[nbt={item:{id:"minecraft:netherite_boots"}}] run scoreboard players set $netherite ca.repair_station_state 2
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #minecraft:foot_armor run scoreboard players set $amount ca.repair_station_state 2
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #minecraft:leg_armor run scoreboard players set $amount ca.repair_station_state 4
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #minecraft:chest_armor run scoreboard players set $amount ca.repair_station_state 4
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #minecraft:head_armor run scoreboard players set $amount ca.repair_station_state 3
 
-execute if entity @s[nbt={item:{id:"minecraft:turtle_helmet"}}] run scoreboard players set $scute ca.repair_station_state 4
-execute if entity @s[nbt={item:{id:"minecraft:wolf_armor"}}] run scoreboard players set $a_scute ca.repair_station_state 4
 
-execute if entity @s[nbt={item:{id:"minecraft:elytra"}}] run scoreboard players set $membrane ca.repair_station_state 4
+execute if data entity 31192011-4452-2112-0000-000000000000 equipment.mainhand.components."minecraft:custom_data".custom_repairable store result score $amount ca.repair_station_state run data get entity 31192011-4452-2112-0000-000000000000 equipment.mainhand.components."minecraft:custom_data".custom_repairable.count
 
-execute if entity @s[nbt={item:{id:"minecraft:bow"}}] run scoreboard players set $string ca.repair_station_state 4
-execute if entity @s[nbt={item:{id:"minecraft:crossbow"}}] run scoreboard players set $string ca.repair_station_state 4
-execute if entity @s[nbt={item:{id:"minecraft:brush"}}] run scoreboard players set $string ca.repair_station_state 4
 
-execute if score $tridents_use_prismarine ca.repair_station_state matches 1.. if entity @s[nbt={item:{id:"minecraft:trident"}}] run scoreboard players set $prismarine ca.repair_station_state 4
-execute unless score $tridents_use_prismarine ca.repair_station_state matches 1.. if entity @s[nbt={item:{id:"minecraft:trident"}}] run scoreboard players set $quartz ca.repair_station_state 4
+scoreboard players operation $mat_cost ca.repair_station_state = $amount ca.repair_station_state
 
-execute if entity @s[nbt={item:{id:"minecraft:shield"}}] run scoreboard players set $iron ca.repair_station_state 4
 
-execute if entity @s[nbt={item:{id:"minecraft:carrot_on_a_stick"}}] run scoreboard players set $carrot ca.repair_station_state 4
-execute if entity @s[nbt={item:{id:"minecraft:warped_fungus_on_a_stick"}}] run scoreboard players set $warped ca.repair_station_state 4
+scoreboard players set $block ca.repair_station_state 0
+setblock 4206900 31 4206900 air replace
+data modify storage cartographer_repair_stations:data macro.name set string storage cartographer_repair_stations:data visual 10
 
-execute if score $maces_use_breeze_rods ca.repair_station_state matches 1.. if entity @s[nbt={item:{id:"minecraft:mace"}}] run scoreboard players set $breeze_rod ca.repair_station_state 4
-execute unless score $maces_use_breeze_rods ca.repair_station_state matches 1.. if entity @s[nbt={item:{id:"minecraft:mace"}}] run scoreboard players set $quartz ca.repair_station_state 4
+function cartographer_repair_stations:station/identify_material_macro_test with storage cartographer_repair_stations:data macro
+
+function cartographer_repair_stations:station/identify_material_macro with storage cartographer_repair_stations:data macro

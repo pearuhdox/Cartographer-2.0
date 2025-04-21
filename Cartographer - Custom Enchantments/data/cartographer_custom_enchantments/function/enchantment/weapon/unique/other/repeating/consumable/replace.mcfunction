@@ -6,7 +6,7 @@ $scoreboard players set $repeating_$(slot) ca.ench_var 1
 #Grab Item Data
 data modify storage cartographer_custom_enchantments:consumable data set value {}
 execute if score $repeating_mainhand ca.ench_var matches 1 run data modify storage cartographer_custom_enchantments:consumable data.item set from entity @s SelectedItem
-execute if score $repeating_offhand ca.ench_var matches 1 run data modify storage cartographer_custom_enchantments:consumable data.item set from entity @s Inventory[{Slot:-106b}]
+execute if score $repeating_offhand ca.ench_var matches 1 run data modify storage cartographer_custom_enchantments:consumable data.item set from entity @s equipment.offhand
 
 #Clear Slot Data
 data remove storage cartographer_custom_enchantments:consumable data.item.Slot
@@ -15,7 +15,7 @@ data modify storage cartographer_custom_enchantments:consumable data.item.count 
 data modify storage cartographer_custom_enchantments:consumable data.item.components.minecraft:max_stack_size set value 1
 
 #Set Use Max Parameter
-execute store result score $use_max ca.ench_var run data get storage cartographer_custom_enchantments:consumable data.item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/unique/other/repeating
+execute store result score $use_max ca.ench_var run data get storage cartographer_custom_enchantments:consumable data.item.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/other/repeating
 scoreboard players add $use_max ca.ench_var 1
 
 #Set Use Count Parameter
@@ -46,8 +46,8 @@ data modify storage cartographer_custom_enchantments:consumable data.item.compon
 
 
 #Handle Last Use For Auto Charge and Scavenger (Inert Items)
-execute if score $use_count ca.ench_var matches 0 if data storage cartographer_custom_enchantments:consumable data.item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/unique/other/auto_charge run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/consumable/inert_auto_charge
-execute if score $use_count ca.ench_var matches 0 if data storage cartographer_custom_enchantments:consumable data.item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/unique/other/scavenger run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/consumable/inert_scavenger
+execute if score $use_count ca.ench_var matches 0 if data storage cartographer_custom_enchantments:consumable data.item.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/other/auto_charge run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/consumable/inert_auto_charge
+execute if score $use_count ca.ench_var matches 0 if data storage cartographer_custom_enchantments:consumable data.item.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/other/scavenger run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/consumable/inert_scavenger
 
 
 data modify block 4206899 0 4206900 Items set value []

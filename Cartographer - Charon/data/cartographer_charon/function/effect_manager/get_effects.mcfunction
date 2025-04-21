@@ -23,9 +23,9 @@ data modify storage cartographer_charon:effect_manager SendEffects set value []
 #Recursively Change Effects
 function cartographer_charon:effect_manager/rec
 
-function bb:lib/pldata/read
+function cartographer_core:pldata/read
 
-data modify storage bbl:pldata sudo_root.working_data.DeathRestoreEffects set value []
-data modify storage bbl:pldata sudo_root.working_data.DeathRestoreEffects set from storage cartographer_charon:effect_manager SendEffects
+data modify storage cartographer:player_data main.working_data.DeathRestoreEffects set value []
+data modify storage cartographer:player_data main.working_data.DeathRestoreEffects set from storage cartographer_charon:effect_manager SendEffects
 
-function bb:lib/pldata/write
+function cartographer_core:pldata/write

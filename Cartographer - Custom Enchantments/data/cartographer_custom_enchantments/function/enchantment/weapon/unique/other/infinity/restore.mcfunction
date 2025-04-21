@@ -1,21 +1,21 @@
 tag @s add ca.infinity_restore_inv
 
-function bb:lib/pldata/read
+function cartographer_core:pldata/read
 
 
 # Start Mainhand
 data modify storage i:internal working_it set value []
-data modify storage i:internal temp set from storage bbl:pldata sudo_root.working_data.infinity
+data modify storage i:internal temp set from storage cartographer:player_data main.working_data.infinity
 function cartographer_custom_enchantments:enchantment/weapon/unique/other/infinity/filter
 
 # Do Offhand
 data modify storage i:internal working_it2 set value []
-data modify storage i:internal working_it2 append from storage bbl:pldata sudo_root.working_data.infinity[{Slot:-106b}]
+data modify storage i:internal working_it2 append from storage cartographer:player_data main.working_data.infinity_equips.offhand
 data modify storage i:internal working_it2[0].Slot set value 0b
 
 # Do Backpack
 execute if entity @s[tag=ca.infinity_entire_inv] run data modify storage i:internal working_it3 set value []
-execute if entity @s[tag=ca.infinity_entire_inv] run data modify storage i:internal temp set from storage bbl:pldata sudo_root.working_data.infinity
+execute if entity @s[tag=ca.infinity_entire_inv] run data modify storage i:internal temp set from storage cartographer:player_data main.working_data.infinity
 execute if entity @s[tag=ca.infinity_entire_inv] run function cartographer_custom_enchantments:enchantment/weapon/unique/other/infinity/filter_inv
 
 

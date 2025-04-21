@@ -20,4 +20,4 @@ execute if entity @s[type=player] run playsound minecraft:item.totem.use player 
 
 scoreboard players set @s ca.defiance_bailout 0
 
-$function carto_event:api/create_single_entity_event {event:"custom_statuses/defiance/immunity",duration:$(immunity_time),delay:001,parameters:{bailout:$(bailout)},merge_behavior:"merge"}
+$function carto_event:api/create_single_entity_event {event:"custom_statuses/defiance/immunity",duration:$(immunity_time),delay:1,parameters:{bailout:$(bailout)},merge_behavior:"merge"}

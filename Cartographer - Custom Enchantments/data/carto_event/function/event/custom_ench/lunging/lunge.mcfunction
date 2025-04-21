@@ -31,7 +31,7 @@ execute store result storage cartographer:custom_enchantments rotation float 1 r
 execute if entity @s[type=!player] run function carto_event:event/custom_ench/lunging/do_push_mob with storage cartographer:custom_enchantments
 execute if entity @s[type=player] run function carto_event:event/custom_ench/lunging/lunge_macro with storage cartographer:custom_enchantments
 
-function carto_event:api/create_single_entity_event {event:"custom_ench/lunging/moving",duration:100,delay:000,parameters:{},merge_behavior:"merge"}
+function carto_event:api/create_single_entity_event {event:"custom_ench/lunging/moving",duration:100,delay:0,parameters:{},merge_behavior:"merge"}
 tag @s add ca.is_lunging
 
 execute if entity @s[type=player] if score @s ca.ench_lunging_lvl matches 1.. if predicate cartographer_custom_enchantments:has/lunging/offhand_ready unless predicate cartographer_custom_enchantments:has/lunging/mainhand_ready run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/lunging/unapply_offhand

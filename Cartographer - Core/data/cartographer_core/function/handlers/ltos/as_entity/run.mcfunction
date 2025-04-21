@@ -4,8 +4,8 @@ $execute as $(killed) at @s if entity @s[type=creeper,tag=ca.needs_checker] on p
 $execute if score $custom_statuses ca.installed matches 1.. as $(killed) at @s if entity @s[tag=ca.has_custom_status_infected] run function carto_event:event/custom_statuses/infected/death
 $execute if score $custom_statuses ca.installed matches 1.. as $(killed) at @s on passengers if entity @s[type=block_display,tag=ca.status_frozen_display] run function carto_event:event/custom_statuses/frozen/release
 
-$execute if score $custom_statuses ca.installed matches 1.. as $(killer) at @s if entity @s[tag=ca.apply_status_kill_self] run function cartographer_custom_statuses:apply_status/apply/start_loop {location:"bbl:pldata",path:"sudo_root.working_data.cartographer.apply_status_data.actions",action:"kill",type:"self"}
-$execute if score $custom_statuses ca.installed matches 1.. as $(killer) at $(killed) if entity @s[tag=ca.apply_status_kill_target] run function cartographer_custom_statuses:apply_status/apply/start_loop {location:"bbl:pldata",path:"sudo_root.working_data.cartographer.apply_status_data.actions",action:"kill",type:"target"}
+$execute if score $custom_statuses ca.installed matches 1.. as $(killer) at @s if entity @s[tag=ca.apply_status_kill_self] run function cartographer_custom_statuses:apply_status/apply/start_loop {location:"cartographer:player_data",path:"main.working_data.cartographer.apply_status_data.actions",action:"kill",type:"self"}
+$execute if score $custom_statuses ca.installed matches 1.. as $(killer) at $(killed) if entity @s[tag=ca.apply_status_kill_target] run function cartographer_custom_statuses:apply_status/apply/start_loop {location:"cartographer:player_data",path:"main.working_data.cartographer.apply_status_data.actions",action:"kill",type:"target"}
 
 
 #Run Custom Attributes On Kill
@@ -52,7 +52,7 @@ $execute if score $custom_enchantments ca.installed matches 1.. as $(killer) if 
 #Weapon Enchantment Kill Effects
 $execute if score $custom_enchantments ca.installed matches 1.. as $(killer) at @s if score @s ca.ench_focus_lvl matches 1.. run scoreboard players add @s ca.focus_stacks 1
 $execute if score $custom_enchantments ca.installed matches 1.. as $(killer) at @s if score @s ca.ench_focus_lvl matches 1.. if score @s ca.focus_stacks matches 5.. run scoreboard players set @s ca.focus_stacks 4
-$execute if score $custom_enchantments ca.installed matches 1.. as $(killer) at @s if score @s ca.ench_focus_lvl matches 1.. run function carto_event:api/create_single_entity_event {event:"custom_ench/focus/active",duration:120,delay:000,parameters:{},merge_behavior:"merge"}
+$execute if score $custom_enchantments ca.installed matches 1.. as $(killer) at @s if score @s ca.ench_focus_lvl matches 1.. run function carto_event:api/create_single_entity_event {event:"custom_ench/focus/active",duration:120,delay:0,parameters:{},merge_behavior:"merge"}
 
 $execute if score $custom_enchantments ca.installed matches 1.. as $(killer) at @s if score @s ca.concentration_time matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/damage/general/concentration/vfx
 

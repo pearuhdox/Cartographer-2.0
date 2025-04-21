@@ -44,4 +44,4 @@ function cartographer_custom_enchantments:enchantment/weapon/unique/melee/slammi
 tag @s remove ca.slamming_owner
 
 scoreboard players set @s ca.special_attack_cooldown 3
-function carto_event:api/create_single_entity_event {event:"custom_ench/special_attack_cooldown",duration:3,delay:000,parameters:{},merge_behavior:"merge"}
+function carto_event:api/create_single_entity_event {event:"custom_ench/special_attack_cooldown",duration:3,delay:0,parameters:{},merge_behavior:"merge"}

@@ -90,6 +90,10 @@
           }
         ]
       }
-    ]
+    ],
+    "minecraft:crossbow_charge_time": {
+      "type": "minecraft:set",
+      "value": 1000
+    }
   }
 }

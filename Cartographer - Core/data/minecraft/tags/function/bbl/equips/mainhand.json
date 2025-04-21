@@ -1,6 +1,5 @@
 {
 	"values": [
-		{"id": "cartographer_custom_attributes:calculator/mainhand","required": false},
 		{"id": "cartographer_custom_statuses:calculator/mainhand","required": false}
 	]
 }

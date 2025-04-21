@@ -32,7 +32,7 @@ execute if entity @s[type=fireball] run scoreboard players set $is_fireball ca.a
 execute if entity @s[type=small_fireball] run scoreboard players set $is_small_fireball ca.attr_apply_var 1
 
 scoreboard players set $power_level ca.attr_apply_var 0
-execute store result score $power_level ca.attr_apply_var run data get entity @s weapon.components.minecraft:enchantments.levels.minecraft:power
+execute store result score $power_level ca.attr_apply_var run data get entity @s weapon.components.minecraft:enchantments.minecraft:power
 
 execute if score @s ca.attr_ranged_damage_total matches -1999999.. run scoreboard players operation $ranged_damage ca.attr_apply_var = @s ca.attr_ranged_damage_total
 

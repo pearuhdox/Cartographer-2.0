@@ -1,7 +1,7 @@
 scoreboard players set $type_is_self ca.apply_status_conditions 0
 scoreboard players set $type_is_target ca.apply_status_conditions 0
 
-data modify storage cartographer:custom_statuses apply[0].owner set from storage bbl:pldata sudo_root.working_data.bbl.name
+data modify storage cartographer:custom_statuses apply[0].owner set from storage cartographer:player_data main.working_data.uuid
 data modify storage cartographer:custom_statuses apply[0].status_target set from storage cartographer:custom_statuses status_target
 $data modify storage cartographer:custom_statuses apply[0].action set value "$(action)"
 $data modify storage cartographer:custom_statuses apply[0].type set value "$(type)"

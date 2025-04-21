@@ -7,4 +7,4 @@ $execute as $(target) store result score @s ca.raycast run data get storage cart
 $execute anchored eyes positioned ^ ^ ^ facing entity $(target) feet positioned ^ ^ ^0.1 as $(target) run function carto_event:event/custom_ench/soulfire/flames/raycast_vfx
 
 tag @s add ca.soulfire_cdl
-function carto_event:api/create_single_entity_event {event:"custom_ench/soulfire/cooldown",duration:9,delay:000,parameters:{},merge_behavior:"none"}
+function carto_event:api/create_single_entity_event {event:"custom_ench/soulfire/cooldown",duration:9,delay:0,parameters:{},merge_behavior:"none"}

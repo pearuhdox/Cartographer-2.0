@@ -27,7 +27,7 @@ execute unless entity @s[type=player] at @s run function cartographer_custom_enc
 
 
 execute if entity @s[type=player] run scoreboard players set @s ca.fleetfoot_cooldown 40
-execute if entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"custom_ench/fleetfoot",duration:40,delay:000,parameters:{},merge_behavior:"none"}
+execute if entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"custom_ench/fleetfoot",duration:40,delay:0,parameters:{},merge_behavior:"none"}
 
 execute unless entity @s[type=player] run scoreboard players set @s ca.fleetfoot_cooldown 100
-execute unless entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"custom_ench/fleetfoot",duration:100,delay:000,parameters:{},merge_behavior:"none"}
+execute unless entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"custom_ench/fleetfoot",duration:100,delay:0,parameters:{},merge_behavior:"none"}

@@ -4,6 +4,7 @@ data remove storage bbl:equips sudo_root
 function bb:lib/pldata/read
 
 data modify storage bbl:equips sudo_root.temp set from storage bbl:pldata sudo_root.working_data.bbl.inventory.current_tick
+data modify storage bbl:equips sudo_root.temp_equip set from storage bbl:pldata sudo_root.working_data.bbl.equipment.current_tick
 execute store result score $selected_slot bbl.storage run data get storage bbl:pldata sudo_root.working_data.bbl.inventory.selected_slot
 
 data remove storage bbl:equips sudo_root.player_inventory.mainhand
@@ -17,10 +18,10 @@ execute if score $selected_slot bbl.storage matches 6 run data modify storage bb
 execute if score $selected_slot bbl.storage matches 7 run data modify storage bbl:equips sudo_root.player_inventory.mainhand set from storage bbl:equips sudo_root.temp[{Slot:7b}]
 execute if score $selected_slot bbl.storage matches 8 run data modify storage bbl:equips sudo_root.player_inventory.mainhand set from storage bbl:equips sudo_root.temp[{Slot:8b}]
 
-data modify storage bbl:equips sudo_root.player_inventory.helmet set from storage bbl:equips sudo_root.temp[{Slot:103b}]
-data modify storage bbl:equips sudo_root.player_inventory.chestplate set from storage bbl:equips sudo_root.temp[{Slot:102b}]
-data modify storage bbl:equips sudo_root.player_inventory.leggings set from storage bbl:equips sudo_root.temp[{Slot:101b}]
-data modify storage bbl:equips sudo_root.player_inventory.boots set from storage bbl:equips sudo_root.temp[{Slot:100b}]
-data modify storage bbl:equips sudo_root.player_inventory.offhand set from storage bbl:equips sudo_root.temp[{Slot:-106b}]
+data modify storage bbl:equips sudo_root.player_inventory.helmet set from storage bbl:equips sudo_root.temp_equip.head
+data modify storage bbl:equips sudo_root.player_inventory.chestplate set from storage bbl:equips sudo_root.temp_equip.chest
+data modify storage bbl:equips sudo_root.player_inventory.leggings set from storage bbl:equips sudo_root.temp_equip.legs
+data modify storage bbl:equips sudo_root.player_inventory.boots set from storage bbl:equips sudo_root.temp_equip.feet
+data modify storage bbl:equips sudo_root.player_inventory.offhand set from storage bbl:equips sudo_root.temp_equip.offhand
 
 data remove storage bbl:equips sudo_root.temp

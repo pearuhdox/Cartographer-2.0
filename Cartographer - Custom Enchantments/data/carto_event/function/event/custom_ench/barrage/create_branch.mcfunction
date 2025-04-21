@@ -28,7 +28,7 @@ data modify entity @s weapon set from storage carto_event current[-1].parameters
 
 data modify entity @s acceleration_power set from storage carto_event current[-1].parameters.acceleration_power
 
-execute if entity @s[type=trident] run data remove entity @s item.components.minecraft:enchantments.levels.minecraft:loyalty
+execute if entity @s[type=trident] run data remove entity @s item.components.minecraft:enchantments.minecraft:loyalty
 
 data modify storage cartographer:custom_enchantments UUID set value []
 $execute as $(owner) at @s run data modify storage cartographer:custom_enchantments UUID set from entity @s UUID

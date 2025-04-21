@@ -5,4 +5,4 @@ execute if data storage carto_event current[-1].parameters.status_info.enchantme
 
 
 tag @s add ca.starfall_cdl
-function carto_event:api/create_single_entity_event {event:"custom_ench/starfall/cooldown",duration:6,delay:000,parameters:{},merge_behavior:"none"}
+function carto_event:api/create_single_entity_event {event:"custom_ench/starfall/cooldown",duration:6,delay:0,parameters:{},merge_behavior:"none"}

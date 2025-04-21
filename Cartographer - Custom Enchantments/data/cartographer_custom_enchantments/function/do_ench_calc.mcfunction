@@ -92,3 +92,6 @@ execute if entity @s[tag=ca.do_enchant_calc_thorns] run function cartographer_cu
 execute if entity @s[tag=ca.do_enchant_calc_quick_charge] run function cartographer_custom_enchantments:ench_calc/quick_charge
 execute if entity @s[tag=ca.do_enchant_calc_infinity] run function cartographer_custom_enchantments:ench_calc/infinity
 execute if entity @s[tag=ca.do_enchant_calc_multishot] run function cartographer_custom_enchantments:ench_calc/multishot
+
+execute if entity @s[tag=ca.do_enchant_calc_heaviness] run function cartographer_custom_enchantments:ench_calc/heaviness
+execute if entity @s[tag=ca.do_enchant_calc_jamming] run function cartographer_custom_enchantments:ench_calc/jamming

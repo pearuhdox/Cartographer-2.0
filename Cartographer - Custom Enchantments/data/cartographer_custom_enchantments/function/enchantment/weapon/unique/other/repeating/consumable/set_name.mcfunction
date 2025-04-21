@@ -1,4 +1,4 @@
-$data modify storage cartographer_custom_enchantments:consumable visual.name set value '{"fallback":"Repeatable Item","translate":"item.minecraft.$(macro)","color":"aqua","italic":false}'
+$data modify storage cartographer_custom_enchantments:consumable visual.name set value {"fallback":"Repeatable Item","translate":"item.minecraft.$(macro)","color":"aqua","italic":false}
 execute if data storage cartographer_custom_enchantments:consumable items[0].components.minecraft:custom_name run data modify storage cartographer_custom_enchantments:consumable visual.name set from storage cartographer_custom_enchantments:consumable items[0].components.minecraft:custom_name
 execute if data storage cartographer_custom_enchantments:consumable items[0].components.minecraft:item_name run data modify storage cartographer_custom_enchantments:consumable visual.name set from storage cartographer_custom_enchantments:consumable items[0].components.minecraft:item_name
 

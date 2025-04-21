@@ -7,7 +7,7 @@ execute if score $side_reflect ca.ench_ricochet_lvl matches 3 run particle minec
 
 tp @s ~ ~ ~
 
-execute if entity @s[type=potion] run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/ricochet/flip/potion_splash
+execute if entity @s[type=#cartographer_core:potions] run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/ricochet/flip/potion_splash
 
 tag @s remove ca.allow_flip
 
@@ -15,7 +15,7 @@ tag @s add ca.update_motion
 execute unless score @s ca.ench_ricochet_lvl matches 1.. run tag @s add ca.ricocheted
 
 
-execute if entity @s[tag=ca.corrected] run function carto_event:api/create_single_entity_event {event:"custom_ench/correction",duration:1,delay:001,parameters:{},merge_behavior:"none"}
+execute if entity @s[tag=ca.corrected] run function carto_event:api/create_single_entity_event {event:"custom_ench/correction",duration:1,delay:1,parameters:{},merge_behavior:"none"}
 
 
 #Calculate New Motion Values here for particle work

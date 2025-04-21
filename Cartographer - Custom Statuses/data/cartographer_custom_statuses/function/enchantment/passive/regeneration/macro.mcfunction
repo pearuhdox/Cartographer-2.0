@@ -1,1 +1,1 @@
-$function carto_event:api/create_single_entity_event {event:"custom_statuses/regeneration/enchantment",duration:25,delay:000,parameters:{tick_count:0,tick_rate:$(time),amount:10,tick_command:"",run_command:""},merge_behavior:"custom"}
+$function carto_event:api/create_single_entity_event {event:"custom_statuses/regeneration/enchantment",duration:25,delay:0,parameters:{tick_count:0,tick_rate:$(time),amount:10,tick_command:"",run_command:""},merge_behavior:"custom"}

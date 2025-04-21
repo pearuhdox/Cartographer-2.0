@@ -1,6 +1,6 @@
 
 data modify storage cartographer:custom_enchantments ambushing_item set value {}
-data modify storage cartographer:custom_enchantments ambushing_item set from entity @s Inventory[{Slot:-106b}]
+data modify storage cartographer:custom_enchantments ambushing_item set from entity @s equipment.offhand
 
 data remove storage cartographer:custom_enchantments ambushing_item.components.minecraft:consumable
 

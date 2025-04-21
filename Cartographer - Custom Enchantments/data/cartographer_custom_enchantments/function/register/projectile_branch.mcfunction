@@ -51,7 +51,7 @@ execute if score @s ca.ench_collapse_lvl matches 1.. run function cartographer_c
 execute if score @s ca.ench_collapse_lvl matches 1.. if entity @s[type=#bb:arrow] run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/collapse/get_mining_speed_arrow
 
 
-execute if entity @s[type=potion] run tag @s add ca.has_enchant_data
+execute if entity @s[type=#cartographer_core:potions] run tag @s add ca.has_enchant_data
 execute if entity @s[type=snowball] run tag @s add ca.has_enchant_data
 
 execute on origin run function gu:generate

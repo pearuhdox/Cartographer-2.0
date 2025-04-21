@@ -1,1 +1,1 @@
-$data modify storage cartographer_custom_enchantments:lunging visual.name set value '{"fallback":"Lunging Item","translate":"item.minecraft.$(macro)","color":"aqua","italic":false}'
+$data modify storage cartographer_custom_enchantments:lunging visual.name set value {"fallback":"Lunging Item","translate":"item.minecraft.$(macro)","color":"aqua","italic":false}

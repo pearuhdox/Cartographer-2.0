@@ -36,4 +36,4 @@ tag @s remove ca.thrusting_owner
 tag @e[distance=..16] remove ca.thrust_hit
 
 scoreboard players set @s ca.special_attack_cooldown 3
-function carto_event:api/create_single_entity_event {event:"custom_ench/special_attack_cooldown",duration:3,delay:000,parameters:{},merge_behavior:"merge"}
+function carto_event:api/create_single_entity_event {event:"custom_ench/special_attack_cooldown",duration:3,delay:0,parameters:{},merge_behavior:"merge"}

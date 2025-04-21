@@ -11,4 +11,4 @@ execute as @s at @s run function motion:motion/push
 
 execute on attacker run tag @s remove ca.mob_target
 
-function carto_event:api/create_single_entity_event {event:"custom_statuses/vanilla_attribute",duration:30,delay:001,parameters:{type:"minecraft:attack_damage",tag:"ca.pull_block_melee",id:"pull_block_melee",value:-1,operation:"add_multiplied_total",tick_command:""},merge_behavior:"none"}
+function carto_event:api/create_single_entity_event {event:"custom_statuses/vanilla_attribute",duration:30,delay:1,parameters:{type:"minecraft:attack_damage",tag:"ca.pull_block_melee",id:"pull_block_melee",value:-1,operation:"add_multiplied_total",tick_command:""},merge_behavior:"none"}

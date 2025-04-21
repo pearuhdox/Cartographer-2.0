@@ -26,6 +26,6 @@ execute if score $enchantment_rework ca.installed matches 1 run function cartogr
 execute if score $repair_stations ca.installed matches 1 run function cartographer_repair_stations:load/load_message
 
 tellraw @s {"text":"------------------------------------------","color":"#FFE0A3","bold":true}
-tellraw @s [{"text":"[⏎]","color":"#33FFF8","bold":true,"italic":false,"hoverEvent":{"action":"show_text","contents":[{"text":"Return to the reload panel.","color":"#FFE0A3","italic":true}]},"clickEvent":{"action":"run_command","value":"/function cartographer_core:load/reload_panel"}}]
+tellraw @s [{"text":"[⏎]","color":"#33FFF8","bold":true,"italic":false,"hover_event":{"action":"show_text","value":[{"text":"Return to the reload panel.","color":"#FFE0A3","italic":true}]},"click_event":{"action":"run_command","command":"/function cartographer_core:load/reload_panel"}}]
 tellraw @s {"text":"------------------------------------------","color":"#FFE0A3","bold":true}
 

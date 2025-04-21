@@ -5,7 +5,7 @@ execute store result score $time_current ca.ench_auto_charge_slot run data get s
 execute store result score $time_current_2 ca.ench_auto_charge_slot run data get storage cartographer_custom_enchantments:auto_charge items[0].components.minecraft:custom_data.auto_charge_tracker
 scoreboard players operation $time_current ca.ench_auto_charge_slot += $time_current_2 ca.ench_auto_charge_slot
 
-execute store result score $repeating ca.ench_auto_charge_slot run data get storage cartographer_custom_enchantments:auto_charge items[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/unique/other/repeating
+execute store result score $repeating ca.ench_auto_charge_slot run data get storage cartographer_custom_enchantments:auto_charge items[0].components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/other/repeating
 execute store result score $use_count ca.ench_auto_charge_slot run data get storage cartographer_custom_enchantments:auto_charge items[0].components.minecraft:custom_data.use_count
 
 execute unless score $repeating ca.ench_auto_charge_slot matches 1.. if score $slot ca.ench_auto_charge_slot matches -106..8 if data storage cartographer_custom_enchantments:auto_charge item_check{id:"minecraft:firework_star"} run function cartographer_custom_enchantments:enchantment/weapon/unique/other/auto_charge/consumable/activate/start

@@ -10,6 +10,6 @@ data modify entity @s Item.components.minecraft:custom_data set value {new_harve
 
 $data modify entity @s Item.id set value "$(visual)"
 
-$function carto_event:api/create_single_entity_event {event:"custom_statuses/harvest/treat",duration:$(time),delay:002,parameters:{heal_amount:$(heal_amount),sat_amount:$(sat_amount),abs_amount:$(abs_amount),abs_seconds:$(abs_seconds),abs_cap:$(abs_cap),treat_range:$(treat_range),treat_targets:$(treat_targets),tick_command:"$(treat_command_tick)",proc_command:"$(treat_command_proc)",origin:"$(target)"},merge_behavior:"none"}
+$function carto_event:api/create_single_entity_event {event:"custom_statuses/harvest/treat",duration:$(time),delay:2,parameters:{heal_amount:$(heal_amount),sat_amount:$(sat_amount),abs_amount:$(abs_amount),abs_seconds:$(abs_seconds),abs_cap:$(abs_cap),treat_range:$(treat_range),treat_targets:$(treat_targets),tick_command:"$(treat_command_tick)",proc_command:"$(treat_command_proc)",origin:"$(target)"},merge_behavior:"none"}
 
 tag @s add ca.harvest_treat_setup

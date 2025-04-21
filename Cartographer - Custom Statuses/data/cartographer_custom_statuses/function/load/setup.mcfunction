@@ -2,57 +2,134 @@
 
 #Enchantment Scoreboard Levels
 scoreboard objectives add ca.ench_evasion_lvl dummy
+scoreboard objectives add ca.ench_evasion_main_lvl dummy
+scoreboard objectives add ca.ench_evasion_offh_lvl dummy
+scoreboard objectives add ca.ench_evasion_head_lvl dummy
+scoreboard objectives add ca.ench_evasion_chest_lvl dummy
+scoreboard objectives add ca.ench_evasion_legs_lvl dummy
+scoreboard objectives add ca.ench_evasion_feet_lvl dummy
+scoreboard objectives add ca.ench_evasion_body_lvl dummy
+scoreboard objectives add ca.ench_evasion_saddle_lvl dummy
+
 scoreboard objectives add ca.ench_nullifying_lvl dummy
+scoreboard objectives add ca.ench_nullifying_main_lvl dummy
+scoreboard objectives add ca.ench_nullifying_offh_lvl dummy
+scoreboard objectives add ca.ench_nullifying_head_lvl dummy
+scoreboard objectives add ca.ench_nullifying_chest_lvl dummy
+scoreboard objectives add ca.ench_nullifying_legs_lvl dummy
+scoreboard objectives add ca.ench_nullifying_feet_lvl dummy
+scoreboard objectives add ca.ench_nullifying_body_lvl dummy
+scoreboard objectives add ca.ench_nullifying_saddle_lvl dummy
+
 scoreboard objectives add ca.ench_regeneration_lvl dummy
+scoreboard objectives add ca.ench_regeneration_main_lvl dummy
+scoreboard objectives add ca.ench_regeneration_offh_lvl dummy
+scoreboard objectives add ca.ench_regeneration_head_lvl dummy
+scoreboard objectives add ca.ench_regeneration_chest_lvl dummy
+scoreboard objectives add ca.ench_regeneration_legs_lvl dummy
+scoreboard objectives add ca.ench_regeneration_feet_lvl dummy
+scoreboard objectives add ca.ench_regeneration_body_lvl dummy
+scoreboard objectives add ca.ench_regeneration_saddle_lvl dummy
+
 scoreboard objectives add ca.ench_shielding_lvl dummy
-
-scoreboard objectives add ca.ench_mightiness_lvl dummy
-scoreboard objectives add ca.ench_swiftness_lvl dummy
-scoreboard objectives add ca.ench_hastiness_lvl dummy
-scoreboard objectives add ca.ench_stealthiness_lvl dummy
-
-scoreboard objectives add ca.ench_sapper_lvl dummy
-scoreboard objectives add ca.ench_lifeblood_lvl dummy
-scoreboard objectives add ca.ench_bracing_lvl dummy
+scoreboard objectives add ca.ench_shielding_main_lvl dummy
+scoreboard objectives add ca.ench_shielding_offh_lvl dummy
+scoreboard objectives add ca.ench_shielding_head_lvl dummy
+scoreboard objectives add ca.ench_shielding_chest_lvl dummy
+scoreboard objectives add ca.ench_shielding_legs_lvl dummy
+scoreboard objectives add ca.ench_shielding_feet_lvl dummy
+scoreboard objectives add ca.ench_shielding_body_lvl dummy
+scoreboard objectives add ca.ench_shielding_saddle_lvl dummy
 
 scoreboard objectives add ca.ench_decontaminate_lvl dummy
+scoreboard objectives add ca.ench_decontaminate_main_lvl dummy
+scoreboard objectives add ca.ench_decontaminate_offh_lvl dummy
+scoreboard objectives add ca.ench_decontaminate_head_lvl dummy
+scoreboard objectives add ca.ench_decontaminate_chest_lvl dummy
+scoreboard objectives add ca.ench_decontaminate_legs_lvl dummy
+scoreboard objectives add ca.ench_decontaminate_feet_lvl dummy
+scoreboard objectives add ca.ench_decontaminate_body_lvl dummy
+scoreboard objectives add ca.ench_decontaminate_saddle_lvl dummy
+
+scoreboard objectives add ca.ench_mightiness_lvl dummy
+scoreboard objectives add ca.ench_mightiness_main_lvl dummy
+scoreboard objectives add ca.ench_mightiness_offh_lvl dummy
+scoreboard objectives add ca.ench_mightiness_head_lvl dummy
+scoreboard objectives add ca.ench_mightiness_chest_lvl dummy
+scoreboard objectives add ca.ench_mightiness_legs_lvl dummy
+scoreboard objectives add ca.ench_mightiness_feet_lvl dummy
+scoreboard objectives add ca.ench_mightiness_body_lvl dummy
+scoreboard objectives add ca.ench_mightiness_saddle_lvl dummy
+
+scoreboard objectives add ca.ench_swiftness_lvl dummy
+scoreboard objectives add ca.ench_swiftness_main_lvl dummy
+scoreboard objectives add ca.ench_swiftness_offh_lvl dummy
+scoreboard objectives add ca.ench_swiftness_head_lvl dummy
+scoreboard objectives add ca.ench_swiftness_chest_lvl dummy
+scoreboard objectives add ca.ench_swiftness_legs_lvl dummy
+scoreboard objectives add ca.ench_swiftness_feet_lvl dummy
+scoreboard objectives add ca.ench_swiftness_body_lvl dummy
+scoreboard objectives add ca.ench_swiftness_saddle_lvl dummy
+
+scoreboard objectives add ca.ench_hastiness_lvl dummy
+scoreboard objectives add ca.ench_hastiness_main_lvl dummy
+scoreboard objectives add ca.ench_hastiness_offh_lvl dummy
+scoreboard objectives add ca.ench_hastiness_head_lvl dummy
+scoreboard objectives add ca.ench_hastiness_chest_lvl dummy
+scoreboard objectives add ca.ench_hastiness_legs_lvl dummy
+scoreboard objectives add ca.ench_hastiness_feet_lvl dummy
+scoreboard objectives add ca.ench_hastiness_body_lvl dummy
+scoreboard objectives add ca.ench_hastiness_saddle_lvl dummy
+
+scoreboard objectives add ca.ench_stealthiness_lvl dummy
+scoreboard objectives add ca.ench_stealthiness_main_lvl dummy
+scoreboard objectives add ca.ench_stealthiness_offh_lvl dummy
+scoreboard objectives add ca.ench_stealthiness_head_lvl dummy
+scoreboard objectives add ca.ench_stealthiness_chest_lvl dummy
+scoreboard objectives add ca.ench_stealthiness_legs_lvl dummy
+scoreboard objectives add ca.ench_stealthiness_feet_lvl dummy
+scoreboard objectives add ca.ench_stealthiness_body_lvl dummy
+scoreboard objectives add ca.ench_stealthiness_saddle_lvl dummy
+
+scoreboard objectives add ca.ench_sapper_lvl dummy
+scoreboard objectives add ca.ench_sapper_main_lvl dummy
+scoreboard objectives add ca.ench_sapper_offh_lvl dummy
+scoreboard objectives add ca.ench_sapper_head_lvl dummy
+scoreboard objectives add ca.ench_sapper_chest_lvl dummy
+scoreboard objectives add ca.ench_sapper_legs_lvl dummy
+scoreboard objectives add ca.ench_sapper_feet_lvl dummy
+scoreboard objectives add ca.ench_sapper_body_lvl dummy
+scoreboard objectives add ca.ench_sapper_saddle_lvl dummy
+
+scoreboard objectives add ca.ench_lifeblood_lvl dummy
+scoreboard objectives add ca.ench_lifeblood_main_lvl dummy
+scoreboard objectives add ca.ench_lifeblood_offh_lvl dummy
+scoreboard objectives add ca.ench_lifeblood_head_lvl dummy
+scoreboard objectives add ca.ench_lifeblood_chest_lvl dummy
+scoreboard objectives add ca.ench_lifeblood_legs_lvl dummy
+scoreboard objectives add ca.ench_lifeblood_feet_lvl dummy
+scoreboard objectives add ca.ench_lifeblood_body_lvl dummy
+scoreboard objectives add ca.ench_lifeblood_saddle_lvl dummy
+
+scoreboard objectives add ca.ench_bracing_lvl dummy
+scoreboard objectives add ca.ench_bracing_main_lvl dummy
+scoreboard objectives add ca.ench_bracing_offh_lvl dummy
+scoreboard objectives add ca.ench_bracing_head_lvl dummy
+scoreboard objectives add ca.ench_bracing_chest_lvl dummy
+scoreboard objectives add ca.ench_bracing_legs_lvl dummy
+scoreboard objectives add ca.ench_bracing_feet_lvl dummy
+scoreboard objectives add ca.ench_bracing_body_lvl dummy
+scoreboard objectives add ca.ench_bracing_saddle_lvl dummy
+
 scoreboard objectives add ca.ench_annulling_lvl dummy
-
-
-scoreboard objectives add ca.ench_evasion_hand_lvl dummy
-scoreboard objectives add ca.ench_nullifying_hand_lvl dummy
-scoreboard objectives add ca.ench_regeneration_hand_lvl dummy
-scoreboard objectives add ca.ench_shielding_hand_lvl dummy
-
-scoreboard objectives add ca.ench_mightiness_hand_lvl dummy
-scoreboard objectives add ca.ench_swiftness_hand_lvl dummy
-scoreboard objectives add ca.ench_hastiness_hand_lvl dummy
-scoreboard objectives add ca.ench_stealthiness_hand_lvl dummy
-
-scoreboard objectives add ca.ench_sapper_hand_lvl dummy
-scoreboard objectives add ca.ench_lifeblood_hand_lvl dummy
-scoreboard objectives add ca.ench_bracing_hand_lvl dummy
-
-scoreboard objectives add ca.ench_decontaminate_hand_lvl dummy
-scoreboard objectives add ca.ench_annulling_hand_lvl dummy
-
-
-scoreboard objectives add ca.ench_evasion_gear_lvl dummy
-scoreboard objectives add ca.ench_nullifying_gear_lvl dummy
-scoreboard objectives add ca.ench_regeneration_gear_lvl dummy
-scoreboard objectives add ca.ench_shielding_gear_lvl dummy
-
-scoreboard objectives add ca.ench_mightiness_gear_lvl dummy
-scoreboard objectives add ca.ench_swiftness_gear_lvl dummy
-scoreboard objectives add ca.ench_hastiness_gear_lvl dummy
-scoreboard objectives add ca.ench_stealthiness_gear_lvl dummy
-
-scoreboard objectives add ca.ench_sapper_gear_lvl dummy
-scoreboard objectives add ca.ench_lifeblood_gear_lvl dummy
-scoreboard objectives add ca.ench_bracing_gear_lvl dummy
-
-scoreboard objectives add ca.ench_decontaminate_gear_lvl dummy
-scoreboard objectives add ca.ench_annulling_gear_lvl dummy
+scoreboard objectives add ca.ench_annulling_main_lvl dummy
+scoreboard objectives add ca.ench_annulling_offh_lvl dummy
+scoreboard objectives add ca.ench_annulling_head_lvl dummy
+scoreboard objectives add ca.ench_annulling_chest_lvl dummy
+scoreboard objectives add ca.ench_annulling_legs_lvl dummy
+scoreboard objectives add ca.ench_annulling_feet_lvl dummy
+scoreboard objectives add ca.ench_annulling_body_lvl dummy
+scoreboard objectives add ca.ench_annulling_saddle_lvl dummy
 
 
 #Enchantment scoreboards functionality
@@ -159,8 +236,7 @@ scoreboard objectives add ca.harvest_var dummy
 
 scoreboard objectives add ca.stealth_silent dummy
 scoreboard objectives add ca.stealth_powered dummy
-scoreboard objectives add ca.stealth_keep_armor dummy
-scoreboard objectives add ca.stealth_keep_weapons dummy
+scoreboard objectives add ca.stealth_keep_equipment dummy
 
 scoreboard objectives add ca.stealth_value dummy
 
@@ -215,6 +291,10 @@ scoreboard objectives add ca.cs_shoot_bow minecraft.used:minecraft.bow
 scoreboard objectives add ca.cs_shoot_cross minecraft.used:minecraft.crossbow
 scoreboard objectives add ca.cs_throw_trident minecraft.used:minecraft.trident
 scoreboard objectives add ca.cs_throw_snowball minecraft.used:minecraft.snowball
+
+scoreboard objectives add ca.deal_damage_melee_normal minecraft.custom:minecraft.damage_dealt
+scoreboard objectives add ca.deal_damage_melee_absorption minecraft.custom:minecraft.damage_dealt_absorbed
+scoreboard objectives add ca.deal_damage_melee_resistance minecraft.custom:minecraft.damage_dealt_resisted
 
 scoreboard objectives add ca.cu_st_dmg minecraft.custom:minecraft.damage_dealt
 

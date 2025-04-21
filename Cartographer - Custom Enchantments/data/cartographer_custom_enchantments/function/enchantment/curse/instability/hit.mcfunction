@@ -6,4 +6,4 @@ execute if entity @s[type=player] if score @s ca.instability_type matches 3 run 
 
 execute if entity @s[type=player] if score @s ca.instability_type matches 4 run playsound minecraft:entity.player.big_fall player @s ~ ~ ~ 0.65 0.8
 
-function carto_event:api/create_single_entity_event {event:"custom_ench/instability",duration:1,delay:005,parameters:{},merge_behavior:"none"}
+function carto_event:api/create_single_entity_event {event:"custom_ench/instability",duration:1,delay:5,parameters:{},merge_behavior:"none"}

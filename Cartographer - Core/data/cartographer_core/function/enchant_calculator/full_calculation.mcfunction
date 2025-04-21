@@ -18,7 +18,6 @@ $scoreboard players set $$(type) ca.calc_type 1
 
 data modify storage cartographer:enchantment_data equipped set value {}
 
-execute if entity @s[type=player] run function cartographer_core:enchant_calculator/player_calc
 execute unless entity @s[type=player] run function cartographer_core:enchant_calculator/mob_calc
 
 $scoreboard players set @s ca.ench_$(enchantment)_lvl 0

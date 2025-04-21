@@ -7,10 +7,12 @@ function bb:lib/pldata/read
 #Save prior ticks raw data and inv:save data
 data remove storage bbl:pldata sudo_root.working_data.bbl.inventory.past_tick
 data modify storage bbl:pldata sudo_root.working_data.bbl.inventory.past_tick set from storage bbl:pldata sudo_root.working_data.bbl.inventory.current_tick
+data modify storage bbl:pldata sudo_root.working_data.bbl.equipment.past_tick set from storage bbl:pldata sudo_root.working_data.bbl.equipment.current_tick
 
 #Save current inventory and inv:save
 data remove storage bbl:pldata sudo_root.working_data.bbl.inventory.current_tick
 data modify storage bbl:pldata sudo_root.working_data.bbl.inventory.current_tick set from entity @s Inventory
+data modify storage bbl:pldata sudo_root.working_data.bbl.equipment.current_tick set from entity @s equipment
 
 #Save selected slot
 execute store result storage bbl:pldata sudo_root.working_data.bbl.inventory.selected_slot int 1 run data get entity @s SelectedItemSlot

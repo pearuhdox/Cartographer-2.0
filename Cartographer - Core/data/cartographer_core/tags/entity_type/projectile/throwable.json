@@ -2,7 +2,8 @@
 	"values": [
 		"minecraft:egg",
 		"minecraft:snowball",
-		"minecraft:potion",
+		"minecraft:splash_potion",
+		"minecraft:lingering_potion",
 		"minecraft:llama_spit"
 	]
 }

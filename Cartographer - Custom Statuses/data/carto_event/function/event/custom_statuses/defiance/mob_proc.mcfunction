@@ -20,4 +20,4 @@ particle minecraft:totem_of_undying ~ ~1 ~ 0.15 0.15 0.15 0.25 30
 
 execute unless entity @s[type=player] run playsound minecraft:item.totem.use hostile @a ~ ~ ~ 0.75 2
 
-$function carto_event:api/create_single_entity_event {event:"custom_statuses/defiance/immunity",duration:$(immunity_time),delay:001,parameters:{bailout:$(bailout)},merge_behavior:"merge"}
+$function carto_event:api/create_single_entity_event {event:"custom_statuses/defiance/immunity",duration:$(immunity_time),delay:1,parameters:{bailout:$(bailout)},merge_behavior:"merge"}

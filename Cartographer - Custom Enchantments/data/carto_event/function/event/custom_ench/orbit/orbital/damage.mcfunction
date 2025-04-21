@@ -20,4 +20,4 @@ execute if score $allow_statuses_self ca.ench_orbit_lvl matches 1.. on attacker 
 scoreboard players add $hits ca.ench_orbit_lvl 1
 
 tag @s add ca.orbit_cdl
-#function carto_event:api/create_single_entity_event {event:"custom_ench/orbit/cooldown",duration:15,delay:000,parameters:{},merge_behavior:"none"}
+#function carto_event:api/create_single_entity_event {event:"custom_ench/orbit/cooldown",duration:15,delay:0,parameters:{},merge_behavior:"none"}

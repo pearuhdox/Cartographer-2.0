@@ -13,5 +13,5 @@ tag @s add ca.has_attribute_data
 tag @s add ca.bobber_owner_req
 
 #execute store result score $crit ca.attr_ranged_damage_value run data get entity @s crit
-#execute if score $crit ca.attr_ranged_damage_value matches 1.. run function carto_event:api/create_single_entity_event {event:"custom_attribute/arrow_crit",duration:100,delay:000,parameters:{prev_x:0,prev_y:0,prev_z:0},merge_behavior:"none"}
+#execute if score $crit ca.attr_ranged_damage_value matches 1.. run function carto_event:api/create_single_entity_event {event:"custom_attribute/arrow_crit",duration:100,delay:0,parameters:{prev_x:0,prev_y:0,prev_z:0},merge_behavior:"none"}
 #data modify entity @s crit set value 0b

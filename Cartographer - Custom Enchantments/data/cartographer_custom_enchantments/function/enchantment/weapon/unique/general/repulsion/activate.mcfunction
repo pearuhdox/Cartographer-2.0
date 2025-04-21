@@ -35,11 +35,11 @@ execute unless entity @s[type=player] run playsound minecraft:entity.breeze.char
 tag @s remove ca.repulsion_owner
 
 execute if score $longer_cdl ca.ench_repulsion_lvl matches 1.. if score $hits ca.ench_repulsion_lvl matches 1.. if entity @s[type=player] run scoreboard players set @s ca.repulsion_cooldown 20
-execute if score $longer_cdl ca.ench_repulsion_lvl matches 1.. if score $hits ca.ench_repulsion_lvl matches 1.. if entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"custom_ench/repulsion",duration:20,delay:000,parameters:{},merge_behavior:"none"}
+execute if score $longer_cdl ca.ench_repulsion_lvl matches 1.. if score $hits ca.ench_repulsion_lvl matches 1.. if entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"custom_ench/repulsion",duration:20,delay:0,parameters:{},merge_behavior:"none"}
 
 execute unless score $longer_cdl ca.ench_repulsion_lvl matches 1.. if score $hits ca.ench_repulsion_lvl matches 1.. if entity @s[type=player] run scoreboard players set @s ca.repulsion_cooldown 11
-execute unless score $longer_cdl ca.ench_repulsion_lvl matches 1.. if score $hits ca.ench_repulsion_lvl matches 1.. if entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"custom_ench/repulsion",duration:11,delay:000,parameters:{},merge_behavior:"none"}
+execute unless score $longer_cdl ca.ench_repulsion_lvl matches 1.. if score $hits ca.ench_repulsion_lvl matches 1.. if entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"custom_ench/repulsion",duration:11,delay:0,parameters:{},merge_behavior:"none"}
 
 
 execute unless entity @s[type=player] run scoreboard players set @s ca.repulsion_cooldown 100
-execute unless entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"custom_ench/repulsion",duration:100,delay:000,parameters:{},merge_behavior:"none"}
+execute unless entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"custom_ench/repulsion",duration:100,delay:0,parameters:{},merge_behavior:"none"}

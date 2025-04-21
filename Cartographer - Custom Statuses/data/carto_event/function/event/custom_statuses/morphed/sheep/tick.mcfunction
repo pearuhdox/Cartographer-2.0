@@ -40,7 +40,7 @@ $execute if score $hurt_entity ca.morphed_health matches 1.. as $(target) at @s 
 $execute if score $hurt_entity ca.morphed_health matches 1.. as $(target) at @s run tp @s ~ -500 ~
 $execute if score $hurt_entity ca.morphed_health matches 1.. as $(target) at @s run kill @s
 
-$execute if score $hurt_entity ca.morphed_health matches 1.. as $(related_entity) at @s run function carto_event:api/create_single_entity_event {event:"custom_statuses/block_effect/morphed",duration:$(block_duration),delay:003,parameters:{},merge_behavior:"none"}
+$execute if score $hurt_entity ca.morphed_health matches 1.. as $(related_entity) at @s run function carto_event:api/create_single_entity_event {event:"custom_statuses/block_effect/morphed",duration:$(block_duration),delay:3,parameters:{},merge_behavior:"none"}
 
 $execute if score $hurt_entity ca.morphed_health matches 1.. as $(related_entity) at @s if score @s ca.morphed_ai matches 0 run data modify entity @s NoAI set value 0b
 $execute if score $hurt_entity ca.morphed_health matches 1.. as $(related_entity) at @s if score @s ca.morphed_ai matches 0 run data modify entity @s PersistenceRequired set value 0b

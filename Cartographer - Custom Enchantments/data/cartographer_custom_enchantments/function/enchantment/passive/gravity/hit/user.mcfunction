@@ -6,4 +6,4 @@ scoreboard players operation $damage ca.gravity_var *= $10 ca.CONSTANT
 scoreboard players operation $damage ca.gravity_var *= $2 ca.CONSTANT
 
 scoreboard players set @s ca.gravity_time 20
-function carto_event:api/create_single_entity_event {event:"custom_ench/gravity",duration:20,delay:000,parameters:{},merge_behavior:"none"}
+function carto_event:api/create_single_entity_event {event:"custom_ench/gravity",duration:20,delay:0,parameters:{},merge_behavior:"none"}

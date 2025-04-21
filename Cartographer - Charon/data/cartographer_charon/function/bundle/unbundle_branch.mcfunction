@@ -1,10 +1,10 @@
 scoreboard players set $slot dt.var -1000
 execute store result score $slot dt.var run data get storage cartographer_charon:player temp.components.minecraft:custom_data.DeathBundleContents[0].Slot
 
-execute if data storage cartographer_charon:player temp.components.minecraft:custom_data.DeathBundleContents[0].components.minecraft:enchantments.levels.minecraft:binding_curse run scoreboard players set $slot dt.var 500
-execute if data storage cartographer_charon:player temp.components.minecraft:custom_data.DeathBundleContents[0].components.minecraft:enchantments.levels.minecraft:vanishing_curse run scoreboard players set $slot dt.var 500
-execute if data storage cartographer_charon:player temp.components.minecraft:custom_data.DeathBundleContents[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:curse/shattering run scoreboard players set $slot dt.var 500
-execute if data storage cartographer_charon:player temp.components.minecraft:custom_data.DeathBundleContents[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:curse/haunting run scoreboard players set $slot dt.var 500
+execute if data storage cartographer_charon:player temp.components.minecraft:custom_data.DeathBundleContents[0].components.minecraft:enchantments.minecraft:binding_curse run scoreboard players set $slot dt.var 500
+execute if data storage cartographer_charon:player temp.components.minecraft:custom_data.DeathBundleContents[0].components.minecraft:enchantments.minecraft:vanishing_curse run scoreboard players set $slot dt.var 500
+execute if data storage cartographer_charon:player temp.components.minecraft:custom_data.DeathBundleContents[0].components.minecraft:enchantments.cartographer_custom_enchantments:curse/shattering run scoreboard players set $slot dt.var 500
+execute if data storage cartographer_charon:player temp.components.minecraft:custom_data.DeathBundleContents[0].components.minecraft:enchantments.cartographer_custom_enchantments:curse/haunting run scoreboard players set $slot dt.var 500
 
 execute unless score $slot dt.var matches 500 run data modify storage inv:main inv.all append from storage cartographer_charon:player temp.components.minecraft:custom_data.DeathBundleContents[0]
 data modify storage cartographer_charon:player modified_slot set value {}

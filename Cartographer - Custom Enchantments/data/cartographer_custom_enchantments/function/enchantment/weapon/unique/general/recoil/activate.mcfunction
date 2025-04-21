@@ -4,7 +4,7 @@ execute if entity @s[type=player] run scoreboard players add $force ca.ench_var 
 execute unless entity @s[type=player] run scoreboard players operation $force ca.ench_var *= $3 ca.CONSTANT
 execute unless entity @s[type=player] run scoreboard players add $force ca.ench_var 2
 
-execute store result score $fall_dist ca.ench_recoil_lvl run data get entity @s FallDistance 100
+execute store result score $fall_dist ca.ench_recoil_lvl run data get entity @s fall_distance 100
 
 execute if entity @s[type=player] run scoreboard players operation $fall_dist ca.ench_recoil_lvl *= $5 ca.CONSTANT
 execute if entity @s[type=player] if score $fall_dist ca.ench_recoil_lvl matches 3501.. run scoreboard players set $fall_dist ca.ench_recoil_lvl 3500

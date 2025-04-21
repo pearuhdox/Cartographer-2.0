@@ -14,7 +14,7 @@ $execute as $(target) at @s run scoreboard players operation $shatter ca.frozen_
 
 $execute as $(target) at @s if score @s ca.frozen_hp < @s ca.frozen_hp_past run function carto_event:event/custom_statuses/frozen/difference
 
-$execute as $(target) at @s if score $shatter_frozen ca.status_var matches 1 run function carto_event:api/create_single_entity_event {event:"custom_statuses/block_effect/frozen",duration:$(block_duration),delay:005,parameters:{},merge_behavior:"none"}
+$execute as $(target) at @s if score $shatter_frozen ca.status_var matches 1 run function carto_event:api/create_single_entity_event {event:"custom_statuses/block_effect/frozen",duration:$(block_duration),delay:5,parameters:{},merge_behavior:"none"}
 $execute as $(target) at @s if score $shatter_frozen ca.status_var matches 1 if data storage carto_event current[-1].parameters.proc_command run function carto_event:command_api/proc_command with storage carto_event current[-1].parameters
 $execute as $(target) at @s if score $shatter_frozen ca.status_var matches 1 run function carto_event:event/custom_statuses/frozen/branch/shatter
 $execute as $(target) at @s if score $shatter_frozen ca.status_var matches 1 run return 0
@@ -25,7 +25,7 @@ $execute as $(target) at @s if score duration= carto_event matches 1 store resul
 $execute as $(target) at @s if score duration= carto_event matches 1 run scoreboard players set @s ca.frozen_ai 0
 $execute as $(target) at @s if score duration= carto_event matches 1 on passengers if entity @s[type=block_display,tag=ca.status_frozen_display] run function carto_event:event/custom_statuses/frozen/release
 $execute as $(target) at @s if score duration= carto_event matches 1 if data storage carto_event current[-1].parameters.proc_command run function carto_event:command_api/proc_command with storage carto_event current[-1].parameters
-$execute as $(target) at @s if score duration= carto_event matches 1 run function carto_event:api/create_single_entity_event {event:"custom_statuses/block_effect/frozen",duration:$(block_duration),delay:003,parameters:{},merge_behavior:"none"}
+$execute as $(target) at @s if score duration= carto_event matches 1 run function carto_event:api/create_single_entity_event {event:"custom_statuses/block_effect/frozen",duration:$(block_duration),delay:3,parameters:{},merge_behavior:"none"}
 
 $execute as $(target) at @s run tag @s remove ca.has_custom_status_frozen
 $execute as $(target) at @s run tag @s remove ca.block_morphed

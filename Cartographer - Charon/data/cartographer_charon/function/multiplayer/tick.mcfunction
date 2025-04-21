@@ -15,7 +15,7 @@ execute on vehicle if entity @s[type=sheep] run function cartographer_charon:mul
 
 particle minecraft:glow ~ ~ ~ 0.2 0.2 0.2 5 1 normal
 
-#execute unless data entity @s HandItems[0].id run function cartographer_charon:multiplayer/purge
+#execute unless data entity @s equipment.mainhand.id run function cartographer_charon:multiplayer/purge
 
 execute if score $shades_auto_revive charon.gmr matches 1.. unless score @s ca.is_reviving matches 1.. if score @s ca.lifetime matches 602.. run function cartographer_charon:multiplayer/do_revive
 execute unless score $shades_auto_revive charon.gmr matches 1.. unless score @s ca.is_reviving matches 1.. if score @s ca.lifetime matches 602.. positioned ~ ~-1 ~ run function cartographer_charon:multiplayer/despawn

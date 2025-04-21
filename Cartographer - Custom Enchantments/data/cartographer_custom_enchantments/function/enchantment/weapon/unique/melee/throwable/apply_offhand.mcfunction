@@ -1,5 +1,5 @@
 data modify storage cartographer:custom_enchantments throwable_item set value {}
-data modify storage cartographer:custom_enchantments throwable_item set from entity @s Inventory[{Slot:-106b}]
+data modify storage cartographer:custom_enchantments throwable_item set from entity @s equipment.offhand
 
 data modify storage cartographer:custom_enchantments throwable_item.components.minecraft:consumable set value {consume_seconds:1000,animation:"spear",has_consume_particles:false}
 data modify storage cartographer:custom_enchantments throwable_item.components.minecraft:custom_data.throwable_applied set value 1b

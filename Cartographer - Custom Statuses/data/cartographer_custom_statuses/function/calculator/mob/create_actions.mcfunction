@@ -41,6 +41,6 @@ scoreboard players set $run_passive ca.status_var 0
 execute if entity @s[tag=ca.apply_status_passive_self] run scoreboard players set $run_passive ca.status_var 1
 execute if entity @s[tag=ca.apply_status_passive_target] run scoreboard players set $run_passive ca.status_var 1
 
-execute if score $run_passive ca.status_var matches 1.. run function carto_event:api/create_single_entity_event {event:"status_passive",duration:17,delay:003,parameters:{},merge_behavior:"none"}
+execute if score $run_passive ca.status_var matches 1.. run function carto_event:api/create_single_entity_event {event:"status_passive",duration:17,delay:3,parameters:{},merge_behavior:"none"}
 
 #FUNCTION TAG HERE

@@ -1,9 +1,9 @@
-function bb:lib/pldata/read
+function cartographer_core:pldata/read
 
-data modify storage bbl:pldata sudo_root.working_data.cartographer.enchants.repeating.returned_item set value {}
-data modify storage bbl:pldata sudo_root.working_data.cartographer.enchants.repeating.arrows set value []
+data modify storage cartographer:player_data main.working_data.cartographer.enchants.repeating.returned_item set value {}
+data modify storage cartographer:player_data main.working_data.cartographer.enchants.repeating.arrows set value []
 
-function bb:lib/pldata/write
+function cartographer_core:pldata/write
 
 tag @s remove ca.repeating_reloading_main
 tag @s remove ca.repeating_reloading_offh

@@ -2,6 +2,7 @@
 tag @s remove ca.eruption_used_spawner
 tag @s remove ca.soulfire_used_spawner
 
+
 execute if score @s ca.ench_aberration_hand_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/aberration/break_spawner
 execute if score @s ca.ench_quake_hand_lvl matches 1.. align xyz positioned ~0.5 ~ ~0.5 run function cartographer_custom_enchantments:enchantment/passive/quake/break_spawner
 

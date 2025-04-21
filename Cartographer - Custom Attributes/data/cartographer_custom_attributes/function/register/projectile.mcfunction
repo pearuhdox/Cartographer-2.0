@@ -42,11 +42,11 @@ execute if score $custom_aoe_damage ca.attr_var matches 1.. run function cartogr
 
 
 scoreboard players set $throwable_val ca.attr_aoe_size_value 400
-execute unless entity @s[tag=ca.no_attr_calc] if score $custom_aoe_size ca.attr_var matches 1.. if entity @s[type=potion] run function cartographer_custom_attributes:custom_attributes/effects/aoe_size/potion/start
-execute unless entity @s[tag=ca.no_attr_calc] if score $custom_potion_size ca.attr_var matches 1.. if entity @s[type=potion] run function cartographer_custom_attributes:custom_attributes/effects/potion_size/potion/start
+execute unless entity @s[tag=ca.no_attr_calc] if score $custom_aoe_size ca.attr_var matches 1.. if entity @s[type=#cartographer_core:potions] run function cartographer_custom_attributes:custom_attributes/effects/aoe_size/potion/start
+execute unless entity @s[tag=ca.no_attr_calc] if score $custom_potion_size ca.attr_var matches 1.. if entity @s[type=#cartographer_core:potions] run function cartographer_custom_attributes:custom_attributes/effects/potion_size/potion/start
 
-execute unless entity @s[tag=ca.no_attr_calc] if entity @s[type=potion] run scoreboard players operation @s ca.attr_aoe_size_total = $throwable_val ca.attr_aoe_size_value
-execute if entity @s[type=potion] store result storage cartographer:custom_attributes projectile.radius double 0.01 run scoreboard players get @s ca.attr_aoe_size_total
+execute unless entity @s[tag=ca.no_attr_calc] if entity @s[type=#cartographer_core:potions] run scoreboard players operation @s ca.attr_aoe_size_total = $throwable_val ca.attr_aoe_size_value
+execute if entity @s[type=#cartographer_core:potions] store result storage cartographer:custom_attributes projectile.radius double 0.01 run scoreboard players get @s ca.attr_aoe_size_total
 
 #execute if entity @s[type=#bb:arrow] run function cartographer_custom_attributes:register/get_arrow_item_data
 

@@ -10,4 +10,4 @@ execute if score @s ca.bleed_buffer matches 2.. anchored eyes positioned ^ ^-0.7
 
 tag @s remove ca.bleed_continue
 execute if score @s ca.bleed_amt matches 2.. run tag @s add ca.bleed_continue
-$execute unless score @s ca.bleed_amt matches ..1 run function carto_event:api/create_single_entity_event {event:"custom_statuses/bleeding",duration:$(tick_rate),delay:002,parameters:{tick_command:"$(tick_command)",proc_command:"$(proc_command)",tick_rate:$(tick_rate),amount:$(damage_half),owner:"$(owner)"},merge_behavior:"custom"}
+$execute unless score @s ca.bleed_amt matches ..1 run function carto_event:api/create_single_entity_event {event:"custom_statuses/bleeding",duration:$(tick_rate),delay:2,parameters:{tick_command:"$(tick_command)",proc_command:"$(proc_command)",tick_rate:$(tick_rate),amount:$(damage_half),owner:"$(owner)"},merge_behavior:"custom"}

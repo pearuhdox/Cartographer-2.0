@@ -10,6 +10,6 @@ execute if score $allow_statuses_self ca.ench_deadeye_lvl matches 1.. on attacke
 
 
 tag @s add ca.deadeye_cdl
-function carto_event:api/create_single_entity_event {event:"custom_ench/deadeye/cooldown",duration:30,delay:000,parameters:{},merge_behavior:"custom"}
+function carto_event:api/create_single_entity_event {event:"custom_ench/deadeye/cooldown",duration:30,delay:0,parameters:{},merge_behavior:"custom"}
 
 scoreboard players set $hit ca.ench_deadeye_lvl 1

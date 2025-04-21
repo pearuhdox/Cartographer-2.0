@@ -5,7 +5,7 @@ execute store result score $kills_current ca.ench_scavenger_slot run data get st
 execute store result score $kills_current_2 ca.ench_scavenger_slot run data get storage cartographer_custom_enchantments:scavenger items[0].components.minecraft:custom_data.scavenger_tracker
 scoreboard players operation $kills_current ca.ench_scavenger_slot += $kills_current_2 ca.ench_scavenger_slot
 
-execute store result score $repeating ca.ench_scavenger_slot run data get storage cartographer_custom_enchantments:scavenger items[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/unique/other/repeating
+execute store result score $repeating ca.ench_scavenger_slot run data get storage cartographer_custom_enchantments:scavenger items[0].components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/other/repeating
 execute store result score $use_count ca.ench_scavenger_slot run data get storage cartographer_custom_enchantments:scavenger items[0].components.minecraft:custom_data.use_count
 
 execute unless score $repeating ca.ench_scavenger_slot matches 1.. if score $slot ca.ench_scavenger_slot matches -106..8 if data storage cartographer_custom_enchantments:scavenger item_check{id:"minecraft:firework_star"} run function cartographer_custom_enchantments:enchantment/weapon/unique/other/scavenger/consumable/activate/start

@@ -28,7 +28,7 @@ function cartographer_custom_enchantments:enchantment/weapon/unique/melee/slammi
 execute on target run scoreboard players add @s ca.special_attack_delay 20
 
 execute if entity @s[tag=ca.use_special_attack_cooldown] run scoreboard players set $item ca.special_attack_wait 0
-execute if entity @s[tag=ca.use_special_attack_cooldown] store result score $item ca.special_attack_wait run data get entity @s HandItems[0].components.minecraft:custom_data.special_attack_cooldown
+execute if entity @s[tag=ca.use_special_attack_cooldown] store result score $item ca.special_attack_wait run data get entity @s equipment.mainhand.components.minecraft:custom_data.special_attack_cooldown
 execute if entity @s[tag=ca.use_special_attack_cooldown] run scoreboard players operation $item ca.special_attack_wait *= $4 ca.CONSTANT
 execute if entity @s[tag=ca.use_special_attack_cooldown] run scoreboard players operation @s ca.special_attack_wait = $item ca.special_attack_wait
 execute if entity @s[tag=ca.use_special_attack_cooldown] unless score $item ca.special_attack_wait matches 1.. run scoreboard players set @s ca.special_attack_wait 24

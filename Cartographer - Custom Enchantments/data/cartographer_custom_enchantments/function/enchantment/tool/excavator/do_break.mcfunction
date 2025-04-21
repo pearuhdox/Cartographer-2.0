@@ -13,4 +13,4 @@ kill @e[type=marker,tag=ca.excavator_found_block,limit=20,sort=nearest]
 tag @s remove ca.excavator_user
 
 scoreboard players set @s ca.excavator_cooldown 3
-function carto_event:api/create_single_entity_event {event:"custom_ench/excavator",duration:3,delay:000,parameters:{},merge_behavior:"none"}
+function carto_event:api/create_single_entity_event {event:"custom_ench/excavator",duration:3,delay:0,parameters:{},merge_behavior:"none"}

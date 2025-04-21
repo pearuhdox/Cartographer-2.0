@@ -28,6 +28,8 @@ execute if score $upgrade_1 ca.repair_station_state matches 1.. run function car
 execute if score $xp_cost ca.repair_station_state > $xp_maximum ca.repair_station_state run scoreboard players set $state ca.repair_station_state 11
 # execute if score $lapis_cost ca.repair_station_state > $lapis_maximum ca.repair_station_state run scoreboard players set $state ca.repair_station_state 11
 
+execute if data storage cartographer_repair_stations:item_input data.components.minecraft:max_stack_size if data storage cartographer_repair_stations:item_input data.components.minecraft:max_damage unless data storage cartographer_repair_stations:item_input data.components.minecraft:custom_data.custom_repairable run scoreboard players set $state ca.repair_station_state 10
+
 execute unless score $allow_transport_repair ca.repair_station_state matches 1.. if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}}] run scoreboard players set $state ca.repair_station_state 10
 execute unless score $allow_transport_repair ca.repair_station_state matches 1.. if entity @s[nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick"}}] run scoreboard players set $state ca.repair_station_state 10
 

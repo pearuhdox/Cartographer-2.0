@@ -1,4 +1,4 @@
-clear @s minecraft:player_head[custom_name='{"color":"dark_aqua","italic":false,"text":"Mob Essence"}'] 1
+clear @s minecraft:player_head[custom_name={"color":"dark_aqua","italic":false,"text":"Mob Essence"}] 1
 
 scoreboard players remove $lapis_cost ca.repair_station_state 1
 

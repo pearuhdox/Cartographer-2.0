@@ -40,24 +40,3 @@ execute unless score @s ca.ench_echo_lvl matches 1.. run attribute @s minecraft:
 
 execute unless score @s ca.ench_lifesteal_lvl matches 1.. run attribute @s minecraft:oxygen_bonus modifier remove ca.attr_life_drain_chance_ench_percent
 execute unless score @s ca.ench_lifesteal_lvl matches 1.. run attribute @s minecraft:oxygen_bonus modifier remove ca.attr_life_drain_amount_ench_value
-
-#Reset Attributes Here unless they are set
-execute unless score @s ca.ench_precision_lvl matches 1.. run function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/ranged_damage
-execute unless score @s ca.ench_lucky_lvl matches 1.. run function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/combat_luck
-execute unless score @s ca.ench_amplitude_lvl matches 1.. run function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/aoe_size
-execute unless score @s ca.ench_resonance_lvl matches 1.. run function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/aoe_damage
-execute unless score @s ca.ench_technique_lvl matches 1.. run function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/lucky_hit_chance
-execute unless score @s ca.ench_invigorated_lvl matches 1.. run function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/healing_power
-
-execute unless score @s ca.ench_reverb_lvl matches 1.. run function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/chaining_hit_chance
-execute unless score @s ca.ench_reverb_lvl matches 1.. run function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/chaining_hit_amount
-
-execute unless score @s ca.ench_echo_lvl matches 1.. run function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/restrike_hit_chance
-execute unless score @s ca.ench_echo_lvl matches 1.. run function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/restrike_hit_amount
-execute unless score @s ca.ench_echo_lvl matches 1.. run function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/restrike_hit_rate
-
-execute unless score @s ca.ench_lifesteal_lvl matches 1.. run function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/life_drain_chance
-execute unless score @s ca.ench_lifesteal_lvl matches 1.. run function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/life_drain_amount
-
-execute unless score @s ca.ench_cloudstep_lvl matches 1.. run function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/extra_jump_count
-execute unless score @s ca.ench_windborn_lvl matches 1.. run function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/airdash_count

@@ -6,4 +6,4 @@ execute at @s as @e[type=small_fireball,limit=1,sort=nearest,tag=ca.soulfire_fir
 
 scoreboard players set $created_fireball ca.ench_soulfire_lvl 1
 
-function carto_event:api/create_single_entity_event {event:"custom_ench/soulfire/cooldown",duration:40,delay:000,parameters:{},merge_behavior:"none"}
+function carto_event:api/create_single_entity_event {event:"custom_ench/soulfire/cooldown",duration:40,delay:0,parameters:{},merge_behavior:"none"}

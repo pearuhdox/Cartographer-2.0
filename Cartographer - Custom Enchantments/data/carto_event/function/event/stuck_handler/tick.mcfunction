@@ -16,7 +16,7 @@ $execute as $(target) at @s if score $do_removal ca.stuck_time matches 1.. unles
 $execute as $(target) at @s if score $do_removal ca.stuck_time matches 1.. unless entity @s[type=player] run tag @s remove ca.remove_stuck_visible
 
 $execute as $(target) at @s if score $do_removal ca.stuck_time matches 1.. run scoreboard players remove @s ca.stuck_count 1
-$execute as $(target) at @s if score $do_removal ca.stuck_time matches 1.. if score @s ca.stuck_count matches 1.. run function carto_event:api/create_single_entity_event {event:"stuck_handler",duration:597,delay:003,parameters:{duration:$(duration)},merge_behavior:"merge"}
+$execute as $(target) at @s if score $do_removal ca.stuck_time matches 1.. if score @s ca.stuck_count matches 1.. run function carto_event:api/create_single_entity_event {event:"stuck_handler",duration:597,delay:3,parameters:{duration:$(duration)},merge_behavior:"merge"}
 
 $execute as $(target) at @s if score $do_removal ca.stuck_time matches 1.. unless score @s ca.stuck_count matches 1.. run tag @s remove ca.barbed_tagged
 $execute as $(target) at @s if score $do_removal ca.stuck_time matches 1.. unless score @s ca.stuck_count matches 1.. run tag @s remove ca.ripper_tagged

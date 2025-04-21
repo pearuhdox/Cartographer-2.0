@@ -46,7 +46,7 @@ $execute if score duration= carto_event matches 14 as $(target) at @s if data st
 
 $execute if score duration= carto_event matches 14 as $(target) at @s run scoreboard players set @s ca.confused_reassign 0
 
-$execute if score duration= carto_event matches 14 as $(target) at @s on target unless entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"custom_statuses/blindness",duration:5,delay:002,parameters:{amount:1.0},merge_behavior:"custom"}
+$execute if score duration= carto_event matches 14 as $(target) at @s on target unless entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"custom_statuses/blindness",duration:5,delay:2,parameters:{amount:1.0},merge_behavior:"custom"}
 
 $execute if score duration= carto_event matches 14 as $(target) at @s run attribute @s minecraft:follow_range modifier add ca.confused_follow_range_force_off -1.0 add_multiplied_total
 $execute if score duration= carto_event matches ..2 as $(target) at @s run attribute @s minecraft:follow_range modifier remove ca.confused_follow_range_force_off
@@ -57,7 +57,7 @@ $execute if score duration= carto_event matches ..2 as $(target) at @s run attri
 $execute if score duration= carto_event matches ..2 as $(target) at @s run attribute @s minecraft:movement_speed modifier remove ca.confused_speed
 $execute if score duration= carto_event matches ..2 as $(target) at @s run attribute @s minecraft:attack_damage modifier remove ca.confused_atk
 
-$execute if score duration= carto_event matches 1 as $(target) at @s run function carto_event:api/create_single_entity_event {event:"custom_statuses/block_effect/confused",duration:$(block_duration),delay:003,parameters:{},merge_behavior:"none"}
+$execute if score duration= carto_event matches 1 as $(target) at @s run function carto_event:api/create_single_entity_event {event:"custom_statuses/block_effect/confused",duration:$(block_duration),delay:3,parameters:{},merge_behavior:"none"}
 
 $execute as $(target) at @s if data storage carto_event current[-1].parameters.tick_command run function carto_event:command_api/tick_command with storage carto_event current[-1].parameters
 

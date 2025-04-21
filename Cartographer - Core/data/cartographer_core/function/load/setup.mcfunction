@@ -292,6 +292,9 @@ scoreboard objectives add ca.attribute_cleanse_delay dummy
 
 scoreboard objectives add ca.damage_queue dummy
 
+scoreboard objectives add ca.id dummy
+execute unless score $next_id ca.id matches 0.. run scoreboard players set $next_id ca.id 0
+
 #scoreboard players set $no_anvil ca.gamerule 0
 
 #Setup a score for any and all constant values.

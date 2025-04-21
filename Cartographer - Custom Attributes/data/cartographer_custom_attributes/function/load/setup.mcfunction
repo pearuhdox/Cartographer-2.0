@@ -10,231 +10,858 @@ scoreboard objectives add ca.custom_trident dummy
 
 #Setup scoreboards for level tracking
 scoreboard objectives add ca.ench_celerity_lvl dummy
+scoreboard objectives add ca.ench_celerity_main_lvl dummy
+scoreboard objectives add ca.ench_celerity_offh_lvl dummy
+scoreboard objectives add ca.ench_celerity_head_lvl dummy
+scoreboard objectives add ca.ench_celerity_chest_lvl dummy
+scoreboard objectives add ca.ench_celerity_legs_lvl dummy
+scoreboard objectives add ca.ench_celerity_feet_lvl dummy
+scoreboard objectives add ca.ench_celerity_body_lvl dummy
+scoreboard objectives add ca.ench_celerity_saddle_lvl dummy
+
 scoreboard objectives add ca.ench_dexterity_lvl dummy
+scoreboard objectives add ca.ench_dexterity_main_lvl dummy
+scoreboard objectives add ca.ench_dexterity_offh_lvl dummy
+scoreboard objectives add ca.ench_dexterity_head_lvl dummy
+scoreboard objectives add ca.ench_dexterity_chest_lvl dummy
+scoreboard objectives add ca.ench_dexterity_legs_lvl dummy
+scoreboard objectives add ca.ench_dexterity_feet_lvl dummy
+scoreboard objectives add ca.ench_dexterity_body_lvl dummy
+scoreboard objectives add ca.ench_dexterity_saddle_lvl dummy
+
 scoreboard objectives add ca.ench_finesse_lvl dummy
+scoreboard objectives add ca.ench_finesse_main_lvl dummy
+scoreboard objectives add ca.ench_finesse_offh_lvl dummy
+scoreboard objectives add ca.ench_finesse_head_lvl dummy
+scoreboard objectives add ca.ench_finesse_chest_lvl dummy
+scoreboard objectives add ca.ench_finesse_legs_lvl dummy
+scoreboard objectives add ca.ench_finesse_feet_lvl dummy
+scoreboard objectives add ca.ench_finesse_body_lvl dummy
+scoreboard objectives add ca.ench_finesse_saddle_lvl dummy
+
 scoreboard objectives add ca.ench_immovable_lvl dummy
+scoreboard objectives add ca.ench_immovable_main_lvl dummy
+scoreboard objectives add ca.ench_immovable_offh_lvl dummy
+scoreboard objectives add ca.ench_immovable_head_lvl dummy
+scoreboard objectives add ca.ench_immovable_chest_lvl dummy
+scoreboard objectives add ca.ench_immovable_legs_lvl dummy
+scoreboard objectives add ca.ench_immovable_feet_lvl dummy
+scoreboard objectives add ca.ench_immovable_body_lvl dummy
+scoreboard objectives add ca.ench_immovable_saddle_lvl dummy
+
 scoreboard objectives add ca.ench_vitality_lvl dummy
+scoreboard objectives add ca.ench_vitality_main_lvl dummy
+scoreboard objectives add ca.ench_vitality_offh_lvl dummy
+scoreboard objectives add ca.ench_vitality_head_lvl dummy
+scoreboard objectives add ca.ench_vitality_chest_lvl dummy
+scoreboard objectives add ca.ench_vitality_legs_lvl dummy
+scoreboard objectives add ca.ench_vitality_feet_lvl dummy
+scoreboard objectives add ca.ench_vitality_body_lvl dummy
+scoreboard objectives add ca.ench_vitality_saddle_lvl dummy
 
 scoreboard objectives add ca.ench_agility_lvl dummy
+scoreboard objectives add ca.ench_agility_main_lvl dummy
+scoreboard objectives add ca.ench_agility_offh_lvl dummy
+scoreboard objectives add ca.ench_agility_head_lvl dummy
+scoreboard objectives add ca.ench_agility_chest_lvl dummy
+scoreboard objectives add ca.ench_agility_legs_lvl dummy
+scoreboard objectives add ca.ench_agility_feet_lvl dummy
+scoreboard objectives add ca.ench_agility_body_lvl dummy
+scoreboard objectives add ca.ench_agility_saddle_lvl dummy
+
 scoreboard objectives add ca.ench_extended_lvl dummy
-scoreboard objectives add ca.ench_traveling_lvl dummy
+scoreboard objectives add ca.ench_extended_main_lvl dummy
+scoreboard objectives add ca.ench_extended_offh_lvl dummy
+scoreboard objectives add ca.ench_extended_head_lvl dummy
+scoreboard objectives add ca.ench_extended_chest_lvl dummy
+scoreboard objectives add ca.ench_extended_legs_lvl dummy
+scoreboard objectives add ca.ench_extended_feet_lvl dummy
+scoreboard objectives add ca.ench_extended_body_lvl dummy
+scoreboard objectives add ca.ench_extended_saddle_lvl dummy
+
 scoreboard objectives add ca.ench_handling_lvl dummy
+scoreboard objectives add ca.ench_handling_main_lvl dummy
+scoreboard objectives add ca.ench_handling_offh_lvl dummy
+scoreboard objectives add ca.ench_handling_head_lvl dummy
+scoreboard objectives add ca.ench_handling_chest_lvl dummy
+scoreboard objectives add ca.ench_handling_legs_lvl dummy
+scoreboard objectives add ca.ench_handling_feet_lvl dummy
+scoreboard objectives add ca.ench_handling_body_lvl dummy
+scoreboard objectives add ca.ench_handling_saddle_lvl dummy
+
+scoreboard objectives add ca.ench_traveling_lvl dummy
+scoreboard objectives add ca.ench_traveling_main_lvl dummy
+scoreboard objectives add ca.ench_traveling_offh_lvl dummy
+scoreboard objectives add ca.ench_traveling_head_lvl dummy
+scoreboard objectives add ca.ench_traveling_chest_lvl dummy
+scoreboard objectives add ca.ench_traveling_legs_lvl dummy
+scoreboard objectives add ca.ench_traveling_feet_lvl dummy
+scoreboard objectives add ca.ench_traveling_body_lvl dummy
+scoreboard objectives add ca.ench_traveling_saddle_lvl dummy
+
+scoreboard objectives add ca.ench_amplitude_lvl dummy
+scoreboard objectives add ca.ench_amplitude_main_lvl dummy
+scoreboard objectives add ca.ench_amplitude_offh_lvl dummy
+scoreboard objectives add ca.ench_amplitude_head_lvl dummy
+scoreboard objectives add ca.ench_amplitude_chest_lvl dummy
+scoreboard objectives add ca.ench_amplitude_legs_lvl dummy
+scoreboard objectives add ca.ench_amplitude_feet_lvl dummy
+scoreboard objectives add ca.ench_amplitude_body_lvl dummy
+scoreboard objectives add ca.ench_amplitude_saddle_lvl dummy
+
+scoreboard objectives add ca.ench_lucky_lvl dummy
+scoreboard objectives add ca.ench_lucky_main_lvl dummy
+scoreboard objectives add ca.ench_lucky_offh_lvl dummy
+scoreboard objectives add ca.ench_lucky_head_lvl dummy
+scoreboard objectives add ca.ench_lucky_chest_lvl dummy
+scoreboard objectives add ca.ench_lucky_legs_lvl dummy
+scoreboard objectives add ca.ench_lucky_feet_lvl dummy
+scoreboard objectives add ca.ench_lucky_body_lvl dummy
+scoreboard objectives add ca.ench_lucky_saddle_lvl dummy
+
+scoreboard objectives add ca.ench_resonance_lvl dummy
+scoreboard objectives add ca.ench_resonance_main_lvl dummy
+scoreboard objectives add ca.ench_resonance_offh_lvl dummy
+scoreboard objectives add ca.ench_resonance_head_lvl dummy
+scoreboard objectives add ca.ench_resonance_chest_lvl dummy
+scoreboard objectives add ca.ench_resonance_legs_lvl dummy
+scoreboard objectives add ca.ench_resonance_feet_lvl dummy
+scoreboard objectives add ca.ench_resonance_body_lvl dummy
+scoreboard objectives add ca.ench_resonance_saddle_lvl dummy
+
+scoreboard objectives add ca.ench_technique_lvl dummy
+scoreboard objectives add ca.ench_technique_main_lvl dummy
+scoreboard objectives add ca.ench_technique_offh_lvl dummy
+scoreboard objectives add ca.ench_technique_head_lvl dummy
+scoreboard objectives add ca.ench_technique_chest_lvl dummy
+scoreboard objectives add ca.ench_technique_legs_lvl dummy
+scoreboard objectives add ca.ench_technique_feet_lvl dummy
+scoreboard objectives add ca.ench_technique_body_lvl dummy
+scoreboard objectives add ca.ench_technique_saddle_lvl dummy
+
+scoreboard objectives add ca.ench_invigorated_lvl dummy
+scoreboard objectives add ca.ench_invigorated_main_lvl dummy
+scoreboard objectives add ca.ench_invigorated_offh_lvl dummy
+scoreboard objectives add ca.ench_invigorated_head_lvl dummy
+scoreboard objectives add ca.ench_invigorated_chest_lvl dummy
+scoreboard objectives add ca.ench_invigorated_legs_lvl dummy
+scoreboard objectives add ca.ench_invigorated_feet_lvl dummy
+scoreboard objectives add ca.ench_invigorated_body_lvl dummy
+scoreboard objectives add ca.ench_invigorated_saddle_lvl dummy
 
 scoreboard objectives add ca.ench_precision_lvl dummy
-scoreboard objectives add ca.ench_amplitude_lvl dummy
-scoreboard objectives add ca.ench_lucky_lvl dummy
-scoreboard objectives add ca.ench_technique_lvl dummy
-scoreboard objectives add ca.ench_resonance_lvl dummy
-scoreboard objectives add ca.ench_invigorated_lvl dummy
-
-scoreboard objectives add ca.ench_cloudstep_lvl dummy
-scoreboard objectives add ca.ench_windborn_lvl dummy
+scoreboard objectives add ca.ench_precision_main_lvl dummy
+scoreboard objectives add ca.ench_precision_offh_lvl dummy
+scoreboard objectives add ca.ench_precision_head_lvl dummy
+scoreboard objectives add ca.ench_precision_chest_lvl dummy
+scoreboard objectives add ca.ench_precision_legs_lvl dummy
+scoreboard objectives add ca.ench_precision_feet_lvl dummy
+scoreboard objectives add ca.ench_precision_body_lvl dummy
+scoreboard objectives add ca.ench_precision_saddle_lvl dummy
 
 scoreboard objectives add ca.ench_echo_lvl dummy
+scoreboard objectives add ca.ench_echo_main_lvl dummy
+scoreboard objectives add ca.ench_echo_offh_lvl dummy
+scoreboard objectives add ca.ench_echo_head_lvl dummy
+scoreboard objectives add ca.ench_echo_chest_lvl dummy
+scoreboard objectives add ca.ench_echo_legs_lvl dummy
+scoreboard objectives add ca.ench_echo_feet_lvl dummy
+scoreboard objectives add ca.ench_echo_body_lvl dummy
+scoreboard objectives add ca.ench_echo_saddle_lvl dummy
+
 scoreboard objectives add ca.ench_reverb_lvl dummy
+scoreboard objectives add ca.ench_reverb_main_lvl dummy
+scoreboard objectives add ca.ench_reverb_offh_lvl dummy
+scoreboard objectives add ca.ench_reverb_head_lvl dummy
+scoreboard objectives add ca.ench_reverb_chest_lvl dummy
+scoreboard objectives add ca.ench_reverb_legs_lvl dummy
+scoreboard objectives add ca.ench_reverb_feet_lvl dummy
+scoreboard objectives add ca.ench_reverb_body_lvl dummy
+scoreboard objectives add ca.ench_reverb_saddle_lvl dummy
+
 scoreboard objectives add ca.ench_lifesteal_lvl dummy
+scoreboard objectives add ca.ench_lifesteal_main_lvl dummy
+scoreboard objectives add ca.ench_lifesteal_offh_lvl dummy
+scoreboard objectives add ca.ench_lifesteal_head_lvl dummy
+scoreboard objectives add ca.ench_lifesteal_chest_lvl dummy
+scoreboard objectives add ca.ench_lifesteal_legs_lvl dummy
+scoreboard objectives add ca.ench_lifesteal_feet_lvl dummy
+scoreboard objectives add ca.ench_lifesteal_body_lvl dummy
+scoreboard objectives add ca.ench_lifesteal_saddle_lvl dummy
 
-scoreboard objectives add ca.ench_blast_protection_lvl dummy
-scoreboard objectives add ca.ench_fire_protection_lvl dummy
+scoreboard objectives add ca.ench_cloudstep_lvl dummy
+scoreboard objectives add ca.ench_cloudstep_main_lvl dummy
+scoreboard objectives add ca.ench_cloudstep_offh_lvl dummy
+scoreboard objectives add ca.ench_cloudstep_head_lvl dummy
+scoreboard objectives add ca.ench_cloudstep_chest_lvl dummy
+scoreboard objectives add ca.ench_cloudstep_legs_lvl dummy
+scoreboard objectives add ca.ench_cloudstep_feet_lvl dummy
+scoreboard objectives add ca.ench_cloudstep_body_lvl dummy
+scoreboard objectives add ca.ench_cloudstep_saddle_lvl dummy
 
-scoreboard objectives add ca.ench_aqua_affinity_lvl dummy
-scoreboard objectives add ca.ench_depth_strider_lvl dummy
-scoreboard objectives add ca.ench_respiration_lvl dummy
-scoreboard objectives add ca.ench_swift_sneak_lvl dummy
-scoreboard objectives add ca.ench_soul_speed_lvl dummy
+scoreboard objectives add ca.ench_windborn_lvl dummy
+scoreboard objectives add ca.ench_windborn_main_lvl dummy
+scoreboard objectives add ca.ench_windborn_offh_lvl dummy
+scoreboard objectives add ca.ench_windborn_head_lvl dummy
+scoreboard objectives add ca.ench_windborn_chest_lvl dummy
+scoreboard objectives add ca.ench_windborn_legs_lvl dummy
+scoreboard objectives add ca.ench_windborn_feet_lvl dummy
+scoreboard objectives add ca.ench_windborn_body_lvl dummy
+scoreboard objectives add ca.ench_windborn_saddle_lvl dummy
 
-#Setup scoreboards for level tracking
-scoreboard objectives add ca.ench_celerity_gear_lvl dummy
-scoreboard objectives add ca.ench_dexterity_gear_lvl dummy
-scoreboard objectives add ca.ench_finesse_gear_lvl dummy
-scoreboard objectives add ca.ench_immovable_gear_lvl dummy
-scoreboard objectives add ca.ench_vitality_gear_lvl dummy
-
-scoreboard objectives add ca.ench_agility_gear_lvl dummy
-scoreboard objectives add ca.ench_extended_gear_lvl dummy
-scoreboard objectives add ca.ench_traveling_gear_lvl dummy
-scoreboard objectives add ca.ench_handling_gear_lvl dummy
-
-scoreboard objectives add ca.ench_precision_gear_lvl dummy
-scoreboard objectives add ca.ench_amplitude_gear_lvl dummy
-scoreboard objectives add ca.ench_lucky_gear_lvl dummy
-scoreboard objectives add ca.ench_technique_gear_lvl dummy
-scoreboard objectives add ca.ench_resonance_gear_lvl dummy
-scoreboard objectives add ca.ench_invigorated_gear_lvl dummy
-
-scoreboard objectives add ca.ench_cloudstep_gear_lvl dummy
-scoreboard objectives add ca.ench_windborn_gear_lvl dummy
-
-scoreboard objectives add ca.ench_echo_gear_lvl dummy
-scoreboard objectives add ca.ench_reverb_gear_lvl dummy
-scoreboard objectives add ca.ench_lifesteal_gear_lvl dummy
-
-scoreboard objectives add ca.ench_blast_protection_gear_lvl dummy
-scoreboard objectives add ca.ench_fire_protection_gear_lvl dummy
-
-scoreboard objectives add ca.ench_aqua_affinity_gear_lvl dummy
-scoreboard objectives add ca.ench_depth_strider_gear_lvl dummy
-scoreboard objectives add ca.ench_respiration_gear_lvl dummy
-scoreboard objectives add ca.ench_swift_sneak_gear_lvl dummy
-scoreboard objectives add ca.ench_soul_speed_gear_lvl dummy
-
-#Setup scoreboards for level tracking
-scoreboard objectives add ca.ench_celerity_hand_lvl dummy
-scoreboard objectives add ca.ench_dexterity_hand_lvl dummy
-scoreboard objectives add ca.ench_finesse_hand_lvl dummy
-scoreboard objectives add ca.ench_immovable_hand_lvl dummy
-scoreboard objectives add ca.ench_vitality_hand_lvl dummy
-
-scoreboard objectives add ca.ench_agility_hand_lvl dummy
-scoreboard objectives add ca.ench_extended_hand_lvl dummy
-scoreboard objectives add ca.ench_traveling_hand_lvl dummy
-scoreboard objectives add ca.ench_handling_hand_lvl dummy
-
-scoreboard objectives add ca.ench_precision_hand_lvl dummy
-scoreboard objectives add ca.ench_amplitude_hand_lvl dummy
-scoreboard objectives add ca.ench_lucky_hand_lvl dummy
-scoreboard objectives add ca.ench_technique_hand_lvl dummy
-scoreboard objectives add ca.ench_resonance_hand_lvl dummy
-scoreboard objectives add ca.ench_invigorated_hand_lvl dummy
-
-scoreboard objectives add ca.ench_cloudstep_hand_lvl dummy
-scoreboard objectives add ca.ench_windborn_hand_lvl dummy
-
-scoreboard objectives add ca.ench_echo_hand_lvl dummy
-scoreboard objectives add ca.ench_reverb_hand_lvl dummy
-scoreboard objectives add ca.ench_lifesteal_hand_lvl dummy
-
-scoreboard objectives add ca.ench_blast_protection_hand_lvl dummy
-scoreboard objectives add ca.ench_fire_protection_hand_lvl dummy
-
-scoreboard objectives add ca.ench_aqua_affinity_hand_lvl dummy
-scoreboard objectives add ca.ench_depth_strider_hand_lvl dummy
-scoreboard objectives add ca.ench_respiration_hand_lvl dummy
-scoreboard objectives add ca.ench_swift_sneak_hand_lvl dummy
-scoreboard objectives add ca.ench_soul_speed_hand_lvl dummy
 
 
 #Values for enchantments working
 
 #Values for attributes
+scoreboard objectives add ca.attr_ranged_damage_value_main dummy
+scoreboard objectives add ca.attr_ranged_damage_value_offh dummy
+scoreboard objectives add ca.attr_ranged_damage_value_head dummy
+scoreboard objectives add ca.attr_ranged_damage_value_chest dummy
+scoreboard objectives add ca.attr_ranged_damage_value_legs dummy
+scoreboard objectives add ca.attr_ranged_damage_value_feet dummy
+scoreboard objectives add ca.attr_ranged_damage_value_saddle dummy
+scoreboard objectives add ca.attr_ranged_damage_value_body dummy
+scoreboard objectives add ca.attr_ranged_damage_value_bonus dummy
+
+scoreboard objectives add ca.attr_ranged_damage_percent_main dummy
+scoreboard objectives add ca.attr_ranged_damage_percent_offh dummy
+scoreboard objectives add ca.attr_ranged_damage_percent_head dummy
+scoreboard objectives add ca.attr_ranged_damage_percent_chest dummy
+scoreboard objectives add ca.attr_ranged_damage_percent_legs dummy
+scoreboard objectives add ca.attr_ranged_damage_percent_feet dummy
+scoreboard objectives add ca.attr_ranged_damage_percent_saddle dummy
+scoreboard objectives add ca.attr_ranged_damage_percent_body dummy
+scoreboard objectives add ca.attr_ranged_damage_percent_bonus dummy
+
 scoreboard objectives add ca.attr_ranged_damage_value dummy
 scoreboard objectives add ca.attr_ranged_damage_percent dummy
 scoreboard objectives add ca.attr_ranged_damage_total dummy
+
+scoreboard objectives add ca.attr_ranged_velocity_value_main dummy
+scoreboard objectives add ca.attr_ranged_velocity_value_offh dummy
+scoreboard objectives add ca.attr_ranged_velocity_value_head dummy
+scoreboard objectives add ca.attr_ranged_velocity_value_chest dummy
+scoreboard objectives add ca.attr_ranged_velocity_value_legs dummy
+scoreboard objectives add ca.attr_ranged_velocity_value_feet dummy
+scoreboard objectives add ca.attr_ranged_velocity_value_saddle dummy
+scoreboard objectives add ca.attr_ranged_velocity_value_body dummy
+scoreboard objectives add ca.attr_ranged_velocity_value_bonus dummy
+
+scoreboard objectives add ca.attr_ranged_velocity_percent_main dummy
+scoreboard objectives add ca.attr_ranged_velocity_percent_offh dummy
+scoreboard objectives add ca.attr_ranged_velocity_percent_head dummy
+scoreboard objectives add ca.attr_ranged_velocity_percent_chest dummy
+scoreboard objectives add ca.attr_ranged_velocity_percent_legs dummy
+scoreboard objectives add ca.attr_ranged_velocity_percent_feet dummy
+scoreboard objectives add ca.attr_ranged_velocity_percent_saddle dummy
+scoreboard objectives add ca.attr_ranged_velocity_percent_body dummy
+scoreboard objectives add ca.attr_ranged_velocity_percent_bonus dummy
 
 scoreboard objectives add ca.attr_ranged_velocity_value dummy
 scoreboard objectives add ca.attr_ranged_velocity_percent dummy
 scoreboard objectives add ca.attr_ranged_velocity_total dummy
 
+scoreboard objectives add ca.attr_combat_luck_value_main dummy
+scoreboard objectives add ca.attr_combat_luck_value_offh dummy
+scoreboard objectives add ca.attr_combat_luck_value_head dummy
+scoreboard objectives add ca.attr_combat_luck_value_chest dummy
+scoreboard objectives add ca.attr_combat_luck_value_legs dummy
+scoreboard objectives add ca.attr_combat_luck_value_feet dummy
+scoreboard objectives add ca.attr_combat_luck_value_saddle dummy
+scoreboard objectives add ca.attr_combat_luck_value_body dummy
+scoreboard objectives add ca.attr_combat_luck_value_bonus dummy
+
+scoreboard objectives add ca.attr_combat_luck_percent_main dummy
+scoreboard objectives add ca.attr_combat_luck_percent_offh dummy
+scoreboard objectives add ca.attr_combat_luck_percent_head dummy
+scoreboard objectives add ca.attr_combat_luck_percent_chest dummy
+scoreboard objectives add ca.attr_combat_luck_percent_legs dummy
+scoreboard objectives add ca.attr_combat_luck_percent_feet dummy
+scoreboard objectives add ca.attr_combat_luck_percent_saddle dummy
+scoreboard objectives add ca.attr_combat_luck_percent_body dummy
+scoreboard objectives add ca.attr_combat_luck_percent_bonus dummy
 
 scoreboard objectives add ca.attr_combat_luck_value dummy
 scoreboard objectives add ca.attr_combat_luck_percent dummy
 scoreboard objectives add ca.attr_combat_luck_total dummy
 
+scoreboard objectives add ca.attr_potion_size_value_main dummy
+scoreboard objectives add ca.attr_potion_size_value_offh dummy
+scoreboard objectives add ca.attr_potion_size_value_head dummy
+scoreboard objectives add ca.attr_potion_size_value_chest dummy
+scoreboard objectives add ca.attr_potion_size_value_legs dummy
+scoreboard objectives add ca.attr_potion_size_value_feet dummy
+scoreboard objectives add ca.attr_potion_size_value_saddle dummy
+scoreboard objectives add ca.attr_potion_size_value_body dummy
+scoreboard objectives add ca.attr_potion_size_value_bonus dummy
+
+scoreboard objectives add ca.attr_potion_size_percent_main dummy
+scoreboard objectives add ca.attr_potion_size_percent_offh dummy
+scoreboard objectives add ca.attr_potion_size_percent_head dummy
+scoreboard objectives add ca.attr_potion_size_percent_chest dummy
+scoreboard objectives add ca.attr_potion_size_percent_legs dummy
+scoreboard objectives add ca.attr_potion_size_percent_feet dummy
+scoreboard objectives add ca.attr_potion_size_percent_saddle dummy
+scoreboard objectives add ca.attr_potion_size_percent_body dummy
+scoreboard objectives add ca.attr_potion_size_percent_bonus dummy
 
 scoreboard objectives add ca.attr_potion_size_value dummy
 scoreboard objectives add ca.attr_potion_size_percent dummy
 scoreboard objectives add ca.attr_potion_size_total dummy
 
+scoreboard objectives add ca.attr_aoe_size_value_main dummy
+scoreboard objectives add ca.attr_aoe_size_value_offh dummy
+scoreboard objectives add ca.attr_aoe_size_value_head dummy
+scoreboard objectives add ca.attr_aoe_size_value_chest dummy
+scoreboard objectives add ca.attr_aoe_size_value_legs dummy
+scoreboard objectives add ca.attr_aoe_size_value_feet dummy
+scoreboard objectives add ca.attr_aoe_size_value_saddle dummy
+scoreboard objectives add ca.attr_aoe_size_value_body dummy
+scoreboard objectives add ca.attr_aoe_size_value_bonus dummy
+
+scoreboard objectives add ca.attr_aoe_size_percent_main dummy
+scoreboard objectives add ca.attr_aoe_size_percent_offh dummy
+scoreboard objectives add ca.attr_aoe_size_percent_head dummy
+scoreboard objectives add ca.attr_aoe_size_percent_chest dummy
+scoreboard objectives add ca.attr_aoe_size_percent_legs dummy
+scoreboard objectives add ca.attr_aoe_size_percent_feet dummy
+scoreboard objectives add ca.attr_aoe_size_percent_saddle dummy
+scoreboard objectives add ca.attr_aoe_size_percent_body dummy
+scoreboard objectives add ca.attr_aoe_size_percent_bonus dummy
 
 scoreboard objectives add ca.attr_aoe_size_value dummy
 scoreboard objectives add ca.attr_aoe_size_percent dummy
 scoreboard objectives add ca.attr_aoe_size_total dummy
 
+scoreboard objectives add ca.attr_aoe_damage_value_main dummy
+scoreboard objectives add ca.attr_aoe_damage_value_offh dummy
+scoreboard objectives add ca.attr_aoe_damage_value_head dummy
+scoreboard objectives add ca.attr_aoe_damage_value_chest dummy
+scoreboard objectives add ca.attr_aoe_damage_value_legs dummy
+scoreboard objectives add ca.attr_aoe_damage_value_feet dummy
+scoreboard objectives add ca.attr_aoe_damage_value_saddle dummy
+scoreboard objectives add ca.attr_aoe_damage_value_body dummy
+scoreboard objectives add ca.attr_aoe_damage_value_bonus dummy
+
+scoreboard objectives add ca.attr_aoe_damage_percent_main dummy
+scoreboard objectives add ca.attr_aoe_damage_percent_offh dummy
+scoreboard objectives add ca.attr_aoe_damage_percent_head dummy
+scoreboard objectives add ca.attr_aoe_damage_percent_chest dummy
+scoreboard objectives add ca.attr_aoe_damage_percent_legs dummy
+scoreboard objectives add ca.attr_aoe_damage_percent_feet dummy
+scoreboard objectives add ca.attr_aoe_damage_percent_saddle dummy
+scoreboard objectives add ca.attr_aoe_damage_percent_body dummy
+scoreboard objectives add ca.attr_aoe_damage_percent_bonus dummy
+
 scoreboard objectives add ca.attr_aoe_damage_value dummy
 scoreboard objectives add ca.attr_aoe_damage_percent dummy
 scoreboard objectives add ca.attr_aoe_damage_total dummy
 
+scoreboard objectives add ca.attr_status_inflict_damage_value_main dummy
+scoreboard objectives add ca.attr_status_inflict_damage_value_offh dummy
+scoreboard objectives add ca.attr_status_inflict_damage_value_head dummy
+scoreboard objectives add ca.attr_status_inflict_damage_value_chest dummy
+scoreboard objectives add ca.attr_status_inflict_damage_value_legs dummy
+scoreboard objectives add ca.attr_status_inflict_damage_value_feet dummy
+scoreboard objectives add ca.attr_status_inflict_damage_value_saddle dummy
+scoreboard objectives add ca.attr_status_inflict_damage_value_body dummy
+scoreboard objectives add ca.attr_status_inflict_damage_value_bonus dummy
+
+scoreboard objectives add ca.attr_status_inflict_damage_percent_main dummy
+scoreboard objectives add ca.attr_status_inflict_damage_percent_offh dummy
+scoreboard objectives add ca.attr_status_inflict_damage_percent_head dummy
+scoreboard objectives add ca.attr_status_inflict_damage_percent_chest dummy
+scoreboard objectives add ca.attr_status_inflict_damage_percent_legs dummy
+scoreboard objectives add ca.attr_status_inflict_damage_percent_feet dummy
+scoreboard objectives add ca.attr_status_inflict_damage_percent_saddle dummy
+scoreboard objectives add ca.attr_status_inflict_damage_percent_body dummy
+scoreboard objectives add ca.attr_status_inflict_damage_percent_bonus dummy
 
 scoreboard objectives add ca.attr_status_inflict_damage_value dummy
 scoreboard objectives add ca.attr_status_inflict_damage_percent dummy
 scoreboard objectives add ca.attr_status_inflict_damage_total dummy
 
+scoreboard objectives add ca.attr_status_inflict_duration_value_main dummy
+scoreboard objectives add ca.attr_status_inflict_duration_value_offh dummy
+scoreboard objectives add ca.attr_status_inflict_duration_value_head dummy
+scoreboard objectives add ca.attr_status_inflict_duration_value_chest dummy
+scoreboard objectives add ca.attr_status_inflict_duration_value_legs dummy
+scoreboard objectives add ca.attr_status_inflict_duration_value_feet dummy
+scoreboard objectives add ca.attr_status_inflict_duration_value_saddle dummy
+scoreboard objectives add ca.attr_status_inflict_duration_value_body dummy
+scoreboard objectives add ca.attr_status_inflict_duration_value_bonus dummy
+
+scoreboard objectives add ca.attr_status_inflict_duration_percent_main dummy
+scoreboard objectives add ca.attr_status_inflict_duration_percent_offh dummy
+scoreboard objectives add ca.attr_status_inflict_duration_percent_head dummy
+scoreboard objectives add ca.attr_status_inflict_duration_percent_chest dummy
+scoreboard objectives add ca.attr_status_inflict_duration_percent_legs dummy
+scoreboard objectives add ca.attr_status_inflict_duration_percent_feet dummy
+scoreboard objectives add ca.attr_status_inflict_duration_percent_saddle dummy
+scoreboard objectives add ca.attr_status_inflict_duration_percent_body dummy
+scoreboard objectives add ca.attr_status_inflict_duration_percent_bonus dummy
+
 scoreboard objectives add ca.attr_status_inflict_duration_value dummy
 scoreboard objectives add ca.attr_status_inflict_duration_percent dummy
 scoreboard objectives add ca.attr_status_inflict_duration_total dummy
+
+scoreboard objectives add ca.attr_status_inflict_potency_value_main dummy
+scoreboard objectives add ca.attr_status_inflict_potency_value_offh dummy
+scoreboard objectives add ca.attr_status_inflict_potency_value_head dummy
+scoreboard objectives add ca.attr_status_inflict_potency_value_chest dummy
+scoreboard objectives add ca.attr_status_inflict_potency_value_legs dummy
+scoreboard objectives add ca.attr_status_inflict_potency_value_feet dummy
+scoreboard objectives add ca.attr_status_inflict_potency_value_saddle dummy
+scoreboard objectives add ca.attr_status_inflict_potency_value_body dummy
+scoreboard objectives add ca.attr_status_inflict_potency_value_bonus dummy
+
+scoreboard objectives add ca.attr_status_inflict_potency_percent_main dummy
+scoreboard objectives add ca.attr_status_inflict_potency_percent_offh dummy
+scoreboard objectives add ca.attr_status_inflict_potency_percent_head dummy
+scoreboard objectives add ca.attr_status_inflict_potency_percent_chest dummy
+scoreboard objectives add ca.attr_status_inflict_potency_percent_legs dummy
+scoreboard objectives add ca.attr_status_inflict_potency_percent_feet dummy
+scoreboard objectives add ca.attr_status_inflict_potency_percent_saddle dummy
+scoreboard objectives add ca.attr_status_inflict_potency_percent_body dummy
+scoreboard objectives add ca.attr_status_inflict_potency_percent_bonus dummy
 
 scoreboard objectives add ca.attr_status_inflict_potency_value dummy
 scoreboard objectives add ca.attr_status_inflict_potency_percent dummy
 scoreboard objectives add ca.attr_status_inflict_potency_total dummy
 
+scoreboard objectives add ca.attr_status_apply_duration_value_main dummy
+scoreboard objectives add ca.attr_status_apply_duration_value_offh dummy
+scoreboard objectives add ca.attr_status_apply_duration_value_head dummy
+scoreboard objectives add ca.attr_status_apply_duration_value_chest dummy
+scoreboard objectives add ca.attr_status_apply_duration_value_legs dummy
+scoreboard objectives add ca.attr_status_apply_duration_value_feet dummy
+scoreboard objectives add ca.attr_status_apply_duration_value_saddle dummy
+scoreboard objectives add ca.attr_status_apply_duration_value_body dummy
+scoreboard objectives add ca.attr_status_apply_duration_value_bonus dummy
+
+scoreboard objectives add ca.attr_status_apply_duration_percent_main dummy
+scoreboard objectives add ca.attr_status_apply_duration_percent_offh dummy
+scoreboard objectives add ca.attr_status_apply_duration_percent_head dummy
+scoreboard objectives add ca.attr_status_apply_duration_percent_chest dummy
+scoreboard objectives add ca.attr_status_apply_duration_percent_legs dummy
+scoreboard objectives add ca.attr_status_apply_duration_percent_feet dummy
+scoreboard objectives add ca.attr_status_apply_duration_percent_saddle dummy
+scoreboard objectives add ca.attr_status_apply_duration_percent_body dummy
+scoreboard objectives add ca.attr_status_apply_duration_percent_bonus dummy
 
 scoreboard objectives add ca.attr_status_apply_duration_value dummy
 scoreboard objectives add ca.attr_status_apply_duration_percent dummy
 scoreboard objectives add ca.attr_status_apply_duration_total dummy
 
+scoreboard objectives add ca.attr_status_apply_potency_value_main dummy
+scoreboard objectives add ca.attr_status_apply_potency_value_offh dummy
+scoreboard objectives add ca.attr_status_apply_potency_value_head dummy
+scoreboard objectives add ca.attr_status_apply_potency_value_chest dummy
+scoreboard objectives add ca.attr_status_apply_potency_value_legs dummy
+scoreboard objectives add ca.attr_status_apply_potency_value_feet dummy
+scoreboard objectives add ca.attr_status_apply_potency_value_saddle dummy
+scoreboard objectives add ca.attr_status_apply_potency_value_body dummy
+scoreboard objectives add ca.attr_status_apply_potency_value_bonus dummy
+
+scoreboard objectives add ca.attr_status_apply_potency_percent_main dummy
+scoreboard objectives add ca.attr_status_apply_potency_percent_offh dummy
+scoreboard objectives add ca.attr_status_apply_potency_percent_head dummy
+scoreboard objectives add ca.attr_status_apply_potency_percent_chest dummy
+scoreboard objectives add ca.attr_status_apply_potency_percent_legs dummy
+scoreboard objectives add ca.attr_status_apply_potency_percent_feet dummy
+scoreboard objectives add ca.attr_status_apply_potency_percent_saddle dummy
+scoreboard objectives add ca.attr_status_apply_potency_percent_body dummy
+scoreboard objectives add ca.attr_status_apply_potency_percent_bonus dummy
+
 scoreboard objectives add ca.attr_status_apply_potency_value dummy
 scoreboard objectives add ca.attr_status_apply_potency_percent dummy
 scoreboard objectives add ca.attr_status_apply_potency_total dummy
 
+scoreboard objectives add ca.attr_healing_power_value_main dummy
+scoreboard objectives add ca.attr_healing_power_value_offh dummy
+scoreboard objectives add ca.attr_healing_power_value_head dummy
+scoreboard objectives add ca.attr_healing_power_value_chest dummy
+scoreboard objectives add ca.attr_healing_power_value_legs dummy
+scoreboard objectives add ca.attr_healing_power_value_feet dummy
+scoreboard objectives add ca.attr_healing_power_value_saddle dummy
+scoreboard objectives add ca.attr_healing_power_value_body dummy
+scoreboard objectives add ca.attr_healing_power_value_bonus dummy
+
+scoreboard objectives add ca.attr_healing_power_percent_main dummy
+scoreboard objectives add ca.attr_healing_power_percent_offh dummy
+scoreboard objectives add ca.attr_healing_power_percent_head dummy
+scoreboard objectives add ca.attr_healing_power_percent_chest dummy
+scoreboard objectives add ca.attr_healing_power_percent_legs dummy
+scoreboard objectives add ca.attr_healing_power_percent_feet dummy
+scoreboard objectives add ca.attr_healing_power_percent_saddle dummy
+scoreboard objectives add ca.attr_healing_power_percent_body dummy
+scoreboard objectives add ca.attr_healing_power_percent_bonus dummy
 
 scoreboard objectives add ca.attr_healing_power_value dummy
 scoreboard objectives add ca.attr_healing_power_percent dummy
 scoreboard objectives add ca.attr_healing_power_total dummy
 
+scoreboard objectives add ca.attr_lucky_hit_chance_value_main dummy
+scoreboard objectives add ca.attr_lucky_hit_chance_value_offh dummy
+scoreboard objectives add ca.attr_lucky_hit_chance_value_head dummy
+scoreboard objectives add ca.attr_lucky_hit_chance_value_chest dummy
+scoreboard objectives add ca.attr_lucky_hit_chance_value_legs dummy
+scoreboard objectives add ca.attr_lucky_hit_chance_value_feet dummy
+scoreboard objectives add ca.attr_lucky_hit_chance_value_saddle dummy
+scoreboard objectives add ca.attr_lucky_hit_chance_value_body dummy
+scoreboard objectives add ca.attr_lucky_hit_chance_value_bonus dummy
+
+scoreboard objectives add ca.attr_lucky_hit_chance_percent_main dummy
+scoreboard objectives add ca.attr_lucky_hit_chance_percent_offh dummy
+scoreboard objectives add ca.attr_lucky_hit_chance_percent_head dummy
+scoreboard objectives add ca.attr_lucky_hit_chance_percent_chest dummy
+scoreboard objectives add ca.attr_lucky_hit_chance_percent_legs dummy
+scoreboard objectives add ca.attr_lucky_hit_chance_percent_feet dummy
+scoreboard objectives add ca.attr_lucky_hit_chance_percent_saddle dummy
+scoreboard objectives add ca.attr_lucky_hit_chance_percent_body dummy
+scoreboard objectives add ca.attr_lucky_hit_chance_percent_bonus dummy
 
 scoreboard objectives add ca.attr_lucky_hit_chance_value dummy
 scoreboard objectives add ca.attr_lucky_hit_chance_percent dummy
 scoreboard objectives add ca.attr_lucky_hit_chance_total dummy
 
+scoreboard objectives add ca.attr_lucky_hit_damage_value_main dummy
+scoreboard objectives add ca.attr_lucky_hit_damage_value_offh dummy
+scoreboard objectives add ca.attr_lucky_hit_damage_value_head dummy
+scoreboard objectives add ca.attr_lucky_hit_damage_value_chest dummy
+scoreboard objectives add ca.attr_lucky_hit_damage_value_legs dummy
+scoreboard objectives add ca.attr_lucky_hit_damage_value_feet dummy
+scoreboard objectives add ca.attr_lucky_hit_damage_value_saddle dummy
+scoreboard objectives add ca.attr_lucky_hit_damage_value_body dummy
+scoreboard objectives add ca.attr_lucky_hit_damage_value_bonus dummy
+
+scoreboard objectives add ca.attr_lucky_hit_damage_percent_main dummy
+scoreboard objectives add ca.attr_lucky_hit_damage_percent_offh dummy
+scoreboard objectives add ca.attr_lucky_hit_damage_percent_head dummy
+scoreboard objectives add ca.attr_lucky_hit_damage_percent_chest dummy
+scoreboard objectives add ca.attr_lucky_hit_damage_percent_legs dummy
+scoreboard objectives add ca.attr_lucky_hit_damage_percent_feet dummy
+scoreboard objectives add ca.attr_lucky_hit_damage_percent_saddle dummy
+scoreboard objectives add ca.attr_lucky_hit_damage_percent_body dummy
+scoreboard objectives add ca.attr_lucky_hit_damage_percent_bonus dummy
+
 scoreboard objectives add ca.attr_lucky_hit_damage_value dummy
 scoreboard objectives add ca.attr_lucky_hit_damage_percent dummy
 scoreboard objectives add ca.attr_lucky_hit_damage_total dummy
 
+scoreboard objectives add ca.attr_restrike_hit_chance_value_main dummy
+scoreboard objectives add ca.attr_restrike_hit_chance_value_offh dummy
+scoreboard objectives add ca.attr_restrike_hit_chance_value_head dummy
+scoreboard objectives add ca.attr_restrike_hit_chance_value_chest dummy
+scoreboard objectives add ca.attr_restrike_hit_chance_value_legs dummy
+scoreboard objectives add ca.attr_restrike_hit_chance_value_feet dummy
+scoreboard objectives add ca.attr_restrike_hit_chance_value_saddle dummy
+scoreboard objectives add ca.attr_restrike_hit_chance_value_body dummy
+scoreboard objectives add ca.attr_restrike_hit_chance_value_bonus dummy
 
-scoreboard objectives add ca.attr_chaining_hit_damage_value dummy
-scoreboard objectives add ca.attr_chaining_hit_damage_percent dummy
-scoreboard objectives add ca.attr_chaining_hit_damage_total dummy
-
-scoreboard objectives add ca.attr_chaining_hit_chance_value dummy
-scoreboard objectives add ca.attr_chaining_hit_chance_percent dummy
-scoreboard objectives add ca.attr_chaining_hit_chance_total dummy
-
-scoreboard objectives add ca.attr_chaining_hit_amount_value dummy
-scoreboard objectives add ca.attr_chaining_hit_amount_percent dummy
-scoreboard objectives add ca.attr_chaining_hit_amount_total dummy
-
-scoreboard objectives add ca.attr_restrike_hit_damage_value dummy
-scoreboard objectives add ca.attr_restrike_hit_damage_percent dummy
-scoreboard objectives add ca.attr_restrike_hit_damage_total dummy
+scoreboard objectives add ca.attr_restrike_hit_chance_percent_main dummy
+scoreboard objectives add ca.attr_restrike_hit_chance_percent_offh dummy
+scoreboard objectives add ca.attr_restrike_hit_chance_percent_head dummy
+scoreboard objectives add ca.attr_restrike_hit_chance_percent_chest dummy
+scoreboard objectives add ca.attr_restrike_hit_chance_percent_legs dummy
+scoreboard objectives add ca.attr_restrike_hit_chance_percent_feet dummy
+scoreboard objectives add ca.attr_restrike_hit_chance_percent_saddle dummy
+scoreboard objectives add ca.attr_restrike_hit_chance_percent_body dummy
+scoreboard objectives add ca.attr_restrike_hit_chance_percent_bonus dummy
 
 scoreboard objectives add ca.attr_restrike_hit_chance_value dummy
 scoreboard objectives add ca.attr_restrike_hit_chance_percent dummy
 scoreboard objectives add ca.attr_restrike_hit_chance_total dummy
 
+scoreboard objectives add ca.attr_restrike_hit_damage_value_main dummy
+scoreboard objectives add ca.attr_restrike_hit_damage_value_offh dummy
+scoreboard objectives add ca.attr_restrike_hit_damage_value_head dummy
+scoreboard objectives add ca.attr_restrike_hit_damage_value_chest dummy
+scoreboard objectives add ca.attr_restrike_hit_damage_value_legs dummy
+scoreboard objectives add ca.attr_restrike_hit_damage_value_feet dummy
+scoreboard objectives add ca.attr_restrike_hit_damage_value_saddle dummy
+scoreboard objectives add ca.attr_restrike_hit_damage_value_body dummy
+scoreboard objectives add ca.attr_restrike_hit_damage_value_bonus dummy
+
+scoreboard objectives add ca.attr_restrike_hit_damage_percent_main dummy
+scoreboard objectives add ca.attr_restrike_hit_damage_percent_offh dummy
+scoreboard objectives add ca.attr_restrike_hit_damage_percent_head dummy
+scoreboard objectives add ca.attr_restrike_hit_damage_percent_chest dummy
+scoreboard objectives add ca.attr_restrike_hit_damage_percent_legs dummy
+scoreboard objectives add ca.attr_restrike_hit_damage_percent_feet dummy
+scoreboard objectives add ca.attr_restrike_hit_damage_percent_saddle dummy
+scoreboard objectives add ca.attr_restrike_hit_damage_percent_body dummy
+scoreboard objectives add ca.attr_restrike_hit_damage_percent_bonus dummy
+
+scoreboard objectives add ca.attr_restrike_hit_damage_value dummy
+scoreboard objectives add ca.attr_restrike_hit_damage_percent dummy
+scoreboard objectives add ca.attr_restrike_hit_damage_total dummy
+
+scoreboard objectives add ca.attr_restrike_hit_amount_value_main dummy
+scoreboard objectives add ca.attr_restrike_hit_amount_value_offh dummy
+scoreboard objectives add ca.attr_restrike_hit_amount_value_head dummy
+scoreboard objectives add ca.attr_restrike_hit_amount_value_chest dummy
+scoreboard objectives add ca.attr_restrike_hit_amount_value_legs dummy
+scoreboard objectives add ca.attr_restrike_hit_amount_value_feet dummy
+scoreboard objectives add ca.attr_restrike_hit_amount_value_saddle dummy
+scoreboard objectives add ca.attr_restrike_hit_amount_value_body dummy
+scoreboard objectives add ca.attr_restrike_hit_amount_value_bonus dummy
+
+scoreboard objectives add ca.attr_restrike_hit_amount_percent_main dummy
+scoreboard objectives add ca.attr_restrike_hit_amount_percent_offh dummy
+scoreboard objectives add ca.attr_restrike_hit_amount_percent_head dummy
+scoreboard objectives add ca.attr_restrike_hit_amount_percent_chest dummy
+scoreboard objectives add ca.attr_restrike_hit_amount_percent_legs dummy
+scoreboard objectives add ca.attr_restrike_hit_amount_percent_feet dummy
+scoreboard objectives add ca.attr_restrike_hit_amount_percent_saddle dummy
+scoreboard objectives add ca.attr_restrike_hit_amount_percent_body dummy
+scoreboard objectives add ca.attr_restrike_hit_amount_percent_bonus dummy
+
 scoreboard objectives add ca.attr_restrike_hit_amount_value dummy
 scoreboard objectives add ca.attr_restrike_hit_amount_percent dummy
 scoreboard objectives add ca.attr_restrike_hit_amount_total dummy
+
+scoreboard objectives add ca.attr_restrike_hit_rate_value_main dummy
+scoreboard objectives add ca.attr_restrike_hit_rate_value_offh dummy
+scoreboard objectives add ca.attr_restrike_hit_rate_value_head dummy
+scoreboard objectives add ca.attr_restrike_hit_rate_value_chest dummy
+scoreboard objectives add ca.attr_restrike_hit_rate_value_legs dummy
+scoreboard objectives add ca.attr_restrike_hit_rate_value_feet dummy
+scoreboard objectives add ca.attr_restrike_hit_rate_value_saddle dummy
+scoreboard objectives add ca.attr_restrike_hit_rate_value_body dummy
+scoreboard objectives add ca.attr_restrike_hit_rate_value_bonus dummy
+
+scoreboard objectives add ca.attr_restrike_hit_rate_percent_main dummy
+scoreboard objectives add ca.attr_restrike_hit_rate_percent_offh dummy
+scoreboard objectives add ca.attr_restrike_hit_rate_percent_head dummy
+scoreboard objectives add ca.attr_restrike_hit_rate_percent_chest dummy
+scoreboard objectives add ca.attr_restrike_hit_rate_percent_legs dummy
+scoreboard objectives add ca.attr_restrike_hit_rate_percent_feet dummy
+scoreboard objectives add ca.attr_restrike_hit_rate_percent_saddle dummy
+scoreboard objectives add ca.attr_restrike_hit_rate_percent_body dummy
+scoreboard objectives add ca.attr_restrike_hit_rate_percent_bonus dummy
 
 scoreboard objectives add ca.attr_restrike_hit_rate_value dummy
 scoreboard objectives add ca.attr_restrike_hit_rate_percent dummy
 scoreboard objectives add ca.attr_restrike_hit_rate_total dummy
 
+scoreboard objectives add ca.attr_chaining_hit_chance_value_main dummy
+scoreboard objectives add ca.attr_chaining_hit_chance_value_offh dummy
+scoreboard objectives add ca.attr_chaining_hit_chance_value_head dummy
+scoreboard objectives add ca.attr_chaining_hit_chance_value_chest dummy
+scoreboard objectives add ca.attr_chaining_hit_chance_value_legs dummy
+scoreboard objectives add ca.attr_chaining_hit_chance_value_feet dummy
+scoreboard objectives add ca.attr_chaining_hit_chance_value_saddle dummy
+scoreboard objectives add ca.attr_chaining_hit_chance_value_body dummy
+scoreboard objectives add ca.attr_chaining_hit_chance_value_bonus dummy
+
+scoreboard objectives add ca.attr_chaining_hit_chance_percent_main dummy
+scoreboard objectives add ca.attr_chaining_hit_chance_percent_offh dummy
+scoreboard objectives add ca.attr_chaining_hit_chance_percent_head dummy
+scoreboard objectives add ca.attr_chaining_hit_chance_percent_chest dummy
+scoreboard objectives add ca.attr_chaining_hit_chance_percent_legs dummy
+scoreboard objectives add ca.attr_chaining_hit_chance_percent_feet dummy
+scoreboard objectives add ca.attr_chaining_hit_chance_percent_saddle dummy
+scoreboard objectives add ca.attr_chaining_hit_chance_percent_body dummy
+scoreboard objectives add ca.attr_chaining_hit_chance_percent_bonus dummy
+
+scoreboard objectives add ca.attr_chaining_hit_chance_value dummy
+scoreboard objectives add ca.attr_chaining_hit_chance_percent dummy
+scoreboard objectives add ca.attr_chaining_hit_chance_total dummy
+
+scoreboard objectives add ca.attr_chaining_hit_damage_value_main dummy
+scoreboard objectives add ca.attr_chaining_hit_damage_value_offh dummy
+scoreboard objectives add ca.attr_chaining_hit_damage_value_head dummy
+scoreboard objectives add ca.attr_chaining_hit_damage_value_chest dummy
+scoreboard objectives add ca.attr_chaining_hit_damage_value_legs dummy
+scoreboard objectives add ca.attr_chaining_hit_damage_value_feet dummy
+scoreboard objectives add ca.attr_chaining_hit_damage_value_saddle dummy
+scoreboard objectives add ca.attr_chaining_hit_damage_value_body dummy
+scoreboard objectives add ca.attr_chaining_hit_damage_value_bonus dummy
+
+scoreboard objectives add ca.attr_chaining_hit_damage_percent_main dummy
+scoreboard objectives add ca.attr_chaining_hit_damage_percent_offh dummy
+scoreboard objectives add ca.attr_chaining_hit_damage_percent_head dummy
+scoreboard objectives add ca.attr_chaining_hit_damage_percent_chest dummy
+scoreboard objectives add ca.attr_chaining_hit_damage_percent_legs dummy
+scoreboard objectives add ca.attr_chaining_hit_damage_percent_feet dummy
+scoreboard objectives add ca.attr_chaining_hit_damage_percent_saddle dummy
+scoreboard objectives add ca.attr_chaining_hit_damage_percent_body dummy
+scoreboard objectives add ca.attr_chaining_hit_damage_percent_bonus dummy
+
+scoreboard objectives add ca.attr_chaining_hit_damage_value dummy
+scoreboard objectives add ca.attr_chaining_hit_damage_percent dummy
+scoreboard objectives add ca.attr_chaining_hit_damage_total dummy
+
+scoreboard objectives add ca.attr_chaining_hit_amount_value_main dummy
+scoreboard objectives add ca.attr_chaining_hit_amount_value_offh dummy
+scoreboard objectives add ca.attr_chaining_hit_amount_value_head dummy
+scoreboard objectives add ca.attr_chaining_hit_amount_value_chest dummy
+scoreboard objectives add ca.attr_chaining_hit_amount_value_legs dummy
+scoreboard objectives add ca.attr_chaining_hit_amount_value_feet dummy
+scoreboard objectives add ca.attr_chaining_hit_amount_value_saddle dummy
+scoreboard objectives add ca.attr_chaining_hit_amount_value_body dummy
+scoreboard objectives add ca.attr_chaining_hit_amount_value_bonus dummy
+
+scoreboard objectives add ca.attr_chaining_hit_amount_percent_main dummy
+scoreboard objectives add ca.attr_chaining_hit_amount_percent_offh dummy
+scoreboard objectives add ca.attr_chaining_hit_amount_percent_head dummy
+scoreboard objectives add ca.attr_chaining_hit_amount_percent_chest dummy
+scoreboard objectives add ca.attr_chaining_hit_amount_percent_legs dummy
+scoreboard objectives add ca.attr_chaining_hit_amount_percent_feet dummy
+scoreboard objectives add ca.attr_chaining_hit_amount_percent_saddle dummy
+scoreboard objectives add ca.attr_chaining_hit_amount_percent_body dummy
+scoreboard objectives add ca.attr_chaining_hit_amount_percent_bonus dummy
+
+scoreboard objectives add ca.attr_chaining_hit_amount_value dummy
+scoreboard objectives add ca.attr_chaining_hit_amount_percent dummy
+scoreboard objectives add ca.attr_chaining_hit_amount_total dummy
+
+scoreboard objectives add ca.attr_life_drain_chance_value_main dummy
+scoreboard objectives add ca.attr_life_drain_chance_value_offh dummy
+scoreboard objectives add ca.attr_life_drain_chance_value_head dummy
+scoreboard objectives add ca.attr_life_drain_chance_value_chest dummy
+scoreboard objectives add ca.attr_life_drain_chance_value_legs dummy
+scoreboard objectives add ca.attr_life_drain_chance_value_feet dummy
+scoreboard objectives add ca.attr_life_drain_chance_value_saddle dummy
+scoreboard objectives add ca.attr_life_drain_chance_value_body dummy
+scoreboard objectives add ca.attr_life_drain_chance_value_bonus dummy
+
+scoreboard objectives add ca.attr_life_drain_chance_percent_main dummy
+scoreboard objectives add ca.attr_life_drain_chance_percent_offh dummy
+scoreboard objectives add ca.attr_life_drain_chance_percent_head dummy
+scoreboard objectives add ca.attr_life_drain_chance_percent_chest dummy
+scoreboard objectives add ca.attr_life_drain_chance_percent_legs dummy
+scoreboard objectives add ca.attr_life_drain_chance_percent_feet dummy
+scoreboard objectives add ca.attr_life_drain_chance_percent_saddle dummy
+scoreboard objectives add ca.attr_life_drain_chance_percent_body dummy
+scoreboard objectives add ca.attr_life_drain_chance_percent_bonus dummy
 
 scoreboard objectives add ca.attr_life_drain_chance_value dummy
 scoreboard objectives add ca.attr_life_drain_chance_percent dummy
 scoreboard objectives add ca.attr_life_drain_chance_total dummy
 
-scoreboard objectives add ca.attr_life_drain_amount_value dummy
-scoreboard objectives add ca.attr_life_drain_amount_percent dummy
-scoreboard objectives add ca.attr_life_drain_amount_total dummy
+scoreboard objectives add ca.attr_life_drain_damage_value_main dummy
+scoreboard objectives add ca.attr_life_drain_damage_value_offh dummy
+scoreboard objectives add ca.attr_life_drain_damage_value_head dummy
+scoreboard objectives add ca.attr_life_drain_damage_value_chest dummy
+scoreboard objectives add ca.attr_life_drain_damage_value_legs dummy
+scoreboard objectives add ca.attr_life_drain_damage_value_feet dummy
+scoreboard objectives add ca.attr_life_drain_damage_value_saddle dummy
+scoreboard objectives add ca.attr_life_drain_damage_value_body dummy
+scoreboard objectives add ca.attr_life_drain_damage_value_bonus dummy
 
+scoreboard objectives add ca.attr_life_drain_damage_percent_main dummy
+scoreboard objectives add ca.attr_life_drain_damage_percent_offh dummy
+scoreboard objectives add ca.attr_life_drain_damage_percent_head dummy
+scoreboard objectives add ca.attr_life_drain_damage_percent_chest dummy
+scoreboard objectives add ca.attr_life_drain_damage_percent_legs dummy
+scoreboard objectives add ca.attr_life_drain_damage_percent_feet dummy
+scoreboard objectives add ca.attr_life_drain_damage_percent_saddle dummy
+scoreboard objectives add ca.attr_life_drain_damage_percent_body dummy
+scoreboard objectives add ca.attr_life_drain_damage_percent_bonus dummy
+
+scoreboard objectives add ca.attr_life_drain_damage_value dummy
+scoreboard objectives add ca.attr_life_drain_damage_percent dummy
+scoreboard objectives add ca.attr_life_drain_damage_total dummy
+
+scoreboard objectives add ca.attr_extra_jump_count_value_main dummy
+scoreboard objectives add ca.attr_extra_jump_count_value_offh dummy
+scoreboard objectives add ca.attr_extra_jump_count_value_head dummy
+scoreboard objectives add ca.attr_extra_jump_count_value_chest dummy
+scoreboard objectives add ca.attr_extra_jump_count_value_legs dummy
+scoreboard objectives add ca.attr_extra_jump_count_value_feet dummy
+scoreboard objectives add ca.attr_extra_jump_count_value_saddle dummy
+scoreboard objectives add ca.attr_extra_jump_count_value_body dummy
+scoreboard objectives add ca.attr_extra_jump_count_value_bonus dummy
+
+scoreboard objectives add ca.attr_extra_jump_count_percent_main dummy
+scoreboard objectives add ca.attr_extra_jump_count_percent_offh dummy
+scoreboard objectives add ca.attr_extra_jump_count_percent_head dummy
+scoreboard objectives add ca.attr_extra_jump_count_percent_chest dummy
+scoreboard objectives add ca.attr_extra_jump_count_percent_legs dummy
+scoreboard objectives add ca.attr_extra_jump_count_percent_feet dummy
+scoreboard objectives add ca.attr_extra_jump_count_percent_saddle dummy
+scoreboard objectives add ca.attr_extra_jump_count_percent_body dummy
+scoreboard objectives add ca.attr_extra_jump_count_percent_bonus dummy
 
 scoreboard objectives add ca.attr_extra_jump_count_value dummy
 scoreboard objectives add ca.attr_extra_jump_count_percent dummy
 scoreboard objectives add ca.attr_extra_jump_count_total dummy
 
+scoreboard objectives add ca.attr_airdash_count_value_main dummy
+scoreboard objectives add ca.attr_airdash_count_value_offh dummy
+scoreboard objectives add ca.attr_airdash_count_value_head dummy
+scoreboard objectives add ca.attr_airdash_count_value_chest dummy
+scoreboard objectives add ca.attr_airdash_count_value_legs dummy
+scoreboard objectives add ca.attr_airdash_count_value_feet dummy
+scoreboard objectives add ca.attr_airdash_count_value_saddle dummy
+scoreboard objectives add ca.attr_airdash_count_value_body dummy
+scoreboard objectives add ca.attr_airdash_count_value_bonus dummy
+
+scoreboard objectives add ca.attr_airdash_count_percent_main dummy
+scoreboard objectives add ca.attr_airdash_count_percent_offh dummy
+scoreboard objectives add ca.attr_airdash_count_percent_head dummy
+scoreboard objectives add ca.attr_airdash_count_percent_chest dummy
+scoreboard objectives add ca.attr_airdash_count_percent_legs dummy
+scoreboard objectives add ca.attr_airdash_count_percent_feet dummy
+scoreboard objectives add ca.attr_airdash_count_percent_saddle dummy
+scoreboard objectives add ca.attr_airdash_count_percent_body dummy
+scoreboard objectives add ca.attr_airdash_count_percent_bonus dummy
+
 scoreboard objectives add ca.attr_airdash_count_value dummy
 scoreboard objectives add ca.attr_airdash_count_percent dummy
 scoreboard objectives add ca.attr_airdash_count_total dummy
 
+scoreboard objectives add ca.attr_adaptive_damage_value_main dummy
+scoreboard objectives add ca.attr_adaptive_damage_value_offh dummy
+scoreboard objectives add ca.attr_adaptive_damage_value_head dummy
+scoreboard objectives add ca.attr_adaptive_damage_value_chest dummy
+scoreboard objectives add ca.attr_adaptive_damage_value_legs dummy
+scoreboard objectives add ca.attr_adaptive_damage_value_feet dummy
+scoreboard objectives add ca.attr_adaptive_damage_value_saddle dummy
+scoreboard objectives add ca.attr_adaptive_damage_value_body dummy
+scoreboard objectives add ca.attr_adaptive_damage_value_bonus dummy
+
+scoreboard objectives add ca.attr_adaptive_damage_percent_main dummy
+scoreboard objectives add ca.attr_adaptive_damage_percent_offh dummy
+scoreboard objectives add ca.attr_adaptive_damage_percent_head dummy
+scoreboard objectives add ca.attr_adaptive_damage_percent_chest dummy
+scoreboard objectives add ca.attr_adaptive_damage_percent_legs dummy
+scoreboard objectives add ca.attr_adaptive_damage_percent_feet dummy
+scoreboard objectives add ca.attr_adaptive_damage_percent_saddle dummy
+scoreboard objectives add ca.attr_adaptive_damage_percent_body dummy
+scoreboard objectives add ca.attr_adaptive_damage_percent_bonus dummy
 
 scoreboard objectives add ca.attr_adaptive_damage_value dummy
 scoreboard objectives add ca.attr_adaptive_damage_percent dummy
 scoreboard objectives add ca.attr_adaptive_damage_total dummy
 
+scoreboard objectives add ca.attr_total_damage_value_main dummy
+scoreboard objectives add ca.attr_total_damage_value_offh dummy
+scoreboard objectives add ca.attr_total_damage_value_head dummy
+scoreboard objectives add ca.attr_total_damage_value_chest dummy
+scoreboard objectives add ca.attr_total_damage_value_legs dummy
+scoreboard objectives add ca.attr_total_damage_value_feet dummy
+scoreboard objectives add ca.attr_total_damage_value_saddle dummy
+scoreboard objectives add ca.attr_total_damage_value_body dummy
+scoreboard objectives add ca.attr_total_damage_value_bonus dummy
+
+scoreboard objectives add ca.attr_total_damage_percent_main dummy
+scoreboard objectives add ca.attr_total_damage_percent_offh dummy
+scoreboard objectives add ca.attr_total_damage_percent_head dummy
+scoreboard objectives add ca.attr_total_damage_percent_chest dummy
+scoreboard objectives add ca.attr_total_damage_percent_legs dummy
+scoreboard objectives add ca.attr_total_damage_percent_feet dummy
+scoreboard objectives add ca.attr_total_damage_percent_saddle dummy
+scoreboard objectives add ca.attr_total_damage_percent_body dummy
+scoreboard objectives add ca.attr_total_damage_percent_bonus dummy
+
 scoreboard objectives add ca.attr_total_damage_value dummy
 scoreboard objectives add ca.attr_total_damage_percent dummy
 scoreboard objectives add ca.attr_total_damage_total dummy
+
 
 
 #Values for running attributes

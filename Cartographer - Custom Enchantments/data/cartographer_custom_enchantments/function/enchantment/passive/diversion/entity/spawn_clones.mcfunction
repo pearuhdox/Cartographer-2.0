@@ -62,22 +62,20 @@ data modify entity @s Motion set value [0.0,0.0,0.0]
 
 effect give @s invisibility 1 0
 
-data modify storage cartographer_custom_enchantments:diversion data.HandItems set from entity @s HandItems
-data modify storage cartographer_custom_enchantments:diversion data.ArmorItems set from entity @s ArmorItems
+data modify storage cartographer_custom_enchantments:diversion data.equipment set from entity @s equipment
 data modify storage cartographer_custom_enchantments:diversion data.Tags set from entity @s Tags
 data modify storage cartographer_custom_enchantments:diversion data.attributes set from entity @s attributes
 data modify storage cartographer_custom_enchantments:diversion data.active_effects set from entity @s active_effects
 data modify storage cartographer_custom_enchantments:diversion data.CustomName set from entity @s CustomName
 
-data modify storage cartographer_custom_enchantments:diversion data.HandDropChances set value [0.0F,0.0F]
-data modify storage cartographer_custom_enchantments:diversion data.ArmorDropChances set value [0.0F,0.0F,0.0F,0.0F]
+data modify storage cartographer_custom_enchantments:diversion data.drop_chances set value {head:0.0,chest:0.0,legs:0.0,feet:0.0,mainhand:0.0,offhand:0.0,body:0.0,saddle:0.0}
 
 execute store result score $health ca.ench_diversion_lvl run data get entity @s Health
 scoreboard players operation $health ca.ench_diversion_lvl /= $2 ca.CONSTANT
 execute if score $health ca.ench_diversion_lvl matches ..0 run scoreboard players set $health ca.ench_diversion_lvl 1
 execute store result storage cartographer_custom_enchantments:diversion data.Health float 1 run scoreboard players get $health ca.ench_diversion_lvl
 
-#function carto_event:api/create_single_entity_event {event:"custom_statuses/stealth/mob",duration:300,delay:010,parameters:{reveal_range:2,keep_armor:0,keep_weapons:0,particle_density:3,particle_spread:1,tick_command:""},merge_behavior:"custom"}
+#function carto_event:api/create_single_entity_event {event:"custom_statuses/stealth/mob",duration:300,delay:10,parameters:{reveal_range:2,keep_armor:0,keep_weapons:0,particle_density:3,particle_spread:1,tick_command:""},merge_behavior:"custom"}
 #effect give @s slowness 2 1 true
 effect give @s slowness 1 7 true
 

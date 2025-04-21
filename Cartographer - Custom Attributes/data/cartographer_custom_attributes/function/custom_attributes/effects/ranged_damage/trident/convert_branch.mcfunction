@@ -22,4 +22,4 @@ tag @s add ca.needs_checker
 tag @s add ca.no_ench_calc
 function cartographer_core:handlers/register/start
 
-$execute on passengers if entity @s[type=item_display] run function carto_event:api/create_single_entity_event {event:"custom_attribute/trident",duration:600,delay:000,parameters:{owner:"$(owner)",prev_x:$(prev_x),prev_y:$(prev_y),prev_z:$(prev_z)},merge_behavior:"none"}
+$execute on passengers if entity @s[type=item_display] run function carto_event:api/create_single_entity_event {event:"custom_attribute/trident",duration:600,delay:0,parameters:{owner:"$(owner)",prev_x:$(prev_x),prev_y:$(prev_y),prev_z:$(prev_z)},merge_behavior:"none"}

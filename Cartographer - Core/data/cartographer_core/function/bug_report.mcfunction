@@ -10,7 +10,7 @@ execute if entity @s[tag=degenerate] if score $silly ca.var matches 4 if entity 
 
 tellraw @s {"color":"#FFE0A3","italic":true,"text":"Find a bug? Have a suggestion?"}
 tellraw @s {"color":"#ffe0a3","italic":true,"text":"Create a bug report at this link!"}
-tellraw @s {"color":"#a3ffff","underlined":true,"text":"https://github.com/pearuhdox/Cartographer-2.0/issues","clickEvent":{"action":"open_url","value":"https://github.com/pearuhdox/Cartographer-2.0/issues"}}
+tellraw @s {"color":"#a3ffff","underlined":true,"text":"https://github.com/pearuhdox/Cartographer-2.0/issues","click_event":{"action":"open_url","url":"https://github.com/pearuhdox/Cartographer-2.0/issues"}}
 
 scoreboard players set @s bug 0
 

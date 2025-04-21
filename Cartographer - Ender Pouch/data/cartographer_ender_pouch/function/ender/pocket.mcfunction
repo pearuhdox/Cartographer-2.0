@@ -1,6 +1,10 @@
 data modify storage cartographer:ender_pouch bag set value [] 
 data modify storage cartographer:ender_pouch bag set from entity @s Inventory[{id:"minecraft:black_bundle",components:{"minecraft:custom_data":{ender_pouch:1b}}}]
 
+execute if data entity @s equipment.offhand.components.minecraft:custom_data.ender_pouch run data modify storage cartographer:ender_pouch bag append from entity @s equipment.offhand
+execute if data entity @s equipment.offhand.components.minecraft:custom_data.ender_pouch run data modify storage cartographer:ender_pouch bag[-1].Slot set value -106b
+
+
 scoreboard players set $pocket_success ca.pouch_var 0
 scoreboard players set $pocket_block ca.pouch_var 0
 

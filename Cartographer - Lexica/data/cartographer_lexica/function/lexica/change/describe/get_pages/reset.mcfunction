@@ -133,10 +133,10 @@ scoreboard players set $status_warding ca.lexica_var 0
 scoreboard players set $is_tool ca.lexica_var 0
 scoreboard players set $is_crossbow ca.lexica_var 0
 
-data modify entity 31192011-4452-2112-0000-000000000000 HandItems[0] set value {}
-data modify entity 31192011-4452-2112-0000-000000000000 HandItems[0] set from storage cartographer:lexica item.components.minecraft:bundle_contents[0]
+data modify entity 31192011-4452-2112-0000-000000000000 equipment.mainhand set value {}
+data modify entity 31192011-4452-2112-0000-000000000000 equipment.mainhandinhand set from storage cartographer:lexica item.components.minecraft:bundle_contents[0]
 
 execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #minecraft:pickaxes run scoreboard players set $is_tool ca.lexica_var 1
-execute if data entity 31192011-4452-2112-0000-000000000000 HandItems[0].components."minecraft:tool" run scoreboard players set $is_tool ca.lexica_var 1
+execute if data entity 31192011-4452-2112-0000-000000000000 equipment.mainhand.components."minecraft:tool" run scoreboard players set $is_tool ca.lexica_var 1
 
 execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand minecraft:crossbow run scoreboard players set $is_crossbow ca.lexica_var 1

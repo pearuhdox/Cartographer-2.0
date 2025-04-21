@@ -1,6 +1,6 @@
-function bb:lib/pldata/read
+function cartographer_core:pldata/read
 
-data modify storage bbl:pldata sudo_root.working_data.Charon set value []
-data modify storage bbl:pldata sudo_root.working_data.CharonHomePos set from entity @s Pos
+data modify storage cartographer:player_data main.working_data.Charon set value []
+data modify storage cartographer:player_data main.working_data.CharonHomePos set from entity @s Pos
 
-function bb:lib/pldata/write
+function cartographer_core:pldata/write

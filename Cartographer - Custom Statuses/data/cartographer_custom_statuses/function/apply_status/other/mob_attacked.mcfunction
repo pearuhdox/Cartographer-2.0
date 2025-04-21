@@ -10,4 +10,4 @@ execute if score $attacked ca.status_var matches 1.. if entity @s[tag=ca.apply_s
 
 execute if score $attacked ca.status_var matches 1.. run tag @s add ca.status_attacked_cdl
 
-execute if score $attacked ca.status_var matches 1.. run function carto_event:api/create_single_entity_event {event:"attacked_cooldown",duration:21,delay:000,parameters:{},merge_behavior:"merge"}
+execute if score $attacked ca.status_var matches 1.. run function carto_event:api/create_single_entity_event {event:"attacked_cooldown",duration:21,delay:0,parameters:{},merge_behavior:"merge"}

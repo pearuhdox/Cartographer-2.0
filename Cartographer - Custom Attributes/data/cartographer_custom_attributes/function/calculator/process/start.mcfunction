@@ -1,7 +1,7 @@
-#function bb:lib/pldata/read
+#function cartographer_core:pldata/read
 
 #data modify storage cartographer_custom_attributes:calculator custom_attributes set value {}
-#data modify storage cartographer_custom_attributes:calculator custom_attributes set from storage bbl:pldata sudo_root.working_data.cartographer.custom_attributes
+#data modify storage cartographer_custom_attributes:calculator custom_attributes set from storage cartographer:player_data main.working_data.cartographer.custom_attributes
 
 scoreboard players set $disable_mainhand ca.attr_var 0
 scoreboard players set $disable_offhand ca.attr_var 0
@@ -51,49 +51,9 @@ execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run funct
 execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/adaptive_damage
 execute unless score $disable_custom_attr_syntax ca.gamerule matches 1 run function cartographer_custom_attributes:calculator/process/create_attribute/attribute/total_damage
 
-function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/ranged_damage
-function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/ranged_velocity
+#data modify storage cartographer:player_data main.working_data.cartographer.custom_attributes set value {}
+#data modify storage cartographer:player_data main.working_data.cartographer.custom_attributes set from storage cartographer_custom_attributes:calculator custom_attributes
 
-function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/combat_luck
-
-function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/potion_size
-
-function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/aoe_size
-function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/aoe_damage
-
-function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/status_inflict_damage
-function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/status_inflict_duration
-function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/status_inflict_potency
-
-function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/status_apply_duration
-function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/status_apply_potency
-
-function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/healing_power
-
-function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/lucky_hit_chance
-function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/lucky_hit_damage
-
-function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/restrike_hit_chance
-function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/restrike_hit_damage
-function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/restrike_hit_amount
-function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/restrike_hit_rate
-
-function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/chaining_hit_chance
-function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/chaining_hit_damage
-function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/chaining_hit_amount
-
-function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/life_drain_chance
-function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/life_drain_amount
-
-function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/extra_jump_count
-function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/airdash_count
-
-function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/adaptive_damage
-function cartographer_custom_attributes:calculator/process/create_attribute/read_to_score/attribute/total_damage
-
-#data modify storage bbl:pldata sudo_root.working_data.cartographer.custom_attributes set value {}
-#data modify storage bbl:pldata sudo_root.working_data.cartographer.custom_attributes set from storage cartographer_custom_attributes:calculator custom_attributes
-
-#function bb:lib/pldata/write
+#function cartographer_core:pldata/write
 
 execute if score @s ca.attr_healing_power_total matches -1999999.. run function cartographer_custom_attributes:custom_attributes/effects/healing_power/tracking_start

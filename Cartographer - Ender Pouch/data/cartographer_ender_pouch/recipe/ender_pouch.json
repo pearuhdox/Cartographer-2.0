@@ -13,11 +13,13 @@
       "id": "minecraft:black_bundle",
       "components": {
         "minecraft:enchantments": {
-          "levels": {
             "cartographer_custom_enchantments:passive/soulbound": 1
           },
-          "show_in_tooltip": false
-        },
+        "minecraft:tooltip_display": {
+            "hidden_components": [
+              "minecraft:enchantments"
+            ]
+          },
         "minecraft:custom_data": "{ender_pouch:1b,NoSteal:1b}",
         "minecraft:custom_name": "{\"bold\":true,\"color\":\"#18A387\",\"italic\":false,\"text\":\"Ender Pouch\"}",
         "minecraft:lore": [

@@ -15,6 +15,6 @@ $execute as $(target) at @s if score duration= carto_event matches 1.. unless en
 
 
 
-$execute as $(target) at @s if score duration= carto_event matches 1 if entity @s[tag=ca.barbed_tagged] run function carto_event:api/create_single_entity_event {event:"custom_ench/barbed",duration:1200,delay:003,parameters:{owner:"$(owner)"},merge_behavior:"merge"}
+$execute as $(target) at @s if score duration= carto_event matches 1 if entity @s[tag=ca.barbed_tagged] run function carto_event:api/create_single_entity_event {event:"custom_ench/barbed",duration:1200,delay:3,parameters:{owner:"$(owner)"},merge_behavior:"merge"}
 
 $execute as $(target) at @s run return 1

@@ -11,4 +11,4 @@ execute store result storage cartographer:custom_enchantments count int 1 run sc
 
 function cartographer_custom_enchantments:enchantment/curse/clumsiness/macro with storage cartographer:custom_enchantments
 
-execute if entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"custom_ench/fragility",duration:10,delay:000,parameters:{},merge_behavior:"none"}
+execute if entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"custom_ench/fragility",duration:10,delay:0,parameters:{},merge_behavior:"none"}

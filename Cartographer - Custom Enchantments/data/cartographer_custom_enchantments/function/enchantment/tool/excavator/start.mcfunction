@@ -9,7 +9,7 @@
 
 #scoreboard players operation $range ca.ench_excavator_lvl /= $100 ca.CONSTANT
 
-execute store result score $has_silk_touch ca.ench_excavator_lvl run data get entity @s SelectedItem.components."minecraft:enchantments".levels.minecraft:silk_touch
+execute store result score $has_silk_touch ca.ench_excavator_lvl run data get entity @s SelectedItem.components."minecraft:enchantments".minecraft:silk_touch
 
 function cartographer_custom_enchantments:enchantment/tool/excavator/allow_break with storage ltos:main data
 

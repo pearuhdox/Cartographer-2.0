@@ -1,157 +1,157 @@
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/damage/general/hex_eater
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/damage/general/hex_eater
 scoreboard players operation @s ca.ench_hex_eater_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/damage/general/chaotic
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/damage/general/chaotic
 scoreboard players operation @s ca.ench_chaotic_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/damage/general/hunter
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/damage/general/hunter
 scoreboard players operation @s ca.ench_hunter_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/damage/general/duelist
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/damage/general/duelist
 scoreboard players operation @s ca.ench_duelist_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/damage/general/first_strike
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/damage/general/first_strike
 scoreboard players operation @s ca.ench_first_strike_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/damage/general/follow_up
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/damage/general/follow_up
 scoreboard players operation @s ca.ench_follow_up_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/damage/general/focus
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/damage/general/focus
 scoreboard players operation @s ca.ench_focus_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/damage/general/concentration
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/damage/general/concentration
 scoreboard players operation @s ca.ench_concentration_lvl = $value ca.ench_var
 
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/damage/melee/rushdown
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/damage/melee/rushdown
 scoreboard players operation @s ca.ench_rushdown_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/damage/melee/leverage
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/damage/melee/leverage
 scoreboard players operation @s ca.ench_leverage_lvl = $value ca.ench_var
 
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/damage/ranged/overcharge
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/damage/ranged/overcharge
 scoreboard players operation @s ca.ench_overcharge_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/damage/ranged/point_blank
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/damage/ranged/point_blank
 scoreboard players operation @s ca.ench_point_blank_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/damage/ranged/sharpshot
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/damage/ranged/sharpshot
 scoreboard players operation @s ca.ench_sharpshot_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/unique/general/explosive
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/general/explosive
 scoreboard players operation @s ca.ench_explosive_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/unique/general/pulling
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/general/pulling
 scoreboard players operation @s ca.ench_pulling_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/unique/ranged/grappling
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/ranged/grappling
 scoreboard players operation @s ca.ench_grappling_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/unique/ranged/correction
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/ranged/correction
 scoreboard players operation @s ca.ench_correction_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/unique/ranged/ricochet
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/ranged/ricochet
 scoreboard players operation @s ca.ench_ricochet_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/unique/ranged/barrage
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/ranged/barrage
 scoreboard players operation @s ca.ench_barrage_lvl = $value ca.ench_var
 
 
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/unique/ranged/shrapnel
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/ranged/shrapnel
 scoreboard players operation @s ca.ench_shrapnel_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/unique/ranged/ripper
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/ranged/ripper
 scoreboard players operation @s ca.ench_ripper_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/unique/ranged/barbed
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/ranged/barbed
 scoreboard players operation @s ca.ench_barbed_lvl = $value ca.ench_var
 
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/unique/ranged/collapse
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/ranged/collapse
 scoreboard players operation @s ca.ench_collapse_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:tool/drilling
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:tool/drilling
 scoreboard players operation @s ca.ench_drilling_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:tool/excavator
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:tool/excavator
 scoreboard players operation @s ca.ench_excavator_lvl = $value ca.ench_var
 
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.minecraft:multishot
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.minecraft:multishot
 scoreboard players operation @s ca.ench_multishot_lvl = $value ca.ench_var
 
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/starfall
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/starfall
 scoreboard players operation @s ca.ench_starfall_lvl = $value ca.ench_var
 scoreboard players operation @s ca.ench_starfall_hand_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/orbit
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/orbit
 scoreboard players operation @s ca.ench_orbit_lvl = $value ca.ench_var
 scoreboard players operation @s ca.ench_orbit_hand_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/storm
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/storm
 scoreboard players operation @s ca.ench_storm_lvl = $value ca.ench_var
 scoreboard players operation @s ca.ench_storm_hand_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/induction
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/induction
 scoreboard players operation @s ca.ench_induction_lvl = $value ca.ench_var
 scoreboard players operation @s ca.ench_induction_hand_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/eruption
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/eruption
 scoreboard players operation @s ca.ench_eruption_lvl = $value ca.ench_var
 scoreboard players operation @s ca.ench_eruption_hand_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/soulfire
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/soulfire
 scoreboard players operation @s ca.ench_soulfire_lvl = $value ca.ench_var
 scoreboard players operation @s ca.ench_soulfire_hand_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/quake
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/quake
 scoreboard players operation @s ca.ench_quake_lvl = $value ca.ench_var
 scoreboard players operation @s ca.ench_quake_hand_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.cartographer_custom_enchantments:passive/aberration
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/aberration
 scoreboard players operation @s ca.ench_aberration_lvl = $value ca.ench_var
 scoreboard players operation @s ca.ench_aberration_hand_lvl = $value ca.ench_var
 
 
 
 scoreboard players set $value ca.ench_var 0
-execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.levels.minecraft:loyalty
+execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.minecraft:loyalty
 scoreboard players operation @s ca.ench_loyalty_lvl = $value ca.ench_var

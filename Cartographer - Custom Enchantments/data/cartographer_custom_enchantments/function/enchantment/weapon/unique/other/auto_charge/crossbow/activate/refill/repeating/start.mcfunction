@@ -1,7 +1,7 @@
 #cartographer_custom_enchantments:auto_charge items[0]
 execute store result score $current_ammo_amount ca.ench_auto_charge_slot run data get storage cartographer_custom_enchantments:auto_charge items[0].components.minecraft:custom_data.repeating_ammo
 
-execute store result score $allowed_max_ammo ca.ench_auto_charge_slot run data get storage cartographer_custom_enchantments:auto_charge items[0].components.minecraft:enchantments.levels.cartographer_custom_enchantments:weapon/unique/other/repeating
+execute store result score $allowed_max_ammo ca.ench_auto_charge_slot run data get storage cartographer_custom_enchantments:auto_charge items[0].components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/other/repeating
 scoreboard players add $allowed_max_ammo ca.ench_auto_charge_slot 1
 
 data modify storage cartographer_custom_enchantments:repeating data.arrows set value [{id:"minecraft:arrow",count:64,components:{"minecraft:intangible_projectile":{}}}]
