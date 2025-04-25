@@ -24,5 +24,5 @@ execute if data entity 31192011-4452-2112-0000-000000000000 equipment.offhand.co
 #execute if data entity 31192011-4452-2112-0000-000000000000 equipment.mainhand.components.minecraft:equippable run data remove storage cartographer_core:player_equip data.main
 #execute if data entity 31192011-4452-2112-0000-000000000000 equipment.offhand.components.minecraft:equippable run data remove storage cartographer_core:player_equip data.offh
 
-tag @s remove ca.do_enchant_calc
-tag @s remove ca.do_attr_calc
+tag @s remove ca.do_inv_fetch
+tag @s remove ca.do_inv_fetch

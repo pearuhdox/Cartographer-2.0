@@ -1,4 +1,4 @@
-tag @s add ca.do_enchant_calc
-tag @s add ca.do_ench_reset
+tag @s add ca.do_inv_fetch
+tag @s add ca.do_inv_reset
 
 advancement revoke @s only cartographer_core:break_item

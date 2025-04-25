@@ -1,1 +1,2 @@
+
 execute if predicate cartographer_custom_statuses:has/coating run function cartographer_custom_statuses:calculator/process/start
