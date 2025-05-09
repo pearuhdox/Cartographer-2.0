@@ -25,7 +25,7 @@ execute as @s at @s run rotate @s ~3 ~
 execute as @s at @s on passengers at @s run rotate @s ~3 ~
 
 execute if score @s ca.lifetime matches 100 as @s at @s run function cartographer_custom_enchantments:enchantment/curse/haunting/animation/setup_items
-execute if score @s ca.lifetime matches 100 as @s at @s positioned ~ ~-0.25 ~ run summon skeleton ~ ~ ~ {Tags:["ca.haunting_shade","ca.new_haunting_shade","ca.no_death_items"],DeathLootTable:"",PersistenceRequired:1b,Silent:1b,CanPickUpLoot:0b,HandDropChances:[327.67F,327.67F],ArmorDropChances:[327.67f,327.67f,327.67f,327.67f]}
+execute if score @s ca.lifetime matches 100 as @s at @s positioned ~ ~-0.25 ~ run summon skeleton ~ ~ ~ {Tags:["ca.haunting_shade","ca.new_haunting_shade","ca.no_death_items"],DeathLootTable:"",PersistenceRequired:1b,Silent:1b,CanPickUpLoot:0b}
 execute if score @s ca.lifetime matches 100 as @s at @s as @e[type=skeleton,limit=1,sort=nearest,distance=..2,tag=ca.new_haunting_shade] at @s run function cartographer_custom_enchantments:enchantment/curse/haunting/animation/create_shade
 
 execute if score @s ca.lifetime matches 100 as @s at @s on passengers at @s run kill @s

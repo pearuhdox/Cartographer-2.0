@@ -56,6 +56,16 @@ scoreboard objectives add ca.ench_ethereal_feet_lvl dummy
 scoreboard objectives add ca.ench_ethereal_body_lvl dummy
 scoreboard objectives add ca.ench_ethereal_saddle_lvl dummy
 
+scoreboard objectives add ca.ench_vengeance_lvl dummy
+scoreboard objectives add ca.ench_vengeance_main_lvl dummy
+scoreboard objectives add ca.ench_vengeance_offh_lvl dummy
+scoreboard objectives add ca.ench_vengeance_head_lvl dummy
+scoreboard objectives add ca.ench_vengeance_chest_lvl dummy
+scoreboard objectives add ca.ench_vengeance_legs_lvl dummy
+scoreboard objectives add ca.ench_vengeance_feet_lvl dummy
+scoreboard objectives add ca.ench_vengeance_body_lvl dummy
+scoreboard objectives add ca.ench_vengeance_saddle_lvl dummy
+
 scoreboard objectives add ca.ench_hardened_lvl dummy
 scoreboard objectives add ca.ench_hardened_main_lvl dummy
 scoreboard objectives add ca.ench_hardened_offh_lvl dummy
@@ -296,6 +306,46 @@ scoreboard objectives add ca.ench_reconstruction_feet_lvl dummy
 scoreboard objectives add ca.ench_reconstruction_body_lvl dummy
 scoreboard objectives add ca.ench_reconstruction_saddle_lvl dummy
 
+scoreboard objectives add ca.ench_drilling_lvl dummy
+scoreboard objectives add ca.ench_drilling_main_lvl dummy
+scoreboard objectives add ca.ench_drilling_offh_lvl dummy
+scoreboard objectives add ca.ench_drilling_head_lvl dummy
+scoreboard objectives add ca.ench_drilling_chest_lvl dummy
+scoreboard objectives add ca.ench_drilling_legs_lvl dummy
+scoreboard objectives add ca.ench_drilling_feet_lvl dummy
+scoreboard objectives add ca.ench_drilling_body_lvl dummy
+scoreboard objectives add ca.ench_drilling_saddle_lvl dummy
+
+scoreboard objectives add ca.ench_excavator_lvl dummy
+scoreboard objectives add ca.ench_excavator_main_lvl dummy
+scoreboard objectives add ca.ench_excavator_offh_lvl dummy
+scoreboard objectives add ca.ench_excavator_head_lvl dummy
+scoreboard objectives add ca.ench_excavator_chest_lvl dummy
+scoreboard objectives add ca.ench_excavator_legs_lvl dummy
+scoreboard objectives add ca.ench_excavator_feet_lvl dummy
+scoreboard objectives add ca.ench_excavator_body_lvl dummy
+scoreboard objectives add ca.ench_excavator_saddle_lvl dummy
+
+scoreboard objectives add ca.ench_multitool_lvl dummy
+scoreboard objectives add ca.ench_multitool_main_lvl dummy
+scoreboard objectives add ca.ench_multitool_offh_lvl dummy
+scoreboard objectives add ca.ench_multitool_head_lvl dummy
+scoreboard objectives add ca.ench_multitool_chest_lvl dummy
+scoreboard objectives add ca.ench_multitool_legs_lvl dummy
+scoreboard objectives add ca.ench_multitool_feet_lvl dummy
+scoreboard objectives add ca.ench_multitool_body_lvl dummy
+scoreboard objectives add ca.ench_multitool_saddle_lvl dummy
+
+scoreboard objectives add ca.ench_lightborn_lvl dummy
+scoreboard objectives add ca.ench_lightborn_main_lvl dummy
+scoreboard objectives add ca.ench_lightborn_offh_lvl dummy
+scoreboard objectives add ca.ench_lightborn_head_lvl dummy
+scoreboard objectives add ca.ench_lightborn_chest_lvl dummy
+scoreboard objectives add ca.ench_lightborn_legs_lvl dummy
+scoreboard objectives add ca.ench_lightborn_feet_lvl dummy
+scoreboard objectives add ca.ench_lightborn_body_lvl dummy
+scoreboard objectives add ca.ench_lightborn_saddle_lvl dummy
+
 scoreboard objectives add ca.ench_hex_eater_lvl dummy
 scoreboard objectives add ca.ench_hex_eater_main_lvl dummy
 scoreboard objectives add ca.ench_hex_eater_offh_lvl dummy
@@ -456,15 +506,15 @@ scoreboard objectives add ca.ench_pulling_feet_lvl dummy
 scoreboard objectives add ca.ench_pulling_body_lvl dummy
 scoreboard objectives add ca.ench_pulling_saddle_lvl dummy
 
-scoreboard objectives add ca.ench_explosion_lvl dummy
-scoreboard objectives add ca.ench_explosion_main_lvl dummy
-scoreboard objectives add ca.ench_explosion_offh_lvl dummy
-scoreboard objectives add ca.ench_explosion_head_lvl dummy
-scoreboard objectives add ca.ench_explosion_chest_lvl dummy
-scoreboard objectives add ca.ench_explosion_legs_lvl dummy
-scoreboard objectives add ca.ench_explosion_feet_lvl dummy
-scoreboard objectives add ca.ench_explosion_body_lvl dummy
-scoreboard objectives add ca.ench_explosion_saddle_lvl dummy
+scoreboard objectives add ca.ench_repulsion_lvl dummy
+scoreboard objectives add ca.ench_repulsion_main_lvl dummy
+scoreboard objectives add ca.ench_repulsion_offh_lvl dummy
+scoreboard objectives add ca.ench_repulsion_head_lvl dummy
+scoreboard objectives add ca.ench_repulsion_chest_lvl dummy
+scoreboard objectives add ca.ench_repulsion_legs_lvl dummy
+scoreboard objectives add ca.ench_repulsion_feet_lvl dummy
+scoreboard objectives add ca.ench_repulsion_body_lvl dummy
+scoreboard objectives add ca.ench_repulsion_saddle_lvl dummy
 
 scoreboard objectives add ca.ench_cleaving_lvl dummy
 scoreboard objectives add ca.ench_cleaving_main_lvl dummy
@@ -526,6 +576,16 @@ scoreboard objectives add ca.ench_lunging_feet_lvl dummy
 scoreboard objectives add ca.ench_lunging_body_lvl dummy
 scoreboard objectives add ca.ench_lunging_saddle_lvl dummy
 
+scoreboard objectives add ca.ench_ambushing_lvl dummy
+scoreboard objectives add ca.ench_ambushing_main_lvl dummy
+scoreboard objectives add ca.ench_ambushing_offh_lvl dummy
+scoreboard objectives add ca.ench_ambushing_head_lvl dummy
+scoreboard objectives add ca.ench_ambushing_chest_lvl dummy
+scoreboard objectives add ca.ench_ambushing_legs_lvl dummy
+scoreboard objectives add ca.ench_ambushing_feet_lvl dummy
+scoreboard objectives add ca.ench_ambushing_body_lvl dummy
+scoreboard objectives add ca.ench_ambushing_saddle_lvl dummy
+
 scoreboard objectives add ca.ench_throwable_lvl dummy
 scoreboard objectives add ca.ench_throwable_main_lvl dummy
 scoreboard objectives add ca.ench_throwable_offh_lvl dummy
@@ -585,6 +645,16 @@ scoreboard objectives add ca.ench_shrapnel_legs_lvl dummy
 scoreboard objectives add ca.ench_shrapnel_feet_lvl dummy
 scoreboard objectives add ca.ench_shrapnel_body_lvl dummy
 scoreboard objectives add ca.ench_shrapnel_saddle_lvl dummy
+
+scoreboard objectives add ca.ench_collapse_lvl dummy
+scoreboard objectives add ca.ench_collapse_main_lvl dummy
+scoreboard objectives add ca.ench_collapse_offh_lvl dummy
+scoreboard objectives add ca.ench_collapse_head_lvl dummy
+scoreboard objectives add ca.ench_collapse_chest_lvl dummy
+scoreboard objectives add ca.ench_collapse_legs_lvl dummy
+scoreboard objectives add ca.ench_collapse_feet_lvl dummy
+scoreboard objectives add ca.ench_collapse_body_lvl dummy
+scoreboard objectives add ca.ench_collapse_saddle_lvl dummy
 
 scoreboard objectives add ca.ench_fleetfoot_lvl dummy
 scoreboard objectives add ca.ench_fleetfoot_main_lvl dummy
@@ -776,6 +846,106 @@ scoreboard objectives add ca.ench_gluttony_feet_lvl dummy
 scoreboard objectives add ca.ench_gluttony_body_lvl dummy
 scoreboard objectives add ca.ench_gluttony_saddle_lvl dummy
 
+scoreboard objectives add ca.ench_heaviness_lvl dummy
+scoreboard objectives add ca.ench_heaviness_main_lvl dummy
+scoreboard objectives add ca.ench_heaviness_offh_lvl dummy
+scoreboard objectives add ca.ench_heaviness_head_lvl dummy
+scoreboard objectives add ca.ench_heaviness_chest_lvl dummy
+scoreboard objectives add ca.ench_heaviness_legs_lvl dummy
+scoreboard objectives add ca.ench_heaviness_feet_lvl dummy
+scoreboard objectives add ca.ench_heaviness_body_lvl dummy
+scoreboard objectives add ca.ench_heaviness_saddle_lvl dummy
+
+scoreboard objectives add ca.ench_jamming_lvl dummy
+scoreboard objectives add ca.ench_jamming_main_lvl dummy
+scoreboard objectives add ca.ench_jamming_offh_lvl dummy
+scoreboard objectives add ca.ench_jamming_head_lvl dummy
+scoreboard objectives add ca.ench_jamming_chest_lvl dummy
+scoreboard objectives add ca.ench_jamming_legs_lvl dummy
+scoreboard objectives add ca.ench_jamming_feet_lvl dummy
+scoreboard objectives add ca.ench_jamming_body_lvl dummy
+scoreboard objectives add ca.ench_jamming_saddle_lvl dummy
+
+
+scoreboard objectives add ca.ench_quick_charge_lvl dummy
+scoreboard objectives add ca.ench_quick_charge_main_lvl dummy
+scoreboard objectives add ca.ench_quick_charge_offh_lvl dummy
+scoreboard objectives add ca.ench_quick_charge_head_lvl dummy
+scoreboard objectives add ca.ench_quick_charge_chest_lvl dummy
+scoreboard objectives add ca.ench_quick_charge_legs_lvl dummy
+scoreboard objectives add ca.ench_quick_charge_feet_lvl dummy
+scoreboard objectives add ca.ench_quick_charge_body_lvl dummy
+scoreboard objectives add ca.ench_quick_charge_saddle_lvl dummy
+
+scoreboard objectives add ca.ench_multishot_lvl dummy
+scoreboard objectives add ca.ench_multishot_main_lvl dummy
+scoreboard objectives add ca.ench_multishot_offh_lvl dummy
+scoreboard objectives add ca.ench_multishot_head_lvl dummy
+scoreboard objectives add ca.ench_multishot_chest_lvl dummy
+scoreboard objectives add ca.ench_multishot_legs_lvl dummy
+scoreboard objectives add ca.ench_multishot_feet_lvl dummy
+scoreboard objectives add ca.ench_multishot_body_lvl dummy
+scoreboard objectives add ca.ench_multishot_saddle_lvl dummy
+
+scoreboard objectives add ca.ench_infinity_lvl dummy
+scoreboard objectives add ca.ench_infinity_main_lvl dummy
+scoreboard objectives add ca.ench_infinity_offh_lvl dummy
+scoreboard objectives add ca.ench_infinity_head_lvl dummy
+scoreboard objectives add ca.ench_infinity_chest_lvl dummy
+scoreboard objectives add ca.ench_infinity_legs_lvl dummy
+scoreboard objectives add ca.ench_infinity_feet_lvl dummy
+scoreboard objectives add ca.ench_infinity_body_lvl dummy
+scoreboard objectives add ca.ench_infinity_saddle_lvl dummy
+
+scoreboard objectives add ca.ench_knockback_lvl dummy
+scoreboard objectives add ca.ench_knockback_main_lvl dummy
+scoreboard objectives add ca.ench_knockback_offh_lvl dummy
+scoreboard objectives add ca.ench_knockback_head_lvl dummy
+scoreboard objectives add ca.ench_knockback_chest_lvl dummy
+scoreboard objectives add ca.ench_knockback_legs_lvl dummy
+scoreboard objectives add ca.ench_knockback_feet_lvl dummy
+scoreboard objectives add ca.ench_knockback_body_lvl dummy
+scoreboard objectives add ca.ench_knockback_saddle_lvl dummy
+
+scoreboard objectives add ca.ench_power_lvl dummy
+scoreboard objectives add ca.ench_power_main_lvl dummy
+scoreboard objectives add ca.ench_power_offh_lvl dummy
+scoreboard objectives add ca.ench_power_head_lvl dummy
+scoreboard objectives add ca.ench_power_chest_lvl dummy
+scoreboard objectives add ca.ench_power_legs_lvl dummy
+scoreboard objectives add ca.ench_power_feet_lvl dummy
+scoreboard objectives add ca.ench_power_body_lvl dummy
+scoreboard objectives add ca.ench_power_saddle_lvl dummy
+
+scoreboard objectives add ca.ench_punch_lvl dummy
+scoreboard objectives add ca.ench_punch_main_lvl dummy
+scoreboard objectives add ca.ench_punch_offh_lvl dummy
+scoreboard objectives add ca.ench_punch_head_lvl dummy
+scoreboard objectives add ca.ench_punch_chest_lvl dummy
+scoreboard objectives add ca.ench_punch_legs_lvl dummy
+scoreboard objectives add ca.ench_punch_feet_lvl dummy
+scoreboard objectives add ca.ench_punch_body_lvl dummy
+scoreboard objectives add ca.ench_punch_saddle_lvl dummy
+
+scoreboard objectives add ca.ench_flame_lvl dummy
+scoreboard objectives add ca.ench_flame_main_lvl dummy
+scoreboard objectives add ca.ench_flame_offh_lvl dummy
+scoreboard objectives add ca.ench_flame_head_lvl dummy
+scoreboard objectives add ca.ench_flame_chest_lvl dummy
+scoreboard objectives add ca.ench_flame_legs_lvl dummy
+scoreboard objectives add ca.ench_flame_feet_lvl dummy
+scoreboard objectives add ca.ench_flame_body_lvl dummy
+scoreboard objectives add ca.ench_flame_saddle_lvl dummy
+
+scoreboard objectives add ca.ench_thorns_lvl dummy
+scoreboard objectives add ca.ench_thorns_main_lvl dummy
+scoreboard objectives add ca.ench_thorns_offh_lvl dummy
+scoreboard objectives add ca.ench_thorns_head_lvl dummy
+scoreboard objectives add ca.ench_thorns_chest_lvl dummy
+scoreboard objectives add ca.ench_thorns_legs_lvl dummy
+scoreboard objectives add ca.ench_thorns_feet_lvl dummy
+scoreboard objectives add ca.ench_thorns_body_lvl dummy
+scoreboard objectives add ca.ench_thorns_saddle_lvl dummy
 
 scoreboard objectives add ca.animations_var dummy
 
@@ -884,6 +1054,9 @@ scoreboard objectives add ca.excavator_progress dummy
 
 scoreboard objectives add ca.recoil_cooldown dummy
 scoreboard objectives add ca.repulsion_cooldown dummy
+
+scoreboard objectives add ca.pulling_fuse dummy
+
 
 scoreboard objectives add ca.lightborn_redstone_torch dummy
 scoreboard objectives add ca.lightborn_soul_torch dummy

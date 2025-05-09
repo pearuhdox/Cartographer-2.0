@@ -1,3 +1,4 @@
+
 $scoreboard players set $(owner) ca.uuid_check 0
 scoreboard players set $success ca.uuid_check 0
 

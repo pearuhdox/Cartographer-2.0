@@ -8,7 +8,7 @@
             "predicates": {
               "minecraft:custom_data": {
                 "custom_attributes": {
-                  "life_drain_damage": {}
+                  "life_drain_amount": {}
                 }
               }
             }
@@ -18,6 +18,6 @@
     }
   },
   "rewards": {
-    "function": "cartographer_custom_attributes:custom_attributes/calculate/life_drain_damage"
+    "function": "cartographer_custom_attributes:custom_attributes/calculate/life_drain_amount"
   }
 }

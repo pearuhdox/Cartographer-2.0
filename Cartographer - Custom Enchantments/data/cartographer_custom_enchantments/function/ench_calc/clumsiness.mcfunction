@@ -53,3 +53,5 @@ scoreboard players operation @s ca.ench_clumsiness_lvl += @s ca.ench_clumsiness_
 
 
 tag @s remove ca.do_enchant_calc_clumsiness
+
+execute if score @s ca.ench_clumsiness_lvl matches 1.. run tag @s add ca.enchant_tick

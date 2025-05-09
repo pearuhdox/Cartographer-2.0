@@ -16,7 +16,7 @@ execute if score $used_storm ca.storm_stack matches 1.. run playsound minecraft:
 execute if score $used_storm ca.storm_stack matches 1.. run playsound minecraft:entity.breeze.hurt player @a[distance=..16] ~ ~ ~ 1.5 0.5
 execute if score $used_storm ca.storm_stack matches 1.. run playsound minecraft:entity.breeze.hurt player @a[distance=..16] ~ ~ ~ 1.5 0.5
 
-execute if score $used_storm ca.storm_stack matches 1.. run scoreboard players operation $storm_hand ca.ench_value = @s ca.ench_storm_hand_lvl
+execute if score $used_storm ca.storm_stack matches 1.. run scoreboard players operation $storm_hand ca.ench_value = @s ca.ench_storm_main_lvl
 
 execute if score $used_storm ca.storm_stack matches 1.. run function cartographer_custom_enchantments:enchantment/passive/storm/get_data
 

@@ -18,7 +18,8 @@
   "slots": [
     "armor",
     "offhand",
-    "mainhand"
+    "mainhand",
+    "body"
   ],
   "effects": {
   }

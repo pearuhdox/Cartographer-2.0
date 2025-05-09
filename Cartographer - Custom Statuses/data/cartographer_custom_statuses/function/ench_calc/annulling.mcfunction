@@ -51,5 +51,6 @@ scoreboard players operation @s ca.ench_annulling_lvl += @s ca.ench_annulling_ma
 scoreboard players operation @s ca.ench_annulling_lvl += @s ca.ench_annulling_body_lvl
 scoreboard players operation @s ca.ench_annulling_lvl += @s ca.ench_annulling_saddle_lvl
 
+execute if score @s ca.ench_annulling_lvl matches 1.. run tag @s add ca.enchant_tick
 
 tag @s remove ca.do_enchant_calc_annulling

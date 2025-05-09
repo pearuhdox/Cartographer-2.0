@@ -6,11 +6,11 @@ $execute as $(target) at @s if score @s ca.collapse_time matches 2 if score @s c
 $execute as $(target) at @s if score @s ca.collapse_time matches 2 if score $collapse ca.ench_drilling_lvl matches 1.. as $(owner) run function cartographer_custom_enchantments:enchantment/tool/drilling/hit_block_collapse
 $execute as $(target) at @s if score @s ca.collapse_time matches 2 as $(owner) run scoreboard players set $collapse ca.ench_drilling_lvl 0
 
-$execute as $(target) at @s if score @s ca.collapse_time matches 2 if score @s ca.ench_drilling_lvl matches 1.. run scoreboard players operation $eruption_hand ca.ench_value = @s ca.ench_eruption_hand_lvl
+$execute as $(target) at @s if score @s ca.collapse_time matches 2 if score @s ca.ench_drilling_lvl matches 1.. run scoreboard players operation $eruption_hand ca.ench_value = @s ca.ench_eruption_main_lvl
 $execute as $(target) at @s if score @s ca.collapse_time matches 2 if score $eruption ca.ench_value matches 1.. as $(owner) unless entity @s[tag=ca.eruption_used_spawner] if block ~ ~ ~ spawner run function cartographer_custom_enchantments:enchantment/passive/eruption/hit_spawner_collapse
 $execute as $(target) at @s if score @s ca.collapse_time matches 2 run scoreboard players set $eruption_hand ca.ench_value 0
 
-$execute as $(target) at @s if score @s ca.collapse_time matches 2 if score @s ca.ench_drilling_lvl matches 1.. run scoreboard players operation $soulfire_hand ca.ench_value = @s ca.ench_soulfire_hand_lvl
+$execute as $(target) at @s if score @s ca.collapse_time matches 2 if score @s ca.ench_drilling_lvl matches 1.. run scoreboard players operation $soulfire_hand ca.ench_value = @s ca.ench_soulfire_main_lvl
 $execute as $(target) at @s if score @s ca.collapse_time matches 2 if score $soulfire ca.ench_value matches 1.. as $(owner) unless entity @s[tag=ca.soulfire_used_spawner] if block ~ ~ ~ spawner run function cartographer_custom_enchantments:enchantment/passive/soulfire/hit_spawner_collapse
 $execute as $(target) at @s if score @s ca.collapse_time matches 2 run scoreboard players set $soulfire_hand ca.ench_value 0
 

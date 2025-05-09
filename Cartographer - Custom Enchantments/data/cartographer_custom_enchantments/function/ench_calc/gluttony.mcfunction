@@ -53,3 +53,5 @@ scoreboard players operation @s ca.ench_gluttony_lvl += @s ca.ench_gluttony_sadd
 
 
 tag @s remove ca.do_enchant_calc_gluttony
+
+execute if score @s ca.ench_gluttony_lvl matches 1.. run tag @s add ca.enchant_tick

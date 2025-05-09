@@ -53,3 +53,5 @@ scoreboard players operation @s ca.ench_point_blank_lvl += @s ca.ench_point_blan
 
 
 tag @s remove ca.do_enchant_calc_point_blank
+
+execute if score @s ca.ench_point_blank_lvl matches 1.. run tag @s add ca.enchant_tick

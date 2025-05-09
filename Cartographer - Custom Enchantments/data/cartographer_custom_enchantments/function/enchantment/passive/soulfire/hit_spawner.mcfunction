@@ -1,7 +1,7 @@
 tag @s add ca.soulfire_used_spawner
 
 scoreboard players set $spawner_cause ca.ench_var 1
-scoreboard players operation $soulfire_hand ca.ench_value = @s ca.ench_soulfire_hand_lvl
+scoreboard players operation $soulfire_hand ca.ench_value = @s ca.ench_soulfire_main_lvl
 scoreboard players set $proc ca.ench_soulfire_lvl 1
 
 function cartographer_custom_enchantments:enchantment/passive/soulfire/get_data

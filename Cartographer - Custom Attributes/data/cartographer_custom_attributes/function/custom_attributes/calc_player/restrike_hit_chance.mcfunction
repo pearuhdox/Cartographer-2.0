@@ -115,8 +115,12 @@ scoreboard players operation @s ca.attr_restrike_hit_chance_percent += @s ca.att
 scoreboard players operation @s ca.attr_restrike_hit_chance_percent += @s ca.attr_restrike_hit_chance_percent_body
 scoreboard players operation @s ca.attr_restrike_hit_chance_percent += @s ca.attr_restrike_hit_chance_percent_bonus
 
+scoreboard players add @s ca.attr_restrike_hit_chance_percent 100
 scoreboard players operation $percent ca.attr_var = @s ca.attr_restrike_hit_chance_percent
-scoreboard players add $percent ca.attr_var 100
+
+execute if score @s ca.ench_echo_lvl matches 1.. run scoreboard players add @s ca.attr_restrike_hit_chance_value 100
+execute if score @s ca.ench_echo_lvl matches 1.. if items entity @s weapon.mainhand #cartographer_core:ranged_weapons run scoreboard players add @s ca.attr_restrike_hit_chance_value 134
+execute if score @s ca.ench_echo_lvl matches 1.. if items entity @s weapon.offhand #cartographer_core:ranged_weapons run scoreboard players add @s ca.attr_restrike_hit_chance_value 134
 
 scoreboard players operation $total ca.attr_var = @s ca.attr_restrike_hit_chance_value
 
@@ -130,3 +134,4 @@ execute if score @s ca.attr_restrike_hit_chance_percent matches 0 run scoreboard
 execute if score @s ca.attr_restrike_hit_chance_total matches 0 run scoreboard players set @s ca.attr_restrike_hit_chance_total -2000000
 
 tag @s remove ca.do_attr_calc_restrike_hit_chance
+

@@ -53,3 +53,5 @@ scoreboard players operation @s ca.ench_adrenaline_lvl += @s ca.ench_adrenaline_
 
 
 tag @s remove ca.do_enchant_calc_adrenaline
+
+execute if score @s ca.ench_adrenaline_lvl matches 1.. run tag @s add ca.enchant_tick

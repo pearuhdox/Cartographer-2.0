@@ -45,14 +45,14 @@ execute store result storage cartographer:custom_enchantments projectile.enchant
 execute store result storage cartographer:custom_enchantments projectile.enchants.quake byte 1 run scoreboard players get @s ca.ench_quake_lvl
 execute store result storage cartographer:custom_enchantments projectile.enchants.aberration byte 1 run scoreboard players get @s ca.ench_aberration_lvl
 
-execute store result storage cartographer:custom_enchantments projectile.enchants.starfall_hand byte 1 run scoreboard players get @s ca.ench_starfall_hand_lvl
-execute store result storage cartographer:custom_enchantments projectile.enchants.orbit_hand byte 1 run scoreboard players get @s ca.ench_orbit_hand_lvl
-execute store result storage cartographer:custom_enchantments projectile.enchants.storm_hand byte 1 run scoreboard players get @s ca.ench_storm_hand_lvl
-execute store result storage cartographer:custom_enchantments projectile.enchants.induction_hand byte 1 run scoreboard players get @s ca.ench_induction_hand_lvl
-execute store result storage cartographer:custom_enchantments projectile.enchants.eruption_hand byte 1 run scoreboard players get @s ca.ench_eruption_hand_lvl
-execute store result storage cartographer:custom_enchantments projectile.enchants.soulfire_hand byte 1 run scoreboard players get @s ca.ench_soulfire_hand_lvl
-execute store result storage cartographer:custom_enchantments projectile.enchants.quake_hand byte 1 run scoreboard players get @s ca.ench_quake_hand_lvl
-execute store result storage cartographer:custom_enchantments projectile.enchants.aberration_hand byte 1 run scoreboard players get @s ca.ench_aberration_hand_lvl
+execute store result storage cartographer:custom_enchantments projectile.enchants.starfall_hand byte 1 run scoreboard players get @s ca.ench_starfall_main_lvl
+execute store result storage cartographer:custom_enchantments projectile.enchants.orbit_hand byte 1 run scoreboard players get @s ca.ench_orbit_main_lvl
+execute store result storage cartographer:custom_enchantments projectile.enchants.storm_hand byte 1 run scoreboard players get @s ca.ench_storm_main_lvl
+execute store result storage cartographer:custom_enchantments projectile.enchants.induction_hand byte 1 run scoreboard players get @s ca.ench_induction_main_lvl
+execute store result storage cartographer:custom_enchantments projectile.enchants.eruption_hand byte 1 run scoreboard players get @s ca.ench_eruption_main_lvl
+execute store result storage cartographer:custom_enchantments projectile.enchants.soulfire_hand byte 1 run scoreboard players get @s ca.ench_soulfire_main_lvl
+execute store result storage cartographer:custom_enchantments projectile.enchants.quake_hand byte 1 run scoreboard players get @s ca.ench_quake_main_lvl
+execute store result storage cartographer:custom_enchantments projectile.enchants.aberration_hand byte 1 run scoreboard players get @s ca.ench_aberration_main_lvl
 
 execute store result storage cartographer:custom_enchantments projectile.enchants.flame byte 1 run scoreboard players get @s ca.ench_flame_lvl
 execute store result storage cartographer:custom_enchantments projectile.enchants.power byte 1 run scoreboard players get @s ca.ench_power_lvl

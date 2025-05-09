@@ -81,7 +81,8 @@ execute if score $no_grindstone ca.gamerule matches 1 if score @s ca.use_grind m
 #Custom Absorption Handler Reset
 execute unless predicate cartographer_core:potion_effect/has_absorption if entity @s[tag=ca.carto_abs_applied] run function cartographer_core:handlers/absorption/reset
 
-#Resets
+#Run All Enchants on Players that require ticking
+execute if entity @s[tag=ca.enchant_tick] run function cartographer_core:handlers/enchant_tick/run
 
 #Reset All Enchant Flags every tick
 execute if score @s ca.reset_flags matches 1.. run function #minecraft:cartographer/api/handlers/reset_ench_flags

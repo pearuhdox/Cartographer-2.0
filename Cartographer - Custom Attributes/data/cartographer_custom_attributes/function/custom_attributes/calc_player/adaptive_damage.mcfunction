@@ -115,8 +115,9 @@ scoreboard players operation @s ca.attr_adaptive_damage_percent += @s ca.attr_ad
 scoreboard players operation @s ca.attr_adaptive_damage_percent += @s ca.attr_adaptive_damage_percent_body
 scoreboard players operation @s ca.attr_adaptive_damage_percent += @s ca.attr_adaptive_damage_percent_bonus
 
+
+scoreboard players add @s ca.attr_adaptive_damage_percent 100
 scoreboard players operation $percent ca.attr_var = @s ca.attr_adaptive_damage_percent
-scoreboard players add $percent ca.attr_var 100
 
 scoreboard players operation $total ca.attr_var = @s ca.attr_adaptive_damage_value
 

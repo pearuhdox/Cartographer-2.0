@@ -1,0 +1,1 @@
+execute if entity @s[type=player] if predicate cartographer_custom_enchantments:has/quick_strike/mainhand unless data entity @s SelectedItem.components."minecraft:custom_data".quick_strike_applied run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/quick_strike/apply

@@ -1,6 +1,6 @@
 playsound minecraft:entity.illusioner.mirror_move hostile @a[distance=..16] ~ ~ ~ 1 1
 
-execute anchored eyes positioned ^ ^ ^0.25 run function cartographer_core:handlers/text_popup/create {text:"[{\"color\":\"#D87EE4\",\"italic\":false,\"text\":\"Enchant Effect\"},{\"color\":\"#B47EE4\",\"italic\":false,\"text\":\"\\\\nDiversion\"}]",popup_duration:25,teleport_duration:2,scale:0.5,background:16777215,text_opacity:150,teleport_position:"~ ~0.35 ~"}
+execute anchored eyes positioned ^ ^ ^0.25 run function cartographer_core:handlers/text_popup/create {text:"[{\"color\":\"#D87EE4\",\"italic\":false,\"text\":\"Enchant Effect\"},{\"color\":\"#B47EE4\",\"italic\":false,\"text\":\"\nDiversion\"}]",popup_duration:25,teleport_duration:2,scale:0.5,background:16777215,text_opacity:150,teleport_position:"~ ~0.35 ~"}
 
 execute store result score $positions ca.ench_diversion_lvl run random value 1..6
 

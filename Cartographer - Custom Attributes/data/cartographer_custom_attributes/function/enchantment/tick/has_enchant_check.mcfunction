@@ -1,0 +1,22 @@
+execute if score @s ca.ench_amplitude_lvl matches 1.. unless predicate cartographer_custom_attributes:has_enchant/amplitude run scoreboard players set @s ca.ench_amplitude_lvl 0
+execute if score @s ca.ench_cloudstep_lvl matches 1.. unless predicate cartographer_custom_attributes:has_enchant/cloudstep run scoreboard players set @s ca.ench_cloudstep_lvl 0
+execute if score @s ca.ench_echo_lvl matches 1.. unless predicate cartographer_custom_attributes:has_enchant/echo run scoreboard players set @s ca.ench_echo_lvl 0
+execute if score @s ca.ench_invigorated_lvl matches 1.. unless predicate cartographer_custom_attributes:has_enchant/invigorated run scoreboard players set @s ca.ench_invigorated_lvl 0
+execute if score @s ca.ench_lucky_lvl matches 1.. unless predicate cartographer_custom_attributes:has_enchant/lucky run scoreboard players set @s ca.ench_lucky_lvl 0
+execute if score @s ca.ench_precision_lvl matches 1.. unless predicate cartographer_custom_attributes:has_enchant/precision run scoreboard players set @s ca.ench_precision_lvl 0
+execute if score @s ca.ench_resonance_lvl matches 1.. unless predicate cartographer_custom_attributes:has_enchant/resonance run scoreboard players set @s ca.ench_resonance_lvl 0
+execute if score @s ca.ench_reverb_lvl matches 1.. unless predicate cartographer_custom_attributes:has_enchant/reverb run scoreboard players set @s ca.ench_reverb_lvl 0
+execute if score @s ca.ench_technique_lvl matches 1.. unless predicate cartographer_custom_attributes:has_enchant/technique run scoreboard players set @s ca.ench_technique_lvl 0
+execute if score @s ca.ench_windborn_lvl matches 1.. unless predicate cartographer_custom_attributes:has_enchant/windborn run scoreboard players set @s ca.ench_windborn_lvl 0
+
+execute if score @s ca.ench_agility_lvl matches 1.. unless predicate cartographer_custom_attributes:has_enchant/agility run scoreboard players set @s ca.ench_agility_lvl 0
+execute if score @s ca.ench_celerity_lvl matches 1.. unless predicate cartographer_custom_attributes:has_enchant/celerity run scoreboard players set @s ca.ench_celerity_lvl 0
+execute if score @s ca.ench_dexterity_lvl matches 1.. unless predicate cartographer_custom_attributes:has_enchant/dexterity run scoreboard players set @s ca.ench_dexterity_lvl 0
+execute if score @s ca.ench_extended_lvl matches 1.. unless predicate cartographer_custom_attributes:has_enchant/extended run scoreboard players set @s ca.ench_extended_lvl 0
+execute if score @s ca.ench_finesse_lvl matches 1.. unless predicate cartographer_custom_attributes:has_enchant/finesse run scoreboard players set @s ca.ench_finesse_lvl 0
+execute if score @s ca.ench_handling_lvl matches 1.. unless predicate cartographer_custom_attributes:has_enchant/handling run scoreboard players set @s ca.ench_handling_lvl 0
+execute if score @s ca.ench_immovable_lvl matches 1.. unless predicate cartographer_custom_attributes:has_enchant/immovable run scoreboard players set @s ca.ench_immovable_lvl 0
+execute if score @s ca.ench_traveling_lvl matches 1.. unless predicate cartographer_custom_attributes:has_enchant/traveling run scoreboard players set @s ca.ench_traveling_lvl 0
+execute if score @s ca.ench_vitality_lvl matches 1.. unless predicate cartographer_custom_attributes:has_enchant/vitality run scoreboard players set @s ca.ench_vitality_lvl 0
+execute if score @s ca.ench_extended_lvl matches 1.. unless predicate cartographer_custom_attributes:has_enchant/extended run scoreboard players set @s ca.ench_extended_lvl 0
+execute if score @s ca.ench_extended_lvl matches 1.. unless predicate cartographer_custom_attributes:has_enchant/extended run scoreboard players set @s ca.ench_extended_lvl 0

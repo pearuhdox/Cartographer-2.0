@@ -42,14 +42,16 @@ execute store result score $ench ca.ench_var run data get storage cartographer_c
 scoreboard players operation @s ca.ench_echo_saddle_lvl += $ench ca.ench_var
 
 
-scoreboard players operation @s ca.ench_echo_lvl += @s ca.ench_echo_feet_lvl
-scoreboard players operation @s ca.ench_echo_lvl += @s ca.ench_echo_legs_lvl
-scoreboard players operation @s ca.ench_echo_lvl += @s ca.ench_echo_chest_lvl
-scoreboard players operation @s ca.ench_echo_lvl += @s ca.ench_echo_head_lvl
+#scoreboard players operation @s ca.ench_echo_lvl += @s ca.ench_echo_feet_lvl
+#scoreboard players operation @s ca.ench_echo_lvl += @s ca.ench_echo_legs_lvl
+#scoreboard players operation @s ca.ench_echo_lvl += @s ca.ench_echo_chest_lvl
+#scoreboard players operation @s ca.ench_echo_lvl += @s ca.ench_echo_head_lvl
 scoreboard players operation @s ca.ench_echo_lvl += @s ca.ench_echo_offh_lvl
 scoreboard players operation @s ca.ench_echo_lvl += @s ca.ench_echo_main_lvl
 scoreboard players operation @s ca.ench_echo_lvl += @s ca.ench_echo_body_lvl
 scoreboard players operation @s ca.ench_echo_lvl += @s ca.ench_echo_saddle_lvl
 
+execute if score @s ca.ench_echo_lvl matches 1.. run tag @s add ca.enchant_tick
+scoreboard players set $ench_timer ca.timer 10
 
 tag @s remove ca.do_enchant_calc_echo

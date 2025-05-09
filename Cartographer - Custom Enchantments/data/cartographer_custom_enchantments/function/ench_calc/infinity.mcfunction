@@ -1,0 +1,57 @@
+scoreboard players set @s ca.ench_infinity_lvl 0
+
+scoreboard players set @s ca.ench_infinity_feet_lvl 0
+scoreboard players set @s ca.ench_infinity_legs_lvl 0
+scoreboard players set @s ca.ench_infinity_chest_lvl 0
+scoreboard players set @s ca.ench_infinity_head_lvl 0
+scoreboard players set @s ca.ench_infinity_offh_lvl 0
+scoreboard players set @s ca.ench_infinity_main_lvl 0
+scoreboard players set @s ca.ench_infinity_body_lvl 0
+scoreboard players set @s ca.ench_infinity_saddle_lvl 0
+
+scoreboard players set $ench ca.ench_var 0
+execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.feet.components.minecraft:enchantments.minecraft:infinity
+scoreboard players operation @s ca.ench_infinity_feet_lvl += $ench ca.ench_var
+
+scoreboard players set $ench ca.ench_var 0
+execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.legs.components.minecraft:enchantments.minecraft:infinity
+scoreboard players operation @s ca.ench_infinity_legs_lvl += $ench ca.ench_var
+
+scoreboard players set $ench ca.ench_var 0
+execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.chest.components.minecraft:enchantments.minecraft:infinity
+scoreboard players operation @s ca.ench_infinity_chest_lvl += $ench ca.ench_var
+
+scoreboard players set $ench ca.ench_var 0
+execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.head.components.minecraft:enchantments.minecraft:infinity
+scoreboard players operation @s ca.ench_infinity_head_lvl += $ench ca.ench_var
+
+scoreboard players set $ench ca.ench_var 0
+execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.offh.components.minecraft:enchantments.minecraft:infinity
+scoreboard players operation @s ca.ench_infinity_offh_lvl += $ench ca.ench_var
+
+scoreboard players set $ench ca.ench_var 0
+execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.main.components.minecraft:enchantments.minecraft:infinity
+scoreboard players operation @s ca.ench_infinity_main_lvl += $ench ca.ench_var
+
+scoreboard players set $ench ca.ench_var 0
+execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.body.components.minecraft:enchantments.minecraft:infinity
+scoreboard players operation @s ca.ench_infinity_body_lvl += $ench ca.ench_var
+
+scoreboard players set $ench ca.ench_var 0
+execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.saddle.components.minecraft:enchantments.minecraft:infinity
+scoreboard players operation @s ca.ench_infinity_saddle_lvl += $ench ca.ench_var
+
+
+scoreboard players operation @s ca.ench_infinity_lvl += @s ca.ench_infinity_feet_lvl
+scoreboard players operation @s ca.ench_infinity_lvl += @s ca.ench_infinity_legs_lvl
+scoreboard players operation @s ca.ench_infinity_lvl += @s ca.ench_infinity_chest_lvl
+scoreboard players operation @s ca.ench_infinity_lvl += @s ca.ench_infinity_head_lvl
+scoreboard players operation @s ca.ench_infinity_lvl += @s ca.ench_infinity_offh_lvl
+scoreboard players operation @s ca.ench_infinity_lvl += @s ca.ench_infinity_main_lvl
+scoreboard players operation @s ca.ench_infinity_lvl += @s ca.ench_infinity_body_lvl
+scoreboard players operation @s ca.ench_infinity_lvl += @s ca.ench_infinity_saddle_lvl
+
+
+tag @s remove ca.do_enchant_calc_infinity
+
+execute if score @s ca.ench_infinity_lvl matches 1.. run tag @s add ca.enchant_tick

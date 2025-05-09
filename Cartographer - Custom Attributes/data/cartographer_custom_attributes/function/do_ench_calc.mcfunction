@@ -18,3 +18,12 @@ execute if entity @s[tag=ca.do_enchant_calc_handling] run function cartographer_
 execute if entity @s[tag=ca.do_enchant_calc_immovable] run function cartographer_custom_attributes:ench_calc/immovable
 execute if entity @s[tag=ca.do_enchant_calc_traveling] run function cartographer_custom_attributes:ench_calc/traveling
 execute if entity @s[tag=ca.do_enchant_calc_vitality] run function cartographer_custom_attributes:ench_calc/vitality
+
+execute if entity @s[tag=ca.do_enchant_calc_aqua_affinity] run function cartographer_custom_attributes:ench_calc/aqua_affinity
+execute if entity @s[tag=ca.do_enchant_calc_blast_protection] run function cartographer_custom_attributes:ench_calc/blast_protection
+execute if entity @s[tag=ca.do_enchant_calc_depth_strider] run function cartographer_custom_attributes:ench_calc/depth_strider
+execute if entity @s[tag=ca.do_enchant_calc_fire_protection] run function cartographer_custom_attributes:ench_calc/fire_protection
+execute if entity @s[tag=ca.do_enchant_calc_projectile_protection] run function cartographer_custom_attributes:ench_calc/projectile_protection
+execute if entity @s[tag=ca.do_enchant_calc_respiration] run function cartographer_custom_attributes:ench_calc/respiration
+execute if entity @s[tag=ca.do_enchant_calc_soul_speed] run function cartographer_custom_attributes:ench_calc/soul_speed
+execute if entity @s[tag=ca.do_enchant_calc_swift_sneak] run function cartographer_custom_attributes:ench_calc/swift_sneak

@@ -1,38 +1,5 @@
-execute if entity @s[type=player] run tag @s remove ca.ench_repeating_main
-execute if entity @s[type=player] run tag @s remove ca.ench_repeating_offh
+execute if entity @s[type=player] if predicate cartographer_custom_enchantments:has/repeating/mainhand unless items entity @s weapon.mainhand crossbow run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/consumable/run_branch
+execute if entity @s[type=player] if predicate cartographer_custom_enchantments:has/repeating/offhand unless predicate cartographer_custom_enchantments:has/repeating/mainhand unless items entity @s weapon.offhand crossbow run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/consumable/run_branch
 
-execute if entity @s[type=player] if score @s ca.ench_repeating_hand_lvl matches 1.. run scoreboard players set $was_main ca.calc_type 1
-execute if entity @s[type=player] unless score $was_main ca.calc_type matches 1.. if score @s ca.ench_repeating_gear_lvl matches 1.. run scoreboard players set $was_offh ca.calc_type 1
-
-execute if entity @s[type=player] if score $was_main ca.calc_type matches 1.. run tag @s add ca.ench_repeating_main
-execute if entity @s[type=player] if score $was_offh ca.calc_type matches 1.. run tag @s add ca.ench_repeating_offh
-
-execute if entity @s[type=player] if score $was_main ca.calc_type matches 1.. store result score @s ca.repeating_load_time run data get entity @s SelectedItem.components.minecraft:custom_data.repeating_load_tick_time
-execute if entity @s[type=player] if score $was_offh ca.calc_type matches 1.. store result score @s ca.repeating_load_time run data get entity @s equipment.offhand.components.minecraft:custom_data.repeating_load_tick_time
-#execute if entity @s[type=player] run function cartographer_core:enchant_calculator/full_calculation {namespace:"minecraft",category:"",enchantment:"quick_charge",type:"ranged"}
-execute if entity @s[type=player] run scoreboard players set $check ca.core_delay_check 1
-
-execute unless entity @s[type=player] if predicate cartographer_core:periodic_tick/20 run scoreboard players set @s ca.ench_repeating_lvl 0
-execute unless entity @s[type=player] if predicate cartographer_core:periodic_tick/20 run function cartographer_core:enchant_calculator/full_calculation {namespace:"cartographer_custom_enchantments",category:"weapon/unique/other/",enchantment:"repeating",type:"ranged"}
-execute unless entity @s[type=player] if predicate cartographer_core:periodic_tick/20 run scoreboard players set $check ca.core_delay_check 1
-
-
-
-execute if entity @s[type=player] if entity @s[tag=ca.ench_repeating_main] store result score @s ca.repeating_ammo run data get entity @s SelectedItem.components.minecraft:custom_data.repeating_ammo
-execute if entity @s[type=player] if entity @s[tag=ca.ench_repeating_offh] store result score @s ca.repeating_ammo run data get entity @s equipment.offhand.components.minecraft:custom_data.repeating_ammo
-
-execute if entity @s[type=player] unless score @s ca.repeating_ammo matches 1.. if score @s ca.load_crossbow_time matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/test_can_load
-execute if entity @s[type=player] if entity @s[tag=ca.repeating_loaded_arrow] unless score @s ca.repeating_ammo matches 1.. unless score @s ca.load_crossbow_time matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/reload/single/replace
-
-
-execute if entity @s[type=player] if score @s ca.repeating_ammo matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/chamber/item/wrapper
-
-
-
-execute unless entity @s[type=player] store result score @s ca.repeating_ammo run data get entity @s equipment.mainhand.components.minecraft:custom_data.repeating_ammo
-execute unless entity @s[type=player] unless score @s ca.repeating_ammo matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/chamber/mob/full_quiver/test
-execute unless entity @s[type=player] if score @s ca.repeating_ammo matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/chamber/mob/wrapper
-
-
-
-execute if entity @s[type=player] if score @s ca.repeating_reload_cdl matches 1.. run scoreboard players remove @s ca.repeating_reload_cdl 1
+execute if entity @s[type=player] if predicate cartographer_custom_enchantments:has/repeating/mainhand if items entity @s weapon.mainhand crossbow run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/run_branch
+execute if entity @s[type=player] if predicate cartographer_custom_enchantments:has/repeating/offhand unless predicate cartographer_custom_enchantments:has/repeating/mainhand if items entity @s weapon.offhand crossbow run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/run_branch

@@ -53,3 +53,5 @@ scoreboard players operation @s ca.ench_unseen_lvl += @s ca.ench_unseen_saddle_l
 
 
 tag @s remove ca.do_enchant_calc_unseen
+
+execute if score @s ca.ench_unseen_lvl matches 1.. run tag @s add ca.enchant_tick

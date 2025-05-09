@@ -27,11 +27,30 @@
           "type": "minecraft:run_function",
           "function": "cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/schedule"
         },
-        "requirements": {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {}
-        }
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "type": "#cartographer_core:can_use_enchants"
+                }
+              },
+              {
+                "condition": "minecraft:inverted",
+                "term": {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "ca.ench_repeating_lvl": {
+                      "min": 1
+                    }
+                  }
+                }
+              }
+            ]
+          }
       }
     ],
     "minecraft:hit_block": [

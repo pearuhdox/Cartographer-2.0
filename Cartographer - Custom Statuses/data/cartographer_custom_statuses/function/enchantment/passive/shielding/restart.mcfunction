@@ -1,6 +1,6 @@
 execute unless entity @s[type=player] run particle minecraft:block{block_state:"minecraft:resin_block"} ~ ~0.75 ~ 0.15 0.35 0.15 0 15 normal
 execute unless entity @s[type=player] run playsound minecraft:entity.creaking.activate hostile @a[distance=..16] ~ ~ ~ 1 1.5
-execute unless entity @s[type=player] anchored eyes positioned ^ ^ ^ run function cartographer_core:handlers/text_popup/create {text:"[{\"color\":\"#E5C863\",\"italic\":false,\"text\":\"Enchant Effect\"},{\"color\":\"#E5E363\",\"italic\":false,\"text\":\"\\\\nShielding\"}]",popup_duration:25,teleport_duration:2,scale:0.5,background:16777215,text_opacity:150,teleport_position:"~ ~0.35 ~"}
+execute unless entity @s[type=player] anchored eyes positioned ^ ^ ^ run function cartographer_core:handlers/text_popup/create {text:"[{\"color\":\"#E5C863\",\"italic\":false,\"text\":\"Enchant Effect\"},{\"color\":\"#E5E363\",\"italic\":false,\"text\":\"\nShielding\"}]",popup_duration:25,teleport_duration:2,scale:0.5,background:16777215,text_opacity:150,teleport_position:"~ ~0.35 ~"}
 
 execute if entity @s[type=player] run playsound minecraft:entity.creaking.activate hostile @a[distance=..16] ~ ~ ~ 0.7 1.5
 

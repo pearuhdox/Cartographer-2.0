@@ -209,7 +209,93 @@ scoreboard objectives add ca.ench_windborn_feet_lvl dummy
 scoreboard objectives add ca.ench_windborn_body_lvl dummy
 scoreboard objectives add ca.ench_windborn_saddle_lvl dummy
 
+scoreboard objectives add ca.ench_blast_protection_lvl dummy
+scoreboard objectives add ca.ench_blast_protection_main_lvl dummy
+scoreboard objectives add ca.ench_blast_protection_offh_lvl dummy
+scoreboard objectives add ca.ench_blast_protection_head_lvl dummy
+scoreboard objectives add ca.ench_blast_protection_chest_lvl dummy
+scoreboard objectives add ca.ench_blast_protection_legs_lvl dummy
+scoreboard objectives add ca.ench_blast_protection_feet_lvl dummy
+scoreboard objectives add ca.ench_blast_protection_body_lvl dummy
+scoreboard objectives add ca.ench_blast_protection_saddle_lvl dummy
+scoreboard objectives add ca.ench_blast_protection_bonus_lvl dummy
 
+scoreboard objectives add ca.ench_fire_protection_lvl dummy
+scoreboard objectives add ca.ench_fire_protection_main_lvl dummy
+scoreboard objectives add ca.ench_fire_protection_offh_lvl dummy
+scoreboard objectives add ca.ench_fire_protection_head_lvl dummy
+scoreboard objectives add ca.ench_fire_protection_chest_lvl dummy
+scoreboard objectives add ca.ench_fire_protection_legs_lvl dummy
+scoreboard objectives add ca.ench_fire_protection_feet_lvl dummy
+scoreboard objectives add ca.ench_fire_protection_body_lvl dummy
+scoreboard objectives add ca.ench_fire_protection_saddle_lvl dummy
+scoreboard objectives add ca.ench_fire_protection_bonus_lvl dummy
+
+scoreboard objectives add ca.ench_projectile_protection_lvl dummy
+scoreboard objectives add ca.ench_projectile_protection_main_lvl dummy
+scoreboard objectives add ca.ench_projectile_protection_offh_lvl dummy
+scoreboard objectives add ca.ench_projectile_protection_head_lvl dummy
+scoreboard objectives add ca.ench_projectile_protection_chest_lvl dummy
+scoreboard objectives add ca.ench_projectile_protection_legs_lvl dummy
+scoreboard objectives add ca.ench_projectile_protection_feet_lvl dummy
+scoreboard objectives add ca.ench_projectile_protection_body_lvl dummy
+scoreboard objectives add ca.ench_projectile_protection_saddle_lvl dummy
+scoreboard objectives add ca.ench_projectile_protection_bonus_lvl dummy
+
+scoreboard objectives add ca.ench_respiration_lvl dummy
+scoreboard objectives add ca.ench_respiration_main_lvl dummy
+scoreboard objectives add ca.ench_respiration_offh_lvl dummy
+scoreboard objectives add ca.ench_respiration_head_lvl dummy
+scoreboard objectives add ca.ench_respiration_chest_lvl dummy
+scoreboard objectives add ca.ench_respiration_legs_lvl dummy
+scoreboard objectives add ca.ench_respiration_feet_lvl dummy
+scoreboard objectives add ca.ench_respiration_body_lvl dummy
+scoreboard objectives add ca.ench_respiration_saddle_lvl dummy
+scoreboard objectives add ca.ench_respiration_bonus_lvl dummy
+
+scoreboard objectives add ca.ench_aqua_affinity_lvl dummy
+scoreboard objectives add ca.ench_aqua_affinity_main_lvl dummy
+scoreboard objectives add ca.ench_aqua_affinity_offh_lvl dummy
+scoreboard objectives add ca.ench_aqua_affinity_head_lvl dummy
+scoreboard objectives add ca.ench_aqua_affinity_chest_lvl dummy
+scoreboard objectives add ca.ench_aqua_affinity_legs_lvl dummy
+scoreboard objectives add ca.ench_aqua_affinity_feet_lvl dummy
+scoreboard objectives add ca.ench_aqua_affinity_body_lvl dummy
+scoreboard objectives add ca.ench_aqua_affinity_saddle_lvl dummy
+scoreboard objectives add ca.ench_aqua_affinity_bonus_lvl dummy
+
+scoreboard objectives add ca.ench_depth_strider_lvl dummy
+scoreboard objectives add ca.ench_depth_strider_main_lvl dummy
+scoreboard objectives add ca.ench_depth_strider_offh_lvl dummy
+scoreboard objectives add ca.ench_depth_strider_head_lvl dummy
+scoreboard objectives add ca.ench_depth_strider_chest_lvl dummy
+scoreboard objectives add ca.ench_depth_strider_legs_lvl dummy
+scoreboard objectives add ca.ench_depth_strider_feet_lvl dummy
+scoreboard objectives add ca.ench_depth_strider_body_lvl dummy
+scoreboard objectives add ca.ench_depth_strider_saddle_lvl dummy
+scoreboard objectives add ca.ench_depth_strider_bonus_lvl dummy
+
+scoreboard objectives add ca.ench_soul_speed_lvl dummy
+scoreboard objectives add ca.ench_soul_speed_main_lvl dummy
+scoreboard objectives add ca.ench_soul_speed_offh_lvl dummy
+scoreboard objectives add ca.ench_soul_speed_head_lvl dummy
+scoreboard objectives add ca.ench_soul_speed_chest_lvl dummy
+scoreboard objectives add ca.ench_soul_speed_legs_lvl dummy
+scoreboard objectives add ca.ench_soul_speed_feet_lvl dummy
+scoreboard objectives add ca.ench_soul_speed_body_lvl dummy
+scoreboard objectives add ca.ench_soul_speed_saddle_lvl dummy
+scoreboard objectives add ca.ench_soul_speed_bonus_lvl dummy
+
+scoreboard objectives add ca.ench_swift_sneak_lvl dummy
+scoreboard objectives add ca.ench_swift_sneak_main_lvl dummy
+scoreboard objectives add ca.ench_swift_sneak_offh_lvl dummy
+scoreboard objectives add ca.ench_swift_sneak_head_lvl dummy
+scoreboard objectives add ca.ench_swift_sneak_chest_lvl dummy
+scoreboard objectives add ca.ench_swift_sneak_legs_lvl dummy
+scoreboard objectives add ca.ench_swift_sneak_feet_lvl dummy
+scoreboard objectives add ca.ench_swift_sneak_body_lvl dummy
+scoreboard objectives add ca.ench_swift_sneak_saddle_lvl dummy
+scoreboard objectives add ca.ench_swift_sneak_bonus_lvl dummy
 
 #Values for enchantments working
 
@@ -742,29 +828,29 @@ scoreboard objectives add ca.attr_life_drain_chance_value dummy
 scoreboard objectives add ca.attr_life_drain_chance_percent dummy
 scoreboard objectives add ca.attr_life_drain_chance_total dummy
 
-scoreboard objectives add ca.attr_life_drain_damage_value_main dummy
-scoreboard objectives add ca.attr_life_drain_damage_value_offh dummy
-scoreboard objectives add ca.attr_life_drain_damage_value_head dummy
-scoreboard objectives add ca.attr_life_drain_damage_value_chest dummy
-scoreboard objectives add ca.attr_life_drain_damage_value_legs dummy
-scoreboard objectives add ca.attr_life_drain_damage_value_feet dummy
-scoreboard objectives add ca.attr_life_drain_damage_value_saddle dummy
-scoreboard objectives add ca.attr_life_drain_damage_value_body dummy
-scoreboard objectives add ca.attr_life_drain_damage_value_bonus dummy
+scoreboard objectives add ca.attr_life_drain_amount_value_main dummy
+scoreboard objectives add ca.attr_life_drain_amount_value_offh dummy
+scoreboard objectives add ca.attr_life_drain_amount_value_head dummy
+scoreboard objectives add ca.attr_life_drain_amount_value_chest dummy
+scoreboard objectives add ca.attr_life_drain_amount_value_legs dummy
+scoreboard objectives add ca.attr_life_drain_amount_value_feet dummy
+scoreboard objectives add ca.attr_life_drain_amount_value_saddle dummy
+scoreboard objectives add ca.attr_life_drain_amount_value_body dummy
+scoreboard objectives add ca.attr_life_drain_amount_value_bonus dummy
 
-scoreboard objectives add ca.attr_life_drain_damage_percent_main dummy
-scoreboard objectives add ca.attr_life_drain_damage_percent_offh dummy
-scoreboard objectives add ca.attr_life_drain_damage_percent_head dummy
-scoreboard objectives add ca.attr_life_drain_damage_percent_chest dummy
-scoreboard objectives add ca.attr_life_drain_damage_percent_legs dummy
-scoreboard objectives add ca.attr_life_drain_damage_percent_feet dummy
-scoreboard objectives add ca.attr_life_drain_damage_percent_saddle dummy
-scoreboard objectives add ca.attr_life_drain_damage_percent_body dummy
-scoreboard objectives add ca.attr_life_drain_damage_percent_bonus dummy
+scoreboard objectives add ca.attr_life_drain_amount_percent_main dummy
+scoreboard objectives add ca.attr_life_drain_amount_percent_offh dummy
+scoreboard objectives add ca.attr_life_drain_amount_percent_head dummy
+scoreboard objectives add ca.attr_life_drain_amount_percent_chest dummy
+scoreboard objectives add ca.attr_life_drain_amount_percent_legs dummy
+scoreboard objectives add ca.attr_life_drain_amount_percent_feet dummy
+scoreboard objectives add ca.attr_life_drain_amount_percent_saddle dummy
+scoreboard objectives add ca.attr_life_drain_amount_percent_body dummy
+scoreboard objectives add ca.attr_life_drain_amount_percent_bonus dummy
 
-scoreboard objectives add ca.attr_life_drain_damage_value dummy
-scoreboard objectives add ca.attr_life_drain_damage_percent dummy
-scoreboard objectives add ca.attr_life_drain_damage_total dummy
+scoreboard objectives add ca.attr_life_drain_amount_value dummy
+scoreboard objectives add ca.attr_life_drain_amount_percent dummy
+scoreboard objectives add ca.attr_life_drain_amount_total dummy
 
 scoreboard objectives add ca.attr_extra_jump_count_value_main dummy
 scoreboard objectives add ca.attr_extra_jump_count_value_offh dummy

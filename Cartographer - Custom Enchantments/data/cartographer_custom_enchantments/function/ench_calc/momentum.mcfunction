@@ -53,3 +53,5 @@ scoreboard players operation @s ca.ench_momentum_lvl += @s ca.ench_momentum_sadd
 
 
 tag @s remove ca.do_enchant_calc_momentum
+
+execute if score @s ca.ench_momentum_lvl matches 1.. run tag @s add ca.enchant_tick

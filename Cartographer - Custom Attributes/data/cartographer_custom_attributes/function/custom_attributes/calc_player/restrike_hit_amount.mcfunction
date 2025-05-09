@@ -115,8 +115,15 @@ scoreboard players operation @s ca.attr_restrike_hit_amount_percent += @s ca.att
 scoreboard players operation @s ca.attr_restrike_hit_amount_percent += @s ca.attr_restrike_hit_amount_percent_body
 scoreboard players operation @s ca.attr_restrike_hit_amount_percent += @s ca.attr_restrike_hit_amount_percent_bonus
 
+
+scoreboard players set $ench ca.attr_var 0
+scoreboard players operation $ench ca.attr_var = @s ca.ench_echo_lvl
+execute if score @s ca.ench_echo_lvl matches 1.. run scoreboard players remove $ench ca.attr_var 1
+scoreboard players operation $ench ca.attr_var *= $100 ca.CONSTANT
+scoreboard players operation @s ca.attr_restrike_hit_amount_value += $ench ca.attr_var
+
+scoreboard players add @s ca.attr_restrike_hit_amount_percent 100
 scoreboard players operation $percent ca.attr_var = @s ca.attr_restrike_hit_amount_percent
-scoreboard players add $percent ca.attr_var 100
 
 scoreboard players operation $total ca.attr_var = @s ca.attr_restrike_hit_amount_value
 

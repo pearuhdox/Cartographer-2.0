@@ -1,4 +1,4 @@
-scoreboard players operation $value ca.ench_var = @s ca.ench_stealthiness_hand_lvl
+scoreboard players operation $value ca.ench_var = @s ca.ench_stealthiness_main_lvl
 scoreboard players operation $value ca.ench_var *= $3 ca.CONSTANT
 execute if score $value ca.ench_var matches 16.. run scoreboard players set $value ca.ench_var 15
 

@@ -69,6 +69,9 @@ scoreboard players set @s ca.equip_turtle_helmet 0
 scoreboard players set @s ca.attribute_cleanse_delay 1
 
 
+#Remove Enchant Tick Tag
+tag @s remove ca.enchant_tick
+
 execute if score @s ca.drop_item matches 1.. run function cartographer_core:loop/player/break_item
 execute if score @s ca.drop_item matches 1.. run scoreboard players set @s ca.drop_item 0
 
@@ -84,14 +87,14 @@ execute if entity @s[tag=ca.do_inv_reset] if score $custom_enchantments ca.insta
 execute if entity @s[tag=ca.do_inv_reset] if score $custom_statuses ca.installed matches 1.. run function cartographer_custom_statuses:do_reset_calc
 execute if entity @s[tag=ca.do_inv_reset] if score $enchantment_rework ca.installed matches 1.. run function cartographer_enchantment_rework:do_reset_calc
 
-#Do Attribute Calculation Here
-execute unless entity @s[tag=ca.suppress_inv_update] if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:do_attr_calc
-
 #Do Enchant Calculation Here
 execute unless entity @s[tag=ca.suppress_inv_update] if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:do_ench_calc
 execute unless entity @s[tag=ca.suppress_inv_update] if score $custom_enchantments ca.installed matches 1.. run function cartographer_custom_enchantments:do_ench_calc
 execute unless entity @s[tag=ca.suppress_inv_update] if score $custom_statuses ca.installed matches 1.. run function cartographer_custom_statuses:do_ench_calc
 execute unless entity @s[tag=ca.suppress_inv_update] if score $enchantment_rework ca.installed matches 1.. run function cartographer_enchantment_rework:do_ench_calc
+
+#Do Attribute Calculation Here
+execute unless entity @s[tag=ca.suppress_inv_update] if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:do_attr_calc
 
 #Reset Attributes from Enchantments if required
 execute unless entity @s[tag=ca.suppress_inv_update] if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:reset_attributes

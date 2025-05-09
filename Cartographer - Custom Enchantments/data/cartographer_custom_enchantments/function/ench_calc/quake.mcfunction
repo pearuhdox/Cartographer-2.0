@@ -53,3 +53,5 @@ scoreboard players operation @s ca.ench_quake_lvl += @s ca.ench_quake_saddle_lvl
 
 
 tag @s remove ca.do_enchant_calc_quake
+
+execute if score @s ca.ench_quake_lvl matches 1.. run tag @s add ca.enchant_tick

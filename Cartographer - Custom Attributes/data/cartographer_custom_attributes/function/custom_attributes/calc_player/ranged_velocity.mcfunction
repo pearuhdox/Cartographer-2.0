@@ -115,8 +115,8 @@ scoreboard players operation @s ca.attr_ranged_velocity_percent += @s ca.attr_ra
 scoreboard players operation @s ca.attr_ranged_velocity_percent += @s ca.attr_ranged_velocity_percent_body
 scoreboard players operation @s ca.attr_ranged_velocity_percent += @s ca.attr_ranged_velocity_percent_bonus
 
+scoreboard players add @s ca.attr_ranged_velocity_percent 100
 scoreboard players operation $percent ca.attr_var = @s ca.attr_ranged_velocity_percent
-scoreboard players add $percent ca.attr_var 100
 
 scoreboard players operation $total ca.attr_var = @s ca.attr_ranged_velocity_value
 

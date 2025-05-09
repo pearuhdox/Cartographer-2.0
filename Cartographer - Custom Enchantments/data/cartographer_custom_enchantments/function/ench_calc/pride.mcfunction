@@ -53,3 +53,6 @@ scoreboard players operation @s ca.ench_pride_lvl += @s ca.ench_pride_saddle_lvl
 
 
 tag @s remove ca.do_enchant_calc_pride
+
+execute if score @s ca.ench_pride_lvl matches 1.. run scoreboard players set @s ca.ench_pride_check 1
+execute if score @s ca.ench_pride_lvl matches 1.. run tag @s add ca.enchant_tick

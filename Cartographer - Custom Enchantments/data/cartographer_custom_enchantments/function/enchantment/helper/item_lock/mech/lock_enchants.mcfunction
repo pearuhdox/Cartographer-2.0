@@ -1,5 +1,5 @@
 data modify storage cartographer_custom_enchantments:item_lock item.components.minecraft:custom_data.locked_enchantments set from storage cartographer_custom_enchantments:item_lock item.components.minecraft:enchantments
-data remove storage cartographer_custom_enchantments:item_lock item.components.minecraft:enchantments.levels
+data remove storage cartographer_custom_enchantments:item_lock item.components.minecraft:enchantments
 
 execute if data storage cartographer_custom_enchantments:item_lock item.components.minecraft:custom_data.locked_enchantments.minecraft:curse_vanishing run data modify storage cartographer_custom_enchantments:item_lock item.components.minecraft:enchantments.minecraft:curse_vanishing set value 1
 execute if data storage cartographer_custom_enchantments:item_lock item.components.minecraft:custom_data.locked_enchantments.minecraft:curse_binding run data modify storage cartographer_custom_enchantments:item_lock item.components.minecraft:enchantments.minecraft:curse_binding set value 1

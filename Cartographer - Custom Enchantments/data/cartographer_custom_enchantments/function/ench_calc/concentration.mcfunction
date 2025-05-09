@@ -53,3 +53,5 @@ scoreboard players operation @s ca.ench_concentration_lvl += @s ca.ench_concentr
 
 
 tag @s remove ca.do_enchant_calc_concentration
+
+execute if score @s ca.ench_concentration_lvl matches 1.. run tag @s add ca.enchant_tick

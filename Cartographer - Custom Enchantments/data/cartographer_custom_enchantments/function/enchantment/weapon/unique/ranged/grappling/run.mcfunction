@@ -1,0 +1,2 @@
+execute if entity @s[type=player] if entity @s[tag=ca.has_custom_status_grounded] run tag @s add ca.indicator_cc
+execute if entity @s[type=player] if entity @s[tag=ca.has_custom_status_grounded] run scoreboard players set @s ca.cc_time 4

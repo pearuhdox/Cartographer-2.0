@@ -53,3 +53,5 @@ scoreboard players operation @s ca.ench_encumbering_lvl += @s ca.ench_encumberin
 
 
 tag @s remove ca.do_enchant_calc_encumbering
+
+execute if score @s ca.ench_encumbering_lvl matches 1.. run tag @s add ca.enchant_tick

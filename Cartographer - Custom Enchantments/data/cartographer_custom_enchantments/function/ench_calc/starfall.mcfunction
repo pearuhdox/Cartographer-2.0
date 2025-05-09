@@ -53,3 +53,5 @@ scoreboard players operation @s ca.ench_starfall_lvl += @s ca.ench_starfall_sadd
 
 
 tag @s remove ca.do_enchant_calc_starfall
+
+execute if score @s ca.ench_starfall_lvl matches 1.. run tag @s add ca.enchant_tick

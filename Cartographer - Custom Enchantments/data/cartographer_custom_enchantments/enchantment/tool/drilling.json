@@ -20,19 +20,6 @@
       "mainhand"
     ],
     "effects": {
-      "minecraft:tick": [
-        {
-          "effect": {
-            "type": "minecraft:run_function",
-            "function": "cartographer_custom_enchantments:enchantment/tool/drilling/schedule"
-          },
-          "requirements": {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {}
-          }
-        }
-      ],
       "minecraft:hit_block": [
         {
           "effect": {

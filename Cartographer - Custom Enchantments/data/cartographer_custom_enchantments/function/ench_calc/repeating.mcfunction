@@ -53,3 +53,5 @@ scoreboard players operation @s ca.ench_repeating_lvl += @s ca.ench_repeating_sa
 
 
 tag @s remove ca.do_enchant_calc_repeating
+
+execute if score @s ca.ench_repeating_lvl matches 1.. run tag @s add ca.enchant_tick

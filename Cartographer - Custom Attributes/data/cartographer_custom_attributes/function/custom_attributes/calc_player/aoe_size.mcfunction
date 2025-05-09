@@ -115,8 +115,14 @@ scoreboard players operation @s ca.attr_aoe_size_percent += @s ca.attr_aoe_size_
 scoreboard players operation @s ca.attr_aoe_size_percent += @s ca.attr_aoe_size_percent_body
 scoreboard players operation @s ca.attr_aoe_size_percent += @s ca.attr_aoe_size_percent_bonus
 
+scoreboard players add @s ca.attr_aoe_size_percent 100
+
+scoreboard players set $ench ca.attr_var 0
+scoreboard players operation $ench ca.attr_var = @s ca.ench_amplitude_lvl
+scoreboard players operation $ench ca.attr_var *= $10 ca.CONSTANT
+scoreboard players operation @s ca.attr_aoe_size_percent += $ench ca.attr_var
+
 scoreboard players operation $percent ca.attr_var = @s ca.attr_aoe_size_percent
-scoreboard players add $percent ca.attr_var 100
 
 scoreboard players operation $total ca.attr_var = @s ca.attr_aoe_size_value
 

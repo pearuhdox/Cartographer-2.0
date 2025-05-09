@@ -52,4 +52,6 @@ scoreboard players operation @s ca.ench_shielding_lvl += @s ca.ench_shielding_bo
 scoreboard players operation @s ca.ench_shielding_lvl += @s ca.ench_shielding_saddle_lvl
 
 
+execute if score @s ca.ench_shielding_lvl matches 1.. run tag @s add ca.enchant_tick
+
 tag @s remove ca.do_enchant_calc_shielding

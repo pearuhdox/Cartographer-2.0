@@ -75,6 +75,10 @@ execute as @a[predicate=cartographer_core:in_valid_dimension] at @s run function
 # Register any entity
 execute as @e[type=!player,tag=!ca.registered] at @s run function cartographer_core:handlers/register/start
 
+# Run all enchantment effects in all packs
+execute if score $ench_timer ca.timer matches 1.. as @e[type=#cartographer_core:can_use_enchants,tag=ca.enchant_tick] at @s run function cartographer_core:handlers/enchant_tick/mob_run
+execute if score $ench_timer ca.timer matches 1.. run scoreboard players remove $ench_timer ca.timer 1
+
 #Run Failsafe for Purgable Entities - All Should die in 5 seconds regardless of their moves.
 execute if score $count ca.entity_purge_var matches 1.. as @e[tag=ca.purgable_entity] at @s run function cartographer_core:handlers/entity_purge/tick
 execute if score $count ca.entity_purge_var matches ..-1 run scoreboard players set $count ca.entity_purge_var 0

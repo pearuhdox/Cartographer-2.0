@@ -53,3 +53,5 @@ scoreboard players operation @s ca.ench_thrusting_lvl += @s ca.ench_thrusting_sa
 
 
 tag @s remove ca.do_enchant_calc_thrusting
+
+execute if score @s ca.ench_thrusting_lvl matches 1.. run tag @s add ca.enchant_tick

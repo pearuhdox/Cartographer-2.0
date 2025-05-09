@@ -42,14 +42,16 @@ execute store result score $ench ca.ench_var run data get storage cartographer_c
 scoreboard players operation @s ca.ench_reverb_saddle_lvl += $ench ca.ench_var
 
 
-scoreboard players operation @s ca.ench_reverb_lvl += @s ca.ench_reverb_feet_lvl
-scoreboard players operation @s ca.ench_reverb_lvl += @s ca.ench_reverb_legs_lvl
-scoreboard players operation @s ca.ench_reverb_lvl += @s ca.ench_reverb_chest_lvl
-scoreboard players operation @s ca.ench_reverb_lvl += @s ca.ench_reverb_head_lvl
+#scoreboard players operation @s ca.ench_reverb_lvl += @s ca.ench_reverb_feet_lvl
+#scoreboard players operation @s ca.ench_reverb_lvl += @s ca.ench_reverb_legs_lvl
+#scoreboard players operation @s ca.ench_reverb_lvl += @s ca.ench_reverb_chest_lvl
+#scoreboard players operation @s ca.ench_reverb_lvl += @s ca.ench_reverb_head_lvl
 scoreboard players operation @s ca.ench_reverb_lvl += @s ca.ench_reverb_offh_lvl
 scoreboard players operation @s ca.ench_reverb_lvl += @s ca.ench_reverb_main_lvl
 scoreboard players operation @s ca.ench_reverb_lvl += @s ca.ench_reverb_body_lvl
 scoreboard players operation @s ca.ench_reverb_lvl += @s ca.ench_reverb_saddle_lvl
 
+execute if score @s ca.ench_reverb_lvl matches 1.. run tag @s add ca.enchant_tick
+scoreboard players set $ench_timer ca.timer 10
 
 tag @s remove ca.do_enchant_calc_reverb

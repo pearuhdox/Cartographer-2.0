@@ -150,36 +150,36 @@ scoreboard players operation @s ca.ench_aberration_lvl += $value ca.ench_var
 
 
 scoreboard players set $value ca.ench_var 0
-execute on origin run scoreboard players operation $value ca.ench_var = @s ca.ench_starfall_hand_lvl
-scoreboard players operation @s ca.ench_starfall_hand_lvl += $value ca.ench_var
+execute on origin run scoreboard players operation $value ca.ench_var = @s ca.ench_starfall_main_lvl
+scoreboard players operation @s ca.ench_starfall_main_lvl += $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute on origin run scoreboard players operation $value ca.ench_var = @s ca.ench_orbit_hand_lvl
-scoreboard players operation @s ca.ench_orbit_hand_lvl += $value ca.ench_var
+execute on origin run scoreboard players operation $value ca.ench_var = @s ca.ench_orbit_main_lvl
+scoreboard players operation @s ca.ench_orbit_main_lvl += $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute on origin run scoreboard players operation $value ca.ench_var = @s ca.ench_storm_hand_lvl
-scoreboard players operation @s ca.ench_storm_hand_lvl += $value ca.ench_var
+execute on origin run scoreboard players operation $value ca.ench_var = @s ca.ench_storm_main_lvl
+scoreboard players operation @s ca.ench_storm_main_lvl += $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute on origin run scoreboard players operation $value ca.ench_var = @s ca.ench_induction_hand_lvl
-scoreboard players operation @s ca.ench_induction_hand_lvl += $value ca.ench_var
+execute on origin run scoreboard players operation $value ca.ench_var = @s ca.ench_induction_main_lvl
+scoreboard players operation @s ca.ench_induction_main_lvl += $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute on origin run scoreboard players operation $value ca.ench_var = @s ca.ench_eruption_hand_lvl
-scoreboard players operation @s ca.ench_eruption_hand_lvl += $value ca.ench_var
+execute on origin run scoreboard players operation $value ca.ench_var = @s ca.ench_eruption_main_lvl
+scoreboard players operation @s ca.ench_eruption_main_lvl += $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute on origin run scoreboard players operation $value ca.ench_var = @s ca.ench_soulfire_hand_lvl
-scoreboard players operation @s ca.ench_soulfire_hand_lvl += $value ca.ench_var
+execute on origin run scoreboard players operation $value ca.ench_var = @s ca.ench_soulfire_main_lvl
+scoreboard players operation @s ca.ench_soulfire_main_lvl += $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute on origin run scoreboard players operation $value ca.ench_var = @s ca.ench_quake_hand_lvl
-scoreboard players operation @s ca.ench_quake_hand_lvl += $value ca.ench_var
+execute on origin run scoreboard players operation $value ca.ench_var = @s ca.ench_quake_main_lvl
+scoreboard players operation @s ca.ench_quake_main_lvl += $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
-execute on origin run scoreboard players operation $value ca.ench_var = @s ca.ench_aberration_hand_lvl
-scoreboard players operation @s ca.ench_aberration_hand_lvl += $value ca.ench_var
+execute on origin run scoreboard players operation $value ca.ench_var = @s ca.ench_aberration_main_lvl
+scoreboard players operation @s ca.ench_aberration_main_lvl += $value ca.ench_var
 
 
 

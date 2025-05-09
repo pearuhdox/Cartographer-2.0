@@ -53,3 +53,5 @@ scoreboard players operation @s ca.ench_orbit_lvl += @s ca.ench_orbit_saddle_lvl
 
 
 tag @s remove ca.do_enchant_calc_orbit
+
+execute if score @s ca.ench_orbit_lvl matches 1.. run tag @s add ca.enchant_tick

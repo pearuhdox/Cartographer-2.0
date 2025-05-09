@@ -53,3 +53,5 @@ scoreboard players operation @s ca.ench_rushdown_lvl += @s ca.ench_rushdown_sadd
 
 
 tag @s remove ca.do_enchant_calc_rushdown
+
+execute if score @s ca.ench_rushdown_lvl matches 1.. run tag @s add ca.enchant_tick

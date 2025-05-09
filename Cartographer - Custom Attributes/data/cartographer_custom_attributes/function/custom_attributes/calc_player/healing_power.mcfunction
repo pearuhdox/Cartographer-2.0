@@ -115,8 +115,14 @@ scoreboard players operation @s ca.attr_healing_power_percent += @s ca.attr_heal
 scoreboard players operation @s ca.attr_healing_power_percent += @s ca.attr_healing_power_percent_body
 scoreboard players operation @s ca.attr_healing_power_percent += @s ca.attr_healing_power_percent_bonus
 
+scoreboard players add @s ca.attr_healing_power_percent 100
+
+scoreboard players set $ench ca.attr_var 0
+scoreboard players operation $ench ca.attr_var = @s ca.ench_invigorated_lvl
+scoreboard players operation $ench ca.attr_var *= $10 ca.CONSTANT
+scoreboard players operation @s ca.attr_healing_power_percent += $ench ca.attr_var
+
 scoreboard players operation $percent ca.attr_var = @s ca.attr_healing_power_percent
-scoreboard players add $percent ca.attr_var 100
 
 scoreboard players operation $total ca.attr_var = @s ca.attr_healing_power_value
 

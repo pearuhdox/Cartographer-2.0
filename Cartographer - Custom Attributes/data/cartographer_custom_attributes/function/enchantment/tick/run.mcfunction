@@ -1,0 +1,22 @@
+execute if score @s ca.ench_amplitude_lvl matches 1.. run function cartographer_custom_attributes:enchantment/stat/amplitude/run
+execute if score @s ca.ench_cloudstep_lvl matches 1.. run function cartographer_custom_attributes:enchantment/stat/cloudstep/run
+execute if score @s ca.ench_echo_lvl matches 1.. run function cartographer_custom_attributes:enchantment/stat/echo/run
+execute if score @s ca.ench_invigorated_lvl matches 1.. run function cartographer_custom_attributes:enchantment/stat/invigorated/run
+execute if score @s ca.ench_lucky_lvl matches 1.. run function cartographer_custom_attributes:enchantment/stat/lucky/run
+execute if score @s ca.ench_precision_lvl matches 1.. run function cartographer_custom_attributes:enchantment/stat/precision/run
+execute if score @s ca.ench_resonance_lvl matches 1.. run function cartographer_custom_attributes:enchantment/stat/resonance/run
+execute if score @s ca.ench_reverb_lvl matches 1.. run function cartographer_custom_attributes:enchantment/stat/reverb/run
+execute if score @s ca.ench_technique_lvl matches 1.. run function cartographer_custom_attributes:enchantment/stat/technique/run
+execute if score @s ca.ench_windborn_lvl matches 1.. run function cartographer_custom_attributes:enchantment/stat/windborn/run
+
+execute if score @s ca.ench_agility_lvl matches 1.. run function cartographer_custom_attributes:enchantment/stat/agility/run
+execute if score @s ca.ench_celerity_lvl matches 1.. run function cartographer_custom_attributes:enchantment/stat/celerity/run
+execute if score @s ca.ench_dexterity_lvl matches 1.. run function cartographer_custom_attributes:enchantment/stat/dexterity/run
+execute if score @s ca.ench_extended_lvl matches 1.. run function cartographer_custom_attributes:enchantment/stat/extended/run
+execute if score @s ca.ench_finesse_lvl matches 1.. run function cartographer_custom_attributes:enchantment/stat/finesse/run
+execute if score @s ca.ench_handling_lvl matches 1.. run function cartographer_custom_attributes:enchantment/stat/handling/run
+execute if score @s ca.ench_immovable_lvl matches 1.. run function cartographer_custom_attributes:enchantment/stat/immovable/run
+execute if score @s ca.ench_traveling_lvl matches 1.. run function cartographer_custom_attributes:enchantment/stat/traveling/run
+execute if score @s ca.ench_vitality_lvl matches 1.. run function cartographer_custom_attributes:enchantment/stat/vitality/run
+execute if score @s ca.ench_extended_lvl matches 1.. run function cartographer_custom_attributes:enchantment/stat/extended/run
+execute if score @s ca.ench_extended_lvl matches 1.. run function cartographer_custom_attributes:enchantment/stat/extended/run

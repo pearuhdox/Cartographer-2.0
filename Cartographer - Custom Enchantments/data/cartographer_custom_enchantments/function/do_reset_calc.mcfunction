@@ -78,7 +78,21 @@ execute if score @s ca.ench_clumsiness_lvl matches 1.. run function cartographer
 execute if score @s ca.ench_encumbering_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/encumbering
 execute if score @s ca.ench_regret_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/regret
 execute if score @s ca.ench_gluttony_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/gluttony
+
 execute if score @s ca.ench_drilling_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/drilling
 execute if score @s ca.ench_excavator_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/excavator
 execute if score @s ca.ench_lightborn_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/lightborn
 execute if score @s ca.ench_multitool_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/multitool
+
+execute if score @s ca.ench_flame_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/flame
+execute if score @s ca.ench_knockback_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/knockback
+execute if score @s ca.ench_power_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/power
+execute if score @s ca.ench_punch_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/punch
+execute if score @s ca.ench_thorns_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/thorns
+
+execute if score @s ca.ench_quick_charge_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/quick_charge
+execute if score @s ca.ench_infinity_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/infinity
+execute if score @s ca.ench_multishot_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/multishot
+
+execute if score @s ca.ench_heaviness_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/heaviness
+execute if score @s ca.ench_jamming_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/jamming

@@ -51,5 +51,6 @@ scoreboard players operation @s ca.ench_hastiness_lvl += @s ca.ench_hastiness_ma
 scoreboard players operation @s ca.ench_hastiness_lvl += @s ca.ench_hastiness_body_lvl
 scoreboard players operation @s ca.ench_hastiness_lvl += @s ca.ench_hastiness_saddle_lvl
 
+execute if score @s ca.ench_hastiness_lvl matches 1.. run tag @s add ca.enchant_tick
 
 tag @s remove ca.do_enchant_calc_hastiness

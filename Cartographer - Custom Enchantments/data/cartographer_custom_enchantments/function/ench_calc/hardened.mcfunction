@@ -53,3 +53,5 @@ scoreboard players operation @s ca.ench_hardened_lvl += @s ca.ench_hardened_sadd
 
 
 tag @s remove ca.do_enchant_calc_hardened
+
+execute if score @s ca.ench_hardened_lvl matches 1.. run tag @s add ca.enchant_tick

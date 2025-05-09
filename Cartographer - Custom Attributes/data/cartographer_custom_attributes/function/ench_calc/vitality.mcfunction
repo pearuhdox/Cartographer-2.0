@@ -29,9 +29,9 @@ scoreboard players set $ench ca.ench_var 0
 execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.offh.components.minecraft:enchantments.cartographer_custom_attributes:vanilla/vitality
 scoreboard players operation @s ca.ench_vitality_offh_lvl += $ench ca.ench_var
 
-scoreboard players set $ench ca.ench_var 0
-execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.main.components.minecraft:enchantments.cartographer_custom_attributes:vanilla/vitality
-scoreboard players operation @s ca.ench_vitality_main_lvl += $ench ca.ench_var
+#scoreboard players set $ench ca.ench_var 0
+#execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.main.components.minecraft:enchantments.cartographer_custom_attributes:vanilla/vitality
+#scoreboard players operation @s ca.ench_vitality_main_lvl += $ench ca.ench_var
 
 scoreboard players set $ench ca.ench_var 0
 execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.body.components.minecraft:enchantments.cartographer_custom_attributes:vanilla/vitality
@@ -47,9 +47,11 @@ scoreboard players operation @s ca.ench_vitality_lvl += @s ca.ench_vitality_legs
 scoreboard players operation @s ca.ench_vitality_lvl += @s ca.ench_vitality_chest_lvl
 scoreboard players operation @s ca.ench_vitality_lvl += @s ca.ench_vitality_head_lvl
 scoreboard players operation @s ca.ench_vitality_lvl += @s ca.ench_vitality_offh_lvl
-scoreboard players operation @s ca.ench_vitality_lvl += @s ca.ench_vitality_main_lvl
+#scoreboard players operation @s ca.ench_vitality_lvl += @s ca.ench_vitality_main_lvl
 scoreboard players operation @s ca.ench_vitality_lvl += @s ca.ench_vitality_body_lvl
 scoreboard players operation @s ca.ench_vitality_lvl += @s ca.ench_vitality_saddle_lvl
 
+execute if score @s ca.ench_vitality_lvl matches 1.. run tag @s add ca.enchant_tick
+scoreboard players set $ench_timer ca.timer 10
 
 tag @s remove ca.do_enchant_calc_vitality

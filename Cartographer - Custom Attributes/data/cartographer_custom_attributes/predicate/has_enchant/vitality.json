@@ -1,0 +1,45 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "armor.*": {
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantments": "cartographer_custom_attributes:vanilla/vitality",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "weapon.*": {
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantments": "cartographer_custom_attributes:vanilla/vitality",
+                  "levels": {
+                    "min": 1
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

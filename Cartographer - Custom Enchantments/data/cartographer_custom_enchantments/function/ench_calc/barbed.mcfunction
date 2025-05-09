@@ -53,3 +53,5 @@ scoreboard players operation @s ca.ench_barbed_lvl += @s ca.ench_barbed_saddle_l
 
 
 tag @s remove ca.do_enchant_calc_barbed
+
+execute if score @s ca.ench_barbed_lvl matches 1.. run tag @s add ca.enchant_tick

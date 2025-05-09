@@ -51,5 +51,6 @@ scoreboard players operation @s ca.ench_evasion_lvl += @s ca.ench_evasion_main_l
 scoreboard players operation @s ca.ench_evasion_lvl += @s ca.ench_evasion_body_lvl
 scoreboard players operation @s ca.ench_evasion_lvl += @s ca.ench_evasion_saddle_lvl
 
+execute if score @s ca.ench_evasion_lvl matches 1.. run tag @s add ca.enchant_tick
 
 tag @s remove ca.do_enchant_calc_evasion

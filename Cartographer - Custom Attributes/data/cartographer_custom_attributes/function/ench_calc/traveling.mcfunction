@@ -51,5 +51,7 @@ scoreboard players operation @s ca.ench_traveling_lvl += @s ca.ench_traveling_ma
 scoreboard players operation @s ca.ench_traveling_lvl += @s ca.ench_traveling_body_lvl
 scoreboard players operation @s ca.ench_traveling_lvl += @s ca.ench_traveling_saddle_lvl
 
+execute if score @s ca.ench_traveling_lvl matches 1.. run tag @s add ca.enchant_tick
+scoreboard players set $ench_timer ca.timer 10
 
 tag @s remove ca.do_enchant_calc_traveling

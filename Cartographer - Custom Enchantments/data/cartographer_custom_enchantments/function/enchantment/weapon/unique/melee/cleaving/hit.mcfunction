@@ -32,6 +32,7 @@ execute store result storage cartographer:custom_enchantments range_1 double 0.0
 playsound minecraft:entity.player.attack.sweep player @a[distance=..16] ~ ~ ~ 1 0.75
 execute at @s anchored eyes positioned ^ ^ ^ rotated ~ 0 positioned ^ ^-0.75 ^1 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1 force
 
+
 tag @s add ca.cleaving_owner
 
 execute as @s at @s run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/cleaving/macro with storage cartographer:custom_enchantments

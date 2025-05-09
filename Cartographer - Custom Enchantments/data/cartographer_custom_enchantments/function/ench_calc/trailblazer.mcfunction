@@ -53,3 +53,5 @@ scoreboard players operation @s ca.ench_trailblazer_lvl += @s ca.ench_trailblaze
 
 
 tag @s remove ca.do_enchant_calc_trailblazer
+
+execute if score @s ca.ench_trailblazer_lvl matches 1.. run tag @s add ca.enchant_tick

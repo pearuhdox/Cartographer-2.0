@@ -1,6 +1,4 @@
-execute unless entity @s[tag=ca.ench_ran_flag_orbit] run function cartographer_custom_enchantments:enchantment/passive/orbit/run
+function cartographer_core:enchant_calculator/full_calculation {namespace:"cartographer_custom_enchantments",category:"passive/",enchantment:"orbit",type:"passive"}
 
-execute if entity @s[type=player] run scoreboard players set @s ca.reset_flags 1
-
-execute unless entity @s[type=player] unless entity @s[tag=ca.ench_ran_flag_orbit] run function carto_event:api/create_single_entity_event {event:"schedule_enchant/reset",duration:1,delay:0,parameters:{flag:"orbit"},merge_behavior:"merge"}
-execute unless entity @s[tag=ca.ench_ran_flag_orbit] run tag @s add ca.ench_ran_flag_orbit
+tag @s add ca.enchant_tick
+scoreboard players set $ench_timer ca.timer 10

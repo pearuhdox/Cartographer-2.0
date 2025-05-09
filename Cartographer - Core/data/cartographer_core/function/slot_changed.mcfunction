@@ -5,9 +5,10 @@ execute unless items entity @s weapon.offhand #cartographer_core:enchant_support
 
 execute if score $custom_enchantments ca.installed matches 1.. run function cartographer_custom_enchantments:calculate_hand
 execute if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:calculate_hand
-execute if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:calculate_hand_attr
 execute if score $custom_statuses ca.installed matches 1.. run function cartographer_custom_statuses:calculate_hand
 execute if score $enchantment_rework ca.installed matches 1.. run function cartographer_enchantment_rework:calculate_hand
+
+execute if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:calculate_hand_attr
 
 execute if score $custom_statuses ca.installed matches 1.. run function cartographer_custom_statuses:calculator/process/coating_check
 

@@ -23,7 +23,6 @@
       "minecraft:crossbow_charge_time": {
         "type": "minecraft:set",
         "value": 3600
-      },
-      "minecraft:prevent_equipment_drop": {}
+      }
     }
   }

@@ -15,7 +15,7 @@ execute if score $used_induction ca.induction_stack matches 1.. run playsound mi
 execute if score $used_induction ca.induction_stack matches 1.. run playsound minecraft:entity.firework_rocket.twinkle player @a[distance=..16] ~ ~ ~ 1 2
 execute if score $used_induction ca.induction_stack matches 1.. run playsound minecraft:entity.lightning_bolt.thunder player @a[distance=..16] ~ ~ ~ 0.5 2
 
-execute if score $used_induction ca.induction_stack matches 1.. run scoreboard players operation $induction_hand ca.ench_value = @s ca.ench_induction_hand_lvl
+execute if score $used_induction ca.induction_stack matches 1.. run scoreboard players operation $induction_hand ca.ench_value = @s ca.ench_induction_main_lvl
 
 execute if score $used_induction ca.induction_stack matches 1.. run function cartographer_custom_enchantments:enchantment/passive/induction/get_data
 

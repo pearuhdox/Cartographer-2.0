@@ -115,8 +115,13 @@ scoreboard players operation @s ca.attr_combat_luck_percent += @s ca.attr_combat
 scoreboard players operation @s ca.attr_combat_luck_percent += @s ca.attr_combat_luck_percent_body
 scoreboard players operation @s ca.attr_combat_luck_percent += @s ca.attr_combat_luck_percent_bonus
 
+scoreboard players add @s ca.attr_combat_luck_percent 100
 scoreboard players operation $percent ca.attr_var = @s ca.attr_combat_luck_percent
-scoreboard players add $percent ca.attr_var 100
+
+scoreboard players set $ench ca.attr_var 0
+scoreboard players operation $ench ca.attr_var = @s ca.ench_lucky_lvl
+scoreboard players operation $ench ca.attr_var *= $20 ca.CONSTANT
+scoreboard players operation @s ca.attr_combat_luck_value += $ench ca.attr_var
 
 scoreboard players operation $total ca.attr_var = @s ca.attr_combat_luck_value
 

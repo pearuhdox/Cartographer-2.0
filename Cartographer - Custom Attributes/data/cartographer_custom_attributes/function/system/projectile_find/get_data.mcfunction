@@ -1,3 +1,4 @@
+
 scoreboard players set $life_drain_chance ca.attr_apply_var -2000000
 scoreboard players set $life_drain_amount_flat ca.attr_apply_var -2000000
 scoreboard players set $life_drain_amount_percent ca.attr_apply_var -2000000

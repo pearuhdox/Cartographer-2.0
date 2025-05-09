@@ -115,8 +115,8 @@ scoreboard players operation @s ca.attr_chaining_hit_damage_percent += @s ca.att
 scoreboard players operation @s ca.attr_chaining_hit_damage_percent += @s ca.attr_chaining_hit_damage_percent_body
 scoreboard players operation @s ca.attr_chaining_hit_damage_percent += @s ca.attr_chaining_hit_damage_percent_bonus
 
+scoreboard players add @s ca.attr_chaining_hit_damage_percent 100
 scoreboard players operation $percent ca.attr_var = @s ca.attr_chaining_hit_damage_percent
-scoreboard players add $percent ca.attr_var 100
 
 scoreboard players operation $total ca.attr_var = @s ca.attr_chaining_hit_damage_value
 

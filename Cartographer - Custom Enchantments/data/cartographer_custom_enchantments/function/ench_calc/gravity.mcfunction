@@ -53,3 +53,5 @@ scoreboard players operation @s ca.ench_gravity_lvl += @s ca.ench_gravity_saddle
 
 
 tag @s remove ca.do_enchant_calc_gravity
+
+execute if score @s ca.ench_gravity_lvl matches 1.. run tag @s add ca.enchant_tick

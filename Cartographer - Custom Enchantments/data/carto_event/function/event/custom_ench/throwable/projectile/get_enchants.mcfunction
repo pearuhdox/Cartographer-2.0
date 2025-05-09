@@ -113,42 +113,42 @@ scoreboard players operation @s ca.ench_multishot_lvl = $value ca.ench_var
 scoreboard players set $value ca.ench_var 0
 execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/starfall
 scoreboard players operation @s ca.ench_starfall_lvl = $value ca.ench_var
-scoreboard players operation @s ca.ench_starfall_hand_lvl = $value ca.ench_var
+scoreboard players operation @s ca.ench_starfall_main_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
 execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/orbit
 scoreboard players operation @s ca.ench_orbit_lvl = $value ca.ench_var
-scoreboard players operation @s ca.ench_orbit_hand_lvl = $value ca.ench_var
+scoreboard players operation @s ca.ench_orbit_main_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
 execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/storm
 scoreboard players operation @s ca.ench_storm_lvl = $value ca.ench_var
-scoreboard players operation @s ca.ench_storm_hand_lvl = $value ca.ench_var
+scoreboard players operation @s ca.ench_storm_main_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
 execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/induction
 scoreboard players operation @s ca.ench_induction_lvl = $value ca.ench_var
-scoreboard players operation @s ca.ench_induction_hand_lvl = $value ca.ench_var
+scoreboard players operation @s ca.ench_induction_main_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
 execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/eruption
 scoreboard players operation @s ca.ench_eruption_lvl = $value ca.ench_var
-scoreboard players operation @s ca.ench_eruption_hand_lvl = $value ca.ench_var
+scoreboard players operation @s ca.ench_eruption_main_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
 execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/soulfire
 scoreboard players operation @s ca.ench_soulfire_lvl = $value ca.ench_var
-scoreboard players operation @s ca.ench_soulfire_hand_lvl = $value ca.ench_var
+scoreboard players operation @s ca.ench_soulfire_main_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
 execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/quake
 scoreboard players operation @s ca.ench_quake_lvl = $value ca.ench_var
-scoreboard players operation @s ca.ench_quake_hand_lvl = $value ca.ench_var
+scoreboard players operation @s ca.ench_quake_main_lvl = $value ca.ench_var
 
 scoreboard players set $value ca.ench_var 0
 execute store result score $value ca.ench_var run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/aberration
 scoreboard players operation @s ca.ench_aberration_lvl = $value ca.ench_var
-scoreboard players operation @s ca.ench_aberration_hand_lvl = $value ca.ench_var
+scoreboard players operation @s ca.ench_aberration_main_lvl = $value ca.ench_var
 
 
 

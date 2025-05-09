@@ -11,6 +11,3 @@ execute unless entity @s[type=player] run function cartographer_custom_enchantme
 
 execute if entity @s[type=player] if score @s ca.momentum_stack matches 1500.. if predicate cartographer_core:periodic_tick/5 run function cartographer_core:handlers/energized/vfx
 execute unless entity @s[type=player] if score @s ca.momentum_stack matches 1500.. if predicate cartographer_core:periodic_tick/5 run function cartographer_core:handlers/energized/vfx_entity
-
-#execute if entity @s[type=player] run function cartographer_core:enchant_calculator/full_calculation {namespace:"cartographer_custom_enchantments",category:"passive/",enchantment:"momentum",type:"passive"}
-execute unless entity @s[type=player] if predicate cartographer_core:periodic_tick/20 run function cartographer_core:enchant_calculator/full_calculation {namespace:"cartographer_custom_enchantments",category:"passive/",enchantment:"momentum",type:"passive"}

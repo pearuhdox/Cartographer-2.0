@@ -1,0 +1,2 @@
+execute if entity @a[distance=..8,gamemode=!creative,gamemode=!spectator] unless score @s ca.excavator_cooldown matches 1.. if predicate cartographer_core:periodic_tick/4 run function cartographer_custom_enchantments:enchantment/tool/excavator/entity/activate
+execute if score @s ca.excavator_cooldown matches 1.. if predicate cartographer_core:periodic_tick/20 run scoreboard players remove @s ca.excavator_cooldown 1

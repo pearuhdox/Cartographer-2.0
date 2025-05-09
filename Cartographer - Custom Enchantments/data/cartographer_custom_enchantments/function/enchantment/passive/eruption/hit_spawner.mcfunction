@@ -1,7 +1,7 @@
 tag @s add ca.eruption_used_spawner
 
 scoreboard players set $spawner_cause ca.ench_var 1
-scoreboard players operation $eruption_hand ca.ench_value = @s ca.ench_eruption_hand_lvl
+scoreboard players operation $eruption_hand ca.ench_value = @s ca.ench_eruption_main_lvl
 scoreboard players set $proc ca.ench_eruption_lvl 1
 
 function cartographer_custom_enchantments:enchantment/passive/eruption/get_data

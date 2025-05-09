@@ -1,6 +1,6 @@
 scoreboard players set $spawner_cause ca.ench_var 1
 
-scoreboard players operation $starfall_hand ca.ench_value = @s ca.ench_starfall_hand_lvl
+scoreboard players operation $starfall_hand ca.ench_value = @s ca.ench_starfall_main_lvl
 
 function cartographer_custom_enchantments:enchantment/passive/starfall/get_data
 execute as @e[type=#cartographer_core:affected_by_carto,distance=..16,limit=1,sort=nearest] at @s run function cartographer_custom_enchantments:enchantment/passive/starfall/get_position

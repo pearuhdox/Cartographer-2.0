@@ -25,14 +25,33 @@
   "effects": {
     "minecraft:tick": [
       {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "#cartographer_core:can_use_enchants"
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "ca.ench_lifeblood_lvl": {
+                    "min": 1
+                  }
+                }
+              }
+            }
+          ]
+        },
         "effect": {
           "type": "minecraft:run_function",
           "function": "cartographer_custom_statuses:enchantment/passive/lifeblood/schedule"
-        },
-        "requirements": {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {}
         }
       }
     ]

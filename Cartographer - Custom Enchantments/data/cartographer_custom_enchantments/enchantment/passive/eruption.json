@@ -30,9 +30,28 @@
           "function": "cartographer_custom_enchantments:enchantment/passive/eruption/schedule"
         },
         "requirements": {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {}
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "#cartographer_core:can_use_enchants"
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "ca.ench_eruption_lvl": {
+                    "min": 1
+                  }
+                }
+              }
+            }
+          ]
         }
       }
     ],
@@ -74,7 +93,7 @@
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "ca.ench_eruption_hand_lvl": {
+                "ca.ench_eruption_main_lvl": {
                   "min": 1
                 }
               }

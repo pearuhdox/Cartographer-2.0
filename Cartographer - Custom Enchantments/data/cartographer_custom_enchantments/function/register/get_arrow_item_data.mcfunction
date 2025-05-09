@@ -55,14 +55,14 @@ execute store result score @s ca.ench_soulfire_lvl run data get entity @s item.c
 execute store result score @s ca.ench_quake_lvl run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/quake
 execute store result score @s ca.ench_aberration_lvl run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/aberration
 
-execute store result score @s ca.ench_starfall_hand_lvl run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/starfall
-execute store result score @s ca.ench_orbit_hand_lvl run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/orbit
-execute store result score @s ca.ench_storm_hand_lvl run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/storm
-execute store result score @s ca.ench_induction_hand_lvl run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/induction
-execute store result score @s ca.ench_eruption_hand_lvl run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/eruption
-execute store result score @s ca.ench_soulfire_hand_lvl run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/soulfire
-execute store result score @s ca.ench_quake_hand_lvl run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/quake
-execute store result score @s ca.ench_aberration_hand_lvl run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/aberration
+execute store result score @s ca.ench_starfall_main_lvl run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/starfall
+execute store result score @s ca.ench_orbit_main_lvl run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/orbit
+execute store result score @s ca.ench_storm_main_lvl run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/storm
+execute store result score @s ca.ench_induction_main_lvl run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/induction
+execute store result score @s ca.ench_eruption_main_lvl run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/eruption
+execute store result score @s ca.ench_soulfire_main_lvl run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/soulfire
+execute store result score @s ca.ench_quake_main_lvl run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/quake
+execute store result score @s ca.ench_aberration_main_lvl run data get entity @s item.components.minecraft:enchantments.cartographer_custom_enchantments:passive/aberration
 
 execute store result score @s ca.ench_flame_lvl run data get entity @s item.components.minecraft:enchantments.minecraft:flame
 execute store result score @s ca.ench_power_lvl run data get entity @s item.components.minecraft:enchantments.minecraft:power

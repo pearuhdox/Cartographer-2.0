@@ -19,18 +19,5 @@
     "any"
   ],
   "effects": {
-    "minecraft:tick": [
-      {
-        "effect": {
-          "type": "minecraft:run_function",
-          "function": "cartographer_custom_enchantments:enchantment/curse/encumbering/schedule"
-        },
-        "requirements": {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {}
-        }
-      }
-    ]
   }
 }
