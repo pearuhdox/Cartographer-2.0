@@ -324,6 +324,7 @@ scoreboard players operation @s ca.ench_inertia_lvl += @s ca.ench_inertia_body_l
 scoreboard players operation @s ca.ench_inertia_lvl += @s ca.ench_inertia_saddle_lvl
 
 execute if score @s ca.ench_inertia_lvl matches 1.. run tag @s add ca.enchant_tick
+execute if score @s ca.ench_inertia_lvl matches 1.. run tag @s remove ca.energized_calculated
 
 scoreboard players set @s ca.ench_diversion_main_lvl 0
 scoreboard players set @s ca.ench_diversion_offh_lvl 0
@@ -393,6 +394,7 @@ scoreboard players operation @s ca.ench_momentum_lvl += @s ca.ench_momentum_body
 scoreboard players operation @s ca.ench_momentum_lvl += @s ca.ench_momentum_saddle_lvl
 
 execute if score @s ca.ench_momentum_lvl matches 1.. run tag @s add ca.enchant_tick
+execute if score @s ca.ench_momentum_lvl matches 1.. run tag @s remove ca.energized_calculated
 
 scoreboard players set @s ca.ench_vengeance_main_lvl 0
 scoreboard players set @s ca.ench_vengeance_offh_lvl 0
@@ -554,6 +556,7 @@ scoreboard players operation @s ca.ench_storm_lvl += @s ca.ench_storm_body_lvl
 scoreboard players operation @s ca.ench_storm_lvl += @s ca.ench_storm_saddle_lvl
 
 execute if score @s ca.ench_storm_lvl matches 1.. run tag @s add ca.enchant_tick
+execute if score @s ca.ench_storm_lvl matches 1.. run tag @s remove ca.energized_calculated
 
 scoreboard players set @s ca.ench_induction_main_lvl 0
 scoreboard players set @s ca.ench_induction_offh_lvl 0
@@ -577,6 +580,7 @@ scoreboard players operation @s ca.ench_induction_lvl += @s ca.ench_induction_bo
 scoreboard players operation @s ca.ench_induction_lvl += @s ca.ench_induction_saddle_lvl
 
 execute if score @s ca.ench_induction_lvl matches 1.. run tag @s add ca.enchant_tick
+execute if score @s ca.ench_induction_lvl matches 1.. run tag @s remove ca.energized_calculated
 
 scoreboard players set @s ca.ench_aberration_main_lvl 0
 scoreboard players set @s ca.ench_aberration_offh_lvl 0

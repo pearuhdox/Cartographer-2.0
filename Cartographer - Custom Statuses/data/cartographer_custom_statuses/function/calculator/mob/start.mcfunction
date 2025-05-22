@@ -36,5 +36,3 @@ tag @s remove ca.status_slot_legs
 tag @s remove ca.status_slot_feet
 tag @s remove ca.status_slot_main
 tag @s remove ca.status_slot_offh
-
-#execute if score @s ca.attr_healing_power_total matches -1999999.. run function cartographer_custom_attributes:custom_attributes/effects/healing_power/tracking_start

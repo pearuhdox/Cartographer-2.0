@@ -17,7 +17,8 @@ execute if score @s ca.attr_aoe_damage_percent matches -1999999.. run scoreboard
 execute if score @s ca.attr_aoe_damage_percent matches -1999999.. run scoreboard players operation $result_damage ca.ench_var /= $100 ca.CONSTANT
 
 
-scoreboard players set $size ca.ench_storm_lvl 600
+execute if entity @s[type=player] run scoreboard players set $size ca.ench_storm_lvl 900
+execute unless entity @s[type=player] run scoreboard players set $size ca.ench_storm_lvl 550
 
 execute if score @s ca.attr_aoe_size_value matches -1999999.. run scoreboard players operation $size ca.ench_storm_lvl += @s ca.attr_aoe_size_value
 execute if score @s ca.attr_aoe_size_percent matches -1999999.. run scoreboard players operation $size ca.ench_storm_lvl *= @s ca.attr_aoe_size_percent

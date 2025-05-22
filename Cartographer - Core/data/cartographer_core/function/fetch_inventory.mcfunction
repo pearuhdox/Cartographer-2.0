@@ -1,6 +1,8 @@
 data modify storage cartographer_core:player_equip data set value {}
 
-data modify storage cartographer_core:player_equip data.main set from entity @s SelectedItem
+execute if entity @s[type=player] run data modify storage cartographer_core:player_equip data.main set from entity @s SelectedItem
+execute unless entity @s[type=player] run data modify storage cartographer_core:player_equip data.main set from entity @s equipment.mainhand
+
 data modify storage cartographer_core:player_equip data.offh set from entity @s equipment.offhand
 data modify storage cartographer_core:player_equip data.feet set from entity @s equipment.feet
 data modify storage cartographer_core:player_equip data.legs set from entity @s equipment.legs

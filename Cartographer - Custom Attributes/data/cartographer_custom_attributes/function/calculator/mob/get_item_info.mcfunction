@@ -1,2 +1,0 @@
-$data modify storage cartographer_custom_attributes:calculator equips_custom.$(slot) set from entity @s $(path).components.minecraft:custom_data.custom_attributes
-$data modify storage cartographer_custom_attributes:calculator equips_attr.$(slot) set from entity @s $(path).components.minecraft:attribute_modifiers.modifiers

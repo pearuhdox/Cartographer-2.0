@@ -23,5 +23,5 @@ execute if entity @s[tag=ca.do_attr_calc_life_drain_chance] run function cartogr
 execute if entity @s[tag=ca.do_attr_calc_life_drain_amount] run function cartographer_custom_attributes:custom_attributes/calc_player/life_drain_amount
 execute if entity @s[tag=ca.do_attr_calc_extra_jump_count] run function cartographer_custom_attributes:custom_attributes/calc_player/extra_jump_count
 execute if entity @s[tag=ca.do_attr_calc_airdash_count] run function cartographer_custom_attributes:custom_attributes/calc_player/airdash_count
-execute if entity @s[tag=ca.do_attr_calc_adaptive_damage] run function cartographer_custom_attributes:custom_attributes/calc_player/adaptive_damage
-execute if entity @s[tag=ca.do_attr_calc_total_damage] run function cartographer_custom_attributes:custom_attributes/calc_player/total_damage
+#execute if entity @s[tag=ca.do_attr_calc_adaptive_damage] run function cartographer_custom_attributes:custom_attributes/calc_player/adaptive_damage
+#execute if entity @s[tag=ca.do_attr_calc_total_damage] run function cartographer_custom_attributes:custom_attributes/calc_player/total_damage

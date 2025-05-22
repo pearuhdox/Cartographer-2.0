@@ -1,6 +1,7 @@
 {
     "values": [
       "cartographer_custom_enchantments:enchant_damage_bypass",
+      "cartographer_custom_enchantments:opportunist_damage",
       "cartographer_custom_enchantments:vengeance_damage",
       "cartographer_custom_enchantments:projectile_damage_bypass",
       "cartographer_custom_enchantments:projectile_damage_bypass_no_kb",

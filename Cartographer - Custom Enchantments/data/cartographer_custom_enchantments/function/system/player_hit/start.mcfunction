@@ -53,11 +53,13 @@ scoreboard players set $proc ca.ench_eruption_lvl 0
 execute if score $eruption ca.ench_value matches 1.. unless score @s ca.attack_cooldown_percent matches 16.. if entity @s[advancements={entityid:player_hurt_entity={is_player_attack=true,is_projectile=false}}] run scoreboard players set $proc ca.ench_eruption_lvl 1
 execute if score $eruption ca.ench_value matches 1.. if entity @s[advancements={entityid:player_hurt_entity={is_projectile=true}}] run scoreboard players set $proc ca.ench_eruption_lvl 1
 execute if score $eruption ca.ench_value matches 1.. if entity @s[advancements={entityid:player_hurt_entity={is_player_attack=false,is_projectile=false}}] run scoreboard players set $proc ca.ench_eruption_lvl 2
+execute if score $eruption ca.ench_value matches 1.. if entity @s[advancements={entityid:player_hurt_entity={no_anger=true}}] run scoreboard players set $proc ca.ench_eruption_lvl 0
 
 scoreboard players set $proc ca.ench_soulfire_lvl 0
 execute if score $soulfire ca.ench_value matches 1.. unless score @s ca.attack_cooldown_percent matches 16.. if entity @s[advancements={entityid:player_hurt_entity={is_player_attack=true,is_projectile=false}}] run scoreboard players set $proc ca.ench_soulfire_lvl 1
 execute if score $soulfire ca.ench_value matches 1.. if entity @s[advancements={entityid:player_hurt_entity={is_projectile=true}}] run scoreboard players set $proc ca.ench_soulfire_lvl 1
 execute if score $soulfire ca.ench_value matches 1.. if entity @s[advancements={entityid:player_hurt_entity={is_player_attack=false,is_projectile=false}}] run scoreboard players set $proc ca.ench_soulfire_lvl 2
+execute if score $soulfire ca.ench_value matches 1.. if entity @s[advancements={entityid:player_hurt_entity={no_anger=true}}] run scoreboard players set $proc ca.ench_soulfire_lvl 0
 
 
 #Damage Enchantments

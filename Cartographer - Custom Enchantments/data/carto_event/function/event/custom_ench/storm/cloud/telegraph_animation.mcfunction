@@ -33,7 +33,7 @@ execute store result storage cartographer_core:telegraphing data.x_pos float 0.0
 execute store result storage cartographer_core:telegraphing data.z_pos float 0.00001 run scoreboard players get $t_z ca.telegraph_data
 
 data modify storage cartographer_core:telegraphing merge set value {}
-data modify storage cartographer_core:telegraphing merge set value {teleport_duration:5,start_interpolation:0,interpolation_duration:4,text_opacity:170,transformation:[0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f]}
+data modify storage cartographer_core:telegraphing merge set value {teleport_duration:10,start_interpolation:0,interpolation_duration:9,text_opacity:170,transformation:[0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f]}
 
 data modify storage cartographer_core:telegraphing merge.text_opacity set from storage cartographer_core:telegraphing data.opacity
 
