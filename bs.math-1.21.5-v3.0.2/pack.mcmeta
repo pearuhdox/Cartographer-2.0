@@ -1,0 +1,11 @@
+{
+  "id": "bs.math",
+  "pack": {
+    "pack_format": 71,
+    "description": "Bookshelf mathematical toolkit, bringing advanced calculations to Minecraft.",
+    "supported_formats": {
+      "min_inclusive": 71,
+      "max_inclusive": 71
+    }
+  }
+}
