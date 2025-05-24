@@ -17,6 +17,10 @@ $execute if score $custom_attributes ca.installed matches 1.. if data storage lt
 #Run All At the Killer Only Enchantments in Statuses
 $execute if score $custom_statuses ca.installed matches 1.. as $(killer) at @s run function cartographer_core:handlers/ltos/as_entity/custom_statuses_enchants
 
+#Run All At the Killer Only Enchantments in Statuses - On Witnessing Mobs
+$execute if score $custom_statuses ca.installed matches 1.. as $(killed) at @s as @e[type=!player,tag=ca.witnessing,distance=..24] at @s run function cartographer_core:handlers/ltos/as_entity/custom_statuses_enchants
+
+
 #Custom Enchantments that run when the user dies
 $execute if score $custom_enchantments ca.installed matches 1.. as $(killed) if entity @s[type=player] run function cartographer_custom_enchantments:enchantment/helper/death_check
 $execute if score $custom_enchantments ca.installed matches 1.. as $(killed) unless entity @s[type=player] unless entity @s[tag=ca.no_death_items] run function cartographer_custom_enchantments:enchantment/helper/death_check

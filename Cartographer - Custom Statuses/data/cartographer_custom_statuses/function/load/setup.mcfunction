@@ -236,6 +236,7 @@ scoreboard objectives add ca.harvest_var dummy
 
 scoreboard objectives add ca.stealth_silent dummy
 scoreboard objectives add ca.stealth_powered dummy
+scoreboard objectives add ca.stealth_pickup dummy
 scoreboard objectives add ca.stealth_keep_equipment dummy
 
 scoreboard objectives add ca.stealth_value dummy
@@ -264,6 +265,8 @@ scoreboard objectives add ca.absorption_buffer dummy
 
 scoreboard objectives add ca.regeneration_tick dummy
 scoreboard objectives add ca.regeneration_buffer dummy
+
+scoreboard objectives add ca.sapper_buffer dummy
 
 scoreboard objectives add ca.asleep_time dummy
 scoreboard objectives add ca.asleep_var dummy

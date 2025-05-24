@@ -75,8 +75,6 @@ scoreboard players operation $health ca.ench_diversion_lvl /= $2 ca.CONSTANT
 execute if score $health ca.ench_diversion_lvl matches ..0 run scoreboard players set $health ca.ench_diversion_lvl 1
 execute store result storage cartographer_custom_enchantments:diversion data.Health float 1 run scoreboard players get $health ca.ench_diversion_lvl
 
-#function carto_event:api/create_single_entity_event {event:"custom_statuses/stealth/mob",duration:300,delay:10,parameters:{reveal_range:2,keep_armor:0,keep_weapons:0,particle_density:3,particle_spread:1,tick_command:""},merge_behavior:"custom"}
-#effect give @s slowness 2 1 true
 effect give @s slowness 1 7 true
 
 execute if score @s ca.ench_diversion_lvl matches 1 if score $positions ca.ench_diversion_lvl matches 1..3 rotated ~ 0 positioned ^0.5 ^ ^0.5 run function cartographer_custom_enchantments:enchantment/passive/diversion/entity/spawn_clones_macro with storage cartographer:custom_enchantments

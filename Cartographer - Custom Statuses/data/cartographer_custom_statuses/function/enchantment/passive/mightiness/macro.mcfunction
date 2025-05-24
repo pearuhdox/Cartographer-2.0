@@ -1,1 +1,3 @@
-$function carto_event:api/create_single_entity_event {event:"custom_statuses/vanilla_attribute",duration:200,delay:0,parameters:{type:"minecraft:attack_damage",tag:"ca.mightiness_attr",id:"mightiness_attr",value:$(value),operation:"add_multiplied_total",tick_command:""},merge_behavior:"none"}
+$execute if entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"custom_statuses/vanilla_attribute",duration:200,delay:0,parameters:{type:"minecraft:attack_damage",tag:"ca.mightiness_attr",id:"mightiness_attr",value:$(value),operation:"add_multiplied_total",tick_command:""},merge_behavior:"none"}
+
+$execute unless entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"custom_statuses/strength",duration:200,delay:0,parameters:{amount:$(value),tick_command:""},merge_behavior:"custom"}

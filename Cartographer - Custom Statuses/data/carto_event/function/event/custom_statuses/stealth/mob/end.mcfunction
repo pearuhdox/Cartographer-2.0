@@ -2,6 +2,9 @@ execute if score @s ca.stealth_silent matches 0 run data modify entity @s Silent
 
 execute if score @s ca.stealth_powered matches 1 run data modify entity @s powered set value 1b
 
+execute if score @s ca.stealth_pickup matches 1 run data modify entity @s CanPickUpLoot set value 1b
+
+
 $execute if score @s ca.stealth_keep_equipment matches 0 run data modify entity @s equipment set from storage cartographer_custom_statuses:stealth equip_data.$(target).equipment
 
 $data remove storage cartographer_custom_statuses:stealth equip_data.$(target)
