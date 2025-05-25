@@ -5,6 +5,9 @@ data modify storage cartographer:custom_enchantments throwable_item.components.m
 data modify storage cartographer:custom_enchantments throwable_item.components.minecraft:custom_data.throwable_applied set value 1b
 data modify storage cartographer:custom_enchantments throwable_item.components.minecraft:custom_data.throwable_cooldown set value 0
 data modify storage cartographer:custom_enchantments throwable_item.components.minecraft:custom_data.throwable_state set value 2b
+
+data modify storage cartographer:custom_enchantments throwable_item.components.minecraft:custom_data.allow_offhand set value 1b
+
 data modify storage cartographer:custom_enchantments throwable_item.Slot set value 0b
 
 data modify block 4206900 0 4206900 Items set value []

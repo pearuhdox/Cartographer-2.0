@@ -2,6 +2,14 @@ data modify storage cartographer_core:player_equip data.main set value {}
 execute unless items entity @s weapon.mainhand #cartographer_core:enchant_support/passive_armor unless items entity @s weapon.mainhand *[minecraft:custom_data~{disable_mainhand:1b}] run data modify storage cartographer_core:player_equip data.main set from entity @s SelectedItem
 execute unless items entity @s weapon.offhand #cartographer_core:enchant_support/passive_armor unless items entity @s weapon.mainhand #cartographer_core:ranged_weapons unless items entity @s weapon.offhand *[minecraft:custom_data~{disable_offhand:1b}] run data modify storage cartographer_core:player_equip data.offh set from entity @s equipment.offhand
 
+#Offhand Behavior
+execute unless data entity @s equipment.offhand.components.minecraft:custom_data.allow_offhand unless items entity @s weapon.offhand #cartographer_core:offhand_allowed run data remove storage cartographer_core:player_equip data.offh
+execute unless data entity @s equipment.offhand.components.minecraft:custom_data.allow_offhand if items entity @s weapon.offhand *[minecraft:weapon] run data remove storage cartographer_core:player_equip data.offh
+
+execute if data entity @s equipment.offhand.components.minecraft:custom_data.disable_mainhand run data remove storage cartographer_core:player_equip data.main
+execute if data entity @s equipment.offhand.components.minecraft:custom_data.disable_offhand run data remove storage cartographer_core:player_equip data.offh
+
+
 
 execute if score $custom_enchantments ca.installed matches 1.. run function cartographer_custom_enchantments:calculate_hand
 execute if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:calculate_hand

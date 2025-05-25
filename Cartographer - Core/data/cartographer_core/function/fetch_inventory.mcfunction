@@ -20,6 +20,10 @@ data modify entity 31192011-4452-2112-0000-000000000000 equipment.offhand set fr
 execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #cartographer_core:wearables run data remove storage cartographer_core:player_equip data.main
 execute if items entity 31192011-4452-2112-0000-000000000000 weapon.offhand #cartographer_core:wearables run data remove storage cartographer_core:player_equip data.offh
 
+#Offhand Behavior
+execute unless data entity 31192011-4452-2112-0000-000000000000 equipment.offhand.components.minecraft:custom_data.allow_offhand unless items entity 31192011-4452-2112-0000-000000000000 weapon.offhand #cartographer_core:offhand_allowed run data remove storage cartographer_core:player_equip data.offh
+execute unless data entity 31192011-4452-2112-0000-000000000000 equipment.offhand.components.minecraft:custom_data.allow_offhand if items entity 31192011-4452-2112-0000-000000000000 weapon.offhand *[minecraft:weapon] run data remove storage cartographer_core:player_equip data.offh
+
 execute if data entity 31192011-4452-2112-0000-000000000000 equipment.offhand.components.minecraft:custom_data.disable_mainhand run data remove storage cartographer_core:player_equip data.main
 execute if data entity 31192011-4452-2112-0000-000000000000 equipment.offhand.components.minecraft:custom_data.disable_offhand run data remove storage cartographer_core:player_equip data.offh
 
