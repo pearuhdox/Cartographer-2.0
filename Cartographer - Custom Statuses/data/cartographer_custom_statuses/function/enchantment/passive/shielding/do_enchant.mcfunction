@@ -1,5 +1,3 @@
-execute if entity @s[nbt={HurtTime:10s}] run function cartographer_custom_statuses:enchantment/passive/shielding/hit
-
 scoreboard players operation $value ca.ench_var = @s ca.ench_shielding_lvl
 scoreboard players set $time ca.ench_var 60
 scoreboard players set $cap ca.ench_var 6

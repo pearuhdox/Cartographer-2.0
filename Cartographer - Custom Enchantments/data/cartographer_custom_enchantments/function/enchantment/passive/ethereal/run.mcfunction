@@ -1,6 +1,6 @@
 function cartographer_core:enchant_calculator/full_calculation {namespace:"cartographer_custom_enchantments",category:"passive/",enchantment:"ethereal",type:"passive"}
 
-execute if entity @s[type=player] run scoreboard players set $time ca.ethereal_time 3
+scoreboard players set $time ca.ethereal_time 3
 
 scoreboard players operation $time ca.ethereal_time *= @s ca.ench_ethereal_lvl
 

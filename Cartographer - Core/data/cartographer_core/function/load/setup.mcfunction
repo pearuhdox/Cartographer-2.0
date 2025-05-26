@@ -63,6 +63,9 @@ scoreboard players set $mob_abilities ca.installed 0
 scoreboard players set $pot_injector ca.installed 0
 scoreboard players set $repair_stations ca.installed 0
 
+#Absorption Scores
+scoreboard objectives add ca.total_abs_events dummy
+
 
 #Create UUID Handshake score for Interactions
 scoreboard objectives add ca.uuid_interact dummy

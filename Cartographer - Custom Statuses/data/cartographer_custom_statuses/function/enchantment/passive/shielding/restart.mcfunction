@@ -9,7 +9,8 @@ scoreboard players set @s ca.shielding_state 0
 scoreboard players set $amount ca.abs_handler 1
 scoreboard players set $duration ca.abs_handler 30
 scoreboard players operation $cap ca.abs_handler = @s ca.ench_shielding_lvl
-scoreboard players add $cap ca.abs_handler 5
+scoreboard players operation $cap ca.abs_handler *= $2 ca.CONSTANT
+scoreboard players add $cap ca.abs_handler 6
 execute if score $cap ca.abs_handler matches 13.. run scoreboard players set $cap ca.abs_handler 12
 
 scoreboard players operation @s ca.absorption_buffer += $amount ca.abs_handler
