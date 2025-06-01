@@ -1,5 +1,6 @@
 {
     "values":[
-      "cartographer_core:debug/handlers/death_check/respawn_debug"
+      "cartographer_core:debug/handlers/death_check/respawn_debug",
+      {"id":"cartographer_rat:player/respawn","required":false}
     ]
   }

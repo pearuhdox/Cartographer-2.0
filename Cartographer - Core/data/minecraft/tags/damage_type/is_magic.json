@@ -1,5 +1,7 @@
 {
     "values": [
-      "cartographer_core:resistor/magic"
+      "cartographer_core:resistor/magic",
+      "minecraft:magic",
+      "minecraft:indirect_magic"
     ]
   }

@@ -16,7 +16,7 @@ execute if score @s ca.ench_courageous_lvl matches 1.. run function cartographer
 execute if score @s ca.ench_unseen_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/unseen/run
 execute if score @s ca.ench_tenacity_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/tenacity/run
 execute if score @s ca.ench_inertia_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/inertia/run
-execute if score @s ca.ench_diversion_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/diversion/run
+#execute if score @s ca.ench_diversion_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/diversion/run
 execute if score @s ca.ench_gravity_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/gravity/run
 execute if score @s ca.ench_momentum_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/momentum/run
 #execute if score @s ca.ench_vengeance_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/vengeance/run

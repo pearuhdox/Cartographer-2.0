@@ -1,1 +1,1 @@
-execute if entity @s[tag=ca.has_custom_attr] run function cartographer_custom_attributes:calculator/mob/start
+execute if entity @s[tag=ca.has_custom_attr] run function cartographer_core:handlers/register/custom_attributes_register_branch

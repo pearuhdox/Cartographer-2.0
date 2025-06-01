@@ -64,6 +64,7 @@ function cartographer_custom_enchantments:loop/tick
 #function cartographer_mimics:loop/tick
 #function cartographer_mob_abilities:loop/tick
 function cartographer_repair_stations:loop/tick
+function cartographer_rat:loop/tick
 
 execute unless score $value ca.player_id matches 0.. run scoreboard players set $value ca.player_id 0
 

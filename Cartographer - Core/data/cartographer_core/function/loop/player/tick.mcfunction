@@ -49,6 +49,7 @@ function cartographer_lexica:loop/tick/player
 #function cartographer_mimics:loop/tick/player
 function cartographer_repair_stations:loop/tick/player
 function cartographer_ender_pouch:player/tick
+function cartographer_rat:loop/player/tick
 
 #Remove the inventory check from core here so it can be used in other functionality
 #execute unless score @s ca.core_delay_check matches 1.. run tag @s remove ca.core_check_inv
