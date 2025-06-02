@@ -34,10 +34,10 @@ execute if score $proc ca.ench_orbit_lvl matches 4 at @s run function cartograph
 execute if score $proc ca.ench_eruption_lvl matches 1 at @s if entity @s[tag=!ca.enchant_opportunist] run function cartographer_custom_enchantments:enchantment/passive/eruption/damage_event
 execute if score $proc ca.ench_soulfire_lvl matches 1 at @s if entity @s[tag=!ca.enchant_opportunist] run function cartographer_custom_enchantments:enchantment/passive/soulfire/damage_event
 
-execute if score $proc ca.ench_eruption_lvl matches 1 at @s if entity @s[tag=!ca.enchant_opportunist] run execute unless score @s ca.opportunist_timer matches 1.. run scoreboard players set @s ca.opportunist_timer 300
+execute if score $proc ca.ench_eruption_lvl matches 1 at @s if entity @s[tag=!ca.enchant_opportunist] unless score @s ca.opportunist_timer matches 1.. run scoreboard players set @s ca.opportunist_timer 300
 execute if score $proc ca.ench_eruption_lvl matches 1 at @s if entity @s[tag=!ca.enchant_opportunist] run tag @s add ca.enchant_opportunist
 
-execute if score $proc ca.ench_soulfire_lvl matches 1 at @s if entity @s[tag=!ca.enchant_opportunist] run execute unless score @s ca.opportunist_timer matches 1.. run scoreboard players set @s ca.opportunist_timer 300
+execute if score $proc ca.ench_soulfire_lvl matches 1 at @s if entity @s[tag=!ca.enchant_opportunist] unless score @s ca.opportunist_timer matches 1.. run scoreboard players set @s ca.opportunist_timer 300
 execute if score $proc ca.ench_soulfire_lvl matches 1 at @s if entity @s[tag=!ca.enchant_opportunist] run tag @s add ca.enchant_opportunist
 
 
