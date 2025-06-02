@@ -120,7 +120,6 @@ scoreboard players operation $percent ca.attr_var = @s ca.attr_airdash_count_per
 
 scoreboard players set $ench ca.attr_var 0
 scoreboard players operation $ench ca.attr_var = @s ca.ench_windborn_lvl
-execute if score @s ca.ench_windborn_lvl matches 1.. run scoreboard players remove $ench ca.attr_var 1
 scoreboard players operation $ench ca.attr_var *= $100 ca.CONSTANT
 scoreboard players operation @s ca.attr_airdash_count_value += $ench ca.attr_var
 
