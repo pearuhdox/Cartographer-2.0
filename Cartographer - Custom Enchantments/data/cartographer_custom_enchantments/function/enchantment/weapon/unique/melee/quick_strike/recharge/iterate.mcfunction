@@ -1,12 +1,12 @@
 scoreboard players set $no_suppress ca.ench_quick_strike_lvl 0
 
-execute store result score $slot ca.ench_quick_strike_slot run data get storage cartographer_custom_enchantments:quick_strike items[0].Slot
+execute store result score $slot ca.ench_quick_strike_lvl run data get storage cartographer_custom_enchantments:quick_strike items[0].Slot
 
-execute if score $slot ca.ench_quick_strike_slot matches -106..8 store result storage cartographer_custom_enchantments:quick_strike macro.slot int 1 run scoreboard players get $slot ca.ench_quick_strike_slot
-execute store result score $time_current ca.ench_quick_strike_slot run data get storage cartographer_custom_enchantments:quick_strike items[0].components.minecraft:custom_data.quick_strike_cooldown
+execute if score $slot ca.ench_quick_strike_lvl matches -106..8 store result storage cartographer_custom_enchantments:quick_strike macro.slot int 1 run scoreboard players get $slot ca.ench_quick_strike_lvl
+execute store result score $time_current ca.ench_quick_strike_lvl run data get storage cartographer_custom_enchantments:quick_strike items[0].components.minecraft:custom_data.quick_strike_cooldown
 
-execute if score $slot ca.ench_quick_strike_slot matches -106..8 unless data storage cartographer_custom_enchantments:quick_strike items[0].components.minecraft:charged_projectiles[0] run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/quick_strike/recharge/activate/start
-#execute if score $time_current ca.ench_quick_strike_slot matches 1.. if score $slot ca.ench_quick_strike_slot matches -106..8 if data storage cartographer_custom_enchantments:quick_strike items[0].components.minecraft:charged_projectiles[0] run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/quick_strike/recharge/activate/reset
+execute if score $slot ca.ench_quick_strike_lvl matches -106..8 unless data storage cartographer_custom_enchantments:quick_strike items[0].components.minecraft:charged_projectiles[0] run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/quick_strike/recharge/activate/start
+#execute if score $time_current ca.ench_quick_strike_lvl matches 1.. if score $slot ca.ench_quick_strike_lvl matches -106..8 if data storage cartographer_custom_enchantments:quick_strike items[0].components.minecraft:charged_projectiles[0] run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/quick_strike/recharge/activate/reset
 
 data remove storage cartographer_custom_enchantments:quick_strike items[0]
 execute if data storage cartographer_custom_enchantments:quick_strike items[0] run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/quick_strike/recharge/iterate
