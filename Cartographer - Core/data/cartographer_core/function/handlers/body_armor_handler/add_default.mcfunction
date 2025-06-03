@@ -1,2 +1,2 @@
-item replace entity @s armor.body with leather_horse_armor[equippable={slot:"body",equip_sound:"block.candle.ambient",swappable:false,damage_on_hurt:false},attribute_modifiers=[{id:"armor",type:"armor",amount:0,operation:"add_value",slot:"any"}],enchantments={"minecraft:vanishing_curse":1}] 1
+item replace entity @s armor.body with stick[equippable={slot:"body",equip_sound:"block.candle.ambient",swappable:false,damage_on_hurt:false},attribute_modifiers=[{id:"armor",type:"armor",amount:0,operation:"add_value",slot:"any"}],enchantments={"minecraft:vanishing_curse":1}] 1
 stopsound @s * block.candle.ambient
