@@ -1,8 +1,23 @@
 scoreboard players operation $previous ca.momentum_stack = @s ca.momentum_stack
 
-execute if entity @s[type=player] run scoreboard players add @s ca.momentum_stack 75
-execute unless entity @s[type=player] run scoreboard players add @s ca.momentum_stack 225
+execute unless entity @s[type=player] run scoreboard players add @s ca.momentum_stack 200
 
-execute if score @s ca.momentum_stack matches 1501.. run scoreboard players set @s ca.momentum_stack 1500
+execute if entity @s[type=player] if score $attack_type ca.ench_value matches 0 run scoreboard players add @s ca.momentum_stack 50
+
+execute if entity @s[type=player] if score $attack_type ca.ench_value matches 1 store result score $dmg ca.momentum_stack run attribute @s attack_damage get 1000
+execute if entity @s[type=player] if score $attack_type ca.ench_value matches 1 unless predicate bb:cant_crit run scoreboard players operation $dmg ca.momentum_stack *= $150 ca.CONSTANT
+execute if entity @s[type=player] if score $attack_type ca.ench_value matches 1 unless predicate bb:cant_crit run scoreboard players operation $dmg ca.momentum_stack /= $100 ca.CONSTANT
+execute if entity @s[type=player] if score $attack_type ca.ench_value matches 1 store result score $spd ca.momentum_stack run attribute @s attack_speed get 100
+execute if entity @s[type=player] if score $attack_type ca.ench_value matches 1 run scoreboard players operation $dmg ca.momentum_stack /= $spd ca.momentum_stack
+execute if entity @s[type=player] if score $attack_type ca.ench_value matches 1 run scoreboard players add $dmg ca.momentum_stack 15
+execute if entity @s[type=player] if score $attack_type ca.ench_value matches 1 run scoreboard players operation @s ca.momentum_stack += $dmg ca.momentum_stack
+
+#execute if entity @s[type=player] if score $attack_type ca.ench_value matches 2 unless score @s ca.attr_ranged_damage_value matches -1999999.. run scoreboard players add @s ca.momentum_stack 100
+
+execute if entity @s[type=player] if score $attack_type ca.ench_value matches 2 if score @s ca.attr_ranged_damage_value matches -1999999.. run scoreboard players operation $dmg ca.momentum_stack = @s ca.attr_ranged_damage_total
+execute if entity @s[type=player] if score $attack_type ca.ench_value matches 2 if score @s ca.attr_ranged_damage_value matches -1999999.. run scoreboard players operation $dmg ca.momentum_stack /= $4 ca.CONSTANT
+execute if entity @s[type=player] if score $attack_type ca.ench_value matches 2 if score @s ca.attr_ranged_damage_value matches -1999999.. run scoreboard players operation @s ca.momentum_stack += $dmg ca.momentum_stack
+
+
 execute if entity @s[type=player] run function cartographer_custom_enchantments:enchantment/passive/momentum/tier_up_player_vfx
 execute unless entity @s[type=player] run function cartographer_custom_enchantments:enchantment/passive/momentum/tier_up_vfx

@@ -1,27 +1,3 @@
-
-scoreboard players set $life_drain_chance ca.attr_apply_var -2000000
-scoreboard players set $life_drain_amount_flat ca.attr_apply_var -2000000
-scoreboard players set $life_drain_amount_percent ca.attr_apply_var -2000000
-scoreboard players set $lucky_hit_chance ca.attr_apply_var -2000000
-scoreboard players set $lucky_hit_damage_flat ca.attr_apply_var -2000000
-scoreboard players set $lucky_hit_damage_percent ca.attr_apply_var -2000000
-scoreboard players set $chaining_hit_chance ca.attr_apply_var -2000000
-scoreboard players set $chaining_hit_amount_flat ca.attr_apply_var -2000000
-scoreboard players set $chaining_hit_amount_percent ca.attr_apply_var -2000000
-scoreboard players set $chaining_hit_damage_flat ca.attr_apply_var -2000000
-scoreboard players set $chaining_hit_damage_percent ca.attr_apply_var -2000000
-scoreboard players set $restrike_hit_chance ca.attr_apply_var -2000000
-scoreboard players set $restrike_hit_amount_flat ca.attr_apply_var -2000000
-scoreboard players set $restrike_hit_amount_percent ca.attr_apply_var -2000000
-scoreboard players set $restrike_hit_damage_flat ca.attr_apply_var -2000000
-scoreboard players set $restrike_hit_damage_percent ca.attr_apply_var -2000000
-scoreboard players set $restrike_hit_rate_flat ca.attr_apply_var -2000000
-scoreboard players set $restrike_hit_rate_percent ca.attr_apply_var -2000000
-scoreboard players set $aoe_size_flat ca.attr_apply_var -2000000
-scoreboard players set $aoe_size_percent ca.attr_apply_var -2000000
-scoreboard players set $aoe_damage_flat ca.attr_apply_var -2000000
-scoreboard players set $aoe_damage_percent ca.attr_apply_var -2000000
-
 scoreboard players set $is_arrow ca.attr_apply_var 0
 scoreboard players set $is_trident ca.attr_apply_var 0
 scoreboard players set $is_fireball ca.attr_apply_var 0

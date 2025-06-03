@@ -1,15 +1,10 @@
 scoreboard players set $spawner_cause ca.ench_var 1
 
-scoreboard players operation $previous ca.induction_stack = @s ca.induction_stack
-
-execute if entity @s[type=player] run scoreboard players add @s ca.induction_stack 75
-execute unless entity @s[type=player] run scoreboard players add @s ca.induction_stack 225
-function cartographer_custom_enchantments:enchantment/passive/induction/tier_up_player_vfx
 
 scoreboard players set $used_induction ca.induction_stack 0
 execute if score @s ca.induction_stack matches 1500.. run scoreboard players set $used_induction ca.induction_stack 1
 
-execute if score $used_induction ca.induction_stack matches 1.. run scoreboard players set @s ca.induction_stack 0
+execute if score $used_induction ca.induction_stack matches 1.. run scoreboard players remove @s ca.induction_stack 1500
 
 execute if score $used_induction ca.induction_stack matches 1.. run playsound minecraft:item.trident.thunder player @a[distance=..16] ~ ~ ~ 0.8 1.75
 execute if score $used_induction ca.induction_stack matches 1.. run playsound minecraft:entity.firework_rocket.twinkle player @a[distance=..16] ~ ~ ~ 1 2
@@ -26,3 +21,9 @@ execute if score $used_induction ca.induction_stack matches 1.. as @e[type=#cart
 scoreboard players set $used_induction ca.induction_stack 0
 
 scoreboard players set $spawner_cause ca.ench_var 0
+
+
+scoreboard players operation $previous ca.induction_stack = @s ca.induction_stack
+
+scoreboard players add @s ca.induction_stack 100
+function cartographer_custom_enchantments:enchantment/passive/induction/tier_up_player_vfx

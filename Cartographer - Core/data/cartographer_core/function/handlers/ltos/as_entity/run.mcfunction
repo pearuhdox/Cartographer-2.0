@@ -86,7 +86,7 @@ $execute as $(killer) at @s if score @s ca.ench_momentum_lvl matches 1.. run fun
 $execute if score $used_momentum ca.momentum_stack matches 1.. as $(killed) at @s run function cartographer_custom_enchantments:enchantment/passive/momentum/hit/victim
 
 scoreboard players set $used_storm ca.storm_stack 0
-#$execute as $(killer) at @s if score @s ca.ench_storm_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/storm/hit/user
+$execute as $(killer) at @s if score @s ca.ench_storm_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/storm/hit/user
 $execute if score $used_storm ca.storm_stack matches 1.. as $(killed) at @s run function cartographer_custom_enchantments:enchantment/passive/storm/hit/victim
 
 scoreboard players set $used_induction ca.induction_stack 0
