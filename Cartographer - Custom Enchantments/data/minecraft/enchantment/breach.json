@@ -28,7 +28,8 @@
       "per_level_above_first": 9
     },
     "slots": [
-      "mainhand"
+      "mainhand",
+      "offhand"
     ],
     "supported_items": "#minecraft:enchantable/weapon",
     "weight": 1

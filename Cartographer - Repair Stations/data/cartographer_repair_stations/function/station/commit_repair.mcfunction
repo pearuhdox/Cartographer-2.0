@@ -23,8 +23,8 @@ execute if score $value bbl.rng <= $upgrade_2 ca.repair_station_state run functi
 
 execute if score $upgrade_4 ca.repair_station_state matches 1.. unless score $has_bonus_dur ca.repair_station_state matches 1.. run function cartographer_repair_stations:station/upgrades/bonus_dur/improve
 
-execute store result storage cartographer_repair_stations:item_input data.components.minecraft:repair_cost int 1 run scoreboard players add $projected_xp_cost ca.repair_station_state 0
-execute store result storage cartographer_repair_stations:item_input data.components.minecraft:custom_data.LapisCost int 1 run scoreboard players add $projected_lapis_cost ca.repair_station_state 0
+execute store result storage cartographer_repair_stations:item_input data.components.minecraft:repair_cost int 1 run scoreboard players get $projected_xp_cost ca.repair_station_state
+execute store result storage cartographer_repair_stations:item_input data.components.minecraft:custom_data.LapisCost int 1 run scoreboard players get $projected_lapis_cost ca.repair_station_state
 
 execute at @p run summon item ~ ~ ~ {Age:-32768,Health:1000,PickupDelay:5,Tags:["ca.repair_item_return"],Item:{id:"minecraft:stone",Count:1b}}
 execute as @e[type=item,tag=ca.repair_item_return,distance=..7] at @s run function cartographer_repair_stations:station/return_item_data

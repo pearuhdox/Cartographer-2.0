@@ -29,6 +29,7 @@ execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand bru
 
 execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand trident run data modify storage cartographer_repair_stations:data material set value "minecraft:prismarine_shard"
 
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand fishing_rod run data modify storage cartographer_repair_stations:data material set value "minecraft:string"
 execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand carrot_on_a_stick run data modify storage cartographer_repair_stations:data material set value "minecraft:carrot"
 execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand warped_fungus_on_a_stick run data modify storage cartographer_repair_stations:data material set value "minecraft:warped_fungus"
 
@@ -38,7 +39,7 @@ execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand mac
 execute unless data entity 31192011-4452-2112-0000-000000000000 equipment.mainhand.components."minecraft:custom_data".custom_repairable if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #cartographer_repair_stations:materials/wooden run data modify storage cartographer_repair_stations:data visual set value "minecraft:oak_planks"
 execute unless data entity 31192011-4452-2112-0000-000000000000 equipment.mainhand.components."minecraft:custom_data".custom_repairable if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #cartographer_repair_stations:materials/stone run data modify storage cartographer_repair_stations:data visual set value "minecraft:cobblestone"
 
-execute unless data entity 31192011-4452-2112-0000-000000000000 equipment.mainhand.components."minecraft:custom_data".custom_repairable.item unless data entity 31192011-4452-2112-0000-000000000000 equipment.mainhand.components."minecraft:custom_data".custom_repairable.tag run data modify storage cartographer_repair_stations:data visual set from storage cartographer_repair_stations:data material
+execute unless data entity 31192011-4452-2112-0000-000000000000 equipment.mainhand.components."minecraft:custom_data".custom_repairable.item unless data entity 31192011-4452-2112-0000-000000000000 equipment.mainhand.components."minecraft:custom_data".custom_repairable.tag unless items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #cartographer_repair_stations:materials/wooden unless items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #cartographer_repair_stations:materials/stone run data modify storage cartographer_repair_stations:data visual set from storage cartographer_repair_stations:data material
 
 #Custom
 execute if data entity 31192011-4452-2112-0000-000000000000 equipment.mainhand.components."minecraft:custom_data".custom_repairable.item run data modify storage cartographer_repair_stations:data material set from entity 31192011-4452-2112-0000-000000000000 equipment.mainhand.components."minecraft:custom_data".custom_repairable.item
@@ -52,22 +53,13 @@ execute if data entity 31192011-4452-2112-0000-000000000000 equipment.mainhand.c
 #Amount
 scoreboard players set $amount ca.repair_station_state 2
 
-execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #minecraft:pickaxes run scoreboard players set $amount ca.repair_station_state 2
-execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #minecraft:axes run scoreboard players set $amount ca.repair_station_state 2
-execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #minecraft:shovels run scoreboard players set $amount ca.repair_station_state 1
-execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #minecraft:hoes run scoreboard players set $amount ca.repair_station_state 1
-execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #minecraft:swords run scoreboard players set $amount ca.repair_station_state 1
+data modify storage cartographer_core:helper get_durability set value {}
+data modify storage cartographer_core:helper get_durability set from entity 31192011-4452-2112-0000-000000000000 equipment.mainhand
+function cartographer_core:helper/functions/get_durability/percentage
+scoreboard players add $durability_percent ca.var 24
+scoreboard players operation $durability_percent ca.var /= $25 ca.CONSTANT
 
-execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand bow run scoreboard players set $amount ca.repair_station_state 3
-execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand crossbow run scoreboard players set $amount ca.repair_station_state 3
-
-execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand trident run scoreboard players set $amount ca.repair_station_state 4
-execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand mace run scoreboard players set $amount ca.repair_station_state 4
-
-execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #minecraft:foot_armor run scoreboard players set $amount ca.repair_station_state 2
-execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #minecraft:leg_armor run scoreboard players set $amount ca.repair_station_state 4
-execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #minecraft:chest_armor run scoreboard players set $amount ca.repair_station_state 4
-execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #minecraft:head_armor run scoreboard players set $amount ca.repair_station_state 3
+scoreboard players operation $amount ca.repair_station_state = $durability_percent ca.var
 
 
 execute if data entity 31192011-4452-2112-0000-000000000000 equipment.mainhand.components."minecraft:custom_data".custom_repairable store result score $amount ca.repair_station_state run data get entity 31192011-4452-2112-0000-000000000000 equipment.mainhand.components."minecraft:custom_data".custom_repairable.count

@@ -1,2 +1,0 @@
-tellraw @p {"translate":"cartographer.repair_anvil.expensive_xp","fallback":"This item cannot be repaired! (XP Cost too high!)","color":"red","italic":false}
-playsound minecraft:block.anvil.place block @p ~ ~ ~ 0.5 1

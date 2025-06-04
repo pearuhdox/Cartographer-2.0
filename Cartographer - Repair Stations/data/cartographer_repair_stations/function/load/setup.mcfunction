@@ -7,6 +7,7 @@ scoreboard objectives add ca.repair_anvil_use minecraft.custom:minecraft.interac
 scoreboard objectives add ca.repair_station_state dummy
 
 scoreboard objectives add ca.cursor_anvil dummy
+scoreboard objectives add ca.cursor_polish dummy
 
 scoreboard objectives add XPcost dummy
 scoreboard objectives add LapisCost dummy

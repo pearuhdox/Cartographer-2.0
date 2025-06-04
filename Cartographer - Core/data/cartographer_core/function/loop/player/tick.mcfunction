@@ -15,7 +15,8 @@ execute if score @s disable_player_skins matches 1.. run function cartographer_c
 execute if score @s ca.opportunist_timer matches 1 run tag @s remove ca.enchant_opportunist
 execute if score @s ca.opportunist_timer matches 1.. run scoreboard players remove @s ca.opportunist_timer 1
 
-attribute @s entity_interaction_range modifier add ca.carto_hitbox_fix 0.5 add_value
+# Moved this feature to RAT
+#attribute @s entity_interaction_range modifier add ca.carto_hitbox_fix 0.5 add_value
 
 execute if score @s ca.glass_cdl matches 1.. run scoreboard players remove @s ca.glass_cdl 1
 

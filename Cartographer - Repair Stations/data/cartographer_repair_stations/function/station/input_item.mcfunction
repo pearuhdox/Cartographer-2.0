@@ -16,14 +16,14 @@ execute store result score $xp_cost ca.repair_station_state run data get storage
 execute store result score $lapis_cost ca.repair_station_state run data get storage cartographer_repair_stations:item_input data.components.minecraft:custom_data.LapisCost
 execute store result score $has_bonus_dur ca.repair_station_state run data get storage cartographer_repair_stations:item_input data.components.minecraft:custom_data.HasBonusDurability
 
-execute if score $xp_cost ca.repair_station_state matches 0 run scoreboard players set $xp_cost ca.repair_station_state 8
-execute if score $lapis_cost ca.repair_station_state matches 0 run scoreboard players set $lapis_cost ca.repair_station_state 4
-execute if score $lapis_cost ca.repair_station_state matches 19 run scoreboard players set $lapis_cost ca.repair_station_state 20
+execute if score $xp_cost ca.repair_station_state matches 0 run scoreboard players set $xp_cost ca.repair_station_state 0
+execute if score $lapis_cost ca.repair_station_state matches 0 run scoreboard players set $lapis_cost ca.repair_station_state 0
+#execute if score $lapis_cost ca.repair_station_state matches 19 run scoreboard players set $lapis_cost ca.repair_station_state 20
+
+scoreboard players add $xp_cost ca.repair_station_state 1
 
 scoreboard players operation $projected_xp_cost ca.repair_station_state = $xp_cost ca.repair_station_state
 scoreboard players operation $projected_lapis_cost ca.repair_station_state = $lapis_cost ca.repair_station_state
-
-execute if score $upgrade_1 ca.repair_station_state matches 1.. run function cartographer_repair_stations:station/reduce_xp_cost
 
 execute if score $xp_cost ca.repair_station_state > $xp_maximum ca.repair_station_state run scoreboard players set $state ca.repair_station_state 11
 # execute if score $lapis_cost ca.repair_station_state > $lapis_maximum ca.repair_station_state run scoreboard players set $state ca.repair_station_state 11

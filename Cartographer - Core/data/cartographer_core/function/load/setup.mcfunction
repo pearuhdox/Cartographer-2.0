@@ -27,6 +27,8 @@ scoreboard objectives add ca.installed dummy
 scoreboard objectives add ca.registry dummy
 scoreboard objectives add ca.notice_time dummy
 
+scoreboard objectives add ca.xp dummy
+
 scoreboard objectives add ca.opportunist_timer dummy
 
 scoreboard objectives add ca.sprint_bug_x dummy

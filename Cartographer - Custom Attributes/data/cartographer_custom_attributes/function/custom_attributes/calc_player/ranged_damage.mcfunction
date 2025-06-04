@@ -136,7 +136,7 @@ execute if score @s ca.attr_ranged_damage_total matches 0 run scoreboard players
 
 scoreboard players set $can_auto_set ca.attr_ranged_damage_total 0
 execute if score @s ca.attr_ranged_damage_value matches 1.. run scoreboard players set $can_auto_set ca.attr_ranged_damage_total 1
-execute if score @s ca.attr_ranged_damage_percent matches 1.. run scoreboard players set $can_auto_set ca.attr_ranged_damage_total 1
+execute if score @s ca.attr_ranged_damage_percent matches 1.. unless score @s ca.attr_ranged_damage_percent matches 100 run scoreboard players set $can_auto_set ca.attr_ranged_damage_total 1
 
 execute if score $can_auto_set ca.attr_ranged_damage_total matches 1.. unless score $disable_auto_ranged_damage ca.gamerule matches 1 if items entity @s weapon.mainhand #cartographer_core:ranged_weapons_auto_set unless items entity @s weapon.mainhand *[minecraft:custom_data~{custom_attributes:{ranged_damage:{}}}] run function cartographer_custom_attributes:custom_attributes/effects/ranged_damage/auto_set/do {slot:"mainhand"}
 execute if score $can_auto_set ca.attr_ranged_damage_total matches 1.. unless score $disable_auto_ranged_damage ca.gamerule matches 1 if items entity @s weapon.offhand #cartographer_core:ranged_weapons_auto_set unless items entity @s weapon.offhand *[minecraft:custom_data~{custom_attributes:{ranged_damage:{}}}] run function cartographer_custom_attributes:custom_attributes/effects/ranged_damage/auto_set/do {slot:"offhand"}
