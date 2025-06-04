@@ -2,7 +2,8 @@ function cartographer_lexica:lexica/change/describe/get_pages/reset
 
 execute if data storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status run scoreboard players set $has_status ca.lexica_var 1
 
-function cartographer_lexica:lexica/change/describe/get_pages/enchantments
+execute if data storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:enchantments run function cartographer_lexica:lexica/change/describe/get_pages/enchantments {enchant_path:"minecraft:enchantments"}
+execute if data storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:stored_enchantments run function cartographer_lexica:lexica/change/describe/get_pages/enchantments {enchant_path:"minecraft:stored_enchantments"}
 
 function cartographer_lexica:lexica/change/describe/get_pages/attributes
 
