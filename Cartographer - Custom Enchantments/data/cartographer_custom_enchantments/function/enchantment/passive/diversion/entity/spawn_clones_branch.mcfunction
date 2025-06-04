@@ -11,6 +11,8 @@ data modify entity @s Health set from storage cartographer_custom_enchantments:d
 
 data modify entity @s DeathLootTable set value "minecraft:entities/slime"
 
+function cartographer_core:helper/functions/unregister_ehid
+
 tag @s add ca.diversion_copy
 
 function #minecraft:cartographer/api/handlers/reset_ench_flags
