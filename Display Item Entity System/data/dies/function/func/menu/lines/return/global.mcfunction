@@ -1,2 +1,0 @@
-
-tellraw @s ["",{"text":"[←] ","color":"#F5CE54","click_event":{"action":"run_command","command":"/function dies:func/menu/global"}},{"text":"Return to ","color":"#EFDADA","click_event":{"action":"run_command","command":"/function dies:func/menu/global"}},{"text":"global default item settings menu","color":"#4EF4A9","click_event":{"action":"run_command","command":"/function dies:func/menu/global"}},{"text":".","color":"#EFDADA","click_event":{"action":"run_command","command":"/function dies:func/menu/global"}}]

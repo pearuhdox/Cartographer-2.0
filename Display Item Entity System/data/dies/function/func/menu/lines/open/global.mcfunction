@@ -1,2 +1,0 @@
-
-tellraw @s ["",{"text":"[?] ","color":"#F5CE54","hover_event":{"action":"show_text","value":[{"text":"Newly placed items will inherit their settings from the global settings menu. Existing items will NOT be overwritten.","color":"#EFDADA"}]}},{"text":"Global default item settings menu","color":"#4EF4A9","click_event":{"action":"run_command","command":"/function dies:func/menu/global"}},{"text":".","color":"#EFDADA"}]

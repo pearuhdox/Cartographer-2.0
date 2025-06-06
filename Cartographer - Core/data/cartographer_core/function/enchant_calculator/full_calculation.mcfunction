@@ -4,6 +4,7 @@ scoreboard players set $ranged ca.calc_type 0
 scoreboard players set $tool ca.calc_type 0
 scoreboard players set $slot ca.calc_type 0
 
+
 scoreboard players set $was_main ca.calc_type 0
 scoreboard players set $was_offh ca.calc_type 0
 

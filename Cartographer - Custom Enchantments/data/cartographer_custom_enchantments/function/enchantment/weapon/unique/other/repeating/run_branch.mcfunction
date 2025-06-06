@@ -1,8 +1,11 @@
 execute if entity @s[type=player] run tag @s remove ca.ench_repeating_main
 execute if entity @s[type=player] run tag @s remove ca.ench_repeating_offh
 
+scoreboard players set $was_main ca.calc_type 0
+scoreboard players set $was_offh ca.calc_type 0
+
 execute if entity @s[type=player] if score @s ca.ench_repeating_main_lvl matches 1.. run scoreboard players set $was_main ca.calc_type 1
-execute if entity @s[type=player] unless score $was_main ca.calc_type matches 1.. unless score @s ca.ench_repeating_main_lvl matches 1.. run scoreboard players set $was_offh ca.calc_type 1
+execute if entity @s[type=player] if score @s ca.ench_repeating_offh_lvl matches 1.. unless score @s ca.ench_repeating_main_lvl matches 1.. run scoreboard players set $was_offh ca.calc_type 1
 
 execute if entity @s[type=player] if score $was_main ca.calc_type matches 1.. run tag @s add ca.ench_repeating_main
 execute if entity @s[type=player] if score $was_offh ca.calc_type matches 1.. run tag @s add ca.ench_repeating_offh
