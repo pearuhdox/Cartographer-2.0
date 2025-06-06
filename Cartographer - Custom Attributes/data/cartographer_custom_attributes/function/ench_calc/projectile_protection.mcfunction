@@ -51,7 +51,7 @@ scoreboard players operation @s ca.ench_projectile_protection_lvl += @s ca.ench_
 scoreboard players operation @s ca.ench_projectile_protection_lvl += @s ca.ench_projectile_protection_body_lvl
 scoreboard players operation @s ca.ench_projectile_protection_lvl += @s ca.ench_projectile_protection_saddle_lvl
 
-execute if score @s ca.ench_projectile_protection_lvl matches 1.. run tag @s add ca.enchant_tick
+
 scoreboard players set $ench_timer ca.timer 10
 
 tag @s remove ca.do_enchant_calc_projectile_protection

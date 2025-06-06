@@ -54,4 +54,4 @@ scoreboard players operation @s ca.ench_fleetfoot_lvl += @s ca.ench_fleetfoot_sa
 
 tag @s remove ca.do_enchant_calc_fleetfoot
 
-execute if score @s ca.ench_fleetfoot_lvl matches 1.. run tag @s add ca.enchant_tick
+

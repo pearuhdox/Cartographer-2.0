@@ -54,4 +54,4 @@ scoreboard players operation @s ca.ench_shattering_lvl += @s ca.ench_shattering_
 
 tag @s remove ca.do_enchant_calc_shattering
 
-execute if score @s ca.ench_shattering_lvl matches 1.. run tag @s add ca.enchant_tick
+

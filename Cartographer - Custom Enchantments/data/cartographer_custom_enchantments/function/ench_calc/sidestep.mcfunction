@@ -54,4 +54,4 @@ scoreboard players operation @s ca.ench_sidestep_lvl += @s ca.ench_sidestep_sadd
 
 tag @s remove ca.do_enchant_calc_sidestep
 
-execute if score @s ca.ench_sidestep_lvl matches 1.. run tag @s add ca.enchant_tick
+

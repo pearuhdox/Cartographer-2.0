@@ -54,4 +54,4 @@ scoreboard players operation @s ca.ench_storm_lvl += @s ca.ench_storm_saddle_lvl
 
 tag @s remove ca.do_enchant_calc_storm
 
-execute if score @s ca.ench_storm_lvl matches 1.. run tag @s add ca.enchant_tick
+

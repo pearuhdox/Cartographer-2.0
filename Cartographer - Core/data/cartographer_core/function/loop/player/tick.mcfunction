@@ -2,6 +2,7 @@
 function cartographer_core:systems/quick_drop/shulker/tick
 #End of Quick Drop Shulker Box System
 
+
 #Toggleable Options for Players
 scoreboard players enable @s disable_other_skins
 execute if score @s disable_other_skins matches 1.. run function cartographer_core:options/skin/other_toggle
@@ -23,7 +24,11 @@ execute if score @s ca.glass_cdl matches 1.. run scoreboard players remove @s ca
 execute if entity @s[tag=!ca.init] run function cartographer_core:load/init_player
 
 
-execute if entity @s[tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. if score $check ca.core_delay_check matches 1.. run function cartographer_core:helper/inventory/do_inventory_check
+#Run SLOT CHANGE HERE
+function cartographer_core:handlers/inv_or_slot_change/slot_change
+
+#Run Inventory Change Here
+execute if entity @s[tag=ca.core_check_inv] unless score @s ca.core_delay_check matches 1.. run function cartographer_core:helper/inventory/do_inventory_check
 execute if score @s ca.core_delay_check matches 1.. run scoreboard players remove @s ca.core_delay_check 1
 
 execute if score @s ca.attribute_cleanse_delay matches 3.. run function cartographer_core:remove_attributes
@@ -50,12 +55,11 @@ function cartographer_lexica:loop/tick/player
 #function cartographer_mob_abilities:loop/tick/player
 #function cartographer_mimics:loop/tick/player
 function cartographer_repair_stations:loop/tick/player
+function cartographer_mob_utils:loop/tick/player
 function cartographer_ender_pouch:player/tick
 function cartographer_rat:loop/player/tick
 
 #Remove the inventory check from core here so it can be used in other functionality
-#execute unless score @s ca.core_delay_check matches 1.. run tag @s remove ca.core_check_inv
-tag @s remove ca.core_check_inv_inspector
 
 #Enable triggers
 scoreboard players enable @s menu

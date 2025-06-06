@@ -51,7 +51,7 @@ scoreboard players operation @s ca.ench_finesse_lvl += @s ca.ench_finesse_main_l
 scoreboard players operation @s ca.ench_finesse_lvl += @s ca.ench_finesse_body_lvl
 scoreboard players operation @s ca.ench_finesse_lvl += @s ca.ench_finesse_saddle_lvl
 
-execute if score @s ca.ench_finesse_lvl matches 1.. run tag @s add ca.enchant_tick
+
 scoreboard players set $ench_timer ca.timer 10
 
 tag @s remove ca.do_enchant_calc_finesse

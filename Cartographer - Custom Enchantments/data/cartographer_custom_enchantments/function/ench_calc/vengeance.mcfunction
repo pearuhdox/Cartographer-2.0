@@ -54,4 +54,4 @@ scoreboard players operation @s ca.ench_vengeance_lvl += @s ca.ench_vengeance_sa
 
 tag @s remove ca.do_enchant_calc_vengeance
 
-execute if score @s ca.ench_vengeance_lvl matches 1.. run tag @s add ca.enchant_tick
+

@@ -1,7 +1,3 @@
-tag @s add ca.core_check_inv
-tag @s add ca.core_check_inv_inspector
-
-
 execute if score @s ca.equip_leather_boots matches 1.. run scoreboard players set @s ca.core_delay_check 2
 execute if score @s ca.equip_leather_leggings matches 1.. run scoreboard players set @s ca.core_delay_check 2
 execute if score @s ca.equip_leather_chestplate matches 1.. run scoreboard players set @s ca.core_delay_check 2
@@ -101,5 +97,11 @@ execute unless entity @s[tag=ca.suppress_inv_update] if score $rat ca.installed 
 execute unless entity @s[tag=ca.suppress_inv_update] if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:reset_attributes
 execute unless entity @s[tag=ca.suppress_inv_update] if score $enchantment_rework ca.installed matches 1.. run function cartographer_enchantment_rework:reset_attributes
 
+#Enable Enchant Ticking if necessary
+execute if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:allow_tick
+execute if score $custom_enchantments ca.installed matches 1.. run function cartographer_custom_enchantments:allow_tick
+execute if score $custom_statuses ca.installed matches 1.. run function cartographer_custom_statuses:allow_tick
 
-#execute if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:calculator/process/start
+#Reset tags
+tag @s remove ca.do_inv_reset
+tag @s remove ca.suppress_inv_update

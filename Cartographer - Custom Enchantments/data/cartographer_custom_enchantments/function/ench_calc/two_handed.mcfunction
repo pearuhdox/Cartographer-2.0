@@ -55,4 +55,4 @@ scoreboard players operation @s ca.ench_two_handed_lvl += @s ca.ench_two_handed_
 tag @s remove ca.do_enchant_calc_two_handed
 
 execute if score @s ca.ench_two_handed_lvl matches 1.. run scoreboard players set @s ca.ench_two_handed_check 1
-execute if score @s ca.ench_two_handed_lvl matches 1.. run tag @s add ca.enchant_tick
+

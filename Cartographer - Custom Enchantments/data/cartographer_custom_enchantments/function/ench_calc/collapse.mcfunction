@@ -54,4 +54,4 @@ scoreboard players operation @s ca.ench_collapse_lvl += @s ca.ench_collapse_sadd
 
 tag @s remove ca.do_enchant_calc_collapse
 
-execute if score @s ca.ench_collapse_lvl matches 1.. run tag @s add ca.enchant_tick
+

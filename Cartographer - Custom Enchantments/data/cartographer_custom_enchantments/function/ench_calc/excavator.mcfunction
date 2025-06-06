@@ -54,4 +54,4 @@ scoreboard players operation @s ca.ench_excavator_lvl += @s ca.ench_excavator_sa
 
 tag @s remove ca.do_enchant_calc_excavator
 
-execute if score @s ca.ench_excavator_lvl matches 1.. run tag @s add ca.enchant_tick
+

@@ -54,4 +54,4 @@ scoreboard players operation @s ca.ench_multitool_lvl += @s ca.ench_multitool_sa
 
 tag @s remove ca.do_enchant_calc_multitool
 
-execute if score @s ca.ench_multitool_lvl matches 1.. run tag @s add ca.enchant_tick
+

@@ -54,4 +54,4 @@ scoreboard players operation @s ca.ench_correction_lvl += @s ca.ench_correction_
 
 tag @s remove ca.do_enchant_calc_correction
 
-execute if score @s ca.ench_correction_lvl matches 1.. run tag @s add ca.enchant_tick
+

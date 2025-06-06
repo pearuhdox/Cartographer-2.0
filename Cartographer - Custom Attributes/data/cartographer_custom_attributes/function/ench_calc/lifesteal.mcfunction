@@ -51,7 +51,7 @@ scoreboard players operation @s ca.ench_lifesteal_lvl += @s ca.ench_lifesteal_ma
 scoreboard players operation @s ca.ench_lifesteal_lvl += @s ca.ench_lifesteal_body_lvl
 scoreboard players operation @s ca.ench_lifesteal_lvl += @s ca.ench_lifesteal_saddle_lvl
 
-execute if score @s ca.ench_lifesteal_lvl matches 1.. run tag @s add ca.enchant_tick
+
 scoreboard players set $ench_timer ca.timer 10
 
 tag @s remove ca.do_enchant_calc_lifesteal

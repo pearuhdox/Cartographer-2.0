@@ -35,7 +35,7 @@ execute if score @s ca.ench_soulfire_lvl matches 1.. run function cartographer_c
 #execute if score @s ca.ench_drilling_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/tool/drilling/run
 execute if score @s ca.ench_excavator_lvl matches 1.. unless entity @s[type=player] run function cartographer_custom_enchantments:enchantment/tool/excavator/mob_run
 execute if score @s ca.ench_multitool_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/tool/multitool/setup
-#execute if score @s ca.ench_lightborn_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/tool/lightborn/run
+execute if score @s ca.ench_lightborn_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/tool/lightborn/run
 
 #execute if score @s ca.ench_hex_eater_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/damage/general/hex_eater/run
 #execute if score @s ca.ench_duelist_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/damage/general/duelist/run

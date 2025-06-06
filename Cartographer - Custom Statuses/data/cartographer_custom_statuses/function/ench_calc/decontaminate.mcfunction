@@ -51,6 +51,6 @@ scoreboard players operation @s ca.ench_decontaminate_lvl += @s ca.ench_decontam
 scoreboard players operation @s ca.ench_decontaminate_lvl += @s ca.ench_decontaminate_body_lvl
 scoreboard players operation @s ca.ench_decontaminate_lvl += @s ca.ench_decontaminate_saddle_lvl
 
-execute if score @s ca.ench_decontaminate_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 tag @s remove ca.do_enchant_calc_decontaminate

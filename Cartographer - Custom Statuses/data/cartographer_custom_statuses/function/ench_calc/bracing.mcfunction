@@ -51,6 +51,6 @@ scoreboard players operation @s ca.ench_bracing_lvl += @s ca.ench_bracing_main_l
 scoreboard players operation @s ca.ench_bracing_lvl += @s ca.ench_bracing_body_lvl
 scoreboard players operation @s ca.ench_bracing_lvl += @s ca.ench_bracing_saddle_lvl
 
-execute if score @s ca.ench_bracing_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 tag @s remove ca.do_enchant_calc_bracing

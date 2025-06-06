@@ -24,7 +24,7 @@ scoreboard players operation @s ca.ench_adrenaline_lvl += @s ca.ench_adrenaline_
 scoreboard players operation @s ca.ench_adrenaline_lvl += @s ca.ench_adrenaline_body_lvl
 scoreboard players operation @s ca.ench_adrenaline_lvl += @s ca.ench_adrenaline_saddle_lvl
 
-execute if score @s ca.ench_adrenaline_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_frenzy_main_lvl 0
 scoreboard players set @s ca.ench_frenzy_offh_lvl 0
@@ -47,7 +47,7 @@ scoreboard players operation @s ca.ench_frenzy_lvl += @s ca.ench_frenzy_feet_lvl
 scoreboard players operation @s ca.ench_frenzy_lvl += @s ca.ench_frenzy_body_lvl
 scoreboard players operation @s ca.ench_frenzy_lvl += @s ca.ench_frenzy_saddle_lvl
 
-execute if score @s ca.ench_frenzy_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_soulbound_main_lvl 0
 scoreboard players set @s ca.ench_soulbound_offh_lvl 0
@@ -70,7 +70,7 @@ scoreboard players operation @s ca.ench_soulbound_lvl += @s ca.ench_soulbound_fe
 scoreboard players operation @s ca.ench_soulbound_lvl += @s ca.ench_soulbound_body_lvl
 scoreboard players operation @s ca.ench_soulbound_lvl += @s ca.ench_soulbound_saddle_lvl
 
-execute if score @s ca.ench_soulbound_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_spurs_main_lvl 0
 scoreboard players set @s ca.ench_spurs_offh_lvl 0
@@ -93,7 +93,7 @@ scoreboard players operation @s ca.ench_spurs_lvl += @s ca.ench_spurs_feet_lvl
 scoreboard players operation @s ca.ench_spurs_lvl += @s ca.ench_spurs_body_lvl
 scoreboard players operation @s ca.ench_spurs_lvl += @s ca.ench_spurs_saddle_lvl
 
-execute if score @s ca.ench_spurs_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_ethereal_main_lvl 0
 scoreboard players set @s ca.ench_ethereal_offh_lvl 0
@@ -116,7 +116,7 @@ scoreboard players operation @s ca.ench_ethereal_lvl += @s ca.ench_ethereal_feet
 scoreboard players operation @s ca.ench_ethereal_lvl += @s ca.ench_ethereal_body_lvl
 scoreboard players operation @s ca.ench_ethereal_lvl += @s ca.ench_ethereal_saddle_lvl
 
-execute if score @s ca.ench_ethereal_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_hardened_main_lvl 0
 scoreboard players set @s ca.ench_hardened_offh_lvl 0
@@ -139,7 +139,7 @@ scoreboard players operation @s ca.ench_hardened_lvl += @s ca.ench_hardened_feet
 scoreboard players operation @s ca.ench_hardened_lvl += @s ca.ench_hardened_body_lvl
 scoreboard players operation @s ca.ench_hardened_lvl += @s ca.ench_hardened_saddle_lvl
 
-execute if score @s ca.ench_hardened_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_poise_main_lvl 0
 scoreboard players set @s ca.ench_poise_offh_lvl 0
@@ -162,7 +162,7 @@ scoreboard players operation @s ca.ench_poise_lvl += @s ca.ench_poise_feet_lvl
 scoreboard players operation @s ca.ench_poise_lvl += @s ca.ench_poise_body_lvl
 scoreboard players operation @s ca.ench_poise_lvl += @s ca.ench_poise_saddle_lvl
 
-execute if score @s ca.ench_poise_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_steadfast_main_lvl 0
 scoreboard players set @s ca.ench_steadfast_offh_lvl 0
@@ -185,7 +185,7 @@ scoreboard players operation @s ca.ench_steadfast_lvl += @s ca.ench_steadfast_fe
 scoreboard players operation @s ca.ench_steadfast_lvl += @s ca.ench_steadfast_body_lvl
 scoreboard players operation @s ca.ench_steadfast_lvl += @s ca.ench_steadfast_saddle_lvl
 
-execute if score @s ca.ench_steadfast_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_bulwark_main_lvl 0
 scoreboard players set @s ca.ench_bulwark_offh_lvl 0
@@ -208,7 +208,7 @@ scoreboard players operation @s ca.ench_bulwark_lvl += @s ca.ench_bulwark_feet_l
 scoreboard players operation @s ca.ench_bulwark_lvl += @s ca.ench_bulwark_body_lvl
 scoreboard players operation @s ca.ench_bulwark_lvl += @s ca.ench_bulwark_saddle_lvl
 
-execute if score @s ca.ench_bulwark_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_sidestep_main_lvl 0
 scoreboard players set @s ca.ench_sidestep_offh_lvl 0
@@ -231,7 +231,7 @@ scoreboard players operation @s ca.ench_sidestep_lvl += @s ca.ench_sidestep_feet
 scoreboard players operation @s ca.ench_sidestep_lvl += @s ca.ench_sidestep_body_lvl
 scoreboard players operation @s ca.ench_sidestep_lvl += @s ca.ench_sidestep_saddle_lvl
 
-execute if score @s ca.ench_sidestep_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_courageous_main_lvl 0
 scoreboard players set @s ca.ench_courageous_offh_lvl 0
@@ -254,7 +254,7 @@ scoreboard players operation @s ca.ench_courageous_lvl += @s ca.ench_courageous_
 scoreboard players operation @s ca.ench_courageous_lvl += @s ca.ench_courageous_body_lvl
 scoreboard players operation @s ca.ench_courageous_lvl += @s ca.ench_courageous_saddle_lvl
 
-execute if score @s ca.ench_courageous_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_unseen_main_lvl 0
 scoreboard players set @s ca.ench_unseen_offh_lvl 0
@@ -277,7 +277,7 @@ scoreboard players operation @s ca.ench_unseen_lvl += @s ca.ench_unseen_feet_lvl
 scoreboard players operation @s ca.ench_unseen_lvl += @s ca.ench_unseen_body_lvl
 scoreboard players operation @s ca.ench_unseen_lvl += @s ca.ench_unseen_saddle_lvl
 
-execute if score @s ca.ench_unseen_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_tenacity_main_lvl 0
 scoreboard players set @s ca.ench_tenacity_offh_lvl 0
@@ -300,7 +300,7 @@ scoreboard players operation @s ca.ench_tenacity_lvl += @s ca.ench_tenacity_feet
 scoreboard players operation @s ca.ench_tenacity_lvl += @s ca.ench_tenacity_body_lvl
 scoreboard players operation @s ca.ench_tenacity_lvl += @s ca.ench_tenacity_saddle_lvl
 
-execute if score @s ca.ench_tenacity_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_inertia_main_lvl 0
 scoreboard players set @s ca.ench_inertia_offh_lvl 0
@@ -323,7 +323,7 @@ scoreboard players operation @s ca.ench_inertia_lvl += @s ca.ench_inertia_feet_l
 scoreboard players operation @s ca.ench_inertia_lvl += @s ca.ench_inertia_body_lvl
 scoreboard players operation @s ca.ench_inertia_lvl += @s ca.ench_inertia_saddle_lvl
 
-execute if score @s ca.ench_inertia_lvl matches 1.. run tag @s add ca.enchant_tick
+
 execute if score @s ca.ench_inertia_lvl matches 1.. run tag @s remove ca.energized_calculated
 
 scoreboard players set @s ca.ench_diversion_main_lvl 0
@@ -347,7 +347,7 @@ scoreboard players operation @s ca.ench_diversion_lvl += @s ca.ench_diversion_fe
 scoreboard players operation @s ca.ench_diversion_lvl += @s ca.ench_diversion_body_lvl
 scoreboard players operation @s ca.ench_diversion_lvl += @s ca.ench_diversion_saddle_lvl
 
-execute if score @s ca.ench_diversion_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_gravity_main_lvl 0
 scoreboard players set @s ca.ench_gravity_offh_lvl 0
@@ -370,7 +370,7 @@ scoreboard players operation @s ca.ench_gravity_lvl += @s ca.ench_gravity_feet_l
 scoreboard players operation @s ca.ench_gravity_lvl += @s ca.ench_gravity_body_lvl
 scoreboard players operation @s ca.ench_gravity_lvl += @s ca.ench_gravity_saddle_lvl
 
-execute if score @s ca.ench_gravity_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_momentum_main_lvl 0
 scoreboard players set @s ca.ench_momentum_offh_lvl 0
@@ -393,7 +393,7 @@ scoreboard players operation @s ca.ench_momentum_lvl += @s ca.ench_momentum_feet
 scoreboard players operation @s ca.ench_momentum_lvl += @s ca.ench_momentum_body_lvl
 scoreboard players operation @s ca.ench_momentum_lvl += @s ca.ench_momentum_saddle_lvl
 
-execute if score @s ca.ench_momentum_lvl matches 1.. run tag @s add ca.enchant_tick
+
 execute if score @s ca.ench_momentum_lvl matches 1.. run tag @s remove ca.energized_calculated
 
 scoreboard players set @s ca.ench_vengeance_main_lvl 0
@@ -417,7 +417,7 @@ scoreboard players operation @s ca.ench_vengeance_lvl += @s ca.ench_vengeance_fe
 scoreboard players operation @s ca.ench_vengeance_lvl += @s ca.ench_vengeance_body_lvl
 scoreboard players operation @s ca.ench_vengeance_lvl += @s ca.ench_vengeance_saddle_lvl
 
-execute if score @s ca.ench_vengeance_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_surge_main_lvl 0
 scoreboard players set @s ca.ench_surge_offh_lvl 0
@@ -440,7 +440,7 @@ scoreboard players operation @s ca.ench_surge_lvl += @s ca.ench_surge_feet_lvl
 scoreboard players operation @s ca.ench_surge_lvl += @s ca.ench_surge_body_lvl
 scoreboard players operation @s ca.ench_surge_lvl += @s ca.ench_surge_saddle_lvl
 
-execute if score @s ca.ench_surge_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_deadeye_main_lvl 0
 scoreboard players set @s ca.ench_deadeye_offh_lvl 0
@@ -463,7 +463,7 @@ scoreboard players operation @s ca.ench_deadeye_lvl += @s ca.ench_deadeye_feet_l
 scoreboard players operation @s ca.ench_deadeye_lvl += @s ca.ench_deadeye_body_lvl
 scoreboard players operation @s ca.ench_deadeye_lvl += @s ca.ench_deadeye_saddle_lvl
 
-execute if score @s ca.ench_deadeye_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_trailblazer_main_lvl 0
 scoreboard players set @s ca.ench_trailblazer_offh_lvl 0
@@ -486,7 +486,7 @@ scoreboard players operation @s ca.ench_trailblazer_lvl += @s ca.ench_trailblaze
 scoreboard players operation @s ca.ench_trailblazer_lvl += @s ca.ench_trailblazer_body_lvl
 scoreboard players operation @s ca.ench_trailblazer_lvl += @s ca.ench_trailblazer_saddle_lvl
 
-execute if score @s ca.ench_trailblazer_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_starfall_main_lvl 0
 scoreboard players set @s ca.ench_starfall_offh_lvl 0
@@ -509,7 +509,7 @@ scoreboard players operation @s ca.ench_starfall_lvl += @s ca.ench_starfall_feet
 scoreboard players operation @s ca.ench_starfall_lvl += @s ca.ench_starfall_body_lvl
 scoreboard players operation @s ca.ench_starfall_lvl += @s ca.ench_starfall_saddle_lvl
 
-execute if score @s ca.ench_starfall_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_orbit_main_lvl 0
 scoreboard players set @s ca.ench_orbit_offh_lvl 0
@@ -532,7 +532,7 @@ scoreboard players operation @s ca.ench_orbit_lvl += @s ca.ench_orbit_feet_lvl
 scoreboard players operation @s ca.ench_orbit_lvl += @s ca.ench_orbit_body_lvl
 scoreboard players operation @s ca.ench_orbit_lvl += @s ca.ench_orbit_saddle_lvl
 
-execute if score @s ca.ench_orbit_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_storm_main_lvl 0
 scoreboard players set @s ca.ench_storm_offh_lvl 0
@@ -555,7 +555,7 @@ scoreboard players operation @s ca.ench_storm_lvl += @s ca.ench_storm_feet_lvl
 scoreboard players operation @s ca.ench_storm_lvl += @s ca.ench_storm_body_lvl
 scoreboard players operation @s ca.ench_storm_lvl += @s ca.ench_storm_saddle_lvl
 
-execute if score @s ca.ench_storm_lvl matches 1.. run tag @s add ca.enchant_tick
+
 execute if score @s ca.ench_storm_lvl matches 1.. run tag @s remove ca.energized_calculated
 
 scoreboard players set @s ca.ench_induction_main_lvl 0
@@ -579,7 +579,7 @@ scoreboard players operation @s ca.ench_induction_lvl += @s ca.ench_induction_fe
 scoreboard players operation @s ca.ench_induction_lvl += @s ca.ench_induction_body_lvl
 scoreboard players operation @s ca.ench_induction_lvl += @s ca.ench_induction_saddle_lvl
 
-execute if score @s ca.ench_induction_lvl matches 1.. run tag @s add ca.enchant_tick
+
 execute if score @s ca.ench_induction_lvl matches 1.. run tag @s remove ca.energized_calculated
 
 scoreboard players set @s ca.ench_aberration_main_lvl 0
@@ -603,7 +603,7 @@ scoreboard players operation @s ca.ench_aberration_lvl += @s ca.ench_aberration_
 scoreboard players operation @s ca.ench_aberration_lvl += @s ca.ench_aberration_body_lvl
 scoreboard players operation @s ca.ench_aberration_lvl += @s ca.ench_aberration_saddle_lvl
 
-execute if score @s ca.ench_aberration_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_quake_main_lvl 0
 scoreboard players set @s ca.ench_quake_offh_lvl 0
@@ -626,7 +626,7 @@ scoreboard players operation @s ca.ench_quake_lvl += @s ca.ench_quake_feet_lvl
 scoreboard players operation @s ca.ench_quake_lvl += @s ca.ench_quake_body_lvl
 scoreboard players operation @s ca.ench_quake_lvl += @s ca.ench_quake_saddle_lvl
 
-execute if score @s ca.ench_quake_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_eruption_main_lvl 0
 scoreboard players set @s ca.ench_eruption_offh_lvl 0
@@ -649,7 +649,7 @@ scoreboard players operation @s ca.ench_eruption_lvl += @s ca.ench_eruption_feet
 scoreboard players operation @s ca.ench_eruption_lvl += @s ca.ench_eruption_body_lvl
 scoreboard players operation @s ca.ench_eruption_lvl += @s ca.ench_eruption_saddle_lvl
 
-execute if score @s ca.ench_eruption_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_soulfire_main_lvl 0
 scoreboard players set @s ca.ench_soulfire_offh_lvl 0
@@ -672,7 +672,7 @@ scoreboard players operation @s ca.ench_soulfire_lvl += @s ca.ench_soulfire_feet
 scoreboard players operation @s ca.ench_soulfire_lvl += @s ca.ench_soulfire_body_lvl
 scoreboard players operation @s ca.ench_soulfire_lvl += @s ca.ench_soulfire_saddle_lvl
 
-execute if score @s ca.ench_soulfire_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_drilling_main_lvl 0
 scoreboard players set @s ca.ench_drilling_offh_lvl 0
@@ -695,7 +695,7 @@ scoreboard players operation @s ca.ench_drilling_lvl += @s ca.ench_drilling_feet
 scoreboard players operation @s ca.ench_drilling_lvl += @s ca.ench_drilling_body_lvl
 scoreboard players operation @s ca.ench_drilling_lvl += @s ca.ench_drilling_saddle_lvl
 
-execute if score @s ca.ench_drilling_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_excavator_main_lvl 0
 scoreboard players set @s ca.ench_excavator_offh_lvl 0
@@ -718,7 +718,7 @@ scoreboard players operation @s ca.ench_excavator_lvl += @s ca.ench_excavator_fe
 scoreboard players operation @s ca.ench_excavator_lvl += @s ca.ench_excavator_body_lvl
 scoreboard players operation @s ca.ench_excavator_lvl += @s ca.ench_excavator_saddle_lvl
 
-execute if score @s ca.ench_excavator_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_multitool_main_lvl 0
 scoreboard players set @s ca.ench_multitool_offh_lvl 0
@@ -741,7 +741,7 @@ scoreboard players operation @s ca.ench_multitool_lvl += @s ca.ench_multitool_fe
 scoreboard players operation @s ca.ench_multitool_lvl += @s ca.ench_multitool_body_lvl
 scoreboard players operation @s ca.ench_multitool_lvl += @s ca.ench_multitool_saddle_lvl
 
-execute if score @s ca.ench_multitool_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_lightborn_main_lvl 0
 scoreboard players set @s ca.ench_lightborn_offh_lvl 0
@@ -764,7 +764,7 @@ scoreboard players operation @s ca.ench_lightborn_lvl += @s ca.ench_lightborn_fe
 scoreboard players operation @s ca.ench_lightborn_lvl += @s ca.ench_lightborn_body_lvl
 scoreboard players operation @s ca.ench_lightborn_lvl += @s ca.ench_lightborn_saddle_lvl
 
-execute if score @s ca.ench_lightborn_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_hex_eater_main_lvl 0
 scoreboard players set @s ca.ench_hex_eater_offh_lvl 0
@@ -787,7 +787,7 @@ scoreboard players operation @s ca.ench_hex_eater_lvl += @s ca.ench_hex_eater_fe
 scoreboard players operation @s ca.ench_hex_eater_lvl += @s ca.ench_hex_eater_body_lvl
 scoreboard players operation @s ca.ench_hex_eater_lvl += @s ca.ench_hex_eater_saddle_lvl
 
-execute if score @s ca.ench_hex_eater_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_duelist_main_lvl 0
 scoreboard players set @s ca.ench_duelist_offh_lvl 0
@@ -810,7 +810,7 @@ scoreboard players operation @s ca.ench_duelist_lvl += @s ca.ench_duelist_feet_l
 scoreboard players operation @s ca.ench_duelist_lvl += @s ca.ench_duelist_body_lvl
 scoreboard players operation @s ca.ench_duelist_lvl += @s ca.ench_duelist_saddle_lvl
 
-execute if score @s ca.ench_duelist_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_hunter_main_lvl 0
 scoreboard players set @s ca.ench_hunter_offh_lvl 0
@@ -833,7 +833,7 @@ scoreboard players operation @s ca.ench_hunter_lvl += @s ca.ench_hunter_feet_lvl
 scoreboard players operation @s ca.ench_hunter_lvl += @s ca.ench_hunter_body_lvl
 scoreboard players operation @s ca.ench_hunter_lvl += @s ca.ench_hunter_saddle_lvl
 
-execute if score @s ca.ench_hunter_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_focus_main_lvl 0
 scoreboard players set @s ca.ench_focus_offh_lvl 0
@@ -856,7 +856,7 @@ scoreboard players operation @s ca.ench_focus_lvl += @s ca.ench_focus_feet_lvl
 scoreboard players operation @s ca.ench_focus_lvl += @s ca.ench_focus_body_lvl
 scoreboard players operation @s ca.ench_focus_lvl += @s ca.ench_focus_saddle_lvl
 
-execute if score @s ca.ench_focus_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_first_strike_main_lvl 0
 scoreboard players set @s ca.ench_first_strike_offh_lvl 0
@@ -879,7 +879,7 @@ scoreboard players operation @s ca.ench_first_strike_lvl += @s ca.ench_first_str
 scoreboard players operation @s ca.ench_first_strike_lvl += @s ca.ench_first_strike_body_lvl
 scoreboard players operation @s ca.ench_first_strike_lvl += @s ca.ench_first_strike_saddle_lvl
 
-execute if score @s ca.ench_first_strike_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_follow_up_main_lvl 0
 scoreboard players set @s ca.ench_follow_up_offh_lvl 0
@@ -902,7 +902,7 @@ scoreboard players operation @s ca.ench_follow_up_lvl += @s ca.ench_follow_up_fe
 scoreboard players operation @s ca.ench_follow_up_lvl += @s ca.ench_follow_up_body_lvl
 scoreboard players operation @s ca.ench_follow_up_lvl += @s ca.ench_follow_up_saddle_lvl
 
-execute if score @s ca.ench_follow_up_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_concentration_main_lvl 0
 scoreboard players set @s ca.ench_concentration_offh_lvl 0
@@ -925,7 +925,7 @@ scoreboard players operation @s ca.ench_concentration_lvl += @s ca.ench_concentr
 scoreboard players operation @s ca.ench_concentration_lvl += @s ca.ench_concentration_body_lvl
 scoreboard players operation @s ca.ench_concentration_lvl += @s ca.ench_concentration_saddle_lvl
 
-execute if score @s ca.ench_concentration_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_chaotic_main_lvl 0
 scoreboard players set @s ca.ench_chaotic_offh_lvl 0
@@ -948,7 +948,7 @@ scoreboard players operation @s ca.ench_chaotic_lvl += @s ca.ench_chaotic_feet_l
 scoreboard players operation @s ca.ench_chaotic_lvl += @s ca.ench_chaotic_body_lvl
 scoreboard players operation @s ca.ench_chaotic_lvl += @s ca.ench_chaotic_saddle_lvl
 
-execute if score @s ca.ench_chaotic_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_rushdown_main_lvl 0
 scoreboard players set @s ca.ench_rushdown_offh_lvl 0
@@ -971,7 +971,7 @@ scoreboard players operation @s ca.ench_rushdown_lvl += @s ca.ench_rushdown_feet
 scoreboard players operation @s ca.ench_rushdown_lvl += @s ca.ench_rushdown_body_lvl
 scoreboard players operation @s ca.ench_rushdown_lvl += @s ca.ench_rushdown_saddle_lvl
 
-execute if score @s ca.ench_rushdown_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_leverage_main_lvl 0
 scoreboard players set @s ca.ench_leverage_offh_lvl 0
@@ -994,7 +994,7 @@ scoreboard players operation @s ca.ench_leverage_lvl += @s ca.ench_leverage_feet
 scoreboard players operation @s ca.ench_leverage_lvl += @s ca.ench_leverage_body_lvl
 scoreboard players operation @s ca.ench_leverage_lvl += @s ca.ench_leverage_saddle_lvl
 
-execute if score @s ca.ench_leverage_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_overcharge_main_lvl 0
 scoreboard players set @s ca.ench_overcharge_offh_lvl 0
@@ -1017,7 +1017,7 @@ scoreboard players operation @s ca.ench_overcharge_lvl += @s ca.ench_overcharge_
 scoreboard players operation @s ca.ench_overcharge_lvl += @s ca.ench_overcharge_body_lvl
 scoreboard players operation @s ca.ench_overcharge_lvl += @s ca.ench_overcharge_saddle_lvl
 
-execute if score @s ca.ench_overcharge_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_point_blank_main_lvl 0
 scoreboard players set @s ca.ench_point_blank_offh_lvl 0
@@ -1040,7 +1040,7 @@ scoreboard players operation @s ca.ench_point_blank_lvl += @s ca.ench_point_blan
 scoreboard players operation @s ca.ench_point_blank_lvl += @s ca.ench_point_blank_body_lvl
 scoreboard players operation @s ca.ench_point_blank_lvl += @s ca.ench_point_blank_saddle_lvl
 
-execute if score @s ca.ench_point_blank_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_sharpshot_main_lvl 0
 scoreboard players set @s ca.ench_sharpshot_offh_lvl 0
@@ -1063,7 +1063,7 @@ scoreboard players operation @s ca.ench_sharpshot_lvl += @s ca.ench_sharpshot_fe
 scoreboard players operation @s ca.ench_sharpshot_lvl += @s ca.ench_sharpshot_body_lvl
 scoreboard players operation @s ca.ench_sharpshot_lvl += @s ca.ench_sharpshot_saddle_lvl
 
-execute if score @s ca.ench_sharpshot_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_recoil_main_lvl 0
 scoreboard players set @s ca.ench_recoil_offh_lvl 0
@@ -1086,7 +1086,7 @@ scoreboard players operation @s ca.ench_recoil_lvl += @s ca.ench_recoil_feet_lvl
 scoreboard players operation @s ca.ench_recoil_lvl += @s ca.ench_recoil_body_lvl
 scoreboard players operation @s ca.ench_recoil_lvl += @s ca.ench_recoil_saddle_lvl
 
-execute if score @s ca.ench_recoil_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_explosive_main_lvl 0
 scoreboard players set @s ca.ench_explosive_offh_lvl 0
@@ -1109,7 +1109,7 @@ scoreboard players operation @s ca.ench_explosive_lvl += @s ca.ench_explosive_fe
 scoreboard players operation @s ca.ench_explosive_lvl += @s ca.ench_explosive_body_lvl
 scoreboard players operation @s ca.ench_explosive_lvl += @s ca.ench_explosive_saddle_lvl
 
-execute if score @s ca.ench_explosive_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_pulling_main_lvl 0
 scoreboard players set @s ca.ench_pulling_offh_lvl 0
@@ -1132,7 +1132,7 @@ scoreboard players operation @s ca.ench_pulling_lvl += @s ca.ench_pulling_feet_l
 scoreboard players operation @s ca.ench_pulling_lvl += @s ca.ench_pulling_body_lvl
 scoreboard players operation @s ca.ench_pulling_lvl += @s ca.ench_pulling_saddle_lvl
 
-execute if score @s ca.ench_pulling_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_repulsion_main_lvl 0
 scoreboard players set @s ca.ench_repulsion_offh_lvl 0
@@ -1155,7 +1155,7 @@ scoreboard players operation @s ca.ench_repulsion_lvl += @s ca.ench_repulsion_fe
 scoreboard players operation @s ca.ench_repulsion_lvl += @s ca.ench_repulsion_body_lvl
 scoreboard players operation @s ca.ench_repulsion_lvl += @s ca.ench_repulsion_saddle_lvl
 
-execute if score @s ca.ench_repulsion_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_cleaving_main_lvl 0
 scoreboard players set @s ca.ench_cleaving_offh_lvl 0
@@ -1178,7 +1178,7 @@ scoreboard players operation @s ca.ench_cleaving_lvl += @s ca.ench_cleaving_feet
 scoreboard players operation @s ca.ench_cleaving_lvl += @s ca.ench_cleaving_body_lvl
 scoreboard players operation @s ca.ench_cleaving_lvl += @s ca.ench_cleaving_saddle_lvl
 
-execute if score @s ca.ench_cleaving_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_slamming_main_lvl 0
 scoreboard players set @s ca.ench_slamming_offh_lvl 0
@@ -1201,7 +1201,7 @@ scoreboard players operation @s ca.ench_slamming_lvl += @s ca.ench_slamming_feet
 scoreboard players operation @s ca.ench_slamming_lvl += @s ca.ench_slamming_body_lvl
 scoreboard players operation @s ca.ench_slamming_lvl += @s ca.ench_slamming_saddle_lvl
 
-execute if score @s ca.ench_slamming_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_thrusting_main_lvl 0
 scoreboard players set @s ca.ench_thrusting_offh_lvl 0
@@ -1224,7 +1224,7 @@ scoreboard players operation @s ca.ench_thrusting_lvl += @s ca.ench_thrusting_fe
 scoreboard players operation @s ca.ench_thrusting_lvl += @s ca.ench_thrusting_body_lvl
 scoreboard players operation @s ca.ench_thrusting_lvl += @s ca.ench_thrusting_saddle_lvl
 
-execute if score @s ca.ench_thrusting_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_quick_strike_main_lvl 0
 scoreboard players set @s ca.ench_quick_strike_offh_lvl 0
@@ -1247,7 +1247,7 @@ scoreboard players operation @s ca.ench_quick_strike_lvl += @s ca.ench_quick_str
 scoreboard players operation @s ca.ench_quick_strike_lvl += @s ca.ench_quick_strike_body_lvl
 scoreboard players operation @s ca.ench_quick_strike_lvl += @s ca.ench_quick_strike_saddle_lvl
 
-execute if score @s ca.ench_quick_strike_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_riposte_main_lvl 0
 scoreboard players set @s ca.ench_riposte_offh_lvl 0
@@ -1270,7 +1270,7 @@ scoreboard players operation @s ca.ench_riposte_lvl += @s ca.ench_riposte_feet_l
 scoreboard players operation @s ca.ench_riposte_lvl += @s ca.ench_riposte_body_lvl
 scoreboard players operation @s ca.ench_riposte_lvl += @s ca.ench_riposte_saddle_lvl
 
-execute if score @s ca.ench_riposte_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_lunging_main_lvl 0
 scoreboard players set @s ca.ench_lunging_offh_lvl 0
@@ -1293,7 +1293,7 @@ scoreboard players operation @s ca.ench_lunging_lvl += @s ca.ench_lunging_feet_l
 scoreboard players operation @s ca.ench_lunging_lvl += @s ca.ench_lunging_body_lvl
 scoreboard players operation @s ca.ench_lunging_lvl += @s ca.ench_lunging_saddle_lvl
 
-execute if score @s ca.ench_lunging_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_ambushing_main_lvl 0
 scoreboard players set @s ca.ench_ambushing_offh_lvl 0
@@ -1316,7 +1316,7 @@ scoreboard players operation @s ca.ench_ambushing_lvl += @s ca.ench_ambushing_fe
 scoreboard players operation @s ca.ench_ambushing_lvl += @s ca.ench_ambushing_body_lvl
 scoreboard players operation @s ca.ench_ambushing_lvl += @s ca.ench_ambushing_saddle_lvl
 
-execute if score @s ca.ench_ambushing_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_throwable_main_lvl 0
 scoreboard players set @s ca.ench_throwable_offh_lvl 0
@@ -1339,7 +1339,7 @@ scoreboard players operation @s ca.ench_throwable_lvl += @s ca.ench_throwable_fe
 scoreboard players operation @s ca.ench_throwable_lvl += @s ca.ench_throwable_body_lvl
 scoreboard players operation @s ca.ench_throwable_lvl += @s ca.ench_throwable_saddle_lvl
 
-execute if score @s ca.ench_throwable_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_correction_main_lvl 0
 scoreboard players set @s ca.ench_correction_offh_lvl 0
@@ -1362,7 +1362,7 @@ scoreboard players operation @s ca.ench_correction_lvl += @s ca.ench_correction_
 scoreboard players operation @s ca.ench_correction_lvl += @s ca.ench_correction_body_lvl
 scoreboard players operation @s ca.ench_correction_lvl += @s ca.ench_correction_saddle_lvl
 
-execute if score @s ca.ench_correction_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_ricochet_main_lvl 0
 scoreboard players set @s ca.ench_ricochet_offh_lvl 0
@@ -1385,7 +1385,7 @@ scoreboard players operation @s ca.ench_ricochet_lvl += @s ca.ench_ricochet_feet
 scoreboard players operation @s ca.ench_ricochet_lvl += @s ca.ench_ricochet_body_lvl
 scoreboard players operation @s ca.ench_ricochet_lvl += @s ca.ench_ricochet_saddle_lvl
 
-execute if score @s ca.ench_ricochet_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_barbed_main_lvl 0
 scoreboard players set @s ca.ench_barbed_offh_lvl 0
@@ -1408,7 +1408,7 @@ scoreboard players operation @s ca.ench_barbed_lvl += @s ca.ench_barbed_feet_lvl
 scoreboard players operation @s ca.ench_barbed_lvl += @s ca.ench_barbed_body_lvl
 scoreboard players operation @s ca.ench_barbed_lvl += @s ca.ench_barbed_saddle_lvl
 
-execute if score @s ca.ench_barbed_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_ripper_main_lvl 0
 scoreboard players set @s ca.ench_ripper_offh_lvl 0
@@ -1431,7 +1431,7 @@ scoreboard players operation @s ca.ench_ripper_lvl += @s ca.ench_ripper_feet_lvl
 scoreboard players operation @s ca.ench_ripper_lvl += @s ca.ench_ripper_body_lvl
 scoreboard players operation @s ca.ench_ripper_lvl += @s ca.ench_ripper_saddle_lvl
 
-execute if score @s ca.ench_ripper_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_shrapnel_main_lvl 0
 scoreboard players set @s ca.ench_shrapnel_offh_lvl 0
@@ -1454,7 +1454,7 @@ scoreboard players operation @s ca.ench_shrapnel_lvl += @s ca.ench_shrapnel_feet
 scoreboard players operation @s ca.ench_shrapnel_lvl += @s ca.ench_shrapnel_body_lvl
 scoreboard players operation @s ca.ench_shrapnel_lvl += @s ca.ench_shrapnel_saddle_lvl
 
-execute if score @s ca.ench_shrapnel_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_fleetfoot_main_lvl 0
 scoreboard players set @s ca.ench_fleetfoot_offh_lvl 0
@@ -1477,7 +1477,7 @@ scoreboard players operation @s ca.ench_fleetfoot_lvl += @s ca.ench_fleetfoot_fe
 scoreboard players operation @s ca.ench_fleetfoot_lvl += @s ca.ench_fleetfoot_body_lvl
 scoreboard players operation @s ca.ench_fleetfoot_lvl += @s ca.ench_fleetfoot_saddle_lvl
 
-execute if score @s ca.ench_fleetfoot_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_grappling_main_lvl 0
 scoreboard players set @s ca.ench_grappling_offh_lvl 0
@@ -1500,7 +1500,7 @@ scoreboard players operation @s ca.ench_grappling_lvl += @s ca.ench_grappling_fe
 scoreboard players operation @s ca.ench_grappling_lvl += @s ca.ench_grappling_body_lvl
 scoreboard players operation @s ca.ench_grappling_lvl += @s ca.ench_grappling_saddle_lvl
 
-execute if score @s ca.ench_grappling_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_barrage_main_lvl 0
 scoreboard players set @s ca.ench_barrage_offh_lvl 0
@@ -1523,7 +1523,7 @@ scoreboard players operation @s ca.ench_barrage_lvl += @s ca.ench_barrage_feet_l
 scoreboard players operation @s ca.ench_barrage_lvl += @s ca.ench_barrage_body_lvl
 scoreboard players operation @s ca.ench_barrage_lvl += @s ca.ench_barrage_saddle_lvl
 
-execute if score @s ca.ench_barrage_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_collapse_main_lvl 0
 scoreboard players set @s ca.ench_collapse_offh_lvl 0
@@ -1546,7 +1546,7 @@ scoreboard players operation @s ca.ench_collapse_lvl += @s ca.ench_collapse_feet
 scoreboard players operation @s ca.ench_collapse_lvl += @s ca.ench_collapse_body_lvl
 scoreboard players operation @s ca.ench_collapse_lvl += @s ca.ench_collapse_saddle_lvl
 
-execute if score @s ca.ench_collapse_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_repeating_main_lvl 0
 scoreboard players set @s ca.ench_repeating_offh_lvl 0
@@ -1569,7 +1569,7 @@ scoreboard players operation @s ca.ench_repeating_lvl += @s ca.ench_repeating_fe
 scoreboard players operation @s ca.ench_repeating_lvl += @s ca.ench_repeating_body_lvl
 scoreboard players operation @s ca.ench_repeating_lvl += @s ca.ench_repeating_saddle_lvl
 
-execute if score @s ca.ench_repeating_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_crumbling_main_lvl 0
 scoreboard players set @s ca.ench_crumbling_offh_lvl 0
@@ -1592,7 +1592,7 @@ scoreboard players operation @s ca.ench_crumbling_lvl += @s ca.ench_crumbling_fe
 scoreboard players operation @s ca.ench_crumbling_lvl += @s ca.ench_crumbling_body_lvl
 scoreboard players operation @s ca.ench_crumbling_lvl += @s ca.ench_crumbling_saddle_lvl
 
-execute if score @s ca.ench_crumbling_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_shattering_main_lvl 0
 scoreboard players set @s ca.ench_shattering_offh_lvl 0
@@ -1615,7 +1615,7 @@ scoreboard players operation @s ca.ench_shattering_lvl += @s ca.ench_shattering_
 scoreboard players operation @s ca.ench_shattering_lvl += @s ca.ench_shattering_body_lvl
 scoreboard players operation @s ca.ench_shattering_lvl += @s ca.ench_shattering_saddle_lvl
 
-execute if score @s ca.ench_shattering_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_haunting_main_lvl 0
 scoreboard players set @s ca.ench_haunting_offh_lvl 0
@@ -1638,7 +1638,7 @@ scoreboard players operation @s ca.ench_haunting_lvl += @s ca.ench_haunting_feet
 scoreboard players operation @s ca.ench_haunting_lvl += @s ca.ench_haunting_body_lvl
 scoreboard players operation @s ca.ench_haunting_lvl += @s ca.ench_haunting_saddle_lvl
 
-execute if score @s ca.ench_haunting_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_corruption_main_lvl 0
 scoreboard players set @s ca.ench_corruption_offh_lvl 0
@@ -1661,7 +1661,7 @@ scoreboard players operation @s ca.ench_corruption_lvl += @s ca.ench_corruption_
 scoreboard players operation @s ca.ench_corruption_lvl += @s ca.ench_corruption_body_lvl
 scoreboard players operation @s ca.ench_corruption_lvl += @s ca.ench_corruption_saddle_lvl
 
-execute if score @s ca.ench_corruption_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_crippling_main_lvl 0
 scoreboard players set @s ca.ench_crippling_offh_lvl 0
@@ -1684,7 +1684,7 @@ scoreboard players operation @s ca.ench_crippling_lvl += @s ca.ench_crippling_fe
 scoreboard players operation @s ca.ench_crippling_lvl += @s ca.ench_crippling_body_lvl
 scoreboard players operation @s ca.ench_crippling_lvl += @s ca.ench_crippling_saddle_lvl
 
-execute if score @s ca.ench_crippling_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_pride_main_lvl 0
 scoreboard players set @s ca.ench_pride_offh_lvl 0
@@ -1708,7 +1708,7 @@ scoreboard players operation @s ca.ench_pride_lvl += @s ca.ench_pride_body_lvl
 scoreboard players operation @s ca.ench_pride_lvl += @s ca.ench_pride_saddle_lvl
 
 execute if score @s ca.ench_pride_lvl matches 1.. run scoreboard players set @s ca.ench_pride_check 1
-execute if score @s ca.ench_pride_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 
 scoreboard players set @s ca.ench_two_handed_main_lvl 0
@@ -1733,7 +1733,7 @@ scoreboard players operation @s ca.ench_two_handed_lvl += @s ca.ench_two_handed_
 scoreboard players operation @s ca.ench_two_handed_lvl += @s ca.ench_two_handed_saddle_lvl
 
 execute if score @s ca.ench_two_handed_lvl matches 1.. run scoreboard players set @s ca.ench_two_handed_check 1
-execute if score @s ca.ench_two_handed_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_instability_main_lvl 0
 scoreboard players set @s ca.ench_instability_offh_lvl 0
@@ -1756,7 +1756,7 @@ scoreboard players operation @s ca.ench_instability_lvl += @s ca.ench_instabilit
 scoreboard players operation @s ca.ench_instability_lvl += @s ca.ench_instability_body_lvl
 scoreboard players operation @s ca.ench_instability_lvl += @s ca.ench_instability_saddle_lvl
 
-execute if score @s ca.ench_instability_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_melee_fragility_main_lvl 0
 scoreboard players set @s ca.ench_melee_fragility_offh_lvl 0
@@ -1779,7 +1779,7 @@ scoreboard players operation @s ca.ench_melee_fragility_lvl += @s ca.ench_melee_
 scoreboard players operation @s ca.ench_melee_fragility_lvl += @s ca.ench_melee_fragility_body_lvl
 scoreboard players operation @s ca.ench_melee_fragility_lvl += @s ca.ench_melee_fragility_saddle_lvl
 
-execute if score @s ca.ench_melee_fragility_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_projectile_fragility_main_lvl 0
 scoreboard players set @s ca.ench_projectile_fragility_offh_lvl 0
@@ -1802,7 +1802,7 @@ scoreboard players operation @s ca.ench_projectile_fragility_lvl += @s ca.ench_p
 scoreboard players operation @s ca.ench_projectile_fragility_lvl += @s ca.ench_projectile_fragility_body_lvl
 scoreboard players operation @s ca.ench_projectile_fragility_lvl += @s ca.ench_projectile_fragility_saddle_lvl
 
-execute if score @s ca.ench_projectile_fragility_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_clumsiness_main_lvl 0
 scoreboard players set @s ca.ench_clumsiness_offh_lvl 0
@@ -1825,7 +1825,7 @@ scoreboard players operation @s ca.ench_clumsiness_lvl += @s ca.ench_clumsiness_
 scoreboard players operation @s ca.ench_clumsiness_lvl += @s ca.ench_clumsiness_body_lvl
 scoreboard players operation @s ca.ench_clumsiness_lvl += @s ca.ench_clumsiness_saddle_lvl
 
-execute if score @s ca.ench_clumsiness_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_irreparability_main_lvl 0
 scoreboard players set @s ca.ench_irreparability_offh_lvl 0
@@ -1848,7 +1848,7 @@ scoreboard players operation @s ca.ench_irreparability_lvl += @s ca.ench_irrepar
 scoreboard players operation @s ca.ench_irreparability_lvl += @s ca.ench_irreparability_body_lvl
 scoreboard players operation @s ca.ench_irreparability_lvl += @s ca.ench_irreparability_saddle_lvl
 
-execute if score @s ca.ench_irreparability_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_encumbering_main_lvl 0
 scoreboard players set @s ca.ench_encumbering_offh_lvl 0
@@ -1871,7 +1871,7 @@ scoreboard players operation @s ca.ench_encumbering_lvl += @s ca.ench_encumberin
 scoreboard players operation @s ca.ench_encumbering_lvl += @s ca.ench_encumbering_body_lvl
 scoreboard players operation @s ca.ench_encumbering_lvl += @s ca.ench_encumbering_saddle_lvl
 
-execute if score @s ca.ench_encumbering_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_regret_main_lvl 0
 scoreboard players set @s ca.ench_regret_offh_lvl 0
@@ -1894,7 +1894,7 @@ scoreboard players operation @s ca.ench_regret_lvl += @s ca.ench_regret_feet_lvl
 scoreboard players operation @s ca.ench_regret_lvl += @s ca.ench_regret_body_lvl
 scoreboard players operation @s ca.ench_regret_lvl += @s ca.ench_regret_saddle_lvl
 
-execute if score @s ca.ench_regret_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_gluttony_main_lvl 0
 scoreboard players set @s ca.ench_gluttony_offh_lvl 0
@@ -1917,7 +1917,7 @@ scoreboard players operation @s ca.ench_gluttony_lvl += @s ca.ench_gluttony_feet
 scoreboard players operation @s ca.ench_gluttony_lvl += @s ca.ench_gluttony_body_lvl
 scoreboard players operation @s ca.ench_gluttony_lvl += @s ca.ench_gluttony_saddle_lvl
 
-execute if score @s ca.ench_gluttony_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_heaviness_main_lvl 0
 scoreboard players set @s ca.ench_heaviness_offh_lvl 0
@@ -1940,7 +1940,7 @@ scoreboard players operation @s ca.ench_heaviness_lvl += @s ca.ench_heaviness_fe
 scoreboard players operation @s ca.ench_heaviness_lvl += @s ca.ench_heaviness_body_lvl
 scoreboard players operation @s ca.ench_heaviness_lvl += @s ca.ench_heaviness_saddle_lvl
 
-execute if score @s ca.ench_heaviness_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_jamming_main_lvl 0
 scoreboard players set @s ca.ench_jamming_offh_lvl 0
@@ -1963,7 +1963,7 @@ scoreboard players operation @s ca.ench_jamming_lvl += @s ca.ench_jamming_feet_l
 scoreboard players operation @s ca.ench_jamming_lvl += @s ca.ench_jamming_body_lvl
 scoreboard players operation @s ca.ench_jamming_lvl += @s ca.ench_jamming_saddle_lvl
 
-execute if score @s ca.ench_jamming_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_thorns_main_lvl 0
 scoreboard players set @s ca.ench_thorns_offh_lvl 0
@@ -1986,7 +1986,7 @@ scoreboard players operation @s ca.ench_thorns_lvl += @s ca.ench_thorns_feet_lvl
 scoreboard players operation @s ca.ench_thorns_lvl += @s ca.ench_thorns_body_lvl
 scoreboard players operation @s ca.ench_thorns_lvl += @s ca.ench_thorns_saddle_lvl
 
-execute if score @s ca.ench_thorns_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_quick_charge_main_lvl 0
 scoreboard players set @s ca.ench_quick_charge_offh_lvl 0
@@ -2009,7 +2009,7 @@ scoreboard players operation @s ca.ench_quick_charge_lvl += @s ca.ench_quick_cha
 scoreboard players operation @s ca.ench_quick_charge_lvl += @s ca.ench_quick_charge_body_lvl
 scoreboard players operation @s ca.ench_quick_charge_lvl += @s ca.ench_quick_charge_saddle_lvl
 
-execute if score @s ca.ench_quick_charge_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_multishot_main_lvl 0
 scoreboard players set @s ca.ench_multishot_offh_lvl 0
@@ -2032,7 +2032,7 @@ scoreboard players operation @s ca.ench_multishot_lvl += @s ca.ench_multishot_fe
 scoreboard players operation @s ca.ench_multishot_lvl += @s ca.ench_multishot_body_lvl
 scoreboard players operation @s ca.ench_multishot_lvl += @s ca.ench_multishot_saddle_lvl
 
-execute if score @s ca.ench_multishot_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_infinity_main_lvl 0
 scoreboard players set @s ca.ench_infinity_offh_lvl 0
@@ -2055,7 +2055,7 @@ scoreboard players operation @s ca.ench_infinity_lvl += @s ca.ench_infinity_feet
 scoreboard players operation @s ca.ench_infinity_lvl += @s ca.ench_infinity_body_lvl
 scoreboard players operation @s ca.ench_infinity_lvl += @s ca.ench_infinity_saddle_lvl
 
-execute if score @s ca.ench_infinity_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_knockback_main_lvl 0
 scoreboard players set @s ca.ench_knockback_offh_lvl 0
@@ -2078,7 +2078,7 @@ scoreboard players operation @s ca.ench_knockback_lvl += @s ca.ench_knockback_fe
 scoreboard players operation @s ca.ench_knockback_lvl += @s ca.ench_knockback_body_lvl
 scoreboard players operation @s ca.ench_knockback_lvl += @s ca.ench_knockback_saddle_lvl
 
-execute if score @s ca.ench_knockback_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_flame_main_lvl 0
 scoreboard players set @s ca.ench_flame_offh_lvl 0
@@ -2101,7 +2101,7 @@ scoreboard players operation @s ca.ench_flame_lvl += @s ca.ench_flame_feet_lvl
 scoreboard players operation @s ca.ench_flame_lvl += @s ca.ench_flame_body_lvl
 scoreboard players operation @s ca.ench_flame_lvl += @s ca.ench_flame_saddle_lvl
 
-execute if score @s ca.ench_flame_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_power_main_lvl 0
 scoreboard players set @s ca.ench_power_offh_lvl 0
@@ -2124,7 +2124,7 @@ scoreboard players operation @s ca.ench_power_lvl += @s ca.ench_power_feet_lvl
 scoreboard players operation @s ca.ench_power_lvl += @s ca.ench_power_body_lvl
 scoreboard players operation @s ca.ench_power_lvl += @s ca.ench_power_saddle_lvl
 
-execute if score @s ca.ench_power_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_punch_main_lvl 0
 scoreboard players set @s ca.ench_punch_offh_lvl 0
@@ -2147,4 +2147,4 @@ scoreboard players operation @s ca.ench_punch_lvl += @s ca.ench_punch_feet_lvl
 scoreboard players operation @s ca.ench_punch_lvl += @s ca.ench_punch_body_lvl
 scoreboard players operation @s ca.ench_punch_lvl += @s ca.ench_punch_saddle_lvl
 
-execute if score @s ca.ench_punch_lvl matches 1.. run tag @s add ca.enchant_tick
+

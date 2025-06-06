@@ -54,4 +54,4 @@ scoreboard players operation @s ca.ench_soulfire_lvl += @s ca.ench_soulfire_sadd
 
 tag @s remove ca.do_enchant_calc_soulfire
 
-execute if score @s ca.ench_soulfire_lvl matches 1.. run tag @s add ca.enchant_tick
+

@@ -54,4 +54,4 @@ scoreboard players operation @s ca.ench_quick_strike_lvl += @s ca.ench_quick_str
 
 tag @s remove ca.do_enchant_calc_quick_strike
 
-execute if score @s ca.ench_quick_strike_lvl matches 1.. run tag @s add ca.enchant_tick
+

@@ -54,4 +54,4 @@ scoreboard players operation @s ca.ench_hex_eater_lvl += @s ca.ench_hex_eater_sa
 
 tag @s remove ca.do_enchant_calc_hex_eater
 
-execute if score @s ca.ench_hex_eater_lvl matches 1.. run tag @s add ca.enchant_tick
+

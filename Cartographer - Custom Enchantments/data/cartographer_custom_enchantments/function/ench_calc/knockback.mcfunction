@@ -54,4 +54,4 @@ scoreboard players operation @s ca.ench_knockback_lvl += @s ca.ench_knockback_sa
 
 tag @s remove ca.do_enchant_calc_knockback
 
-execute if score @s ca.ench_knockback_lvl matches 1.. run tag @s add ca.enchant_tick
+

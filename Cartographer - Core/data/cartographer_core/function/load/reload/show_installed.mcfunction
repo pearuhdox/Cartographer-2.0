@@ -17,12 +17,12 @@ execute if score $charon ca.installed matches 1 run function cartographer_charon
 execute if score $custom_attributes ca.installed matches 1 run function cartographer_custom_attributes:load/load_message
 execute if score $custom_enchantments ca.installed matches 1 run function cartographer_custom_enchantments:load/load_message
 execute if score $custom_statuses ca.installed matches 1 run function cartographer_custom_statuses:load/load_message
-execute if score $lexica ca.installed matches 1 run function cartographer_lexica:load/load_message
+execute if score $enchantment_rework ca.installed matches 1 run function cartographer_enchantment_rework:load/load_message
 execute if score $ender_pouch ca.installed matches 1 run function cartographer_ender_pouch:load/load_message
+execute if score $lexica ca.installed matches 1 run function cartographer_lexica:load/load_message
 #execute if score $loot_additions ca.installed matches 1 run function cartographer_loot_additions:load/load_message
 #execute if score $mimics ca.installed matches 1 run function cartographer_mimics:load/load_message
-#execute if score $mob_abilities ca.installed matches 1 run function cartographer_mob_abilities:load/load_message
-execute if score $enchantment_rework ca.installed matches 1 run function cartographer_enchantment_rework:load/load_message
+execute if score $mob_utils ca.installed matches 1 run function cartographer_mob_utils:load/load_message
 execute if score $rat ca.installed matches 1 run function cartographer_rat:load/load_message
 execute if score $repair_stations ca.installed matches 1 run function cartographer_repair_stations:load/load_message
 

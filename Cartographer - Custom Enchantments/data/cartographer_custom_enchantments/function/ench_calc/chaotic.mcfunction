@@ -54,4 +54,4 @@ scoreboard players operation @s ca.ench_chaotic_lvl += @s ca.ench_chaotic_saddle
 
 tag @s remove ca.do_enchant_calc_chaotic
 
-execute if score @s ca.ench_chaotic_lvl matches 1.. run tag @s add ca.enchant_tick
+

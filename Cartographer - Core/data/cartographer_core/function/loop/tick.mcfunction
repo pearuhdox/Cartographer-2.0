@@ -1,5 +1,6 @@
 #Set the world difficulty to this constant.
 execute store result score $core.difficulty ca.CONSTANT run difficulty
+scoreboard players operation @a ca.diff = $core.difficulty ca.CONSTANT 
 
 #Get Player Count
 execute store result score $player_count ca.gamerule if entity @a

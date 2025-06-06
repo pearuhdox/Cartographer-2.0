@@ -54,4 +54,4 @@ scoreboard players operation @s ca.ench_regret_lvl += @s ca.ench_regret_saddle_l
 
 tag @s remove ca.do_enchant_calc_regret
 
-execute if score @s ca.ench_regret_lvl matches 1.. run tag @s add ca.enchant_tick
+

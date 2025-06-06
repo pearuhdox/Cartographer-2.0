@@ -17,6 +17,8 @@ scoreboard objectives add ca.ench_value dummy
 scoreboard objectives add ca.calc_type dummy
 scoreboard objectives add ca.popup_var dummy
 
+scoreboard objectives add ca.selected_slot dummy
+
 scoreboard objectives add ca.carto_event dummy
 
 scoreboard objectives add ca.player_id dummy
@@ -45,6 +47,8 @@ scoreboard objectives add ca.energized_z dummy
 scoreboard objectives add ca.drop_item minecraft.custom:minecraft.drop
 
 scoreboard objectives add ca.rand dummy
+
+scoreboard objectives add ca.diff dummy
 
 scoreboard objectives add ca.x dummy
 scoreboard objectives add ca.y dummy
@@ -293,7 +297,6 @@ scoreboard objectives add ca.equip_netherite_helmet minecraft.used:minecraft.net
 scoreboard objectives add ca.equip_turtle_helmet minecraft.used:minecraft.turtle_helmet
 
 scoreboard objectives add ca.core_delay_check dummy
-scoreboard objectives add ca.attribute_cleanse_delay dummy
 
 scoreboard objectives add ca.damage_queue dummy
 

@@ -1,3 +1,4 @@
+
 data modify storage cartographer_core:player_equip data.main set value {}
 execute unless items entity @s weapon.mainhand #cartographer_core:enchant_support/passive_armor unless items entity @s weapon.mainhand *[minecraft:custom_data~{disable_mainhand:1b}] run data modify storage cartographer_core:player_equip data.main set from entity @s SelectedItem
 execute unless items entity @s weapon.offhand #cartographer_core:enchant_support/passive_armor unless items entity @s weapon.mainhand #cartographer_core:ranged_weapons unless items entity @s weapon.offhand *[minecraft:custom_data~{disable_offhand:1b}] run data modify storage cartographer_core:player_equip data.offh set from entity @s equipment.offhand
@@ -10,6 +11,7 @@ execute if data entity @s equipment.offhand.components.minecraft:custom_data.dis
 execute if data entity @s equipment.offhand.components.minecraft:custom_data.disable_offhand run data remove storage cartographer_core:player_equip data.offh
 
 
+tag @s remove ca.enchant_tick
 
 execute if score $custom_enchantments ca.installed matches 1.. run function cartographer_custom_enchantments:calculate_hand
 execute if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:calculate_hand
@@ -21,6 +23,10 @@ execute if score $rat ca.installed matches 1.. run function cartographer_rat:cal
 
 execute if score $custom_statuses ca.installed matches 1.. run function cartographer_custom_statuses:calculator/process/coating_check
 
+#Enable Enchant Ticking if necessary
+execute if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:allow_tick
+execute if score $custom_enchantments ca.installed matches 1.. run function cartographer_custom_enchantments:allow_tick
+execute if score $custom_statuses ca.installed matches 1.. run function cartographer_custom_statuses:allow_tick
 
 execute if entity @s[tag=ca.repeating_reloading_main] run tag @s remove ca.repeating_loaded_arrow
 

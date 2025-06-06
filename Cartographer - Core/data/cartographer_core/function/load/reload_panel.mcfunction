@@ -19,7 +19,7 @@ function cartographer_ender_pouch:load/load_check
 #function cartographer_loot_additions:load/load_check
 #function cartographer_loot_table_tweaks:load/load_check
 #function cartographer_mimics:load/load_check
-#function cartographer_mob_abilities:load/load_check
+function cartographer_mob_utils:load/load_check
 function cartographer_enchantment_rework:load/load_check
 function cartographer_repair_stations:load/load_check
 function cartographer_rat:load/load_check
@@ -35,6 +35,7 @@ scoreboard players operation $z_detect_packs ca.installed += $mimics ca.installe
 scoreboard players operation $z_detect_packs ca.installed += $mob_abilities ca.installed
 scoreboard players operation $z_detect_packs ca.installed += $repair_stations ca.installed
 scoreboard players operation $z_detect_packs ca.installed += $rat ca.installed
+scoreboard players operation $z_detect_packs ca.installed += $mob_utils ca.installed
 
 
 execute if score $gl_reload_msg ca.gamerule matches 0 as @a[scores={ca.reload_type=0}] at @s run function cartographer_core:load/reload/full

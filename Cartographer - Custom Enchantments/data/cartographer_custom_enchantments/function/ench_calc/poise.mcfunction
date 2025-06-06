@@ -54,4 +54,4 @@ scoreboard players operation @s ca.ench_poise_lvl += @s ca.ench_poise_saddle_lvl
 
 tag @s remove ca.do_enchant_calc_poise
 
-execute if score @s ca.ench_poise_lvl matches 1.. run tag @s add ca.enchant_tick
+

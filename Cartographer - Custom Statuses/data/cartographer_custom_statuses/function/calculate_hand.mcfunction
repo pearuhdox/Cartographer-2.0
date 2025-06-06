@@ -20,7 +20,7 @@ scoreboard players operation @s ca.ench_evasion_lvl += @s ca.ench_evasion_feet_l
 scoreboard players operation @s ca.ench_evasion_lvl += @s ca.ench_evasion_body_lvl
 scoreboard players operation @s ca.ench_evasion_lvl += @s ca.ench_evasion_saddle_lvl
 
-execute if score @s ca.ench_evasion_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_nullifying_main_lvl 0
 scoreboard players set @s ca.ench_nullifying_offh_lvl 0
@@ -43,7 +43,7 @@ scoreboard players operation @s ca.ench_nullifying_lvl += @s ca.ench_nullifying_
 scoreboard players operation @s ca.ench_nullifying_lvl += @s ca.ench_nullifying_body_lvl
 scoreboard players operation @s ca.ench_nullifying_lvl += @s ca.ench_nullifying_saddle_lvl
 
-execute if score @s ca.ench_nullifying_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_regeneration_main_lvl 0
 scoreboard players set @s ca.ench_regeneration_offh_lvl 0
@@ -66,7 +66,7 @@ scoreboard players operation @s ca.ench_regeneration_lvl += @s ca.ench_regenerat
 scoreboard players operation @s ca.ench_regeneration_lvl += @s ca.ench_regeneration_body_lvl
 scoreboard players operation @s ca.ench_regeneration_lvl += @s ca.ench_regeneration_saddle_lvl
 
-execute if score @s ca.ench_regeneration_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_shielding_main_lvl 0
 scoreboard players set @s ca.ench_shielding_offh_lvl 0
@@ -89,7 +89,7 @@ scoreboard players operation @s ca.ench_shielding_lvl += @s ca.ench_shielding_fe
 scoreboard players operation @s ca.ench_shielding_lvl += @s ca.ench_shielding_body_lvl
 scoreboard players operation @s ca.ench_shielding_lvl += @s ca.ench_shielding_saddle_lvl
 
-execute if score @s ca.ench_shielding_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_decontaminate_main_lvl 0
 scoreboard players set @s ca.ench_decontaminate_offh_lvl 0
@@ -112,7 +112,7 @@ scoreboard players operation @s ca.ench_decontaminate_lvl += @s ca.ench_decontam
 scoreboard players operation @s ca.ench_decontaminate_lvl += @s ca.ench_decontaminate_body_lvl
 scoreboard players operation @s ca.ench_decontaminate_lvl += @s ca.ench_decontaminate_saddle_lvl
 
-execute if score @s ca.ench_decontaminate_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_mightiness_main_lvl 0
 scoreboard players set @s ca.ench_mightiness_offh_lvl 0
@@ -135,7 +135,7 @@ scoreboard players operation @s ca.ench_mightiness_lvl += @s ca.ench_mightiness_
 scoreboard players operation @s ca.ench_mightiness_lvl += @s ca.ench_mightiness_body_lvl
 scoreboard players operation @s ca.ench_mightiness_lvl += @s ca.ench_mightiness_saddle_lvl
 
-execute if score @s ca.ench_mightiness_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_swiftness_main_lvl 0
 scoreboard players set @s ca.ench_swiftness_offh_lvl 0
@@ -158,7 +158,7 @@ scoreboard players operation @s ca.ench_swiftness_lvl += @s ca.ench_swiftness_fe
 scoreboard players operation @s ca.ench_swiftness_lvl += @s ca.ench_swiftness_body_lvl
 scoreboard players operation @s ca.ench_swiftness_lvl += @s ca.ench_swiftness_saddle_lvl
 
-execute if score @s ca.ench_swiftness_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_hastiness_main_lvl 0
 scoreboard players set @s ca.ench_hastiness_offh_lvl 0
@@ -181,7 +181,7 @@ scoreboard players operation @s ca.ench_hastiness_lvl += @s ca.ench_hastiness_fe
 scoreboard players operation @s ca.ench_hastiness_lvl += @s ca.ench_hastiness_body_lvl
 scoreboard players operation @s ca.ench_hastiness_lvl += @s ca.ench_hastiness_saddle_lvl
 
-execute if score @s ca.ench_hastiness_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_stealthiness_main_lvl 0
 scoreboard players set @s ca.ench_stealthiness_offh_lvl 0
@@ -204,7 +204,7 @@ scoreboard players operation @s ca.ench_stealthiness_lvl += @s ca.ench_stealthin
 scoreboard players operation @s ca.ench_stealthiness_lvl += @s ca.ench_stealthiness_body_lvl
 scoreboard players operation @s ca.ench_stealthiness_lvl += @s ca.ench_stealthiness_saddle_lvl
 
-execute if score @s ca.ench_stealthiness_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_sapper_main_lvl 0
 scoreboard players set @s ca.ench_sapper_offh_lvl 0
@@ -227,7 +227,7 @@ scoreboard players operation @s ca.ench_sapper_lvl += @s ca.ench_sapper_feet_lvl
 scoreboard players operation @s ca.ench_sapper_lvl += @s ca.ench_sapper_body_lvl
 scoreboard players operation @s ca.ench_sapper_lvl += @s ca.ench_sapper_saddle_lvl
 
-execute if score @s ca.ench_sapper_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_lifeblood_main_lvl 0
 scoreboard players set @s ca.ench_lifeblood_offh_lvl 0
@@ -250,7 +250,7 @@ scoreboard players operation @s ca.ench_lifeblood_lvl += @s ca.ench_lifeblood_fe
 scoreboard players operation @s ca.ench_lifeblood_lvl += @s ca.ench_lifeblood_body_lvl
 scoreboard players operation @s ca.ench_lifeblood_lvl += @s ca.ench_lifeblood_saddle_lvl
 
-execute if score @s ca.ench_lifeblood_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_bracing_main_lvl 0
 scoreboard players set @s ca.ench_bracing_offh_lvl 0
@@ -273,7 +273,7 @@ scoreboard players operation @s ca.ench_bracing_lvl += @s ca.ench_bracing_feet_l
 scoreboard players operation @s ca.ench_bracing_lvl += @s ca.ench_bracing_body_lvl
 scoreboard players operation @s ca.ench_bracing_lvl += @s ca.ench_bracing_saddle_lvl
 
-execute if score @s ca.ench_bracing_lvl matches 1.. run tag @s add ca.enchant_tick
+
 
 scoreboard players set @s ca.ench_annulling_main_lvl 0
 scoreboard players set @s ca.ench_annulling_offh_lvl 0
@@ -296,4 +296,4 @@ scoreboard players operation @s ca.ench_annulling_lvl += @s ca.ench_annulling_fe
 scoreboard players operation @s ca.ench_annulling_lvl += @s ca.ench_annulling_body_lvl
 scoreboard players operation @s ca.ench_annulling_lvl += @s ca.ench_annulling_saddle_lvl
 
-execute if score @s ca.ench_annulling_lvl matches 1.. run tag @s add ca.enchant_tick
+

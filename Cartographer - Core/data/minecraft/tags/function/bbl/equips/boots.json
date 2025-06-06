@@ -1,5 +1,0 @@
-{
-	"values": [
-		{"id": "cartographer_core:handlers/inventory/cancel_suppression","required": true}
-	]
-}

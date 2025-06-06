@@ -1,0 +1,13 @@
+execute if score @s ca.ench_evasion_lvl matches 1.. run tag @s add ca.enchant_tick
+execute if score @s ca.ench_nullifying_lvl matches 1.. run tag @s add ca.enchant_tick
+execute if score @s ca.ench_regeneration_lvl matches 1.. run tag @s add ca.enchant_tick
+execute if score @s ca.ench_shielding_lvl matches 1.. run tag @s add ca.enchant_tick
+execute if score @s ca.ench_decontaminate_lvl matches 1.. run tag @s add ca.enchant_tick
+execute if score @s ca.ench_mightiness_lvl matches 1.. run tag @s add ca.enchant_tick
+execute if score @s ca.ench_swiftness_lvl matches 1.. run tag @s add ca.enchant_tick
+execute if score @s ca.ench_hastiness_lvl matches 1.. run tag @s add ca.enchant_tick
+execute if score @s ca.ench_stealthiness_lvl matches 1.. run tag @s add ca.enchant_tick
+execute if score @s ca.ench_sapper_lvl matches 1.. run tag @s add ca.enchant_tick
+execute if score @s ca.ench_lifeblood_lvl matches 1.. run tag @s add ca.enchant_tick
+execute if score @s ca.ench_bracing_lvl matches 1.. run tag @s add ca.enchant_tick
+execute if score @s ca.ench_annulling_lvl matches 1.. run tag @s add ca.enchant_tick

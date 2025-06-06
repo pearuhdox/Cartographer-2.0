@@ -54,4 +54,4 @@ scoreboard players operation @s ca.ench_quick_charge_lvl += @s ca.ench_quick_cha
 
 tag @s remove ca.do_enchant_calc_quick_charge
 
-execute if score @s ca.ench_quick_charge_lvl matches 1.. run tag @s add ca.enchant_tick
+

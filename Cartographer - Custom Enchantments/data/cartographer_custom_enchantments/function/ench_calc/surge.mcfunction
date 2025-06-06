@@ -54,4 +54,4 @@ scoreboard players operation @s ca.ench_surge_lvl += @s ca.ench_surge_saddle_lvl
 
 tag @s remove ca.do_enchant_calc_surge
 
-execute if score @s ca.ench_surge_lvl matches 1.. run tag @s add ca.enchant_tick
+
