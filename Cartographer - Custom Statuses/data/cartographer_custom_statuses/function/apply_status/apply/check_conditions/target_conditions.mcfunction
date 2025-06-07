@@ -1,5 +1,3 @@
-execute unless score $condition_failed ca.apply_status_conditions matches 1.. if data storage cartographer:custom_statuses apply[0].conditions.chance run function cartographer_custom_statuses:apply_status/apply/conditions/chance with storage cartographer:custom_statuses apply[0].conditions
-
 execute unless score $condition_failed ca.apply_status_conditions matches 1.. if data storage cartographer:custom_statuses apply[0].conditions.entity_type run function cartographer_custom_statuses:apply_status/apply/conditions/entity_type with storage cartographer:custom_statuses apply[0].conditions
 
 execute unless score $condition_failed ca.apply_status_conditions matches 1.. if data storage cartographer:custom_statuses apply[0].conditions.tag_target run function cartographer_custom_statuses:apply_status/apply/conditions/tag_target with storage cartographer:custom_statuses apply[0].conditions
