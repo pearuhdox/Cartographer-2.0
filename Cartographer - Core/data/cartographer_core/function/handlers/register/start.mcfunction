@@ -8,5 +8,6 @@ execute if entity @s[tag=ca.needs_checker,type=fishing_bobber] run function cart
 
 execute if score $custom_attributes ca.installed matches 1.. run function cartographer_core:handlers/register/custom_attributes_register
 execute if score $custom_statuses ca.installed matches 1.. run function cartographer_core:handlers/register/custom_statuses_register
+execute if score $mob_utils ca.installed matches 1.. run function cartographer_mob_utils:register/setup_events
 
 tag @s add ca.registered

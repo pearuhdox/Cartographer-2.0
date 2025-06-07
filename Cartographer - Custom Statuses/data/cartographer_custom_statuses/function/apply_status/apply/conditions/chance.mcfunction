@@ -1,5 +1,6 @@
 $scoreboard players set $target ca.rand $(chance)
-scoreboard players operation $target ca.rand = $value ca.ench_var
+#scoreboard players operation $target ca.rand = $value ca.ench_var
+
 
 $execute store result score $chance_entropy ca.apply_status_conditions run data get storage cartographer:custom_statuses conditional_data.$(id)_$(action)_$(type)_chance_$(chance)_entropy
 scoreboard players operation $entropy ca.rand = $chance_entropy ca.apply_status_conditions
