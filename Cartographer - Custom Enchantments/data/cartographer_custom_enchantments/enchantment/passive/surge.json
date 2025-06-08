@@ -15,7 +15,7 @@
     "base": 10,
     "per_level_above_first": 20
   },
-  "anvil_cost": 1,
+  "anvil_cost": 8,
   "slots": [
     "armor",
     "offhand",

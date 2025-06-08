@@ -5,7 +5,7 @@
   },
   "supported_items": "#minecraft:enchantable/durability",
   "weight": 1,
-  "max_level": 10,
+  "max_level": 20,
   "min_cost": {
     "base": 10,
     "per_level_above_first": 8
