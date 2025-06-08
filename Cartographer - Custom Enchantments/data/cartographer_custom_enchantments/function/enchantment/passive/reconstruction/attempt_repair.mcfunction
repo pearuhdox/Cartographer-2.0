@@ -8,7 +8,7 @@ scoreboard players set $extra_dur ca.reconstruction_entropy 0
 execute if score $target ca.rand matches 100.. run scoreboard players add $extra_dur ca.reconstruction_entropy 1
 execute if score $target ca.rand matches 200.. run scoreboard players add $extra_dur ca.reconstruction_entropy 1
 
-execute if score $target ca.rand matches 200.. run scoreboard players remove $target ca.rand 200
+execute if score $target ca.rand matches 200.. run scoreboard players remove $target ca.rand 100
 execute if score $target ca.rand matches 100.. run scoreboard players remove $target ca.rand 100
 
 scoreboard players operation $entropy ca.rand = @s ca.reconstruction_entropy
