@@ -1472,8 +1472,8 @@ scoreboard players operation @s ca.attr_chaining_hit_amount_percent += @s ca.att
 scoreboard players operation @s ca.attr_chaining_hit_amount_percent += @s ca.attr_chaining_hit_amount_percent_body
 scoreboard players operation @s ca.attr_chaining_hit_amount_percent += @s ca.attr_chaining_hit_amount_percent_bonus
 
-scoreboard players add @s ca.attr_chaining_hit_damage_percent 100
-scoreboard players operation $percent ca.attr_var = @s ca.attr_chaining_hit_damage_percent
+scoreboard players add @s ca.attr_chaining_hit_amount_percent 100
+scoreboard players operation $percent ca.attr_var = @s ca.attr_chaining_hit_amount_percent
 
 scoreboard players set $ench ca.attr_var 0
 scoreboard players operation $ench ca.attr_var = @s ca.ench_reverb_lvl

@@ -1,3 +1,4 @@
+
 scoreboard players operation $damage ca.chaining_hit_var = $ranged_damage ca.attr_apply_var
 
 
