@@ -10,9 +10,6 @@ data modify storage gu:main out set value "-"
 function gu:generate
 data modify storage cartographer:custom_enchantments owner set from storage gu:main out
 
-scoreboard players set $is_player ca.ench_eruption_lvl 0
-execute if entity @s[type=player] run scoreboard players set $is_player ca.ench_eruption_lvl 1
-
 execute summon text_display run function cartographer_custom_enchantments:enchantment/passive/eruption/create_telegraphing with storage cartographer:custom_enchantments
 
 execute summon item_display run function cartographer_custom_enchantments:enchantment/passive/eruption/create_explosion_macro with storage cartographer:custom_enchantments

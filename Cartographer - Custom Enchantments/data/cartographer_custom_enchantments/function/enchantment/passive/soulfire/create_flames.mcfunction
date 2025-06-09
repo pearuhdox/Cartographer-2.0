@@ -9,8 +9,6 @@ data modify storage gu:main out set value "-"
 function gu:generate
 data modify storage cartographer:custom_enchantments owner set from storage gu:main out
 
-scoreboard players set $is_player ca.ench_soulfire_lvl 0
-execute if entity @s[type=player] run scoreboard players set $is_player ca.ench_soulfire_lvl 1
 
 execute summon item_display run function cartographer_custom_enchantments:enchantment/passive/soulfire/create_flames_macro with storage cartographer:custom_enchantments
 scoreboard players add @s ca.soulfire_ct 1

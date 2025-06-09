@@ -9,7 +9,8 @@ execute if score $summon_cause ca.ench_var matches 1.. run scoreboard players op
 #scoreboard players operation $splits ca.ench_aberration_lvl = $lvl ca.ench_aberration_lvl
 #scoreboard players remove $splits ca.ench_aberration_lvl 1
 #execute if score $splits ca.ench_aberration_lvl matches 5.. run scoreboard players set $splits ca.ench_aberration_lvl 4
-scoreboard players set $splits ca.ench_aberration_lvl 2
+execute if entity @s[type=player] run scoreboard players set $splits ca.ench_aberration_lvl 2
+execute unless entity @s[type=player] run scoreboard players operation $splits ca.ench_aberration_lvl = @s ca.ench_aberration_lvl
 
 scoreboard players operation $mult ca.ench_var = $lvl ca.ench_aberration_lvl
 #scoreboard players remove $mult ca.ench_var 4

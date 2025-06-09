@@ -1,6 +1,9 @@
 $execute as $(telegraph) at @s run scoreboard players set @s ca.entity_purge_var 0
 $execute as $(target) at @s run scoreboard players set @s ca.entity_purge_var 0
 
+$execute as $(target) at @s if score @s ca.quake_dmg matches 1.. run function carto_event:event/custom_ench/quake/charge/transfer_damage
+#$execute as $(target) at @s run say $(damage)
+
 $execute as $(target) at @s unless score @s ca.quake_time matches 10.. run particle minecraft:block{block_state:{Name:"$(block)"}} ~ ~0.5 ~ 0.3 0.15 0.3 0.1 2 normal
 $execute as $(target) at @s if score @s ca.quake_time matches 5..10 unless entity @s[tag=ca.player_spawned] run particle minecraft:large_smoke ~ ~0.5 ~ 0.3 0.15 0.3 0 1 normal
 

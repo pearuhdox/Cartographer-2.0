@@ -9,6 +9,6 @@ scoreboard players add $size ca.ench_starfall_lvl 150
 scoreboard players add $half_size ca.ench_starfall_lvl 75
 scoreboard players add $size_neg_1 ca.ench_starfall_lvl 150
 
-function cartographer_custom_enchantments:enchantment/passive/starfall/create_meteor
+function cartographer_custom_enchantments:enchantment/passive/starfall/attempt_create
 
 scoreboard players set $spawner_cause ca.ench_var 0

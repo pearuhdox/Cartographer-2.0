@@ -6,7 +6,7 @@ scoreboard players set $proc ca.ench_soulfire_lvl 1
 function cartographer_custom_enchantments:enchantment/passive/soulfire/get_data
 
 execute store result score @s ca.raycast run attribute @s block_interaction_range get 10
-function cartographer_custom_enchantments:enchantment/passive/soulfire/create_flames
+function cartographer_custom_enchantments:enchantment/passive/soulfire/attempt_create
 
 scoreboard players add @s ca.soulfire_delay 5
 scoreboard players add @s ca.soulfire_tick_cap 1

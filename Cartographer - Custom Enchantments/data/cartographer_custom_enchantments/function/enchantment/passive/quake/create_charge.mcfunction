@@ -12,10 +12,6 @@ execute anchored feet positioned ^ ^-0.5 ^ run function cartographer_core:handle
 execute unless data storage cartographer_custom_enchantments block run data modify storage cartographer:custom_enchantments block set value "minecraft:stone"
 data modify storage cartographer:custom_enchantments block set from storage cartographer_core:get_block id
 
-
-scoreboard players set $is_player ca.ench_quake_lvl 0
-execute if entity @s[type=player] run scoreboard players set $is_player ca.ench_quake_lvl 1
-
 execute summon text_display run function cartographer_custom_enchantments:enchantment/passive/quake/create_telegraphing with storage cartographer:custom_enchantments
 
 execute summon marker run function cartographer_custom_enchantments:enchantment/passive/quake/create_charge_macro with storage cartographer:custom_enchantments

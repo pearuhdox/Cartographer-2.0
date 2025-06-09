@@ -11,8 +11,11 @@ execute unless score $is_player ca.ench_aberration_lvl matches 1.. run tag @s ad
 
 tp @s ~ ~-500 ~
 
-execute at @s run playsound minecraft:entity.slime.squish player @a[distance=..16] ~ ~ ~ 2 0.5
-execute at @s run playsound minecraft:block.slime_block.fall player @a[distance=..16] ~ ~ ~ 2 0.5
+execute if entity @s[tag=ca.player_spawned] at @s run playsound minecraft:entity.slime.squish player @a[distance=..16] ~ ~ ~ 0.8 0.5
+execute if entity @s[tag=ca.player_spawned] at @s run playsound minecraft:block.slime_block.fall player @a[distance=..16] ~ ~ ~ 0.8 0.5
+
+execute if entity @s[tag=ca.mob_spawned] at @s run playsound minecraft:entity.slime.squish player @a[distance=..16] ~ ~ ~ 0.8 0.5
+execute if entity @s[tag=ca.mob_spawned] at @s run playsound minecraft:block.slime_block.fall player @a[distance=..16] ~ ~ ~ 0.8 0.5
 
 execute at @s run particle minecraft:item_slime ~ ~0.1 ~ 0.65 0.1 0.65 0.1 50 normal
 execute at @s run particle minecraft:cloud ~ ~0.5 ~ 0.15 0.15 0.15 0.05 20 normal

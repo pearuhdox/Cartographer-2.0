@@ -968,10 +968,12 @@ scoreboard objectives add ca.aberration_time dummy
 scoreboard objectives add ca.aberration_jump dummy
 scoreboard objectives add ca.aberration_anim dummy
 scoreboard objectives add ca.aberration_splits dummy
+scoreboard objectives add ca.aberration_dmg dummy
 
 scoreboard objectives add ca.quake_time dummy
 scoreboard objectives add ca.quake_size dummy
 scoreboard objectives add ca.quake_max dummy
+scoreboard objectives add ca.quake_dmg dummy
 
 scoreboard objectives add ca.storm_stack dummy
 scoreboard objectives add ca.induction_stack dummy
@@ -1016,8 +1018,12 @@ scoreboard objectives add ca.orbit_delay dummy
 scoreboard objectives add ca.soulfire_delay dummy
 scoreboard objectives add ca.eruption_delay dummy
 
-scoreboard objectives add ca.eruption_time dummy
+scoreboard objectives add ca.starfall_dmg dummy
 
+scoreboard objectives add ca.eruption_time dummy
+scoreboard objectives add ca.eruption_dmg dummy
+
+scoreboard objectives add ca.soulfire_dmg dummy
 scoreboard objectives add ca.soulfire_time dummy
 scoreboard objectives add ca.soulfire_animation dummy
 scoreboard objectives add ca.soulfire_count dummy

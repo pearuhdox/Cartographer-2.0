@@ -5,7 +5,7 @@ scoreboard players set $proc ca.ench_eruption_lvl 1
 
 function cartographer_custom_enchantments:enchantment/passive/eruption/get_data
 
-function cartographer_custom_enchantments:enchantment/passive/eruption/create_explosion
+function cartographer_custom_enchantments:enchantment/passive/eruption/attempt_create
 
 scoreboard players add @s ca.eruption_delay 5
 scoreboard players add @s ca.eruption_tick_cap 1

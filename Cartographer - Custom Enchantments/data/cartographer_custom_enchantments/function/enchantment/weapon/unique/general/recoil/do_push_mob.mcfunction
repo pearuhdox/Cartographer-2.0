@@ -1,9 +1,14 @@
 tag @s add co_rotation_lock
 
 
-scoreboard players operation @s co_send = $force ca.ench_var
-scoreboard players operation @s co_send *= $-1 ca.CONSTANT
-scoreboard players set @s co_y 4
+execute unless items entity @s weapon.mainhand mace run scoreboard players operation @s co_send = $force ca.ench_var
+execute unless items entity @s weapon.mainhand mace run scoreboard players operation @s co_send *= $-1 ca.CONSTANT
+execute unless items entity @s weapon.mainhand mace run scoreboard players set @s co_y 4
+
+execute if items entity @s weapon.mainhand mace run scoreboard players set @s co_send 3
+execute if items entity @s weapon.mainhand mace run scoreboard players operation @s co_y = $force ca.ench_var
+execute if items entity @s weapon.mainhand mace run scoreboard players operation @s co_y *= $75 ca.CONSTANT
+execute if items entity @s weapon.mainhand mace run scoreboard players operation @s co_y /= $100 ca.CONSTANT
 
 execute as @s at @s facing entity @p feet run tp @s ~ ~ ~ ~ ~
 execute as @s at @s run function motion:motion/push

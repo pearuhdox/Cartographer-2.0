@@ -1,6 +1,8 @@
 $execute as $(target) at @s run scoreboard players set @s ca.entity_purge_var 0
 $execute as $(telegraph) at @s run scoreboard players set @s ca.entity_purge_var 0
 
+$execute as $(target) at @s if score @s ca.eruption_dmg matches 1.. run function carto_event:event/custom_ench/eruption/explosion/transfer_damage
+
 $execute as $(target) at @s if entity @s[tag=ca.player_spawned] if entity @s[tag=!ca.spawn_animation] at @s run function carto_event:event/custom_ench/eruption/explosion/warn_vfx_player with storage cartographer:custom_enchantments
 $execute as $(target) at @s unless entity @s[tag=ca.player_spawned] if entity @s[tag=!ca.spawn_animation] at @s run function carto_event:event/custom_ench/eruption/explosion/warn_vfx_enemy with storage cartographer:custom_enchantments
 

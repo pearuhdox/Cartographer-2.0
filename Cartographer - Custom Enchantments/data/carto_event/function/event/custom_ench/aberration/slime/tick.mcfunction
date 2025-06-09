@@ -2,6 +2,8 @@ $execute as $(telegraph) at @s run scoreboard players set @s ca.entity_purge_var
 $execute as $(target) at @s run scoreboard players set @s ca.entity_purge_var 0
 $execute as $(target) on passengers run scoreboard players set @s ca.entity_purge_var 0
 
+$execute as $(target) at @s if score @s ca.aberration_dmg matches 1.. run function carto_event:event/custom_ench/aberration/slime/transfer_damage
+
 $execute as $(telegraph) positioned as $(target) if block ~ ~-0.01 ~ #cartographer_core:can_raycast if block ~ ~-1.01 ~ #cartographer_core:can_raycast positioned ~ ~-1.01 ~ align y positioned ~ ~0.05 ~ run tp $(telegraph) ~ ~ ~
 $execute as $(telegraph) positioned as $(target) if block ~ ~-0.01 ~ #cartographer_core:can_raycast unless block ~ ~-1.01 ~ #cartographer_core:can_raycast positioned ~ ~-0.01 ~ align y positioned ~ ~0.05 ~ run tp $(telegraph) ~ ~ ~
 $execute as $(telegraph) positioned as $(target) unless block ~ ~-0.01 ~ #cartographer_core:can_raycast align y positioned ~ ~0.05 ~ run tp $(telegraph) ~ ~ ~

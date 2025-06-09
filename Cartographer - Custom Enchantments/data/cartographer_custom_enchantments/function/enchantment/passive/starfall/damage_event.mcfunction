@@ -28,7 +28,7 @@ execute on attacker if score $success ca.rand matches 1.. run function cartograp
 execute on attacker if score $success ca.rand matches 1.. if score $allow_statuses ca.ench_starfall_lvl matches 1.. if entity @s[type=player] run function cartographer_custom_enchantments:enchantment/passive/starfall/custom_statuses/status_player
 execute on attacker if score $success ca.rand matches 1.. if score $allow_statuses ca.ench_starfall_lvl matches 1.. unless entity @s[type=player] run function cartographer_custom_enchantments:enchantment/passive/starfall/custom_statuses/status_mob
 
-execute on attacker if score $success ca.rand matches 1.. run function cartographer_custom_enchantments:enchantment/passive/starfall/create_meteor
+execute on attacker if score $success ca.rand matches 1.. run function cartographer_custom_enchantments:enchantment/passive/starfall/attempt_create
 
 execute on attacker run scoreboard players add @s ca.starfall_tick_cap 1
 execute on attacker run function carto_event:api/create_single_entity_event {event:"custom_ench/starfall/cap",duration:1,delay:0,parameters:{},merge_behavior:"none"}

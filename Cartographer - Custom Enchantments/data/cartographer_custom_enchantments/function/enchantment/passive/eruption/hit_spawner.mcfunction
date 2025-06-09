@@ -7,7 +7,7 @@ scoreboard players set $proc ca.ench_eruption_lvl 1
 function cartographer_custom_enchantments:enchantment/passive/eruption/get_data
 
 execute store result score @s ca.raycast run attribute @s block_interaction_range get 10
-execute as @s at @s anchored eyes positioned ^ ^ ^0.1 run function cartographer_custom_enchantments:enchantment/helper/spawner_find_block_hit {function:"cartographer_custom_enchantments:enchantment/passive/eruption/create_explosion",offset:"~ ~-1 ~"}
+execute as @s at @s anchored eyes positioned ^ ^ ^0.1 run function cartographer_custom_enchantments:enchantment/helper/spawner_find_block_hit {function:"cartographer_custom_enchantments:enchantment/passive/eruption/attempt_create",offset:"~ ~-1 ~"}
 
 scoreboard players add @s ca.eruption_delay 5
 scoreboard players add @s ca.eruption_tick_cap 1

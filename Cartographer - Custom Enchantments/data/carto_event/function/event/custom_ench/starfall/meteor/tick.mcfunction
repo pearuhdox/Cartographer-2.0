@@ -3,6 +3,7 @@ $execute as $(telegraph) at @s run scoreboard players set @s ca.entity_purge_var
 scoreboard players operation $mod ca.ench_starfall_lvl = duration= carto_event
 scoreboard players operation $mod ca.ench_starfall_lvl %= $20 ca.CONSTANT
 
+$execute if score duration= carto_event matches 6 as $(telegraph) at @s if score @s ca.starfall_dmg matches 1.. run function carto_event:event/custom_ench/starfall/meteor/transfer_damage
 
 $execute if score duration= carto_event matches 40 as $(target) if entity @s[type=player] positioned $(x) $(y) $(z) positioned ~ ~0.1 ~ run particle minecraft:dust{color:[1,1,1],scale:2.0} ~ ~ ~ 0.6 0.1 0.6 0.1 45 normal
 $execute if score duration= carto_event matches 40 as $(target) unless entity @s[type=player] positioned $(x) $(y) $(z) positioned ~ ~0.1 ~ run particle minecraft:dust{color:[0.7,0.3,0.3],scale:2.0} ~ ~ ~ 0.6 0.1 0.6 0.1 45 normal
@@ -37,6 +38,8 @@ $execute if score duration= carto_event matches 1 as $(target) positioned $(x) $
 $execute if score duration= carto_event matches 1 as $(target) positioned $(x) $(y) $(z) run playsound minecraft:entity.firework_rocket.twinkle_far ambient @a ~ ~ ~ 2 0.75
 
 $execute if score duration= carto_event matches 21.. as $(target) positioned $(x) $(y) $(z) if entity @s[type=player] positioned ~-$(half_size) ~ ~-$(half_size) as @e[type=#cartographer_core:affected_by_carto,tag=!ca.trailblazer_cdl,dx=$(size_neg_1),dy=0,dz=$(size_neg_1)] at @s run effect give @s slowness 1 0
+
+$execute if score duration= carto_event matches 6 as $(telegraph) at @s run tag @s add ca.damaging
 
 $execute if score duration= carto_event matches 1..5 as $(target) positioned $(x) $(y) $(z) if entity @s[type=player] positioned ~-$(half_size) ~ ~-$(half_size) as @e[type=#cartographer_core:affected_by_carto,limit=2,tag=!ca.starfall_cdl,dx=$(size_neg_1),dy=0,dz=$(size_neg_1)] at @s run function carto_event:event/custom_ench/starfall/meteor/damage with storage carto_event current[-1].parameters
 $execute if score duration= carto_event matches 1 as $(target) positioned $(x) $(y) $(z) unless entity @s[type=player] positioned ~-$(half_size) ~ ~-$(half_size) as @a[tag=!ca.starfall_cdl,limit=2,dx=$(size_neg_1),dy=0,dz=$(size_neg_1)] at @s run function carto_event:event/custom_ench/starfall/meteor/damage with storage carto_event current[-1].parameters

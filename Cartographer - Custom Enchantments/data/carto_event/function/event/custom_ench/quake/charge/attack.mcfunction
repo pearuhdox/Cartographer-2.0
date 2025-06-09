@@ -1,4 +1,5 @@
-playsound minecraft:entity.zombie.attack_wooden_door player @a[distance=..16] ~ ~ ~ 0.15 0.85
+execute if entity @s[tag=ca.player_spawned] run playsound minecraft:entity.zombie.attack_wooden_door player @a[distance=..16] ~ ~ ~ 0.10 0.85
+execute unless entity @s[tag=ca.player_spawned] run playsound minecraft:entity.zombie.attack_wooden_door hostile @a[distance=..16] ~ ~ ~ 0.15 0.85
 
 $execute rotated ~15 0 positioned ^ ^ ^$(size) run function carto_event:event/custom_ench/quake/charge/attack_part
 $execute rotated ~30 0 positioned ^ ^ ^$(size) run function carto_event:event/custom_ench/quake/charge/attack_part

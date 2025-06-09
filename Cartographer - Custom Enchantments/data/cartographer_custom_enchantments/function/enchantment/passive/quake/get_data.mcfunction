@@ -16,7 +16,7 @@ execute if score @s ca.attr_aoe_damage_value matches -1999999.. run scoreboard p
 execute if score @s ca.attr_aoe_damage_percent matches -1999999.. run scoreboard players operation $result_damage ca.ench_var *= @s ca.attr_aoe_damage_percent
 execute if score @s ca.attr_aoe_damage_percent matches -1999999.. run scoreboard players operation $result_damage ca.ench_var /= $100 ca.CONSTANT
 
-scoreboard players set $size ca.ench_quake_lvl 1200
+scoreboard players set $size ca.ench_quake_lvl 800
 
 execute if score @s ca.attr_aoe_size_value matches -1999999.. run scoreboard players operation $size ca.ench_quake_lvl += @s ca.attr_aoe_size_value
 execute if score @s ca.attr_aoe_size_percent matches -1999999.. run scoreboard players operation $size ca.ench_quake_lvl *= @s ca.attr_aoe_size_percent
