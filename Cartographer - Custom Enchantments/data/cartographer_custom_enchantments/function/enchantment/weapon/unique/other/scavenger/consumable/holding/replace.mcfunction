@@ -31,6 +31,7 @@ execute if data storage cartographer_custom_enchantments:consumable data.item.co
 
 data modify storage cartographer_custom_enchantments:consumable data.item.components.minecraft:use_cooldown set from storage cartographer_custom_enchantments:consumable data.use_cooldown
 data modify storage cartographer_custom_enchantments:consumable data.item.components.minecraft:use_remainder set from storage cartographer_custom_enchantments:consumable data.inert_item
+data modify storage cartographer_custom_enchantments:consumable data.item.components.minecraft:intangible_projectile set value {}
 
 data modify storage cartographer_custom_enchantments:consumable data.item.components.minecraft:custom_data.item_replaced set value 1b
 

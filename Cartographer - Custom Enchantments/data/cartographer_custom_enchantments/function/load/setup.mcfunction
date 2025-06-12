@@ -1136,6 +1136,8 @@ scoreboard objectives add ca.repeating_max_ammo dummy
 
 scoreboard objectives add ca.auto_charge_time dummy
 scoreboard objectives add ca.auto_charge_time_max dummy
+scoreboard objectives add ca.ench_auto_charge_slot dummy
+scoreboard objectives add ca.ench_scavenger_slot dummy
 
 
 scoreboard objectives add ca.reconstruction_entropy dummy

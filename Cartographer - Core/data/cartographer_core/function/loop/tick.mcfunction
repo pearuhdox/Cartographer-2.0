@@ -63,7 +63,7 @@ function cartographer_custom_enchantments:loop/tick
 #function cartographer_custom_statuses:loop/tick
 #function cartographer_loot_additions:loop/tick
 #function cartographer_mimics:loop/tick
-#function cartographer_mob_abilities:loop/tick
+function cartographer_mob_utils:loop/tick
 function cartographer_repair_stations:loop/tick
 function cartographer_rat:loop/tick
 

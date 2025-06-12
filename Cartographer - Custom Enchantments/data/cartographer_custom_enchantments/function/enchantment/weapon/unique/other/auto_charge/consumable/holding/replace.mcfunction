@@ -10,6 +10,7 @@ data remove storage cartographer_custom_enchantments:consumable data.item.Slot
 
 data modify storage cartographer_custom_enchantments:consumable data.item.count set value 1
 data modify storage cartographer_custom_enchantments:consumable data.item.components.minecraft:max_stack_size set value 1
+data modify storage cartographer_custom_enchantments:consumable data.item.components.minecraft:intangible_projectile set value {}
 
 #Set Use Cooldown Parameter
 execute store result score $use_cdl ca.ench_var run data get storage cartographer_custom_enchantments:consumable data.item.components.minecraft:custom_data.use_cooldown 100
@@ -31,6 +32,7 @@ execute if data storage cartographer_custom_enchantments:consumable data.item.co
 
 data modify storage cartographer_custom_enchantments:consumable data.item.components.minecraft:use_cooldown set from storage cartographer_custom_enchantments:consumable data.use_cooldown
 data modify storage cartographer_custom_enchantments:consumable data.item.components.minecraft:use_remainder set from storage cartographer_custom_enchantments:consumable data.inert_item
+data modify storage cartographer_custom_enchantments:consumable data.item.components.minecraft:intangible_projectile set value {}
 
 data modify storage cartographer_custom_enchantments:consumable data.item.components.minecraft:custom_data.item_replaced set value 1b
 
