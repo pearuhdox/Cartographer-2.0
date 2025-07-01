@@ -1,6 +1,11 @@
 execute if entity @s[tag=ca.listen_death] run function carto_event:api/create_single_entity_event {event:"mob_utils/death_listen",duration:32767,delay:0,parameters:{},merge_behavior:"none"}
 
-execute if entity @s[type=#bb:projectile] on origin at @s if entity @s[tag=ca.listen_projectile,tag=!ca.listened] run function cartographer_mob_utils:listener/projectile with entity @s data 
+execute if entity @s[type=#bb:projectile] on origin at @s if entity @s[tag=ca.listen_projectile] run function cartographer_mob_utils:listener/projectile with entity @s data 
+
+scoreboard players set $on_proj ca.mob_var 0
+execute if entity @s[type=#bb:projectile] on origin at @s if entity @s[tag=ca.listen_on_projectile] run scoreboard players set $on_proj ca.mob_var 1
+execute if score $on_proj ca.mob_var matches 1.. run function cartographer_mob_utils:listener/on_projectile with entity @s data
+
 execute if entity @s[tag=ca.listen_created,tag=!ca.listened] run function cartographer_mob_utils:listener/created with entity @s data 
 
 execute if entity @s[type=warden,tag=ca.listen_sonic,tag=!ca.no_sonic] run function carto_event:api/create_single_entity_event {event:"mob_utils/sonic_listen",duration:32767,delay:0,parameters:{},merge_behavior:"none"}

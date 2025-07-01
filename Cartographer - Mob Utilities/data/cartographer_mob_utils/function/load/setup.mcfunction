@@ -27,3 +27,5 @@ scoreboard objectives add ca.explode_dist dummy
 
 scoreboard objectives add ca.summon_var dummy
 scoreboard objectives add ca.fangs_var dummy
+
+scoreboard objectives add ca.mob_var dummy
