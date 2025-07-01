@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "effect_gained": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "minecraft:blindness": {
+            "amplifier": {
+              "min": 0,
+              "max": 0
+            },
+            "duration": {
+              "min": 400,
+              "max": 400
+            }
+          }
+        },
+        "source": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:illusioner",
+              "nbt": "{Tags:[\"ca.no_effects\"]}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "effect_gained"
+    ]
+  ],
+  "rewards": {
+    "function": "cartographer_mob_utils:no_effects/illusioner"
+  }
+}

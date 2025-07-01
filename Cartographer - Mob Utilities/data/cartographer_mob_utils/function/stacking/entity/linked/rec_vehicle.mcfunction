@@ -1,0 +1,2 @@
+execute on vehicle unless entity @s[type=item_display] run scoreboard players set $vehicle_found ca.stack_var 1
+execute on vehicle if entity @s[type=item_display] run function cartographer_mob_utils:stacking/entity/linked/rec_vehicle

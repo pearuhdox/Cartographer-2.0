@@ -1,0 +1,21 @@
+execute if entity @s[tag=ca.listen_death] run function carto_event:api/create_single_entity_event {event:"mob_utils/death_listen",duration:32767,delay:0,parameters:{},merge_behavior:"none"}
+
+execute if entity @s[type=#bb:projectile] on origin at @s if entity @s[tag=ca.listen_projectile,tag=!ca.listened] run function cartographer_mob_utils:listener/projectile with entity @s data 
+execute if entity @s[tag=ca.listen_created,tag=!ca.listened] run function cartographer_mob_utils:listener/created with entity @s data 
+
+execute if entity @s[type=warden,tag=ca.listen_sonic,tag=!ca.no_sonic] run function carto_event:api/create_single_entity_event {event:"mob_utils/sonic_listen",duration:32767,delay:0,parameters:{},merge_behavior:"none"}
+
+execute if entity @s[type=warden,tag=ca.no_sonic] run function carto_event:api/create_single_entity_event {event:"mob_utils/no_sonic",duration:32767,delay:0,parameters:{},merge_behavior:"none"}
+execute if entity @s[type=bee,tag=ca.perma_stinger] run function carto_event:api/create_single_entity_event {event:"mob_utils/perma_stinger",duration:32767,delay:0,parameters:{},merge_behavior:"none"}
+
+execute if entity @s[type=slime,tag=ca.no_splitting] run function carto_event:api/create_single_entity_event {event:"mob_utils/no_splitting",duration:32767,delay:0,parameters:{},merge_behavior:"none"}
+execute if entity @s[type=magma_cube,tag=ca.no_splitting] run function carto_event:api/create_single_entity_event {event:"mob_utils/no_splitting",duration:32767,delay:0,parameters:{},merge_behavior:"none"}
+
+execute if entity @s[type=creeper,tag=ca.custom_explosion] run function carto_event:event/mob_utils/custom_explosion/setup
+
+execute if entity @s[tag=ca.custom_stacking] if entity @s[tag=ca.stack_separate] run function carto_event:api/create_single_entity_event {event:"mob_utils/stacking/separate/setup",duration:1,delay:0,parameters:{},merge_behavior:"none"}
+execute if entity @s[tag=ca.custom_stacking] unless entity @s[tag=ca.stack_separate] run function carto_event:api/create_single_entity_event {event:"mob_utils/stacking/setup",duration:1,delay:0,parameters:{},merge_behavior:"none"}
+
+#Run Projectile Create Listener and Summon Create Listeners - and Mob Replaces
+execute if entity @s[type=vex] run function cartographer_mob_utils:custom_summon/attempt
+execute if entity @s[type=evoker_fangs] run function cartographer_mob_utils:custom_fangs/attempt

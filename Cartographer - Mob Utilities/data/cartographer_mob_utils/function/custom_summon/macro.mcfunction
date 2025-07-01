@@ -1,0 +1,1 @@
+$execute summon $(id) run function cartographer_mob_utils:custom_summon/modify with storage cartographer_mob_utils:summon data

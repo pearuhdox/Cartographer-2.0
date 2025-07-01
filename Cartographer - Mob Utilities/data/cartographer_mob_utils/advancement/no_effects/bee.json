@@ -1,0 +1,94 @@
+{
+  "criteria": {
+    "normal": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "ca.diff": 2
+                }
+              }
+            ]
+          }
+        ],
+        "effects": {
+          "minecraft:poison": {
+            "amplifier": {
+              "min": 0
+            },
+            "duration": {
+              "min": 200,
+              "max": 200
+            }
+          }
+        },
+        "source": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:bee",
+              "nbt": "{Tags:[\"ca.no_effects\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "hard": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "ca.diff": 3
+                }
+              }
+            ]
+          }
+        ],
+        "effects": {
+          "minecraft:poison": {
+            "amplifier": {
+              "min": 0,
+              "max": 0
+            },
+            "duration": {
+              "min": 360,
+              "max": 360
+            }
+          }
+        },
+        "source": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:bee",
+              "nbt": "{Tags:[\"ca.no_effects\"]}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "normal",
+      "hard"
+    ]
+  ],
+  "rewards": {
+    "function": "cartographer_mob_utils:no_effects/bee"
+  }
+}

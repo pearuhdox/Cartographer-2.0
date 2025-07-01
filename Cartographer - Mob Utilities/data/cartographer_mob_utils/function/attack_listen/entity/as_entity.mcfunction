@@ -1,0 +1,1 @@
+execute if entity @s[tag=ca.listen_attack,tag=!ca.listened] run function cartographer_mob_utils:listener/attack with entity @s data

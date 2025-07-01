@@ -1,0 +1,2 @@
+execute on passengers unless entity @s[type=item_display] run scoreboard players set $passenger_found ca.stack_var 1
+execute on passengers if entity @s[type=item_display] run function cartographer_mob_utils:stacking/entity/linked/rec_passenger

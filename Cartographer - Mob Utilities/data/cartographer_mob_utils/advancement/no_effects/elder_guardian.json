@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "effect_gained": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "minecraft:mining_fatigue": {
+            "amplifier": {
+              "min": 2,
+              "max": 2
+            },
+            "duration": {
+              "min": 6000,
+              "max": 6000
+            }
+          }
+        },
+        "source": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:elder_guardian",
+              "nbt": "{Tags:[\"ca.no_effects\"]}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "effect_gained"
+    ]
+  ],
+  "rewards": {
+    "function": "cartographer_mob_utils:no_effects/elder_guardian"
+  }
+}

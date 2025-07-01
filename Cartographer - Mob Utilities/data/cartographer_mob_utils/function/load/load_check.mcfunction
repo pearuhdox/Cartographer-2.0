@@ -1,0 +1,1 @@
+scoreboard players set $mob_utils ca.installed 1

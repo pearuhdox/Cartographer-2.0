@@ -1,0 +1,1 @@
+tellraw @a [{"text":"❱ ","color":"#FFE0A3"},{"text":"Mob Utilities","color":"#58da58","hover_event":{"action":"show_text","value":[{"text":"Adds in small mechanics for mobs to assist custom mob creation.","color":"#FFE0A3","italic":true}]}},{"text":" installed!","color":"#FFE0A3"}]

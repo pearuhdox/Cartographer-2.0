@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "effect_gained": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "minecraft:levitation": {
+            "amplifier": {
+              "min": 0,
+              "max": 0
+            },
+            "duration": {
+              "min": 200,
+              "max": 200
+            }
+          }
+        },
+        "source": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:shulker",
+              "nbt": "{Tags:[\"ca.no_effects\"]}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "effect_gained"
+    ]
+  ],
+  "rewards": {
+    "function": "cartographer_mob_utils:no_effects/shulker"
+  }
+}
