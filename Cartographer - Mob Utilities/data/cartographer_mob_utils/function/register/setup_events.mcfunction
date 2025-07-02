@@ -4,7 +4,9 @@ execute if entity @s[type=#bb:projectile] on origin at @s if entity @s[tag=ca.li
 
 scoreboard players set $on_proj ca.mob_var 0
 execute if entity @s[type=#bb:projectile] on origin at @s if entity @s[tag=ca.listen_on_projectile] run scoreboard players set $on_proj ca.mob_var 1
-execute if score $on_proj ca.mob_var matches 1.. run function cartographer_mob_utils:listener/on_projectile with entity @s data
+execute if score $on_proj ca.mob_var matches 1.. on origin run data modify storage cartographer:mob_utils on_proj_data set value {}
+execute if score $on_proj ca.mob_var matches 1.. on origin run data modify storage cartographer:mob_utils on_proj_data set from entity @s data
+execute if score $on_proj ca.mob_var matches 1.. run function cartographer_mob_utils:listener/on_projectile with storage cartographer:mob_utils on_proj_data
 
 execute if entity @s[tag=ca.listen_created,tag=!ca.listened] run function cartographer_mob_utils:listener/created with entity @s data 
 
