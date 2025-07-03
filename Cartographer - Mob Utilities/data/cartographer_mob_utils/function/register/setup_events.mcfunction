@@ -8,7 +8,11 @@ execute if score $on_proj ca.mob_var matches 1.. on origin run data modify stora
 execute if score $on_proj ca.mob_var matches 1.. on origin run data modify storage cartographer:mob_utils on_proj_data set from entity @s data
 execute if score $on_proj ca.mob_var matches 1.. run function cartographer_mob_utils:listener/on_projectile with storage cartographer:mob_utils on_proj_data
 
-execute if entity @s[tag=ca.listen_created,tag=!ca.listened] run function cartographer_mob_utils:listener/created with entity @s data 
+execute if entity @s[tag=ca.listen_timer] store result score @s ca.timer_var run data get entity @s data.listen_timer_count
+execute if entity @s[tag=ca.listen_timer] store result score @s ca.timer_random run data get entity @s data.listen_timer_chance
+execute if entity @s[tag=ca.listen_timer] run function carto_event:api/create_single_entity_event {event:"mob_utils/timer_listen",duration:32767,delay:0,parameters:{},merge_behavior:"none"}
+
+execute if entity @s[type=warden,tag=ca.listen_sonic,tag=!ca.no_sonic] run function carto_event:api/create_single_entity_event {event:"mob_utils/sonic_listen",duration:32767,delay:0,parameters:{},merge_behavior:"none"}
 
 execute if entity @s[type=warden,tag=ca.listen_sonic,tag=!ca.no_sonic] run function carto_event:api/create_single_entity_event {event:"mob_utils/sonic_listen",duration:32767,delay:0,parameters:{},merge_behavior:"none"}
 

@@ -29,3 +29,7 @@ scoreboard objectives add ca.summon_var dummy
 scoreboard objectives add ca.fangs_var dummy
 
 scoreboard objectives add ca.mob_var dummy
+
+scoreboard objectives add ca.timer_var dummy
+scoreboard objectives add ca.timer_random dummy
+scoreboard objectives add ca.timer_count dummy
