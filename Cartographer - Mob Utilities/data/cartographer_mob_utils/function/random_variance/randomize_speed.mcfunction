@@ -1,0 +1,2 @@
+execute store result storage cartographer_mob_utils:random_variance speed double 0.01 run random value -15..5
+function cartographer_mob_utils:random_variance/speed_macro with storage cartographer_mob_utils:random_variance

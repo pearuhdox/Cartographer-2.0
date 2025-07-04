@@ -1,0 +1,2 @@
+execute store result storage cartographer_mob_utils:random_variance kbr double 0.01 run random value 0..20
+function cartographer_mob_utils:random_variance/kbr_macro with storage cartographer_mob_utils:random_variance
