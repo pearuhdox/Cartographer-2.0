@@ -1,3 +1,4 @@
+
 scoreboard players set $potion_throw_self ca.apply_status_check 0
 scoreboard players set $potion_throw_target ca.apply_status_check 0
 

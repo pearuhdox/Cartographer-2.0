@@ -28,6 +28,9 @@ execute if entity @s[type=fishing_bobber] on passengers if entity @s[type=marker
 execute if score $custom_statuses ca.installed matches 1.. if entity @s[type=#cartographer_core:potions,tag=ca.apply_status_potion_throw_self] on passengers if entity @s[type=marker,tag=ca.new,tag=ca.projectile_checker] run tag @s add ca.apply_status_potion_throw_self
 execute if score $custom_statuses ca.installed matches 1.. if entity @s[type=#cartographer_core:potions,tag=ca.apply_status_potion_throw_target] on passengers if entity @s[type=marker,tag=ca.new,tag=ca.projectile_checker] run tag @s add ca.apply_status_potion_throw_target
 
+execute if entity @s[tag=ca.apply_status_potion_throw_self] run tag @s add ca.check_land
+execute if entity @s[tag=ca.apply_status_potion_throw_target] run tag @s add ca.check_land
+
 data modify storage cartographer:core owner set value []
 data modify storage cartographer:core owner set from entity @s Owner
 

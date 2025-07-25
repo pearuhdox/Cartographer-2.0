@@ -1045,8 +1045,8 @@ scoreboard players operation @s ca.attr_restrike_hit_chance_percent += @s ca.att
 scoreboard players operation @s ca.attr_restrike_hit_chance_percent += @s ca.attr_restrike_hit_chance_percent_bonus
 
 execute if score @s ca.ench_echo_lvl matches 1.. run scoreboard players add @s ca.attr_restrike_hit_chance_value 100
-execute if score @s ca.ench_echo_lvl matches 1.. if items entity @s weapon.mainhand #cartographer_core:ranged_weapons run scoreboard players add @s ca.attr_restrike_hit_chance_value 134
-execute if score @s ca.ench_echo_lvl matches 1.. if items entity @s weapon.offhand #cartographer_core:ranged_weapons run scoreboard players add @s ca.attr_restrike_hit_chance_value 134
+execute if score @s ca.ench_echo_lvl matches 1.. if items entity @s weapon.mainhand #cartographer_core:ranged_weapons run scoreboard players add @s ca.attr_restrike_hit_chance_value 34
+execute if score @s ca.ench_echo_lvl matches 1.. if items entity @s weapon.offhand #cartographer_core:ranged_weapons run scoreboard players add @s ca.attr_restrike_hit_chance_value 34
 
 scoreboard players add @s ca.attr_restrike_hit_chance_percent 100
 scoreboard players operation $percent ca.attr_var = @s ca.attr_restrike_hit_chance_percent
@@ -1336,8 +1336,8 @@ scoreboard players add @s ca.attr_chaining_hit_chance_percent 100
 scoreboard players operation $percent ca.attr_var = @s ca.attr_chaining_hit_chance_percent
 
 execute if score @s ca.ench_reverb_lvl matches 1.. run scoreboard players add @s ca.attr_chaining_hit_chance_value 100
-execute if score @s ca.ench_reverb_lvl matches 1.. if items entity @s weapon.mainhand #cartographer_core:ranged_weapons run scoreboard players add @s ca.attr_chaining_hit_chance_value 134
-execute if score @s ca.ench_reverb_lvl matches 1.. if items entity @s weapon.offhand #cartographer_core:ranged_weapons run scoreboard players add @s ca.attr_chaining_hit_chance_value 134
+execute if score @s ca.ench_reverb_lvl matches 1.. if items entity @s weapon.mainhand #cartographer_core:ranged_weapons run scoreboard players add @s ca.attr_chaining_hit_chance_value 34
+execute if score @s ca.ench_reverb_lvl matches 1.. if items entity @s weapon.offhand #cartographer_core:ranged_weapons run scoreboard players add @s ca.attr_chaining_hit_chance_value 34
 
 scoreboard players operation $total ca.attr_var = @s ca.attr_chaining_hit_chance_value
 
@@ -1695,7 +1695,7 @@ scoreboard players operation $percent ca.attr_var = @s ca.attr_extra_jump_count_
 scoreboard players set $ench ca.attr_var 0
 scoreboard players operation $ench ca.attr_var = @s ca.ench_cloudstep_lvl
 scoreboard players operation $ench ca.attr_var *= $100 ca.CONSTANT
-scoreboard players operation @s ca.attr_airdash_count_value += $ench ca.attr_var
+scoreboard players operation @s ca.attr_extra_jump_count_value += $ench ca.attr_var
 
 scoreboard players operation $total ca.attr_var = @s ca.attr_extra_jump_count_value
 

@@ -1,4 +1,5 @@
 $execute as @a[distance=..$(range)] run function cartographer_mob_utils:custom_explosion/los/start with storage cartographer_mob_utils:explosion data
+$execute if entity @s[tag=ca.can_hurt_mobs] as @e[type=#bb:hostile,distance=..$(range)] run function cartographer_mob_utils:custom_explosion/los/start with storage cartographer_mob_utils:explosion data
 
 $scoreboard players set $explode_radius ca.explode_var $(explosion_radius)
 execute if score $explode_radius ca.explode_var matches 1.. run stopsound @a[distance=..32] * entity.generic.explode
@@ -6,4 +7,4 @@ $execute if score $explode_radius ca.explode_var matches 1.. run summon creeper 
 
 execute if data storage cartographer_mob_utils:explosion data.command run function cartographer_mob_utils:custom_explosion/run_command with storage cartographer_mob_utils:explosion data
 
-#scoreboard players set @a ca.explode_dist 0
+scoreboard players set @a ca.explode_dist 0

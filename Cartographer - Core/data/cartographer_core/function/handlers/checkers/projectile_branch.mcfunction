@@ -1,4 +1,5 @@
 
+
 scoreboard players set $projectile_check ca.systems 20
 
 execute if entity @s[tag=ca.check_land] if entity @s[nbt={inGround:1b}] run function cartographer_core:handlers/checkers/projectile_land

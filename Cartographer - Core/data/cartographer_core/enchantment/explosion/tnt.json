@@ -1,0 +1,54 @@
+{
+  "description": {
+    "text": ""
+  },
+  "supported_items": [],
+  "weight": 1,
+  "max_level": 1,
+  "max_cost": {
+    "base": 60,
+    "per_level_above_first": 20
+  },
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 20
+  },
+  "anvil_cost": 1,
+  "slots": ["feet"],
+  "effects": {
+    "minecraft:location_changed": [
+      {
+        "requirements": {
+          "condition": "minecraft:enchantment_active_check",
+          "active": false
+        },
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:run_function",
+              "function": "cartographer_core:handlers/explosion/kill_armor_stand"
+            },
+            {
+              "type": "minecraft:explode",
+              "knockback_multiplier": 1,
+              "radius": {
+                "type": "minecraft:linear",
+                "base": 1,
+                "per_level_above_first": 1
+              },
+              "block_interaction": "tnt",
+              "small_particle": {
+                "type": "minecraft:explosion"
+              },
+              "large_particle": {
+                "type": "minecraft:explosion_emitter"
+              },
+              "sound": "minecraft:block.candle.ambient"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -4,6 +4,8 @@ scoreboard objectives add ca.sonic_timer dummy
 scoreboard objectives add ca.stack_var dummy
 scoreboard objectives add ca.stack_delay dummy
 
+scoreboard objectives add ca.leash_var dummy
+
 scoreboard objectives add ca.ominous_var dummy
 
 scoreboard objectives add ca.poison_dur dummy

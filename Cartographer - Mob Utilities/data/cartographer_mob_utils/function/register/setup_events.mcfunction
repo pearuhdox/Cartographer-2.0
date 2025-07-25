@@ -27,6 +27,8 @@ execute if entity @s[type=creeper,tag=ca.custom_explosion] run function carto_ev
 execute if entity @s[tag=ca.custom_stacking] if entity @s[tag=ca.stack_separate] run function carto_event:api/create_single_entity_event {event:"mob_utils/stacking/separate/setup",duration:1,delay:0,parameters:{},merge_behavior:"none"}
 execute if entity @s[tag=ca.custom_stacking] unless entity @s[tag=ca.stack_separate] run function carto_event:api/create_single_entity_event {event:"mob_utils/stacking/setup",duration:1,delay:0,parameters:{},merge_behavior:"none"}
 
+execute if entity @s[tag=ca.custom_leashing] run function carto_event:api/create_single_entity_event {event:"mob_utils/leashing/setup",duration:1,delay:0,parameters:{},merge_behavior:"none"}
+
 execute if entity @s[tag=ca.random_variance_speed] run function cartographer_mob_utils:random_variance/randomize_speed
 execute if entity @s[tag=ca.random_variance_kbr] run function cartographer_mob_utils:random_variance/randomize_kbr
 

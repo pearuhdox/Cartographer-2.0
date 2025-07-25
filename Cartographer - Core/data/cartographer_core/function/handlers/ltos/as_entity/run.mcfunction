@@ -97,4 +97,8 @@ scoreboard players set $check ca.gravity_var 0
 $execute if score $custom_enchantments ca.installed matches 1.. as $(killer) at @s if score @s ca.ench_gravity_lvl matches 1.. unless score @s ca.gravity_time matches 10.. run function cartographer_custom_enchantments:enchantment/passive/gravity/kill
 $execute if score $custom_enchantments ca.installed matches 1.. if score $check ca.gravity_var matches 1.. as $(killed) at @s run function cartographer_custom_enchantments:enchantment/passive/gravity/hit/victim
 
+#Mob Utils
+$execute if score $mob_utils ca.installed matches 1.. as $(killed) at @s if entity @s[tag=ca.custom_leashing] as $(killer) at @s run tag @s add ca.remove_lead
+$execute if score $mob_utils ca.installed matches 1.. as $(killed) at @s if entity @s[tag=ca.custom_leashing] run schedule function carto_event:event/mob_utils/leashing/kill_leads 2t append
+
 $execute as $(killed) at @s run tellraw @a[scores={ca.debug_lvl=3..}] [{"text":"[Debug] ","color":"red"},{"text":"[LTOS Handler] ","color":"yellow"},{"text":"❱ ","color":"#FFE0A3"},{"selector":"@s","color":"aqua"},{"text":" Entity Killed (As Entity).","color":"#FFE0A3"}]
