@@ -32,6 +32,9 @@ execute if entity @s[tag=ca.custom_leashing] run function carto_event:api/create
 execute if entity @s[tag=ca.random_variance_speed] run function cartographer_mob_utils:random_variance/randomize_speed
 execute if entity @s[tag=ca.random_variance_kbr] run function cartographer_mob_utils:random_variance/randomize_kbr
 
+#Run Mob Create Listener
+execute if entity @s[tag=ca.listen_created] run function cartographer_mob_utils:listener/created with entity @s data 
+
 #Run Projectile Create Listener and Summon Create Listeners - and Mob Replaces
 execute if entity @s[type=vex] run function cartographer_mob_utils:custom_summon/attempt
 execute if entity @s[type=evoker_fangs] run function cartographer_mob_utils:custom_fangs/attempt

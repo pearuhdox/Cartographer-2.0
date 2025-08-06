@@ -28,8 +28,7 @@ execute if predicate cartographer_core:periodic_tick/20 if predicate cartographe
 execute if predicate cartographer_core:periodic_tick/100 if predicate cartographer_custom_enchantments:has/reconstruction run function cartographer_custom_enchantments:enchantment/passive/reconstruction/check
 
 #Run Curse of Crumbling
-execute if predicate cartographer_core:periodic_tick/100 if predicate cartographer_custom_enchantments:has/crumbling run function cartographer_custom_enchantments:enchantment/curse/crumbling/check
-
+execute if predicate cartographer_core:periodic_tick/100 if entity @s[gamemode=!creative,gamemode=!spectator] if predicate cartographer_custom_enchantments:has/crumbling run function cartographer_custom_enchantments:enchantment/curse/crumbling/check
 
 #Run Throwable Cooldowns
 execute if predicate cartographer_core:periodic_tick/20 if predicate cartographer_custom_enchantments:has/throwable run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/throwable/recharge/check
