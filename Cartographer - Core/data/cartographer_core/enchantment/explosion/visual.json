@@ -31,6 +31,7 @@
             },
             {
               "type": "minecraft:explode",
+              "immune_blocks": "#cartographer_core:all",
               "knockback_multiplier": 0,
               "radius": {
                 "type": "minecraft:linear",
@@ -39,14 +40,12 @@
               },
               "block_interaction": "tnt",
               "small_particle": {
-                "type": "minecraft:block",
-                "block_state": "minecraft:air"
+                "type": "minecraft:explosion"
               },
               "large_particle": {
-                "type": "minecraft:block",
-                "block_state": "minecraft:air"
+                "type": "minecraft:explosion_emitter"
               },
-              "sound": "minecraft:block.candle.ambient"
+              "sound": "minecraft:entity.generic.explode"
             }
           ]
         }

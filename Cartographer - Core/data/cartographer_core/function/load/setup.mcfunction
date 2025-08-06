@@ -17,6 +17,8 @@ scoreboard objectives add ca.ench_value dummy
 scoreboard objectives add ca.calc_type dummy
 scoreboard objectives add ca.popup_var dummy
 
+scoreboard objectives add ca.left_game minecraft.custom:minecraft.leave_game
+
 scoreboard objectives add ca.selected_slot dummy
 
 scoreboard objectives add ca.carto_event dummy
@@ -25,6 +27,8 @@ scoreboard objectives add ca.player_id dummy
 
 scoreboard objectives add ca.systems dummy
 scoreboard objectives add ca.installed dummy
+
+scoreboard objectives add ca.inactivity dummy
 
 scoreboard objectives add ca.registry dummy
 scoreboard objectives add ca.notice_time dummy

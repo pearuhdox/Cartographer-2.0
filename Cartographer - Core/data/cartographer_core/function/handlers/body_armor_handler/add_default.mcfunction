@@ -1,2 +1,4 @@
-item replace entity @s armor.body with stick[equippable={slot:"body",equip_sound:"block.candle.ambient",swappable:false,damage_on_hurt:false},attribute_modifiers=[{id:"armor",type:"armor",amount:0,operation:"add_value",slot:"any"}],enchantments={"minecraft:vanishing_curse":1}] 1
+execute if entity @s[type=player] run item replace entity @s armor.body with stick[equippable={slot:"body",equip_sound:"block.candle.ambient",swappable:false,damage_on_hurt:false},attribute_modifiers=[{id:"armor",type:"armor",amount:0,operation:"add_value",slot:"any"}],enchantments={"cartographer_core:mob_only_damage_blocker":1,"minecraft:vanishing_curse":1}] 1
+execute unless entity @s[type=player] run item replace entity @s armor.body with stick[equippable={slot:"body",equip_sound:"block.candle.ambient",swappable:false,damage_on_hurt:false},attribute_modifiers=[{id:"armor",type:"armor",amount:0,operation:"add_value",slot:"any"}],enchantments={"minecraft:vanishing_curse":1}] 1
+
 stopsound @s * block.candle.ambient

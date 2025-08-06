@@ -1,6 +1,5 @@
 {
     "values": [
-      "cartographer_core:resistor/explosion",
       "cartographer_core:mob_only_explosion"
     ]
   }

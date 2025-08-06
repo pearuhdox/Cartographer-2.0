@@ -31,13 +31,14 @@
             },
             {
               "type": "minecraft:explode",
+              "damage_type":"cartographer_core:mob_only_explosion",
               "knockback_multiplier": 0,
               "radius": {
                 "type": "minecraft:linear",
                 "base": 1,
                 "per_level_above_first": 1
               },
-              "block_interaction": "tnt",
+              "block_interaction": "none",
               "small_particle": {
                 "type": "minecraft:block",
                 "block_state": "minecraft:air"

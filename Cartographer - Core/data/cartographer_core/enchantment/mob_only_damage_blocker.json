@@ -1,0 +1,40 @@
+{
+  "description": {
+    "text": "Mob Only Damage Blocker"
+  },
+  "supported_items": [],
+  "weight": 1,
+  "max_level": 1,
+  "max_cost": {
+    "base": 60,
+    "per_level_above_first": 20
+  },
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 20
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "any"
+  ],
+  "effects": {
+    "minecraft:damage_immunity": [
+      {
+        "requirements": [
+          {
+            "condition": "minecraft:damage_source_properties",
+            "predicate": {
+              "tags": [
+                {
+                  "id": "cartographer_core:mob_only_damage",
+                  "expected": true
+                }
+              ]
+            }
+          }
+        ],
+        "effect": {}
+      }
+    ]
+  }
+}

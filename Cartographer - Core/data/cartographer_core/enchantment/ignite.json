@@ -1,0 +1,43 @@
+{
+  "description": {
+    "text": ""
+  },
+  "supported_items": [],
+  "weight": 1,
+  "max_level": 1,
+  "max_cost": {
+    "base": 60,
+    "per_level_above_first": 20
+  },
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 20
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "any"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:run_function",
+              "function": "cartographer_core:handlers/ignite/remove"
+            },
+            {
+              "type": "minecraft:ignite",
+              "duration": {
+                "type": "minecraft:linear",
+                "base": 1,
+                "per_level_above_first": 1
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

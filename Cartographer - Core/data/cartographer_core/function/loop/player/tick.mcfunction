@@ -22,7 +22,8 @@ execute if score @s ca.opportunist_timer matches 1.. run scoreboard players remo
 execute if score @s ca.glass_cdl matches 1.. run scoreboard players remove @s ca.glass_cdl 1
 
 execute if entity @s[tag=!ca.init] run function cartographer_core:load/init_player
-
+execute if score @s ca.left_game matches 1.. unless items entity @s armor.body * run function cartographer_core:handlers/body_armor_handler/add_default
+execute if score @s ca.left_game matches 1.. run scoreboard players set @s ca.left_game 0
 
 #Run SLOT CHANGE HERE
 function cartographer_core:handlers/inv_or_slot_change/slot_change
