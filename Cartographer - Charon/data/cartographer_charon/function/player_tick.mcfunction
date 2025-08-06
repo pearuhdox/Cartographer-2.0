@@ -1,9 +1,10 @@
 execute if block ~ ~-0.6 ~ #cartographer_charon:unsafe_home_block run scoreboard players set @s dt.home_cooldown 4
-execute unless block ~ ~-0.6 ~ #cartographer_charon:unsafe_home_block if block ~ ~ ~ #cartographer_core:can_raycast unless block ~ ~ ~ lava unless score @s dt.death matches 1.. if score @s dt.respawn matches 3.. unless score @s dt.home_cooldown matches 1.. run function cartographer_charon:void/home_set
+execute unless block ~ ~-0.6 ~ #cartographer_charon:unsafe_home_block if block ~ ~ ~ #cartographer_core:can_raycast unless block ~ ~ ~ lava unless score @s dt.death matches 1.. if score @s dt.respawn matches 2.. unless score @s dt.home_cooldown matches 1.. run function cartographer_charon:void/home_set
 
 execute unless score $death_disabled charon.gmr matches 1.. if score @s[tag=!watched_die_already] dt.death matches 1.. run function cartographer_charon:watches_you_die
 
-execute unless score $death_disabled charon.gmr matches 1.. if score @s dt.death matches 1.. if score @s dt.respawn matches 3 run function cartographer_charon:respawn
+#Moved this functionality to the Respawn Handler which is called by Core
+#execute unless score $death_disabled charon.gmr matches 1.. if score @s dt.death matches 1.. if score @s dt.respawn matches 2 run function cartographer_charon:respawn
 
 
 execute if score $death_disabled charon.gmr matches 1.. if score @s dt.death matches 1.. run scoreboard players set @s dt.death 0
