@@ -22,7 +22,7 @@ execute if score $custom_ranged_damage ca.attr_var matches 1.. run function cart
 execute if score @s ca.attr_ranged_damage_value matches -1999999.. if entity @s[type=trident] run function cartographer_custom_attributes:custom_attributes/effects/ranged_damage/trident/convert_start
 execute if score @s ca.attr_ranged_damage_value matches -1999999.. if entity @s[type=trident] run function cartographer_custom_attributes:custom_attributes/effects/ranged_damage/trident/convert with storage cartographer_custom_attributes:trident
 
-execute unless entity @s[tag=ca.no_attr_calc] if score $custom_ranged_velocity ca.attr_var matches 1.. run function cartographer_custom_attributes:custom_attributes/effects/ranged_velocity/start
+execute unless entity @s[tag=ca.no_attr_calc] unless entity @s[tag=ca.multishot_spawned] if score $custom_ranged_velocity ca.attr_var matches 1.. run function cartographer_custom_attributes:custom_attributes/effects/ranged_velocity/start
 
 #Gain all Life Drain, Precise Hit, Chain Hit, and Restrike Hit data here
 execute unless entity @s[tag=ca.no_attr_calc] if score $life_drain ca.attr_var matches 1.. run function cartographer_custom_attributes:custom_attributes/effects/life_drain/ranged

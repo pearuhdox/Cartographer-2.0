@@ -1,3 +1,5 @@
+say speed up arrows
+
 execute on origin if score @s ca.attr_ranged_velocity_total matches -1999999.. run scoreboard players operation $input_speed ca.attr_ranged_velocity_total = @s ca.attr_ranged_velocity_total
 
 execute if entity @s[type=#bb:arrow] if score $input_speed ca.attr_ranged_velocity_total matches 2500.. run data modify entity @s NoGravity set value 1b
