@@ -1,6 +1,6 @@
 execute store result score $silent ca.ench_value run data get entity @s Silent
 execute unless score $silent ca.ench_value matches 1.. run data modify entity @s Silent set value 1b
-$damage @s $(damage) cartographer_custom_enchantments:enchant_damage_bypass
+$damage @s $(damage) cartographer_custom_enchantments:enchant_damage_bypass by $(owner)
 execute unless score $silent ca.ench_value matches 1.. run data modify entity @s Silent set value 0b
 
 execute at @s positioned ~ ~1 ~ unless entity @s[tag=ca.did_ench_particles] run particle minecraft:enchanted_hit ~ ~ ~ 0.25 0.35 0.25 0.35 35 normal
