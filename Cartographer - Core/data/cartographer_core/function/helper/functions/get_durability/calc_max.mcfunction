@@ -47,32 +47,32 @@ execute unless score $durability ca.var matches 1.. if data storage cartographer
 execute unless score $durability ca.var matches 1.. if data storage cartographer_core:helper get_durability{id:"minecraft:leather_helmet"} run scoreboard players set $durability ca.var 55
 execute unless score $durability ca.var matches 1.. if data storage cartographer_core:helper get_durability{id:"minecraft:leather_chestplate"} run scoreboard players set $durability ca.var 80
 execute unless score $durability ca.var matches 1.. if data storage cartographer_core:helper get_durability{id:"minecraft:leather_leggings"} run scoreboard players set $durability ca.var 75
-execute unless score $durability ca.var matches 1.. if data storage cartographer_core:helper get_durability{id:"minecraft:leather_feet"} run scoreboard players set $durability ca.var 65
+execute unless score $durability ca.var matches 1.. if data storage cartographer_core:helper get_durability{id:"minecraft:leather_boots"} run scoreboard players set $durability ca.var 65
 
 execute unless score $durability ca.var matches 1.. if data storage cartographer_core:helper get_durability{id:"minecraft:golden_helmet"} run scoreboard players set $durability ca.var 77
 execute unless score $durability ca.var matches 1.. if data storage cartographer_core:helper get_durability{id:"minecraft:golden_chestplate"} run scoreboard players set $durability ca.var 112
 execute unless score $durability ca.var matches 1.. if data storage cartographer_core:helper get_durability{id:"minecraft:golden_leggings"} run scoreboard players set $durability ca.var 105
-execute unless score $durability ca.var matches 1.. if data storage cartographer_core:helper get_durability{id:"minecraft:golden_feet"} run scoreboard players set $durability ca.var 91
+execute unless score $durability ca.var matches 1.. if data storage cartographer_core:helper get_durability{id:"minecraft:golden_boots"} run scoreboard players set $durability ca.var 91
 
 execute unless score $durability ca.var matches 1.. if data storage cartographer_core:helper get_durability{id:"minecraft:chainmail_helmet"} run scoreboard players set $durability ca.var 165
 execute unless score $durability ca.var matches 1.. if data storage cartographer_core:helper get_durability{id:"minecraft:chainmail_chestplate"} run scoreboard players set $durability ca.var 240
 execute unless score $durability ca.var matches 1.. if data storage cartographer_core:helper get_durability{id:"minecraft:chainmail_leggings"} run scoreboard players set $durability ca.var 225
-execute unless score $durability ca.var matches 1.. if data storage cartographer_core:helper get_durability{id:"minecraft:chainmail_feet"} run scoreboard players set $durability ca.var 195
+execute unless score $durability ca.var matches 1.. if data storage cartographer_core:helper get_durability{id:"minecraft:chainmail_boots"} run scoreboard players set $durability ca.var 195
 
 execute unless score $durability ca.var matches 1.. if data storage cartographer_core:helper get_durability{id:"minecraft:iron_helmet"} run scoreboard players set $durability ca.var 165
 execute unless score $durability ca.var matches 1.. if data storage cartographer_core:helper get_durability{id:"minecraft:iron_chestplate"} run scoreboard players set $durability ca.var 240
 execute unless score $durability ca.var matches 1.. if data storage cartographer_core:helper get_durability{id:"minecraft:iron_leggings"} run scoreboard players set $durability ca.var 225
-execute unless score $durability ca.var matches 1.. if data storage cartographer_core:helper get_durability{id:"minecraft:iron_feet"} run scoreboard players set $durability ca.var 195
+execute unless score $durability ca.var matches 1.. if data storage cartographer_core:helper get_durability{id:"minecraft:iron_boots"} run scoreboard players set $durability ca.var 195
 
 execute unless score $durability ca.var matches 1.. if data storage cartographer_core:helper get_durability{id:"minecraft:diamond_helmet"} run scoreboard players set $durability ca.var 363
 execute unless score $durability ca.var matches 1.. if data storage cartographer_core:helper get_durability{id:"minecraft:diamond_chestplate"} run scoreboard players set $durability ca.var 528
 execute unless score $durability ca.var matches 1.. if data storage cartographer_core:helper get_durability{id:"minecraft:diamond_leggings"} run scoreboard players set $durability ca.var 495
-execute unless score $durability ca.var matches 1.. if data storage cartographer_core:helper get_durability{id:"minecraft:diamond_feet"} run scoreboard players set $durability ca.var 429
+execute unless score $durability ca.var matches 1.. if data storage cartographer_core:helper get_durability{id:"minecraft:diamond_boots"} run scoreboard players set $durability ca.var 429
 
 execute unless score $durability ca.var matches 1.. if data storage cartographer_core:helper get_durability{id:"minecraft:netherite_helmet"} run scoreboard players set $durability ca.var 407
 execute unless score $durability ca.var matches 1.. if data storage cartographer_core:helper get_durability{id:"minecraft:netherite_chestplate"} run scoreboard players set $durability ca.var 592
 execute unless score $durability ca.var matches 1.. if data storage cartographer_core:helper get_durability{id:"minecraft:netherite_leggings"} run scoreboard players set $durability ca.var 555
-execute unless score $durability ca.var matches 1.. if data storage cartographer_core:helper get_durability{id:"minecraft:netherite_feet"} run scoreboard players set $durability ca.var 481
+execute unless score $durability ca.var matches 1.. if data storage cartographer_core:helper get_durability{id:"minecraft:netherite_boots"} run scoreboard players set $durability ca.var 481
 
 
 
