@@ -6,6 +6,9 @@ execute if entity @s[advancements={entityid:player_hurt_entity={is_projectile=tr
 execute if score $attack_type ca.ench_value matches 1 run function cartographer_custom_enchantments:enchantment/helper/weapon/get_ench_values
 function cartographer_custom_enchantments:enchantment/helper/weapon/get_ench_values_passive
 
+execute if score $attack_type ca.ench_value matches 1..2 run data modify storage gu:main out set value "-"
+execute if score $attack_type ca.ench_value matches 1..2 as @s run function gu:generate
+execute if score $attack_type ca.ench_value matches 1..2 run data modify storage cartographer:custom_enchantments owner set from storage gu:main out
 
 execute if score $attack_type ca.ench_value matches 2 run function cartographer_custom_enchantments:system/projectile_find/owner_uuid
 execute if score $attack_type ca.ench_value matches 2 at @n[tag=ca.projectile_find_loc] run function cartographer_custom_enchantments:system/projectile_find/scan

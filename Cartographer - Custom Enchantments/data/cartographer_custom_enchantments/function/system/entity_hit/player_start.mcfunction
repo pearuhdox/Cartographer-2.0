@@ -51,6 +51,10 @@ execute if score $attack_type ca.ench_value matches 1 on attacker run function c
 execute if score $attack_type ca.ench_value matches 2 on attacker run function cartographer_custom_enchantments:system/projectile_find/owner_uuid
 execute if score $attack_type ca.ench_value matches 2 at @s run function cartographer_custom_enchantments:system/projectile_find/scan
 
+execute if score $attack_type ca.ench_value matches 1..2 run data modify storage gu:main out set value "-"
+execute if score $attack_type ca.ench_value matches 1..2 on attacker as @s run function gu:generate
+execute if score $attack_type ca.ench_value matches 1..2 run data modify storage cartographer:custom_enchantments owner set from storage gu:main out
+
 #Do Weapon Damage Enchantments
 execute if score $attack_type ca.ench_value matches 1.. if score $hex_eater ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/damage/general/hex_eater/hit
 execute if score $attack_type ca.ench_value matches 1.. if score $chaotic ca.ench_value matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/damage/general/chaotic/hit
