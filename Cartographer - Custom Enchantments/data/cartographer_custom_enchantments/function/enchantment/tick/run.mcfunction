@@ -98,7 +98,7 @@ execute if score @s ca.ench_gluttony_lvl matches 1.. run function cartographer_c
 #execute if score @s ca.ench_heaviness_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/curse/heaviness/run
 #execute if score @s ca.ench_jamming_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/curse/jamming/run
 
-execute if score @s ca.ench_infinity_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/other/infinity/consumable/run
+#execute if score @s ca.ench_infinity_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/other/infinity/consumable/run
 
 #execute if score @s ca.ench_thorns_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/vanilla/thorns/run
 #execute if score @s ca.ench_quick_charge_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/vanilla/quick_charge/run

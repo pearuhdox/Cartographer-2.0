@@ -32,9 +32,8 @@ scoreboard players remove $use_count ca.ench_var 1
 execute store result storage cartographer_custom_enchantments:consumable data.item.components.minecraft:custom_data.use_count int 1 run scoreboard players get $use_count ca.ench_var
 
 #Set Use Cooldown Parameter
-execute store result score $use_cdl ca.ench_var run data get storage cartographer_custom_enchantments:consumable data.item.components.minecraft:custom_data.use_cooldown 100
-data modify storage cartographer_custom_enchantments:consumable data.use_cooldown set value {seconds:0.2,cooldown_group:"cartographer_repeating"}
-execute if score $use_cdl ca.ench_var matches 1.. store result storage cartographer_custom_enchantments:consumable data.use_cooldown.seconds double 0.01 run scoreboard players get $use_cdl ca.ench_var
+execute if data storage cartographer_custom_enchantments:consumable data.item.components.minecraft:use_cooldown run data modify storage cartographer_custom_enchantments:consumable data.use_cooldown set from storage cartographer_custom_enchantments:consumable data.item.components.minecraft:use_cooldown
+execute unless data storage cartographer_custom_enchantments:consumable data.item.components.minecraft:use_cooldown run data modify storage cartographer_custom_enchantments:consumable data.use_cooldown set value {seconds:0.2,cooldown_group:"cartographer_consumable"}
 
 #Set Use Remainder Parameter - If there are uses remaining
 execute if score $use_count ca.ench_var matches 1.. run data modify storage cartographer_custom_enchantments:consumable data.use_remainder set from storage cartographer_custom_enchantments:consumable data.item
