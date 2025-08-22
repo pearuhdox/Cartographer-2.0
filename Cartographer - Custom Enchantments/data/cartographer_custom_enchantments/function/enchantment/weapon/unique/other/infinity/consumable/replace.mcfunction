@@ -14,9 +14,9 @@ data modify storage cartographer_custom_enchantments:infinity data.item.componen
 data modify storage cartographer_custom_enchantments:infinity data.item.components.minecraft:intangible_projectile set value {}
 
 #Set Use Cooldown Parameter
-execute store result score $use_cdl ca.ench_var run data get storage cartographer_custom_enchantments:infinity data.item.components.minecraft:custom_data.use_cooldown 100
-data modify storage cartographer_custom_enchantments:infinity data.use_cooldown set value {seconds:0.2,cooldown_group:"cartographer_infinity"}
-execute if score $use_cdl ca.ench_var matches 1.. store result storage cartographer_custom_enchantments:infinity data.use_cooldown.seconds double 0.01 run scoreboard players get $use_cdl ca.ench_var
+execute if data storage cartographer_custom_enchantments:infinity data.item.components.minecraft:use_cooldown run data modify storage cartographer_custom_enchantments:infinity data.use_cooldown set from storage cartographer_custom_enchantments:infinity data.item.components.minecraft:use_cooldown
+execute unless data storage cartographer_custom_enchantments:infinity data.item.components.minecraft:use_cooldown run data modify storage cartographer_custom_enchantments:infinity data.use_cooldown set value {seconds:0.2,cooldown_group:"cartographer_infinity"}
+
 
 #Set Use Remainder Parameter
 data modify storage cartographer_custom_enchantments:infinity data.use_remainder set from storage cartographer_custom_enchantments:infinity data.item
