@@ -1,0 +1,1 @@
+execute if entity @s[type=item,tag=ca.check_death_effects] if data entity @s Item.components.minecraft:enchantments.cartographer_ender_pouch:ender_pouch run function cartographer_ender_pouch:death_check/soulbound/setup_event

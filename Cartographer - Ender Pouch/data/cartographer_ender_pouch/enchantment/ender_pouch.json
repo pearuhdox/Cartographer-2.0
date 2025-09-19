@@ -1,0 +1,31 @@
+{
+    "description": {
+      "text": "Ender Pouch"
+    },
+    "supported_items": "#minecraft:bundles",
+    "weight": 1,
+    "max_level": 1,
+    "max_cost": {
+      "base": 60,
+      "per_level_above_first": 20
+    },
+    "min_cost": {
+      "base": 10,
+      "per_level_above_first": 20
+    },
+    "anvil_cost": 1,
+    "slots": [
+      "mainhand"
+    ],
+    "effects": {
+      "minecraft:hit_block": [
+        {
+          "effect": {
+            "type": "minecraft:run_function",
+            "function": "cartographer_ender_pouch:ender/release"
+          }
+        }
+      ]
+    }
+  }
+  

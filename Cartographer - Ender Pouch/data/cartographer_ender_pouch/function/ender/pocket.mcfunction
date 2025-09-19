@@ -4,10 +4,15 @@ data modify storage cartographer:ender_pouch bag set from entity @s Inventory[{i
 execute if data entity @s equipment.offhand.components.minecraft:custom_data.ender_pouch run data modify storage cartographer:ender_pouch bag append from entity @s equipment.offhand
 execute if data entity @s equipment.offhand.components.minecraft:custom_data.ender_pouch run data modify storage cartographer:ender_pouch bag[-1].Slot set value -106b
 
+data modify storage cartographer:ender_pouch player set value "-"
+data modify storage gu:main out set value "-"
+function gu:generate
+data modify storage cartographer:ender_pouch player set from storage gu:main out
 
 scoreboard players set $pocket_success ca.pouch_var 0
 scoreboard players set $pocket_block ca.pouch_var 0
 
+execute if data storage cartographer:ender_pouch bag.components."minecraft:bundle_contents"[0] run function cartographer_ender_pouch:ender/start_iterate with storage cartographer:ender_pouch
 execute if data storage cartographer:ender_pouch bag.components."minecraft:bundle_contents"[0] run function cartographer_ender_pouch:ender/iterate
 
 execute if score $pocket_success ca.pouch_var matches 1.. run playsound minecraft:block.ender_chest.close player @s ~ ~ ~ 0.35 1.75

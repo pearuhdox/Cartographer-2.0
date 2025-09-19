@@ -13,7 +13,7 @@
       "id": "minecraft:black_bundle",
       "components": {
         "minecraft:enchantments": {
-            "cartographer_custom_enchantments:passive/soulbound": 1
+            "cartographer_ender_pouch:ender_pouch": 1
           },
         "minecraft:tooltip_display": {
             "hidden_components": [
@@ -21,12 +21,9 @@
             ]
           },
         "minecraft:custom_data": "{ender_pouch:1b,NoSteal:1b}",
-        "minecraft:custom_name": "{\"bold\":true,\"color\":\"#18A387\",\"italic\":false,\"text\":\"Ender Pouch\"}",
+        "minecraft:custom_name": {"bold":true,"color":"#18A387","italic":false,"translate":"cartographer.ender_pouch.name","fallback":"Ender Pouch"},
         "minecraft:lore": [
-          "{\"color\":\"gray\",\"fallback\":\"Items placed in this bundle are\",\"italic\":false,\"translate\":\"cartographer.ender_pouch.desc.1\"}",
-          "{\"color\":\"gray\",\"fallback\":\"saved in a pocket dimension.\",\"italic\":false,\"translate\":\"cartographer.ender_pouch.desc.2\"}",
-          "[{\"color\":\"gray\",\"fallback\":\"When you\",\"italic\":false,\"translate\":\"cartographer.ender_pouch.desc.3\"},{\"color\":\"white\",\"italic\":false,\"text\":\" [\"},{\"color\":\"aqua\",\"italic\":false,\"keybind\":\"key.use\"},{\"color\":\"white\",\"italic\":false,\"text\":\"] \"},{\"fallback\":\"an Ender Chest,\",\"translate\":\"cartographer.ender_pouch.desc.4\"}]",
-          "{\"color\":\"gray\",\"fallback\":\"all items stored away are retrieved.\",\"italic\":false,\"translate\":\"cartographer.ender_pouch.desc.5\"}"
+          {"color":"gray","fallback":"Items placed in this bundle are","italic":false,"translate":"cartographer.ender_pouch.desc.1","with":[[{"color":"white","italic":false,"text":"["},{"color":"aqua","italic":false,"keybind":"key.attack"},{"color":"white","italic":false,"text":"]"}]]},{"color":"gray","fallback":"saved in a pocket dimension.","italic":false,"translate":"cartographer.ender_pouch.desc.2","with":[[{"color":"white","italic":false,"text":"["},{"color":"aqua","italic":false,"keybind":"key.attack"},{"color":"white","italic":false,"text":"]"}]]},{"color":"gray","italic":false,"fallback":"When you %s an Ender Chest","translate":"cartographer.ender_pouch.desc.3","with":[[{"color":"white","italic":false,"text":"["},{"color":"aqua","italic":false,"keybind":"key.attack"},{"color":"white","italic":false,"text":"]"}]]},{"color":"gray","fallback":"while holding this item, release an","italic":false,"translate":"cartographer.ender_pouch.desc.4","with":[[{"color":"white","italic":false,"text":"["},{"color":"aqua","italic":false,"keybind":"key.attack"},{"color":"white","italic":false,"text":"]"}]]},{"color":"gray","fallback":"item stack from the pocket dimension.","italic":false,"translate":"cartographer.ender_pouch.desc.5","with":[[{"color":"white","italic":false,"text":"["},{"color":"aqua","italic":false,"keybind":"key.attack"},{"color":"white","italic":false,"text":"]"}]]},{"color":"gray","fallback":"(If sneaking, release all items instead.)","italic":false,"translate":"cartographer.ender_pouch.desc.6","with":[[{"color":"white","italic":false,"text":"["},{"color":"aqua","italic":false,"keybind":"key.attack"},{"color":"white","italic":false,"text":"]"}]]}
         ]
       },
       "count": 1
