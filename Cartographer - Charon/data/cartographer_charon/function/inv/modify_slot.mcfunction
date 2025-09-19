@@ -13,5 +13,3 @@ execute if score $tax_retain_items charon.gmr matches 1 if score $vanish_flag ta
 scoreboard players set $vanish_flag taxes.var 0
 
 scoreboard players operation $max_rand_interval dt.var += $scale_coeff charon.gmr 
-
-function cartographer_charon:inv/choose_rand_interval

@@ -4,4 +4,4 @@ ride @e[type=marker,tag=ca.new,tag=ca.creeper_checker,limit=1,sort=nearest] moun
 
 execute on passengers if entity @s[type=marker,tag=ca.new,tag=ca.creeper_checker] run tag @s remove ca.new
 
-scoreboard players set $creeper_check ca.systems 20
+scoreboard players add $creeper_check ca.systems 20

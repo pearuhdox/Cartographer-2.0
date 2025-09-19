@@ -1,3 +1,6 @@
+#Get Random Number
+function cartographer_charon:inv/choose_rand_interval
+
 #writing to temp
 data modify storage cartographer_charon:player temp set value {}
 data modify storage cartographer_charon:player temp set from storage inv:main inv.all[0]
