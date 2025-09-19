@@ -5,9 +5,7 @@ execute unless score $death_disabled charon.gmr matches 1.. if score @s[tag=!wat
 
 #Moved this functionality to the Respawn Handler which is called by Core
 #execute unless score $death_disabled charon.gmr matches 1.. if score @s dt.death matches 1.. if score @s dt.respawn matches 2 run function cartographer_charon:respawn
-
-
-execute if score $death_disabled charon.gmr matches 1.. if score @s dt.death matches 1.. run scoreboard players set @s dt.death 0
+#execute if score $death_disabled charon.gmr matches 1.. if score @s dt.death matches 1.. run scoreboard players set @s dt.death 0
 
 
 scoreboard players set $check_inv_bundle dt.var 0

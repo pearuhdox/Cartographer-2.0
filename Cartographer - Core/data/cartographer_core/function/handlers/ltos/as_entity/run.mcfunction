@@ -21,9 +21,9 @@ $execute if score $custom_statuses ca.installed matches 1.. as $(killer) at @s r
 $execute if score $custom_statuses ca.installed matches 1.. as $(killed) at @s as @e[type=!player,tag=ca.witnessing,distance=..24] at @s run function cartographer_core:handlers/ltos/as_entity/custom_statuses_enchants
 
 
-#Custom Enchantments that run when the user dies
-$execute if score $custom_enchantments ca.installed matches 1.. as $(killed) if entity @s[type=player] run function cartographer_custom_enchantments:enchantment/helper/death_check
-$execute if score $custom_enchantments ca.installed matches 1.. as $(killed) unless entity @s[type=player] unless entity @s[tag=ca.no_death_items] run function cartographer_custom_enchantments:enchantment/helper/death_check
+#Item Enchantments that run when the user dies
+$execute as $(killed) if entity @s[type=player] run function #minecraft:cartographer/api/handlers/death_check/dies_positional
+$execute as $(killed) unless entity @s[type=player] unless entity @s[tag=ca.no_death_items] run function #minecraft:cartographer/api/handlers/death_check/dies_positional
 
 #Custom Enchantment Pack Kill Effects
 $execute if score $custom_enchantments ca.installed matches 1.. if data storage ltos:main data.is_player_attack as $(killer) at @s run function cartographer_custom_enchantments:enchantment/helper/weapon/reset_ench_values
