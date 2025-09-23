@@ -7,8 +7,8 @@ execute if entity @s[advancements={entityid:player_hurt_entity={is_projectile=fa
 
 
 execute if entity @s[advancements={entityid:player_hurt_entity={is_projectile=true}}] if score $life_drain_chance ca.attr_apply_var matches -1999999.. run function cartographer_custom_attributes:custom_attributes/effects/life_drain/start {proc_coeff:"50"}
-execute if predicate bb:cant_crit if entity @s[advancements={entityid:player_hurt_entity={is_player_attack=true,is_projectile=false}}] if score $life_drain_chance ca.attr_apply_var matches -1999999.. run function cartographer_custom_attributes:custom_attributes/effects/life_drain/start {proc_coeff:"75"}
-execute unless predicate bb:cant_crit if entity @s[advancements={entityid:player_hurt_entity={is_player_attack=true,is_projectile=false}}] if score $life_drain_chance ca.attr_apply_var matches -1999999.. run function cartographer_custom_attributes:custom_attributes/effects/life_drain/start {proc_coeff:"125"}
+execute if predicate cartographer_core:player/cant_crit if entity @s[advancements={entityid:player_hurt_entity={is_player_attack=true,is_projectile=false}}] if score $life_drain_chance ca.attr_apply_var matches -1999999.. run function cartographer_custom_attributes:custom_attributes/effects/life_drain/start {proc_coeff:"75"}
+execute unless predicate cartographer_core:player/cant_crit if entity @s[advancements={entityid:player_hurt_entity={is_player_attack=true,is_projectile=false}}] if score $life_drain_chance ca.attr_apply_var matches -1999999.. run function cartographer_custom_attributes:custom_attributes/effects/life_drain/start {proc_coeff:"125"}
 execute unless entity @s[advancements={entityid:player_hurt_entity={is_player_attack=true,is_projectile=false}}] unless entity @s[advancements={entityid:player_hurt_entity={is_projectile=true}}] if score $life_drain_chance ca.attr_apply_var matches -1999999.. run function cartographer_custom_attributes:custom_attributes/effects/life_drain/start {proc_coeff:"5"}
 
 scoreboard players set $do_lucky_hit ca.lucky_hit_var 0

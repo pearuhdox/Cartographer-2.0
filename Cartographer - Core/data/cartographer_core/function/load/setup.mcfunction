@@ -62,6 +62,9 @@ scoreboard objectives add ca.telegraph_data dummy
 
 scoreboard objectives add ca.entity_purge_var dummy
 
+scoreboard objectives add ca.swim_is_sprinting dummy
+scoreboard objectives add ca.swim_hit_is_crit dummy
+
 scoreboard players set $charon ca.installed 0
 scoreboard players set $custom_durability ca.installed 0
 scoreboard players set $custom_enchantments ca.installed 0
@@ -424,3 +427,5 @@ schedule function cartographer_core:load/make_dev_box 7t
 #Schedule core clocks.
 
 setblock 4206905 3 4206905 oak_sign replace
+
+function cartographer_core:load/data_registry
