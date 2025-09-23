@@ -1,0 +1,36 @@
+{
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "ca.swim_hit_is_crit": {
+                  "min": 1
+                }
+              }
+            },
+            {
+              "condition": "minecraft:all_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "flags": {
+                      "is_swimming": false
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "fluid": {
+                      "fluids": "#minecraft:water"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }

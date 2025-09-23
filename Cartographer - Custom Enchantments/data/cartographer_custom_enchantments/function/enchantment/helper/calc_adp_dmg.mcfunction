@@ -3,8 +3,8 @@
 
 
 execute store result score $melee_damage ca.ench_var run attribute @s attack_damage get 100
-execute unless predicate bb:cant_crit run scoreboard players operation $melee_damage ca.ench_var *= $150 ca.CONSTANT
-execute unless predicate bb:cant_crit run scoreboard players operation $melee_damage ca.ench_var /= $100 ca.CONSTANT
+execute unless predicate cartographer_core:player/cant_crit run scoreboard players operation $melee_damage ca.ench_var *= $150 ca.CONSTANT
+execute unless predicate cartographer_core:player/cant_crit run scoreboard players operation $melee_damage ca.ench_var /= $100 ca.CONSTANT
 
 
 execute store result score $ranged_damage ca.ench_var run scoreboard players get @s ca.attr_ranged_damage_value

@@ -5,8 +5,8 @@ execute unless entity @s[type=player] run scoreboard players add @s ca.momentum_
 execute if entity @s[type=player] if score $attack_type ca.ench_value matches 0 run scoreboard players add @s ca.momentum_stack 50
 
 execute if entity @s[type=player] if score $attack_type ca.ench_value matches 1 store result score $dmg ca.momentum_stack run attribute @s attack_damage get 1000
-execute if entity @s[type=player] if score $attack_type ca.ench_value matches 1 unless predicate bb:cant_crit run scoreboard players operation $dmg ca.momentum_stack *= $150 ca.CONSTANT
-execute if entity @s[type=player] if score $attack_type ca.ench_value matches 1 unless predicate bb:cant_crit run scoreboard players operation $dmg ca.momentum_stack /= $100 ca.CONSTANT
+execute if entity @s[type=player] if score $attack_type ca.ench_value matches 1 unless predicate cartographer_core:player/cant_crit run scoreboard players operation $dmg ca.momentum_stack *= $150 ca.CONSTANT
+execute if entity @s[type=player] if score $attack_type ca.ench_value matches 1 unless predicate cartographer_core:player/cant_crit run scoreboard players operation $dmg ca.momentum_stack /= $100 ca.CONSTANT
 execute if entity @s[type=player] if score $attack_type ca.ench_value matches 1 store result score $spd ca.momentum_stack run attribute @s attack_speed get 100
 execute if entity @s[type=player] if score $attack_type ca.ench_value matches 1 run scoreboard players operation $dmg ca.momentum_stack /= $spd ca.momentum_stack
 execute if entity @s[type=player] if score $attack_type ca.ench_value matches 1 run scoreboard players add $dmg ca.momentum_stack 15

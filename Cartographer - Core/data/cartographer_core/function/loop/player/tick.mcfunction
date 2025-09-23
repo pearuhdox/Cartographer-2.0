@@ -2,6 +2,10 @@
 function cartographer_core:systems/quick_drop/shulker/tick
 #End of Quick Drop Shulker Box System
 
+#Set player gamerules for checks
+scoreboard players operation @s ca.swim_hit_is_crit = $swim_hit_is_crit ca.gamerule
+scoreboard players operation @s ca.swim_is_sprinting = $swim_is_sprinting ca.gamerule
+
 
 #Toggleable Options for Players
 scoreboard players enable @s disable_other_skins

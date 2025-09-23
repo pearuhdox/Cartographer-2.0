@@ -10,8 +10,8 @@ execute if entity @s[advancements={entityid:entity_hurt_player={panic_causes=tru
 execute if entity @s[advancements={entityid:entity_hurt_player={panic_causes=true}}] if score $damage ca.gravity_var matches 1.. run function cartographer_custom_enchantments:enchantment/passive/gravity/hit/victim
 
 
-execute if score $proc ca.ench_starfall_lvl matches 100.. unless predicate bb:cant_crit if entity @s[advancements={entityid:entity_hurt_player={panic_causes=true,is_projectile=false}}] run scoreboard players set $proc ca.ench_starfall_lvl 1
-execute if score $proc ca.ench_starfall_lvl matches 100.. if predicate bb:cant_crit if entity @s[advancements={entityid:entity_hurt_player={panic_causes=true,is_projectile=false}}] run scoreboard players set $proc ca.ench_starfall_lvl 2
+execute if score $proc ca.ench_starfall_lvl matches 100.. unless predicate cartographer_core:player/cant_crit if entity @s[advancements={entityid:entity_hurt_player={panic_causes=true,is_projectile=false}}] run scoreboard players set $proc ca.ench_starfall_lvl 1
+execute if score $proc ca.ench_starfall_lvl matches 100.. if predicate cartographer_core:player/cant_crit if entity @s[advancements={entityid:entity_hurt_player={panic_causes=true,is_projectile=false}}] run scoreboard players set $proc ca.ench_starfall_lvl 2
 execute if score $proc ca.ench_starfall_lvl matches 100.. if entity @s[advancements={entityid:entity_hurt_player={is_projectile=true}}] run scoreboard players set $proc ca.ench_starfall_lvl 3
 execute if score $proc ca.ench_starfall_lvl matches 100.. if entity @s[advancements={entityid:entity_hurt_player={panic_causes=false,is_projectile=false}}] run scoreboard players set $proc ca.ench_starfall_lvl 4
 
@@ -21,8 +21,8 @@ execute if score $proc ca.ench_starfall_lvl matches 3 at @s run function cartogr
 execute if score $proc ca.ench_starfall_lvl matches 4 at @s run function cartographer_custom_enchantments:enchantment/passive/starfall/damage_event {proc_chance:5}
 
 
-execute if score $proc ca.ench_orbit_lvl matches 100.. unless predicate bb:cant_crit if entity @s[advancements={entityid:entity_hurt_player={panic_causes=true,is_projectile=false}}] run scoreboard players set $proc ca.ench_orbit_lvl 1
-execute if score $proc ca.ench_orbit_lvl matches 100.. if predicate bb:cant_crit if entity @s[advancements={entityid:entity_hurt_player={panic_causes=true,is_projectile=false}}] run scoreboard players set $proc ca.ench_orbit_lvl 2
+execute if score $proc ca.ench_orbit_lvl matches 100.. unless predicate cartographer_core:player/cant_crit if entity @s[advancements={entityid:entity_hurt_player={panic_causes=true,is_projectile=false}}] run scoreboard players set $proc ca.ench_orbit_lvl 1
+execute if score $proc ca.ench_orbit_lvl matches 100.. if predicate cartographer_core:player/cant_crit if entity @s[advancements={entityid:entity_hurt_player={panic_causes=true,is_projectile=false}}] run scoreboard players set $proc ca.ench_orbit_lvl 2
 execute if score $proc ca.ench_orbit_lvl matches 100.. if entity @s[advancements={entityid:entity_hurt_player={is_projectile=true}}] run scoreboard players set $proc ca.ench_orbit_lvl 3
 execute if score $proc ca.ench_orbit_lvl matches 100.. if entity @s[advancements={entityid:entity_hurt_player={panic_causes=false,is_projectile=false}}] run scoreboard players set $proc ca.ench_orbit_lvl 4
 
