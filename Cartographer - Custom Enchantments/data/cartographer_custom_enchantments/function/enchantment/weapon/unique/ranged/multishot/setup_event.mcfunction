@@ -5,8 +5,6 @@ scoreboard players operation $multishot_rot ca.ench_multishot_lvl *= $25 ca.CONS
 
 execute store result storage cartographer:custom_enchantments rotation double 0.01 run scoreboard players get $multishot_rot ca.ench_multishot_lvl
 
-say setup multishot
-
 execute if entity @s[type=arrow] run data modify storage cartographer:custom_enchantments projectile_type set value "minecraft:arrow"
 execute if entity @s[type=spectral_arrow] run data modify storage cartographer:custom_enchantments projectile_type set value "minecraft:spectral_arrow"
 execute if entity @s[type=snowball] run data modify storage cartographer:custom_enchantments projectile_type set value "minecraft:snowball"
