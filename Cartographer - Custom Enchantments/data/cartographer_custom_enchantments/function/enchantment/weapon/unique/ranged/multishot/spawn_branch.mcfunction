@@ -2,6 +2,7 @@ data modify entity @s {} merge from storage cartographer:custom_enchantments ful
 
 #data modify entity @s Owner set from storage cartographer:custom_enchantments uuid
 
+
 #get x vector
 scoreboard players operation $math.sin.x bs.in = $multishot_yaw ca.ench_multishot_lvl
 function #bs.math:sin
