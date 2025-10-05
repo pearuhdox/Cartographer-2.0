@@ -1,1 +1,0 @@
-tellraw @s [{"text":"[➤] ","color":"#FFF4D9","bold":true,"italic":false},{"bold":false,"text":"Charon","color":"#534ADE","italic":false,"hover_event":{"action":"show_text","value":[{"text":"View settings for Charon.","color":"#FFF4D9","italic":true}]},"click_event":{"action":"run_command","command":"/function cartographer_charon:options/main"}}]

@@ -68,19 +68,21 @@ function cartographer_rat:loop/player/tick
 
 #Enable triggers
 scoreboard players enable @s menu
+scoreboard players enable @s ca.options_trig
 execute if entity @s[gamemode=creative] run scoreboard players enable @s give_dev_box
 scoreboard players enable @s bug
 scoreboard players enable @s ca.credits_menu
 
 #Test if triggers are activated.
-execute if score @s menu matches 1.. run function cartographer_core:load/reload/full
 execute if score @s give_dev_box matches 1.. run function cartographer_core:give_dev_box
 
 execute if score @s bug matches 1.. run function cartographer_core:bug_report
 
 execute if score @s ca.credits_menu matches 1.. run function cartographer_core:load/reload/credits/trigger_link
+execute if score @s menu matches 1.. run function cartographer_core:load/reload/trigger_link
 
 execute if score @s ca.options_trig matches 1.. run function cartographer_core:options/player/trigger
+execute if score @s ca.options_trig matches ..-1 run function cartographer_core:options/player/trigger
 
 #Check if players place item frames
 execute if score @s ca.place_frame matches 1.. run function cartographer_core:handlers/place/master

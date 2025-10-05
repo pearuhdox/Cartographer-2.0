@@ -415,7 +415,7 @@ scoreboard objectives add ca.use_grind minecraft.custom:minecraft.interact_with_
 function cartographer_core:load/integration/active/clear
 
 #Schedule the loading message.
-execute unless score $gl_reload_msg ca.gamerule matches 100 as @a at @s run playsound minecraft:ui.cartography_table.take_result master @s ~ ~ ~ 1 0.75
+execute unless score $gl_reload_msg ca.gamerule matches 1.. as @a at @s run playsound minecraft:ui.cartography_table.take_result master @s ~ ~ ~ 1 0.75
 
 schedule function cartographer_core:load/find_libraries/start 2t
 

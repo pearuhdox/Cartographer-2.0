@@ -27,6 +27,6 @@ execute if score $rat ca.installed matches 1 run function cartographer_rat:load/
 execute if score $repair_stations ca.installed matches 1 run function cartographer_repair_stations:load/load_message
 
 tellraw @s {"text":"------------------------------------------","color":"#FFE0A3","bold":true}
-tellraw @s [{"text":"[⏎]","color":"#33FFF8","bold":true,"italic":false,"hover_event":{"action":"show_text","value":[{"text":"Return to the reload panel.","color":"#FFE0A3","italic":true}]},"click_event":{"action":"run_command","command":"/function cartographer_core:load/reload_panel"}}]
+tellraw @s [{"text":"[⏎]","color":"#33FFF8","bold":true,"italic":false,"hover_event":{"action":"show_text","value":[{"text":"Return to the reload panel.","color":"#FFE0A3","italic":true}]},"click_event":{"action":"run_command","command":"/trigger menu set 1000"}}]
 tellraw @s {"text":"------------------------------------------","color":"#FFE0A3","bold":true}
 

@@ -1,0 +1,65 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "translate": "cartographer.menu.options.title",
+    "fallback": "Cartographer Options",
+    "color": "#FFE0A3",
+    "bold": true,
+    "underlined": true
+  },
+  "external_title": {
+    "translate": "cartographer.menu.options.title",
+    "fallback": "Cartographer",
+    "color": "white"
+  },
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "none",
+  "exit_action": {
+    "label": {
+      "translate": "",
+      "fallback": "Done"
+    },
+    "tooltip": {
+      "translate": "",
+      "fallback": "Exit the Cartographer settings menu."
+    },
+    "action": {
+      "type": "minecraft:run_command",
+      "command": "trigger ca.options_trig set -2"
+    }
+  },
+  "columns": 2,
+  "actions": [
+    {
+      "label": {
+        "translate": "",
+        "fallback": "Gamerules"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger ca.options_trig set 2000"
+      }
+    },
+    {
+      "label": {
+        "translate": "",
+        "fallback": "Charon Settings"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger ca.options_trig set 3000"
+      }
+    },
+    {
+      "label": {
+        "translate": "",
+        "fallback": "Show Reload Message"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger ca.options_trig set -3"
+      }
+    }
+  ]
+}

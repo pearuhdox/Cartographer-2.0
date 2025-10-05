@@ -1,0 +1,77 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "translate": "cartographer.menu.options.title",
+    "fallback": "Gamerules",
+    "color": "#FFE0A3",
+    "bold": true,
+    "underlined": true
+  },
+  "external_title": {
+    "translate": "cartographer.menu.options.title",
+    "fallback": "Gamerules",
+    "color": "white"
+  },
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "none",
+  "exit_action": {
+    "label": {
+      "translate": "",
+      "fallback": "Done"
+    },
+    "tooltip": {
+      "translate": "",
+      "fallback": "Return to the previous menu."
+    },
+    "action": {
+      "type": "minecraft:run_command",
+      "command": "trigger ca.options_trig set -1"
+    }
+  },
+  "columns": 2,
+  "actions": [
+    {
+      "label": {
+        "translate": "",
+        "fallback": "Swim Hit Is Crit"
+      },
+      "tooltip": {
+      "translate": "",
+      "fallback": "When Enabled, all sprint-swim attacks are considered Critical Hits for various mechanics (but do not do additional damage)."
+    },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger ca.options_trig set 2010"
+      }
+    },
+    {
+      "label": {
+        "translate": "",
+        "fallback": "Swimming is Sprinting"
+      },
+      "tooltip": {
+      "translate": "",
+      "fallback": "When Enabled, all sprint-swimming is considered sprinting for various mechanics."
+    },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger ca.options_trig set 2020"
+      }
+    },
+    {
+      "label": {
+        "translate": "",
+        "fallback": "Reload Message"
+      },
+      "tooltip": {
+      "translate": "",
+      "fallback": "When Enabled, reloading Cartographer shows a chat menu with information and access to datapack options."
+    },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger ca.options_trig set 2030"
+      }
+    }
+  ]
+}

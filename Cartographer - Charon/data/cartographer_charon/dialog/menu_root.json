@@ -1,0 +1,148 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "translate": "cartographer.menu.options.title.charon",
+    "fallback": "Charon Options",
+    "color": "#8552d6",
+    "bold": true,
+    "underlined": true
+  },
+  "external_title": {
+    "translate": "cartographer.menu.options.title.charon",
+    "fallback": "Charon Options",
+    "with": [],
+    "color": "white"
+  },
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "none",
+  "exit_action": {
+    "label": {
+      "translate": "",
+      "fallback": "Done"
+    },
+    "tooltip": {
+      "translate": "",
+      "fallback": "Return to the previous menu."
+    },
+    "action": {
+      "type": "minecraft:run_command",
+      "command": "trigger ca.options_trig set -1"
+    }
+  },
+  "columns": 2,
+  "actions": [
+    {
+      "label": {
+        "translate": "",
+        "fallback": "Death Mode"
+      },
+      "tooltip": {
+      "translate": "",
+      "fallback": "Choose the currently active Death Mode for Charon."
+    },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger ca.options_trig set 3010"
+      }
+    },
+    {
+      "label": {
+        "translate": "",
+        "fallback": "Multiplayer Settings"
+      },
+      "tooltip": {
+      "translate": "",
+      "fallback": "Tweak Multiplayer specific settings for Charon."
+    },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger ca.options_trig set 3020"
+      }
+    },
+    {
+      "label": {
+        "translate": "",
+        "fallback": "Void Settings"
+      },
+      "tooltip": {
+      "translate": "",
+      "fallback": "Tweak void related settings for Charon."
+    },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger ca.options_trig set 3300"
+      }
+    },
+        {
+      "label": {
+        "translate": "",
+        "fallback": "Item Drop Settings"
+      },
+      "tooltip": {
+      "translate": "",
+      "fallback": "Tweak item drop settings for Charon."
+    },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger ca.options_trig set 3400"
+      }
+    },
+    {
+      "label": {
+        "translate": "",
+        "fallback": "Death Compass"
+      },
+      "tooltip": {
+      "translate": "",
+      "fallback": "When Enabled, players receive a custom Recovery Compass when they die."
+    },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger ca.options_trig set 3050"
+      }
+    },
+    {
+      "label": {
+        "translate": "",
+        "fallback": "Spawner Defenses"
+      },
+      "tooltip": {
+      "translate": "",
+      "fallback": "When Enabled, Spawners lose an amount of delay when a player dies near them (with configurable options)."
+    },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger ca.options_trig set 3060"
+      }
+    },
+    {
+      "label": {
+        "translate": "",
+        "fallback": "Retain Potion Effects"
+      },
+      "tooltip": {
+      "translate": "",
+      "fallback": "When Enabled, players retain their positive potion effects on death (with configurable options)."
+    },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger ca.options_trig set 3070"
+      }
+    },
+        {
+      "label": {
+        "translate": "",
+        "fallback": "Print Charon Information"
+      },
+      "tooltip": {
+      "translate": "",
+      "fallback": "Click this to print all Charon settings and their values in chat."
+    },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger ca.options_trig set 3080"
+      }
+    }
+  ]
+}

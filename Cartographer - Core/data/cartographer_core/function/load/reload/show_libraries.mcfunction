@@ -22,6 +22,6 @@ execute if score $#lib_mot ca.installed matches 1 run tellraw @s [{"text":"  ❱
 execute if score $#lib_del ca.installed matches 1 run tellraw @s [{"text":"  ❱ ","color":"#FFE0A3"},{"text":"Player Motion by Mulv and BigPapi","color":"#F04FF0","hover_event":{"action":"show_text","value":[{"text":"A library module by Mulv and BigPapi that can be used to give players motion.","color":"#FFE0A3","italic":true}]}},{"text":" installed!","color":"#FFE0A3"}]
 
 tellraw @s {"text":"------------------------------------------","color":"#FFE0A3","bold":true}
-tellraw @s [{"text":"[⏎]","color":"#33FFF8","bold":true,"italic":false,"hover_event":{"action":"show_text","value":[{"text":"Return to the reload panel.","color":"#FFE0A3","italic":true}]},"click_event":{"action":"run_command","command":"/function cartographer_core:load/reload_panel"}}]
+tellraw @s [{"text":"[⏎]","color":"#33FFF8","bold":true,"italic":false,"hover_event":{"action":"show_text","value":[{"text":"Return to the reload panel.","color":"#FFE0A3","italic":true}]},"click_event":{"action":"run_command","command":"/trigger menu set 1000"}}]
 tellraw @s {"text":"------------------------------------------","color":"#FFE0A3","bold":true}
 
