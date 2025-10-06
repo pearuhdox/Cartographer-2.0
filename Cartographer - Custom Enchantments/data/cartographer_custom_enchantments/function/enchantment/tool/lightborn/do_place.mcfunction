@@ -1,13 +1,16 @@
-execute if score @s ca.lightborn_redstone_torch matches 1.. unless score @s ca.lightborn_soul_torch matches 1.. unless score @s ca.lightborn_torch matches 1.. run setblock ~ ~ ~ redstone_torch destroy
-execute if score @s ca.lightborn_soul_torch matches 1.. unless score @s ca.lightborn_torch matches 1.. run setblock ~ ~ ~ soul_torch destroy
+execute if score @s ca.lightborn_redstone_torch matches 1.. unless score @s ca.lightborn_copper_torch matches 1.. unless score @s ca.lightborn_soul_torch matches 1.. unless score @s ca.lightborn_torch matches 1.. run setblock ~ ~ ~ redstone_torch destroy
+execute if score @s ca.lightborn_soul_torch matches 1.. unless score @s ca.lightborn_copper_torch matches 1.. unless score @s ca.lightborn_torch matches 1.. run setblock ~ ~ ~ soul_torch destroy
+execute if score @s ca.lightborn_copper_torch matches 1.. unless score @s ca.lightborn_torch matches 1.. run setblock ~ ~ ~ copper_torch destroy
 execute if score @s ca.lightborn_torch matches 1.. run setblock ~ ~ ~ torch destroy
 
-execute if score @s ca.lightborn_redstone_torch matches 1.. unless score @s ca.lightborn_soul_torch matches 1.. unless score @s ca.lightborn_torch matches 1.. align xyz positioned ~0.5 ~0.5 ~0.5 rotated 0 35 run function cartographer_custom_enchantments:enchantment/tool/lightborn/vfx
-execute if score @s ca.lightborn_soul_torch matches 1.. unless score @s ca.lightborn_torch matches 1.. align xyz positioned ~0.5 ~0.5 ~0.5 rotated 0 35 run function cartographer_custom_enchantments:enchantment/tool/lightborn/soul_vfx
+execute if score @s ca.lightborn_redstone_torch matches 1.. unless score @s ca.lightborn_copper_torch matches 1.. unless score @s ca.lightborn_soul_torch matches 1.. unless score @s ca.lightborn_torch matches 1.. align xyz positioned ~0.5 ~0.5 ~0.5 rotated 0 35 run function cartographer_custom_enchantments:enchantment/tool/lightborn/vfx
+execute if score @s ca.lightborn_soul_torch matches 1.. unless score @s ca.lightborn_copper_torch matches 1.. unless score @s ca.lightborn_torch matches 1.. align xyz positioned ~0.5 ~0.5 ~0.5 rotated 0 35 run function cartographer_custom_enchantments:enchantment/tool/lightborn/soul_vfx
+execute if score @s ca.lightborn_copper_torch matches 1.. unless score @s ca.lightborn_torch matches 1.. align xyz positioned ~0.5 ~0.5 ~0.5 rotated 0 35 run function cartographer_custom_enchantments:enchantment/tool/lightborn/vfx
 execute if score @s ca.lightborn_torch matches 1.. align xyz positioned ~0.5 ~0.5 ~0.5 rotated 0 35 run function cartographer_custom_enchantments:enchantment/tool/lightborn/vfx
 
-execute if score @s ca.lightborn_redstone_torch matches 1.. unless score @s ca.lightborn_soul_torch matches 1.. unless score @s ca.lightborn_torch matches 1.. run clear @s redstone_torch[minecraft:enchantments={}] 1
-execute if score @s ca.lightborn_soul_torch matches 1.. unless score @s ca.lightborn_torch matches 1.. run clear @s soul_torch[minecraft:enchantments={}] 1
+execute if score @s ca.lightborn_redstone_torch matches 1.. unless score @s ca.lightborn_copper_torch matches 1.. unless score @s ca.lightborn_soul_torch matches 1.. unless score @s ca.lightborn_torch matches 1.. run clear @s redstone_torch[minecraft:enchantments={}] 1
+execute if score @s ca.lightborn_soul_torch matches 1.. unless score @s ca.lightborn_copper_torch matches 1.. unless score @s ca.lightborn_torch matches 1.. run clear @s soul_torch[minecraft:enchantments={}] 1
+execute if score @s ca.lightborn_copper_torch matches 1.. unless score @s ca.lightborn_torch matches 1.. run clear @s copper_torch[minecraft:enchantments={}] 1
 execute if score @s ca.lightborn_torch matches 1.. run clear @s torch[minecraft:enchantments={}] 1
 
 

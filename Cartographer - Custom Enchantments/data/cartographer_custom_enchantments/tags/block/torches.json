@@ -5,6 +5,8 @@
         "minecraft:redstone_torch",
         "minecraft:wall_torch",
         "minecraft:soul_wall_torch",
-        "minecraft:redstone_wall_torch"
+        "minecraft:redstone_wall_torch",
+        "minecraft:copper_torch",
+        "minecraft:copper_wall_torch"
     ]
 }

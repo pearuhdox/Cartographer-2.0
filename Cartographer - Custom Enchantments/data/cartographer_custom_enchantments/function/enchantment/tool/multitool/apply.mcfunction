@@ -21,6 +21,12 @@ execute if score $base_speed ca.ench_multitool_lvl matches 0 if data storage car
 execute if score $base_speed ca.ench_multitool_lvl matches 0 if data storage cartographer:custom_enchantments multitool_item{id:"minecraft:golden_shovel"} run scoreboard players set $base_speed ca.ench_multitool_lvl 1200
 execute if score $base_speed ca.ench_multitool_lvl matches 0 if data storage cartographer:custom_enchantments multitool_item{id:"minecraft:golden_hoe"} run scoreboard players set $base_speed ca.ench_multitool_lvl 1200
 
+execute if score $base_speed ca.ench_multitool_lvl matches 0 if data storage cartographer:custom_enchantments multitool_item{id:"minecraft:copper_sword"} run scoreboard players set $base_speed ca.ench_multitool_lvl 500
+execute if score $base_speed ca.ench_multitool_lvl matches 0 if data storage cartographer:custom_enchantments multitool_item{id:"minecraft:copper_axe"} run scoreboard players set $base_speed ca.ench_multitool_lvl 500
+execute if score $base_speed ca.ench_multitool_lvl matches 0 if data storage cartographer:custom_enchantments multitool_item{id:"minecraft:copper_pickaxe"} run scoreboard players set $base_speed ca.ench_multitool_lvl 500
+execute if score $base_speed ca.ench_multitool_lvl matches 0 if data storage cartographer:custom_enchantments multitool_item{id:"minecraft:copper_shovel"} run scoreboard players set $base_speed ca.ench_multitool_lvl 500
+execute if score $base_speed ca.ench_multitool_lvl matches 0 if data storage cartographer:custom_enchantments multitool_item{id:"minecraft:copper_hoe"} run scoreboard players set $base_speed ca.ench_multitool_lvl 500
+
 execute if score $base_speed ca.ench_multitool_lvl matches 0 if data storage cartographer:custom_enchantments multitool_item{id:"minecraft:iron_sword"} run scoreboard players set $base_speed ca.ench_multitool_lvl 600
 execute if score $base_speed ca.ench_multitool_lvl matches 0 if data storage cartographer:custom_enchantments multitool_item{id:"minecraft:iron_axe"} run scoreboard players set $base_speed ca.ench_multitool_lvl 600
 execute if score $base_speed ca.ench_multitool_lvl matches 0 if data storage cartographer:custom_enchantments multitool_item{id:"minecraft:iron_pickaxe"} run scoreboard players set $base_speed ca.ench_multitool_lvl 600
@@ -58,6 +64,12 @@ execute if data storage cartographer:custom_enchantments multitool_item{id:"mine
 execute if data storage cartographer:custom_enchantments multitool_item{id:"minecraft:golden_pickaxe"} run scoreboard players set $tool_type ca.ench_multitool_lvl 3
 execute if data storage cartographer:custom_enchantments multitool_item{id:"minecraft:golden_shovel"} run scoreboard players set $tool_type ca.ench_multitool_lvl 4
 execute if data storage cartographer:custom_enchantments multitool_item{id:"minecraft:golden_hoe"} run scoreboard players set $tool_type ca.ench_multitool_lvl 5
+
+execute if data storage cartographer:custom_enchantments multitool_item{id:"minecraft:copper_sword"} run scoreboard players set $tool_type ca.ench_multitool_lvl 1
+execute if data storage cartographer:custom_enchantments multitool_item{id:"minecraft:copper_axe"} run scoreboard players set $tool_type ca.ench_multitool_lvl 2
+execute if data storage cartographer:custom_enchantments multitool_item{id:"minecraft:copper_pickaxe"} run scoreboard players set $tool_type ca.ench_multitool_lvl 3
+execute if data storage cartographer:custom_enchantments multitool_item{id:"minecraft:copper_shovel"} run scoreboard players set $tool_type ca.ench_multitool_lvl 4
+execute if data storage cartographer:custom_enchantments multitool_item{id:"minecraft:copper_hoe"} run scoreboard players set $tool_type ca.ench_multitool_lvl 5
 
 execute if data storage cartographer:custom_enchantments multitool_item{id:"minecraft:iron_sword"} run scoreboard players set $tool_type ca.ench_multitool_lvl 1
 execute if data storage cartographer:custom_enchantments multitool_item{id:"minecraft:iron_axe"} run scoreboard players set $tool_type ca.ench_multitool_lvl 2

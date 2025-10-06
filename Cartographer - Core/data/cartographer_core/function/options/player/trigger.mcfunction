@@ -23,6 +23,7 @@ execute if score @s ca.options_trig matches -1 run dialog show @s cartographer_c
 execute if score @s ca.options_trig matches -2 run function cartographer_core:options/show/clear
 execute if score @s ca.options_trig matches 2000 run function cartographer_core:options/show/gamerules
 execute if score @s ca.options_trig matches 3000 run function cartographer_core:options/show/charon
+execute if score @s ca.options_trig matches 4000 run function cartographer_core:options/show/rat
 
 execute if score @s ca.options_trig matches 3010 run function cartographer_charon:options/show/gamerule/death_mode
 execute if score @s ca.options_trig matches 3011..3014 run function cartographer_charon:options/gamerule/death_mode
@@ -52,6 +53,12 @@ execute if score @s ca.options_trig matches 3051..3052 run function cartographer
 execute if score @s ca.options_trig matches 3060 run function cartographer_charon:options/show/gamerule/spawner_defenses
 execute if score @s ca.options_trig matches 3070 run function cartographer_charon:options/show/gamerule/retain_potion_effects
 
+execute if score @s ca.options_trig matches 3080 run function cartographer_charon:options/print_information
+
+execute if score @s ca.options_trig matches 4010 run function cartographer_rat:options/show/gamerule/hide_attack_ready
+execute if score @s ca.options_trig matches 4011..4012 run function cartographer_rat:options/gamerule/hide_attack_ready
+
+execute if score @s ca.options_trig matches 4020 run function cartographer_rat:options/show/gamerule/base_invul_frames
 
 #Reset Lexica Trigger Score
 scoreboard players set @s ca.options_trig 0

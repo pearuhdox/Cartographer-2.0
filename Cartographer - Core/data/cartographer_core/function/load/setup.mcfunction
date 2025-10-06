@@ -281,6 +281,11 @@ scoreboard objectives add ca.equip_golden_leggings minecraft.used:minecraft.gold
 scoreboard objectives add ca.equip_golden_chestplate minecraft.used:minecraft.golden_chestplate
 scoreboard objectives add ca.equip_golden_helmet minecraft.used:minecraft.golden_helmet
 
+scoreboard objectives add ca.equip_copper_boots minecraft.used:minecraft.copper_boots
+scoreboard objectives add ca.equip_copper_leggings minecraft.used:minecraft.copper_leggings
+scoreboard objectives add ca.equip_copper_chestplate minecraft.used:minecraft.copper_chestplate
+scoreboard objectives add ca.equip_copper_helmet minecraft.used:minecraft.copper_helmet
+
 scoreboard objectives add ca.equip_chainmail_boots minecraft.used:minecraft.chainmail_boots
 scoreboard objectives add ca.equip_chainmail_leggings minecraft.used:minecraft.chainmail_leggings
 scoreboard objectives add ca.equip_chainmail_chestplate minecraft.used:minecraft.chainmail_chestplate

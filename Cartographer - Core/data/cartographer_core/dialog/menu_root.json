@@ -54,6 +54,16 @@
     {
       "label": {
         "translate": "",
+        "fallback": "Reworked ATK Time Settings"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger ca.options_trig set 4000"
+      }
+    },
+    {
+      "label": {
+        "translate": "",
         "fallback": "Show Reload Message"
       },
       "action": {

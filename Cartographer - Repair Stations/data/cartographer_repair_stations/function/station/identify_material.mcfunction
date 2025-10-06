@@ -11,13 +11,14 @@ data modify storage cartographer_repair_stations:data visual set value ""
 execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #cartographer_repair_stations:materials/wooden run data modify storage cartographer_repair_stations:data material set value "#minecraft:planks"
 execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #cartographer_repair_stations:materials/stone run data modify storage cartographer_repair_stations:data material set value "#minecraft:stone_tool_materials"
 
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #cartographer_repair_stations:materials/copper run data modify storage cartographer_repair_stations:data material set value "minecraft:copper_ingot"
 execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #cartographer_repair_stations:materials/golden run data modify storage cartographer_repair_stations:data material set value "minecraft:gold_ingot"
 execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #cartographer_repair_stations:materials/iron run data modify storage cartographer_repair_stations:data material set value "minecraft:iron_ingot"
 execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #cartographer_repair_stations:materials/diamond run data modify storage cartographer_repair_stations:data material set value "minecraft:diamond"
 execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #cartographer_repair_stations:materials/netherite run data modify storage cartographer_repair_stations:data material set value "minecraft:netherite_ingot"
 
 execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #cartographer_repair_stations:materials/leather run data modify storage cartographer_repair_stations:data material set value "minecraft:leather"
-execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #cartographer_repair_stations:materials/chainmail run data modify storage cartographer_repair_stations:data material set value "minecraft:chain"
+execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand #cartographer_repair_stations:materials/chainmail run data modify storage cartographer_repair_stations:data material set value "minecraft:iron_chain"
 
 execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand turtle_helmet run data modify storage cartographer_repair_stations:data material set value "minecraft:turtle_scute"
 execute if items entity 31192011-4452-2112-0000-000000000000 weapon.mainhand wolf_armor run data modify storage cartographer_repair_stations:data material set value "minecraft:armadillo_scute"

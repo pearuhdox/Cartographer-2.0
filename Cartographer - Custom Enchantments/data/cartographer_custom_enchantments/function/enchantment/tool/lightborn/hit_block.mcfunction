@@ -2,6 +2,7 @@ scoreboard players set $active ca.ench_lightborn_lvl 0
 execute if score @s ca.lightborn_redstone_torch matches 1.. run scoreboard players set $active ca.ench_lightborn_lvl 1 
 execute if score @s ca.lightborn_soul_torch matches 1.. run scoreboard players set $active ca.ench_lightborn_lvl 1 
 execute if score @s ca.lightborn_torch matches 1.. run scoreboard players set $active ca.ench_lightborn_lvl 1 
+execute if score @s ca.lightborn_copper_torch matches 1.. run scoreboard players set $active ca.ench_lightborn_lvl 1 
 
 execute store result score @s ca.raycast run attribute @s block_interaction_range get 10
 

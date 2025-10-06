@@ -1064,6 +1064,7 @@ scoreboard objectives add ca.repulsion_cooldown dummy
 scoreboard objectives add ca.pulling_fuse dummy
 
 
+scoreboard objectives add ca.lightborn_copper_torch dummy
 scoreboard objectives add ca.lightborn_redstone_torch dummy
 scoreboard objectives add ca.lightborn_soul_torch dummy
 scoreboard objectives add ca.lightborn_torch dummy

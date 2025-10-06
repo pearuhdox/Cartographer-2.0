@@ -1,0 +1,2 @@
+execute if score $rat ca.installed matches 1.. run function cartographer_core:options/show/do_dialog_rat
+execute unless score $rat ca.installed matches 1.. run tellraw @s {"color":"red","text":"Reworked Attack Time is not installed, cannot show this menu!"}

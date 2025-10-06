@@ -8,6 +8,11 @@ execute if score @s ca.equip_golden_leggings matches 1.. run scoreboard players 
 execute if score @s ca.equip_golden_chestplate matches 1.. run scoreboard players set @s ca.core_delay_check 2
 execute if score @s ca.equip_golden_helmet matches 1.. run scoreboard players set @s ca.core_delay_check 2
 
+execute if score @s ca.equip_copper_boots matches 1.. run scoreboard players set @s ca.core_delay_check 2
+execute if score @s ca.equip_copper_leggings matches 1.. run scoreboard players set @s ca.core_delay_check 2
+execute if score @s ca.equip_copper_chestplate matches 1.. run scoreboard players set @s ca.core_delay_check 2
+execute if score @s ca.equip_copper_helmet matches 1.. run scoreboard players set @s ca.core_delay_check 2
+
 execute if score @s ca.equip_chainmail_boots matches 1.. run scoreboard players set @s ca.core_delay_check 2
 execute if score @s ca.equip_chainmail_leggings matches 1.. run scoreboard players set @s ca.core_delay_check 2
 execute if score @s ca.equip_chainmail_chestplate matches 1.. run scoreboard players set @s ca.core_delay_check 2
