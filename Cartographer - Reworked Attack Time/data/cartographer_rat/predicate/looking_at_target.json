@@ -1,0 +1,6605 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 1,
+              "max": 5
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 0.05
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 6,
+              "max": 10
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 0.1
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 11,
+              "max": 15
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 0.15
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 16,
+              "max": 20
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 0.2
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 21,
+              "max": 25
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 0.25
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 26,
+              "max": 30
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 0.3
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 31,
+              "max": 35
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 0.35
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 36,
+              "max": 40
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 0.4
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 41,
+              "max": 45
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 0.45
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 46,
+              "max": 50
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 0.5
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 51,
+              "max": 55
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 0.55
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 56,
+              "max": 60
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 0.6
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 61,
+              "max": 65
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 0.65
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 66,
+              "max": 70
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 0.7
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 71,
+              "max": 75
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 0.75
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 76,
+              "max": 80
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 0.8
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 81,
+              "max": 85
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 0.85
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 86,
+              "max": 90
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 0.9
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 91,
+              "max": 95
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 0.95
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 96,
+              "max": 100
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 1.0
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 101,
+              "max": 105
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 1.05
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 106,
+              "max": 110
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 1.1
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 111,
+              "max": 115
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 1.15
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 116,
+              "max": 120
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 1.2
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 121,
+              "max": 125
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 1.25
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 126,
+              "max": 130
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 1.3
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 131,
+              "max": 135
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 1.35
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 136,
+              "max": 140
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 1.4
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 141,
+              "max": 145
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 1.45
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 146,
+              "max": 150
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 1.5
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 151,
+              "max": 155
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 1.55
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 156,
+              "max": 160
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 1.6
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 161,
+              "max": 165
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 1.65
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 166,
+              "max": 170
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 1.7
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 171,
+              "max": 175
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 1.75
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 176,
+              "max": 180
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 1.8
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 181,
+              "max": 185
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 1.85
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 186,
+              "max": 190
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 1.9
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 191,
+              "max": 195
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 1.95
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 196,
+              "max": 200
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 2.0
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 201,
+              "max": 205
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 2.05
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 206,
+              "max": 210
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 2.1
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 211,
+              "max": 215
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 2.15
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 216,
+              "max": 220
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 2.2
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 221,
+              "max": 225
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 2.25
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 226,
+              "max": 230
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 2.3
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 231,
+              "max": 235
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 2.35
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 236,
+              "max": 240
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 2.4
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 241,
+              "max": 245
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 2.45
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 246,
+              "max": 250
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 2.5
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 251,
+              "max": 255
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 2.55
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 256,
+              "max": 260
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 2.6
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 261,
+              "max": 265
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 2.65
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 266,
+              "max": 270
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 2.7
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 271,
+              "max": 275
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 2.75
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 276,
+              "max": 280
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 2.8
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 281,
+              "max": 285
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 2.85
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 286,
+              "max": 290
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 2.9
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 291,
+              "max": 295
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 2.95
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 296,
+              "max": 300
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 3.0
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 301,
+              "max": 305
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 3.05
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 306,
+              "max": 310
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 3.1
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 311,
+              "max": 315
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 3.15
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 316,
+              "max": 320
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 3.2
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 321,
+              "max": 325
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 3.25
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 326,
+              "max": 330
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 3.3
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 331,
+              "max": 335
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 3.35
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 336,
+              "max": 340
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 3.4
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 341,
+              "max": 345
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 3.45
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 346,
+              "max": 350
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 3.5
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 351,
+              "max": 355
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 3.55
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 356,
+              "max": 360
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 3.6
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 361,
+              "max": 365
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 3.65
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 366,
+              "max": 370
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 3.7
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 371,
+              "max": 375
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 3.75
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 376,
+              "max": 380
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 3.8
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 381,
+              "max": 385
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 3.85
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 386,
+              "max": 390
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 3.9
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 391,
+              "max": 395
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 3.95
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 396,
+              "max": 400
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 4.0
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 401,
+              "max": 405
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 4.05
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 406,
+              "max": 410
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 4.1
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 411,
+              "max": 415
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 4.15
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 416,
+              "max": 420
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 4.2
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 421,
+              "max": 425
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 4.25
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 426,
+              "max": 430
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 4.3
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 431,
+              "max": 435
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 4.35
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 436,
+              "max": 440
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 4.4
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 441,
+              "max": 445
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 4.45
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 446,
+              "max": 450
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 4.5
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 451,
+              "max": 455
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 4.55
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 456,
+              "max": 460
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 4.6
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 461,
+              "max": 465
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 4.65
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 466,
+              "max": 470
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 4.7
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 471,
+              "max": 475
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 4.75
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 476,
+              "max": 480
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 4.8
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 481,
+              "max": 485
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 4.85
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 486,
+              "max": 490
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 4.9
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 491,
+              "max": 495
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 4.95
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 496,
+              "max": 500
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 5.0
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 501,
+              "max": 505
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 5.05
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 506,
+              "max": 510
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 5.1
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 511,
+              "max": 515
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 5.15
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 516,
+              "max": 520
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 5.2
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 521,
+              "max": 525
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 5.25
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 526,
+              "max": 530
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 5.3
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 531,
+              "max": 535
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 5.35
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 536,
+              "max": 540
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 5.4
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 541,
+              "max": 545
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 5.45
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 546,
+              "max": 550
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 5.5
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 551,
+              "max": 555
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 5.55
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 556,
+              "max": 560
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 5.6
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 561,
+              "max": 565
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 5.65
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 566,
+              "max": 570
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 5.7
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 571,
+              "max": 575
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 5.75
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 576,
+              "max": 580
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 5.8
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 581,
+              "max": 585
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 5.85
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 586,
+              "max": 590
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 5.9
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 591,
+              "max": 595
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 5.95
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 596,
+              "max": 600
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 6.0
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 601,
+              "max": 605
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 6.05
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 606,
+              "max": 610
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 6.1
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 611,
+              "max": 615
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 6.15
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 616,
+              "max": 620
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 6.2
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 621,
+              "max": 625
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 6.25
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 626,
+              "max": 630
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 6.3
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 631,
+              "max": 635
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 6.35
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 636,
+              "max": 640
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 6.4
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 641,
+              "max": 645
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 6.45
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 646,
+              "max": 650
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 6.5
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 651,
+              "max": 655
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 6.55
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 656,
+              "max": 660
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 6.6
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 661,
+              "max": 665
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 6.65
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 666,
+              "max": 670
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 6.7
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 671,
+              "max": 675
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 6.75
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 676,
+              "max": 680
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 6.8
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 681,
+              "max": 685
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 6.85
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 686,
+              "max": 690
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 6.9
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 691,
+              "max": 695
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 6.95
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 696,
+              "max": 700
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 7.0
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 701,
+              "max": 705
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 7.05
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 706,
+              "max": 710
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 7.1
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 711,
+              "max": 715
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 7.15
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 716,
+              "max": 720
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 7.2
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 721,
+              "max": 725
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 7.25
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 726,
+              "max": 730
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 7.3
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 731,
+              "max": 735
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 7.35
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 736,
+              "max": 740
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 7.4
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 741,
+              "max": 745
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 7.45
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 746,
+              "max": 750
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 7.5
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 751,
+              "max": 755
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 7.55
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 756,
+              "max": 760
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 7.6
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 761,
+              "max": 765
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 7.65
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 766,
+              "max": 770
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 7.7
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 771,
+              "max": 775
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 7.75
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 776,
+              "max": 780
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 7.8
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 781,
+              "max": 785
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 7.85
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 786,
+              "max": 790
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 7.9
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 791,
+              "max": 795
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 7.95
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 796,
+              "max": 800
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 8.0
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 801,
+              "max": 805
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 8.05
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 806,
+              "max": 810
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 8.1
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 811,
+              "max": 815
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 8.15
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 816,
+              "max": 820
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 8.2
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 821,
+              "max": 825
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 8.25
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 826,
+              "max": 830
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 8.3
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 831,
+              "max": 835
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 8.35
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 836,
+              "max": 840
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 8.4
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 841,
+              "max": 845
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 8.45
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 846,
+              "max": 850
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 8.5
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 851,
+              "max": 855
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 8.55
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 856,
+              "max": 860
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 8.6
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 861,
+              "max": 865
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 8.65
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 866,
+              "max": 870
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 8.7
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 871,
+              "max": 875
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 8.75
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 876,
+              "max": 880
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 8.8
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 881,
+              "max": 885
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 8.85
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 886,
+              "max": 890
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 8.9
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 891,
+              "max": 895
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 8.95
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 896,
+              "max": 900
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 9.0
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 901,
+              "max": 905
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 9.05
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 906,
+              "max": 910
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 9.1
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 911,
+              "max": 915
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 9.15
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 916,
+              "max": 920
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 9.2
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 921,
+              "max": 925
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 9.25
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 926,
+              "max": 930
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 9.3
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 931,
+              "max": 935
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 9.35
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 936,
+              "max": 940
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 9.4
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 941,
+              "max": 945
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 9.45
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 946,
+              "max": 950
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 9.5
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 951,
+              "max": 955
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 9.55
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 956,
+              "max": 960
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 9.6
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 961,
+              "max": 965
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 9.65
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 966,
+              "max": 970
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 9.7
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 971,
+              "max": 975
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 9.75
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 976,
+              "max": 980
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 9.8
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 981,
+              "max": 985
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 9.85
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 986,
+              "max": 990
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 9.9
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 991,
+              "max": 995
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 9.95
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "ca.rat_reach": {
+              "min": 996,
+              "max": 1000
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type_specific": {
+              "type": "minecraft:player",
+              "looking_at": {
+                "type": "#cartographer_core:affected_by_carto",
+                "distance": {
+                  "absolute": {
+                    "min": 0.01,
+                    "max": 10.0
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

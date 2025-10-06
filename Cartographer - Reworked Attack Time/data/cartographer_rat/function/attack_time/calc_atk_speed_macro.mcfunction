@@ -1,0 +1,1 @@
+$attribute @s minecraft:attack_speed modifier add ca.rat_atk_spd $(atk_speed) add_value

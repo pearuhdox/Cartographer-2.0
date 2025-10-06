@@ -1,0 +1,2 @@
+function cartographer_rat:custom_attributes/calc_player/invul_frames
+function cartographer_rat:custom_attributes/calc_player/invul_shred

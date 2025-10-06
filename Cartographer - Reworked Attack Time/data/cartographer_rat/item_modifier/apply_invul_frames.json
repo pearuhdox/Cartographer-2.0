@@ -1,0 +1,7 @@
+{
+  "function": "minecraft:set_enchantments",
+  "enchantments": {
+    "cartographer_rat:i_frames": 1
+  },
+  "conditions": []
+}

@@ -1,0 +1,1 @@
+scoreboard players set $rat ca.installed 1

@@ -1,0 +1,24 @@
+{
+    "values": [
+      {"id":"cartographer_custom_attributes:attribute_damage_bypass","required":false},
+      {"id":"cartographer_custom_attributes:fishing_bobber_damage_bypass","required":false},
+      {"id":"cartographer_custom_attributes:restrike_hit_damage","required":false},
+      {"id":"cartographer_core:resistor_damage","required":false},
+      {"id":"cartographer_core:resistor/block","required":false},
+      {"id":"cartographer_core:resistor/fall","required":false},
+      {"id":"cartographer_core:resistor/magic","required":false},
+      {"id":"cartographer_core:resistor/melee","required":false},
+      {"id":"cartographer_core:resistor/projectile","required":false},
+      {"id":"cartographer_core:resistor/explosion","required":false},
+      {"id":"cartographer_core:resistor/fire","required":false},
+      {"id":"cartographer_core:resistor/freeze","required":false},
+      {"id":"cartographer_custom_enchantments:enchant_damage_bypass","required":false},
+      {"id":"cartographer_custom_enchantments:opportunist_damage","required":false},
+      {"id":"cartographer_custom_enchantments:vengeance_damage","required":false},
+      {"id":"cartographer_custom_enchantments:projectile_damage_bypass","required":false},
+      {"id":"cartographer_custom_enchantments:projectile_damage_bypass_no_kb","required":false},
+      {"id":"cartographer_custom_enchantments:throwable_damage","required":false},
+      {"id":"cartographer_custom_statuses:expose_damage","required":false},
+      {"id":"cartographer_custom_statuses:status_damage","required":false}
+    ]
+  }

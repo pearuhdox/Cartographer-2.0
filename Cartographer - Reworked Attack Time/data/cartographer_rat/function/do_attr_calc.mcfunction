@@ -1,0 +1,2 @@
+execute if entity @s[tag=ca.do_attr_calc_invul_frames] run function cartographer_rat:custom_attributes/calc_player/invul_frames
+execute if entity @s[tag=ca.do_attr_calc_invul_shred] run function cartographer_rat:custom_attributes/calc_player/invul_shred

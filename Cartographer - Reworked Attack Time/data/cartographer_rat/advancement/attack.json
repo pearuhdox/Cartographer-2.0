@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"base": {
+			"trigger": "minecraft:location"
+		},
+		"change": {
+			"trigger": "minecraft:player_hurt_entity"
+		}
+	},
+	"rewards": {
+		"function": "cartographer_rat:attack_time/attack"
+	}
+}

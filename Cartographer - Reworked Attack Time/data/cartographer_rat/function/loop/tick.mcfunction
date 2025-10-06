@@ -1,0 +1,2 @@
+execute if score $time ca.i_frame_tick_timer matches 1.. as @e[type=!player,tag=ca.custom_invul_frames] at @s run function cartographer_rat:invul_frames/tick
+execute if score $time ca.i_frame_tick_timer matches 1.. run scoreboard players remove $time ca.i_frame_tick_timer 1

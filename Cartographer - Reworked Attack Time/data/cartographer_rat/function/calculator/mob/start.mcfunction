@@ -1,0 +1,1 @@
+function cartographer_custom_attributes:calculator/mob/do_attr_calc

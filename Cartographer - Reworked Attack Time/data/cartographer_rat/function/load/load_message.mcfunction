@@ -1,0 +1,1 @@
+tellraw @a [{"text":"❱ ","color":"#FFE0A3"},{"text":"Reworked Attack Time","color":"#da7258","hover_event":{"action":"show_text","value":[{"text":"Reworks Attack Speed and Invulnerability Frames","color":"#FFE0A3","italic":true}]}},{"text":" installed!","color":"#FFE0A3"}]

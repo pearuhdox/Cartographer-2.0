@@ -1,0 +1,1 @@
+scoreboard players set @s ca.rat_time 1
