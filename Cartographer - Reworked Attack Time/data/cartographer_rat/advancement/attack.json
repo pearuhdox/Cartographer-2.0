@@ -1,13 +1,29 @@
 {
-	"criteria": {
-		"base": {
-			"trigger": "minecraft:location"
-		},
-		"change": {
-			"trigger": "minecraft:player_hurt_entity"
-		}
-	},
-	"rewards": {
-		"function": "cartographer_rat:attack_time/attack"
-	}
+    "criteria": {
+        "base": {
+            "trigger": "minecraft:location"
+        },
+        "change": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "minecraft:is_projectile",
+                                "expected": false
+                            },
+                            {
+                                "id": "minecraft:is_player_attack",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "cartographer_rat:attack_time/attack"
+    }
 }

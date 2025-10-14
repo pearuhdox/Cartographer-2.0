@@ -9,10 +9,10 @@ scoreboard players set $do_status ca.apply_status_check 0
 scoreboard players set $ranged_hit_check ca.apply_status_check 0
 
 scoreboard players set $direct_hit ca.apply_status_check 0
-execute if entity @s[advancements={entityid:entity_hurt_player={panic_causes=true}}] run scoreboard players set $direct_hit ca.apply_status_check 1
+execute if entity @s[advancements={entityid:entity_hurt_player={is_lightning=false}}] run scoreboard players set $direct_hit ca.apply_status_check 1
 
-execute if entity @s[advancements={entityid:entity_hurt_player={is_projectile=false,panic_causes=true}}] on attacker if entity @s[tag=ca.apply_status_melee_hit_self] run scoreboard players set $melee_hit_self ca.apply_status_check 1
-execute if entity @s[advancements={entityid:entity_hurt_player={is_projectile=false,panic_causes=true}}] on attacker if entity @s[tag=ca.apply_status_melee_hit_target] run scoreboard players set $melee_hit_target ca.apply_status_check 1
+execute if entity @s[advancements={entityid:entity_hurt_player={is_projectile=false,is_lightning=false}}] on attacker if entity @s[tag=ca.apply_status_melee_hit_self] run scoreboard players set $melee_hit_self ca.apply_status_check 1
+execute if entity @s[advancements={entityid:entity_hurt_player={is_projectile=false,is_lightning=false}}] on attacker if entity @s[tag=ca.apply_status_melee_hit_target] run scoreboard players set $melee_hit_target ca.apply_status_check 1
 scoreboard players operation $do_status ca.apply_status_check += $melee_hit_self ca.apply_status_check
 scoreboard players operation $do_status ca.apply_status_check += $melee_hit_target ca.apply_status_check
 

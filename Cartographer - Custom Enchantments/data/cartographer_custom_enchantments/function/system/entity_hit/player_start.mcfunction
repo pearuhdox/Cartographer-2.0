@@ -1,17 +1,17 @@
-execute if entity @s[advancements={entityid:entity_hurt_player={panic_causes=true}}] on attacker at @s run function cartographer_custom_enchantments:system/entity_hit/energized_proc
+execute if entity @s[advancements={entityid:entity_hurt_player={is_lightning=false}}] on attacker at @s run function cartographer_custom_enchantments:system/entity_hit/energized_proc
 
-execute if entity @s[advancements={entityid:entity_hurt_player={panic_causes=true}}] if score $vengeance_damage ca.vengeance_stack matches 1.. run function cartographer_custom_enchantments:enchantment/passive/vengeance/hit
+execute if entity @s[advancements={entityid:entity_hurt_player={is_lightning=false}}] if score $vengeance_damage ca.vengeance_stack matches 1.. run function cartographer_custom_enchantments:enchantment/passive/vengeance/hit
 
-execute if entity @s[advancements={entityid:entity_hurt_player={panic_causes=true}}] if score $used_momentum ca.momentum_stack matches 1.. run function cartographer_custom_enchantments:enchantment/passive/momentum/hit/victim
+execute if entity @s[advancements={entityid:entity_hurt_player={is_lightning=false}}] if score $used_momentum ca.momentum_stack matches 1.. run function cartographer_custom_enchantments:enchantment/passive/momentum/hit/victim
 
-execute if entity @s[advancements={entityid:entity_hurt_player={panic_causes=true}}] if score $used_storm ca.storm_stack matches 1.. run function cartographer_custom_enchantments:enchantment/passive/storm/hit/victim
-execute if entity @s[advancements={entityid:entity_hurt_player={panic_causes=true}}] if score $used_induction ca.induction_stack matches 1.. run function cartographer_custom_enchantments:enchantment/passive/induction/hit/victim
+execute if entity @s[advancements={entityid:entity_hurt_player={is_lightning=false}}] if score $used_storm ca.storm_stack matches 1.. run function cartographer_custom_enchantments:enchantment/passive/storm/hit/victim
+execute if entity @s[advancements={entityid:entity_hurt_player={is_lightning=false}}] if score $used_induction ca.induction_stack matches 1.. run function cartographer_custom_enchantments:enchantment/passive/induction/hit/victim
 
-execute if entity @s[advancements={entityid:entity_hurt_player={panic_causes=true}}] if score $damage ca.gravity_var matches 1.. run function cartographer_custom_enchantments:enchantment/passive/gravity/hit/victim
+execute if entity @s[advancements={entityid:entity_hurt_player={is_lightning=false}}] if score $damage ca.gravity_var matches 1.. run function cartographer_custom_enchantments:enchantment/passive/gravity/hit/victim
 
 
-execute if score $proc ca.ench_starfall_lvl matches 100.. unless predicate cartographer_core:player/cant_crit if entity @s[advancements={entityid:entity_hurt_player={panic_causes=true,is_projectile=false}}] run scoreboard players set $proc ca.ench_starfall_lvl 1
-execute if score $proc ca.ench_starfall_lvl matches 100.. if predicate cartographer_core:player/cant_crit if entity @s[advancements={entityid:entity_hurt_player={panic_causes=true,is_projectile=false}}] run scoreboard players set $proc ca.ench_starfall_lvl 2
+execute if score $proc ca.ench_starfall_lvl matches 100.. unless predicate cartographer_core:player/cant_crit if entity @s[advancements={entityid:entity_hurt_player={is_lightning=false,is_projectile=false}}] run scoreboard players set $proc ca.ench_starfall_lvl 1
+execute if score $proc ca.ench_starfall_lvl matches 100.. if predicate cartographer_core:player/cant_crit if entity @s[advancements={entityid:entity_hurt_player={is_lightning=false,is_projectile=false}}] run scoreboard players set $proc ca.ench_starfall_lvl 2
 execute if score $proc ca.ench_starfall_lvl matches 100.. if entity @s[advancements={entityid:entity_hurt_player={is_projectile=true}}] run scoreboard players set $proc ca.ench_starfall_lvl 3
 execute if score $proc ca.ench_starfall_lvl matches 100.. if entity @s[advancements={entityid:entity_hurt_player={panic_causes=false,is_projectile=false}}] run scoreboard players set $proc ca.ench_starfall_lvl 4
 
@@ -21,8 +21,8 @@ execute if score $proc ca.ench_starfall_lvl matches 3 at @s run function cartogr
 execute if score $proc ca.ench_starfall_lvl matches 4 at @s run function cartographer_custom_enchantments:enchantment/passive/starfall/damage_event {proc_chance:5}
 
 
-execute if score $proc ca.ench_orbit_lvl matches 100.. unless predicate cartographer_core:player/cant_crit if entity @s[advancements={entityid:entity_hurt_player={panic_causes=true,is_projectile=false}}] run scoreboard players set $proc ca.ench_orbit_lvl 1
-execute if score $proc ca.ench_orbit_lvl matches 100.. if predicate cartographer_core:player/cant_crit if entity @s[advancements={entityid:entity_hurt_player={panic_causes=true,is_projectile=false}}] run scoreboard players set $proc ca.ench_orbit_lvl 2
+execute if score $proc ca.ench_orbit_lvl matches 100.. unless predicate cartographer_core:player/cant_crit if entity @s[advancements={entityid:entity_hurt_player={is_lightning=false,is_projectile=false}}] run scoreboard players set $proc ca.ench_orbit_lvl 1
+execute if score $proc ca.ench_orbit_lvl matches 100.. if predicate cartographer_core:player/cant_crit if entity @s[advancements={entityid:entity_hurt_player={is_lightning=false,is_projectile=false}}] run scoreboard players set $proc ca.ench_orbit_lvl 2
 execute if score $proc ca.ench_orbit_lvl matches 100.. if entity @s[advancements={entityid:entity_hurt_player={is_projectile=true}}] run scoreboard players set $proc ca.ench_orbit_lvl 3
 execute if score $proc ca.ench_orbit_lvl matches 100.. if entity @s[advancements={entityid:entity_hurt_player={panic_causes=false,is_projectile=false}}] run scoreboard players set $proc ca.ench_orbit_lvl 4
 
@@ -44,8 +44,8 @@ execute if score $proc ca.ench_soulfire_lvl matches 1 at @s if entity @s[tag=!ca
 #Get Generic Weapon Damage Values - Only Direct Melee/Projectile Hits
 scoreboard players set $attack_type ca.ench_value 0
 function cartographer_custom_enchantments:enchantment/helper/weapon/reset_ench_values
-execute if entity @s[advancements={entityid:entity_hurt_player={panic_causes=true,is_projectile=false}}] run scoreboard players set $attack_type ca.ench_value 1
-execute if entity @s[advancements={entityid:entity_hurt_player={is_projectile=true,panic_causes=true}}] run scoreboard players set $attack_type ca.ench_value 2
+execute if entity @s[advancements={entityid:entity_hurt_player={is_lightning=false,is_projectile=false}}] run scoreboard players set $attack_type ca.ench_value 1
+execute if entity @s[advancements={entityid:entity_hurt_player={is_projectile=true,is_lightning=false}}] run scoreboard players set $attack_type ca.ench_value 2
 execute if score $attack_type ca.ench_value matches 1 on attacker run function cartographer_custom_enchantments:enchantment/helper/weapon/get_ench_values
 
 execute if score $attack_type ca.ench_value matches 2 on attacker run function cartographer_custom_enchantments:system/projectile_find/owner_uuid
