@@ -12,7 +12,7 @@ data modify storage cartographer:ender_pouch player set from storage gu:main out
 scoreboard players set $pocket_success ca.pouch_var 0
 scoreboard players set $pocket_block ca.pouch_var 0
 
-execute if data storage cartographer:ender_pouch bag.components."minecraft:bundle_contents"[0] run function cartographer_ender_pouch:ender/start_iterate with storage cartographer:ender_pouch
+execute unless score $init_pocketed ca.pouch_var matches 1.. if data storage cartographer:ender_pouch bag.components."minecraft:bundle_contents"[0] run function cartographer_ender_pouch:ender/start_iterate with storage cartographer:ender_pouch
 execute if data storage cartographer:ender_pouch bag.components."minecraft:bundle_contents"[0] run function cartographer_ender_pouch:ender/iterate
 
 execute if score $pocket_success ca.pouch_var matches 1.. run playsound minecraft:block.ender_chest.close player @s ~ ~ ~ 0.35 1.75

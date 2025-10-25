@@ -61,3 +61,10 @@ scoreboard objectives add ca.rat_dmg_absorbed minecraft.custom:damage_absorbed d
 
 scoreboard objectives add ca.rat_time dummy
 scoreboard objectives add ca.rat_reach dummy
+
+scoreboard objectives add ca.rat_perc dummy
+scoreboard objectives add ca.rat_total dummy
+
+scoreboard objectives add ca.rat_dmg_dealt minecraft.custom:damage_dealt dummy
+
+execute unless score $base_invul_frames ca.gamerule matches 0.. run scoreboard players set $base_invul_frames ca.gamerule 10
