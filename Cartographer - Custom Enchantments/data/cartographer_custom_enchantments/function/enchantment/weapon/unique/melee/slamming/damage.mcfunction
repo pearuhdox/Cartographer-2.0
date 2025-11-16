@@ -1,4 +1,4 @@
-$damage @s $(damage) minecraft:player_attack by @p[tag=ca.slamming_owner]
+$damage @s $(damage) cartographer_custom_enchantments:fake_melee_damage by @p[tag=ca.slamming_owner]
 
 
 function cartographer_custom_statuses:apply_status/apply/set_target

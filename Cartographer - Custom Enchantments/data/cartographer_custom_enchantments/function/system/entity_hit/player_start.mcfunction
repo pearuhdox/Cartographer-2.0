@@ -1,3 +1,7 @@
+#Run Thorns from player side
+execute if entity @s[advancements={entityid:entity_hurt_player={is_lightning=false}}] if score @s ca.ench_thorns_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/thorns/schedule
+
+#Run All Other Enchants
 execute if entity @s[advancements={entityid:entity_hurt_player={is_lightning=false}}] on attacker at @s run function cartographer_custom_enchantments:system/entity_hit/energized_proc
 
 execute if entity @s[advancements={entityid:entity_hurt_player={is_lightning=false}}] if score $vengeance_damage ca.vengeance_stack matches 1.. run function cartographer_custom_enchantments:enchantment/passive/vengeance/hit
@@ -8,7 +12,6 @@ execute if entity @s[advancements={entityid:entity_hurt_player={is_lightning=fal
 execute if entity @s[advancements={entityid:entity_hurt_player={is_lightning=false}}] if score $used_induction ca.induction_stack matches 1.. run function cartographer_custom_enchantments:enchantment/passive/induction/hit/victim
 
 execute if entity @s[advancements={entityid:entity_hurt_player={is_lightning=false}}] if score $damage ca.gravity_var matches 1.. run function cartographer_custom_enchantments:enchantment/passive/gravity/hit/victim
-
 
 execute if score $proc ca.ench_starfall_lvl matches 100.. unless predicate cartographer_core:player/cant_crit if entity @s[advancements={entityid:entity_hurt_player={is_lightning=false,is_projectile=false}}] run scoreboard players set $proc ca.ench_starfall_lvl 1
 execute if score $proc ca.ench_starfall_lvl matches 100.. if predicate cartographer_core:player/cant_crit if entity @s[advancements={entityid:entity_hurt_player={is_lightning=false,is_projectile=false}}] run scoreboard players set $proc ca.ench_starfall_lvl 2

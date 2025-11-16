@@ -1,8 +1,4 @@
-#say spinny
 $execute as $(target) at @s run tag @s remove ca.did_ricochet
-
-#$execute as $(target) unless entity @s[tag=ca.hit_block] run say $(y_motion)
-#$say step $(x_step) | $(y_step) | $(z_step)
 
 $execute as $(target) at @s if score duration= carto_event matches 1.. unless entity @s[tag=ca.animation_set] run data modify entity @s {} merge value {teleport_duration:1,start_interpolation:0,interpolation_duration:0,transformation:[0.0000f,0.0000f,1.0000f,0.0000f,0.7071f,0.7071f,-0.0000f,0.0000f,-0.7071f,0.7071f,0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f]}
 $execute as $(target) at @s if score duration= carto_event matches 1.. unless entity @s[tag=ca.animation_set] run tag @s add ca.animation_set

@@ -8,4 +8,7 @@ execute if entity @s[tag=ca.has_custom_status_nullify_ench] unless score @s ca.n
 
 execute if entity @s[tag=ca.has_custom_status_barricade] run scoreboard players set $blocked ca.warding_var 1
 
+#Add condition for parrying - Custom Shields
+execute if entity @s[tag=ca.is_parrying] run scoreboard players set $blocked ca.warding_var 1
+
 execute unless score $blocked ca.warding_var matches 1.. run function carto_event:event/custom_statuses/warding/proc_check

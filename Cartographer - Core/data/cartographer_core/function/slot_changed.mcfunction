@@ -17,8 +17,10 @@ execute if score $custom_enchantments ca.installed matches 1.. run function cart
 execute if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:calculate_hand
 execute if score $custom_statuses ca.installed matches 1.. run function cartographer_custom_statuses:calculate_hand
 execute if score $enchantment_rework ca.installed matches 1.. run function cartographer_enchantment_rework:calculate_hand
+execute if score $custom_shields ca.installed matches 1.. run function cartographer_custom_shields:calculate_hand
 
 execute if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:calculate_hand_attr
+execute if score $custom_shields ca.installed matches 1.. run function cartographer_custom_shields:calculate_hand_attr
 execute if score $rat ca.installed matches 1.. run function cartographer_rat:calculate_hand_attr
 
 execute if score $custom_statuses ca.installed matches 1.. run function cartographer_custom_statuses:calculator/process/coating_check
@@ -27,10 +29,12 @@ execute if score $custom_statuses ca.installed matches 1.. run function cartogra
 execute if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:allow_tick
 execute if score $custom_enchantments ca.installed matches 1.. run function cartographer_custom_enchantments:allow_tick
 execute if score $custom_statuses ca.installed matches 1.. run function cartographer_custom_statuses:allow_tick
+execute if score $custom_shields ca.installed matches 1.. run function cartographer_custom_shields:allow_tick
 
 #Do a Reset Attribute Check
 execute if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:reset_attributes
 execute if score $enchantment_rework ca.installed matches 1.. run function cartographer_enchantment_rework:reset_attributes
+#execute if score $custom_shields ca.installed matches 1.. run function cartographer_custom_shields:reset_attributes
 
 execute if entity @s[tag=ca.repeating_reloading_main] run tag @s remove ca.repeating_loaded_arrow
 

@@ -1,4 +1,3 @@
-#say disabled
 
 tag @s add ca.disabled_arrow
 

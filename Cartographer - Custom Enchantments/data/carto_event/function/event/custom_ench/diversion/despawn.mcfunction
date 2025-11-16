@@ -8,4 +8,4 @@ data modify entity @s equipment set value {}
 scoreboard players remove $count ca.entity_purge_var 1
 
 tp @s ~ ~1 ~
-$damage @s 1024 player_attack by $(owner)
+$damage @s 1024 cartographer_custom_enchantments:fake_melee_damage by $(owner)

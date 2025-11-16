@@ -1,3 +1,5 @@
+execute if score $used_thorns ca.ench_thorns_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/thorns/schedule
+
 execute if score $vengeance_damage ca.vengeance_stack matches 1.. run function cartographer_custom_enchantments:enchantment/passive/vengeance/hit
 
 execute if score $used_momentum ca.momentum_stack matches 1.. run function cartographer_custom_enchantments:enchantment/passive/momentum/hit/victim
@@ -71,3 +73,5 @@ tag @s remove ca.projectile_find_loc
 
 #Test All Nearby Projectiles and see if there are ones that need to bypass damage check - later mechanic not to do now
 #execute as @e[type=#bb:projectile,distance=..10] at @s run say proj
+
+tag @s remove ca.block_special_attacks

@@ -46,7 +46,6 @@ data modify storage cartographer_core:telegraphing merge.transformation[11] set 
 
 data modify entity @s {} merge from storage cartographer_core:telegraphing merge
 
-#$say data merge entity @s {start_interpolation:0,interpolation_duration:7,text_opacity:170,transformation:[$(size),0.0000f,0.0000f,$(x_pos)f,0.0000f,-0.0000f,$(size),0.0500f,0.0000f,-$(size),-0.0000f,$(z_pos),0.0000f,0.0000f,0.0000f,1.0000f]}
 
 #10 -> -19170.0 -0.1917 -> 0.00001
 

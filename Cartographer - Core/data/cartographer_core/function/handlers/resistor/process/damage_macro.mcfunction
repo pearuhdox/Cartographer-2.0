@@ -55,7 +55,6 @@ $execute if score $type ca.resistor_var matches 107 run damage @s $(damage) cart
 
 $execute if score $type ca.resistor_var matches 110 run damage @s $(damage) cartographer_core:resistor/melee
 
-#$say $(damage)
 
 execute store result score $damage_subtract ca.resistor_var run data get entity @s Health 100
 

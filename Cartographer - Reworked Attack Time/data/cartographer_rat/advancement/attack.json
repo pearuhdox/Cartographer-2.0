@@ -16,6 +16,10 @@
                             {
                                 "id": "minecraft:is_player_attack",
                                 "expected": true
+                            },
+                            {
+                                "id": "minecraft:no_anger",
+                                "expected": false
                             }
                         ]
                     }

@@ -1,5 +1,6 @@
 {
     "values": [
-      "cartographer_custom_enchantments:opportunist_damage"
+      "cartographer_custom_enchantments:opportunist_damage",
+      "cartographer_custom_enchantments:fake_melee_damage"
     ]
   }

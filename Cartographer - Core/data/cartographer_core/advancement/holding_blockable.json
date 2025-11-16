@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "draw_bow": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": 
+              {
+              "can_block": 1
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "cartographer_core:handlers/using/holding_shield"
+  }
+}

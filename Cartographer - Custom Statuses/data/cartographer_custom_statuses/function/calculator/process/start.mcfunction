@@ -33,6 +33,10 @@ function cartographer_custom_statuses:calculator/process/create_action/attacked
 
 execute if score $custom_enchantments ca.installed matches 1.. run function cartographer_custom_statuses:calculator/process/start_custom_enchantments
 
+execute if score $custom_shields ca.installed matches 1.. run function cartographer_custom_statuses:calculator/process/create_action/custom_shields/land_parry
+execute if score $custom_shields ca.installed matches 1.. run function cartographer_custom_statuses:calculator/process/create_action/custom_shields/land_block
+execute if score $custom_shields ca.installed matches 1.. run function cartographer_custom_statuses:calculator/process/create_action/custom_shields/blocking
+
 #FUNCTION TAG HERE
 
 function cartographer_core:pldata/write

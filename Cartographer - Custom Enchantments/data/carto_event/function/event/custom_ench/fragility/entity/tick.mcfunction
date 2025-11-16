@@ -3,11 +3,6 @@ $execute as $(pos_z) unless entity @s[tag=ca.animated] positioned as $(target) r
 $execute as $(neg_x) unless entity @s[tag=ca.animated] positioned as $(target) run tp @s ~ ~ ~ ~180 0
 $execute as $(neg_z) unless entity @s[tag=ca.animated] positioned as $(target) run tp @s ~ ~ ~ ~270 0
 
-#$execute as $(pos_x) run say pos_x
-#$execute as $(pos_z) run say pos_z
-#$execute as $(neg_x) run say neg_x
-#$execute as $(neg_z) run say neg_z
-
 $execute as $(target) if entity @s[tag=ca.etheral_sound_played] as $(pos_x) unless entity @s[tag=ca.animated] at @s run function carto_event:event/custom_ench/ethereal/entity/telegraph_animation
 $execute as $(target) if entity @s[tag=ca.etheral_sound_played] as $(pos_z) unless entity @s[tag=ca.animated] at @s run function carto_event:event/custom_ench/ethereal/entity/telegraph_animation
 $execute as $(target) if entity @s[tag=ca.etheral_sound_played] as $(neg_x) unless entity @s[tag=ca.animated] at @s run function carto_event:event/custom_ench/ethereal/entity/telegraph_animation

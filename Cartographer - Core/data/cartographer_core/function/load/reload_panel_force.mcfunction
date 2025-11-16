@@ -21,6 +21,7 @@ function cartographer_mob_utils:load/load_check
 function cartographer_enchantment_rework:load/load_check
 function cartographer_repair_stations:load/load_check
 function cartographer_rat:load/load_check
+function cartographer_custom_shields:load/load_check
 
 scoreboard players set $z_detect_packs ca.installed 0
 

@@ -1,4 +1,4 @@
-$damage @s $(damage) minecraft:player_attack by @p[tag=ca.cleaving_owner]
+$damage @s $(damage) cartographer_custom_enchantments:fake_melee_damage by @p[tag=ca.cleaving_owner]
 
 function cartographer_custom_statuses:apply_status/apply/set_target
 execute if score $allow_statuses_target ca.ench_cleaving_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/cleaving/custom_statuses/status_target

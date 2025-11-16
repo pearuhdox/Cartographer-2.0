@@ -60,5 +60,3 @@ execute if score @s ca.attr_aoe_size_percent matches -1999999.. run scoreboard p
 
 execute if score @s ca.attr_aoe_damage_value matches -1999999.. run scoreboard players operation $aoe_damage_flat ca.attr_apply_var = @s ca.attr_aoe_damage_value
 execute if score @s ca.attr_aoe_damage_percent matches -1999999.. run scoreboard players operation $aoe_damage_percent ca.attr_apply_var = @s ca.attr_aoe_damage_percent
-
-#say data from player

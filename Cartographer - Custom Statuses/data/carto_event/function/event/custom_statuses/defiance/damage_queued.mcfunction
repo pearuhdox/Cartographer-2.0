@@ -9,6 +9,9 @@ execute if entity @s[tag=ca.has_custom_status_nullify_ench] unless score @s ca.n
 
 execute if entity @s[tag=ca.has_custom_status_barricade] run scoreboard players set $blocked ca.defiance_var 1
 
+#Add condition for parrying - Custom Shields
+execute if entity @s[tag=ca.is_parrying] run scoreboard players set $blocked ca.defiance_var 1
+
 
 execute store result score $health ca.defiance_var run data get entity @s Health 100
 

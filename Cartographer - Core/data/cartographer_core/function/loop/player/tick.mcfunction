@@ -57,12 +57,21 @@ function cartographer_custom_attributes:loop/tick/player
 function cartographer_custom_enchantments:loop/tick/player
 function cartographer_custom_statuses:loop/tick/player
 function cartographer_lexica:loop/tick/player
-#function cartographer_mob_abilities:loop/tick/player
+function cartographer_custom_shields:loop/tick/player
 #function cartographer_mimics:loop/tick/player
 function cartographer_repair_stations:loop/tick/player
 function cartographer_mob_utils:loop/tick/player
 function cartographer_ender_pouch:player/tick
 function cartographer_rat:loop/player/tick
+
+#Run Warning Indicators
+data modify storage cartographer_core:indicators text set value []
+execute if score $rat ca.installed matches 1.. run function cartographer_core:handlers/indicators/rat
+execute if score $custom_enchantments ca.installed matches 1.. run function cartographer_core:handlers/indicators/warning
+execute if score $custom_enchantments ca.installed matches 1.. run function cartographer_core:handlers/indicators/enchantments
+execute if score $custom_shields ca.installed matches 1.. run function cartographer_core:handlers/indicators/shields
+execute if entity @s[tag=ca.display_indicator] run function cartographer_core:handlers/indicators/display
+tag @s remove ca.display_indicator
 
 #Remove the inventory check from core here so it can be used in other functionality
 

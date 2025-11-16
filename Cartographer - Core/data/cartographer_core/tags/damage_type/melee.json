@@ -1,5 +1,6 @@
 {
     "values": [
-      "minecraft:player_attack"
+      "minecraft:player_attack",
+      {"id":"cartographer_custom_enchantments:fake_melee_damage","required":false}
     ]
   }

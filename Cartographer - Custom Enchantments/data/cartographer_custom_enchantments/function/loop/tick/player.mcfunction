@@ -1,4 +1,3 @@
-#say player loop
 
 #execute if score @s ca.ethereal_time matches 1.. run scoreboard players remove @s ca.ethereal_time 1
 
@@ -47,22 +46,9 @@ execute if predicate cartographer_core:periodic_tick/20 if predicate cartographe
 
 
 #execute if score @s ca.ench_auto_charge_slot matches -106.. if entity @s[tag=ca.auto_charge_needs_recharge] run scoreboard players add @s ca.auto_charge_time 1
-#execute if score @s ca.ench_auto_charge_slot matches -106.. if entity @s[tag=ca.auto_charge_needs_recharge] if score @s ca.auto_charge_time >= @s ca.auto_charge_time_max run say AUTO CHARGE
 
 
 execute if score @s ca.special_attack_delay matches 1.. run scoreboard players remove @s ca.special_attack_delay 1
-
-execute if entity @s[tag=ca.indicator_warning] if score @s ca.no_warning matches 1 run scoreboard players set @s ca.warning_time 0
-execute if entity @s[tag=ca.indicator_warning] if score @s ca.no_warning matches 1 run tag @s remove ca.indicator_warning
-execute if entity @s[tag=ca.indicator_warning] run function cartographer_custom_enchantments:indicator/warning/tick
-
-execute if entity @s[tag=ca.indicator_cc] if score @s ca.no_cc matches 1 run scoreboard players set @s ca.cc_time 0
-execute if entity @s[tag=ca.indicator_cc] if score @s ca.no_cc matches 1 run tag @s remove ca.indicator_cc
-execute if entity @s[tag=ca.indicator_cc] run function cartographer_custom_enchantments:indicator/cc/tick
-
-execute if entity @s[tag=ca.indicator_charging] if score @s ca.no_charging matches 1 run scoreboard players set @s ca.charging_time 0
-execute if entity @s[tag=ca.indicator_charging] if score @s ca.no_charging matches 1 run tag @s remove ca.indicator_charging
-execute if entity @s[tag=ca.indicator_charging] run function cartographer_custom_enchantments:indicator/charging/tick
 
 execute if score @s ca.ambushing_safety matches 1.. run scoreboard players remove @s ca.ambushing_safety 1
 

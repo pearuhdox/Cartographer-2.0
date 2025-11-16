@@ -9,5 +9,3 @@ execute unless score @s ca.id matches 1.. run function cartographer_core:load/pl
 tag @s add ca.init
 
 function cartographer_core:handlers/body_armor_handler/add_default
-
-#say Initialize

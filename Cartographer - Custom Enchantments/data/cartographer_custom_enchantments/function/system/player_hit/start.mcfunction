@@ -13,7 +13,12 @@ execute if score $attack_type ca.ench_value matches 1..2 run data modify storage
 execute if score $attack_type ca.ench_value matches 2 run function cartographer_custom_enchantments:system/projectile_find/owner_uuid
 execute if score $attack_type ca.ench_value matches 2 at @n[tag=ca.projectile_find_loc] run function cartographer_custom_enchantments:system/projectile_find/scan
 
-#Run Enchantments
+
+#Run Thorns from Entity Perspective
+scoreboard players set $used_thorns ca.ench_thorns_lvl 0
+execute if entity @s[advancements={entityid:player_hurt_entity={is_lightning=false}}] at @s on attacker if score @s ca.ench_thorns_lvl matches 1.. run scoreboard players set $used_thorns ca.ench_thorns_lvl 1
+
+#Run All Other Enchants
 execute if score @s ca.ench_inertia_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/inertia/attack
 
 scoreboard players set $used_momentum ca.momentum_stack 0
@@ -73,4 +78,3 @@ execute if score $attack_type ca.ench_value matches 1 if score @s ca.ench_quick_
 execute if score $attack_type ca.ench_value matches 1 if score @s ca.ench_cleaving_lvl matches 1.. unless predicate cartographer_core:player/sprinting if predicate cartographer_core:player/cant_crit unless score @s ca.special_attack_cooldown matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/cleaving/hit
 execute if score $attack_type ca.ench_value matches 1 if score @s ca.ench_slamming_lvl matches 1.. unless predicate cartographer_core:player/sprinting unless predicate cartographer_core:player/cant_crit unless score @s ca.special_attack_cooldown matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/slamming/hit
 execute if score $attack_type ca.ench_value matches 1 if score @s ca.ench_thrusting_lvl matches 1.. if predicate cartographer_core:player/sprinting if predicate cartographer_core:player/cant_crit unless score @s ca.special_attack_cooldown matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/thrusting/hit
-

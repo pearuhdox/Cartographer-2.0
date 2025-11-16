@@ -53,7 +53,7 @@ scoreboard objectives add ca.kbr_frames dummy
 
 scoreboard objectives add ca.i_frame_tick_timer dummy
 
-scoreboard objectives add ca.block_attack_indiactor_time dummy
+scoreboard objectives add ca.block_attack_indicator_time dummy
 
 scoreboard objectives add ca.rat_dmg_taken minecraft.custom:damage_taken dummy
 scoreboard objectives add ca.rat_dmg_resist minecraft.custom:damage_resisted dummy

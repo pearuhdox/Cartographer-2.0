@@ -1,3 +1,3 @@
-$execute positioned ~-$(half_range) ~ ~-$(half_range) as @e[type=#cartographer_core:affected_by_carto,dx=$(range_1),dy=2,dz=$(range_1),limit=5,sort=nearest] at @s run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/slamming/damage with storage cartographer:custom_enchantments
+$execute positioned ~-$(half_range) ~ ~-$(half_range) as @e[type=#cartographer_core:affected_by_carto,tag=!ca.block_special_attacks,dx=$(range_1),dy=2,dz=$(range_1),limit=5,sort=nearest] at @s run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/slamming/damage with storage cartographer:custom_enchantments
 
 execute positioned ~ ~0.3 ~ run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/slamming/vfx with storage cartographer:custom_enchantments

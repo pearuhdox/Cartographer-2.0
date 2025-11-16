@@ -5,8 +5,8 @@ tellraw @a[distance=1..] {"translate":"cartographer.charon.shade.despawn.announc
 
 gamemode survival @s
 
-data modify storage cartographer:charon x set from entity @s SpawnX
-data modify storage cartographer:charon y set from entity @s SpawnY
-data modify storage cartographer:charon z set from entity @s SpawnZ
+data modify storage cartographer:charon x set from entity @s respawn.pos[0]
+data modify storage cartographer:charon y set from entity @s respawn.pos[1]
+data modify storage cartographer:charon z set from entity @s respawn.pos[2]
 
 function cartographer_charon:multiplayer/do_despawn_respawn with storage cartographer:charon

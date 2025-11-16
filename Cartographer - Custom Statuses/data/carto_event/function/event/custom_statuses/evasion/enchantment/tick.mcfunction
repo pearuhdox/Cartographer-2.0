@@ -9,7 +9,7 @@ $execute as $(target) at @s if score duration= carto_event matches 2.. run tag @
 $execute as $(target) at @s if score duration= carto_event matches 21.. if entity @s[type=player] if score @s ca.evasion_chance <= @s ca.evasion_amount run effect give @s resistance 1 9 true
 $execute as $(target) at @s if score duration= carto_event matches 21.. if entity @s[type=!player] if score @s ca.evasion_chance <= @s ca.evasion_amount run effect give @s resistance 1 2 true
 
-$execute as $(target) at @s if score duration= carto_event matches 2.. if entity @s[nbt={HurtTime:9s}] run function carto_event:event/custom_statuses/evasion/attempt
+$execute as $(target) at @s if score duration= carto_event matches 2.. unless entity @s[tag=ca.is_parrying] if entity @s[nbt={HurtTime:9s}] run function carto_event:event/custom_statuses/evasion/attempt
 
 $execute as $(target) at @s if data storage carto_event current[-1].parameters.tick_command run function carto_event:command_api/tick_command with storage carto_event current[-1].parameters
 

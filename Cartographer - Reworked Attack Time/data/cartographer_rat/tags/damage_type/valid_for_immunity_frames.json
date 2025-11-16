@@ -1,7 +1,6 @@
 {
     "values": [
       {"id":"minecraft:mob_attack","required":false},
-      {"id":"minecraft:mob_attack_no_aggro","required":false},
       {"id":"#minecraft:is_projectile","required":false},
       {"id":"#minecraft:is_player_attack","required":false},
       {"id":"#minecraft:is_magic","required":false},

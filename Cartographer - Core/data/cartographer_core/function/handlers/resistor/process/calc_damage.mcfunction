@@ -16,6 +16,10 @@ item replace entity 31182015-1691-4321-1989-151400000000 armor.head from entity 
 
 execute store result storage cartographer:core resistor.data.damage double 0.1 run scoreboard players get @s ca.resistor_damage_amt
 
+effect clear @s resistance
+data remove storage cartographer:core resistor.data.resist_amp
+data modify storage cartographer:core resistor.data.resist_amp set from entity @s active_effects[{id:"minecraft:resistance"}].hidden_effect.amplifier
+
 
 scoreboard players operation 31182015-1691-4321-1989-151400000000 ca.fragility_time = @s ca.fragility_time
 scoreboard players operation 31182015-1691-4321-1989-151400000000 ca.ethereal_time = @s ca.ethereal_time
@@ -32,6 +36,7 @@ scoreboard players operation 31182015-1691-4321-1989-151400000000 ca.instability
 
 scoreboard players operation 31182015-1691-4321-1989-151400000000 ca.ench_aggro_count = @s ca.ench_aggro_count
 
+execute as 31182015-1691-4321-1989-151400000000 at @s if data storage cartographer:core resistor.data.resist_amp run function cartographer_core:handlers/resistor/process/resist_macro with storage cartographer:core resistor.data
 
 execute as 31182015-1691-4321-1989-151400000000 at @s run function cartographer_core:handlers/resistor/process/damage_macro with storage cartographer:core resistor.data
 

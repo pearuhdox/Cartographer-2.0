@@ -1,4 +1,3 @@
-#say creeper
 
 #Add Inactivity to the marker - 1 per tick, unless in full light, then 3 per tick
 #Force Inactivity to 0 if the creeper is ignited or if a player re-enters 32 blocks of range

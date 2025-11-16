@@ -1,4 +1,3 @@
-say speed up arrows
 
 execute on origin if score @s ca.attr_ranged_velocity_total matches -1999999.. run scoreboard players operation $input_speed ca.attr_ranged_velocity_total = @s ca.attr_ranged_velocity_total
 

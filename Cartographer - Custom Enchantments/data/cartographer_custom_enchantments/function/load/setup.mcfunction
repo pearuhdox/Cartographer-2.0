@@ -1079,6 +1079,8 @@ scoreboard objectives add ca.special_attack_cooldown dummy
 scoreboard objectives add ca.special_attack_animation dummy
 scoreboard objectives add ca.special_attack_delay dummy
 scoreboard objectives add ca.special_attack_wait dummy
+scoreboard objectives add ca.special_attack_windup dummy
+
 
 scoreboard objectives add ca.channeling_time dummy
 
@@ -1154,6 +1156,7 @@ scoreboard objectives add ca.ench_pride_check dummy
 
 scoreboard objectives add ca.warning_time dummy
 scoreboard objectives add ca.warning_anim dummy
+scoreboard objectives add ca.warning_sound_cdl dummy
 scoreboard objectives add ca.no_warning dummy
 
 scoreboard objectives add ca.charging_time dummy
@@ -1161,6 +1164,7 @@ scoreboard objectives add ca.charging_anim dummy
 scoreboard objectives add ca.no_charging dummy
 
 scoreboard objectives add ca.cc_time dummy
+scoreboard objectives add ca.cc_sound_cdl dummy
 scoreboard objectives add ca.cc_anim dummy
 scoreboard objectives add ca.no_cc dummy
 

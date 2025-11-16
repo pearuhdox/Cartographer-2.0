@@ -87,6 +87,7 @@ execute if entity @s[tag=ca.do_inv_reset] if score $custom_attributes ca.install
 execute if entity @s[tag=ca.do_inv_reset] if score $custom_enchantments ca.installed matches 1.. run function cartographer_custom_enchantments:do_reset_calc
 execute if entity @s[tag=ca.do_inv_reset] if score $custom_statuses ca.installed matches 1.. run function cartographer_custom_statuses:do_reset_calc
 execute if entity @s[tag=ca.do_inv_reset] if score $enchantment_rework ca.installed matches 1.. run function cartographer_enchantment_rework:do_reset_calc
+execute if entity @s[tag=ca.do_inv_reset] if score $custom_shields ca.installed matches 1.. run function cartographer_custom_shields:do_reset_calc
 
 #Do Enchant Calculation Here
 execute unless entity @s[tag=ca.suppress_inv_update] if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:do_ench_calc
@@ -97,15 +98,18 @@ execute unless entity @s[tag=ca.suppress_inv_update] if score $enchantment_rewor
 #Do Attribute Calculation Here
 execute unless entity @s[tag=ca.suppress_inv_update] if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:do_attr_calc
 execute unless entity @s[tag=ca.suppress_inv_update] if score $rat ca.installed matches 1.. run function cartographer_rat:do_attr_calc
+execute unless entity @s[tag=ca.suppress_inv_update] if score $custom_shields ca.installed matches 1.. run function cartographer_custom_shields:do_attr_calc
 
 #Reset Attributes from Enchantments if required
 execute unless entity @s[tag=ca.suppress_inv_update] if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:reset_attributes
 execute unless entity @s[tag=ca.suppress_inv_update] if score $enchantment_rework ca.installed matches 1.. run function cartographer_enchantment_rework:reset_attributes
+execute unless entity @s[tag=ca.suppress_inv_update] if score $custom_shields ca.installed matches 1.. run function cartographer_custom_shields:reset_attributes
 
 #Enable Enchant Ticking if necessary
 execute if score $custom_attributes ca.installed matches 1.. run function cartographer_custom_attributes:allow_tick
 execute if score $custom_enchantments ca.installed matches 1.. run function cartographer_custom_enchantments:allow_tick
 execute if score $custom_statuses ca.installed matches 1.. run function cartographer_custom_statuses:allow_tick
+execute if score $custom_shields ca.installed matches 1.. run function cartographer_custom_shields:allow_tick
 
 #Reset tags
 tag @s remove ca.do_inv_reset

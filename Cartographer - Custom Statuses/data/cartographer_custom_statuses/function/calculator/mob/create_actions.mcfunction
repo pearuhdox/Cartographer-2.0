@@ -27,6 +27,7 @@ function cartographer_custom_statuses:calculator/process/create_action {action:"
 
 function cartographer_custom_statuses:calculator/process/create_action {action:"special_attack"}
 
+#function cartographer_custom_statuses:calculator/process/create_action {action:"land_parry"}
 
 #function cartographer_custom_statuses:calculator/process/create_action {action:"kill"}
 #function cartographer_custom_statuses:calculator/process/create_action {action:"passive"}

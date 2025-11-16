@@ -2,6 +2,7 @@
 	"values": [
         "#bb:hostile",
 		"minecraft:end_crystal",
-		"minecraft:sheep"
+		"minecraft:sheep",
+		"minecraft:happy_ghast"
 	]
 }

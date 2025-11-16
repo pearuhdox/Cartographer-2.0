@@ -2,8 +2,8 @@ execute store result score $damage ca.ench_var run attribute @s attack_damage ge
 execute store result score $mult ca.ench_var run attribute @s sweeping_damage_ratio get 100
 scoreboard players add $mult ca.ench_var 100
 
-#scoreboard players operation $damage ca.ench_var *= $100 ca.CONSTANT
-#scoreboard players operation $damage ca.ench_var /= $100 ca.CONSTANT
+scoreboard players operation $damage ca.ench_var *= $80 ca.CONSTANT
+scoreboard players operation $damage ca.ench_var /= $100 ca.CONSTANT
 
 scoreboard players operation $damage ca.ench_var *= $mult ca.ench_var
 scoreboard players operation $damage ca.ench_var /= $100 ca.CONSTANT
@@ -24,6 +24,9 @@ scoreboard players operation @s ca.raycast = $range ca.ench_var
 playsound minecraft:entity.player.attack.knockback player @a[distance=..16] ~ ~ ~ 1 0.75
 
 tag @s add ca.thrusting_owner
+
+execute store result storage cartographer:custom_enchantments damage double 0.01 run scoreboard players get $damage ca.ench_var
+execute store result storage cartographer:custom_enchantments range double 0.01 run scoreboard players get $range ca.ench_var
 
 data modify storage cartographer:custom_enchantments custom_statuses set value {}
 function cartographer_custom_enchantments:enchantment/weapon/unique/melee/thrusting/custom_statuses/check_allow_status

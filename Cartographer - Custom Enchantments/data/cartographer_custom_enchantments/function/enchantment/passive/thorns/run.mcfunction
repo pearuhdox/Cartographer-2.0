@@ -1,4 +1,3 @@
-
 function carto_event:event/custom_ench/orbit/custom_statuses/check_allow_status
 
 function cartographer_custom_enchantments:enchantment/passive/thorns/hit

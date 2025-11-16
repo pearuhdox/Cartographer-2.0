@@ -1,7 +1,7 @@
-#say creating a trap
+
 scoreboard players set $layer cage.var 0
 
-#Scan up to a max of 30 spawners in the area.
+#Scan up to a max of 20 spawners in the area.
 scoreboard players set $cage_stock cage.var 20
 
 execute align xyz positioned ~-32 ~-32 ~-32 run function cartographer_charon:cage/create_cage/layer

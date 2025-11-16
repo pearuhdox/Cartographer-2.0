@@ -8,3 +8,5 @@ scoreboard players operation @s ca.rat_time /= speed= ca.rat_time
 scoreboard players operation @s ca.rat_total = @s ca.rat_time
 
 function cartographer_rat:attack_time/get_percent
+
+tag @s add ca.rat_recharge

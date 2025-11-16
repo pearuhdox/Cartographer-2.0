@@ -1,4 +1,3 @@
-#execute as @s at @s run say display
 execute as @s at @s run scoreboard players set @s ca.entity_purge_var 0
 
 
