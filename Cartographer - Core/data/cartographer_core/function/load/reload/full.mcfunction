@@ -9,10 +9,8 @@ tellraw @s [{"text":"❰","color":"gold","bold":true},{"text":"⊰ Cartographer 
 
 tellraw @s {"text":"-----------------------","color":"#FFE0A3","bold":true}
 
-execute unless score $#lib_bbl ca.installed matches 1 run function cartographer_core:load/warnings/bbl
 execute unless score $#lib_bs ca.installed matches 1 run function cartographer_core:load/warnings/bs
 execute unless score $#lib_del ca.installed matches 1 run function cartographer_core:load/warnings/delta
-#execute unless score $#lib_dies ca.installed matches 1 run function cartographer_core:load/warnings/dies
 execute unless score $#lib_ehid ca.installed matches 1 run function cartographer_core:load/warnings/ehid
 execute unless score $#lib_mot ca.installed matches 1 run function cartographer_core:load/warnings/mot
 

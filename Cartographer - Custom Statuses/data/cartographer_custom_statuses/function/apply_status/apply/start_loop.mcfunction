@@ -17,8 +17,8 @@ execute unless entity @s[type=player] run function cartographer_core:amd/write
 
 
 #Give the projectile the tag it needs to be checked
-execute if entity @s[type=#bb:projectile,tag=!ca.projectile_checker] run tag @s add ca.needs_checker
-execute if entity @s[type=#bb:projectile,tag=!ca.projectile_checker] run tag @s add ca.has_status_data
+execute if entity @s[type=#cartographer_core:projectile,tag=!ca.projectile_checker] run tag @s add ca.needs_checker
+execute if entity @s[type=#cartographer_core:projectile,tag=!ca.projectile_checker] run tag @s add ca.has_status_data
 
 execute if entity @s[type=fishing_bobber,tag=!ca.projectile_checker] run tag @s add ca.needs_checker
 execute if entity @s[type=fishing_bobber,tag=!ca.projectile_checker] run tag @s add ca.has_status_data

@@ -14,8 +14,8 @@ scoreboard players operation @s ca.life_drain_buffer += $amount ca.life_drain_bu
 execute if entity @s[type=player] run function cartographer_core:helper/heal_player/apply_heal
 
 execute unless entity @s[type=player] run scoreboard players operation @s ca.heal /= $10 ca.CONSTANT
-execute unless entity @s[type=player] run scoreboard players operation @s bbl.heal_queue = @s ca.heal
-execute unless entity @s[type=player] run function bb:call/hpm/mob/heal
+execute unless entity @s[type=player] run scoreboard players operation @s ca.heal = @s ca.heal
+execute unless entity @s[type=player] run function cartographer_core:helper/heal_mob/main
 
 
 execute if entity @s[type=player] run playsound minecraft:entity.witch.drink player @a[distance=..16] ~ ~ ~ 0.5 1.5

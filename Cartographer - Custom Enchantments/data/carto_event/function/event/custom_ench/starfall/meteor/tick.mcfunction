@@ -41,6 +41,7 @@ $execute if score duration= carto_event matches 21.. as $(target) positioned $(x
 
 $execute if score duration= carto_event matches 6 as $(telegraph) at @s run tag @s add ca.damaging
 
+
 $execute if score duration= carto_event matches 1..5 as $(target) positioned $(x) $(y) $(z) if entity @s[type=player] positioned ~-$(half_size) ~ ~-$(half_size) as @e[type=#cartographer_core:affected_by_carto,limit=2,tag=!ca.starfall_cdl,dx=$(size_neg_1),dy=0,dz=$(size_neg_1)] at @s run function carto_event:event/custom_ench/starfall/meteor/damage with storage carto_event current[-1].parameters
 $execute if score duration= carto_event matches 1 as $(target) positioned $(x) $(y) $(z) unless entity @s[type=player] positioned ~-$(half_size) ~ ~-$(half_size) as @a[tag=!ca.starfall_cdl,limit=2,dx=$(size_neg_1),dy=0,dz=$(size_neg_1)] at @s run function carto_event:event/custom_ench/starfall/meteor/damage with storage carto_event current[-1].parameters
 

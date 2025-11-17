@@ -14,6 +14,6 @@
         "minecraft:vault",
         "minecraft:target",
         "minecraft:respawn_anchor",
-        "#bb:containers"
+        "#cartographer_core:containers"
     ]
 }

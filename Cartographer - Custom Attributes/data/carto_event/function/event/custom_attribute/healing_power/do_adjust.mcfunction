@@ -36,7 +36,8 @@ execute if score $heal ca.healing_power_hp matches ..-10 run function carto_even
 
 execute if entity @s[type=player] if score $heal ca.healing_power_hp matches 10.. run function cartographer_core:helper/heal_player/apply_heal
 execute if entity @s[type=player] if score $heal ca.healing_power_hp matches ..-10 run function cartographer_core:helper/damage_player/apply_damage
-execute unless entity @s[type=player] if score $heal ca.healing_power_hp matches ..-10 run function bb:call/hpm/mob/damage/true
+#TODO - Replace this?
+#execute unless entity @s[type=player] if score $heal ca.healing_power_hp matches ..-10 run function bb:call/hpm/mob/damage/true
 execute if score $heal ca.healing_power_hp matches ..-10 run scoreboard players set @s ca.damage 0
 
 scoreboard players set @s ca.healing_power_cooldown 2

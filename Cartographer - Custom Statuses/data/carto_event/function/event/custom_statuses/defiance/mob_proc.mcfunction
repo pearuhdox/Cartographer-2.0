@@ -11,8 +11,8 @@ data modify entity @s Health set value 1.0f
 attribute @s minecraft:max_health modifier remove ca.defiance_health_max
 
 execute unless entity @s[type=player] run scoreboard players operation @s ca.heal /= $10 ca.CONSTANT
-execute unless entity @s[type=player] run scoreboard players operation @s bbl.heal_queue = @s ca.heal
-execute unless entity @s[type=player] run function bb:call/hpm/mob/heal
+execute unless entity @s[type=player] run scoreboard players operation @s ca.heal = @s ca.heal
+execute unless entity @s[type=player] run function cartographer_core:helper/heal_mob/main
 
 tag @s add ca.defiance_proc
 

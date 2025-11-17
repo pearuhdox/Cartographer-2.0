@@ -7,7 +7,7 @@ scoreboard players set $is_entity ca.apply_status_conditions 0
 data modify storage cartographer:custom_statuses projectile set value {self:[],target:[]}
 
 data modify storage cartographer:custom_statuses projectile_data set value {}
-execute if entity @s[type=#bb:arrow] run data modify storage cartographer:custom_statuses projectile_data set from entity @s item.components.minecraft:custom_data.apply_status
+execute if entity @s[type=#cartographer_core:arrow] run data modify storage cartographer:custom_statuses projectile_data set from entity @s item.components.minecraft:custom_data.apply_status
 
 execute on origin if entity @s[tag=ca.apply_status_ranged_hit_self] run scoreboard players add $owned_self ca.apply_status_conditions 1
 execute on origin if entity @s[tag=ca.apply_status_ranged_hit_target] run scoreboard players add $owned_target ca.apply_status_conditions 1

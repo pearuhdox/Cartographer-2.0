@@ -1,6 +1,6 @@
 scoreboard players set $silence_delete ca.status_var 0
-execute if entity @s[type=#bb:projectile] on origin if entity @s[tag=ca.has_custom_status_silenced] unless entity @s[type=player] run scoreboard players set $silence_delete ca.status_var 1
-execute if entity @s[type=#bb:projectile] unless entity @s[type=trident] on origin if entity @s[tag=ca.has_custom_status_silenced] if entity @s[type=player] run scoreboard players set $silence_delete ca.status_var 1
+execute if entity @s[type=#cartographer_core:projectile] on origin if entity @s[tag=ca.has_custom_status_silenced] unless entity @s[type=player] run scoreboard players set $silence_delete ca.status_var 1
+execute if entity @s[type=#cartographer_core:projectile] unless entity @s[type=trident] on origin if entity @s[tag=ca.has_custom_status_silenced] if entity @s[type=player] run scoreboard players set $silence_delete ca.status_var 1
 
 execute if entity @s[type=fishing_bobber] on origin if entity @s[tag=ca.has_custom_status_silenced] run scoreboard players set $silence_delete ca.status_var 1
 

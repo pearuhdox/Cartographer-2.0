@@ -14,7 +14,7 @@ playsound minecraft:block.respawn_anchor.deplete player @a[distance=..8] ~ ~ ~ 2
 playsound minecraft:block.bell.resonate player @a[distance=..8] ~ ~ ~ 1 0.75
 playsound minecraft:entity.player.levelup player @a[distance=..8] ~ ~ ~ 2 1.2
 
-execute at @s if score $custom_statuses ca.installed matches 1.. as @e[type=#bb:hostile,distance=..10.5] at @s run function carto_event:api/create_single_entity_event {event:"custom_statuses/blindness",duration:60,delay:0,parameters:{amount:1.0,tick_command:""},merge_behavior:"custom"}
+execute at @s if score $custom_statuses ca.installed matches 1.. as @e[type=#cartographer_core:hostile,distance=..10.5] at @s run function carto_event:api/create_single_entity_event {event:"custom_statuses/blindness",duration:60,delay:0,parameters:{amount:1.0,tick_command:""},merge_behavior:"custom"}
 
 particle minecraft:glow_squid_ink ~ ~-1 ~ 0.3 0 0.3 0.05 50 normal
 particle minecraft:glow ~ ~1 ~ 0.3 0.25 0.3 3 50 normal

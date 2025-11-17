@@ -1,25 +1,21 @@
 data modify storage cartographer_repair_stations:item_input data.components.minecraft:damage set value 0
 
-scoreboard players set $rng_min bbl.rng 1
-scoreboard players set $rng_max bbl.rng 10
+execute store result score $random ca.repair_station_state run random value 1..10
 
-function bb:lib/rng
-
-execute unless score $value bbl.rng <= $upgrade_3 ca.repair_station_state run function cartographer_repair_stations:station/increase_cost
-execute if score $value bbl.rng <= $upgrade_3 ca.repair_station_state run function cartographer_repair_stations:station/upgrades/proc_runes
+execute unless score $random ca.repair_station_state <= $upgrade_3 ca.repair_station_state run function cartographer_repair_stations:station/increase_cost
+execute if score $random ca.repair_station_state <= $upgrade_3 ca.repair_station_state run function cartographer_repair_stations:station/upgrades/proc_runes
 
 
 
 function cartographer_repair_stations:station/extract/levels
 
-scoreboard players set $rng_min bbl.rng 1
-scoreboard players set $rng_max bbl.rng 10
+execute store result score $random ca.repair_station_state run random value 1..10
 
 function bb:lib/rng
 
-execute unless score $value bbl.rng <= $upgrade_2 ca.repair_station_state run function cartographer_repair_stations:station/extract/lapis_or_essence
-execute unless score $value bbl.rng <= $upgrade_2 ca.repair_station_state run function cartographer_repair_stations:station/extract/material
-execute if score $value bbl.rng <= $upgrade_2 ca.repair_station_state run function cartographer_repair_stations:station/upgrades/proc_simulacrum
+execute unless score $random ca.repair_station_state <= $upgrade_2 ca.repair_station_state run function cartographer_repair_stations:station/extract/lapis_or_essence
+execute unless score $random ca.repair_station_state <= $upgrade_2 ca.repair_station_state run function cartographer_repair_stations:station/extract/material
+execute if score $random ca.repair_station_state <= $upgrade_2 ca.repair_station_state run function cartographer_repair_stations:station/upgrades/proc_simulacrum
 
 execute if score $upgrade_4 ca.repair_station_state matches 1.. unless score $has_bonus_dur ca.repair_station_state matches 1.. run function cartographer_repair_stations:station/upgrades/bonus_dur/improve
 

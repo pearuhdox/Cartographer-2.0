@@ -122,10 +122,10 @@ execute store result score @s ca.attr_life_drain_amount_total run data get stora
 
 execute if score @s ca.attr_ranged_damage_total matches 1.. run data modify entity @s damage set value 0.0d
 
-execute if entity @s[type=#bb:arrow] on origin if entity @s[type=#minecraft:skeletons] run playsound minecraft:entity.skeleton.shoot hostile @a[distance=..16] ~ ~ ~ 1 1.5
-execute if entity @s[type=#bb:arrow] on origin if entity @s[type=minecraft:pillager] run playsound minecraft:item.crossbow.shoot hostile @a[distance=..16] ~ ~ ~ 1 1.5
-execute if entity @s[type=#bb:arrow] on origin if entity @s[type=minecraft:piglin] run playsound minecraft:item.crossbow.shoot hostile @a[distance=..16] ~ ~ ~ 1 1.5
-execute if entity @s[type=#bb:arrow] on origin if entity @s[type=!minecraft:piglin,type=!minecraft:pillager,type=!#minecraft:skeletons] run playsound minecraft:entity.skeleton.shoot hostile @a[distance=..16] ~ ~ ~ 1 1.5
+execute if entity @s[type=#cartographer_core:arrow] on origin if entity @s[type=#minecraft:skeletons] run playsound minecraft:entity.skeleton.shoot hostile @a[distance=..16] ~ ~ ~ 1 1.5
+execute if entity @s[type=#cartographer_core:arrow] on origin if entity @s[type=minecraft:pillager] run playsound minecraft:item.crossbow.shoot hostile @a[distance=..16] ~ ~ ~ 1 1.5
+execute if entity @s[type=#cartographer_core:arrow] on origin if entity @s[type=minecraft:piglin] run playsound minecraft:item.crossbow.shoot hostile @a[distance=..16] ~ ~ ~ 1 1.5
+execute if entity @s[type=#cartographer_core:arrow] on origin if entity @s[type=!minecraft:piglin,type=!minecraft:pillager,type=!#minecraft:skeletons] run playsound minecraft:entity.skeleton.shoot hostile @a[distance=..16] ~ ~ ~ 1 1.5
 
 execute if entity @s[type=trident] run playsound minecraft:item.trident.throw hostile @a[distance=..16] ~ ~ ~ 1 1.5
 

@@ -19,7 +19,7 @@ execute unless score $custom_attributes ca.installed matches 1.. if score $custo
 execute if entity @s[type=fishing_bobber] run function carto_event:api/create_single_entity_event {event:"fishing_bobber",duration:600,delay:0,parameters:{},merge_behavior:"none"}
 execute if entity @s[type=fishing_bobber] run function carto_event:event/fishing_bobber/apply_data_post with storage carto_event macro
 
-execute if entity @s[type=#bb:arrow] on passengers if entity @s[type=marker,tag=ca.new,tag=ca.projectile_checker] run tag @s add ca.is_arrow_tracker
+execute if entity @s[type=#cartographer_core:arrow] on passengers if entity @s[type=marker,tag=ca.new,tag=ca.projectile_checker] run tag @s add ca.is_arrow_tracker
 execute if entity @s[type=splash_potion] on passengers if entity @s[type=marker,tag=ca.new,tag=ca.projectile_checker] run tag @s add ca.is_potion_tracker
 execute if entity @s[type=lingering_potion] on passengers if entity @s[type=marker,tag=ca.new,tag=ca.projectile_checker] run tag @s add ca.is_lingering
 execute if entity @s[type=fishing_bobber] on passengers if entity @s[type=marker,tag=ca.new,tag=ca.projectile_checker] run tag @s add ca.is_fishing_bobber_tracker

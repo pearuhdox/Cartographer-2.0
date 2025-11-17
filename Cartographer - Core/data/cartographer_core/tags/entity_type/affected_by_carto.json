@@ -1,6 +1,6 @@
 {
 	"values": [
-        "#bb:hostile",
+        "#cartographer_core:hostile",
 		"minecraft:end_crystal",
 		"minecraft:sheep",
 		"minecraft:happy_ghast"

@@ -3,7 +3,7 @@ scoreboard players set $is_trident ca.attr_apply_var 0
 scoreboard players set $is_fireball ca.attr_apply_var 0
 scoreboard players set $is_small_fireball ca.attr_apply_var 0
 
-execute if entity @s[type=#bb:arrow] run scoreboard players set $is_arrow ca.attr_apply_var 1
+execute if entity @s[type=#cartographer_core:arrow] run scoreboard players set $is_arrow ca.attr_apply_var 1
 execute if entity @s[type=trident] run scoreboard players set $is_trident ca.attr_apply_var 1
 execute if entity @s[type=fireball] run scoreboard players set $is_fireball ca.attr_apply_var 1
 execute if entity @s[type=small_fireball] run scoreboard players set $is_small_fireball ca.attr_apply_var 1

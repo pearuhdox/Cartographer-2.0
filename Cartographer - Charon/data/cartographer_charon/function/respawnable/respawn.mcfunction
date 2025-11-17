@@ -16,6 +16,6 @@ particle minecraft:glow ~ ~0.8 ~ 0.25 0.3 0.25 5 30 normal
 particle minecraft:wax_off ~ ~4 ~ 0.3 2 0.3 2 50 normal
 particle minecraft:poof ~ ~3 ~ 0 1 0 0 15 normal
 
-execute at @p run effect give @e[type=#bb:hostile,distance=..15] blindness 7 0
+execute at @p run effect give @e[type=#cartographer_core:hostile,distance=..15] blindness 7 0
 
 execute at @p run particle glow ~ ~ ~ 0.4 0.1 0.4 0.1 40 normal @a

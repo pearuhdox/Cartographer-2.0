@@ -2,7 +2,8 @@ execute on attacker run scoreboard players operation $lvl ca.ench_starfall_lvl =
 
 #scoreboard players operation $chance ca.ench_starfall_lvl = $lvl ca.ench_starfall_lvl
 #scoreboard players operation $chance ca.ench_starfall_lvl *= $5 ca.CONSTANT
-scoreboard players set $chance ca.ench_starfall_lvl 20
+execute unless entity @s[type=player] run scoreboard players set $chance ca.ench_starfall_lvl 20
+execute if entity @s[type=player] run scoreboard players set $chance ca.ench_starfall_lvl 40
 
 $scoreboard players set $proc_coeff ca.ench_starfall_lvl $(proc_chance)
 

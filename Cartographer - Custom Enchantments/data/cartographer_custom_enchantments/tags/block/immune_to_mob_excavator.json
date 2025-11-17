@@ -18,6 +18,6 @@
         "minecraft:ancient_debris",
         "minecraft:netherite_block",
         "minecraft:respawn_anchor",
-        "#bb:containers"
+        "#cartographer_core:containers"
     ]
 }

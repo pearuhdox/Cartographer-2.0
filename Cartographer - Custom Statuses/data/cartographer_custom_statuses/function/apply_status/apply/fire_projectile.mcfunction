@@ -1,1 +1,1 @@
-execute if entity @s[type=#bb:projectile] run function cartographer_custom_statuses:apply_status/apply/fire_projectile_branch
+execute if entity @s[type=#cartographer_core:projectile] run function cartographer_custom_statuses:apply_status/apply/fire_projectile_branch

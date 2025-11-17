@@ -1,7 +1,7 @@
 
 execute on origin if score @s ca.attr_ranged_velocity_total matches -1999999.. run scoreboard players operation $input_speed ca.attr_ranged_velocity_total = @s ca.attr_ranged_velocity_total
 
-execute if entity @s[type=#bb:arrow] if score $input_speed ca.attr_ranged_velocity_total matches 2500.. run data modify entity @s NoGravity set value 1b
+execute if entity @s[type=#cartographer_core:arrow] if score $input_speed ca.attr_ranged_velocity_total matches 2500.. run data modify entity @s NoGravity set value 1b
 
 execute if score $input_speed ca.attr_ranged_velocity_total matches 101.. run function cartographer_custom_attributes:custom_attributes/effects/ranged_velocity/speed_calc_positive
 execute if score $input_speed ca.attr_ranged_velocity_total matches ..100 run function cartographer_custom_attributes:custom_attributes/effects/ranged_velocity/speed_calc_negative
@@ -40,4 +40,4 @@ execute store result entity @s Motion[0] double 0.01 run scoreboard players get 
 execute store result entity @s Motion[1] double 0.01 run scoreboard players get $y ca.attr_ranged_velocity_total
 execute store result entity @s Motion[2] double 0.01 run scoreboard players get $z ca.attr_ranged_velocity_total
 
-execute if entity @s[type=!#bb:arrow,tag=!ca.custom_trident] run function carto_event:api/create_single_entity_event {event:"custom_attribute/projectile_air_fix",duration:100,delay:0,parameters:{},merge_behavior:"none"}
+execute if entity @s[type=!#cartographer_core:arrow,tag=!ca.custom_trident] run function carto_event:api/create_single_entity_event {event:"custom_attribute/projectile_air_fix",duration:100,delay:0,parameters:{},merge_behavior:"none"}

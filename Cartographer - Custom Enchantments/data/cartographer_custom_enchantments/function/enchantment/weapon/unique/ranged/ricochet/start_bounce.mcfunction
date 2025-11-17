@@ -32,9 +32,9 @@ execute unless score $z_mot ca.ench_ricochet_lvl matches 1.. run data modify sto
 
 scoreboard players set @s ca.raycast 0
 
-execute if entity @s[type=#bb:arrow] positioned ~ ~-0.5 ~ run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/ricochet/raycast with storage cartographer_custom_enchantments:ricochet
+execute if entity @s[type=#cartographer_core:arrow] positioned ~ ~-0.5 ~ run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/ricochet/raycast with storage cartographer_custom_enchantments:ricochet
 execute if entity @s[type=trident] positioned ~ ~-0.5 ~ run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/ricochet/raycast with storage cartographer_custom_enchantments:ricochet
-execute if entity @s[type=!#bb:arrow,type=!trident] positioned ~ ~-0.2 ~ run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/ricochet/raycast with storage cartographer_custom_enchantments:ricochet
+execute if entity @s[type=!#cartographer_core:arrow,type=!trident] positioned ~ ~-0.2 ~ run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/ricochet/raycast with storage cartographer_custom_enchantments:ricochet
 
 scoreboard players set @s ca.raycast 0
 

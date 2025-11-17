@@ -1,2 +1,0 @@
-
-gamerule sendCommandFeedback true

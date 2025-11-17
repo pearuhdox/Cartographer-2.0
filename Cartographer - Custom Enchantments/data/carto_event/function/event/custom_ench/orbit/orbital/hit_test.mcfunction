@@ -1,6 +1,6 @@
 scoreboard players set $hits ca.ench_orbit_lvl 0
 
-execute if entity @s[tag=ca.player_spawned] positioned ~-0.5 ~ ~-0.5 as @e[type=#bb:hostile,dx=0,dy=0,dz=0,limit=1,sort=nearest] at @s run function carto_event:event/custom_ench/orbit/orbital/damage with storage carto_event current[-1].parameters
+execute if entity @s[tag=ca.player_spawned] positioned ~-0.5 ~ ~-0.5 as @e[type=#cartographer_core:hostile,dx=0,dy=0,dz=0,limit=1,sort=nearest] at @s run function carto_event:event/custom_ench/orbit/orbital/damage with storage carto_event current[-1].parameters
 execute unless entity @s[tag=ca.player_spawned] positioned ~-0.5 ~ ~-0.5 as @a[dx=0,dy=0,dz=0] at @s run function carto_event:event/custom_ench/orbit/orbital/damage with storage carto_event current[-1].parameters
 
 execute if entity @s[tag=ca.player_spawned] if score $hits ca.ench_orbit_lvl matches 1.. run scoreboard players set @s ca.orbit_cdl 4

@@ -24,14 +24,11 @@ execute if score $cage_mod_70 cage.var matches 0 run playsound minecraft:block.c
 execute if score $cage_mod_70 cage.var matches 0 run playsound minecraft:block.iron_trapdoor.open hostile @a[distance=..10] ~ ~ ~ 0.75 0.5
 
 
-execute if score $cage_mod_210 cage.var matches 0 run scoreboard players set $rng_min bbl.rng 1
-execute if score $cage_mod_210 cage.var matches 0 run scoreboard players set $rng_max bbl.rng 6
+execute store result score $random cage.var run random value 1..6
 
-execute if score $cage_mod_210 cage.var matches 0 run function bb:lib/rng
-
-execute if score $cage_mod_210 cage.var matches 0 if score $value bbl.rng matches 1..4 run playsound minecraft:entity.ravager.roar hostile @a[distance=..16] ~ ~ ~ 0.5 0.5
-execute if score $cage_mod_210 cage.var matches 0 if score $value bbl.rng matches 5 run playsound minecraft:entity.enderman.scream hostile @a[distance=..16] ~ ~ ~ 0.5 0.5
-execute if score $cage_mod_210 cage.var matches 0 if score $value bbl.rng matches 6 run playsound minecraft:entity.elder_guardian.curse hostile @a[distance=..16] ~ ~ ~ 0.5 0.5
+execute if score $cage_mod_210 cage.var matches 0 if score $random cage.var matches 1..4 run playsound minecraft:entity.ravager.roar hostile @a[distance=..16] ~ ~ ~ 0.5 0.5
+execute if score $cage_mod_210 cage.var matches 0 if score $random cage.var matches 5 run playsound minecraft:entity.enderman.scream hostile @a[distance=..16] ~ ~ ~ 0.5 0.5
+execute if score $cage_mod_210 cage.var matches 0 if score $random cage.var matches 6 run playsound minecraft:entity.elder_guardian.curse hostile @a[distance=..16] ~ ~ ~ 0.5 0.5
 
 
 

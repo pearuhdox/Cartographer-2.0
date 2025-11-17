@@ -1,5 +1,5 @@
-scoreboard players set @s bbl.heal_queue 100
+scoreboard players set @s ca.heal 100
 
-function bb:call/hpm/mob/heal
+function cartographer_core:helper/heal_mob/main
 
 tag @s add ca.vitality_mob_healed

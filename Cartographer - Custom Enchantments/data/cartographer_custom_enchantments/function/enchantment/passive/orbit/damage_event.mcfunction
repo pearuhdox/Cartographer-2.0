@@ -1,7 +1,8 @@
 #scoreboard players operation $chance ca.ench_orbit_lvl = $lvl ca.ench_orbit_lvl
 #scoreboard players operation $chance ca.ench_orbit_lvl *= $5 ca.CONSTANT
 
-scoreboard players set $chance ca.ench_orbit_lvl 20
+execute unless entity @s[type=player] run scoreboard players set $chance ca.ench_orbit_lvl 20
+execute if entity @s[type=player] run scoreboard players set $chance ca.ench_orbit_lvl 40
 
 execute on attacker if entity @s[type=player] run scoreboard players set $speed ca.ench_orbit_lvl 9
 execute on attacker unless entity @s[type=player] run scoreboard players set $speed ca.ench_orbit_lvl 5

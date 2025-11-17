@@ -11,10 +11,10 @@ scoreboard players set $restrike_hit ca.attr_var 0
 
 data modify storage cartographer:custom_attributes projectile set value {}
 
-execute if entity @s[type=#bb:projectile] on origin run function cartographer_custom_attributes:register/projectile_branch
+execute if entity @s[type=#cartographer_core:projectile] on origin run function cartographer_custom_attributes:register/projectile_branch
 execute if entity @s[type=fishing_bobber] on origin run function cartographer_custom_attributes:register/projectile_branch
 
-execute if entity @s[type=#bb:arrow,tag=!ca.no_attr_calc] run function cartographer_custom_attributes:register/get_arrow_item_data_pre
+execute if entity @s[type=#cartographer_core:arrow,tag=!ca.no_attr_calc] run function cartographer_custom_attributes:register/get_arrow_item_data_pre
 
 
 execute unless entity @s[tag=ca.no_attr_calc] unless entity @s[tag=ca.no_ranged_calc] if score $custom_ranged_damage ca.attr_var matches 1.. run function cartographer_custom_attributes:custom_attributes/effects/ranged_damage/start
@@ -48,7 +48,7 @@ execute unless entity @s[tag=ca.no_attr_calc] if score $custom_potion_size ca.at
 execute unless entity @s[tag=ca.no_attr_calc] if entity @s[type=#cartographer_core:potions] run scoreboard players operation @s ca.attr_aoe_size_total = $throwable_val ca.attr_aoe_size_value
 execute if entity @s[type=#cartographer_core:potions] store result storage cartographer:custom_attributes projectile.radius double 0.01 run scoreboard players get @s ca.attr_aoe_size_total
 
-#execute if entity @s[type=#bb:arrow] run function cartographer_custom_attributes:register/get_arrow_item_data
+#execute if entity @s[type=#cartographer_core:arrow] run function cartographer_custom_attributes:register/get_arrow_item_data
 
 execute if entity @s[tag=ca.potion_owner_req] on origin run function gu:generate
 execute if entity @s[type=fishing_bobber] on origin run function gu:generate
