@@ -1,6 +1,6 @@
 scoreboard players remove @s ca.raycast 1
 
-#particle minecraft:dust{color:[0.0,0.0,0.0],scale:2.0} ~ ~ ~ 0 0 0 0 1 force
+#particle end_rod ~ ~ ~ 0 0 0 0 1 force
 
 execute unless block ~ ~ ~ #cartographer_core:can_raycast run scoreboard players set $muted_damage ca.ench_eruption_lvl 1
 

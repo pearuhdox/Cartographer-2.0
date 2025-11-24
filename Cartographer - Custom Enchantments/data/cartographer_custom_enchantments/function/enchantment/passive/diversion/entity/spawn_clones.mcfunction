@@ -17,6 +17,7 @@ execute if entity @s[type=minecraft:drowned] run data modify storage cartographe
 execute if entity @s[type=minecraft:zombified_piglin] run data modify storage cartographer:custom_enchantments entity_id set value "minecraft:zombified_piglin"
 execute if entity @s[type=minecraft:skeleton] run data modify storage cartographer:custom_enchantments entity_id set value "minecraft:skeleton"
 execute if entity @s[type=minecraft:stray] run data modify storage cartographer:custom_enchantments entity_id set value "minecraft:stray"
+execute if entity @s[type=minecraft:bogged] run data modify storage cartographer:custom_enchantments entity_id set value "minecraft:bogged"
 execute if entity @s[type=minecraft:wither_skeleton] run data modify storage cartographer:custom_enchantments entity_id set value "minecraft:wither_skeleton"
 execute if entity @s[type=minecraft:phantom] run data modify storage cartographer:custom_enchantments entity_id set value "minecraft:phantom"
 execute if entity @s[type=minecraft:wither] run data modify storage cartographer:custom_enchantments entity_id set value "minecraft:wither"

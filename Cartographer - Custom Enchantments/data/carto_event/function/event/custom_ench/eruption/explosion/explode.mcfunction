@@ -14,6 +14,3 @@ tag @a remove ca.eruption_cdl
 $execute as $(owner) at @s if score @s ca.eruption_ct matches 1.. run scoreboard players remove @s ca.eruption_ct 1
 
 scoreboard players remove $count ca.entity_purge_var 1
-kill @s
-
-return 0
