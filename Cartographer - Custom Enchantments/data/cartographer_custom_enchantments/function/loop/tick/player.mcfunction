@@ -20,6 +20,10 @@ execute if score @s ca.overcharge_time matches 1.. run scoreboard players remove
 
 execute unless score @s ca.ench_trailblazer_lvl matches 1.. run scoreboard players set @s ca.sprint_dist_trailblazer 0
 
+#Run Drilling Cooldown Here
+execute if score @s ca.drilling_cooldown matches 1.. run scoreboard players remove @s ca.drilling_cooldown 1
+execute unless score @s ca.drilling_cooldown matches 0.. run scoreboard players set @s ca.drilling_cooldown 0
+
 #Run Auto Charge
 execute if predicate cartographer_core:periodic_tick/20 if predicate cartographer_custom_enchantments:has/auto_charge run function cartographer_custom_enchantments:enchantment/weapon/unique/other/auto_charge/check
 

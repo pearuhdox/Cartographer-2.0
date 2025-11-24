@@ -32,12 +32,14 @@
               {
                 "condition": "minecraft:inverted",
                 "term": {
-                  "condition": "minecraft:entity_properties",
+                  "condition": "minecraft:entity_scores",
                   "entity": "this",
-                  "predicate": {
-                    "nbt": "{Tags:['ca.drilling_used']}"
+                  "scores": {
+                    "ca.drilling_cooldown": {
+                      "min": 1
                   }
                 }
+              }
               },
               {
                 "condition": "minecraft:entity_scores",
