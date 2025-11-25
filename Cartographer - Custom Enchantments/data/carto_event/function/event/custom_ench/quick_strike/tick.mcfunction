@@ -1,7 +1,7 @@
 # Effects While Active
 $execute as $(target) at @s if score @s ca.quick_strike_active matches 1.. run tag @s remove ca.quick_strike_processed
 $execute as $(target) at @s if score @s ca.quick_strike_active matches 1.. run scoreboard players remove @s ca.quick_strike_active 1
-$execute as $(target) at @s if score @s ca.quick_strike_active matches 1.. run attribute @s minecraft:attack_speed modifier add ca.quick_strike_buff 1000 add_value
+$execute as $(target) at @s if score @s ca.quick_strike_active matches 1.. run attribute @s minecraft:attack_speed modifier add ca.quick_strike_buff 100 add_value
 
 
 # Early End Conditions
