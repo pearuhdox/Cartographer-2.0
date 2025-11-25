@@ -1,3 +1,4 @@
+
 execute store result storage cartographer:custom_attributes damage double 0.01 run scoreboard players get $ranged_damage ca.attr_apply_var
 
 execute on attacker run function gu:generate
