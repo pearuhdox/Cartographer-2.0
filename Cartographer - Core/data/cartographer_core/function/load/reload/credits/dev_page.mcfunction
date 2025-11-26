@@ -15,10 +15,13 @@ tellraw @p {"text":"-------------------------------------","color":"#FFE0A3","bo
 tellraw @s [{"text":"PearUhDox ","color":"#DB2FED","bold":false,"italic":false},{"text":"❱ ","color":"gold"},{"text":"Pack Creator","color":"#CFFFFD","bold":false,"italic":false,"underlined":false}]
 tellraw @p {"text":" ","color":"#FFE0A3","bold":true}
 
-tellraw @s [{"text":"Gibbsly ","color":"#BF0000","bold":false,"italic":false},{"text":"❱ ","color":"gold"},{"text":"Event Handler Design, EHID Library Pack","color":"#CFFFFD","bold":false,"italic":false,"underlined":false}]
+tellraw @s [{"text":"Gibbsly ","color":"#BF0000","bold":false,"italic":false},{"text":"❱ ","color":"gold"},{"text":"Event Handler Design, EHID/LTOS Library Pack","color":"#CFFFFD","bold":false,"italic":false,"underlined":false}]
 tellraw @p {"text":" ","color":"#FFE0A3","bold":true}
 
-tellraw @s [{"text":"RockNRed","color":"#BF0000","bold":false,"italic":false},{"text":", ","color":"#FFE0A3"},{"text":"Suso","color":"#61C0FF","bold":false,"italic":false},{"text":", ","color":"#FFE0A3"},{"text":"McTsTs ","color":"#04D621","bold":false,"italic":false},{"text":"❱ ","color":"gold"},{"text":"Black Box Library Pack","color":"#CFFFFD","bold":false,"italic":false,"underlined":false}]
+tellraw @s [{"text":"Compsogbrickus ","color":"#3ead70","bold":false,"italic":false},{"text":"❱ ","color":"gold"},{"text":"EHID/LTOS Library Pack","color":"#CFFFFD","bold":false,"italic":false,"underlined":false}]
+tellraw @p {"text":" ","color":"#FFE0A3","bold":true}
+
+tellraw @s [{"text":"RockNRed","color":"#BF0000","bold":false,"italic":false},{"text":", ","color":"#FFE0A3"},{"text":"Suso","color":"#61C0FF","bold":false,"italic":false},{"text":", ","color":"#FFE0A3"},{"text":"McTsTs ","color":"#04D621","bold":false,"italic":false},{"text":"❱ ","color":"gold"},{"text":"Libraries and Misc. Code","color":"#CFFFFD","bold":false,"italic":false,"underlined":false}]
 tellraw @p {"text":" ","color":"#FFE0A3","bold":true}
 
 tellraw @s [{"text":"Mulv ","color":"#3dddc8","bold":false,"italic":false},{"text":"❱ ","color":"gold"},{"text":"Player Motion Library Pack","color":"#CFFFFD","bold":false,"italic":false,"underlined":false}]
