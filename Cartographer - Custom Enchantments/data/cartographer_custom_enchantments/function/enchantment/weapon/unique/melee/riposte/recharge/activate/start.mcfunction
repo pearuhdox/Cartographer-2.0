@@ -25,5 +25,7 @@ execute store result storage cartographer_custom_enchantments:riposte visual.tim
 function cartographer_custom_enchantments:enchantment/weapon/unique/melee/riposte/recharge/activate/visual/get_name
 data modify storage cartographer_custom_enchantments:riposte data.item.components.minecraft:custom_name set from storage cartographer_custom_enchantments:riposte visual.return
 
+data modify storage cartographer_custom_enchantments:riposte items[0] set from storage cartographer_custom_enchantments:riposte data.item
+
 execute if score $slot ca.ench_riposte_lvl matches -106 run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/riposte/recharge/activate/return_offhand
 execute if score $slot ca.ench_riposte_lvl matches 0..8 run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/riposte/recharge/activate/return with storage cartographer_custom_enchantments:riposte macro

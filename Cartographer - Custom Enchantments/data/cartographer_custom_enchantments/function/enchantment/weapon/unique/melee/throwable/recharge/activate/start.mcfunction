@@ -24,5 +24,7 @@ execute store result storage cartographer_custom_enchantments:throwable visual.t
 function cartographer_custom_enchantments:enchantment/weapon/unique/melee/throwable/recharge/activate/visual/get_name
 data modify storage cartographer_custom_enchantments:throwable data.item.components.minecraft:custom_name set from storage cartographer_custom_enchantments:throwable visual.return
 
+data modify storage cartographer_custom_enchantments:throwable items[0] set from storage cartographer_custom_enchantments:throwable data.item
+
 execute if score $slot ca.ench_throwable_lvl matches -106 run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/throwable/recharge/activate/return_offhand
 execute if score $slot ca.ench_throwable_lvl matches 0..8 run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/throwable/recharge/activate/return with storage cartographer_custom_enchantments:throwable macro

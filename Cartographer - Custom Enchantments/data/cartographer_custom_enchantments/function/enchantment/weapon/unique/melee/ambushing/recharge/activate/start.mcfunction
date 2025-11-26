@@ -25,5 +25,7 @@ execute store result storage cartographer_custom_enchantments:ambushing visual.t
 function cartographer_custom_enchantments:enchantment/weapon/unique/melee/ambushing/recharge/activate/visual/get_name
 data modify storage cartographer_custom_enchantments:ambushing data.item.components.minecraft:custom_name set from storage cartographer_custom_enchantments:ambushing visual.return
 
+data modify storage cartographer_custom_enchantments:ambushing items[0] set from storage cartographer_custom_enchantments:ambushing data.item
+
 execute if score $slot ca.ench_ambushing_lvl matches -106 run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/ambushing/recharge/activate/return_offhand
 execute if score $slot ca.ench_ambushing_lvl matches 0..8 run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/ambushing/recharge/activate/return with storage cartographer_custom_enchantments:ambushing macro
