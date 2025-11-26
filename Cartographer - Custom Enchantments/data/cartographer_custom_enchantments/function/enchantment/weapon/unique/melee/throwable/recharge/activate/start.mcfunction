@@ -17,6 +17,7 @@ execute unless data storage cartographer_custom_enchantments:throwable data.item
 execute unless data storage cartographer_custom_enchantments:throwable data.item.components.minecraft:custom_data.throwable_name if data storage cartographer_custom_enchantments:throwable data.item.components.minecraft:item_name run data modify storage cartographer_custom_enchantments:throwable visual.name set from storage cartographer_custom_enchantments:throwable data.item.components.minecraft:item_name
 
 execute if data storage cartographer_custom_enchantments:throwable data.item.components.minecraft:custom_data.throwable_name run data modify storage cartographer_custom_enchantments:throwable visual.name set from storage cartographer_custom_enchantments:throwable data.item.components.minecraft:custom_data.throwable_name
+execute unless data storage cartographer_custom_enchantments:throwable visual.name.italic run data modify storage cartographer_custom_enchantments:throwable visual.name.italic set value 0b
 
 execute unless data storage cartographer_custom_enchantments:throwable data.item.components.minecraft:custom_data.throwable_name run data modify storage cartographer_custom_enchantments:throwable data.item.components.minecraft:custom_data.throwable_name set from storage cartographer_custom_enchantments:throwable visual.name
 execute store result storage cartographer_custom_enchantments:throwable visual.time int 1 run scoreboard players get $time_current ca.ench_throwable_lvl

@@ -18,6 +18,7 @@ execute unless data storage cartographer_custom_enchantments:ambushing data.item
 execute unless data storage cartographer_custom_enchantments:ambushing data.item.components.minecraft:custom_data.ambushing_name if data storage cartographer_custom_enchantments:ambushing data.item.components.minecraft:item_name run data modify storage cartographer_custom_enchantments:ambushing visual.name set from storage cartographer_custom_enchantments:ambushing data.item.components.minecraft:item_name
 
 execute if data storage cartographer_custom_enchantments:ambushing data.item.components.minecraft:custom_data.ambushing_name run data modify storage cartographer_custom_enchantments:ambushing visual.name set from storage cartographer_custom_enchantments:ambushing data.item.components.minecraft:custom_data.ambushing_name
+execute unless data storage cartographer_custom_enchantments:ambushing visual.name.italic run data modify storage cartographer_custom_enchantments:ambushing visual.name.italic set value 0b
 
 execute unless data storage cartographer_custom_enchantments:ambushing data.item.components.minecraft:custom_data.ambushing_name run data modify storage cartographer_custom_enchantments:ambushing data.item.components.minecraft:custom_data.ambushing_name set from storage cartographer_custom_enchantments:ambushing visual.name
 execute store result storage cartographer_custom_enchantments:ambushing visual.time int 1 run scoreboard players get $time_current ca.ench_ambushing_lvl

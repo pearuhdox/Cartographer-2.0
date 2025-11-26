@@ -18,6 +18,7 @@ execute unless data storage cartographer_custom_enchantments:quick_strike items[
 execute unless data storage cartographer_custom_enchantments:quick_strike items[0].components.minecraft:custom_data.quick_strike_name if data storage cartographer_custom_enchantments:quick_strike items[0].components.minecraft:item_name run data modify storage cartographer_custom_enchantments:quick_strike visual.name set from storage cartographer_custom_enchantments:quick_strike items[0].components.minecraft:item_name
 
 execute if data storage cartographer_custom_enchantments:quick_strike items[0].components.minecraft:custom_data.quick_strike_name run data modify storage cartographer_custom_enchantments:quick_strike visual.name set from storage cartographer_custom_enchantments:quick_strike items[0].components.minecraft:custom_data.quick_strike_name
+execute unless data storage cartographer_custom_enchantments:quick_strike visual.name.italic run data modify storage cartographer_custom_enchantments:quick_strike visual.name.italic set value 0b
 
 execute unless data storage cartographer_custom_enchantments:quick_strike items[0].components.minecraft:custom_data.quick_strike_name run data modify storage cartographer_custom_enchantments:quick_strike items[0].components.minecraft:custom_data.quick_strike_name set from storage cartographer_custom_enchantments:quick_strike visual.name
 execute store result storage cartographer_custom_enchantments:quick_strike visual.time int 1 run scoreboard players get $time_current ca.ench_quick_strike_lvl

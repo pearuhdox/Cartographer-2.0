@@ -14,6 +14,8 @@ execute unless score $repeating ca.ench_auto_charge_slot matches 1.. unless data
 execute unless score $repeating ca.ench_auto_charge_slot matches 1.. unless data storage cartographer_custom_enchantments:auto_charge visual.name run data modify storage cartographer_custom_enchantments:auto_charge visual.name set value {"fallback":"Crossbow","translate":"item.minecraft.crossbow","color":"aqua","italic":false}
 
 execute unless score $repeating ca.ench_auto_charge_slot matches 1.. if data storage cartographer_custom_enchantments:auto_charge items[0].components.minecraft:custom_data.auto_charge_name run data modify storage cartographer_custom_enchantments:auto_charge visual.name set from storage cartographer_custom_enchantments:auto_charge items[0].components.minecraft:custom_data.auto_charge_name
+execute unless score $repeating ca.ench_auto_charge_slot matches 1.. unless data storage cartographer_custom_enchantments:auto_charge visual.name.italic run data modify storage cartographer_custom_enchantments:auto_charge visual.name.italic set value 0b
+
 execute unless score $repeating ca.ench_auto_charge_slot matches 1.. unless data storage cartographer_custom_enchantments:auto_charge items[0].components.minecraft:custom_data.auto_charge_name run data modify storage cartographer_custom_enchantments:auto_charge items[0].components.minecraft:custom_data.auto_charge_name set from storage cartographer_custom_enchantments:auto_charge visual.name
 
 execute unless score $repeating ca.ench_auto_charge_slot matches 1.. store result score $time_red ca.ench_auto_charge_slot run data get storage cartographer_custom_enchantments:auto_charge items[0].components.minecraft:custom_data.auto_charge_tracker
