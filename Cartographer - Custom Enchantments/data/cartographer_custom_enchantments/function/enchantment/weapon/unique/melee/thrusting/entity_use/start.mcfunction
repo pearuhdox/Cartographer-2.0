@@ -23,6 +23,15 @@ execute store result storage cartographer:custom_enchantments damage double 1 ru
 
 execute on target store result storage cartographer:custom_enchantments delay int 1 run scoreboard players get @s ca.special_attack_delay
 
+execute store result score $windup_item ca.ench_thrusting_lvl run data get entity @s equipment.mainhand.components.minecraft:attribute_modifiers[{id:"minecraft:attack_speed"}].amount 100
+execute if score $windup_item ca.ench_thrusting_lvl matches 0 run scoreboard players set $windup_item ca.ench_thrusting_lvl 160
+scoreboard players add $windup_item ca.ench_thrusting_lvl 400
+scoreboard players set $windup_value ca.ench_thrusting_lvl 4800
+scoreboard players operation $windup_value ca.ench_thrusting_lvl /= $windup_item ca.ench_thrusting_lvl
+execute if score $windup_value ca.ench_thrusting_lvl matches ..0 run scoreboard players set $windup_value ca.ench_thrusting_lvl 30
+execute if score $windup_value ca.ench_thrusting_lvl matches ..15 run scoreboard players set $windup_value ca.ench_thrusting_lvl 16
+execute store result storage cartographer:custom_enchantments windup int 1 run scoreboard players get $windup_value ca.ench_thrusting_lvl
+
 function cartographer_custom_enchantments:enchantment/weapon/unique/melee/thrusting/entity_use/macro with storage cartographer:custom_enchantments
 
 execute on target run scoreboard players add @s ca.special_attack_delay 15
