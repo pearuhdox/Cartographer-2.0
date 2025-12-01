@@ -1,0 +1,5 @@
+{
+    "values": [
+        {"id":"cartographer_custom_statuses:status_damage","required":false}
+    ]
+}

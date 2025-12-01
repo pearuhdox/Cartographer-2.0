@@ -1,1 +1,0 @@
-execute if score #loaded entityid matches 1.. run scoreboard players set $#lib_ehid ca.installed 1

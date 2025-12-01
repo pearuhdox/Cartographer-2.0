@@ -1,0 +1,6 @@
+{
+    "values": [
+        {"id":"cartographer_custom_enchantments:projectile_damage_bypass","required":false},
+        {"id":"cartographer_custom_enchantments:projectile_damage_bypass_no_kb","required":false}
+    ]
+}

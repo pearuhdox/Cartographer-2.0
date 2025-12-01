@@ -1,8 +1,8 @@
 #Get Enchantment Values
 scoreboard players set $attack_type ca.ench_value 0
 function cartographer_custom_enchantments:enchantment/helper/weapon/reset_ench_values
-execute if entity @s[advancements={entityid:player_hurt_entity={is_player_attack=true,is_projectile=false}}] run scoreboard players set $attack_type ca.ench_value 1
-execute if entity @s[advancements={entityid:player_hurt_entity={is_projectile=true,is_lightning=false}}] run scoreboard players set $attack_type ca.ench_value 2
+execute if score $melee ehid_damage_type matches 1 run scoreboard players set $attack_type ca.ench_value 1
+execute if score $projectile ehid_damage_type matches 1 run scoreboard players set $attack_type ca.ench_value 2
 execute if score $attack_type ca.ench_value matches 1 run function cartographer_custom_enchantments:enchantment/helper/weapon/get_ench_values
 function cartographer_custom_enchantments:enchantment/helper/weapon/get_ench_values_passive
 
@@ -16,7 +16,7 @@ execute if score $attack_type ca.ench_value matches 2 at @n[tag=ca.projectile_fi
 
 #Run Thorns from Entity Perspective
 scoreboard players set $used_thorns ca.ench_thorns_lvl 0
-execute if entity @s[advancements={entityid:player_hurt_entity={is_lightning=false}}] at @s on attacker if score @s ca.ench_thorns_lvl matches 1.. run scoreboard players set $used_thorns ca.ench_thorns_lvl 1
+execute unless score $no_triggers ehid_damage_type matches 1 at @s on attacker if score @s ca.ench_thorns_lvl matches 1.. run scoreboard players set $used_thorns ca.ench_thorns_lvl 1
 
 #Run All Other Enchants
 execute if score @s ca.ench_inertia_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/passive/inertia/attack
@@ -40,16 +40,16 @@ execute if score @s ca.ench_gravity_lvl matches 1.. run function cartographer_cu
 execute if score $check ca.gravity_var matches 1.. run function cartographer_custom_enchantments:enchantment/passive/gravity/hit/user
 
 scoreboard players set $proc ca.ench_starfall_lvl 0
-execute if score $starfall ca.ench_value matches 1.. unless score @s ca.starfall_tick_cap matches 5.. unless score @s ca.attack_cooldown_percent matches 16.. unless predicate cartographer_core:player/cant_crit if entity @s[advancements={entityid:player_hurt_entity={is_player_attack=true,is_projectile=false}}] run scoreboard players set $proc ca.ench_starfall_lvl 1
-execute if score $starfall ca.ench_value matches 1.. unless score @s ca.starfall_tick_cap matches 5.. unless score @s ca.attack_cooldown_percent matches 16.. if predicate cartographer_core:player/cant_crit if entity @s[advancements={entityid:player_hurt_entity={is_player_attack=true,is_projectile=false}}] run scoreboard players set $proc ca.ench_starfall_lvl 2
-execute if score $starfall ca.ench_value matches 1.. unless score @s ca.starfall_tick_cap matches 5.. if entity @s[advancements={entityid:player_hurt_entity={is_projectile=true}}] run scoreboard players set $proc ca.ench_starfall_lvl 3
-execute if score $starfall ca.ench_value matches 1.. unless score @s ca.starfall_tick_cap matches 5.. if entity @s[advancements={entityid:player_hurt_entity={is_player_attack=false,is_projectile=false}}] run scoreboard players set $proc ca.ench_starfall_lvl 4
+execute if score $starfall ca.ench_value matches 1.. unless score @s ca.starfall_tick_cap matches 5.. unless score @s ca.attack_cooldown_percent matches 16.. unless predicate cartographer_core:player/cant_crit if score $melee ehid_damage_type matches 1 run scoreboard players set $proc ca.ench_starfall_lvl 1
+execute if score $starfall ca.ench_value matches 1.. unless score @s ca.starfall_tick_cap matches 5.. unless score @s ca.attack_cooldown_percent matches 16.. if predicate cartographer_core:player/cant_crit if score $melee ehid_damage_type matches 1 run scoreboard players set $proc ca.ench_starfall_lvl 2
+execute if score $starfall ca.ench_value matches 1.. unless score @s ca.starfall_tick_cap matches 5.. if score $projectile ehid_damage_type matches 1 run scoreboard players set $proc ca.ench_starfall_lvl 3
+execute if score $starfall ca.ench_value matches 1.. unless score @s ca.starfall_tick_cap matches 5.. unless score $projectile ehid_damage_type matches 1 unless score $melee ehid_damage_type matches 1 unless score $no_triggers ehid_damage_type matches 1 run scoreboard players set $proc ca.ench_starfall_lvl 4
 
 scoreboard players set $proc ca.ench_orbit_lvl 0
-execute if score $orbit ca.ench_value matches 1.. unless score @s ca.orbit_tick_cap matches 5.. unless score @s ca.attack_cooldown_percent matches 16.. unless predicate cartographer_core:player/cant_crit if entity @s[advancements={entityid:player_hurt_entity={is_player_attack=true,is_projectile=false}}] run scoreboard players set $proc ca.ench_orbit_lvl 1
-execute if score $orbit ca.ench_value matches 1.. unless score @s ca.orbit_tick_cap matches 5.. unless score @s ca.attack_cooldown_percent matches 16.. if predicate cartographer_core:player/cant_crit if entity @s[advancements={entityid:player_hurt_entity={is_player_attack=true,is_projectile=false}}] run scoreboard players set $proc ca.ench_orbit_lvl 2
-execute if score $orbit ca.ench_value matches 1.. unless score @s ca.orbit_tick_cap matches 5.. if entity @s[advancements={entityid:player_hurt_entity={is_projectile=true}}] run scoreboard players set $proc ca.ench_orbit_lvl 3
-execute if score $orbit ca.ench_value matches 1.. unless score @s ca.orbit_tick_cap matches 5.. if entity @s[advancements={entityid:player_hurt_entity={is_player_attack=false,is_projectile=false}}] run scoreboard players set $proc ca.ench_orbit_lvl 4
+execute if score $orbit ca.ench_value matches 1.. unless score @s ca.orbit_tick_cap matches 5.. unless score @s ca.attack_cooldown_percent matches 16.. unless predicate cartographer_core:player/cant_crit if score $melee ehid_damage_type matches 1 run scoreboard players set $proc ca.ench_orbit_lvl 1
+execute if score $orbit ca.ench_value matches 1.. unless score @s ca.orbit_tick_cap matches 5.. unless score @s ca.attack_cooldown_percent matches 16.. if predicate cartographer_core:player/cant_crit if score $melee ehid_damage_type matches 1 run scoreboard players set $proc ca.ench_orbit_lvl 2
+execute if score $orbit ca.ench_value matches 1.. unless score @s ca.orbit_tick_cap matches 5.. if score $projectile ehid_damage_type matches 1 run scoreboard players set $proc ca.ench_orbit_lvl 3
+execute if score $orbit ca.ench_value matches 1.. unless score @s ca.orbit_tick_cap matches 5.. unless score $projectile ehid_damage_type matches 1 unless score $melee ehid_damage_type matches 1 unless score $no_triggers ehid_damage_type matches 1 run scoreboard players set $proc ca.ench_orbit_lvl 4
 
 scoreboard players set $proc ca.ench_storm_lvl 0
 execute if score $storm ca.ench_value matches 1.. unless score @s ca.storm_tick_cap matches 1.. run scoreboard players set $proc ca.ench_storm_lvl 1
@@ -58,16 +58,16 @@ scoreboard players set $proc ca.ench_induction_lvl 0
 execute if score $induction ca.ench_value matches 1.. unless score @s ca.induction_tick_cap matches 1.. run scoreboard players set $proc ca.ench_induction_lvl 1
 
 scoreboard players set $proc ca.ench_eruption_lvl 0
-execute if score $eruption ca.ench_value matches 1.. unless score @s ca.attack_cooldown_percent matches 16.. if entity @s[advancements={entityid:player_hurt_entity={is_player_attack=true,is_projectile=false}}] run scoreboard players set $proc ca.ench_eruption_lvl 1
-execute if score $eruption ca.ench_value matches 1.. if entity @s[advancements={entityid:player_hurt_entity={is_projectile=true}}] run scoreboard players set $proc ca.ench_eruption_lvl 1
-execute if score $eruption ca.ench_value matches 1.. if entity @s[advancements={entityid:player_hurt_entity={is_player_attack=false,is_projectile=false}}] run scoreboard players set $proc ca.ench_eruption_lvl 2
-execute if score $eruption ca.ench_value matches 1.. if entity @s[advancements={entityid:player_hurt_entity={no_anger=true}}] run scoreboard players set $proc ca.ench_eruption_lvl 0
+execute if score $eruption ca.ench_value matches 1.. unless score @s ca.attack_cooldown_percent matches 16.. if score $melee ehid_damage_type matches 1 run scoreboard players set $proc ca.ench_eruption_lvl 1
+execute if score $eruption ca.ench_value matches 1.. if score $projectile ehid_damage_type matches 1 run scoreboard players set $proc ca.ench_eruption_lvl 1
+execute if score $eruption ca.ench_value matches 1.. unless score $projectile ehid_damage_type matches 1 unless score $melee ehid_damage_type matches 1 unless score $no_triggers ehid_damage_type matches 1 run scoreboard players set $proc ca.ench_eruption_lvl 2
+execute if score $eruption ca.ench_value matches 1.. if score $opportunist ehid_damage_type matches 1 run scoreboard players set $proc ca.ench_eruption_lvl 0
 
 scoreboard players set $proc ca.ench_soulfire_lvl 0
-execute if score $soulfire ca.ench_value matches 1.. unless score @s ca.attack_cooldown_percent matches 16.. if entity @s[advancements={entityid:player_hurt_entity={is_player_attack=true,is_projectile=false}}] run scoreboard players set $proc ca.ench_soulfire_lvl 1
-execute if score $soulfire ca.ench_value matches 1.. if entity @s[advancements={entityid:player_hurt_entity={is_projectile=true}}] run scoreboard players set $proc ca.ench_soulfire_lvl 1
-execute if score $soulfire ca.ench_value matches 1.. if entity @s[advancements={entityid:player_hurt_entity={is_player_attack=false,is_projectile=false}}] run scoreboard players set $proc ca.ench_soulfire_lvl 2
-execute if score $soulfire ca.ench_value matches 1.. if entity @s[advancements={entityid:player_hurt_entity={no_anger=true}}] run scoreboard players set $proc ca.ench_soulfire_lvl 0
+execute if score $soulfire ca.ench_value matches 1.. unless score @s ca.attack_cooldown_percent matches 16.. if score $melee ehid_damage_type matches 1 run scoreboard players set $proc ca.ench_soulfire_lvl 1
+execute if score $soulfire ca.ench_value matches 1.. if score $projectile ehid_damage_type matches 1 run scoreboard players set $proc ca.ench_soulfire_lvl 1
+execute if score $soulfire ca.ench_value matches 1.. unless score $projectile ehid_damage_type matches 1 unless score $melee ehid_damage_type matches 1 unless score $no_triggers ehid_damage_type matches 1 run scoreboard players set $proc ca.ench_soulfire_lvl 2
+execute if score $soulfire ca.ench_value matches 1.. if score $opportunist ehid_damage_type matches 1 run scoreboard players set $proc ca.ench_soulfire_lvl 0
 
 
 #Damage Enchantments

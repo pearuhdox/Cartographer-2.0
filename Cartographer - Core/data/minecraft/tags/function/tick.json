@@ -1,6 +1,7 @@
 {
   "values":[
-    "ltos:loop",	
+    "ltos:loop",
+    "entityid:tick",	
     "cartographer_core:loop/tick",
     "carto_event:tick",
     "cartographer_core:loop/tick_after_event"

@@ -1,0 +1,1673 @@
+{
+    "criteria": {
+        "entity": {
+            "trigger": "minecraft:entity_hurt_player"
+        },
+        "tagless": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": false,
+                                "id": "entityid:arrow"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:bad_respawn_point"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:cactus"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:campfire"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:cramming"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:dragon_breath"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:drown"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:dry_out"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:ender_pearl"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:explosion"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:fall"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:falling_anvil"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:falling_block"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:falling_stalactite"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:fireball"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:fireworks"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:fly_into_wall"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:freeze"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:generic"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:generic_kill"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:hot_floor"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:in_fire"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:in_wall"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:indirect_magic"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:lava"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:lightning_bolt"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:mace_smash"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:magic"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:mob_attack"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:mob_attack_no_aggro"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:mob_projectile"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:on_fire"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:out_of_world"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:outside_border"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:player_attack"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:player_explosion"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:sonic_boom"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:spear"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:spit"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:stalagmite"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:starve"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:sting"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:sweet_berry_bush"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:thorns"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:thrown"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:trident"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:unattributed_fireball"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:wind_charge"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:wither"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:wither_skull"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:carto/attributes/attribute_damage"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:carto/attributes/attribute_damage_bypass"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:carto/attributes/fishing_bobber_damage"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:carto/attributes/fishing_bobber_damage_bypass"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:carto/attributes/potion_damage"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:carto/enchants/enchant_damage"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:carto/enchants/enchant_damage_bypass"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:carto/enchants/fake_melee_damage"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:carto/enchants/opportunist_damage"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:carto/enchants/projectile_damage_bypass"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:carto/enchants/throwable_damage"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:carto/statuses/expose_damage"
+                            },
+                            {
+                                "expected": false,
+                                "id": "entityid:carto/statuses/status_damage"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "carto_attributes_attribute_damage": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:carto/attributes/attribute_damage"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "carto_attributes_attribute_damage_bypass": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:carto/attributes/attribute_damage_bypass"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "carto_attributes_fishing_bobber_damage": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:carto/attributes/attribute_damage"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "carto_attributes_fishing_bobber_damage_bypass": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:carto/attributes/attribute_damage"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "carto_attributes_potion_damage": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:carto/attributes/attribute_damage"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "carto_enchants_enchant_damage": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:carto/enchants/enchant_damage"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "carto_enchants_enchant_damage_bypass": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:carto/enchants/enchant_damage_bypass"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "carto_enchants_fake_melee_damage": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:carto/enchants/fake_melee_damage"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "carto_enchants_opportunist_damage": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:carto/enchants/opportunist_damage"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "carto_enchants_projectile_damage_bypass": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:carto/enchants/projectile_damage_bypass"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "carto_enchants_throwable_damage": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:carto/enchants/throwable_damage"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "carto_statuses_status_damage":{
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:carto/statuses/status_damage"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "carto_statuses_expose_damage": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:carto/statuses/expose_damage"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "arrow": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:arrow"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "bad_respawn_point": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:bad_respawn_point"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "cactus": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:cactus"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "campfire": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:campfire"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "cramming": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:cramming"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "dragon_breath": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:dragon_breath"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "drown": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:drown"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "dry_out": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:dry_out"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "ender_pearl": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:ender_pearl"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "explosion": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:explosion"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "fall": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:fall"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "falling_anvil": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:falling_anvil"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "falling_block": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:falling_block"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "falling_stalactite": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:falling_stalactite"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "fireball": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:fireball"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "fireworks": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:fireworks"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "fly_into_wall": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:fly_into_wall"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "freeze": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:freeze"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "generic": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:generic"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "generic_kill": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:generic_kill"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "hot_floor": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:hot_floor"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "in_fire": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:in_fire"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "in_wall": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:in_wall"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "indirect_magic": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:indirect_magic"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "lava": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:lava"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "lightning_bolt": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:lightning_bolt"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "mace_smash": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:mace_smash"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "magic": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:magic"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "mob_attack": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:mob_attack"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "mob_attack_no_aggro": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:mob_attack_no_aggro"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "mob_projectile": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:mob_projectile"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "on_fire": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:on_fire"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "out_of_world": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:out_of_world"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "outside_border": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:outside_border"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "player_attack": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:player_attack"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "player_explosion": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:player_explosion"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "sonic_boom": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:sonic_boom"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "spear": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:spear"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "spit": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:spit"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "stalagmite": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:stalagmite"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "starve": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:starve"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "sting": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:sting"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "sweet_berry_bush": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:sweet_berry_bush"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "thorns": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:thorns"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "thrown": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:thrown"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "trident": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:trident"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "unattributed_fireball": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:unattributed_fireball"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "wind_charge": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:wind_charge"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "wither": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:wither"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "wither_skull": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "entityid:wither_skull"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "bit0": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.0.1]}"
+                    }
+                }
+            }
+        },
+        "!bit0": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.0.0]}"
+                    }
+                }
+            }
+        },
+        "bit1": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.1.1]}"
+                    }
+                }
+            }
+        },
+        "!bit1": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.1.0]}"
+                    }
+                }
+            }
+        },
+        "bit2": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.2.1]}"
+                    }
+                }
+            }
+        },
+        "!bit2": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.2.0]}"
+                    }
+                }
+            }
+        },
+        "bit3": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.3.1]}"
+                    }
+                }
+            }
+        },
+        "!bit3": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.3.0]}"
+                    }
+                }
+            }
+        },
+        "bit4": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.4.1]}"
+                    }
+                }
+            }
+        },
+        "!bit4": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.4.0]}"
+                    }
+                }
+            }
+        },
+        "bit5": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.5.1]}"
+                    }
+                }
+            }
+        },
+        "!bit5": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.5.0]}"
+                    }
+                }
+            }
+        },
+        "bit6": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.6.1]}"
+                    }
+                }
+            }
+        },
+        "!bit6": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.6.0]}"
+                    }
+                }
+            }
+        },
+        "bit7": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.7.1]}"
+                    }
+                }
+            }
+        },
+        "!bit7": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.7.0]}"
+                    }
+                }
+            }
+        },
+        "bit8": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.8.1]}"
+                    }
+                }
+            }
+        },
+        "!bit8": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.8.0]}"
+                    }
+                }
+            }
+        },
+        "bit9": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.9.1]}"
+                    }
+                }
+            }
+        },
+        "!bit9": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.9.0]}"
+                    }
+                }
+            }
+        },
+        "bit10": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.10.1]}"
+                    }
+                }
+            }
+        },
+        "!bit10": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.10.0]}"
+                    }
+                }
+            }
+        },
+        "bit11": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.11.1]}"
+                    }
+                }
+            }
+        },
+        "!bit11": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.11.0]}"
+                    }
+                }
+            }
+        },
+        "bit12": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.12.1]}"
+                    }
+                }
+            }
+        },
+        "!bit12": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.12.0]}"
+                    }
+                }
+            }
+        },
+        "bit13": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.13.1]}"
+                    }
+                }
+            }
+        },
+        "!bit13": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.13.0]}"
+                    }
+                }
+            }
+        },
+        "bit14": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.14.1]}"
+                    }
+                }
+            }
+        },
+        "!bit14": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.14.0]}"
+                    }
+                }
+            }
+        },
+        "bit15": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.15.1]}"
+                    }
+                }
+            }
+        },
+        "!bit15": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[entityid.15.0]}"
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "entity"
+        ],
+        [
+            "tagless",
+            "arrow",
+            "bad_respawn_point",
+            "cactus",
+            "campfire",
+            "cramming",
+            "dragon_breath",
+            "drown",
+            "dry_out",
+            "ender_pearl",
+            "explosion",
+            "fall",
+            "falling_anvil",
+            "falling_block",
+            "falling_stalactite",
+            "fireball",
+            "fireworks",
+            "fly_into_wall",
+            "freeze",
+            "generic",
+            "generic_kill",
+            "hot_floor",
+            "in_fire",
+            "in_wall",
+            "indirect_magic",
+            "lava",
+            "lightning_bolt",
+            "mace_smash",
+            "magic",
+            "mob_attack",
+            "mob_attack_no_aggro",
+            "mob_projectile",
+            "on_fire",
+            "out_of_world",
+            "outside_border",
+            "player_attack",
+            "player_explosion",
+            "sonic_boom",
+            "spear",
+            "spit",
+            "stalagmite",
+            "starve",
+            "sting",
+            "sweet_berry_bush",
+            "thorns",
+            "thrown",
+            "trident",
+            "unattributed_fireball",
+            "wind_charge",
+            "wither",
+            "wither_skull",
+            "carto_attributes_attribute_damage",
+            "carto_attributes_attribute_damage_bypass",
+            "carto_attributes_fishing_bobber_damage",
+            "carto_attributes_fishing_bobber_damage_bypass",
+            "carto_attributes_potion_damage",
+            "carto_enchants_enchant_damage",
+            "carto_enchants_enchant_damage_bypass",
+            "carto_enchants_fake_melee_damage",
+            "carto_enchants_opportunist_damage",
+            "carto_enchants_projectile_damage_bypass",
+            "carto_enchants_throwable_damage",
+            "carto_statuses_expose_damage",
+            "carto_statuses_status_damage"
+        ],
+        [
+            "bit0",
+            "!bit0"
+        ],
+        [
+            "bit1",
+            "!bit1"
+        ],
+        [
+            "bit2",
+            "!bit2"
+        ],
+        [
+            "bit3",
+            "!bit3"
+        ],
+        [
+            "bit4",
+            "!bit4"
+        ],
+        [
+            "bit5",
+            "!bit5"
+        ],
+        [
+            "bit6",
+            "!bit6"
+        ],
+        [
+            "bit7",
+            "!bit7"
+        ],
+        [
+            "bit8",
+            "!bit8"
+        ],
+        [
+            "bit9",
+            "!bit9"
+        ],
+        [
+            "bit10",
+            "!bit10"
+        ],
+        [
+            "bit11",
+            "!bit11"
+        ],
+        [
+            "bit12",
+            "!bit12"
+        ],
+        [
+            "bit13",
+            "!bit13"
+        ],
+        [
+            "bit14",
+            "!bit14"
+        ],
+        [
+            "bit15",
+            "!bit15"
+        ]
+    ],
+    "rewards": {
+        "function": "entityid:entity_hurt_player"
+    }
+}

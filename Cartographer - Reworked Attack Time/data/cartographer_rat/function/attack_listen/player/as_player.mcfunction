@@ -7,5 +7,5 @@ execute if score @s ca.attr_invul_shred_total matches -1999999.. run scoreboard 
 execute if score @s ca.attr_invul_shred_total matches -1999999.. run scoreboard players operation $value ca.invul_frames -= $shred ca.invul_frames
 
 scoreboard players set $apply_frames ca.invul_frames 0
-execute if entity @s[advancements={entityid:player_hurt_entity={is_projectile=true}}] run scoreboard players set $apply_frames ca.invul_frames 1
-execute if entity @s[advancements={entityid:player_hurt_entity={is_player_attack=true}}] run scoreboard players set $apply_frames ca.invul_frames 1
+execute if score $projectile ehid_damage_type matches 1 run scoreboard players set $apply_frames ca.invul_frames 1
+execute if score $melee ehid_damage_type matches 1 run scoreboard players set $apply_frames ca.invul_frames 1

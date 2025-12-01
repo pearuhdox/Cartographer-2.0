@@ -5,8 +5,8 @@ execute if score @s ca.attr_invul_frames_total matches -1999999.. run scoreboard
 execute if score @s ca.attr_invul_frames_total matches -1999999.. run scoreboard players operation $value ca.invul_frames += $frames ca.invul_frames
 
 scoreboard players set $apply_frames ca.invul_frames 0
-execute if entity @s[advancements={entityid:entity_hurt_player={is_projectile=true}}] run scoreboard players set $apply_frames ca.invul_frames 1
-execute if entity @s[advancements={entityid:entity_hurt_player={is_lightning=false,is_projectile=false}}] run scoreboard players set $apply_frames ca.invul_frames 1
+execute if score $projectile ehid_damage_type matches 1 run scoreboard players set $apply_frames ca.invul_frames 1
+execute if score $melee ehid_damage_type matches 1 run scoreboard players set $apply_frames ca.invul_frames 1
 
 #Set invul frames
-execute unless entity @s[advancements={entityid:entity_hurt_player={witch_resistant_to=true,bypasses_armor=true,bypasses_wolf_armor=true}}] if score $apply_frames ca.invul_frames matches 1.. run scoreboard players operation @s ca.invul_frames = $value ca.invul_frames
+execute unless score $no_triggers ehid_damage_type matches 1 if score $apply_frames ca.invul_frames matches 1.. run scoreboard players operation @s ca.invul_frames = $value ca.invul_frames

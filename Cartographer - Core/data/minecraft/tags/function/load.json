@@ -1,5 +1,6 @@
 {
   "values":[
+  "entityid:load",
 	"cartographer_core:load/setup",
   "ltos:load",
 	"gu:zzz/load",
