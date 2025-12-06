@@ -36,14 +36,14 @@ execute if predicate cartographer_core:periodic_tick/100 if entity @s[gamemode=!
 #Run Throwable Cooldowns
 execute if predicate cartographer_core:periodic_tick/20 if predicate cartographer_custom_enchantments:has/throwable run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/throwable/recharge/check
 
-#Run Ambushing Cooldowns
-execute if predicate cartographer_core:periodic_tick/20 if predicate cartographer_custom_enchantments:has/ambushing run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/ambushing/recharge/check
+#Run Ambush Cooldowns
+execute if predicate cartographer_core:periodic_tick/20 if predicate cartographer_custom_enchantments:has/ambush run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/ambush/recharge/check
 
 #Run Quick Strike Cooldowns
 execute if predicate cartographer_core:periodic_tick/20 if predicate cartographer_custom_enchantments:has/quick_strike run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/quick_strike/recharge/check
 
-#Run Lunging Cooldowns
-execute if predicate cartographer_core:periodic_tick/20 if predicate cartographer_custom_enchantments:has/lunging run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/lunging/recharge/check
+#Run Pounce Cooldowns
+execute if predicate cartographer_core:periodic_tick/20 if predicate cartographer_custom_enchantments:has/pounce run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/pounce/recharge/check
 
 #Run Riposte Cooldowns
 execute if predicate cartographer_core:periodic_tick/20 if predicate cartographer_custom_enchantments:has/riposte run function cartographer_custom_enchantments:enchantment/weapon/unique/melee/riposte/recharge/check
@@ -54,7 +54,7 @@ execute if predicate cartographer_core:periodic_tick/20 if predicate cartographe
 
 execute if score @s ca.special_attack_delay matches 1.. run scoreboard players remove @s ca.special_attack_delay 1
 
-execute if score @s ca.ambushing_safety matches 1.. run scoreboard players remove @s ca.ambushing_safety 1
+execute if score @s ca.ambush_safety matches 1.. run scoreboard players remove @s ca.ambush_safety 1
 
 #Infinity Processing
 function cartographer_custom_enchantments:enchantment/weapon/unique/other/infinity/player

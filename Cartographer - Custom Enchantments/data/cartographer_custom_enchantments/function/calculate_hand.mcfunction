@@ -1272,49 +1272,49 @@ scoreboard players operation @s ca.ench_riposte_lvl += @s ca.ench_riposte_saddle
 
 
 
-scoreboard players set @s ca.ench_lunging_main_lvl 0
-scoreboard players set @s ca.ench_lunging_offh_lvl 0
-scoreboard players set @s ca.ench_lunging_lvl 0
+scoreboard players set @s ca.ench_pounce_main_lvl 0
+scoreboard players set @s ca.ench_pounce_offh_lvl 0
+scoreboard players set @s ca.ench_pounce_lvl 0
 
 scoreboard players set $ench ca.ench_var 0
-execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.main.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/melee/lunging
-scoreboard players operation @s ca.ench_lunging_main_lvl += $ench ca.ench_var
+execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.main.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/melee/pounce
+scoreboard players operation @s ca.ench_pounce_main_lvl += $ench ca.ench_var
 
 scoreboard players set $ench ca.ench_var 0
-execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.offh.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/melee/lunging
-scoreboard players operation @s ca.ench_lunging_offh_lvl += $ench ca.ench_var
+execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.offh.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/melee/pounce
+scoreboard players operation @s ca.ench_pounce_offh_lvl += $ench ca.ench_var
 
-scoreboard players operation @s ca.ench_lunging_lvl += @s ca.ench_lunging_main_lvl
-scoreboard players operation @s ca.ench_lunging_lvl += @s ca.ench_lunging_offh_lvl
-scoreboard players operation @s ca.ench_lunging_lvl += @s ca.ench_lunging_head_lvl
-scoreboard players operation @s ca.ench_lunging_lvl += @s ca.ench_lunging_chest_lvl
-scoreboard players operation @s ca.ench_lunging_lvl += @s ca.ench_lunging_legs_lvl
-scoreboard players operation @s ca.ench_lunging_lvl += @s ca.ench_lunging_feet_lvl
-scoreboard players operation @s ca.ench_lunging_lvl += @s ca.ench_lunging_body_lvl
-scoreboard players operation @s ca.ench_lunging_lvl += @s ca.ench_lunging_saddle_lvl
+scoreboard players operation @s ca.ench_pounce_lvl += @s ca.ench_pounce_main_lvl
+scoreboard players operation @s ca.ench_pounce_lvl += @s ca.ench_pounce_offh_lvl
+scoreboard players operation @s ca.ench_pounce_lvl += @s ca.ench_pounce_head_lvl
+scoreboard players operation @s ca.ench_pounce_lvl += @s ca.ench_pounce_chest_lvl
+scoreboard players operation @s ca.ench_pounce_lvl += @s ca.ench_pounce_legs_lvl
+scoreboard players operation @s ca.ench_pounce_lvl += @s ca.ench_pounce_feet_lvl
+scoreboard players operation @s ca.ench_pounce_lvl += @s ca.ench_pounce_body_lvl
+scoreboard players operation @s ca.ench_pounce_lvl += @s ca.ench_pounce_saddle_lvl
 
 
 
-scoreboard players set @s ca.ench_ambushing_main_lvl 0
-scoreboard players set @s ca.ench_ambushing_offh_lvl 0
-scoreboard players set @s ca.ench_ambushing_lvl 0
-
-scoreboard players set $ench ca.ench_var 0
-execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.main.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/melee/ambushing
-scoreboard players operation @s ca.ench_ambushing_main_lvl += $ench ca.ench_var
+scoreboard players set @s ca.ench_ambush_main_lvl 0
+scoreboard players set @s ca.ench_ambush_offh_lvl 0
+scoreboard players set @s ca.ench_ambush_lvl 0
 
 scoreboard players set $ench ca.ench_var 0
-execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.offh.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/melee/ambushing
-scoreboard players operation @s ca.ench_ambushing_offh_lvl += $ench ca.ench_var
+execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.main.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/melee/ambush
+scoreboard players operation @s ca.ench_ambush_main_lvl += $ench ca.ench_var
 
-scoreboard players operation @s ca.ench_ambushing_lvl += @s ca.ench_ambushing_main_lvl
-scoreboard players operation @s ca.ench_ambushing_lvl += @s ca.ench_ambushing_offh_lvl
-scoreboard players operation @s ca.ench_ambushing_lvl += @s ca.ench_ambushing_head_lvl
-scoreboard players operation @s ca.ench_ambushing_lvl += @s ca.ench_ambushing_chest_lvl
-scoreboard players operation @s ca.ench_ambushing_lvl += @s ca.ench_ambushing_legs_lvl
-scoreboard players operation @s ca.ench_ambushing_lvl += @s ca.ench_ambushing_feet_lvl
-scoreboard players operation @s ca.ench_ambushing_lvl += @s ca.ench_ambushing_body_lvl
-scoreboard players operation @s ca.ench_ambushing_lvl += @s ca.ench_ambushing_saddle_lvl
+scoreboard players set $ench ca.ench_var 0
+execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.offh.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/melee/ambush
+scoreboard players operation @s ca.ench_ambush_offh_lvl += $ench ca.ench_var
+
+scoreboard players operation @s ca.ench_ambush_lvl += @s ca.ench_ambush_main_lvl
+scoreboard players operation @s ca.ench_ambush_lvl += @s ca.ench_ambush_offh_lvl
+scoreboard players operation @s ca.ench_ambush_lvl += @s ca.ench_ambush_head_lvl
+scoreboard players operation @s ca.ench_ambush_lvl += @s ca.ench_ambush_chest_lvl
+scoreboard players operation @s ca.ench_ambush_lvl += @s ca.ench_ambush_legs_lvl
+scoreboard players operation @s ca.ench_ambush_lvl += @s ca.ench_ambush_feet_lvl
+scoreboard players operation @s ca.ench_ambush_lvl += @s ca.ench_ambush_body_lvl
+scoreboard players operation @s ca.ench_ambush_lvl += @s ca.ench_ambush_saddle_lvl
 
 
 

@@ -53,8 +53,8 @@ execute if score @s ca.ench_slamming_lvl matches 1.. run tag @s add ca.enchant_t
 execute if score @s ca.ench_thrusting_lvl matches 1.. run tag @s add ca.enchant_tick
 execute if score @s ca.ench_quick_strike_lvl matches 1.. run tag @s add ca.enchant_tick
 execute if score @s ca.ench_riposte_lvl matches 1.. run tag @s add ca.enchant_tick
-execute if score @s ca.ench_lunging_lvl matches 1.. run tag @s add ca.enchant_tick
-execute if score @s ca.ench_ambushing_lvl matches 1.. run tag @s add ca.enchant_tick
+execute if score @s ca.ench_pounce_lvl matches 1.. run tag @s add ca.enchant_tick
+execute if score @s ca.ench_ambush_lvl matches 1.. run tag @s add ca.enchant_tick
 execute if score @s ca.ench_throwable_lvl matches 1.. run tag @s add ca.enchant_tick
 execute if score @s ca.ench_correction_lvl matches 1.. run tag @s add ca.enchant_tick
 execute if score @s ca.ench_ricochet_lvl matches 1.. run tag @s add ca.enchant_tick

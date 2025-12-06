@@ -1,1 +1,0 @@
-$execute if score $active ca.ench_lunging_lvl matches 1.. run function carto_event:api/create_single_entity_event {event:"custom_ench/lunging/entity_use",duration:201,delay:0,parameters:{telegraph:"$(telegraph)"},merge_behavior:"merge"}

@@ -53,8 +53,8 @@ execute if score @s ca.ench_slamming_lvl matches 1.. unless predicate cartograph
 execute if score @s ca.ench_thrusting_lvl matches 1.. unless predicate cartographer_custom_enchantments:has_enchant/thrusting run scoreboard players set @s ca.ench_thrusting_lvl 0
 execute if score @s ca.ench_quick_strike_lvl matches 1.. unless predicate cartographer_custom_enchantments:has_enchant/quick_strike run scoreboard players set @s ca.ench_quick_strike_lvl 0
 execute if score @s ca.ench_riposte_lvl matches 1.. unless predicate cartographer_custom_enchantments:has_enchant/riposte run scoreboard players set @s ca.ench_riposte_lvl 0
-execute if score @s ca.ench_lunging_lvl matches 1.. unless predicate cartographer_custom_enchantments:has_enchant/lunging run scoreboard players set @s ca.ench_lunging_lvl 0
-execute if score @s ca.ench_ambushing_lvl matches 1.. unless predicate cartographer_custom_enchantments:has_enchant/ambushing run scoreboard players set @s ca.ench_ambushing_lvl 0
+execute if score @s ca.ench_pounce_lvl matches 1.. unless predicate cartographer_custom_enchantments:has_enchant/pounce run scoreboard players set @s ca.ench_pounce_lvl 0
+execute if score @s ca.ench_ambush_lvl matches 1.. unless predicate cartographer_custom_enchantments:has_enchant/ambush run scoreboard players set @s ca.ench_ambush_lvl 0
 execute if score @s ca.ench_throwable_lvl matches 1.. unless predicate cartographer_custom_enchantments:has_enchant/throwable run scoreboard players set @s ca.ench_throwable_lvl 0
 execute if score @s ca.ench_correction_lvl matches 1.. unless predicate cartographer_custom_enchantments:has_enchant/correction run scoreboard players set @s ca.ench_correction_lvl 0
 execute if score @s ca.ench_ricochet_lvl matches 1.. unless predicate cartographer_custom_enchantments:has_enchant/ricochet run scoreboard players set @s ca.ench_ricochet_lvl 0

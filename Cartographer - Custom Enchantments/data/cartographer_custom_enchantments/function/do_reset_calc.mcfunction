@@ -50,8 +50,8 @@ execute if score @s ca.ench_slamming_lvl matches 1.. run function cartographer_c
 execute if score @s ca.ench_thrusting_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/thrusting
 execute if score @s ca.ench_quick_strike_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/quick_strike
 execute if score @s ca.ench_riposte_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/riposte
-execute if score @s ca.ench_ambushing_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/ambushing
-execute if score @s ca.ench_lunging_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/lunging
+execute if score @s ca.ench_ambush_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/ambush
+execute if score @s ca.ench_pounce_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/pounce
 execute if score @s ca.ench_throwable_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/throwable
 execute if score @s ca.ench_correction_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/correction
 execute if score @s ca.ench_ricochet_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/ricochet

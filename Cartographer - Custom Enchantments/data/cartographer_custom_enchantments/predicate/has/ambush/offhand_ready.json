@@ -1,0 +1,21 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "slots": {
+      "weapon.offhand": {
+        "predicates": {
+          "minecraft:enchantments": [
+            {
+              "enchantments": "cartographer_custom_enchantments:weapon/unique/melee/ambush",
+              "levels": {
+                "min": 1
+              }
+            }
+          ],
+          "minecraft:custom_data": {"ambush_state":2}
+        }
+      }
+    }
+  }
+}

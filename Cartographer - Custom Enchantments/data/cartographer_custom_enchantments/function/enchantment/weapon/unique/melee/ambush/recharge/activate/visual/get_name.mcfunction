@@ -1,0 +1,5 @@
+setblock 4206905 3 4206905 air replace
+execute if score $time_current ca.ench_ambush_lvl matches 1.. run setblock 4206905 3 4206905 oak_sign{front_text:{messages:[[{"nbt":"visual.name","storage":"cartographer_custom_enchantments:ambush","interpret":true},{"text":" [","color":"white","bold":true,"italic":false,"bold":false},{"with":[{"nbt":"visual.time","storage":"cartographer_custom_enchantments:ambush","color":"gray","italic":false,"bold":false}],"fallback":"%ss","translate":"cartographer.item_cooldown.seconds","color":"gray","italic":false,"bold":false},{"text":"]","color":"white","bold":true,"italic":false,"bold":false}],{"text":""},{"text":""},{"text":""}]}} replace
+execute unless score $time_current ca.ench_ambush_lvl matches 1.. run setblock 4206905 3 4206905 oak_sign{front_text:{messages:[[{"nbt":"visual.name","storage":"cartographer_custom_enchantments:ambush","interpret":true}],{"text":""},{"text":""},{"text":""}]}} replace
+
+data modify storage cartographer_custom_enchantments:ambush visual.return set from block 4206905 3 4206905 front_text.messages[0]

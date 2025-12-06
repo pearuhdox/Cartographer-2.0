@@ -1,7 +1,7 @@
 $execute as $(telegraph) at @s run scoreboard players set @s ca.entity_purge_var 0
 
-#$execute as $(target) at @s if score duration= carto_event matches 1.. unless entity @s[tag=ca.is_lunging] run tag @s add ca.lunging_charging
-#$execute as $(target) at @s if score duration= carto_event matches 1.. unless entity @s[tag=ca.is_lunging] run scoreboard players add @s ca.throwable_time 1
+#$execute as $(target) at @s if score duration= carto_event matches 1.. unless entity @s[tag=ca.is_pounce] run tag @s add ca.pounce_charging
+#$execute as $(target) at @s if score duration= carto_event matches 1.. unless entity @s[tag=ca.is_pounce] run scoreboard players add @s ca.throwable_time 1
 
 $execute as $(target) at @s unless score @s ca.throwable_time matches 21.. unless entity @s[tag=ca.has_thrown] run scoreboard players add @s ca.throwable_time 1
 

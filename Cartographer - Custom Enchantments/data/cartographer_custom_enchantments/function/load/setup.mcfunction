@@ -566,25 +566,25 @@ scoreboard objectives add ca.ench_riposte_feet_lvl dummy
 scoreboard objectives add ca.ench_riposte_body_lvl dummy
 scoreboard objectives add ca.ench_riposte_saddle_lvl dummy
 
-scoreboard objectives add ca.ench_lunging_lvl dummy
-scoreboard objectives add ca.ench_lunging_main_lvl dummy
-scoreboard objectives add ca.ench_lunging_offh_lvl dummy
-scoreboard objectives add ca.ench_lunging_head_lvl dummy
-scoreboard objectives add ca.ench_lunging_chest_lvl dummy
-scoreboard objectives add ca.ench_lunging_legs_lvl dummy
-scoreboard objectives add ca.ench_lunging_feet_lvl dummy
-scoreboard objectives add ca.ench_lunging_body_lvl dummy
-scoreboard objectives add ca.ench_lunging_saddle_lvl dummy
+scoreboard objectives add ca.ench_pounce_lvl dummy
+scoreboard objectives add ca.ench_pounce_main_lvl dummy
+scoreboard objectives add ca.ench_pounce_offh_lvl dummy
+scoreboard objectives add ca.ench_pounce_head_lvl dummy
+scoreboard objectives add ca.ench_pounce_chest_lvl dummy
+scoreboard objectives add ca.ench_pounce_legs_lvl dummy
+scoreboard objectives add ca.ench_pounce_feet_lvl dummy
+scoreboard objectives add ca.ench_pounce_body_lvl dummy
+scoreboard objectives add ca.ench_pounce_saddle_lvl dummy
 
-scoreboard objectives add ca.ench_ambushing_lvl dummy
-scoreboard objectives add ca.ench_ambushing_main_lvl dummy
-scoreboard objectives add ca.ench_ambushing_offh_lvl dummy
-scoreboard objectives add ca.ench_ambushing_head_lvl dummy
-scoreboard objectives add ca.ench_ambushing_chest_lvl dummy
-scoreboard objectives add ca.ench_ambushing_legs_lvl dummy
-scoreboard objectives add ca.ench_ambushing_feet_lvl dummy
-scoreboard objectives add ca.ench_ambushing_body_lvl dummy
-scoreboard objectives add ca.ench_ambushing_saddle_lvl dummy
+scoreboard objectives add ca.ench_ambush_lvl dummy
+scoreboard objectives add ca.ench_ambush_main_lvl dummy
+scoreboard objectives add ca.ench_ambush_offh_lvl dummy
+scoreboard objectives add ca.ench_ambush_head_lvl dummy
+scoreboard objectives add ca.ench_ambush_chest_lvl dummy
+scoreboard objectives add ca.ench_ambush_legs_lvl dummy
+scoreboard objectives add ca.ench_ambush_feet_lvl dummy
+scoreboard objectives add ca.ench_ambush_body_lvl dummy
+scoreboard objectives add ca.ench_ambush_saddle_lvl dummy
 
 scoreboard objectives add ca.ench_throwable_lvl dummy
 scoreboard objectives add ca.ench_throwable_main_lvl dummy
@@ -1086,14 +1086,14 @@ scoreboard objectives add ca.channeling_time dummy
 
 scoreboard objectives add ca.riposte_time dummy
 
-scoreboard objectives add ca.lunging_time dummy
-scoreboard objectives add ca.lunging_cancel dummy
+scoreboard objectives add ca.pounce_time dummy
+scoreboard objectives add ca.pounce_cancel dummy
 
-scoreboard objectives add ca.ambushing_time dummy
-scoreboard objectives add ca.ambushing_look dummy
-scoreboard objectives add ca.ambushing_cancel dummy
-scoreboard objectives add ca.ambushing_safety dummy
-scoreboard objectives add ca.ambushing_cooldown dummy
+scoreboard objectives add ca.ambush_time dummy
+scoreboard objectives add ca.ambush_look dummy
+scoreboard objectives add ca.ambush_cancel dummy
+scoreboard objectives add ca.ambush_safety dummy
+scoreboard objectives add ca.ambush_cooldown dummy
 
 scoreboard objectives add ca.throwable_time dummy
 scoreboard objectives add ca.throwable_cooldown dummy

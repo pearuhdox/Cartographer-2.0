@@ -1,0 +1,1 @@
+$data modify storage cartographer_custom_enchantments:ambush visual.name set value {"fallback":"Ambush Item","translate":"item.minecraft.$(macro)","color":"aqua","italic":false}

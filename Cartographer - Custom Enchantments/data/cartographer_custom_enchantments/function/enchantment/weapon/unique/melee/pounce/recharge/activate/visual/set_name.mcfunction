@@ -1,0 +1,1 @@
+$data modify storage cartographer_custom_enchantments:pounce visual.name set value {"fallback":"Pounce Item","translate":"item.minecraft.$(macro)","color":"aqua","italic":false}

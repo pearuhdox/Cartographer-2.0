@@ -90,7 +90,7 @@ data modify storage cartographer:data_registry enchant_prefix.slamming set value
 data modify storage cartographer:data_registry enchant_prefix.thrusting set value "cartographer_custom_enchantments:weapon/unique/melee/"
 data modify storage cartographer:data_registry enchant_prefix.quick_strike set value "cartographer_custom_enchantments:weapon/unique/melee/"
 data modify storage cartographer:data_registry enchant_prefix.riposte set value "cartographer_custom_enchantments:weapon/unique/melee/"
-data modify storage cartographer:data_registry enchant_prefix.lunging set value "cartographer_custom_enchantments:weapon/unique/melee/"
+data modify storage cartographer:data_registry enchant_prefix.pounce set value "cartographer_custom_enchantments:weapon/unique/melee/"
 data modify storage cartographer:data_registry enchant_prefix.throwable set value "cartographer_custom_enchantments:weapon/unique/melee/"
 data modify storage cartographer:data_registry enchant_prefix.correction set value "cartographer_custom_enchantments:weapon/unique/ranged/"
 data modify storage cartographer:data_registry enchant_prefix.ricochet set value "cartographer_custom_enchantments:weapon/unique/ranged/"

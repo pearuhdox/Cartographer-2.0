@@ -1,0 +1,1 @@
+$function carto_event:api/create_single_entity_event {event:"custom_ench/ambush/entity_use",duration:51,delay:0,parameters:{victim:"$(victim)",telegraph:"$(telegraph)",size:$(size),half_size:$(half_size),size_neg_1:$(size_neg_1),damage:$(damage)},merge_behavior:"merge"}

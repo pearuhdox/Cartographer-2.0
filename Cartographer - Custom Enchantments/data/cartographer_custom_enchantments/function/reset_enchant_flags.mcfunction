@@ -78,7 +78,7 @@ tag @s remove ca.ench_ran_flag_recoil
 tag @s remove ca.ench_ran_flag_repulsion
 
 tag @s remove ca.ench_ran_flag_cleaving
-tag @s remove ca.ench_ran_flag_lunging
+tag @s remove ca.ench_ran_flag_pounce
 tag @s remove ca.ench_ran_flag_quick_strike
 tag @s remove ca.ench_ran_flag_riposte
 tag @s remove ca.ench_ran_flag_slamming

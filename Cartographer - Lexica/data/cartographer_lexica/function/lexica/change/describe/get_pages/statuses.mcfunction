@@ -91,12 +91,12 @@ execute if score $status_stealth ca.lexica_var matches 0 store result score $sta
 execute if score $status_stealth ca.lexica_var matches 0 store result score $status_stealth ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"stealth"}]
 
 
-execute if score $status_stealth ca.lexica_var matches 0 store result score $status_stealth ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"stealth"}]
-execute if score $status_stealth ca.lexica_var matches 0 store result score $status_stealth ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"stealth"}]
+execute if score $status_stealth ca.lexica_var matches 0 store result score $status_stealth ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"stealth"}]
+execute if score $status_stealth ca.lexica_var matches 0 store result score $status_stealth ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"stealth"}]
 
 
-execute if score $status_stealth ca.lexica_var matches 0 store result score $status_stealth ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"stealth"}]
-execute if score $status_stealth ca.lexica_var matches 0 store result score $status_stealth ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"stealth"}]
+execute if score $status_stealth ca.lexica_var matches 0 store result score $status_stealth ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"stealth"}]
+execute if score $status_stealth ca.lexica_var matches 0 store result score $status_stealth ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"stealth"}]
 
 
 execute if score $status_stealth ca.lexica_var matches 0 store result score $status_stealth ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"stealth"}]
@@ -197,12 +197,12 @@ execute if score $status_barricade ca.lexica_var matches 0 store result score $s
 execute if score $status_barricade ca.lexica_var matches 0 store result score $status_barricade ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"barricade"}]
 
 
-execute if score $status_barricade ca.lexica_var matches 0 store result score $status_barricade ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"barricade"}]
-execute if score $status_barricade ca.lexica_var matches 0 store result score $status_barricade ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"barricade"}]
+execute if score $status_barricade ca.lexica_var matches 0 store result score $status_barricade ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"barricade"}]
+execute if score $status_barricade ca.lexica_var matches 0 store result score $status_barricade ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"barricade"}]
 
 
-execute if score $status_barricade ca.lexica_var matches 0 store result score $status_barricade ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"barricade"}]
-execute if score $status_barricade ca.lexica_var matches 0 store result score $status_barricade ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"barricade"}]
+execute if score $status_barricade ca.lexica_var matches 0 store result score $status_barricade ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"barricade"}]
+execute if score $status_barricade ca.lexica_var matches 0 store result score $status_barricade ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"barricade"}]
 
 
 execute if score $status_barricade ca.lexica_var matches 0 store result score $status_barricade ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"barricade"}]
@@ -303,12 +303,12 @@ execute if score $status_nullify ca.lexica_var matches 0 store result score $sta
 execute if score $status_nullify ca.lexica_var matches 0 store result score $status_nullify ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"nullify"}]
 
 
-execute if score $status_nullify ca.lexica_var matches 0 store result score $status_nullify ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"nullify"}]
-execute if score $status_nullify ca.lexica_var matches 0 store result score $status_nullify ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"nullify"}]
+execute if score $status_nullify ca.lexica_var matches 0 store result score $status_nullify ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"nullify"}]
+execute if score $status_nullify ca.lexica_var matches 0 store result score $status_nullify ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"nullify"}]
 
 
-execute if score $status_nullify ca.lexica_var matches 0 store result score $status_nullify ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"nullify"}]
-execute if score $status_nullify ca.lexica_var matches 0 store result score $status_nullify ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"nullify"}]
+execute if score $status_nullify ca.lexica_var matches 0 store result score $status_nullify ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"nullify"}]
+execute if score $status_nullify ca.lexica_var matches 0 store result score $status_nullify ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"nullify"}]
 
 
 execute if score $status_nullify ca.lexica_var matches 0 store result score $status_nullify ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"nullify"}]
@@ -409,12 +409,12 @@ execute if score $status_evasion ca.lexica_var matches 0 store result score $sta
 execute if score $status_evasion ca.lexica_var matches 0 store result score $status_evasion ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"evasion"}]
 
 
-execute if score $status_evasion ca.lexica_var matches 0 store result score $status_evasion ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"evasion"}]
-execute if score $status_evasion ca.lexica_var matches 0 store result score $status_evasion ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"evasion"}]
+execute if score $status_evasion ca.lexica_var matches 0 store result score $status_evasion ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"evasion"}]
+execute if score $status_evasion ca.lexica_var matches 0 store result score $status_evasion ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"evasion"}]
 
 
-execute if score $status_evasion ca.lexica_var matches 0 store result score $status_evasion ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"evasion"}]
-execute if score $status_evasion ca.lexica_var matches 0 store result score $status_evasion ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"evasion"}]
+execute if score $status_evasion ca.lexica_var matches 0 store result score $status_evasion ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"evasion"}]
+execute if score $status_evasion ca.lexica_var matches 0 store result score $status_evasion ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"evasion"}]
 
 
 execute if score $status_evasion ca.lexica_var matches 0 store result score $status_evasion ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"evasion"}]
@@ -515,12 +515,12 @@ execute if score $status_absorption ca.lexica_var matches 0 store result score $
 execute if score $status_absorption ca.lexica_var matches 0 store result score $status_absorption ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"absorption"}]
 
 
-execute if score $status_absorption ca.lexica_var matches 0 store result score $status_absorption ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"absorption"}]
-execute if score $status_absorption ca.lexica_var matches 0 store result score $status_absorption ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"absorption"}]
+execute if score $status_absorption ca.lexica_var matches 0 store result score $status_absorption ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"absorption"}]
+execute if score $status_absorption ca.lexica_var matches 0 store result score $status_absorption ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"absorption"}]
 
 
-execute if score $status_absorption ca.lexica_var matches 0 store result score $status_absorption ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"absorption"}]
-execute if score $status_absorption ca.lexica_var matches 0 store result score $status_absorption ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"absorption"}]
+execute if score $status_absorption ca.lexica_var matches 0 store result score $status_absorption ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"absorption"}]
+execute if score $status_absorption ca.lexica_var matches 0 store result score $status_absorption ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"absorption"}]
 
 
 execute if score $status_absorption ca.lexica_var matches 0 store result score $status_absorption ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"absorption"}]
@@ -621,12 +621,12 @@ execute if score $status_instant_absorption ca.lexica_var matches 0 store result
 execute if score $status_instant_absorption ca.lexica_var matches 0 store result score $status_instant_absorption ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"instant_absorption"}]
 
 
-execute if score $status_instant_absorption ca.lexica_var matches 0 store result score $status_instant_absorption ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"instant_absorption"}]
-execute if score $status_instant_absorption ca.lexica_var matches 0 store result score $status_instant_absorption ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"instant_absorption"}]
+execute if score $status_instant_absorption ca.lexica_var matches 0 store result score $status_instant_absorption ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"instant_absorption"}]
+execute if score $status_instant_absorption ca.lexica_var matches 0 store result score $status_instant_absorption ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"instant_absorption"}]
 
 
-execute if score $status_instant_absorption ca.lexica_var matches 0 store result score $status_instant_absorption ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"instant_absorption"}]
-execute if score $status_instant_absorption ca.lexica_var matches 0 store result score $status_instant_absorption ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"instant_absorption"}]
+execute if score $status_instant_absorption ca.lexica_var matches 0 store result score $status_instant_absorption ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"instant_absorption"}]
+execute if score $status_instant_absorption ca.lexica_var matches 0 store result score $status_instant_absorption ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"instant_absorption"}]
 
 
 execute if score $status_instant_absorption ca.lexica_var matches 0 store result score $status_instant_absorption ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"instant_absorption"}]
@@ -727,12 +727,12 @@ execute if score $status_regeneration ca.lexica_var matches 0 store result score
 execute if score $status_regeneration ca.lexica_var matches 0 store result score $status_regeneration ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"regeneration"}]
 
 
-execute if score $status_regeneration ca.lexica_var matches 0 store result score $status_regeneration ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"regeneration"}]
-execute if score $status_regeneration ca.lexica_var matches 0 store result score $status_regeneration ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"regeneration"}]
+execute if score $status_regeneration ca.lexica_var matches 0 store result score $status_regeneration ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"regeneration"}]
+execute if score $status_regeneration ca.lexica_var matches 0 store result score $status_regeneration ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"regeneration"}]
 
 
-execute if score $status_regeneration ca.lexica_var matches 0 store result score $status_regeneration ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"regeneration"}]
-execute if score $status_regeneration ca.lexica_var matches 0 store result score $status_regeneration ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"regeneration"}]
+execute if score $status_regeneration ca.lexica_var matches 0 store result score $status_regeneration ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"regeneration"}]
+execute if score $status_regeneration ca.lexica_var matches 0 store result score $status_regeneration ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"regeneration"}]
 
 
 execute if score $status_regeneration ca.lexica_var matches 0 store result score $status_regeneration ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"regeneration"}]
@@ -833,12 +833,12 @@ execute if score $status_instant_healing ca.lexica_var matches 0 store result sc
 execute if score $status_instant_healing ca.lexica_var matches 0 store result score $status_instant_healing ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"instant_healing"}]
 
 
-execute if score $status_instant_healing ca.lexica_var matches 0 store result score $status_instant_healing ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"instant_healing"}]
-execute if score $status_instant_healing ca.lexica_var matches 0 store result score $status_instant_healing ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"instant_healing"}]
+execute if score $status_instant_healing ca.lexica_var matches 0 store result score $status_instant_healing ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"instant_healing"}]
+execute if score $status_instant_healing ca.lexica_var matches 0 store result score $status_instant_healing ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"instant_healing"}]
 
 
-execute if score $status_instant_healing ca.lexica_var matches 0 store result score $status_instant_healing ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"instant_healing"}]
-execute if score $status_instant_healing ca.lexica_var matches 0 store result score $status_instant_healing ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"instant_healing"}]
+execute if score $status_instant_healing ca.lexica_var matches 0 store result score $status_instant_healing ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"instant_healing"}]
+execute if score $status_instant_healing ca.lexica_var matches 0 store result score $status_instant_healing ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"instant_healing"}]
 
 
 execute if score $status_instant_healing ca.lexica_var matches 0 store result score $status_instant_healing ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"instant_healing"}]
@@ -939,12 +939,12 @@ execute if score $status_instant_damage ca.lexica_var matches 0 store result sco
 execute if score $status_instant_damage ca.lexica_var matches 0 store result score $status_instant_damage ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"instant_damage"}]
 
 
-execute if score $status_instant_damage ca.lexica_var matches 0 store result score $status_instant_damage ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"instant_damage"}]
-execute if score $status_instant_damage ca.lexica_var matches 0 store result score $status_instant_damage ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"instant_damage"}]
+execute if score $status_instant_damage ca.lexica_var matches 0 store result score $status_instant_damage ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"instant_damage"}]
+execute if score $status_instant_damage ca.lexica_var matches 0 store result score $status_instant_damage ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"instant_damage"}]
 
 
-execute if score $status_instant_damage ca.lexica_var matches 0 store result score $status_instant_damage ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"instant_damage"}]
-execute if score $status_instant_damage ca.lexica_var matches 0 store result score $status_instant_damage ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"instant_damage"}]
+execute if score $status_instant_damage ca.lexica_var matches 0 store result score $status_instant_damage ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"instant_damage"}]
+execute if score $status_instant_damage ca.lexica_var matches 0 store result score $status_instant_damage ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"instant_damage"}]
 
 
 execute if score $status_instant_damage ca.lexica_var matches 0 store result score $status_instant_damage ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"instant_damage"}]
@@ -1045,12 +1045,12 @@ execute if score $status_fire_aspect ca.lexica_var matches 0 store result score 
 execute if score $status_fire_aspect ca.lexica_var matches 0 store result score $status_fire_aspect ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"fire_aspect"}]
 
 
-execute if score $status_fire_aspect ca.lexica_var matches 0 store result score $status_fire_aspect ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"fire_aspect"}]
-execute if score $status_fire_aspect ca.lexica_var matches 0 store result score $status_fire_aspect ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"fire_aspect"}]
+execute if score $status_fire_aspect ca.lexica_var matches 0 store result score $status_fire_aspect ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"fire_aspect"}]
+execute if score $status_fire_aspect ca.lexica_var matches 0 store result score $status_fire_aspect ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"fire_aspect"}]
 
 
-execute if score $status_fire_aspect ca.lexica_var matches 0 store result score $status_fire_aspect ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"fire_aspect"}]
-execute if score $status_fire_aspect ca.lexica_var matches 0 store result score $status_fire_aspect ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"fire_aspect"}]
+execute if score $status_fire_aspect ca.lexica_var matches 0 store result score $status_fire_aspect ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"fire_aspect"}]
+execute if score $status_fire_aspect ca.lexica_var matches 0 store result score $status_fire_aspect ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"fire_aspect"}]
 
 
 execute if score $status_fire_aspect ca.lexica_var matches 0 store result score $status_fire_aspect ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"fire_aspect"}]
@@ -1151,12 +1151,12 @@ execute if score $status_cleansed ca.lexica_var matches 0 store result score $st
 execute if score $status_cleansed ca.lexica_var matches 0 store result score $status_cleansed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"cleansed"}]
 
 
-execute if score $status_cleansed ca.lexica_var matches 0 store result score $status_cleansed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"cleansed"}]
-execute if score $status_cleansed ca.lexica_var matches 0 store result score $status_cleansed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"cleansed"}]
+execute if score $status_cleansed ca.lexica_var matches 0 store result score $status_cleansed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"cleansed"}]
+execute if score $status_cleansed ca.lexica_var matches 0 store result score $status_cleansed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"cleansed"}]
 
 
-execute if score $status_cleansed ca.lexica_var matches 0 store result score $status_cleansed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"cleansed"}]
-execute if score $status_cleansed ca.lexica_var matches 0 store result score $status_cleansed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"cleansed"}]
+execute if score $status_cleansed ca.lexica_var matches 0 store result score $status_cleansed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"cleansed"}]
+execute if score $status_cleansed ca.lexica_var matches 0 store result score $status_cleansed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"cleansed"}]
 
 
 execute if score $status_cleansed ca.lexica_var matches 0 store result score $status_cleansed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"cleansed"}]
@@ -1259,12 +1259,12 @@ execute if score $status_purged ca.lexica_var matches 0 store result score $stat
 execute if score $status_purged ca.lexica_var matches 0 store result score $status_purged ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"purged"}]
 
 
-execute if score $status_purged ca.lexica_var matches 0 store result score $status_purged ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"purged"}]
-execute if score $status_purged ca.lexica_var matches 0 store result score $status_purged ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"purged"}]
+execute if score $status_purged ca.lexica_var matches 0 store result score $status_purged ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"purged"}]
+execute if score $status_purged ca.lexica_var matches 0 store result score $status_purged ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"purged"}]
 
 
-execute if score $status_purged ca.lexica_var matches 0 store result score $status_purged ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"purged"}]
-execute if score $status_purged ca.lexica_var matches 0 store result score $status_purged ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"purged"}]
+execute if score $status_purged ca.lexica_var matches 0 store result score $status_purged ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"purged"}]
+execute if score $status_purged ca.lexica_var matches 0 store result score $status_purged ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"purged"}]
 
 
 execute if score $status_purged ca.lexica_var matches 0 store result score $status_purged ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"purged"}]
@@ -1367,12 +1367,12 @@ execute if score $status_unstoppable ca.lexica_var matches 0 store result score 
 execute if score $status_unstoppable ca.lexica_var matches 0 store result score $status_unstoppable ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"unstoppable"}]
 
 
-execute if score $status_unstoppable ca.lexica_var matches 0 store result score $status_unstoppable ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"unstoppable"}]
-execute if score $status_unstoppable ca.lexica_var matches 0 store result score $status_unstoppable ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"unstoppable"}]
+execute if score $status_unstoppable ca.lexica_var matches 0 store result score $status_unstoppable ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"unstoppable"}]
+execute if score $status_unstoppable ca.lexica_var matches 0 store result score $status_unstoppable ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"unstoppable"}]
 
 
-execute if score $status_unstoppable ca.lexica_var matches 0 store result score $status_unstoppable ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"unstoppable"}]
-execute if score $status_unstoppable ca.lexica_var matches 0 store result score $status_unstoppable ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"unstoppable"}]
+execute if score $status_unstoppable ca.lexica_var matches 0 store result score $status_unstoppable ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"unstoppable"}]
+execute if score $status_unstoppable ca.lexica_var matches 0 store result score $status_unstoppable ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"unstoppable"}]
 
 
 execute if score $status_unstoppable ca.lexica_var matches 0 store result score $status_unstoppable ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"unstoppable"}]
@@ -1475,12 +1475,12 @@ execute if score $status_wither ca.lexica_var matches 0 store result score $stat
 execute if score $status_wither ca.lexica_var matches 0 store result score $status_wither ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"wither"}]
 
 
-execute if score $status_wither ca.lexica_var matches 0 store result score $status_wither ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"wither"}]
-execute if score $status_wither ca.lexica_var matches 0 store result score $status_wither ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"wither"}]
+execute if score $status_wither ca.lexica_var matches 0 store result score $status_wither ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"wither"}]
+execute if score $status_wither ca.lexica_var matches 0 store result score $status_wither ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"wither"}]
 
 
-execute if score $status_wither ca.lexica_var matches 0 store result score $status_wither ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"wither"}]
-execute if score $status_wither ca.lexica_var matches 0 store result score $status_wither ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"wither"}]
+execute if score $status_wither ca.lexica_var matches 0 store result score $status_wither ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"wither"}]
+execute if score $status_wither ca.lexica_var matches 0 store result score $status_wither ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"wither"}]
 
 
 execute if score $status_wither ca.lexica_var matches 0 store result score $status_wither ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"wither"}]
@@ -1581,12 +1581,12 @@ execute if score $status_bleeding ca.lexica_var matches 0 store result score $st
 execute if score $status_bleeding ca.lexica_var matches 0 store result score $status_bleeding ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"bleeding"}]
 
 
-execute if score $status_bleeding ca.lexica_var matches 0 store result score $status_bleeding ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"bleeding"}]
-execute if score $status_bleeding ca.lexica_var matches 0 store result score $status_bleeding ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"bleeding"}]
+execute if score $status_bleeding ca.lexica_var matches 0 store result score $status_bleeding ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"bleeding"}]
+execute if score $status_bleeding ca.lexica_var matches 0 store result score $status_bleeding ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"bleeding"}]
 
 
-execute if score $status_bleeding ca.lexica_var matches 0 store result score $status_bleeding ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"bleeding"}]
-execute if score $status_bleeding ca.lexica_var matches 0 store result score $status_bleeding ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"bleeding"}]
+execute if score $status_bleeding ca.lexica_var matches 0 store result score $status_bleeding ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"bleeding"}]
+execute if score $status_bleeding ca.lexica_var matches 0 store result score $status_bleeding ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"bleeding"}]
 
 
 execute if score $status_bleeding ca.lexica_var matches 0 store result score $status_bleeding ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"bleeding"}]
@@ -1687,12 +1687,12 @@ execute if score $status_shocked ca.lexica_var matches 0 store result score $sta
 execute if score $status_shocked ca.lexica_var matches 0 store result score $status_shocked ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"shocked"}]
 
 
-execute if score $status_shocked ca.lexica_var matches 0 store result score $status_shocked ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"shocked"}]
-execute if score $status_shocked ca.lexica_var matches 0 store result score $status_shocked ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"shocked"}]
+execute if score $status_shocked ca.lexica_var matches 0 store result score $status_shocked ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"shocked"}]
+execute if score $status_shocked ca.lexica_var matches 0 store result score $status_shocked ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"shocked"}]
 
 
-execute if score $status_shocked ca.lexica_var matches 0 store result score $status_shocked ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"shocked"}]
-execute if score $status_shocked ca.lexica_var matches 0 store result score $status_shocked ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"shocked"}]
+execute if score $status_shocked ca.lexica_var matches 0 store result score $status_shocked ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"shocked"}]
+execute if score $status_shocked ca.lexica_var matches 0 store result score $status_shocked ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"shocked"}]
 
 
 execute if score $status_shocked ca.lexica_var matches 0 store result score $status_shocked ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"shocked"}]
@@ -1793,12 +1793,12 @@ execute if score $status_infected ca.lexica_var matches 0 store result score $st
 execute if score $status_infected ca.lexica_var matches 0 store result score $status_infected ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"infected"}]
 
 
-execute if score $status_infected ca.lexica_var matches 0 store result score $status_infected ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"infected"}]
-execute if score $status_infected ca.lexica_var matches 0 store result score $status_infected ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"infected"}]
+execute if score $status_infected ca.lexica_var matches 0 store result score $status_infected ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"infected"}]
+execute if score $status_infected ca.lexica_var matches 0 store result score $status_infected ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"infected"}]
 
 
-execute if score $status_infected ca.lexica_var matches 0 store result score $status_infected ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"infected"}]
-execute if score $status_infected ca.lexica_var matches 0 store result score $status_infected ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"infected"}]
+execute if score $status_infected ca.lexica_var matches 0 store result score $status_infected ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"infected"}]
+execute if score $status_infected ca.lexica_var matches 0 store result score $status_infected ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"infected"}]
 
 
 execute if score $status_infected ca.lexica_var matches 0 store result score $status_infected ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"infected"}]
@@ -1899,12 +1899,12 @@ execute if score $status_grounded ca.lexica_var matches 0 store result score $st
 execute if score $status_grounded ca.lexica_var matches 0 store result score $status_grounded ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"grounded"}]
 
 
-execute if score $status_grounded ca.lexica_var matches 0 store result score $status_grounded ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"grounded"}]
-execute if score $status_grounded ca.lexica_var matches 0 store result score $status_grounded ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"grounded"}]
+execute if score $status_grounded ca.lexica_var matches 0 store result score $status_grounded ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"grounded"}]
+execute if score $status_grounded ca.lexica_var matches 0 store result score $status_grounded ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"grounded"}]
 
 
-execute if score $status_grounded ca.lexica_var matches 0 store result score $status_grounded ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"grounded"}]
-execute if score $status_grounded ca.lexica_var matches 0 store result score $status_grounded ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"grounded"}]
+execute if score $status_grounded ca.lexica_var matches 0 store result score $status_grounded ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"grounded"}]
+execute if score $status_grounded ca.lexica_var matches 0 store result score $status_grounded ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"grounded"}]
 
 
 execute if score $status_grounded ca.lexica_var matches 0 store result score $status_grounded ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"grounded"}]
@@ -2005,12 +2005,12 @@ execute if score $status_silenced ca.lexica_var matches 0 store result score $st
 execute if score $status_silenced ca.lexica_var matches 0 store result score $status_silenced ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"silenced"}]
 
 
-execute if score $status_silenced ca.lexica_var matches 0 store result score $status_silenced ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"silenced"}]
-execute if score $status_silenced ca.lexica_var matches 0 store result score $status_silenced ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"silenced"}]
+execute if score $status_silenced ca.lexica_var matches 0 store result score $status_silenced ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"silenced"}]
+execute if score $status_silenced ca.lexica_var matches 0 store result score $status_silenced ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"silenced"}]
 
 
-execute if score $status_silenced ca.lexica_var matches 0 store result score $status_silenced ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"silenced"}]
-execute if score $status_silenced ca.lexica_var matches 0 store result score $status_silenced ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"silenced"}]
+execute if score $status_silenced ca.lexica_var matches 0 store result score $status_silenced ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"silenced"}]
+execute if score $status_silenced ca.lexica_var matches 0 store result score $status_silenced ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"silenced"}]
 
 
 execute if score $status_silenced ca.lexica_var matches 0 store result score $status_silenced ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"silenced"}]
@@ -2111,12 +2111,12 @@ execute if score $status_slowness ca.lexica_var matches 0 store result score $st
 execute if score $status_slowness ca.lexica_var matches 0 store result score $status_slowness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"slowness"}]
 
 
-execute if score $status_slowness ca.lexica_var matches 0 store result score $status_slowness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"slowness"}]
-execute if score $status_slowness ca.lexica_var matches 0 store result score $status_slowness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"slowness"}]
+execute if score $status_slowness ca.lexica_var matches 0 store result score $status_slowness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"slowness"}]
+execute if score $status_slowness ca.lexica_var matches 0 store result score $status_slowness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"slowness"}]
 
 
-execute if score $status_slowness ca.lexica_var matches 0 store result score $status_slowness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"slowness"}]
-execute if score $status_slowness ca.lexica_var matches 0 store result score $status_slowness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"slowness"}]
+execute if score $status_slowness ca.lexica_var matches 0 store result score $status_slowness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"slowness"}]
+execute if score $status_slowness ca.lexica_var matches 0 store result score $status_slowness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"slowness"}]
 
 
 execute if score $status_slowness ca.lexica_var matches 0 store result score $status_slowness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"slowness"}]
@@ -2217,12 +2217,12 @@ execute if score $status_weakness ca.lexica_var matches 0 store result score $st
 execute if score $status_weakness ca.lexica_var matches 0 store result score $status_weakness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"weakness"}]
 
 
-execute if score $status_weakness ca.lexica_var matches 0 store result score $status_weakness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"weakness"}]
-execute if score $status_weakness ca.lexica_var matches 0 store result score $status_weakness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"weakness"}]
+execute if score $status_weakness ca.lexica_var matches 0 store result score $status_weakness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"weakness"}]
+execute if score $status_weakness ca.lexica_var matches 0 store result score $status_weakness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"weakness"}]
 
 
-execute if score $status_weakness ca.lexica_var matches 0 store result score $status_weakness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"weakness"}]
-execute if score $status_weakness ca.lexica_var matches 0 store result score $status_weakness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"weakness"}]
+execute if score $status_weakness ca.lexica_var matches 0 store result score $status_weakness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"weakness"}]
+execute if score $status_weakness ca.lexica_var matches 0 store result score $status_weakness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"weakness"}]
 
 
 execute if score $status_weakness ca.lexica_var matches 0 store result score $status_weakness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"weakness"}]
@@ -2323,12 +2323,12 @@ execute if score $status_blindness ca.lexica_var matches 0 store result score $s
 execute if score $status_blindness ca.lexica_var matches 0 store result score $status_blindness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"blindness"}]
 
 
-execute if score $status_blindness ca.lexica_var matches 0 store result score $status_blindness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"blindness"}]
-execute if score $status_blindness ca.lexica_var matches 0 store result score $status_blindness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"blindness"}]
+execute if score $status_blindness ca.lexica_var matches 0 store result score $status_blindness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"blindness"}]
+execute if score $status_blindness ca.lexica_var matches 0 store result score $status_blindness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"blindness"}]
 
 
-execute if score $status_blindness ca.lexica_var matches 0 store result score $status_blindness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"blindness"}]
-execute if score $status_blindness ca.lexica_var matches 0 store result score $status_blindness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"blindness"}]
+execute if score $status_blindness ca.lexica_var matches 0 store result score $status_blindness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"blindness"}]
+execute if score $status_blindness ca.lexica_var matches 0 store result score $status_blindness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"blindness"}]
 
 
 execute if score $status_blindness ca.lexica_var matches 0 store result score $status_blindness ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"blindness"}]
@@ -2429,12 +2429,12 @@ execute if score $status_armor_shred ca.lexica_var matches 0 store result score 
 execute if score $status_armor_shred ca.lexica_var matches 0 store result score $status_armor_shred ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"armor_shred"}]
 
 
-execute if score $status_armor_shred ca.lexica_var matches 0 store result score $status_armor_shred ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"armor_shred"}]
-execute if score $status_armor_shred ca.lexica_var matches 0 store result score $status_armor_shred ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"armor_shred"}]
+execute if score $status_armor_shred ca.lexica_var matches 0 store result score $status_armor_shred ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"armor_shred"}]
+execute if score $status_armor_shred ca.lexica_var matches 0 store result score $status_armor_shred ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"armor_shred"}]
 
 
-execute if score $status_armor_shred ca.lexica_var matches 0 store result score $status_armor_shred ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"armor_shred"}]
-execute if score $status_armor_shred ca.lexica_var matches 0 store result score $status_armor_shred ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"armor_shred"}]
+execute if score $status_armor_shred ca.lexica_var matches 0 store result score $status_armor_shred ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"armor_shred"}]
+execute if score $status_armor_shred ca.lexica_var matches 0 store result score $status_armor_shred ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"armor_shred"}]
 
 
 execute if score $status_armor_shred ca.lexica_var matches 0 store result score $status_armor_shred ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"armor_shred"}]
@@ -2535,12 +2535,12 @@ execute if score $status_speed ca.lexica_var matches 0 store result score $statu
 execute if score $status_speed ca.lexica_var matches 0 store result score $status_speed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"speed"}]
 
 
-execute if score $status_speed ca.lexica_var matches 0 store result score $status_speed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"speed"}]
-execute if score $status_speed ca.lexica_var matches 0 store result score $status_speed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"speed"}]
+execute if score $status_speed ca.lexica_var matches 0 store result score $status_speed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"speed"}]
+execute if score $status_speed ca.lexica_var matches 0 store result score $status_speed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"speed"}]
 
 
-execute if score $status_speed ca.lexica_var matches 0 store result score $status_speed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"speed"}]
-execute if score $status_speed ca.lexica_var matches 0 store result score $status_speed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"speed"}]
+execute if score $status_speed ca.lexica_var matches 0 store result score $status_speed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"speed"}]
+execute if score $status_speed ca.lexica_var matches 0 store result score $status_speed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"speed"}]
 
 
 execute if score $status_speed ca.lexica_var matches 0 store result score $status_speed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"speed"}]
@@ -2641,12 +2641,12 @@ execute if score $status_strength ca.lexica_var matches 0 store result score $st
 execute if score $status_strength ca.lexica_var matches 0 store result score $status_strength ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"strength"}]
 
 
-execute if score $status_strength ca.lexica_var matches 0 store result score $status_strength ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"strength"}]
-execute if score $status_strength ca.lexica_var matches 0 store result score $status_strength ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"strength"}]
+execute if score $status_strength ca.lexica_var matches 0 store result score $status_strength ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"strength"}]
+execute if score $status_strength ca.lexica_var matches 0 store result score $status_strength ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"strength"}]
 
 
-execute if score $status_strength ca.lexica_var matches 0 store result score $status_strength ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"strength"}]
-execute if score $status_strength ca.lexica_var matches 0 store result score $status_strength ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"strength"}]
+execute if score $status_strength ca.lexica_var matches 0 store result score $status_strength ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"strength"}]
+execute if score $status_strength ca.lexica_var matches 0 store result score $status_strength ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"strength"}]
 
 
 execute if score $status_strength ca.lexica_var matches 0 store result score $status_strength ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"strength"}]
@@ -2747,12 +2747,12 @@ execute if score $status_armor_buff ca.lexica_var matches 0 store result score $
 execute if score $status_armor_buff ca.lexica_var matches 0 store result score $status_armor_buff ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"armor_buff"}]
 
 
-execute if score $status_armor_buff ca.lexica_var matches 0 store result score $status_armor_buff ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"armor_buff"}]
-execute if score $status_armor_buff ca.lexica_var matches 0 store result score $status_armor_buff ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"armor_buff"}]
+execute if score $status_armor_buff ca.lexica_var matches 0 store result score $status_armor_buff ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"armor_buff"}]
+execute if score $status_armor_buff ca.lexica_var matches 0 store result score $status_armor_buff ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"armor_buff"}]
 
 
-execute if score $status_armor_buff ca.lexica_var matches 0 store result score $status_armor_buff ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"armor_buff"}]
-execute if score $status_armor_buff ca.lexica_var matches 0 store result score $status_armor_buff ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"armor_buff"}]
+execute if score $status_armor_buff ca.lexica_var matches 0 store result score $status_armor_buff ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"armor_buff"}]
+execute if score $status_armor_buff ca.lexica_var matches 0 store result score $status_armor_buff ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"armor_buff"}]
 
 
 execute if score $status_armor_buff ca.lexica_var matches 0 store result score $status_armor_buff ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"armor_buff"}]
@@ -2853,12 +2853,12 @@ execute if score $status_exposed ca.lexica_var matches 0 store result score $sta
 execute if score $status_exposed ca.lexica_var matches 0 store result score $status_exposed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"exposed"}]
 
 
-execute if score $status_exposed ca.lexica_var matches 0 store result score $status_exposed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"exposed"}]
-execute if score $status_exposed ca.lexica_var matches 0 store result score $status_exposed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"exposed"}]
+execute if score $status_exposed ca.lexica_var matches 0 store result score $status_exposed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"exposed"}]
+execute if score $status_exposed ca.lexica_var matches 0 store result score $status_exposed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"exposed"}]
 
 
-execute if score $status_exposed ca.lexica_var matches 0 store result score $status_exposed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"exposed"}]
-execute if score $status_exposed ca.lexica_var matches 0 store result score $status_exposed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"exposed"}]
+execute if score $status_exposed ca.lexica_var matches 0 store result score $status_exposed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"exposed"}]
+execute if score $status_exposed ca.lexica_var matches 0 store result score $status_exposed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"exposed"}]
 
 
 execute if score $status_exposed ca.lexica_var matches 0 store result score $status_exposed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"exposed"}]
@@ -2959,12 +2959,12 @@ execute if score $status_shackled ca.lexica_var matches 0 store result score $st
 execute if score $status_shackled ca.lexica_var matches 0 store result score $status_shackled ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"shackled"}]
 
 
-execute if score $status_shackled ca.lexica_var matches 0 store result score $status_shackled ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"shackled"}]
-execute if score $status_shackled ca.lexica_var matches 0 store result score $status_shackled ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"shackled"}]
+execute if score $status_shackled ca.lexica_var matches 0 store result score $status_shackled ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"shackled"}]
+execute if score $status_shackled ca.lexica_var matches 0 store result score $status_shackled ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"shackled"}]
 
 
-execute if score $status_shackled ca.lexica_var matches 0 store result score $status_shackled ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"shackled"}]
-execute if score $status_shackled ca.lexica_var matches 0 store result score $status_shackled ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"shackled"}]
+execute if score $status_shackled ca.lexica_var matches 0 store result score $status_shackled ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"shackled"}]
+execute if score $status_shackled ca.lexica_var matches 0 store result score $status_shackled ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"shackled"}]
 
 
 execute if score $status_shackled ca.lexica_var matches 0 store result score $status_shackled ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"shackled"}]
@@ -3065,12 +3065,12 @@ execute if score $status_evocation ca.lexica_var matches 0 store result score $s
 execute if score $status_evocation ca.lexica_var matches 0 store result score $status_evocation ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"evocation"}]
 
 
-execute if score $status_evocation ca.lexica_var matches 0 store result score $status_evocation ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"evocation"}]
-execute if score $status_evocation ca.lexica_var matches 0 store result score $status_evocation ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"evocation"}]
+execute if score $status_evocation ca.lexica_var matches 0 store result score $status_evocation ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"evocation"}]
+execute if score $status_evocation ca.lexica_var matches 0 store result score $status_evocation ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"evocation"}]
 
 
-execute if score $status_evocation ca.lexica_var matches 0 store result score $status_evocation ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"evocation"}]
-execute if score $status_evocation ca.lexica_var matches 0 store result score $status_evocation ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"evocation"}]
+execute if score $status_evocation ca.lexica_var matches 0 store result score $status_evocation ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"evocation"}]
+execute if score $status_evocation ca.lexica_var matches 0 store result score $status_evocation ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"evocation"}]
 
 
 execute if score $status_evocation ca.lexica_var matches 0 store result score $status_evocation ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"evocation"}]
@@ -3171,12 +3171,12 @@ execute if score $status_brittle ca.lexica_var matches 0 store result score $sta
 execute if score $status_brittle ca.lexica_var matches 0 store result score $status_brittle ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"brittle"}]
 
 
-execute if score $status_brittle ca.lexica_var matches 0 store result score $status_brittle ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"brittle"}]
-execute if score $status_brittle ca.lexica_var matches 0 store result score $status_brittle ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"brittle"}]
+execute if score $status_brittle ca.lexica_var matches 0 store result score $status_brittle ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"brittle"}]
+execute if score $status_brittle ca.lexica_var matches 0 store result score $status_brittle ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"brittle"}]
 
 
-execute if score $status_brittle ca.lexica_var matches 0 store result score $status_brittle ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"brittle"}]
-execute if score $status_brittle ca.lexica_var matches 0 store result score $status_brittle ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"brittle"}]
+execute if score $status_brittle ca.lexica_var matches 0 store result score $status_brittle ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"brittle"}]
+execute if score $status_brittle ca.lexica_var matches 0 store result score $status_brittle ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"brittle"}]
 
 
 execute if score $status_brittle ca.lexica_var matches 0 store result score $status_brittle ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"brittle"}]
@@ -3277,12 +3277,12 @@ execute if score $status_execute ca.lexica_var matches 0 store result score $sta
 execute if score $status_execute ca.lexica_var matches 0 store result score $status_execute ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"execute"}]
 
 
-execute if score $status_execute ca.lexica_var matches 0 store result score $status_execute ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"execute"}]
-execute if score $status_execute ca.lexica_var matches 0 store result score $status_execute ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"execute"}]
+execute if score $status_execute ca.lexica_var matches 0 store result score $status_execute ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"execute"}]
+execute if score $status_execute ca.lexica_var matches 0 store result score $status_execute ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"execute"}]
 
 
-execute if score $status_execute ca.lexica_var matches 0 store result score $status_execute ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"execute"}]
-execute if score $status_execute ca.lexica_var matches 0 store result score $status_execute ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"execute"}]
+execute if score $status_execute ca.lexica_var matches 0 store result score $status_execute ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"execute"}]
+execute if score $status_execute ca.lexica_var matches 0 store result score $status_execute ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"execute"}]
 
 
 execute if score $status_execute ca.lexica_var matches 0 store result score $status_execute ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"execute"}]
@@ -3383,12 +3383,12 @@ execute if score $status_windblast ca.lexica_var matches 0 store result score $s
 execute if score $status_windblast ca.lexica_var matches 0 store result score $status_windblast ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"windblast"}]
 
 
-execute if score $status_windblast ca.lexica_var matches 0 store result score $status_windblast ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"windblast"}]
-execute if score $status_windblast ca.lexica_var matches 0 store result score $status_windblast ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"windblast"}]
+execute if score $status_windblast ca.lexica_var matches 0 store result score $status_windblast ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"windblast"}]
+execute if score $status_windblast ca.lexica_var matches 0 store result score $status_windblast ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"windblast"}]
 
 
-execute if score $status_windblast ca.lexica_var matches 0 store result score $status_windblast ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"windblast"}]
-execute if score $status_windblast ca.lexica_var matches 0 store result score $status_windblast ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"windblast"}]
+execute if score $status_windblast ca.lexica_var matches 0 store result score $status_windblast ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"windblast"}]
+execute if score $status_windblast ca.lexica_var matches 0 store result score $status_windblast ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"windblast"}]
 
 
 execute if score $status_windblast ca.lexica_var matches 0 store result score $status_windblast ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"windblast"}]
@@ -3489,12 +3489,12 @@ execute if score $status_slippery ca.lexica_var matches 0 store result score $st
 execute if score $status_slippery ca.lexica_var matches 0 store result score $status_slippery ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"slippery"}]
 
 
-execute if score $status_slippery ca.lexica_var matches 0 store result score $status_slippery ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"slippery"}]
-execute if score $status_slippery ca.lexica_var matches 0 store result score $status_slippery ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"slippery"}]
+execute if score $status_slippery ca.lexica_var matches 0 store result score $status_slippery ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"slippery"}]
+execute if score $status_slippery ca.lexica_var matches 0 store result score $status_slippery ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"slippery"}]
 
 
-execute if score $status_slippery ca.lexica_var matches 0 store result score $status_slippery ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"slippery"}]
-execute if score $status_slippery ca.lexica_var matches 0 store result score $status_slippery ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"slippery"}]
+execute if score $status_slippery ca.lexica_var matches 0 store result score $status_slippery ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"slippery"}]
+execute if score $status_slippery ca.lexica_var matches 0 store result score $status_slippery ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"slippery"}]
 
 
 execute if score $status_slippery ca.lexica_var matches 0 store result score $status_slippery ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"slippery"}]
@@ -3595,12 +3595,12 @@ execute if score $status_oiled ca.lexica_var matches 0 store result score $statu
 execute if score $status_oiled ca.lexica_var matches 0 store result score $status_oiled ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"oiled"}]
 
 
-execute if score $status_oiled ca.lexica_var matches 0 store result score $status_oiled ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"oiled"}]
-execute if score $status_oiled ca.lexica_var matches 0 store result score $status_oiled ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"oiled"}]
+execute if score $status_oiled ca.lexica_var matches 0 store result score $status_oiled ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"oiled"}]
+execute if score $status_oiled ca.lexica_var matches 0 store result score $status_oiled ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"oiled"}]
 
 
-execute if score $status_oiled ca.lexica_var matches 0 store result score $status_oiled ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"oiled"}]
-execute if score $status_oiled ca.lexica_var matches 0 store result score $status_oiled ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"oiled"}]
+execute if score $status_oiled ca.lexica_var matches 0 store result score $status_oiled ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"oiled"}]
+execute if score $status_oiled ca.lexica_var matches 0 store result score $status_oiled ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"oiled"}]
 
 
 execute if score $status_oiled ca.lexica_var matches 0 store result score $status_oiled ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"oiled"}]
@@ -3701,12 +3701,12 @@ execute if score $status_siphon_speed ca.lexica_var matches 0 store result score
 execute if score $status_siphon_speed ca.lexica_var matches 0 store result score $status_siphon_speed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"siphon_speed"}]
 
 
-execute if score $status_siphon_speed ca.lexica_var matches 0 store result score $status_siphon_speed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"siphon_speed"}]
-execute if score $status_siphon_speed ca.lexica_var matches 0 store result score $status_siphon_speed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"siphon_speed"}]
+execute if score $status_siphon_speed ca.lexica_var matches 0 store result score $status_siphon_speed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"siphon_speed"}]
+execute if score $status_siphon_speed ca.lexica_var matches 0 store result score $status_siphon_speed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"siphon_speed"}]
 
 
-execute if score $status_siphon_speed ca.lexica_var matches 0 store result score $status_siphon_speed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"siphon_speed"}]
-execute if score $status_siphon_speed ca.lexica_var matches 0 store result score $status_siphon_speed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"siphon_speed"}]
+execute if score $status_siphon_speed ca.lexica_var matches 0 store result score $status_siphon_speed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"siphon_speed"}]
+execute if score $status_siphon_speed ca.lexica_var matches 0 store result score $status_siphon_speed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"siphon_speed"}]
 
 
 execute if score $status_siphon_speed ca.lexica_var matches 0 store result score $status_siphon_speed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"siphon_speed"}]
@@ -3807,12 +3807,12 @@ execute if score $status_siphon_strength ca.lexica_var matches 0 store result sc
 execute if score $status_siphon_strength ca.lexica_var matches 0 store result score $status_siphon_strength ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"siphon_strength"}]
 
 
-execute if score $status_siphon_strength ca.lexica_var matches 0 store result score $status_siphon_strength ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"siphon_strength"}]
-execute if score $status_siphon_strength ca.lexica_var matches 0 store result score $status_siphon_strength ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"siphon_strength"}]
+execute if score $status_siphon_strength ca.lexica_var matches 0 store result score $status_siphon_strength ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"siphon_strength"}]
+execute if score $status_siphon_strength ca.lexica_var matches 0 store result score $status_siphon_strength ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"siphon_strength"}]
 
 
-execute if score $status_siphon_strength ca.lexica_var matches 0 store result score $status_siphon_strength ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"siphon_strength"}]
-execute if score $status_siphon_strength ca.lexica_var matches 0 store result score $status_siphon_strength ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"siphon_strength"}]
+execute if score $status_siphon_strength ca.lexica_var matches 0 store result score $status_siphon_strength ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"siphon_strength"}]
+execute if score $status_siphon_strength ca.lexica_var matches 0 store result score $status_siphon_strength ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"siphon_strength"}]
 
 
 execute if score $status_siphon_strength ca.lexica_var matches 0 store result score $status_siphon_strength ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"siphon_strength"}]
@@ -3913,12 +3913,12 @@ execute if score $status_siphon_health ca.lexica_var matches 0 store result scor
 execute if score $status_siphon_health ca.lexica_var matches 0 store result score $status_siphon_health ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"siphon_health"}]
 
 
-execute if score $status_siphon_health ca.lexica_var matches 0 store result score $status_siphon_health ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"siphon_health"}]
-execute if score $status_siphon_health ca.lexica_var matches 0 store result score $status_siphon_health ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"siphon_health"}]
+execute if score $status_siphon_health ca.lexica_var matches 0 store result score $status_siphon_health ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"siphon_health"}]
+execute if score $status_siphon_health ca.lexica_var matches 0 store result score $status_siphon_health ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"siphon_health"}]
 
 
-execute if score $status_siphon_health ca.lexica_var matches 0 store result score $status_siphon_health ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"siphon_health"}]
-execute if score $status_siphon_health ca.lexica_var matches 0 store result score $status_siphon_health ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"siphon_health"}]
+execute if score $status_siphon_health ca.lexica_var matches 0 store result score $status_siphon_health ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"siphon_health"}]
+execute if score $status_siphon_health ca.lexica_var matches 0 store result score $status_siphon_health ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"siphon_health"}]
 
 
 execute if score $status_siphon_health ca.lexica_var matches 0 store result score $status_siphon_health ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"siphon_health"}]
@@ -4019,12 +4019,12 @@ execute if score $status_harvest ca.lexica_var matches 0 store result score $sta
 execute if score $status_harvest ca.lexica_var matches 0 store result score $status_harvest ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"harvest"}]
 
 
-execute if score $status_harvest ca.lexica_var matches 0 store result score $status_harvest ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"harvest"}]
-execute if score $status_harvest ca.lexica_var matches 0 store result score $status_harvest ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"harvest"}]
+execute if score $status_harvest ca.lexica_var matches 0 store result score $status_harvest ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"harvest"}]
+execute if score $status_harvest ca.lexica_var matches 0 store result score $status_harvest ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"harvest"}]
 
 
-execute if score $status_harvest ca.lexica_var matches 0 store result score $status_harvest ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"harvest"}]
-execute if score $status_harvest ca.lexica_var matches 0 store result score $status_harvest ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"harvest"}]
+execute if score $status_harvest ca.lexica_var matches 0 store result score $status_harvest ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"harvest"}]
+execute if score $status_harvest ca.lexica_var matches 0 store result score $status_harvest ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"harvest"}]
 
 
 execute if score $status_harvest ca.lexica_var matches 0 store result score $status_harvest ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"harvest"}]
@@ -4125,12 +4125,12 @@ execute if score $status_confused ca.lexica_var matches 0 store result score $st
 execute if score $status_confused ca.lexica_var matches 0 store result score $status_confused ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"confused"}]
 
 
-execute if score $status_confused ca.lexica_var matches 0 store result score $status_confused ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"confused"}]
-execute if score $status_confused ca.lexica_var matches 0 store result score $status_confused ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"confused"}]
+execute if score $status_confused ca.lexica_var matches 0 store result score $status_confused ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"confused"}]
+execute if score $status_confused ca.lexica_var matches 0 store result score $status_confused ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"confused"}]
 
 
-execute if score $status_confused ca.lexica_var matches 0 store result score $status_confused ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"confused"}]
-execute if score $status_confused ca.lexica_var matches 0 store result score $status_confused ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"confused"}]
+execute if score $status_confused ca.lexica_var matches 0 store result score $status_confused ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"confused"}]
+execute if score $status_confused ca.lexica_var matches 0 store result score $status_confused ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"confused"}]
 
 
 execute if score $status_confused ca.lexica_var matches 0 store result score $status_confused ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"confused"}]
@@ -4231,12 +4231,12 @@ execute if score $status_morphed ca.lexica_var matches 0 store result score $sta
 execute if score $status_morphed ca.lexica_var matches 0 store result score $status_morphed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"morphed"}]
 
 
-execute if score $status_morphed ca.lexica_var matches 0 store result score $status_morphed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"morphed"}]
-execute if score $status_morphed ca.lexica_var matches 0 store result score $status_morphed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"morphed"}]
+execute if score $status_morphed ca.lexica_var matches 0 store result score $status_morphed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"morphed"}]
+execute if score $status_morphed ca.lexica_var matches 0 store result score $status_morphed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"morphed"}]
 
 
-execute if score $status_morphed ca.lexica_var matches 0 store result score $status_morphed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"morphed"}]
-execute if score $status_morphed ca.lexica_var matches 0 store result score $status_morphed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"morphed"}]
+execute if score $status_morphed ca.lexica_var matches 0 store result score $status_morphed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"morphed"}]
+execute if score $status_morphed ca.lexica_var matches 0 store result score $status_morphed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"morphed"}]
 
 
 execute if score $status_morphed ca.lexica_var matches 0 store result score $status_morphed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"morphed"}]
@@ -4337,12 +4337,12 @@ execute if score $status_frozen ca.lexica_var matches 0 store result score $stat
 execute if score $status_frozen ca.lexica_var matches 0 store result score $status_frozen ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"frozen"}]
 
 
-execute if score $status_frozen ca.lexica_var matches 0 store result score $status_frozen ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"frozen"}]
-execute if score $status_frozen ca.lexica_var matches 0 store result score $status_frozen ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"frozen"}]
+execute if score $status_frozen ca.lexica_var matches 0 store result score $status_frozen ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"frozen"}]
+execute if score $status_frozen ca.lexica_var matches 0 store result score $status_frozen ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"frozen"}]
 
 
-execute if score $status_frozen ca.lexica_var matches 0 store result score $status_frozen ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"frozen"}]
-execute if score $status_frozen ca.lexica_var matches 0 store result score $status_frozen ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"frozen"}]
+execute if score $status_frozen ca.lexica_var matches 0 store result score $status_frozen ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"frozen"}]
+execute if score $status_frozen ca.lexica_var matches 0 store result score $status_frozen ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"frozen"}]
 
 
 execute if score $status_frozen ca.lexica_var matches 0 store result score $status_frozen ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"frozen"}]
@@ -4443,12 +4443,12 @@ execute if score $status_asleep ca.lexica_var matches 0 store result score $stat
 execute if score $status_asleep ca.lexica_var matches 0 store result score $status_asleep ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"asleep"}]
 
 
-execute if score $status_asleep ca.lexica_var matches 0 store result score $status_asleep ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"asleep"}]
-execute if score $status_asleep ca.lexica_var matches 0 store result score $status_asleep ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"asleep"}]
+execute if score $status_asleep ca.lexica_var matches 0 store result score $status_asleep ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"asleep"}]
+execute if score $status_asleep ca.lexica_var matches 0 store result score $status_asleep ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"asleep"}]
 
 
-execute if score $status_asleep ca.lexica_var matches 0 store result score $status_asleep ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"asleep"}]
-execute if score $status_asleep ca.lexica_var matches 0 store result score $status_asleep ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"asleep"}]
+execute if score $status_asleep ca.lexica_var matches 0 store result score $status_asleep ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"asleep"}]
+execute if score $status_asleep ca.lexica_var matches 0 store result score $status_asleep ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"asleep"}]
 
 
 execute if score $status_asleep ca.lexica_var matches 0 store result score $status_asleep ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"asleep"}]
@@ -4549,12 +4549,12 @@ execute if score $status_stunned ca.lexica_var matches 0 store result score $sta
 execute if score $status_stunned ca.lexica_var matches 0 store result score $status_stunned ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"stunned"}]
 
 
-execute if score $status_stunned ca.lexica_var matches 0 store result score $status_stunned ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"stunned"}]
-execute if score $status_stunned ca.lexica_var matches 0 store result score $status_stunned ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"stunned"}]
+execute if score $status_stunned ca.lexica_var matches 0 store result score $status_stunned ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"stunned"}]
+execute if score $status_stunned ca.lexica_var matches 0 store result score $status_stunned ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"stunned"}]
 
 
-execute if score $status_stunned ca.lexica_var matches 0 store result score $status_stunned ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"stunned"}]
-execute if score $status_stunned ca.lexica_var matches 0 store result score $status_stunned ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"stunned"}]
+execute if score $status_stunned ca.lexica_var matches 0 store result score $status_stunned ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"stunned"}]
+execute if score $status_stunned ca.lexica_var matches 0 store result score $status_stunned ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"stunned"}]
 
 
 execute if score $status_stunned ca.lexica_var matches 0 store result score $status_stunned ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"stunned"}]
@@ -4656,12 +4656,12 @@ execute if score $status_dazed ca.lexica_var matches 0 store result score $statu
 execute if score $status_dazed ca.lexica_var matches 0 store result score $status_dazed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"dazed"}]
 
 
-execute if score $status_dazed ca.lexica_var matches 0 store result score $status_dazed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"dazed"}]
-execute if score $status_dazed ca.lexica_var matches 0 store result score $status_dazed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"dazed"}]
+execute if score $status_dazed ca.lexica_var matches 0 store result score $status_dazed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"dazed"}]
+execute if score $status_dazed ca.lexica_var matches 0 store result score $status_dazed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"dazed"}]
 
 
-execute if score $status_dazed ca.lexica_var matches 0 store result score $status_dazed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"dazed"}]
-execute if score $status_dazed ca.lexica_var matches 0 store result score $status_dazed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"dazed"}]
+execute if score $status_dazed ca.lexica_var matches 0 store result score $status_dazed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"dazed"}]
+execute if score $status_dazed ca.lexica_var matches 0 store result score $status_dazed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"dazed"}]
 
 
 execute if score $status_dazed ca.lexica_var matches 0 store result score $status_dazed ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"dazed"}]
@@ -4763,12 +4763,12 @@ execute if score $status_defiance ca.lexica_var matches 0 store result score $st
 execute if score $status_defiance ca.lexica_var matches 0 store result score $status_defiance ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"defiance"}]
 
 
-execute if score $status_defiance ca.lexica_var matches 0 store result score $status_defiance ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"defiance"}]
-execute if score $status_defiance ca.lexica_var matches 0 store result score $status_defiance ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"defiance"}]
+execute if score $status_defiance ca.lexica_var matches 0 store result score $status_defiance ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"defiance"}]
+execute if score $status_defiance ca.lexica_var matches 0 store result score $status_defiance ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"defiance"}]
 
 
-execute if score $status_defiance ca.lexica_var matches 0 store result score $status_defiance ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"defiance"}]
-execute if score $status_defiance ca.lexica_var matches 0 store result score $status_defiance ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"defiance"}]
+execute if score $status_defiance ca.lexica_var matches 0 store result score $status_defiance ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"defiance"}]
+execute if score $status_defiance ca.lexica_var matches 0 store result score $status_defiance ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"defiance"}]
 
 
 execute if score $status_defiance ca.lexica_var matches 0 store result score $status_defiance ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"defiance"}]
@@ -4870,12 +4870,12 @@ execute if score $status_warding ca.lexica_var matches 0 store result score $sta
 execute if score $status_warding ca.lexica_var matches 0 store result score $status_warding ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.explosive.target[{id:"warding"}]
 
 
-execute if score $status_warding ca.lexica_var matches 0 store result score $status_warding ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.self[{id:"warding"}]
-execute if score $status_warding ca.lexica_var matches 0 store result score $status_warding ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.lunging.target[{id:"warding"}]
+execute if score $status_warding ca.lexica_var matches 0 store result score $status_warding ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.self[{id:"warding"}]
+execute if score $status_warding ca.lexica_var matches 0 store result score $status_warding ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.pounce.target[{id:"warding"}]
 
 
-execute if score $status_warding ca.lexica_var matches 0 store result score $status_warding ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.self[{id:"warding"}]
-execute if score $status_warding ca.lexica_var matches 0 store result score $status_warding ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambushing.target[{id:"warding"}]
+execute if score $status_warding ca.lexica_var matches 0 store result score $status_warding ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.self[{id:"warding"}]
+execute if score $status_warding ca.lexica_var matches 0 store result score $status_warding ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.ambush.target[{id:"warding"}]
 
 
 execute if score $status_warding ca.lexica_var matches 0 store result score $status_warding ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:custom_data.apply_status.riposte.self[{id:"warding"}]

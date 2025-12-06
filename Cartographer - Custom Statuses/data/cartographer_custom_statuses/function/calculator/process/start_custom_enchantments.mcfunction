@@ -22,10 +22,10 @@ function cartographer_custom_statuses:calculator/process/create_action/enchantme
 # Explosive
 function cartographer_custom_statuses:calculator/process/create_action/enchantment/explosive
 
-# Lunging
-function cartographer_custom_statuses:calculator/process/create_action/enchantment/lunging
-# Ambushing
-function cartographer_custom_statuses:calculator/process/create_action/enchantment/ambushing
+# Pounce
+function cartographer_custom_statuses:calculator/process/create_action/enchantment/pounce
+# Ambush
+function cartographer_custom_statuses:calculator/process/create_action/enchantment/ambush
 # Riposte
 function cartographer_custom_statuses:calculator/process/create_action/enchantment/riposte
 

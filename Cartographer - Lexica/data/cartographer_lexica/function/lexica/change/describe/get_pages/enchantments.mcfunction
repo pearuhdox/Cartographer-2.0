@@ -506,23 +506,23 @@ execute if score $ench_repulsion ca.lexica_var matches 1.. run function cartogra
 execute if score $ench_repulsion ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
 execute if score $ench_repulsion ca.lexica_var matches 1.. run scoreboard players set $keyword_channeled ca.lexica_var 1
 
-$execute store result score $ench_ambushing ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.$(enchant_path).cartographer_custom_enchantments:weapon/unique/melee/ambushing
-execute if score $ench_ambushing ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"ambushing",name:[{text: "[", bold: true, underlined: false, italic: false, color: "white"},{translate: "enchantment.cartographer.ambushing", fallback: "Ambushing", bold: true, underlined: false, italic: false, color: "#47EDD1"},{text: "]", bold: true, underlined: false, italic: false, color: "white"}],color:4713937}
-execute if score $ench_ambushing ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
-execute if score $ench_ambushing ca.lexica_var matches 1.. run scoreboard players set $keyword_channeled ca.lexica_var 1
-execute if score $ench_ambushing ca.lexica_var matches 1.. run scoreboard players set $keyword_self_movement ca.lexica_var 1
-execute if score $ench_ambushing ca.lexica_var matches 1.. run scoreboard players set $keyword_cooldown ca.lexica_var 1
+$execute store result score $ench_ambush ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.$(enchant_path).cartographer_custom_enchantments:weapon/unique/melee/ambush
+execute if score $ench_ambush ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"ambush",name:[{text: "[", bold: true, underlined: false, italic: false, color: "white"},{translate: "enchantment.cartographer.ambush", fallback: "Ambush", bold: true, underlined: false, italic: false, color: "#47EDD1"},{text: "]", bold: true, underlined: false, italic: false, color: "white"}],color:4713937}
+execute if score $ench_ambush ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
+execute if score $ench_ambush ca.lexica_var matches 1.. run scoreboard players set $keyword_channeled ca.lexica_var 1
+execute if score $ench_ambush ca.lexica_var matches 1.. run scoreboard players set $keyword_self_movement ca.lexica_var 1
+execute if score $ench_ambush ca.lexica_var matches 1.. run scoreboard players set $keyword_cooldown ca.lexica_var 1
 
 $execute store result score $ench_cleaving ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.$(enchant_path).cartographer_custom_enchantments:weapon/unique/melee/cleaving
 execute if score $ench_cleaving ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"cleaving",name:[{text: "[", bold: true, underlined: false, italic: false, color: "white"},{translate: "enchantment.cartographer.cleaving", fallback: "Cleaving", bold: true, underlined: false, italic: false, color: "#47EDD1"},{text: "]", bold: true, underlined: false, italic: false, color: "white"}],color:4713937}
 execute if score $ench_cleaving ca.lexica_var matches 1.. run scoreboard players set $keyword_weapon ca.lexica_var 1
 execute if score $ench_cleaving ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
 
-$execute store result score $ench_lunging ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.$(enchant_path).cartographer_custom_enchantments:weapon/unique/melee/lunging
-execute if score $ench_lunging ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"lunging",name:[{text: "[", bold: true, underlined: false, italic: false, color: "white"},{translate: "enchantment.cartographer.lunging", fallback: "Lunging", bold: true, underlined: false, italic: false, color: "#47EDD1"},{text: "]", bold: true, underlined: false, italic: false, color: "white"}],color:4713937}
-execute if score $ench_lunging ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
-execute if score $ench_lunging ca.lexica_var matches 1.. run scoreboard players set $keyword_self_movement ca.lexica_var 1
-execute if score $ench_lunging ca.lexica_var matches 1.. run scoreboard players set $keyword_cooldown ca.lexica_var 1
+$execute store result score $ench_pounce ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.$(enchant_path).cartographer_custom_enchantments:weapon/unique/melee/pounce
+execute if score $ench_pounce ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"pounce",name:[{text: "[", bold: true, underlined: false, italic: false, color: "white"},{translate: "enchantment.cartographer.pounce", fallback: "Pounce", bold: true, underlined: false, italic: false, color: "#47EDD1"},{text: "]", bold: true, underlined: false, italic: false, color: "white"}],color:4713937}
+execute if score $ench_pounce ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
+execute if score $ench_pounce ca.lexica_var matches 1.. run scoreboard players set $keyword_self_movement ca.lexica_var 1
+execute if score $ench_pounce ca.lexica_var matches 1.. run scoreboard players set $keyword_cooldown ca.lexica_var 1
 
 $execute store result score $ench_quick_strike ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.$(enchant_path).cartographer_custom_enchantments:weapon/unique/melee/quick_strike
 execute if score $ench_quick_strike ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"quick_strike",name:[{text: "[", bold: true, underlined: false, italic: false, color: "white"},{translate: "enchantment.cartographer.quick_strike", fallback: "Quick Strike", bold: true, underlined: false, italic: false, color: "#47EDD1"},{text: "]", bold: true, underlined: false, italic: false, color: "white"}],color:4713937}
