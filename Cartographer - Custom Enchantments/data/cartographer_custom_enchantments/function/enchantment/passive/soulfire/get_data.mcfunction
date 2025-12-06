@@ -4,9 +4,7 @@ execute if score $summon_cause ca.ench_var matches 1.. run scoreboard players op
 
 scoreboard players operation $mult ca.ench_var = $lvl ca.ench_soulfire_lvl
 scoreboard players operation $mult ca.ench_var *= $20 ca.CONSTANT
-scoreboard players operation $min_result_damage ca.ench_var = $lvl ca.ench_soulfire_lvl
-scoreboard players operation $min_result_damage ca.ench_var *= $15 ca.CONSTANT
-scoreboard players operation $min_result_damage ca.ench_var *= $10 ca.CONSTANT
+scoreboard players set $min_result_damage ca.ench_var 300
 execute unless score $proc ca.ench_soulfire_lvl matches 2.. run function cartographer_custom_enchantments:enchantment/helper/calc_adp_dmg
 execute if score $proc ca.ench_soulfire_lvl matches 2.. run scoreboard players operation $result_damage ca.ench_var = $min_result_damage ca.ench_var
 

@@ -8,8 +8,8 @@ scoreboard players operation $duration ca.ench_storm_lvl *= $30 ca.CONSTANT
 scoreboard players add $duration ca.ench_storm_lvl 10
 
 
-scoreboard players set $mult ca.ench_var 15
-scoreboard players set $min_result_damage ca.ench_var 100
+scoreboard players set $mult ca.ench_var 20
+scoreboard players set $min_result_damage ca.ench_var 2
 function cartographer_custom_enchantments:enchantment/helper/calc_adp_dmg
 
 execute if score @s ca.attr_aoe_damage_value matches -1999999.. run scoreboard players operation $result_damage ca.ench_var += @s ca.attr_aoe_damage_value

@@ -1,10 +1,8 @@
 scoreboard players operation $mult ca.ench_var = $lvl ca.ench_starfall_lvl
 execute if score $spawner_cause ca.ench_var matches 1.. run scoreboard players operation $lvl ca.ench_starfall_lvl = $starfall_hand ca.ench_value
 
-scoreboard players operation $mult ca.ench_var *= $15 ca.CONSTANT
-scoreboard players operation $min_result_damage ca.ench_var = $lvl ca.ench_starfall_lvl
-scoreboard players operation $min_result_damage ca.ench_var *= $25 ca.CONSTANT
-scoreboard players operation $min_result_damage ca.ench_var *= $10 ca.CONSTANT
+scoreboard players operation $mult ca.ench_var *= $20 ca.CONSTANT
+scoreboard players set $min_result_damage ca.ench_var 300
 function cartographer_custom_enchantments:enchantment/helper/calc_adp_dmg
 
 execute if score @s ca.attr_aoe_damage_value matches -1999999.. run scoreboard players operation $result_damage ca.ench_var += @s ca.attr_aoe_damage_value
