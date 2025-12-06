@@ -16,14 +16,12 @@ scoreboard players operation $mult ca.ench_var = $lvl ca.ench_aberration_lvl
 #scoreboard players remove $mult ca.ench_var 4
 #execute if score $mult ca.ench_var matches ..0 run scoreboard players set $mult ca.ench_var 1
 
-scoreboard players operation $min_result_damage ca.ench_var = $lvl ca.ench_aberration_lvl
 #scoreboard players remove $min_result_damage ca.ench_var 4
 #execute if score $min_result_damage ca.ench_var matches ..0 run scoreboard players set $min_result_damage ca.ench_var 1
 
 scoreboard players operation $mult ca.ench_var *= $20 ca.CONSTANT
 
-scoreboard players operation $min_result_damage ca.ench_var *= $15 ca.CONSTANT
-scoreboard players operation $min_result_damage ca.ench_var *= $10 ca.CONSTANT
+scoreboard players set $min_result_damage ca.ench_var 200
 function cartographer_custom_enchantments:enchantment/helper/calc_adp_dmg
 
 execute if score @s ca.attr_aoe_damage_value matches -1999999.. run scoreboard players operation $result_damage ca.ench_var += @s ca.attr_aoe_damage_value
