@@ -1,1 +1,0 @@
-$function carto_event:api/create_single_entity_event {event:"custom_ench/fleetfoot/push",duration:1,delay:1,parameters:{force:$(force),x_pos:$(x_pos),y_pos:$(y_pos),z_pos:$(z_pos)},merge_behavior:"none"}

@@ -58,7 +58,7 @@ execute if score @s ca.ench_ricochet_lvl matches 1.. run function cartographer_c
 execute if score @s ca.ench_barbed_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/barbed
 execute if score @s ca.ench_ripper_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/ripper
 execute if score @s ca.ench_shrapnel_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/shrapnel
-execute if score @s ca.ench_fleetfoot_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/fleetfoot
+execute if score @s ca.ench_dodgeroll_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/dodgeroll
 execute if score @s ca.ench_grappling_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/grappling
 execute if score @s ca.ench_barrage_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/barrage
 #execute if score @s ca.ench_auto_charge_lvl matches 1.. run function cartographer_custom_enchantments:ench_calc/auto_charge

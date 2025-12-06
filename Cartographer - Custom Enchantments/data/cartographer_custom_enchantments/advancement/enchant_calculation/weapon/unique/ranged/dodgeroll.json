@@ -8,7 +8,7 @@
             "predicates": {
               "minecraft:enchantments": [
                 {
-                  "enchantments": "cartographer_custom_enchantments:weapon/unique/ranged/fleetfoot",
+                  "enchantments": "cartographer_custom_enchantments:weapon/unique/ranged/dodgeroll",
                   "levels": {
                     "min": 1
                   }
@@ -21,6 +21,6 @@
     }
   },
   "rewards": {
-    "function": "cartographer_custom_enchantments:enchantment/weapon/unique/ranged/fleetfoot/player_calculation"
+    "function": "cartographer_custom_enchantments:enchantment/weapon/unique/ranged/dodgeroll/player_calculation"
   }
 }

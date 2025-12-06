@@ -61,7 +61,7 @@ execute if score @s ca.ench_ricochet_lvl matches 1.. unless predicate cartograph
 execute if score @s ca.ench_barbed_lvl matches 1.. unless predicate cartographer_custom_enchantments:has_enchant/barbed run scoreboard players set @s ca.ench_barbed_lvl 0
 execute if score @s ca.ench_ripper_lvl matches 1.. unless predicate cartographer_custom_enchantments:has_enchant/ripper run scoreboard players set @s ca.ench_ripper_lvl 0
 execute if score @s ca.ench_shrapnel_lvl matches 1.. unless predicate cartographer_custom_enchantments:has_enchant/shrapnel run scoreboard players set @s ca.ench_shrapnel_lvl 0
-execute if score @s ca.ench_fleetfoot_lvl matches 1.. unless predicate cartographer_custom_enchantments:has_enchant/fleetfoot run scoreboard players set @s ca.ench_fleetfoot_lvl 0
+execute if score @s ca.ench_dodgeroll_lvl matches 1.. unless predicate cartographer_custom_enchantments:has_enchant/dodgeroll run scoreboard players set @s ca.ench_dodgeroll_lvl 0
 execute if score @s ca.ench_grappling_lvl matches 1.. unless predicate cartographer_custom_enchantments:has_enchant/grappling run scoreboard players set @s ca.ench_grappling_lvl 0
 execute if score @s ca.ench_barrage_lvl matches 1.. unless predicate cartographer_custom_enchantments:has_enchant/barrage run scoreboard players set @s ca.ench_barrage_lvl 0
 execute if score @s ca.ench_repeating_lvl matches 1.. unless predicate cartographer_custom_enchantments:has_enchant/repeating run scoreboard players set @s ca.ench_repeating_lvl 0

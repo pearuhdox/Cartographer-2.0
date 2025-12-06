@@ -1,9 +1,9 @@
-execute if entity @s[type=player] run scoreboard players operation $force ca.ench_var = @s ca.ench_fleetfoot_lvl
+execute if entity @s[type=player] run scoreboard players operation $force ca.ench_var = @s ca.ench_dodgeroll_lvl
 execute if entity @s[type=player] run scoreboard players operation $force ca.ench_var *= $20 ca.CONSTANT
 execute if entity @s[type=player] run scoreboard players operation $force ca.ench_var *= $100 ca.CONSTANT
 execute if entity @s[type=player] run scoreboard players add $force ca.ench_var 5000
 
-execute unless entity @s[type=player] run scoreboard players operation $force ca.ench_var = @s ca.ench_fleetfoot_lvl
+execute unless entity @s[type=player] run scoreboard players operation $force ca.ench_var = @s ca.ench_dodgeroll_lvl
 execute unless entity @s[type=player] run scoreboard players operation $force ca.ench_var *= $3 ca.CONSTANT
 execute unless entity @s[type=player] run scoreboard players operation $force ca.ench_var *= $-1 ca.CONSTANT
 execute unless entity @s[type=player] run scoreboard players remove $force ca.ench_var 6
@@ -22,12 +22,12 @@ execute store result storage cartographer:custom_enchantments z_pos double 0.000
 
 execute store result storage cartographer:custom_enchantments force int 1 run scoreboard players get $force ca.ench_var
 
-execute if entity @s[type=player] unless predicate cartographer_core:player/sneaking at @s run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/fleetfoot/setup_effect with storage cartographer:custom_enchantments
-execute unless entity @s[type=player] at @s run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/fleetfoot/setup_effect with storage cartographer:custom_enchantments
+execute if entity @s[type=player] unless predicate cartographer_core:player/sneaking at @s run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/dodgeroll/setup_effect with storage cartographer:custom_enchantments
+execute unless entity @s[type=player] at @s run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/dodgeroll/setup_effect with storage cartographer:custom_enchantments
 
 
-execute if entity @s[type=player] run scoreboard players set @s ca.fleetfoot_cooldown 40
-execute if entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"custom_ench/fleetfoot",duration:40,delay:0,parameters:{},merge_behavior:"none"}
+execute if entity @s[type=player] run scoreboard players set @s ca.dodgeroll_cooldown 40
+execute if entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"custom_ench/dodgeroll",duration:40,delay:0,parameters:{},merge_behavior:"none"}
 
-execute unless entity @s[type=player] run scoreboard players set @s ca.fleetfoot_cooldown 100
-execute unless entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"custom_ench/fleetfoot",duration:100,delay:0,parameters:{},merge_behavior:"none"}
+execute unless entity @s[type=player] run scoreboard players set @s ca.dodgeroll_cooldown 100
+execute unless entity @s[type=player] run function carto_event:api/create_single_entity_event {event:"custom_ench/dodgeroll",duration:100,delay:0,parameters:{},merge_behavior:"none"}

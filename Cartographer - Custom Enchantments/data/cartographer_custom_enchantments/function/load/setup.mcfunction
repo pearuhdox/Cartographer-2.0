@@ -656,15 +656,15 @@ scoreboard objectives add ca.ench_collapse_feet_lvl dummy
 scoreboard objectives add ca.ench_collapse_body_lvl dummy
 scoreboard objectives add ca.ench_collapse_saddle_lvl dummy
 
-scoreboard objectives add ca.ench_fleetfoot_lvl dummy
-scoreboard objectives add ca.ench_fleetfoot_main_lvl dummy
-scoreboard objectives add ca.ench_fleetfoot_offh_lvl dummy
-scoreboard objectives add ca.ench_fleetfoot_head_lvl dummy
-scoreboard objectives add ca.ench_fleetfoot_chest_lvl dummy
-scoreboard objectives add ca.ench_fleetfoot_legs_lvl dummy
-scoreboard objectives add ca.ench_fleetfoot_feet_lvl dummy
-scoreboard objectives add ca.ench_fleetfoot_body_lvl dummy
-scoreboard objectives add ca.ench_fleetfoot_saddle_lvl dummy
+scoreboard objectives add ca.ench_dodgeroll_lvl dummy
+scoreboard objectives add ca.ench_dodgeroll_main_lvl dummy
+scoreboard objectives add ca.ench_dodgeroll_offh_lvl dummy
+scoreboard objectives add ca.ench_dodgeroll_head_lvl dummy
+scoreboard objectives add ca.ench_dodgeroll_chest_lvl dummy
+scoreboard objectives add ca.ench_dodgeroll_legs_lvl dummy
+scoreboard objectives add ca.ench_dodgeroll_feet_lvl dummy
+scoreboard objectives add ca.ench_dodgeroll_body_lvl dummy
+scoreboard objectives add ca.ench_dodgeroll_saddle_lvl dummy
 
 scoreboard objectives add ca.ench_grappling_lvl dummy
 scoreboard objectives add ca.ench_grappling_main_lvl dummy
@@ -1103,7 +1103,7 @@ scoreboard objectives add ca.throwable_multishot dummy
 scoreboard objectives add ca.channeling_time dummy
 
 
-scoreboard objectives add ca.fleetfoot_cooldown dummy
+scoreboard objectives add ca.dodgeroll_cooldown dummy
 scoreboard objectives add ca.grappling_cooldown dummy
 
 scoreboard objectives add ca.ricochet_cooldown dummy

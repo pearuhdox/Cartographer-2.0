@@ -3,6 +3,6 @@
       "cartographer_core:debug/handlers/using/loading_crossbow",
       {"id":"cartographer_custom_enchantments:enchantment/weapon/damage/general/concentration/charge_crossbow","required":false},
       {"id":"cartographer_custom_enchantments:enchantment/weapon/unique/general/repulsion/crossbow_activate","required":false},
-      {"id":"cartographer_custom_enchantments:enchantment/weapon/unique/ranged/fleetfoot/crossbow_activate","required":false}
+      {"id":"cartographer_custom_enchantments:enchantment/weapon/unique/ranged/dodgeroll/crossbow_activate","required":false}
     ]
   }

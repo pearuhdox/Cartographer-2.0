@@ -1456,26 +1456,26 @@ scoreboard players operation @s ca.ench_shrapnel_lvl += @s ca.ench_shrapnel_sadd
 
 
 
-scoreboard players set @s ca.ench_fleetfoot_main_lvl 0
-scoreboard players set @s ca.ench_fleetfoot_offh_lvl 0
-scoreboard players set @s ca.ench_fleetfoot_lvl 0
+scoreboard players set @s ca.ench_dodgeroll_main_lvl 0
+scoreboard players set @s ca.ench_dodgeroll_offh_lvl 0
+scoreboard players set @s ca.ench_dodgeroll_lvl 0
 
 scoreboard players set $ench ca.ench_var 0
-execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.main.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/ranged/fleetfoot
-scoreboard players operation @s ca.ench_fleetfoot_main_lvl += $ench ca.ench_var
+execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.main.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/ranged/dodgeroll
+scoreboard players operation @s ca.ench_dodgeroll_main_lvl += $ench ca.ench_var
 
 scoreboard players set $ench ca.ench_var 0
-execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.offh.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/ranged/fleetfoot
-scoreboard players operation @s ca.ench_fleetfoot_offh_lvl += $ench ca.ench_var
+execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.offh.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/ranged/dodgeroll
+scoreboard players operation @s ca.ench_dodgeroll_offh_lvl += $ench ca.ench_var
 
-scoreboard players operation @s ca.ench_fleetfoot_lvl += @s ca.ench_fleetfoot_main_lvl
-scoreboard players operation @s ca.ench_fleetfoot_lvl += @s ca.ench_fleetfoot_offh_lvl
-scoreboard players operation @s ca.ench_fleetfoot_lvl += @s ca.ench_fleetfoot_head_lvl
-scoreboard players operation @s ca.ench_fleetfoot_lvl += @s ca.ench_fleetfoot_chest_lvl
-scoreboard players operation @s ca.ench_fleetfoot_lvl += @s ca.ench_fleetfoot_legs_lvl
-scoreboard players operation @s ca.ench_fleetfoot_lvl += @s ca.ench_fleetfoot_feet_lvl
-scoreboard players operation @s ca.ench_fleetfoot_lvl += @s ca.ench_fleetfoot_body_lvl
-scoreboard players operation @s ca.ench_fleetfoot_lvl += @s ca.ench_fleetfoot_saddle_lvl
+scoreboard players operation @s ca.ench_dodgeroll_lvl += @s ca.ench_dodgeroll_main_lvl
+scoreboard players operation @s ca.ench_dodgeroll_lvl += @s ca.ench_dodgeroll_offh_lvl
+scoreboard players operation @s ca.ench_dodgeroll_lvl += @s ca.ench_dodgeroll_head_lvl
+scoreboard players operation @s ca.ench_dodgeroll_lvl += @s ca.ench_dodgeroll_chest_lvl
+scoreboard players operation @s ca.ench_dodgeroll_lvl += @s ca.ench_dodgeroll_legs_lvl
+scoreboard players operation @s ca.ench_dodgeroll_lvl += @s ca.ench_dodgeroll_feet_lvl
+scoreboard players operation @s ca.ench_dodgeroll_lvl += @s ca.ench_dodgeroll_body_lvl
+scoreboard players operation @s ca.ench_dodgeroll_lvl += @s ca.ench_dodgeroll_saddle_lvl
 
 
 

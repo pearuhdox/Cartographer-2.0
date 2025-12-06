@@ -97,7 +97,7 @@ data modify storage cartographer:data_registry enchant_prefix.ricochet set value
 data modify storage cartographer:data_registry enchant_prefix.barbed set value "cartographer_custom_enchantments:weapon/unique/ranged/"
 data modify storage cartographer:data_registry enchant_prefix.ripper set value "cartographer_custom_enchantments:weapon/unique/ranged/"
 data modify storage cartographer:data_registry enchant_prefix.shrapnel set value "cartographer_custom_enchantments:weapon/unique/ranged/"
-data modify storage cartographer:data_registry enchant_prefix.fleetfoot set value "cartographer_custom_enchantments:weapon/unique/ranged/"
+data modify storage cartographer:data_registry enchant_prefix.dodgeroll set value "cartographer_custom_enchantments:weapon/unique/ranged/"
 data modify storage cartographer:data_registry enchant_prefix.grappling set value "cartographer_custom_enchantments:weapon/unique/ranged/"
 data modify storage cartographer:data_registry enchant_prefix.barrage set value "cartographer_custom_enchantments:weapon/unique/ranged/"
 data modify storage cartographer:data_registry enchant_prefix.auto_charge set value "cartographer_custom_enchantments:weapon/unique/other/"

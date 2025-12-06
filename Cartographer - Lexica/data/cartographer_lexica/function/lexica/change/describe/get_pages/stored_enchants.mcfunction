@@ -574,11 +574,11 @@ execute if score $ench_correction ca.lexica_var matches 1.. run function cartogr
 execute if score $ench_correction ca.lexica_var matches 1.. run scoreboard players set $keyword_passive ca.lexica_var 1
 execute if score $ench_correction ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
 
-execute store result score $ench_fleetfoot ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:stored_enchantments.cartographer_custom_enchantments:weapon/unique/ranged/fleetfoot
-execute if score $ench_fleetfoot ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"fleetfoot",name:[{text: "[", bold: true, underlined: false, italic: false, color: "white"},{translate: "enchantment.cartographer.fleetfoot", fallback: "Fleetfoot", bold: true, underlined: false, italic: false, color: "#47EDD1"},{text: "]", bold: true, underlined: false, italic: false, color: "white"}],color:4713937}
-execute if score $ench_fleetfoot ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
-execute if score $ench_fleetfoot ca.lexica_var matches 1.. run scoreboard players set $keyword_channeled ca.lexica_var 1
-execute if score $ench_fleetfoot ca.lexica_var matches 1.. run scoreboard players set $keyword_self_movement ca.lexica_var 1
+execute store result score $ench_dodgeroll ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:stored_enchantments.cartographer_custom_enchantments:weapon/unique/ranged/dodgeroll
+execute if score $ench_dodgeroll ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"dodgeroll",name:[{text: "[", bold: true, underlined: false, italic: false, color: "white"},{translate: "enchantment.cartographer.dodgeroll", fallback: "Dodgeroll", bold: true, underlined: false, italic: false, color: "#47EDD1"},{text: "]", bold: true, underlined: false, italic: false, color: "white"}],color:4713937}
+execute if score $ench_dodgeroll ca.lexica_var matches 1.. run scoreboard players set $has_keyword ca.lexica_var 1
+execute if score $ench_dodgeroll ca.lexica_var matches 1.. run scoreboard players set $keyword_channeled ca.lexica_var 1
+execute if score $ench_dodgeroll ca.lexica_var matches 1.. run scoreboard players set $keyword_self_movement ca.lexica_var 1
 
 execute store result score $ench_grappling ca.lexica_var run data get storage cartographer:lexica item.components.minecraft:bundle_contents[0].components.minecraft:stored_enchantments.cartographer_custom_enchantments:weapon/unique/ranged/grappling
 execute if score $ench_grappling ca.lexica_var matches 1.. run function cartographer_lexica:lexica/change/describe/add_page {category:"enchantment",id:"grappling",name:[{text: "[", bold: true, underlined: false, italic: false, color: "white"},{translate: "enchantment.cartographer.grappling", fallback: "Grappling", bold: true, underlined: false, italic: false, color: "#47EDD1"},{text: "]", bold: true, underlined: false, italic: false, color: "white"}],color:4713937}

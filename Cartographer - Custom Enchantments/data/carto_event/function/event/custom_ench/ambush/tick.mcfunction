@@ -1,6 +1,6 @@
 $execute as $(target) at @s if entity @s[tag=ca.ambush_charging] if score @s ca.ambush_time matches 1..15 if entity @s[type=player] run function carto_event:event/custom_ench/ambush/charge_vfx_player
 
-$execute as $(target) at @s unless entity @s[tag=ca.has_custom_status_grounded] if entity @s[tag=ca.ambush_charging] if score @s ca.ambush_time matches 1 if score @s ca.ench_fleetfoot_lvl matches 1.. unless score @s ca.fleetfoot_cooldown matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/fleetfoot/activate
+$execute as $(target) at @s unless entity @s[tag=ca.has_custom_status_grounded] if entity @s[tag=ca.ambush_charging] if score @s ca.ambush_time matches 1 if score @s ca.ench_dodgeroll_lvl matches 1.. unless score @s ca.dodgeroll_cooldown matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/dodgeroll/activate
 $execute as $(target) at @s if entity @s[tag=ca.ambush_charging] if score @s ca.ambush_time matches 5 if score @s ca.ench_repulsion_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/general/repulsion/channel_activate
 
 #Find targets

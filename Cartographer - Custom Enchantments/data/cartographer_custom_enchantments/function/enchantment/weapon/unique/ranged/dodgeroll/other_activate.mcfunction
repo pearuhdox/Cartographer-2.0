@@ -1,0 +1,1 @@
+execute unless entity @s[tag=ca.has_custom_status_grounded] if score @s ca.ench_dodgeroll_lvl matches 1.. unless score @s ca.dodgeroll_cooldown matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/dodgeroll/activate
