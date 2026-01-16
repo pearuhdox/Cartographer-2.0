@@ -1,4 +1,4 @@
-gamerule keepInventory true
+gamerule keep_inventory true
 forceload add 271101 271101
 
 function suso.rng:seed

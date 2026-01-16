@@ -1,4 +1,4 @@
-data modify storage cartographer_custom_enchantments:throwable items[0].components.minecraft:consumable set value {consume_seconds:1000,animation:"spear",has_consume_particles:false}
+data modify storage cartographer_custom_enchantments:throwable items[0].components.minecraft:consumable set value {consume_seconds:1000,animation:"trident",has_consume_particles:false}
 data modify storage cartographer_custom_enchantments:throwable items[0].components.minecraft:custom_data.throwable_state set value 2b
 
 data modify storage cartographer_custom_enchantments:throwable items[0].Slot set value 0b

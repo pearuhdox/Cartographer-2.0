@@ -3,7 +3,7 @@ data modify storage cartographer:custom_enchantments throwable_item set from ent
 
 
 
-data modify storage cartographer:custom_enchantments throwable_item.components.minecraft:consumable set value {consume_seconds:1000,animation:"spear",has_consume_particles:false}
+data modify storage cartographer:custom_enchantments throwable_item.components.minecraft:consumable set value {consume_seconds:1000,animation:"trident",has_consume_particles:false}
 data modify storage cartographer:custom_enchantments throwable_item.components.minecraft:custom_data.throwable_applied set value 1b
 data modify storage cartographer:custom_enchantments throwable_item.components.minecraft:custom_data.throwable_cooldown set value 0
 data modify storage cartographer:custom_enchantments throwable_item.components.minecraft:custom_data.throwable_state set value 2b

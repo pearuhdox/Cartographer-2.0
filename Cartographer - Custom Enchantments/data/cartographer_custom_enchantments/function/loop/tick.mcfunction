@@ -2,7 +2,7 @@
 #scoreboard players set $custom_enchantments ca.installed 1
 
 #execute unless score $do_fall_damage ca.gamerule matches 1.. run scoreboard players set $do_fall_damage ca.gamerule 1
-#execute if score $do_fall_damage ca.gamerule matches 1.. run gamerule fallDamage false
+#execute if score $do_fall_damage ca.gamerule matches 1.. run gamerule fall_damage false
 
 #Running Haunting Animation - Also not done on event handler because they have to run every tick
 execute if score $haunting_ct ca.ench_haunting_lvl matches 1.. as @e[type=item_display,tag=ca.haunting_display_main] at @s if entity @a[distance=..16] run function cartographer_custom_enchantments:enchantment/curse/haunting/animation/tick
