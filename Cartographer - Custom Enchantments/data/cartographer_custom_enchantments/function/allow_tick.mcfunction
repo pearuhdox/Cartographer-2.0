@@ -62,6 +62,7 @@ execute if score @s ca.ench_barbed_lvl matches 1.. run tag @s add ca.enchant_tic
 execute if score @s ca.ench_ripper_lvl matches 1.. run tag @s add ca.enchant_tick
 execute if score @s ca.ench_shrapnel_lvl matches 1.. run tag @s add ca.enchant_tick
 execute if score @s ca.ench_dodgeroll_lvl matches 1.. run tag @s add ca.enchant_tick
+execute if score @s ca.ench_fleetfoot_lvl matches 1.. run tag @s add ca.enchant_tick
 execute if score @s ca.ench_grappling_lvl matches 1.. run tag @s add ca.enchant_tick
 execute if score @s ca.ench_barrage_lvl matches 1.. run tag @s add ca.enchant_tick
 execute if score @s ca.ench_collapse_lvl matches 1.. run tag @s add ca.enchant_tick

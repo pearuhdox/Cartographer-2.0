@@ -59,6 +59,7 @@ execute if entity @s[tag=ca.do_enchant_calc_barbed] run function cartographer_cu
 execute if entity @s[tag=ca.do_enchant_calc_ripper] run function cartographer_custom_enchantments:ench_calc/ripper
 execute if entity @s[tag=ca.do_enchant_calc_shrapnel] run function cartographer_custom_enchantments:ench_calc/shrapnel
 execute if entity @s[tag=ca.do_enchant_calc_dodgeroll] run function cartographer_custom_enchantments:ench_calc/dodgeroll
+execute if entity @s[tag=ca.do_enchant_calc_fleetfoot] run function cartographer_custom_enchantments:ench_calc/fleetfoot
 execute if entity @s[tag=ca.do_enchant_calc_grappling] run function cartographer_custom_enchantments:ench_calc/grappling
 execute if entity @s[tag=ca.do_enchant_calc_barrage] run function cartographer_custom_enchantments:ench_calc/barrage
 #execute if entity @s[tag=ca.do_enchant_calc_auto_charge] run function cartographer_custom_enchantments:ench_calc/auto_charge

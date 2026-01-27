@@ -1479,6 +1479,29 @@ scoreboard players operation @s ca.ench_dodgeroll_lvl += @s ca.ench_dodgeroll_sa
 
 
 
+scoreboard players set @s ca.ench_fleetfoot_main_lvl 0
+scoreboard players set @s ca.ench_fleetfoot_offh_lvl 0
+scoreboard players set @s ca.ench_fleetfoot_lvl 0
+
+scoreboard players set $ench ca.ench_var 0
+execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.main.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/ranged/fleetfoot
+scoreboard players operation @s ca.ench_fleetfoot_main_lvl += $ench ca.ench_var
+
+scoreboard players set $ench ca.ench_var 0
+execute store result score $ench ca.ench_var run data get storage cartographer_core:player_equip data.offh.components.minecraft:enchantments.cartographer_custom_enchantments:weapon/unique/ranged/fleetfoot
+scoreboard players operation @s ca.ench_fleetfoot_offh_lvl += $ench ca.ench_var
+
+scoreboard players operation @s ca.ench_fleetfoot_lvl += @s ca.ench_fleetfoot_main_lvl
+scoreboard players operation @s ca.ench_fleetfoot_lvl += @s ca.ench_fleetfoot_offh_lvl
+scoreboard players operation @s ca.ench_fleetfoot_lvl += @s ca.ench_fleetfoot_head_lvl
+scoreboard players operation @s ca.ench_fleetfoot_lvl += @s ca.ench_fleetfoot_chest_lvl
+scoreboard players operation @s ca.ench_fleetfoot_lvl += @s ca.ench_fleetfoot_legs_lvl
+scoreboard players operation @s ca.ench_fleetfoot_lvl += @s ca.ench_fleetfoot_feet_lvl
+scoreboard players operation @s ca.ench_fleetfoot_lvl += @s ca.ench_fleetfoot_body_lvl
+scoreboard players operation @s ca.ench_fleetfoot_lvl += @s ca.ench_fleetfoot_saddle_lvl
+
+
+
 scoreboard players set @s ca.ench_grappling_main_lvl 0
 scoreboard players set @s ca.ench_grappling_offh_lvl 0
 scoreboard players set @s ca.ench_grappling_lvl 0

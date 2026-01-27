@@ -1,4 +1,4 @@
 tag @s add ca.do_inv_fetch
-tag @s add ca.do_enchant_calc_multitool
+tag @s add ca.do_enchant_calc_irreparability
 
-advancement revoke @s only cartographer_custom_enchantments:enchant_calculation/tool/multitool
+advancement revoke @s only cartographer_custom_enchantments:enchant_calculation/tool/irreparability

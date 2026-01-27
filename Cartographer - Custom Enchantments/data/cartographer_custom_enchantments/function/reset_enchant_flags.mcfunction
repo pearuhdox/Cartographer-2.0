@@ -95,6 +95,7 @@ tag @s remove ca.ench_ran_flag_barrage
 tag @s remove ca.ench_ran_flag_collapse
 tag @s remove ca.ench_ran_flag_correction
 tag @s remove ca.ench_ran_flag_dodgeroll
+tag @s remove ca.ench_ran_flag_fleetfoot
 tag @s remove ca.ench_ran_flag_grappling
 tag @s remove ca.ench_ran_flag_ricochet
 tag @s remove ca.ench_ran_flag_ripper

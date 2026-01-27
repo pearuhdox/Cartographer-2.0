@@ -72,6 +72,7 @@ execute if score @s ca.ench_throwable_lvl matches 1.. run function cartographer_
 #execute if score @s ca.ench_shrapnel_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/shrapnel/run
 execute if score @s ca.ench_dodgeroll_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/dodgeroll/run
 execute if score @s ca.ench_grappling_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/grappling/run
+execute if score @s ca.ench_fleetfoot_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/fleetfoot/setup
 #execute if score @s ca.ench_barrage_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/ranged/barrage/run
 
 execute if score @s ca.ench_repeating_lvl matches 1.. run function cartographer_custom_enchantments:enchantment/weapon/unique/other/repeating/run
