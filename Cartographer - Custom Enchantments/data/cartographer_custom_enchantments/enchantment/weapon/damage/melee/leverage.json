@@ -4,8 +4,8 @@
     "fallback": "Leverage"
     },
     "exclusive_set": "#cartographer_custom_enchantments:exclusive_set/weapon_damage",
-    "primary_items": "#cartographer_core:enchant_support/weapons/melee_no_fishing",
-    "supported_items": "#cartographer_core:enchant_support/melee_weapon",
+    "primary_items": "#cartographer_core:enchant_support/melee_weapons_no_spear",
+    "supported_items": "#cartographer_core:enchant_support/weapons/melee_no_fishing",
     "weight": 1,
     "max_level": 10,
     "max_cost": {

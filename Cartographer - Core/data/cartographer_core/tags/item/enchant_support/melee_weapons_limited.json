@@ -1,8 +1,9 @@
 {
     "replace": false,
     "values": [
-    "#minecraft:enchantable/sharp_weapon",
     "#minecraft:spears",
+    "#minecraft:swords",
+    "#minecraft:axes",
     "minecraft:mace"
     ]
 }  

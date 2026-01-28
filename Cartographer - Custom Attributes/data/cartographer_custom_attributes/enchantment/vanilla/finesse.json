@@ -4,7 +4,7 @@
     "fallback": "Finesse"
   },
   "exclusive_set": "#cartographer_custom_attributes:exclusive_set/stat_armor",
-  "supported_items": "#cartographer_core:enchant_support/passive_armor",
+  "supported_items": "#cartographer_custom_attributes:enchant_support/finesse",
   "primary_items": "#cartographer_core:enchant_support/passive_armor",
   "weight": 1,
   "max_level": 10,
