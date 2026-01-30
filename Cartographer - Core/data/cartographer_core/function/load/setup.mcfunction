@@ -131,6 +131,7 @@ forceload add 4206890 4206890
 
 setblock 4206900 0 4206900 purple_shulker_box replace
 setblock 4206900 7 4206900 purple_shulker_box destroy
+setblock 4206900 10 4206900 purple_shulker_box replace
 
 #Shulker Box for Lexica, so a mapmaker can change the format.
 
