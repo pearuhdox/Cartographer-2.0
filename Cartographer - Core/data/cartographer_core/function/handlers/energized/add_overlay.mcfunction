@@ -1,6 +1,12 @@
 data modify storage cartographer:core energized_overlay set value {}
 $data modify storage cartographer:core energized_overlay set from entity @s $(equip)
 
+data modify storage cartographer:core energized_item set value {}
+$data modify storage cartographer:core energized_item.slot set value "$(slot)"
+
+
+execute unless data storage cartographer:core energized_overlay.components.minecraft:equippable run function cartographer_core:handlers/energized/create_default_field with storage cartographer:core energized_item
+
 execute if data storage cartographer:core energized_overlay.components.minecraft:equippable run data modify storage cartographer:core energized_overlay.components.minecraft:equippable.camera_overlay set value "particle/sonic_boom_15"
 $execute unless data storage cartographer:core energized_overlay.components.minecraft:equippable run data modify storage cartographer:core energized_overlay.components.minecraft:equippable set value {slot:"$(slot)",equip_sound:"block.candle.ambient",swappable:false,damage_on_hurt:false,camera_overlay:"particle/sonic_boom_15"}
 
