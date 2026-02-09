@@ -15,4 +15,13 @@ scoreboard players operation $aoe ca.momentum_stack = $damage ca.momentum_stack
 
 scoreboard players operation $damage ca.momentum_stack *= $2 ca.CONSTANT
 
+execute if score @s ca.ench_momentum_main_lvl matches 1.. run function cartographer_core:handlers/energized/remove_overlay {equip:"SelectedItem",cat:"weapon",slot:"mainhand"}
+execute if score @s ca.ench_momentum_offh_lvl matches 1.. run function cartographer_core:handlers/energized/remove_overlay {equip:"equipment.offhand",cat:"weapon",slot:"offhand"}
+
+execute if score @s ca.ench_momentum_feet_lvl matches 1.. run function cartographer_core:handlers/energized/remove_overlay {equip:"equipment.feet",cat:"armor",slot:"feet"}
+execute if score @s ca.ench_momentum_legs_lvl matches 1.. run function cartographer_core:handlers/energized/remove_overlay {equip:"equipment.legs",cat:"armor",slot:"legs"}
+execute if score @s ca.ench_momentum_chest_lvl matches 1.. run function cartographer_core:handlers/energized/remove_overlay {equip:"equipment.chest",cat:"armor",slot:"chest"}
+execute if score @s ca.ench_momentum_head_lvl matches 1.. run function cartographer_core:handlers/energized/remove_overlay {equip:"equipment.head",cat:"armor",slot:"head"}
+
+
 function cartographer_custom_enchantments:enchantment/passive/momentum/attack
