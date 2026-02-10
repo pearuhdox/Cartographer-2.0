@@ -120,6 +120,9 @@ scoreboard objectives add ca.quick_drop_anim dummy
 
 scoreboard objectives add ca.glass_cdl dummy
 
+#Setup Inventory Loader
+function inv:setup
+
 #Create mutex score
 scoreboard objectives add ca.mutex dummy
 
